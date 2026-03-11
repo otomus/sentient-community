@@ -1,12 +1,32 @@
 {
   "version": "1.0",
-  "generated_at": null,
+  "generated_at": "2026-03-11T18:54:54.420597+00:00",
   "nerves": {},
   "adapters": {},
-  "connectors": {},
+  "connectors": {
+    "telegram": {
+      "name": "telegram",
+      "language": "javascript",
+      "platforms": [
+        "telegram"
+      ],
+      "author": "otomus",
+      "version": "1.0.0"
+    },
+    "whatsapp": {
+      "name": "whatsapp",
+      "language": "javascript",
+      "platforms": [
+        "whatsapp"
+      ],
+      "author": "otomus",
+      "version": "1.0.0"
+    }
+  },
   "stats": {
     "total_nerves": 0,
     "total_adapters": 0,
-    "total_connectors": 0
-  }
+    "total_connectors": 2
+  },
+  "leaderboard": {}
 }
