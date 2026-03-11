@@ -1,7 +1,7 @@
 ## Connector Contribution
 
 **Name**: <!-- e.g., discord -->
-**Language**: <!-- javascript | python -->
+**Language**: <!-- javascript | python | typescript | go | rust -->
 **Platform**: <!-- e.g., Discord, Telegram, Slack -->
 
 ### Capabilities
@@ -12,5 +12,5 @@
 - [ ] `meta.json` validates against schema
 - [ ] `config-template.json` has no real secrets
 - [ ] `README.md` with setup instructions included
-- [ ] Implementation file present (connector.js or connector.py)
+- [ ] Implementation file present (e.g., connector.js, connector.py, connector.ts)
 - [ ] No hardcoded tokens, keys, or absolute paths

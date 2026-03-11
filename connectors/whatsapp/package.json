@@ -1,0 +1,12 @@
+{
+  "name": "sentient-whatsapp",
+  "private": true,
+  "scripts": {
+    "start": "node connector.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "qrcode-terminal": "^0.12.0",
+    "redis": "^4.6.0"
+  }
+}

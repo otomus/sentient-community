@@ -1,0 +1,11 @@
+{
+  "name": "sentient-telegram",
+  "private": true,
+  "scripts": {
+    "start": "node connector.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.0",
+    "redis": "^4.6.0"
+  }
+}

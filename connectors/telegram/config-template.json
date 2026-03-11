@@ -1,0 +1,9 @@
+{
+  "_instructions": "Copy this file to config.json and fill in your values. config.json is gitignored.",
+  "bot_token": "",
+  "bot_name": "Sentient",
+  "bot_aliases": [],
+  "whitelisted_users": [],
+  "whitelisted_groups": [],
+  "monitor_groups": []
+}

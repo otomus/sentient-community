@@ -6,7 +6,7 @@ import re
 import sys
 
 # Filenames that should never be committed
-FORBIDDEN_FILES = {".env", "credentials.json", ".pem", ".key"}
+FORBIDDEN_FILES = {".env", "credentials.json"}
 FORBIDDEN_EXTENSIONS = {".pem", ".key"}
 
 # Content patterns that indicate leaked secrets

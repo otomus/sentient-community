@@ -23,25 +23,3 @@ jobs:
       - name: Run secret scan
         run: python scripts/check_secrets.py nerves/ adapters/ connectors/
 
-      - name: Check tool safety
-        run: |
-          found=0
-          # Python unsafe patterns
-          for f in $(find nerves/ -name "*.py" 2>/dev/null); do
-            if grep -Pn '(os\.system|(?<!#.*)eval\s*\(|(?<!#.*)exec\s*\(|\bsubprocess\b|__import__\s*\()' "$f"; then
-              echo "UNSAFE: $f"
-              found=1
-            fi
-          done
-          # JS/TS unsafe patterns
-          for f in $(find nerves/ \( -name "*.js" -o -name "*.ts" -o -name "*.mjs" \) 2>/dev/null); do
-            if grep -Pn '(child_process|(?<!//\s*)eval\s*\(|execSync|spawnSync|vm\.runIn)' "$f"; then
-              echo "UNSAFE: $f"
-              found=1
-            fi
-          done
-          if [ "$found" = "1" ]; then
-            echo "::error::Unsafe patterns found in tool code"
-            exit 1
-          fi
-          echo "Tool safety check passed"

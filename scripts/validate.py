@@ -32,10 +32,15 @@ UNSAFE_PATTERNS_JS = [
 ]
 
 
+_schema_cache: dict[str, dict] = {}
+
+
 def load_schema(name: str) -> dict:
-    path = os.path.join(SCHEMAS_DIR, name)
-    with open(path) as f:
-        return json.load(f)
+    if name not in _schema_cache:
+        path = os.path.join(SCHEMAS_DIR, name)
+        with open(path) as f:
+            _schema_cache[name] = json.load(f)
+    return _schema_cache[name]
 
 
 def load_json(path: str) -> dict | list | None:
@@ -218,13 +223,6 @@ def validate_connector(connector_dir: str) -> list[str]:
     config_path = os.path.join(connector_dir, "config-template.json")
     if not os.path.exists(config_path):
         errors.append(f"  {name}: missing config-template.json")
-    else:
-        # Check no secrets in config template
-        config = load_json(config_path)
-        if config and isinstance(config, dict):
-            config_str = json.dumps(config)
-            if re.search(r"sk-|ghp_|AKIA|Bearer\s+[A-Za-z0-9]", config_str):
-                errors.append(f"  {name}: config-template.json appears to contain secrets")
 
     readme_path = os.path.join(connector_dir, "README.md")
     if not os.path.exists(readme_path):

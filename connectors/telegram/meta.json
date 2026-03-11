@@ -1,0 +1,26 @@
+{
+  "name": "telegram",
+  "version": "1.0.0",
+  "description": "Telegram connector using Telegraf — bridges Telegram bot messages to Sentient brain via Redis",
+  "language": "javascript",
+  "platforms": ["telegram"],
+  "author": {
+    "github": "otomus"
+  },
+  "capabilities": {
+    "incoming": ["text", "image", "video", "audio", "sticker", "document", "location", "contact", "poll"],
+    "outgoing": ["text", "image", "video", "audio", "sticker", "document", "location", "contact", "poll"]
+  },
+  "config_fields": [
+    { "name": "bot_token", "required": true, "secret": true, "description": "Telegram bot token from @BotFather" },
+    { "name": "bot_name", "required": false, "secret": false, "description": "Bot display name (default: Sentient)" },
+    { "name": "bot_aliases", "required": false, "secret": false, "description": "Alternative names the bot responds to" },
+    { "name": "whitelisted_users", "required": false, "secret": false, "description": "Telegram user IDs allowed to interact" },
+    { "name": "whitelisted_groups", "required": false, "secret": false, "description": "Telegram group IDs to process messages from" },
+    { "name": "monitor_groups", "required": false, "secret": false, "description": "Group IDs to observe read-only" }
+  ],
+  "redis_channels": {
+    "subscribe": ["brain:response", "brain:audio"],
+    "publish": ["brain:task", "telegram:monitor"]
+  }
+}
