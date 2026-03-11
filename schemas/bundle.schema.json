@@ -53,9 +53,8 @@
           "spec": { "type": "string", "description": "Relative path to spec.json" },
           "implementations": {
             "type": "object",
-            "properties": {
-              "python": { "type": "string" }
-            }
+            "description": "Language -> relative path to implementation file",
+            "additionalProperties": { "type": "string" }
           }
         }
       }

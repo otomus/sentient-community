@@ -19,7 +19,7 @@
     },
     "language": {
       "type": "string",
-      "enum": ["javascript", "python"]
+      "enum": ["javascript", "python", "typescript", "go", "rust"]
     },
     "platforms": {
       "type": "array",

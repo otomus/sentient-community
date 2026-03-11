@@ -13,13 +13,22 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCHEMAS_DIR = os.path.join(REPO_ROOT, "schemas")
 
-# Unsafe patterns in tool Python files
-UNSAFE_PATTERNS = [
+# Unsafe patterns in tool files — checked per language
+UNSAFE_PATTERNS_PYTHON = [
     (r"\bos\.system\b", "os.system"),
     (r"\beval\s*\(", "eval()"),
     (r"\bexec\s*\(", "exec()"),
     (r"\bsubprocess\b", "subprocess"),
     (r"\b__import__\s*\(", "__import__()"),
+]
+
+UNSAFE_PATTERNS_JS = [
+    (r"\bchild_process\b", "child_process"),
+    (r"\beval\s*\(", "eval()"),
+    (r"\bFunction\s*\(", "Function() constructor"),
+    (r"\bvm\.runIn", "vm.runInNewContext/vm.runInThisContext"),
+    (r"\bexecSync\b", "execSync"),
+    (r"\bspawnSync\b", "spawnSync"),
 ]
 
 
@@ -72,7 +81,7 @@ def validate_json_against_schema(data: dict | list, schema: dict, filepath: str)
 
 
 def check_tool_safety(filepath: str) -> list[str]:
-    """Check a Python tool file for unsafe patterns."""
+    """Check a tool file for unsafe patterns based on its language."""
     errors = []
     try:
         with open(filepath, "r") as f:
@@ -80,7 +89,15 @@ def check_tool_safety(filepath: str) -> list[str]:
     except OSError:
         return errors
 
-    for pattern, name in UNSAFE_PATTERNS:
+    ext = os.path.splitext(filepath)[1].lower()
+    if ext == ".py":
+        patterns = UNSAFE_PATTERNS_PYTHON
+    elif ext in (".js", ".ts", ".mjs"):
+        patterns = UNSAFE_PATTERNS_JS
+    else:
+        return errors
+
+    for pattern, name in patterns:
         if re.search(pattern, content):
             errors.append(f"  UNSAFE: {filepath} contains {name}")
     return errors
@@ -132,12 +149,12 @@ def validate_nerve(nerve_dir: str) -> list[str]:
                 spec_schema = load_schema("tool_spec.schema.json")
                 errors.extend(validate_json_against_schema(spec, spec_schema, spec_path))
 
-        # Check implementations
+        # Check implementations (any language)
         for lang, impl_path in tool.get("implementations", {}).items():
             full_path = os.path.join(nerve_dir, impl_path)
             if not os.path.exists(full_path):
                 errors.append(f"  {name}: tool '{tool_name}' missing {lang} implementation at {impl_path}")
-            elif lang == "python":
+            else:
                 errors.extend(check_tool_safety(full_path))
 
     return errors
