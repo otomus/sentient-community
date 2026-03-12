@@ -37,9 +37,24 @@ jobs:
             ERRORS=1
           fi
 
+          if echo "$CHANGED" | grep -q '^scripts/'; then
+            echo "::error::scripts/ contains internal tooling. Community PRs cannot modify scripts."
+            ERRORS=1
+          fi
+
+          if echo "$CHANGED" | grep -q '^schemas/'; then
+            echo "::error::schemas/ are maintained by the core team. Community PRs cannot modify schemas."
+            ERRORS=1
+          fi
+
+          if echo "$CHANGED" | grep -q '^\.github/'; then
+            echo "::error::CI workflows are maintained by the core team. Community PRs cannot modify .github/."
+            ERRORS=1
+          fi
+
           if [ "$ERRORS" -ne 0 ]; then
             echo ""
-            echo "Only connectors/ and scripts/ can be modified by community PRs."
+            echo "Only connectors/ can be modified by community PRs."
             echo "See CONTRIBUTING.md for details."
             exit 1
           fi
