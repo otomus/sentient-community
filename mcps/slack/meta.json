@@ -1,0 +1,13 @@
+{
+  "name": "slack",
+  "version": "1.0.0",
+  "description": "Slack messaging — send messages, manage channels, and notifications",
+  "source": "npm",
+  "package": "@anthropic-ai/slack-mcp",
+  "command": ["npx", "-y", "@anthropic-ai/slack-mcp"],
+  "auth_type": "oauth2",
+  "auth_provider": "slack",
+  "tools": [],
+  "capabilities": ["message", "notify", "channel", "team"],
+  "category": "communication"
+}

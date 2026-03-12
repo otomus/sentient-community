@@ -1,0 +1,12 @@
+{
+  "name": "context7",
+  "version": "1.0.0",
+  "description": "Context7 library documentation — resolve library IDs and fetch up-to-date API docs for programming libraries",
+  "source": "npm",
+  "package": "@upstash/context7-mcp",
+  "command": ["npx", "-y", "@upstash/context7-mcp"],
+  "auth_type": "none",
+  "tools": ["resolve-library-id", "get-library-docs"],
+  "capabilities": ["code_docs", "library_docs", "api_reference", "programming"],
+  "category": "developer"
+}

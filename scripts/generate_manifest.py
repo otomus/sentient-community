@@ -88,6 +88,75 @@ def collect_adapters() -> dict:
     return adapters
 
 
+def collect_tools() -> dict:
+    """Walk tools/ and extract tool metadata."""
+    tools = {}
+    tools_dir = os.path.join(REPO_ROOT, "tools")
+    if not os.path.isdir(tools_dir):
+        return tools
+
+    for name in sorted(os.listdir(tools_dir)):
+        meta_path = os.path.join(tools_dir, name, "meta.json")
+        if not os.path.exists(meta_path):
+            continue
+        try:
+            with open(meta_path) as f:
+                meta = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue
+
+        tools[name] = {
+            "name": meta.get("name", name),
+            "version": meta.get("version", ""),
+            "description": meta.get("description", ""),
+            "implementations": meta.get("implementations", {}),
+            "author": meta.get("author", {}).get("github", ""),
+            "category": meta.get("category", ""),
+            "tags": meta.get("tags", []),
+            "parameters": meta.get("parameters", []),
+            "requires_api_key": meta.get("requires_api_key", False),
+        }
+
+    return tools
+
+
+def collect_mcps() -> dict:
+    """Walk mcps/ and extract external MCP server metadata."""
+    mcps = {}
+    mcps_dir = os.path.join(REPO_ROOT, "mcps")
+    if not os.path.isdir(mcps_dir):
+        return mcps
+
+    for name in sorted(os.listdir(mcps_dir)):
+        meta_path = os.path.join(mcps_dir, name, "meta.json")
+        if not os.path.exists(meta_path):
+            continue
+        try:
+            with open(meta_path) as f:
+                meta = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            continue
+
+        mcps[name] = {
+            "name": meta.get("name", name),
+            "version": meta.get("version", ""),
+            "description": meta.get("description", ""),
+            "source": meta.get("source", ""),
+            "package": meta.get("package", ""),
+            "command": meta.get("command", []),
+            "auth_type": meta.get("auth_type", "none"),
+            "tools": meta.get("tools", []),
+            "capabilities": meta.get("capabilities", []),
+            "category": meta.get("category", ""),
+        }
+        if meta.get("auth_env"):
+            mcps[name]["auth_env"] = meta["auth_env"]
+        if meta.get("auth_provider"):
+            mcps[name]["auth_provider"] = meta["auth_provider"]
+
+    return mcps
+
+
 def collect_connectors() -> dict:
     """Walk connectors/ and extract connector info."""
     connectors = {}
@@ -142,6 +211,8 @@ def main():
     nerves = collect_nerves()
     adapters = collect_adapters()
     connectors = collect_connectors()
+    tools = collect_tools()
+    mcps = collect_mcps()
 
     manifest = {
         "version": "1.0",
@@ -149,10 +220,14 @@ def main():
         "nerves": nerves,
         "adapters": adapters,
         "connectors": connectors,
+        "tools": tools,
+        "mcps": mcps,
         "stats": {
             "total_nerves": len(nerves),
             "total_adapters": len(adapters),
             "total_connectors": len(connectors),
+            "total_tools": len(tools),
+            "total_mcps": len(mcps),
         },
         "leaderboard": build_leaderboard(adapters),
     }
@@ -160,7 +235,8 @@ def main():
     manifest_path = os.path.join(REPO_ROOT, "manifest.json")
     with open(manifest_path, "w") as f:
         json.dump(manifest, f, indent=2)
-    print(f"Generated manifest.json: {len(nerves)} nerves, {len(adapters)} adapters, {len(connectors)} connectors")
+    print(f"Generated manifest.json: {len(nerves)} nerves, {len(adapters)} adapters, "
+          f"{len(connectors)} connectors, {len(tools)} tools, {len(mcps)} mcps")
 
 
 if __name__ == "__main__":

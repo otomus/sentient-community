@@ -1,0 +1,12 @@
+{
+  "name": "duckduckgo",
+  "version": "1.0.0",
+  "description": "DuckDuckGo search engine — web search and content fetching without API keys",
+  "source": "npm",
+  "package": "duckduckgo-mcp-server",
+  "command": ["npx", "-y", "duckduckgo-mcp-server"],
+  "auth_type": "none",
+  "tools": ["search", "fetch_content"],
+  "capabilities": ["web_search", "knowledge", "facts", "news", "lookup"],
+  "category": "search"
+}

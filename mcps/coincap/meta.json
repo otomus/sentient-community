@@ -1,0 +1,12 @@
+{
+  "name": "coincap",
+  "version": "1.0.0",
+  "description": "CoinCap cryptocurrency prices — get live crypto asset prices and list available assets",
+  "source": "npm",
+  "package": "coincap-mcp",
+  "command": ["npx", "-y", "coincap-mcp"],
+  "auth_type": "none",
+  "tools": ["get_price", "list_assets"],
+  "capabilities": ["crypto", "bitcoin", "price", "finance", "coin"],
+  "category": "finance"
+}

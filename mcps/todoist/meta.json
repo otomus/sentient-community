@@ -1,0 +1,13 @@
+{
+  "name": "todoist",
+  "version": "1.0.0",
+  "description": "Todoist task management — to-do lists, project tracking, and task reminders",
+  "source": "npm",
+  "package": "todoist-mcp-server",
+  "command": ["npx", "-y", "todoist-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "TODOIST_API_KEY",
+  "tools": [],
+  "capabilities": ["todo", "task", "reminder", "checklist"],
+  "category": "productivity"
+}

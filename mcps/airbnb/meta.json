@@ -1,0 +1,12 @@
+{
+  "name": "airbnb",
+  "version": "1.0.0",
+  "description": "Airbnb listing search — search vacation rentals and get listing details from Airbnb",
+  "source": "npm",
+  "package": "@openbnb/mcp-server-airbnb",
+  "command": ["npx", "-y", "@openbnb/mcp-server-airbnb"],
+  "auth_type": "none",
+  "tools": ["search_listings", "get_listing_details"],
+  "capabilities": ["travel", "airbnb", "accommodation", "vacation", "rental"],
+  "category": "travel"
+}

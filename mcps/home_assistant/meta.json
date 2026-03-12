@@ -1,0 +1,13 @@
+{
+  "name": "home_assistant",
+  "version": "1.0.0",
+  "description": "Home Assistant smart home control — manage lights, thermostat, and IoT device automation",
+  "source": "npm",
+  "package": "homeassistant-mcp",
+  "command": ["npx", "-y", "homeassistant-mcp"],
+  "auth_type": "api_key",
+  "auth_env": "HA_TOKEN",
+  "tools": [],
+  "capabilities": ["smart_home", "lights", "thermostat", "automation"],
+  "category": "iot"
+}

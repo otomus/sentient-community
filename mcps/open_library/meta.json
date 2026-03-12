@@ -1,0 +1,12 @@
+{
+  "name": "open_library",
+  "version": "1.0.0",
+  "description": "Open Library book search — find books by title, look up authors, and get book cover images",
+  "source": "npm",
+  "package": "mcp-open-library",
+  "command": ["npx", "-y", "mcp-open-library"],
+  "auth_type": "none",
+  "tools": ["get_book_by_title", "get_authors_by_name", "get_author_info", "get_book_cover"],
+  "capabilities": ["books", "authors", "literature", "reading", "library"],
+  "category": "knowledge"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "youtube_transcript",
+  "version": "1.0.0",
+  "description": "YouTube transcript extractor — retrieve video transcripts, captions, and subtitles from YouTube",
+  "source": "npm",
+  "package": "mcp-server-youtube-transcript",
+  "command": ["npx", "-y", "mcp-server-youtube-transcript"],
+  "auth_type": "none",
+  "tools": ["get_transcript"],
+  "capabilities": ["youtube", "video", "transcript", "captions", "subtitles"],
+  "category": "media"
+}

@@ -3,7 +3,7 @@
   "title": "Community Manifest",
   "description": "Auto-generated index of all community contributions",
   "type": "object",
-  "required": ["version", "nerves", "adapters", "connectors", "stats"],
+  "required": ["version", "nerves", "adapters", "connectors", "mcps", "stats"],
   "properties": {
     "version": {
       "type": "string"
@@ -60,12 +60,35 @@
         }
       }
     },
+    "mcps": {
+      "type": "object",
+      "description": "External MCP servers available for sentient-core",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "source", "package", "command", "auth_type", "capabilities"],
+        "properties": {
+          "name": { "type": "string" },
+          "version": { "type": "string" },
+          "description": { "type": "string" },
+          "source": { "type": "string" },
+          "package": { "type": "string" },
+          "command": { "type": "array", "items": { "type": "string" } },
+          "auth_type": { "type": "string" },
+          "auth_env": { "type": "string" },
+          "auth_provider": { "type": "string" },
+          "tools": { "type": "array", "items": { "type": "string" } },
+          "capabilities": { "type": "array", "items": { "type": "string" } },
+          "category": { "type": "string" }
+        }
+      }
+    },
     "stats": {
       "type": "object",
       "properties": {
         "total_nerves": { "type": "integer" },
         "total_adapters": { "type": "integer" },
-        "total_connectors": { "type": "integer" }
+        "total_connectors": { "type": "integer" },
+        "total_mcps": { "type": "integer" }
       }
     },
     "leaderboard": {

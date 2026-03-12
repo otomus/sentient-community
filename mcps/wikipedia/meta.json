@@ -1,0 +1,12 @@
+{
+  "name": "wikipedia",
+  "version": "1.0.0",
+  "description": "Wikipedia encyclopedia — search articles and retrieve full content from Wikipedia",
+  "source": "npm",
+  "package": "wikipedia-mcp",
+  "command": ["npx", "-y", "wikipedia-mcp"],
+  "auth_type": "none",
+  "tools": ["search_wikipedia", "get_article"],
+  "capabilities": ["knowledge", "facts", "history", "science", "biography", "encyclopedia"],
+  "category": "knowledge"
+}

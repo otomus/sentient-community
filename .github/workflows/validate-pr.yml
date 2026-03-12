@@ -54,7 +54,7 @@ jobs:
 
           if [ "$ERRORS" -ne 0 ]; then
             echo ""
-            echo "Only connectors/ can be modified by community PRs."
+            echo "Only connectors/, tools/, and mcps/ can be modified by community PRs."
             echo "See CONTRIBUTING.md for details."
             exit 1
           fi
@@ -63,5 +63,5 @@ jobs:
         run: python scripts/validate.py
 
       - name: Run secret scan
-        run: python scripts/check_secrets.py nerves/ adapters/ connectors/
+        run: python scripts/check_secrets.py nerves/ adapters/ connectors/ tools/ mcps/
 

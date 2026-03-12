@@ -1,0 +1,12 @@
+{
+  "name": "chrono",
+  "version": "1.0.0",
+  "description": "Time and timezone utilities — get current time, convert timezones, add/subtract/diff/format dates",
+  "source": "npm",
+  "package": "@jmoak/chrono-mcp",
+  "command": ["npx", "-y", "@jmoak/chrono-mcp"],
+  "auth_type": "none",
+  "tools": ["get_current_time", "convert_timezone", "add_time", "subtract_time", "diff_time", "format_time"],
+  "capabilities": ["time", "timezone", "date", "clock", "schedule"],
+  "category": "utilities"
+}

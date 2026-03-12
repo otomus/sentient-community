@@ -1,0 +1,12 @@
+{
+  "name": "rss_reader",
+  "version": "1.0.0",
+  "description": "RSS feed reader — subscribe to feeds, list subscriptions, and read articles from RSS sources",
+  "source": "npm",
+  "package": "rss-reader-mcp",
+  "command": ["npx", "-y", "rss-reader-mcp"],
+  "auth_type": "none",
+  "tools": ["subscribe_feed", "list_feeds", "get_articles", "get_article_content"],
+  "capabilities": ["news", "rss", "feeds", "articles", "blog"],
+  "category": "news"
+}

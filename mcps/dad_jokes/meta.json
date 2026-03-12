@@ -1,0 +1,12 @@
+{
+  "name": "dad_jokes",
+  "version": "1.0.0",
+  "description": "Dad jokes generator — generate, fetch random, rate, and categorize dad jokes",
+  "source": "npm",
+  "package": "dad-jokes-mcp-server",
+  "command": ["npx", "-y", "dad-jokes-mcp-server"],
+  "auth_type": "none",
+  "tools": ["generate_joke", "random_joke", "rate_joke", "get_categories"],
+  "capabilities": ["jokes", "humor", "funny", "entertainment"],
+  "category": "entertainment"
+}

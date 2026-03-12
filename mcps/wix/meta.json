@@ -1,0 +1,13 @@
+{
+  "name": "wix",
+  "version": "1.0.0",
+  "description": "Wix platform — search documentation, SDK references, and call Wix site APIs for website building",
+  "source": "npm",
+  "package": "@wix/mcp",
+  "command": ["npx", "-y", "@wix/mcp", "--experimental=WIX_API"],
+  "auth_type": "oauth2",
+  "auth_provider": "wix",
+  "tools": ["SearchWixWDSDocumentation", "SearchWixRESTDocumentation", "SearchWixSDKDocumentation", "SearchBuildAppsDocumentation", "SearchWixHeadlessDocumentation", "SearchWixVeloDocumentation", "WixBusinessFlowsDocumentation", "SearchWixCLIDocumentation", "CallWixSiteAPI"],
+  "capabilities": ["wix", "eml", "wix_design_system", "wix_sdk", "wix_api", "site_creation", "theme", "components"],
+  "category": "developer"
+}

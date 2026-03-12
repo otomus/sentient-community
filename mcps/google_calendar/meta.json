@@ -1,0 +1,13 @@
+{
+  "name": "google_calendar",
+  "version": "1.0.0",
+  "description": "Google Calendar — create events, list schedules, manage reminders",
+  "source": "npm",
+  "package": "@anthropic-ai/google-calendar-mcp",
+  "command": ["npx", "-y", "@anthropic-ai/google-calendar-mcp"],
+  "auth_type": "oauth2",
+  "auth_provider": "google",
+  "tools": [],
+  "capabilities": ["schedule", "reminder", "calendar", "event"],
+  "category": "productivity"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "GitHub integration — repos, issues, pull requests, and code search",
+  "source": "npm",
+  "package": "@anthropic-ai/github-mcp",
+  "command": ["npx", "-y", "@anthropic-ai/github-mcp"],
+  "auth_type": "api_key",
+  "auth_env": "GITHUB_TOKEN",
+  "tools": [],
+  "capabilities": ["git", "code", "issue", "pull_request"],
+  "category": "developer"
+}

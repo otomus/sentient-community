@@ -205,6 +205,74 @@ def validate_adapter(adapter_dir: str) -> list[str]:
     return errors
 
 
+def validate_tool(tool_dir: str) -> list[str]:
+    """Validate a community tool directory."""
+    errors = []
+    name = os.path.basename(tool_dir)
+
+    # meta.json must exist and validate against schema
+    meta_path = os.path.join(tool_dir, "meta.json")
+    if not os.path.exists(meta_path):
+        errors.append(f"  {name}: missing meta.json")
+    else:
+        meta = load_json(meta_path)
+        if meta is not None:
+            schema = load_schema("tool_meta.schema.json")
+            errors.extend(validate_json_against_schema(meta, schema, meta_path))
+
+    # Implementation files listed in meta.json must exist and be safe
+    meta = load_json(meta_path) if os.path.exists(meta_path) else None
+    implementations = meta.get("implementations", {}) if meta else {}
+    if not implementations:
+        errors.append(f"  {name}: no implementations listed in meta.json")
+    for lang, impl_file in implementations.items():
+        impl_path = os.path.join(tool_dir, impl_file)
+        if not os.path.exists(impl_path):
+            errors.append(f"  {name}: missing {lang} implementation: {impl_file}")
+        else:
+            errors.extend(check_tool_safety(impl_path))
+
+    # tests.json must exist and validate
+    tests_path = os.path.join(tool_dir, "tests.json")
+    if not os.path.exists(tests_path):
+        errors.append(f"  {name}: missing tests.json")
+    else:
+        tests = load_json(tests_path)
+        if tests is not None:
+            tests_schema = load_schema("tool_tests.schema.json")
+            errors.extend(validate_json_against_schema(tests, tests_schema, tests_path))
+
+    # README.md must exist
+    readme_path = os.path.join(tool_dir, "README.md")
+    if not os.path.exists(readme_path):
+        errors.append(f"  {name}: missing README.md")
+
+    return errors
+
+
+def validate_mcp(mcp_dir: str) -> list[str]:
+    """Validate an external MCP server directory."""
+    errors = []
+    name = os.path.basename(mcp_dir)
+
+    # meta.json must exist and validate against schema
+    meta_path = os.path.join(mcp_dir, "meta.json")
+    if not os.path.exists(meta_path):
+        errors.append(f"  {name}: missing meta.json")
+    else:
+        meta = load_json(meta_path)
+        if meta is not None:
+            schema = load_schema("mcp_meta.schema.json")
+            errors.extend(validate_json_against_schema(meta, schema, meta_path))
+
+    # README.md must exist
+    readme_path = os.path.join(mcp_dir, "README.md")
+    if not os.path.exists(readme_path):
+        errors.append(f"  {name}: missing README.md")
+
+    return errors
+
+
 def validate_connector(connector_dir: str) -> list[str]:
     """Validate a connector directory."""
     errors = []
@@ -267,6 +335,24 @@ def main():
             if os.path.isdir(connector_dir):
                 print(f"Validating connector: {name}")
                 errors.extend(validate_connector(connector_dir))
+
+    # Validate all tools
+    tools_dir = os.path.join(REPO_ROOT, "tools")
+    if os.path.isdir(tools_dir):
+        for name in sorted(os.listdir(tools_dir)):
+            tool_dir = os.path.join(tools_dir, name)
+            if os.path.isdir(tool_dir):
+                print(f"Validating tool: {name}")
+                errors.extend(validate_tool(tool_dir))
+
+    # Validate all external MCPs
+    mcps_dir = os.path.join(REPO_ROOT, "mcps")
+    if os.path.isdir(mcps_dir):
+        for name in sorted(os.listdir(mcps_dir)):
+            mcp_dir = os.path.join(mcps_dir, name)
+            if os.path.isdir(mcp_dir):
+                print(f"Validating mcp: {name}")
+                errors.extend(validate_mcp(mcp_dir))
 
     if errors:
         print(f"\nVALIDATION FAILED — {len(errors)} error(s):")

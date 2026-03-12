@@ -1,0 +1,12 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Playwright browser automation — navigate, click, fill forms, take screenshots, and scrape web pages",
+  "source": "npm",
+  "package": "@playwright/mcp",
+  "command": ["npx", "-y", "@playwright/mcp@latest"],
+  "auth_type": "none",
+  "tools": ["navigate", "click", "fill", "screenshot", "get_text", "evaluate"],
+  "capabilities": ["browser", "screenshot", "web_scrape", "automation"],
+  "category": "automation"
+}

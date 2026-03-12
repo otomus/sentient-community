@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-12T07:02:06.932954+00:00",
+  "generated_at": "2026-03-12T17:04:12.106017+00:00",
   "nerves": {},
   "adapters": {},
   "connectors": {
@@ -144,10 +144,521 @@
       ]
     }
   },
+  "tools": {
+    "joke_fetcher": {
+      "name": "joke_fetcher",
+      "version": "1.0.0",
+      "description": "Fetch random jokes from a free API \u2014 supports categories like programming, general, and knock-knock",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "entertainment",
+      "tags": [
+        "joke",
+        "humor",
+        "funny",
+        "random",
+        "entertainment"
+      ],
+      "parameters": [
+        {
+          "name": "category",
+          "type": "string",
+          "description": "Joke category: Any, Programming, Misc, Pun, Spooky, Christmas",
+          "required": false,
+          "default": "Any"
+        }
+      ],
+      "requires_api_key": false
+    }
+  },
+  "mcps": {
+    "airbnb": {
+      "name": "airbnb",
+      "version": "1.0.0",
+      "description": "Airbnb listing search \u2014 search vacation rentals and get listing details from Airbnb",
+      "source": "npm",
+      "package": "@openbnb/mcp-server-airbnb",
+      "command": [
+        "npx",
+        "-y",
+        "@openbnb/mcp-server-airbnb"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "search_listings",
+        "get_listing_details"
+      ],
+      "capabilities": [
+        "travel",
+        "airbnb",
+        "accommodation",
+        "vacation",
+        "rental"
+      ],
+      "category": "travel"
+    },
+    "chrono": {
+      "name": "chrono",
+      "version": "1.0.0",
+      "description": "Time and timezone utilities \u2014 get current time, convert timezones, add/subtract/diff/format dates",
+      "source": "npm",
+      "package": "@jmoak/chrono-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "@jmoak/chrono-mcp"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "get_current_time",
+        "convert_timezone",
+        "add_time",
+        "subtract_time",
+        "diff_time",
+        "format_time"
+      ],
+      "capabilities": [
+        "time",
+        "timezone",
+        "date",
+        "clock",
+        "schedule"
+      ],
+      "category": "utilities"
+    },
+    "coincap": {
+      "name": "coincap",
+      "version": "1.0.0",
+      "description": "CoinCap cryptocurrency prices \u2014 get live crypto asset prices and list available assets",
+      "source": "npm",
+      "package": "coincap-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "coincap-mcp"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "get_price",
+        "list_assets"
+      ],
+      "capabilities": [
+        "crypto",
+        "bitcoin",
+        "price",
+        "finance",
+        "coin"
+      ],
+      "category": "finance"
+    },
+    "context7": {
+      "name": "context7",
+      "version": "1.0.0",
+      "description": "Context7 library documentation \u2014 resolve library IDs and fetch up-to-date API docs for programming libraries",
+      "source": "npm",
+      "package": "@upstash/context7-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "resolve-library-id",
+        "get-library-docs"
+      ],
+      "capabilities": [
+        "code_docs",
+        "library_docs",
+        "api_reference",
+        "programming"
+      ],
+      "category": "developer"
+    },
+    "dad_jokes": {
+      "name": "dad_jokes",
+      "version": "1.0.0",
+      "description": "Dad jokes generator \u2014 generate, fetch random, rate, and categorize dad jokes",
+      "source": "npm",
+      "package": "dad-jokes-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "dad-jokes-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "generate_joke",
+        "random_joke",
+        "rate_joke",
+        "get_categories"
+      ],
+      "capabilities": [
+        "jokes",
+        "humor",
+        "funny",
+        "entertainment"
+      ],
+      "category": "entertainment"
+    },
+    "duckduckgo": {
+      "name": "duckduckgo",
+      "version": "1.0.0",
+      "description": "DuckDuckGo search engine \u2014 web search and content fetching without API keys",
+      "source": "npm",
+      "package": "duckduckgo-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "duckduckgo-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "search",
+        "fetch_content"
+      ],
+      "capabilities": [
+        "web_search",
+        "knowledge",
+        "facts",
+        "news",
+        "lookup"
+      ],
+      "category": "search"
+    },
+    "fetch": {
+      "name": "fetch",
+      "version": "1.0.0",
+      "description": "URL content fetcher \u2014 fetch and convert web page content to clean markdown",
+      "source": "npm",
+      "package": "@kazuph/mcp-fetch",
+      "command": [
+        "npx",
+        "-y",
+        "@kazuph/mcp-fetch"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "fetch"
+      ],
+      "capabilities": [
+        "url_fetch",
+        "web_content",
+        "markdown",
+        "scrape"
+      ],
+      "category": "utilities"
+    },
+    "github": {
+      "name": "github",
+      "version": "1.0.0",
+      "description": "GitHub integration \u2014 repos, issues, pull requests, and code search",
+      "source": "npm",
+      "package": "@anthropic-ai/github-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "@anthropic-ai/github-mcp"
+      ],
+      "auth_type": "api_key",
+      "tools": [],
+      "capabilities": [
+        "git",
+        "code",
+        "issue",
+        "pull_request"
+      ],
+      "category": "developer",
+      "auth_env": "GITHUB_TOKEN"
+    },
+    "google_calendar": {
+      "name": "google_calendar",
+      "version": "1.0.0",
+      "description": "Google Calendar \u2014 create events, list schedules, manage reminders",
+      "source": "npm",
+      "package": "@anthropic-ai/google-calendar-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "@anthropic-ai/google-calendar-mcp"
+      ],
+      "auth_type": "oauth2",
+      "tools": [],
+      "capabilities": [
+        "schedule",
+        "reminder",
+        "calendar",
+        "event"
+      ],
+      "category": "productivity",
+      "auth_provider": "google"
+    },
+    "home_assistant": {
+      "name": "home_assistant",
+      "version": "1.0.0",
+      "description": "Home Assistant smart home control \u2014 manage lights, thermostat, and IoT device automation",
+      "source": "npm",
+      "package": "homeassistant-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "homeassistant-mcp"
+      ],
+      "auth_type": "api_key",
+      "tools": [],
+      "capabilities": [
+        "smart_home",
+        "lights",
+        "thermostat",
+        "automation"
+      ],
+      "category": "iot",
+      "auth_env": "HA_TOKEN"
+    },
+    "notion": {
+      "name": "notion",
+      "version": "1.0.0",
+      "description": "Notion workspace \u2014 pages, databases, notes, and wiki management",
+      "source": "npm",
+      "package": "notion-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "notion-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [],
+      "capabilities": [
+        "notes",
+        "wiki",
+        "database",
+        "knowledge_base"
+      ],
+      "category": "productivity",
+      "auth_env": "NOTION_API_KEY"
+    },
+    "open_library": {
+      "name": "open_library",
+      "version": "1.0.0",
+      "description": "Open Library book search \u2014 find books by title, look up authors, and get book cover images",
+      "source": "npm",
+      "package": "mcp-open-library",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-open-library"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "get_book_by_title",
+        "get_authors_by_name",
+        "get_author_info",
+        "get_book_cover"
+      ],
+      "capabilities": [
+        "books",
+        "authors",
+        "literature",
+        "reading",
+        "library"
+      ],
+      "category": "knowledge"
+    },
+    "playwright": {
+      "name": "playwright",
+      "version": "1.0.0",
+      "description": "Playwright browser automation \u2014 navigate, click, fill forms, take screenshots, and scrape web pages",
+      "source": "npm",
+      "package": "@playwright/mcp",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "navigate",
+        "click",
+        "fill",
+        "screenshot",
+        "get_text",
+        "evaluate"
+      ],
+      "capabilities": [
+        "browser",
+        "screenshot",
+        "web_scrape",
+        "automation"
+      ],
+      "category": "automation"
+    },
+    "rss_reader": {
+      "name": "rss_reader",
+      "version": "1.0.0",
+      "description": "RSS feed reader \u2014 subscribe to feeds, list subscriptions, and read articles from RSS sources",
+      "source": "npm",
+      "package": "rss-reader-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "rss-reader-mcp"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "subscribe_feed",
+        "list_feeds",
+        "get_articles",
+        "get_article_content"
+      ],
+      "capabilities": [
+        "news",
+        "rss",
+        "feeds",
+        "articles",
+        "blog"
+      ],
+      "category": "news"
+    },
+    "slack": {
+      "name": "slack",
+      "version": "1.0.0",
+      "description": "Slack messaging \u2014 send messages, manage channels, and notifications",
+      "source": "npm",
+      "package": "@anthropic-ai/slack-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "@anthropic-ai/slack-mcp"
+      ],
+      "auth_type": "oauth2",
+      "tools": [],
+      "capabilities": [
+        "message",
+        "notify",
+        "channel",
+        "team"
+      ],
+      "category": "communication",
+      "auth_provider": "slack"
+    },
+    "todoist": {
+      "name": "todoist",
+      "version": "1.0.0",
+      "description": "Todoist task management \u2014 to-do lists, project tracking, and task reminders",
+      "source": "npm",
+      "package": "todoist-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "todoist-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [],
+      "capabilities": [
+        "todo",
+        "task",
+        "reminder",
+        "checklist"
+      ],
+      "category": "productivity",
+      "auth_env": "TODOIST_API_KEY"
+    },
+    "wikipedia": {
+      "name": "wikipedia",
+      "version": "1.0.0",
+      "description": "Wikipedia encyclopedia \u2014 search articles and retrieve full content from Wikipedia",
+      "source": "npm",
+      "package": "wikipedia-mcp",
+      "command": [
+        "npx",
+        "-y",
+        "wikipedia-mcp"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "search_wikipedia",
+        "get_article"
+      ],
+      "capabilities": [
+        "knowledge",
+        "facts",
+        "history",
+        "science",
+        "biography",
+        "encyclopedia"
+      ],
+      "category": "knowledge"
+    },
+    "wix": {
+      "name": "wix",
+      "version": "1.0.0",
+      "description": "Wix platform \u2014 search documentation, SDK references, and call Wix site APIs for website building",
+      "source": "npm",
+      "package": "@wix/mcp",
+      "command": [
+        "npx",
+        "-y",
+        "@wix/mcp",
+        "--experimental=WIX_API"
+      ],
+      "auth_type": "oauth2",
+      "tools": [
+        "SearchWixWDSDocumentation",
+        "SearchWixRESTDocumentation",
+        "SearchWixSDKDocumentation",
+        "SearchBuildAppsDocumentation",
+        "SearchWixHeadlessDocumentation",
+        "SearchWixVeloDocumentation",
+        "WixBusinessFlowsDocumentation",
+        "SearchWixCLIDocumentation",
+        "CallWixSiteAPI"
+      ],
+      "capabilities": [
+        "wix",
+        "eml",
+        "wix_design_system",
+        "wix_sdk",
+        "wix_api",
+        "site_creation",
+        "theme",
+        "components"
+      ],
+      "category": "developer",
+      "auth_provider": "wix"
+    },
+    "youtube_transcript": {
+      "name": "youtube_transcript",
+      "version": "1.0.0",
+      "description": "YouTube transcript extractor \u2014 retrieve video transcripts, captions, and subtitles from YouTube",
+      "source": "npm",
+      "package": "mcp-server-youtube-transcript",
+      "command": [
+        "npx",
+        "-y",
+        "mcp-server-youtube-transcript"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "get_transcript"
+      ],
+      "capabilities": [
+        "youtube",
+        "video",
+        "transcript",
+        "captions",
+        "subtitles"
+      ],
+      "category": "media"
+    }
+  },
   "stats": {
     "total_nerves": 0,
     "total_adapters": 0,
-    "total_connectors": 2
+    "total_connectors": 2,
+    "total_tools": 1,
+    "total_mcps": 19
   },
   "leaderboard": {}
 }

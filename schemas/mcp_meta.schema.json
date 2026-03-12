@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "External MCP Server Meta",
+  "description": "Metadata for external MCP servers available from npm or GitHub",
+  "type": "object",
+  "required": ["name", "version", "description", "source", "package", "command", "auth_type", "tools", "capabilities", "category"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Server name — lowercase, underscores only"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Clear description of what this MCP server provides"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["npm", "github"],
+      "description": "Where the package is hosted"
+    },
+    "package": {
+      "type": "string",
+      "minLength": 1,
+      "description": "npm package name or GitHub repo URL"
+    },
+    "command": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Command to launch the MCP server (e.g., ['npx', '-y', 'package-name'])"
+    },
+    "auth_type": {
+      "type": "string",
+      "enum": ["none", "api_key", "oauth2"],
+      "description": "Authentication method required"
+    },
+    "auth_env": {
+      "type": "string",
+      "description": "Environment variable name for the API key (when auth_type is api_key)"
+    },
+    "auth_provider": {
+      "type": "string",
+      "description": "OAuth2 provider name (when auth_type is oauth2)"
+    },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of tool names exposed by this server"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Keywords for runtime matching — used by acquire_tool() scoring"
+    },
+    "category": {
+      "type": "string",
+      "minLength": 2,
+      "description": "Server category (e.g., search, knowledge, entertainment, finance)"
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "github": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "fetch",
+  "version": "1.0.0",
+  "description": "URL content fetcher — fetch and convert web page content to clean markdown",
+  "source": "npm",
+  "package": "@kazuph/mcp-fetch",
+  "command": ["npx", "-y", "@kazuph/mcp-fetch"],
+  "auth_type": "none",
+  "tools": ["fetch"],
+  "capabilities": ["url_fetch", "web_content", "markdown", "scrape"],
+  "category": "utilities"
+}
