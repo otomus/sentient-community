@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tool Meta",
+  "description": "MCP tool metadata for community-contributed tools",
+  "type": "object",
+  "required": ["name", "version", "description", "implementations", "author", "category", "tags", "parameters"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Tool name — lowercase, underscores only"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Clear description used for runtime matching — be specific"
+    },
+    "implementations": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": ["python", "go", "node", "java", "rust"]
+      },
+      "additionalProperties": {
+        "type": "string",
+        "description": "File path relative to the tool directory (e.g., 'tool.py', 'tool.go')"
+      },
+      "description": "Map of language to implementation file. At least one required. Servers load the implementation matching their runtime."
+    },
+    "author": {
+      "type": "object",
+      "required": ["github"],
+      "properties": {
+        "github": { "type": "string" },
+        "name": { "type": "string" }
+      }
+    },
+    "category": {
+      "type": "string",
+      "minLength": 2,
+      "description": "Tool category (e.g., finance, weather, entertainment, utilities)"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Keywords for runtime matching — acquire_tool() scores against these"
+    },
+    "parameters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "description"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string", "enum": ["string", "number", "boolean", "object", "array"] },
+          "description": { "type": "string" },
+          "required": { "type": "boolean", "default": true },
+          "default": {}
+        }
+      }
+    },
+    "requires_api_key": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this tool needs an external API key to function"
+    }
+  }
+}

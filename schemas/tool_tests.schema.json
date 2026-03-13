@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tool Test Cases",
+  "description": "Test cases for community MCP tools",
+  "type": "array",
+  "minItems": 2,
+  "items": {
+    "type": "object",
+    "required": ["description", "args"],
+    "properties": {
+      "description": {
+        "type": "string",
+        "minLength": 5,
+        "description": "What this test validates"
+      },
+      "args": {
+        "type": "object",
+        "description": "Keyword arguments passed to run()"
+      },
+      "expected_keywords": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Substrings expected in the output (at least one must match)"
+      },
+      "expect_error": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether the tool should return an error for this input"
+      }
+    }
+  }
+}

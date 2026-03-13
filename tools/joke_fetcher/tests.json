@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Fetch a random joke from any category",
+    "args": {},
+    "expected_keywords": ["joke", "setup", "delivery", "Error"]
+  },
+  {
+    "description": "Fetch a programming joke",
+    "args": { "category": "Programming" },
+    "expected_keywords": ["joke", "setup", "delivery", "Error"]
+  },
+  {
+    "description": "Invalid category returns error gracefully",
+    "args": { "category": "NotACategory" },
+    "expect_error": true
+  }
+]
