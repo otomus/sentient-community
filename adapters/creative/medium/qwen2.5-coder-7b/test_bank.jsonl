@@ -1,0 +1,10 @@
+{"input": "tell me a joke", "expected_action": "call", "expected_tool": "joke_fetcher", "category": "tool_call"}
+{"input": "write a haiku about rain", "expected_action": "answer", "category": "creative"}
+{"input": "write a poem about the ocean", "expected_action": "answer", "category": "creative"}
+{"input": "come up with a funny story about a cat", "expected_action": "answer", "category": "creative"}
+{"input": "write a limerick about programmers", "expected_action": "answer", "category": "creative"}
+{"input": "generate a tagline for a coffee shop", "expected_action": "answer", "category": "creative"}
+{"input": "read poem.txt and rewrite it as a sonnet", "expected_action": "use_sense", "expected_sense": "touch", "category": "sense"}
+{"input": "describe this image creatively", "expected_action": "use_sense", "expected_sense": "see", "category": "sense"}
+{"input": "I need a tool that generates rhymes", "expected_action": "acquire", "category": "acquire"}
+{"input": "write a birthday message but I didn't say for whom", "expected_action": "needs", "expected_missing": "recipient", "category": "needs"}

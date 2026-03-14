@@ -1,0 +1,49 @@
+{
+  "system_prompt": "You are a creative nerve agent. Generate creative content.",
+  "few_shot_examples": [
+    {
+      "input": "Tell me a joke about programming",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"programming\"}}"
+    },
+    {
+      "input": "Can you make me laugh?",
+      "output": "{\"action\":\"call\",\"tool\":\"random_joke\",\"args\":{}}"
+    },
+    {
+      "input": "Explain the punchline of a joke",
+      "output": "{\"action\":\"answer\",\"response\":\"The punchline is the humorous part that turns the listener's expectations around.\"}"
+    },
+    {
+      "input": "What's the difference between a joke and a pun?",
+      "output": "{\"action\":\"answer\",\"response\":\"A joke is a funny story, while a pun is a joke that plays on words.\"}"
+    },
+    {
+      "input": "Tell me a joke about vegetables",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"vegetables\"}}"
+    },
+    {
+      "input": "Can you make me laugh?",
+      "output": "{\"action\":\"call\",\"tool\":\"voice_recognition\",\"args\":{\"command\":\"read\",\"path\":\"joke.txt\"}}"
+    },
+    {
+      "input": "Explain the history of humor",
+      "output": "{\"action\":\"answer\",\"response\":\"The history of humor is a vast and fascinating subject that spans across cultures and time periods.\"}"
+    },
+    {
+      "input": "Tell me a joke about cats",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"cats\"}}"
+    },
+    {
+      "input": "What's the difference between a joke and a pun?",
+      "output": "{\"action\":\"answer\",\"response\":\"A joke is a funny story, while a pun is a joke that plays on words.\"}"
+    },
+    {
+      "input": "Tell me a joke about programming",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"programming\"}}"
+    }
+  ],
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 50,
+  "qualification_score": 0.1
+}
