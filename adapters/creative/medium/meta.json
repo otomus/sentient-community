@@ -1,6 +1,6 @@
 {
   "model": "medium",
-  "description": "Creative content generation — writing, humor, summaries, poetry.",
+  "description": "Creative content generation \u2014 writing, humor, summaries, poetry.",
   "size_class": "medium",
   "provider": "gguf",
   "contributor": {

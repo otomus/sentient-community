@@ -1,25 +1,49 @@
 {
-  "system_prompt": "You are a creative nerve agent. Generate creative content.\n\nRULES:\n1. Check if a tool can help first (data, context, inspiration).\n2. Use \"acquire\" if no tool fits.\n3. Use \"answer\" to write your creative response when no tool is needed.\n\nRESPONSE FORMAT:\nOutput ONLY one of these JSON objects. No text before or after. No explanation.\n\n{\"action\":\"call\",\"tool\":\"TOOL_NAME\",\"args\":{\"PARAM\":\"VALUE\"}}\n{\"action\":\"use_sense\",\"sense\":\"SENSE_NAME\",\"args\":{\"PARAM\":\"VALUE\"}}\n{\"action\":\"acquire\",\"need\":\"what tool is needed\"}\n{\"action\":\"answer\",\"response\":\"your creative response\"}",
+  "system_prompt": "You are a creative nerve agent. Generate creative content.",
   "few_shot_examples": [
     {
-      "input": "tell me a joke",
-      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"Any\"}}"
+      "input": "Tell me a joke about programming",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"programming\"}}"
     },
     {
-      "input": "write a haiku about rain",
-      "output": "{\"action\":\"answer\",\"response\":\"Drops tap on the leaves\\nA rhythm the earth remembers\\nGreen drinks from the sky\"}"
+      "input": "Can you make me laugh?",
+      "output": "{\"action\":\"call\",\"tool\":\"random_joke\",\"args\":{}}"
     },
     {
-      "input": "read this poem.txt and rewrite it as a limerick",
-      "output": "{\"action\":\"use_sense\",\"sense\":\"touch\",\"args\":{\"command\":\"read\",\"path\":\"poem.txt\"}}"
+      "input": "Explain the punchline of a joke",
+      "output": "{\"action\":\"answer\",\"response\":\"The punchline is the humorous part that turns the listener's expectations around.\"}"
     },
     {
-      "input": "I need a tool that generates rhymes",
-      "output": "{\"action\":\"acquire\",\"need\":\"rhyme generator tool\"}"
+      "input": "What's the difference between a joke and a pun?",
+      "output": "{\"action\":\"answer\",\"response\":\"A joke is a funny story, while a pun is a joke that plays on words.\"}"
+    },
+    {
+      "input": "Tell me a joke about vegetables",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"vegetables\"}}"
+    },
+    {
+      "input": "Can you make me laugh?",
+      "output": "{\"action\":\"call\",\"tool\":\"voice_recognition\",\"args\":{\"command\":\"read\",\"path\":\"joke.txt\"}}"
+    },
+    {
+      "input": "Explain the history of humor",
+      "output": "{\"action\":\"answer\",\"response\":\"The history of humor is a vast and fascinating subject that spans across cultures and time periods.\"}"
+    },
+    {
+      "input": "Tell me a joke about cats",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"cats\"}}"
+    },
+    {
+      "input": "What's the difference between a joke and a pun?",
+      "output": "{\"action\":\"answer\",\"response\":\"A joke is a funny story, while a pun is a joke that plays on words.\"}"
+    },
+    {
+      "input": "Tell me a joke about programming",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"programming\"}}"
     }
   ],
-  "temperature": 0.8,
+  "temperature": 0.7,
   "top_p": 0.95,
-  "max_tokens": 512,
-  "qualification_score": 0
+  "max_tokens": 50,
+  "qualification_score": 0.1
 }
