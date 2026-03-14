@@ -1,0 +1,49 @@
+{
+  "system_prompt": "You are a ROUTER. You never answer. You route every message to a nerve.",
+  "few_shot_examples": [
+    {
+      "input": "Can you make me laugh?",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"joke_nerve\",\"description\":\"generates and delivers a joke\"}"
+    },
+    {
+      "input": "Tell me a joke about programming",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"programming_joke_nerve\",\"description\":\"generates a programming-related joke\"}"
+    },
+    {
+      "input": "Tell me a joke about vegetables",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"vegetable_joke_nerve\",\"description\":\"generates a vegetable-related joke\"}"
+    },
+    {
+      "input": "What's the capital of France?",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"geography_nerve\",\"description\":\"answers geography questions\"}"
+    },
+    {
+      "input": "Who am I?",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"user_context_nerve\",\"description\":\"retrieves and presents information about the user\"}"
+    },
+    {
+      "input": "What's the weather in Rehovot, Israel?",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"weather_nerve\",\"description\":\"provides weather information\"}"
+    },
+    {
+      "input": "Good evening",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"greeting_nerve\",\"description\":\"provides a greeting response\"}"
+    },
+    {
+      "input": "Create one",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"write\",\"description\":\"helps with writing tasks\"}"
+    },
+    {
+      "input": "Analyze this image",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"sight\",\"description\":\"analyzes and describes an image\"}"
+    },
+    {
+      "input": "Transcribe this audio",
+      "output": "{\"action\":\"synthesize_nerve\",\"name\":\"hearing\",\"description\":\"transcribes audio to text\"}"
+    }
+  ],
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "max_tokens": 512,
+  "qualification_score": 0.1
+}
