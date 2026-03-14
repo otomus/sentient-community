@@ -1,0 +1,14 @@
+{
+  "model": "qwen2.5-coder-7b",
+  "description": "Router \u2014 reads user messages and routes to the right nerve. Never answers directly.",
+  "size_class": "medium",
+  "provider": "gguf",
+  "contributor": {
+    "github": "otomus"
+  },
+  "capabilities": {
+    "json_mode": true,
+    "tool_calling": false,
+    "max_context": 8192
+  }
+}
