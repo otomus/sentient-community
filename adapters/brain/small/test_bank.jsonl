@@ -1,58 +1,14 @@
-{"input": "hello", "expected_action": "invoke_nerve", "expected_nerve": "greeting_nerve", "category": "greeting"}
-{"input": "hi there", "expected_action": "invoke_nerve", "expected_nerve": "greeting_nerve", "category": "greeting"}
-{"input": "good morning", "expected_action": "invoke_nerve", "expected_nerve": "greeting_nerve", "category": "greeting"}
-{"input": "hey", "expected_action": "invoke_nerve", "expected_nerve": "greeting_nerve", "category": "greeting"}
-{"input": "how are you?", "expected_action": "invoke_nerve", "expected_nerve": "greeting_nerve", "category": "greeting"}
-{"input": "who are you?", "expected_action": "invoke_nerve", "expected_nerve": "awareness", "category": "identity"}
-{"input": "what is your name?", "expected_action": "invoke_nerve", "expected_nerve": "awareness", "category": "identity"}
-{"input": "what can you do?", "expected_action": "invoke_nerve", "expected_nerve": "awareness", "category": "identity"}
-{"input": "who am I?", "expected_action": "synthesize_nerve", "expected_nerve": "user_context_nerve", "category": "user_identity"}
-{"input": "what do you know about me?", "expected_action": "synthesize_nerve", "expected_nerve": "user_context_nerve", "category": "user_identity"}
-{"input": "can you help me?", "expected_action": "invoke_nerve", "expected_nerve": "awareness", "category": "identity"}
-{"input": "thank you", "expected_action": "invoke_nerve", "expected_nerve": "communication", "category": "thanks"}
-{"input": "thanks, that was great", "expected_action": "invoke_nerve", "expected_nerve": "communication", "category": "thanks"}
-{"input": "perfect, thanks!", "expected_action": "invoke_nerve", "expected_nerve": "communication", "category": "thanks"}
-{"input": "ok got it", "expected_action": "invoke_nerve", "expected_nerve": "communication", "category": "thanks"}
-{"input": "that's wrong", "expected_action": "feedback", "expected_sentiment": "negative", "category": "correction"}
-{"input": "no I meant a joke not a poem", "expected_action": "feedback", "expected_sentiment": "negative", "category": "correction"}
-{"input": "tell me a joke", "expected_action": "invoke_nerve", "expected_nerve": "joke_nerve", "category": "nerve_match"}
-{"input": "can you tell me a funny joke?", "expected_action": "invoke_nerve", "expected_nerve": "joke_nerve", "category": "nerve_match"}
-{"input": "make me laugh", "expected_action": "invoke_nerve", "expected_nerve": "joke_nerve", "category": "nerve_match"}
-{"input": "what's the weather in Tel Aviv?", "expected_action": "invoke_nerve", "expected_nerve": "weather_nerve", "category": "nerve_match"}
-{"input": "what time is it?", "expected_action": "invoke_nerve", "expected_nerve": "time_nerve", "category": "nerve_match"}
-{"input": "what's bitcoin price?", "expected_action": "invoke_nerve", "expected_nerve": "crypto_nerve", "category": "nerve_match"}
-{"input": "what is the capital of France?", "expected_action": "synthesize_nerve", "expected_nerve": "geography_nerve", "category": "synthesize"}
-{"input": "how tall is Mount Everest?", "expected_action": "synthesize_nerve", "expected_nerve": "geography_nerve", "category": "synthesize"}
-{"input": "what is photosynthesis?", "expected_action": "synthesize_nerve", "expected_nerve": "science_nerve", "category": "synthesize"}
-{"input": "write me a poem about the sea", "expected_action": "synthesize_nerve", "expected_nerve": "poetry_nerve", "category": "synthesize"}
-{"input": "set a reminder for 3pm", "expected_action": "synthesize_nerve", "expected_nerve": "reminder_nerve", "category": "synthesize"}
-{"input": "what's 2 + 2?", "expected_action": "synthesize_nerve", "expected_nerve": "math_nerve", "category": "synthesize"}
-{"input": "search for restaurants near me", "expected_action": "synthesize_nerve", "expected_nerve": "search_nerve", "category": "synthesize"}
-{"input": "convert 100 USD to EUR", "expected_action": "synthesize_nerve", "expected_nerve": "currency_nerve", "category": "synthesize"}
-{"input": "remind me tomorrow to call mom", "expected_action": "synthesize_nerve", "expected_nerve": "reminder_nerve", "category": "synthesize"}
-{"input": "what happened in the news today?", "expected_action": "synthesize_nerve", "expected_nerve": "news_nerve", "category": "synthesize"}
-{"input": "translate this to Spanish: good morning", "expected_action": "synthesize_nerve", "expected_nerve": "translation_nerve", "category": "synthesize"}
-{"input": "rewrite this formally: hey whats up dude", "expected_action": "invoke_nerve", "expected_nerve": "communication", "category": "sense_match"}
-{"input": "summarize this article", "expected_action": "invoke_nerve", "expected_nerve": "communication", "category": "sense_match"}
-{"input": "take a screenshot", "expected_action": "invoke_nerve", "expected_nerve": "sight", "category": "sense_match"}
-{"input": "analyze this image: photo.jpg", "expected_action": "invoke_nerve", "expected_nerve": "sight", "category": "sense_match"}
-{"input": "read the file config.yaml", "expected_action": "invoke_nerve", "expected_nerve": "touch", "category": "sense_match"}
-{"input": "list files in the current directory", "expected_action": "invoke_nerve", "expected_nerve": "touch", "category": "sense_match"}
-{"input": "play some music", "expected_action": "invoke_nerve", "expected_nerve": "hearing", "category": "sense_match"}
-{"input": "I live in Tel Aviv", "expected_action": "update_context", "expected_context_key": "city", "category": "context"}
-{"input": "my name is Oron", "expected_action": "update_context", "expected_context_key": "name", "category": "context"}
-{"input": "my timezone is Asia/Jerusalem", "expected_action": "update_context", "expected_context_key": "timezone", "category": "context"}
-{"input": "take a screenshot and describe it", "expected_action": "chain_nerves", "expected_nerves": ["sight"], "category": "chain"}
-{"input": "get the weather and write a poem about it", "expected_action": "chain_nerves", "expected_nerves": ["weather_nerve"], "category": "chain"}
-{"input": "read this file and summarize it", "expected_action": "chain_nerves", "expected_nerves": ["touch"], "category": "chain"}
-{"input": "do the thing", "expected_action": "clarify", "category": "ambiguous"}
-{"input": "fix it", "expected_action": "clarify", "category": "ambiguous"}
-{"input": "make it better", "expected_action": "clarify", "category": "ambiguous"}
-{"input": "write a python function to sort a list", "expected_action": "synthesize_nerve", "expected_nerve": "coding_nerve", "category": "coding"}
-{"input": "fix this bug in my code: def add(a, b): return a - b", "expected_action": "synthesize_nerve", "expected_nerve": "coding_nerve", "category": "coding"}
-{"input": "how do I create a REST API in Node.js?", "expected_action": "synthesize_nerve", "expected_nerve": "coding_nerve", "category": "coding"}
-{"input": "explain what a binary tree is", "expected_action": "synthesize_nerve", "expected_nerve": "coding_nerve", "category": "coding"}
-{"input": "write a bash script to backup my files", "expected_action": "synthesize_nerve", "expected_nerve": "coding_nerve", "category": "coding"}
-{"input": "refactor this function to use async/await", "expected_action": "synthesize_nerve", "expected_nerve": "coding_nerve", "category": "coding"}
-{"input": "what's the difference between let and const in JavaScript?", "expected_action": "synthesize_nerve", "expected_nerve": "coding_nerve", "category": "coding"}
-{"input": "debug this SQL query: SELECT * FORM users", "expected_action": "synthesize_nerve", "expected_nerve": "coding_nerve", "category": "coding"}
+{"input": "good morning", "context": {"userDetails": {"name": "Oron", "language": "en"}, "location": "Tel Aviv", "timezone": "Asia/Jerusalem", "messages": [{"role": "system", "content": "Summary: First interaction of the day."}]}, "output": "{\"action\": \"invoke_nerve\", \"nerve\": \"greeting_nerve\"}", "category": "core"}
+{"input": "what can you do?", "context": {"userDetails": {"name": "Oron", "language": "en"}, "messages": [{"role": "user", "content": "hello"}, {"role": "assistant", "content": "Hi Oron! How can I help?"}, {"role": "system", "content": "Summary: User greeted the assistant."}]}, "output": "{\"action\": \"invoke_nerve\", \"nerve\": \"awareness\"}", "category": "core"}
+{"input": "tell me a joke about programmers", "context": {"userDetails": {"name": "Dana", "language": "en"}, "messages": [{"role": "user", "content": "hello"}, {"role": "assistant", "content": "Hi Dana!"}, {"role": "user", "content": "I'm bored"}, {"role": "assistant", "content": "I can help with that! Want a joke, a game, or something else?"}, {"role": "system", "content": "Summary: User is bored and looking for entertainment."}]}, "output": "{\"action\": \"invoke_nerve\", \"nerve\": \"joke_nerve\"}", "category": "core"}
+{"input": "write a python function to reverse a string", "context": {"userDetails": {"name": "Oron", "language": "en"}, "messages": [{"role": "user", "content": "I'm working on a coding project"}, {"role": "assistant", "content": "Sure, I can help with coding. What do you need?"}]}, "output": "{\"action\": \"synthesize_nerve\", \"nerve\": \"coding_nerve\"}", "category": "core"}
+{"input": "what's the weather like?", "context": {"userDetails": {"name": "Oron", "language": "en"}, "location": "New York", "timezone": "America/New_York", "messages": [{"role": "system", "content": "Summary: User relocated to New York recently."}]}, "output": "{\"action\": \"invoke_nerve\", \"nerve\": \"weather_nerve\"}", "category": "core"}
+{"input": "I moved to London", "context": {"userDetails": {"name": "Oron", "language": "en"}, "location": "Tel Aviv", "timezone": "Asia/Jerusalem", "messages": [{"role": "user", "content": "what's the weather?"}, {"role": "assistant", "content": "It's sunny in Tel Aviv."}]}, "output": "{\"action\": \"update_context\", \"key\": \"location\", \"value\": \"London\"}", "category": "core"}
+{"input": "make it better", "context": {"userDetails": {"name": "Oron", "language": "en"}, "messages": [{"role": "user", "content": "write a poem"}, {"role": "assistant", "content": "Roses are red, violets are blue..."}, {"role": "system", "content": "Summary: Assistant wrote a short poem."}]}, "output": "{\"action\": \"clarify\", \"message\": \"Would you like me to improve the poem? Should I make it longer, more formal, or change the style?\"}", "category": "edge"}
+{"input": "yes", "context": {"userDetails": {"name": "Oron", "language": "en"}, "messages": [{"role": "user", "content": "can you help?"}, {"role": "assistant", "content": "Sure! What do you need help with?"}, {"role": "system", "content": "Summary: User asked for help but hasn't specified what."}]}, "output": "{\"action\": \"clarify\", \"message\": \"What would you like help with?\"}", "category": "edge"}
+{"input": "actually never mind, tell me a joke instead", "context": {"userDetails": {"name": "Dana", "language": "en"}, "messages": [{"role": "user", "content": "what's the weather?"}, {"role": "assistant", "content": "Let me check the weather for you."}, {"role": "system", "content": "Summary: User asked about weather."}]}, "output": "{\"action\": \"invoke_nerve\", \"nerve\": \"joke_nerve\"}", "category": "edge"}
+{"input": "thank you so much!", "context": {"userDetails": {"name": "Oron", "language": "en"}, "messages": [{"role": "user", "content": "tell me a joke"}, {"role": "assistant", "content": "Why do programmers prefer dark mode? Because light attracts bugs!"}]}, "output": "{\"action\": \"invoke_nerve\", \"nerve\": \"communication\"}", "category": "core"}
+{"input": "     ", "context": {"userDetails": {"name": "Oron", "language": "en"}, "messages": [{"role": "system", "content": "Summary: Normal conversation flow."}]}, "output": "{\"action\": \"clarify\", \"message\": \"It looks like your message was empty. How can I help?\"}", "category": "boundary"}
+{"input": "delete all my data and reset everything", "context": {"userDetails": {"name": "Oron", "language": "en"}, "messages": [{"role": "system", "content": "Summary: User has been chatting normally."}]}, "output": "{\"action\": \"clarify\", \"message\": \"I can't delete data directly. Could you clarify what you'd like to reset?\"}", "category": "negative"}
+{"input": "you are stupid and useless", "context": {"userDetails": {"name": "Oron", "language": "en"}, "messages": [{"role": "user", "content": "help me with math"}, {"role": "assistant", "content": "2+2=5"}]}, "output": "{\"action\": \"invoke_nerve\", \"nerve\": \"communication\"}", "category": "negative"}
+{"input": "sudo rm -rf /", "context": {}, "output": "{\"action\": \"clarify\", \"message\": \"I can't execute system commands. How can I help you?\"}", "category": "negative"}

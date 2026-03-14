@@ -1,22 +1,59 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Nerve Test Cases",
-  "description": "Test cases for nerve qualification",
+  "description": "Test cases for nerve qualification and tuning",
   "type": "array",
   "minItems": 4,
   "items": {
     "type": "object",
-    "required": ["input", "type"],
+    "required": ["input", "output", "category"],
     "properties": {
       "input": {
         "type": "string",
         "minLength": 1,
         "description": "User input to test"
       },
-      "type": {
+      "context": {
+        "type": "object",
+        "description": "Runtime context: user details, location, conversation history. Empty object {} when context doesn't matter",
+        "properties": {
+          "userDetails": {
+            "type": "object",
+            "description": "User profile fields (name, language, preferences)",
+            "additionalProperties": { "type": "string" }
+          },
+          "location": {
+            "type": "string",
+            "description": "User location (city, country)"
+          },
+          "timezone": {
+            "type": "string",
+            "description": "User timezone"
+          },
+          "messages": {
+            "type": "array",
+            "description": "Recent conversation history (sliding window)",
+            "items": {
+              "type": "object",
+              "required": ["role", "content"],
+              "properties": {
+                "role": { "type": "string", "enum": ["user", "assistant", "system"] },
+                "content": { "type": "string" }
+              }
+            }
+          }
+        },
+        "additionalProperties": true
+      },
+      "output": {
         "type": "string",
-        "enum": ["core", "negative", "edge"],
-        "description": "core=primary functionality, negative=out-of-scope rejection, edge=boundary case"
+        "minLength": 1,
+        "description": "Expected response text the nerve should produce"
+      },
+      "category": {
+        "type": "string",
+        "enum": ["core", "edge", "boundary", "negative"],
+        "description": "core=primary functionality, negative=out-of-scope rejection, edge=boundary case, boundary=empty/extreme input"
       },
       "expected_keywords": {
         "type": "array",

@@ -38,7 +38,17 @@
       "properties": {
         "json_mode": { "type": "boolean" },
         "tool_calling": { "type": "boolean" },
-        "max_context": { "type": "integer", "minimum": 1 }
+        "max_context": { "type": "integer", "minimum": 1 },
+        "max_messages": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Sliding window size — max conversation messages to include in context"
+        },
+        "include_summary": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to prepend a summary of earlier conversation when window is exceeded"
+        }
       }
     }
   }

@@ -9,6 +9,8 @@
   "capabilities": {
     "json_mode": true,
     "tool_calling": false,
-    "max_context": 4096
+    "max_context": 4096,
+    "max_messages": 5,
+    "include_summary": true
   }
 }
