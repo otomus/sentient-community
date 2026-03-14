@@ -1,0 +1,14 @@
+{"input": "who are you?", "expected_intent": "identity", "category": "identity"}
+{"input": "what is your name?", "expected_intent": "identity", "category": "identity"}
+{"input": "what are you?", "expected_intent": "identity", "category": "identity"}
+{"input": "tell me about yourself", "expected_intent": "identity", "category": "identity"}
+{"input": "what can you do?", "expected_intent": "capabilities", "category": "capabilities"}
+{"input": "help", "expected_intent": "capabilities", "category": "capabilities"}
+{"input": "what are your abilities?", "expected_intent": "capabilities", "category": "capabilities"}
+{"input": "how can you help me?", "expected_intent": "capabilities", "category": "capabilities"}
+{"input": "where do you live?", "expected_intent": "persona", "category": "persona"}
+{"input": "what's your favorite color?", "expected_intent": "persona", "category": "persona"}
+{"input": "how old are you?", "expected_intent": "persona", "category": "persona"}
+{"input": "do you dream?", "expected_intent": "persona", "category": "persona"}
+{"input": "what's your favorite programming language?", "expected_intent": "persona", "category": "persona"}
+{"input": "are you alive?", "expected_intent": "persona", "category": "persona"}
