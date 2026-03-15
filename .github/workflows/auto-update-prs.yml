@@ -1,4 +1,4 @@
-name: Auto-update PR branches
+name: Auto-rebase PR branches
 
 on:
   push:
@@ -9,17 +9,25 @@ permissions:
   pull-requests: write
 
 jobs:
-  update-prs:
+  rebase-prs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Update open PR branches
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Auto-rebase open PRs
         uses: actions/github-script@v7
         with:
           script: |
+            const { execSync } = require('child_process');
+
             const { data: prs } = await github.rest.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -28,26 +36,29 @@ jobs:
             });
 
             for (const pr of prs) {
-              console.log(`Processing PR #${pr.number}: ${pr.title}`);
+              const branch = pr.head.ref;
+              console.log(`\nProcessing PR #${pr.number}: ${pr.title} (${branch})`);
+
               try {
-                await github.rest.pulls.updateBranch({
+                execSync(`git fetch origin ${branch}`, { stdio: 'pipe' });
+                execSync(`git checkout ${branch}`, { stdio: 'pipe' });
+                execSync(`git rebase origin/main`, { stdio: 'pipe' });
+                execSync(`git push origin ${branch} --force-with-lease`, { stdio: 'pipe' });
+                console.log(`  Rebased and pushed PR #${pr.number}`);
+              } catch (err) {
+                // Rebase failed — abort and notify
+                try { execSync(`git rebase --abort`, { stdio: 'pipe' }); } catch {}
+                try { execSync(`git checkout main`, { stdio: 'pipe' }); } catch {}
+
+                console.log(`  PR #${pr.number} has conflicts, posting comment`);
+                await github.rest.issues.createComment({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
-                  pull_number: pr.number
+                  issue_number: pr.number,
+                  body: `## Rebase Conflict\n\nThis PR has conflicts with \`main\` that could not be auto-rebased. Please rebase manually:\n\n\`\`\`bash\ngit fetch origin main\ngit rebase origin/main\n# resolve conflicts\ngit push --force-with-lease\n\`\`\``
                 });
-                console.log(`  Updated PR #${pr.number}`);
-              } catch (err) {
-                if (err.message?.includes('conflict')) {
-                  console.log(`  PR #${pr.number} has conflicts — attempting merge resolution`);
-                  // Post a comment so the contributor knows
-                  await github.rest.issues.createComment({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: pr.number,
-                    body: `## Merge Conflict\n\nThis PR has conflicts with \`main\` that could not be auto-resolved. Please rebase or merge main into your branch to fix.\n\n\`\`\`bash\ngit fetch origin main\ngit merge origin/main\n# resolve conflicts\ngit push\n\`\`\``
-                  });
-                } else {
-                  console.log(`  Failed to update PR #${pr.number}: ${err.message}`);
-                }
               }
+
+              // Return to main for next PR
+              try { execSync(`git checkout main`, { stdio: 'pipe' }); } catch {}
             }
