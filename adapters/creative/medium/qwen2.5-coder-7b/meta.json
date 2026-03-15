@@ -1,0 +1,16 @@
+{
+  "model": "qwen2.5-coder-7b",
+  "description": "Creative content generation \u2014 writing, humor, summaries, poetry.",
+  "size_class": "medium",
+  "provider": "gguf",
+  "contributor": {
+    "github": "otomus"
+  },
+  "capabilities": {
+    "json_mode": true,
+    "tool_calling": true,
+    "max_context": 8192,
+    "max_messages": 20,
+    "include_summary": false
+  }
+}
