@@ -33,6 +33,16 @@ UNSAFE_PATTERNS_JS = [
 
 
 _schema_cache: dict[str, dict] = {}
+_role_tuning_profiles: dict | None = None
+
+
+def load_role_tuning_profiles() -> dict:
+    global _role_tuning_profiles
+    if _role_tuning_profiles is None:
+        path = os.path.join(SCHEMAS_DIR, "role_tuning_profiles.json")
+        with open(path) as f:
+            _role_tuning_profiles = json.load(f).get("roles", {})
+    return _role_tuning_profiles
 
 
 def load_schema(name: str) -> dict:
@@ -209,6 +219,33 @@ def validate_adapter(adapter_dir: str) -> list[str]:
             sc = meta.get("size_class", "")
             if sc and sc not in ("tiny", "small", "medium", "large"):
                 errors.append(f"  {name}: invalid size_class '{sc}'")
+
+    # Validate tuning target_modules against role profile
+    if os.path.exists(meta_path):
+        meta = meta if meta else load_json(meta_path)
+        if meta and isinstance(meta, dict):
+            # Derive role from directory structure: adapters/{role}/{size_class}
+            role = os.path.basename(os.path.dirname(adapter_dir))
+            profiles = load_role_tuning_profiles()
+            profile = profiles.get(role)
+            tuning = meta.get("tuning", {})
+            if profile and tuning:
+                # Validate lora_target_modules
+                target_modules = tuning.get("lora_target_modules", [])
+                allowed = set(profile.get("allowed_target_modules", []))
+                for mod in target_modules:
+                    if mod not in allowed:
+                        errors.append(
+                            f"  {name}: lora_target_module '{mod}' not allowed for role '{role}'. "
+                            f"Allowed: {sorted(allowed)}"
+                        )
+                # Validate lora_rank
+                rank = tuning.get("lora_rank", 0)
+                max_rank = profile.get("max_lora_rank", 999)
+                if rank > max_rank:
+                    errors.append(
+                        f"  {name}: lora_rank {rank} exceeds max {max_rank} for role '{role}'"
+                    )
 
     return errors
 

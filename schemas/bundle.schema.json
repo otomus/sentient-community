@@ -82,25 +82,58 @@
         }
       }
     },
+    "tuning": {
+      "type": "object",
+      "description": "Default LoRA fine-tuning parameters for this nerve",
+      "properties": {
+        "min_training_examples": { "type": "integer", "minimum": 1 },
+        "test_cases_per_batch": { "type": "integer", "minimum": 1 },
+        "few_shot_limit": { "type": "integer", "minimum": 0 },
+        "lora_rank": { "type": "integer", "minimum": 1 },
+        "lora_epochs": { "type": "integer", "minimum": 1 },
+        "lora_lr": { "type": "number", "exclusiveMinimum": 0 },
+        "lora_dropout": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "lora_target_modules": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "training_max_length": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "qualification": {
+      "type": "object",
+      "description": "Pass/fail thresholds and iteration limits for nerve qualification",
+      "properties": {
+        "minimum_threshold": { "type": "number", "minimum": 0.0, "maximum": 1.0, "description": "Minimum score — usable above this" },
+        "golden_threshold": { "type": "number", "minimum": 0.0, "maximum": 1.0, "description": "Golden standard — fully production-ready above this" },
+        "min_iterations": { "type": "integer", "minimum": 1, "description": "Minimum attempts before accepting minimum_threshold" },
+        "golden_iterations": { "type": "integer", "minimum": 1, "description": "Max attempts to reach golden_threshold" }
+      }
+    },
     "model_adapters": {
       "type": "object",
+      "description": "Nested by size_class -> model_slug -> overrides",
+      "propertyNames": {
+        "enum": ["tinylm", "small", "medium", "large"]
+      },
       "additionalProperties": {
         "type": "object",
-        "properties": {
-          "system_prompt_override": { "type": ["string", "null"] },
-          "examples_override": {
-            "type": ["array", "null"],
-            "items": {
-              "type": "object",
-              "properties": {
-                "input": { "type": "string" },
-                "output": { "type": "string" }
+        "description": "Model-specific overrides keyed by model slug",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "system_prompt_override": { "type": ["string", "null"] },
+            "examples_override": {
+              "type": ["array", "null"],
+              "items": {
+                "type": "object",
+                "properties": {
+                  "input": { "type": "string" },
+                  "output": { "type": "string" }
+                }
               }
-            }
-          },
-          "temperature": { "type": "number", "minimum": 0.0, "maximum": 2.0 },
-          "score": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
-          "qualified_by": { "type": "string" }
+            },
+            "temperature": { "type": "number", "minimum": 0.0, "maximum": 2.0 },
+            "score": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+            "qualified_by": { "type": "string" }
+          }
         }
       }
     }

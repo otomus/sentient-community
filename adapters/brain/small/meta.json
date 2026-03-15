@@ -1,6 +1,6 @@
 {
   "model": "small",
-  "description": "Router — reads user messages and routes to the right nerve. Never answers directly.",
+  "description": "Router \u2014 reads user messages and routes to the right nerve. Never answers directly.",
   "size_class": "small",
   "provider": "gguf",
   "contributor": {
@@ -12,5 +12,32 @@
     "max_context": 4096,
     "max_messages": 5,
     "include_summary": true
+  },
+  "tuning": {
+    "min_training_examples": 100,
+    "test_cases_per_batch": 10,
+    "few_shot_limit": 3,
+    "lora_rank": 12,
+    "lora_epochs": 3,
+    "lora_lr": 0.0001,
+    "lora_dropout": 0.05,
+    "lora_target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj"
+    ],
+    "training_max_length": 1024,
+    "warmup_steps": 20,
+    "eval_split": 0.1,
+    "scheduler": "linear",
+    "quantization": "fp16",
+    "batch_size": 4,
+    "gradient_accumulation_steps": 2
+  },
+  "qualification": {
+    "minimum_threshold": 0.65,
+    "golden_threshold": 0.85,
+    "min_iterations": 3,
+    "golden_iterations": 5
   }
 }

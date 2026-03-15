@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Role Tuning Profiles",
+  "description": "Defines allowed LoRA target modules and rank bounds per adapter role. Used by validate.py to enforce correct tuning config when contributors create or modify adapters.",
+  "roles": {
+    "brain": {
+      "description": "Router — classification/routing, attention-only",
+      "allowed_target_modules": ["q_proj", "k_proj", "v_proj"],
+      "max_lora_rank": 32
+    },
+    "nerve": {
+      "description": "Tool caller — structured JSON output, attention-only",
+      "allowed_target_modules": ["q_proj", "k_proj", "v_proj"],
+      "max_lora_rank": 32
+    },
+    "awareness": {
+      "description": "Identity/persona — needs personality knowledge in MLP",
+      "allowed_target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+      "max_lora_rank": 64
+    },
+    "creative": {
+      "description": "Generative — style/fluency, full MLP for expressiveness",
+      "allowed_target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+      "max_lora_rank": 64
+    },
+    "communication": {
+      "description": "Rewriter — tone transformation, moderate MLP",
+      "allowed_target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj"],
+      "max_lora_rank": 48
+    },
+    "code": {
+      "description": "Code planner — precise output, needs code knowledge in MLP",
+      "allowed_target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+      "max_lora_rank": 64
+    },
+    "vision": {
+      "description": "Image analysis — attention-focused",
+      "allowed_target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+      "max_lora_rank": 32
+    }
+  }
+}

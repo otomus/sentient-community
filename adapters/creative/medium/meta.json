@@ -1,6 +1,6 @@
 {
   "model": "medium",
-  "description": "Creative content generation — writing, humor, summaries, poetry.",
+  "description": "Creative content generation \u2014 writing, humor, summaries, poetry.",
   "size_class": "medium",
   "provider": "gguf",
   "contributor": {
@@ -12,5 +12,36 @@
     "max_context": 8192,
     "max_messages": 20,
     "include_summary": false
+  },
+  "tuning": {
+    "min_training_examples": 200,
+    "test_cases_per_batch": 15,
+    "few_shot_limit": 5,
+    "lora_rank": 32,
+    "lora_epochs": 3,
+    "lora_lr": 5e-05,
+    "lora_dropout": 0.05,
+    "lora_target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "training_max_length": 2048,
+    "warmup_steps": 50,
+    "eval_split": 0.1,
+    "scheduler": "cosine",
+    "quantization": "4bit",
+    "batch_size": 2,
+    "gradient_accumulation_steps": 4
+  },
+  "qualification": {
+    "minimum_threshold": 0.7,
+    "golden_threshold": 0.9,
+    "min_iterations": 3,
+    "golden_iterations": 7
   }
 }
