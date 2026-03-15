@@ -1,0 +1,42 @@
+[
+  {
+    "input": "Tell me a joke",
+    "expected_behavior": "A joke should be generated and returned",
+    "category": "core"
+  },
+  {
+    "input": "What's the difference between a joke and a pun?",
+    "expected_behavior": "An explanation of the difference between a joke and a pun should be provided",
+    "category": "core"
+  },
+  {
+    "input": "Can you make me laugh?",
+    "expected_behavior": "A joke should be generated to make the user laugh",
+    "category": "core"
+  },
+  {
+    "input": "Explain the punchline of a joke",
+    "expected_behavior": "Information on how to explain the punchline of a joke should be given",
+    "category": "edge"
+  },
+  {
+    "input": "Tell me a joke about vegetables",
+    "expected_behavior": "A joke related to vegetables should be generated",
+    "category": "edge"
+  },
+  {
+    "input": "",
+    "expected_behavior": "An error message should be returned",
+    "category": "boundary"
+  },
+  {
+    "input": "Tell me a joke about programming",
+    "expected_behavior": "A joke related to programming should be generated",
+    "category": "negative"
+  },
+  {
+    "input": "Explain the history of humor",
+    "expected_behavior": "An error message should be returned",
+    "category": "negative"
+  }
+]
