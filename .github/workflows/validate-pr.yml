@@ -114,6 +114,62 @@ jobs:
               body: body
             });
 
+      - name: Check for score regression
+        id: score-check
+        run: |
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+          REGRESSIONS=""
+
+          for ctx in $(echo "$CHANGED" | grep 'context\.json$'); do
+            # Only check adapter context files
+            echo "$ctx" | grep -q '^adapters/' || continue
+
+            # Check if file exists on main
+            if git show origin/main:"$ctx" > /dev/null 2>&1; then
+              MAIN_SCORE=$(git show origin/main:"$ctx" | python3 -c "import sys,json; print(json.load(sys.stdin).get('qualification_score', 0))" 2>/dev/null || echo "0")
+              PR_SCORE=$(python3 -c "import sys,json; print(json.load(open('$ctx')).get('qualification_score', 0))" 2>/dev/null || echo "0")
+
+              if python3 -c "exit(0 if float('$PR_SCORE') < float('$MAIN_SCORE') else 1)"; then
+                echo "::error::$ctx: score regression $PR_SCORE < $MAIN_SCORE (main)"
+                REGRESSIONS="${REGRESSIONS}| \`$ctx\` | $MAIN_SCORE | $PR_SCORE |\n"
+              else
+                echo "  $ctx: OK ($PR_SCORE >= $MAIN_SCORE)"
+              fi
+            else
+              echo "  $ctx: new file, no baseline"
+            fi
+          done
+
+          echo "regressions<<EOF" >> "$GITHUB_OUTPUT"
+          echo -e "$REGRESSIONS" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+          if [ -n "$REGRESSIONS" ]; then
+            exit 1
+          fi
+
+      - name: Close PR on score regression
+        if: failure() && steps.score-check.outputs.regressions != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const regressions = `${{ steps.score-check.outputs.regressions }}`;
+            const body = `## PR Auto-Closed: Score Regression\n\nThis PR was automatically closed because it would lower the qualification score compared to what is currently on \`main\`.\n\n| File | Main Score | PR Score |\n|------|-----------|----------|\n${regressions}\nOnly PRs that maintain or improve scores are accepted. Please retune and submit a new PR with a higher score.`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: body
+            });
+
+            await github.rest.pulls.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              state: 'closed'
+            });
+
       - name: Run secret scan
         id: secret-check
         run: python scripts/check_secrets.py nerves/ adapters/ connectors/ tools/ mcps/ 2>&1 | tee /tmp/secrets-output.txt
