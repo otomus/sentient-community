@@ -1,0 +1,16 @@
+{
+  "model": "qwen2.5-coder-7b",
+  "description": "Sentient's own identity and persona \u2014 who Sentient is, what it can do, its personality.",
+  "size_class": "medium",
+  "provider": "gguf",
+  "contributor": {
+    "github": "otomus"
+  },
+  "capabilities": {
+    "json_mode": true,
+    "tool_calling": false,
+    "max_context": 8192,
+    "max_messages": 20,
+    "include_summary": false
+  }
+}
