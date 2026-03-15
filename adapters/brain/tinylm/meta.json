@@ -1,7 +1,7 @@
 {
   "model": "tinylm",
   "description": "Router \u2014 reads user messages and routes to the right nerve. Never answers directly.",
-  "size_class": "tiny",
+  "size_class": "tinylm",
   "provider": "gguf",
   "contributor": {
     "github": "otomus"

@@ -11,7 +11,7 @@
     },
     "size_class": {
       "type": "string",
-      "enum": ["tiny", "small", "medium", "large"]
+      "enum": ["tinylm", "small", "medium", "large"]
     },
     "provider": {
       "type": "string",

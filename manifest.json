@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-15T10:04:42.376862+00:00",
+  "generated_at": "2026-03-15T11:54:39.201488+00:00",
   "nerves": {},
   "adapters": {
     "awareness/large": {
@@ -33,7 +33,7 @@
     "awareness/tinylm": {
       "role": "awareness",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -69,7 +69,7 @@
     "brain/tinylm": {
       "role": "brain",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -105,7 +105,7 @@
     "code/tinylm": {
       "role": "code",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -141,7 +141,7 @@
     "communication/tinylm": {
       "role": "communication",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -177,7 +177,7 @@
     "creative/tinylm": {
       "role": "creative",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -213,7 +213,7 @@
     "nerve/tinylm": {
       "role": "nerve",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -249,7 +249,7 @@
     "vision/tinylm": {
       "role": "vision",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",

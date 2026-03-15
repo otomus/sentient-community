@@ -1,7 +1,7 @@
 {
   "model": "tinylm",
   "description": "Sentient's own identity and persona \u2014 who Sentient is, what it can do, its personality.",
-  "size_class": "tiny",
+  "size_class": "tinylm",
   "provider": "gguf",
   "contributor": {
     "github": "otomus"

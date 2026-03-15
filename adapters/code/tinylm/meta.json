@@ -1,7 +1,7 @@
 {
   "model": "tinylm",
   "description": "Code planner \u2014 breaks code tasks into smallest units, one per step.",
-  "size_class": "tiny",
+  "size_class": "tinylm",
   "provider": "gguf",
   "contributor": {
     "github": "otomus"

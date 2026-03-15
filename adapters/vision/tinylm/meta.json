@@ -1,7 +1,7 @@
 {
   "model": "tinylm",
   "description": "Image analysis and description \u2014 examines photos, screenshots, and visual content.",
-  "size_class": "tiny",
+  "size_class": "tinylm",
   "provider": "gguf",
   "contributor": {
     "github": "otomus"
