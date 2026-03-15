@@ -1,0 +1,124 @@
+{
+  "name": "user_context_nerve",
+  "version": "1.0.0",
+  "description": "Handles user data, preferences, and interactions to provide personalized information and services",
+  "role": "data",
+  "tags": [
+    "data",
+    "user-context"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "sentient_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "user_preference_analysis",
+      "spec": "tools/user_preference_analysis/spec.json",
+      "implementations": {
+        "python": "tools/user_preference_analysis/tool.py"
+      }
+    },
+    {
+      "name": "daily_motivation",
+      "spec": "tools/daily_motivation/spec.json",
+      "implementations": {
+        "python": "tools/daily_motivation/tool.py"
+      }
+    },
+    {
+      "name": "get_listing_details",
+      "spec": "tools/get_listing_details/spec.json",
+      "implementations": {}
+    },
+    {
+      "name": "historical_weather_data",
+      "spec": "tools/historical_weather_data/spec.json",
+      "implementations": {
+        "python": "tools/historical_weather_data/tool.py"
+      }
+    },
+    {
+      "name": "location_geocoding",
+      "spec": "tools/location_geocoding/spec.json",
+      "implementations": {
+        "python": "tools/location_geocoding/tool.py"
+      }
+    },
+    {
+      "name": "personalized_greeting",
+      "spec": "tools/personalized_greeting/spec.json",
+      "implementations": {
+        "python": "tools/personalized_greeting/tool.py"
+      }
+    },
+    {
+      "name": "search_listings",
+      "spec": "tools/search_listings/spec.json",
+      "implementations": {}
+    },
+    {
+      "name": "search_wikipedia",
+      "spec": "tools/search_wikipedia/spec.json",
+      "implementations": {}
+    },
+    {
+      "name": "voice_recognition",
+      "spec": "tools/voice_recognition/spec.json",
+      "implementations": {
+        "python": "tools/voice_recognition/tool.py"
+      }
+    },
+    {
+      "name": "word_problem_solver",
+      "spec": "tools/word_problem_solver/spec.json",
+      "implementations": {
+        "python": "tools/word_problem_solver/tool.py"
+      }
+    }
+  ],
+  "default": {
+    "system_prompt": "You are a personalized information service. Always tailor your responses to the user's preferences and previous interactions.",
+    "examples": [
+      {
+        "input": "What's the weather like in Paris?",
+        "output": "In Paris, it's currently 18\u00b0C with partly cloudy conditions."
+      },
+      {
+        "input": "Recommend some books for a weekend getaway.",
+        "output": "For a relaxing weekend, you might enjoy 'To Kill a Mockingbird' by Harper Lee or 'The Alchemist' by Paulo Coelho."
+      },
+      {
+        "input": "What are the top-rated restaurants in San Francisco?",
+        "output": "Some of the top-rated restaurants in San Francisco include The French Laundry, Eleven Madison Park, and Per Se."
+      }
+    ],
+    "temperature": 0.3
+  },
+  "model_adapters": {
+    "medium": {
+      "qwen2.5-coder-7b": {
+        "system_prompt_override": "You are a personalized information service. Always tailor your responses to the user's preferences and previous interactions.",
+        "examples_override": [
+          {
+            "input": "What's the weather like in Paris?",
+            "output": "In Paris, it's currently 18\u00b0C with partly cloudy conditions."
+          },
+          {
+            "input": "Recommend some books for a weekend getaway.",
+            "output": "For a relaxing weekend, you might enjoy 'To Kill a Mockingbird' by Harper Lee or 'The Alchemist' by Paulo Coelho."
+          },
+          {
+            "input": "What are the top-rated restaurants in San Francisco?",
+            "output": "Some of the top-rated restaurants in San Francisco include The French Laundry, Eleven Madison Park, and Per Se."
+          }
+        ],
+        "temperature": 0.3,
+        "score": 0,
+        "qualified_by": "dreamstate"
+      }
+    }
+  }
+}
