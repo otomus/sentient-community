@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-15T11:54:39.201488+00:00",
+  "generated_at": "2026-03-15T12:01:21.648949+00:00",
   "nerves": {},
   "adapters": {
     "awareness/large": {
@@ -159,6 +159,15 @@
     "creative/medium": {
       "role": "creative",
       "model": "medium",
+      "size_class": "medium",
+      "provider": "gguf",
+      "score": null,
+      "contributor": "otomus",
+      "has_lora": false
+    },
+    "creative/medium/qwen2.5-coder-7b": {
+      "role": "creative",
+      "model": "qwen2.5-coder-7b",
       "size_class": "medium",
       "provider": "gguf",
       "score": null,
@@ -882,7 +891,7 @@
   },
   "stats": {
     "total_nerves": 0,
-    "total_adapters": 28,
+    "total_adapters": 29,
     "total_connectors": 2,
     "total_tools": 1,
     "total_mcps": 18
