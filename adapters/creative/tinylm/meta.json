@@ -1,7 +1,7 @@
 {
   "model": "tinylm",
   "description": "Creative content generation \u2014 writing, humor, summaries, poetry.",
-  "size_class": "tiny",
+  "size_class": "tinylm",
   "provider": "gguf",
   "contributor": {
     "github": "otomus"

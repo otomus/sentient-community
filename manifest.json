@@ -1,7 +1,31 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-15T10:04:42.376862+00:00",
-  "nerves": {},
+  "generated_at": "2026-03-15T12:02:25.333996+00:00",
+  "nerves": {
+    "joke_nerve": {
+      "description": "Generate jokes, puns, and comedic content across various topics. Ensure the humor is appropriate for all audiences.",
+      "role": "creative",
+      "tags": [
+        "creative",
+        "joke"
+      ],
+      "authors": [
+        {
+          "github": "otomus"
+        }
+      ],
+      "version": "1.0.0",
+      "tools": [
+        "joke_fetcher",
+        "generate_joke",
+        "search_wikipedia",
+        "voice_recognition",
+        "get_article_content",
+        "random_joke"
+      ],
+      "model_scores": {}
+    }
+  },
   "adapters": {
     "awareness/large": {
       "role": "awareness",
@@ -33,7 +57,7 @@
     "awareness/tinylm": {
       "role": "awareness",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -69,7 +93,7 @@
     "brain/tinylm": {
       "role": "brain",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -105,7 +129,7 @@
     "code/tinylm": {
       "role": "code",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -141,7 +165,7 @@
     "communication/tinylm": {
       "role": "communication",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -165,6 +189,15 @@
       "contributor": "otomus",
       "has_lora": false
     },
+    "creative/medium/qwen2.5-coder-7b": {
+      "role": "creative",
+      "model": "qwen2.5-coder-7b",
+      "size_class": "medium",
+      "provider": "gguf",
+      "score": null,
+      "contributor": "otomus",
+      "has_lora": false
+    },
     "creative/small": {
       "role": "creative",
       "model": "small",
@@ -177,7 +210,7 @@
     "creative/tinylm": {
       "role": "creative",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -213,7 +246,7 @@
     "nerve/tinylm": {
       "role": "nerve",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -249,7 +282,7 @@
     "vision/tinylm": {
       "role": "vision",
       "model": "tinylm",
-      "size_class": "tiny",
+      "size_class": "tinylm",
       "provider": "gguf",
       "score": null,
       "contributor": "otomus",
@@ -881,8 +914,8 @@
     }
   },
   "stats": {
-    "total_nerves": 0,
-    "total_adapters": 28,
+    "total_nerves": 1,
+    "total_adapters": 29,
     "total_connectors": 2,
     "total_tools": 1,
     "total_mcps": 18

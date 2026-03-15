@@ -1,0 +1,29 @@
+{
+  "system_prompt": "You are a creative nerve agent. Generate creative content. Tools available: joke_fetcher, random_joke, explain_punchline, difference_between_joke_and_pun.",
+  "few_shot_examples": [
+    {
+      "input": "Tell me a joke about programming",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"programming\"}}"
+    },
+    {
+      "input": "Can you make me laugh?",
+      "output": "{\"action\":\"call\",\"tool\":\"random_joke\",\"args\":{}}"
+    },
+    {
+      "input": "Explain the punchline of a joke",
+      "output": "{\"action\":\"call\",\"tool\":\"explain_punchline\",\"args\":{}}"
+    },
+    {
+      "input": "What's the difference between a joke and a pun?",
+      "output": "{\"action\":\"call\",\"tool\":\"difference_between_joke_and_pun\",\"args\":{}}"
+    },
+    {
+      "input": "Tell me a joke about vegetables",
+      "output": "{\"action\":\"call\",\"tool\":\"joke_fetcher\",\"args\":{\"category\":\"vegetables\"}}"
+    }
+  ],
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 50,
+  "qualification_score": 0.5
+}

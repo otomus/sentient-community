@@ -217,7 +217,7 @@ def validate_adapter(adapter_dir: str) -> list[str]:
         meta = load_json(meta_path)
         if meta and isinstance(meta, dict):
             sc = meta.get("size_class", "")
-            if sc and sc not in ("tiny", "small", "medium", "large"):
+            if sc and sc not in ("tinylm", "small", "medium", "large"):
                 errors.append(f"  {name}: invalid size_class '{sc}'")
 
     # Validate tuning target_modules against role profile
