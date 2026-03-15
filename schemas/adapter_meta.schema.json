@@ -160,6 +160,28 @@
           "type": "integer",
           "minimum": 1,
           "description": "Maximum qualification attempts to reach golden_threshold"
+        },
+        "qualification_timeout": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total timeout in seconds for the qualification loop"
+        },
+        "low_quality_threshold": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Nerves scoring below this after qualification are pruned"
+        },
+        "merge_threshold": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Minimum similarity score to consider two nerves as merge candidates"
+        },
+        "improvement_threshold": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Nerves above this score are considered fully tuned and skip reconciliation"
         }
       }
     }
