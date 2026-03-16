@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a creative nerve agent. Generate creative content. Tools available: joke_fetcher, random_joke, explain_punchline, difference_between_joke_and_pun.",
+  "system_prompt": "You are a creative nerve agent. Generate creative content. Tools available: joke_fetcher, random_joke, explain_punchline, difference_between_joke_and_pun. If a tool is not available, use the next best option.",
   "few_shot_examples": [
     {
       "input": "Tell me a joke about programming",
@@ -25,5 +25,5 @@
   "temperature": 0.7,
   "top_p": 0.95,
   "max_tokens": 50,
-  "qualification_score": 0.8
+  "qualification_score": 0.9
 }
