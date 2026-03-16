@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-15T18:04:17.928794+00:00",
+  "generated_at": "2026-03-16T06:04:53.029770+00:00",
   "nerves": {
     "joke_nerve": {
       "description": "Generate jokes, puns, and comedic content across various topics. Ensure the humor is appropriate for all audiences.",
@@ -273,6 +273,15 @@
     "vision/small": {
       "role": "vision",
       "model": "small",
+      "size_class": "small",
+      "provider": "gguf",
+      "score": null,
+      "contributor": "otomus",
+      "has_lora": false
+    },
+    "vision/small/moondream2-text-model-f16": {
+      "role": "vision",
+      "model": "moondream2-text-model-f16",
       "size_class": "small",
       "provider": "gguf",
       "score": null,
@@ -915,7 +924,7 @@
   },
   "stats": {
     "total_nerves": 1,
-    "total_adapters": 29,
+    "total_adapters": 30,
     "total_connectors": 2,
     "total_tools": 1,
     "total_mcps": 18
