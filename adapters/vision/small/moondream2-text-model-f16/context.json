@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Describe this image in detail. Focus on key objects, text, colors, layout, and any notable features.",
+  "few_shot_examples": [
+    {
+      "input": "describe this image",
+      "output": "{\"description\":\"A sunset over the ocean with orange and purple clouds reflected on calm water. A small sailboat is visible on the horizon.\"}"
+    },
+    {
+      "input": "what text is in this screenshot?",
+      "output": "{\"description\":\"A terminal window showing a Python traceback error: TypeError on line 42 of main.py. The background is dark with green text.\"}"
+    },
+    {
+      "input": "describe this painting",
+      "output": "{\"description\":\"A large oil painting featuring a serene landscape with rolling hills, a winding river, and a lone tree in the background. The sky is a clear blue with soft, pastel-colored clouds.\"}"
+    }
+  ],
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "max_tokens": 512,
+  "qualification_score": 0.1
+}
