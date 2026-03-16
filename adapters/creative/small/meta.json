@@ -37,12 +37,12 @@
     "gradient_accumulation_steps": 2
   },
   "qualification": {
+    "low_quality_threshold": 0.5,
     "minimum_threshold": 0.65,
     "golden_threshold": 0.85,
     "min_iterations": 3,
     "golden_iterations": 5,
     "qualification_timeout": 600,
-    "low_quality_threshold": 0.5,
     "merge_threshold": 3.0,
     "improvement_threshold": 0.95
   }

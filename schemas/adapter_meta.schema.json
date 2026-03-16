@@ -139,6 +139,12 @@
       "type": "object",
       "description": "Pass/fail thresholds and iteration limits for adapter qualification",
       "properties": {
+        "low_quality_threshold": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Floor score — submissions below this are auto-rejected"
+        },
         "minimum_threshold": {
           "type": "number",
           "minimum": 0.0,
