@@ -40,10 +40,14 @@
   },
   "qualification": {
     "minimum_threshold": 0.7,
-    "golden_threshold": 0.9,
+    "golden_threshold": 0.95,
     "golden_iterations": 7,
     "min_iterations": 3,
-    "current_score": 0.7
+    "qualification_timeout": 600,
+    "low_quality_threshold": 0.5,
+    "merge_threshold": 3.0,
+    "improvement_threshold": 0.95,
+    "current_score": 0.9
   },
   "has_lora": false
 }
