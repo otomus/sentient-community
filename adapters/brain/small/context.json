@@ -41,5 +41,7 @@
   "temperature": 0.3,
   "top_p": 0.9,
   "max_tokens": 256,
+  "conversation_window": 6,
+  "message_truncation": 200,
   "qualification_score": 0
 }
