@@ -1,42 +1,50 @@
 [
   {
     "input": "Tell me a joke",
-    "expected_behavior": "A joke should be generated and returned",
+    "context": {},
+    "output": "Why don't scientists trust atoms? Because they make up everything!",
     "category": "core"
   },
   {
-    "input": "What's the difference between a joke and a pun?",
-    "expected_behavior": "An explanation of the difference between a joke and a pun should be provided",
+    "input": "Tell me a joke about cats",
+    "context": {"userDetails": {"name": "Oron", "language": "en"}},
+    "output": "Why did the cat sit on the computer? To keep an eye on the mouse!",
     "category": "core"
   },
   {
     "input": "Can you make me laugh?",
-    "expected_behavior": "A joke should be generated to make the user laugh",
+    "context": {"userDetails": {"name": "Dana", "language": "en"}, "messages": [{"role": "user", "content": "I'm having a bad day"}, {"role": "assistant", "content": "I'm sorry to hear that. Want me to cheer you up?"}]},
+    "output": "What do you call a fake noodle? An impasta!",
     "category": "core"
   },
   {
-    "input": "Explain the punchline of a joke",
-    "expected_behavior": "Information on how to explain the punchline of a joke should be given",
+    "input": "Tell me a pun about time",
+    "context": {},
+    "output": "I'm reading a book about clocks. It's about time!",
+    "category": "core"
+  },
+  {
+    "input": "What's the difference between a joke and a pun?",
+    "context": {},
+    "output": "A joke typically has a setup and punchline, while a pun plays on words with double meanings. For example, a joke: 'Why did the chicken cross the road? To get to the other side.' A pun: 'I used to be a banker, but I lost interest.'",
     "category": "edge"
   },
   {
-    "input": "Tell me a joke about vegetables",
-    "expected_behavior": "A joke related to vegetables should be generated",
+    "input": "Explain the punchline of the last joke",
+    "context": {"messages": [{"role": "user", "content": "Tell me a joke"}, {"role": "assistant", "content": "Why do programmers prefer dark mode? Because light attracts bugs!"}]},
+    "output": "The punchline plays on the double meaning of 'bugs' — in programming, bugs are errors in code, while in real life, bugs are insects attracted to light.",
     "category": "edge"
   },
   {
     "input": "",
-    "expected_behavior": "An error message should be returned",
+    "context": {},
+    "output": "I'd love to tell you a joke! What topic would you like — animals, programming, food, or something else?",
     "category": "boundary"
   },
   {
-    "input": "Tell me a joke about programming",
-    "expected_behavior": "A joke related to programming should be generated",
-    "category": "negative"
-  },
-  {
     "input": "Explain the history of humor",
-    "expected_behavior": "An error message should be returned",
+    "context": {},
+    "output": "I'm a joke-telling nerve — I generate jokes and puns, but I'm not the right fit for a history lesson. Try asking me for a joke instead!",
     "category": "negative"
   }
 ]
