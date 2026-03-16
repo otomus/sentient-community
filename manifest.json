@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-16T06:05:51.834911+00:00",
+  "generated_at": "2026-03-16T06:06:40.609932+00:00",
   "nerves": {
     "joke_nerve": {
       "description": "Generate jokes, puns, and comedic content across various topics. Ensure the humor is appropriate for all audiences.",
@@ -228,6 +228,15 @@
     "nerve/medium": {
       "role": "nerve",
       "model": "medium",
+      "size_class": "medium",
+      "provider": "gguf",
+      "score": null,
+      "contributor": "otomus",
+      "has_lora": false
+    },
+    "nerve/medium/qwen2.5-coder-7b": {
+      "role": "nerve",
+      "model": "qwen2.5-coder-7b",
       "size_class": "medium",
       "provider": "gguf",
       "score": null,
@@ -924,7 +933,7 @@
   },
   "stats": {
     "total_nerves": 1,
-    "total_adapters": 30,
+    "total_adapters": 31,
     "total_connectors": 2,
     "total_tools": 1,
     "total_mcps": 18
