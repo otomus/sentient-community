@@ -1,7 +1,6 @@
 """Translate text between languages using a translation API."""
 
 import json
-import os
 
 try:
     import requests
@@ -9,26 +8,31 @@ except ImportError:
     requests = None
 
 
-def run(text: str, target_language: str, source_language: str = "auto") -> str:
+def run(
+    text: str,
+    target_language: str,
+    api_key: str,
+    source_language: str = "auto",
+    api_url: str = "https://libretranslate.com/translate",
+) -> str:
     """Translate text from one language to another.
 
-    Uses the LibreTranslate-compatible API endpoint configured via
-    environment variables.
+    Uses a LibreTranslate-compatible API endpoint.
 
     @param text: The text to translate.
     @param target_language: ISO 639-1 target language code (e.g. 'es').
+    @param api_key: API key for the translation service.
     @param source_language: ISO 639-1 source language code, or 'auto' for detection.
+    @param api_url: Translation API endpoint URL (default: LibreTranslate).
     @returns JSON string with translated text and detected source language.
+    @throws ValueError: If api_key is not provided.
     @throws RuntimeError: If translation fails.
     """
     if requests is None:
-        raise ImportError("The 'requests' package is required. Install it with: pip install requests")
+        return "error: " + "The 'requests' package is required. Install it with: pip install requests"
 
-    api_key = os.environ.get("TRANSLATE_API_KEY", "")
     if not api_key:
-        raise RuntimeError("TRANSLATE_API_KEY environment variable is not set")
-
-    api_url = os.environ.get("TRANSLATE_API_URL", "https://libretranslate.com/translate")
+        raise ValueError("api_key is required")
 
     payload = {
         "q": text,

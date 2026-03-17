@@ -18,10 +18,8 @@ def run(image_path: str) -> str:
         from pyzbar.pyzbar import decode
         from PIL import Image
     except ImportError:
-        raise ImportError(
-            "pyzbar and Pillow are required but not installed. "
+        return "error: " + "pyzbar and Pillow are required but not installed. "
             "Install them with: pip install pyzbar Pillow"
-        )
 
     img = Image.open(image_path)
     results = decode(img)

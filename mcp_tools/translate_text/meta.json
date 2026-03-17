@@ -29,11 +29,28 @@
       "required": true
     },
     {
+      "name": "api_key",
+      "type": "string",
+      "description": "API key for the translation service",
+      "required": true
+    },
+    {
       "name": "source_language",
       "type": "string",
       "description": "Source language code (auto-detected if omitted)",
       "required": false
+    },
+    {
+      "name": "api_url",
+      "type": "string",
+      "description": "Translation API endpoint URL (default: https://libretranslate.com/translate)",
+      "required": false
     }
   ],
-  "requires_api_key": true
+  "requires_api_key": true,
+  "dependencies": {
+    "python": [
+      "requests"
+    ]
+  }
 }

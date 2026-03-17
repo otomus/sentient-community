@@ -20,10 +20,8 @@ def run(file_path: str, slides: str) -> str:
         from pptx import Presentation
         from pptx.util import Inches, Pt
     except ImportError:
-        raise ImportError(
-            "python-pptx is required but not installed. "
+        return "error: " + "python-pptx is required but not installed. "
             "Install it with: pip install python-pptx"
-        )
 
     try:
         slide_data = json.loads(slides)

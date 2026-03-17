@@ -28,6 +28,18 @@
       "type": "string",
       "description": "Message text",
       "required": true
+    },
+    {
+      "name": "provider",
+      "type": "string",
+      "description": "SMS provider name (twilio or vonage)",
+      "required": true
+    },
+    {
+      "name": "api_key",
+      "type": "string",
+      "description": "API key for the SMS provider",
+      "required": true
     }
   ],
   "requires_api_key": true

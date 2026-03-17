@@ -28,6 +28,30 @@
       "type": "string",
       "description": "Reply body text",
       "required": true
+    },
+    {
+      "name": "smtp_host",
+      "type": "string",
+      "description": "SMTP server hostname",
+      "required": true
+    },
+    {
+      "name": "smtp_user",
+      "type": "string",
+      "description": "SMTP authentication username",
+      "required": true
+    },
+    {
+      "name": "smtp_pass",
+      "type": "string",
+      "description": "SMTP authentication password",
+      "required": true
+    },
+    {
+      "name": "imap_host",
+      "type": "string",
+      "description": "IMAP server hostname",
+      "required": true
     }
   ],
   "requires_api_key": true

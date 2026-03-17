@@ -241,7 +241,7 @@ def _save_as_png(svg_content: str, output_path: str) -> None:
         svg_path = output_path.rsplit(".", 1)[0] + ".svg"
         with open(svg_path, "w", encoding="utf-8") as f:
             f.write(svg_content)
-        raise ImportError(
-            f"cairosvg is required for PNG output. SVG saved to {svg_path} instead. "
+        return (
+            f"error: cairosvg is required for PNG output. SVG saved to {svg_path} instead. "
             "Install cairosvg with: pip install cairosvg"
         )

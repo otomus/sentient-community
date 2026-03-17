@@ -1,7 +1,6 @@
 """Fetch news articles matching a search query."""
 
 import json
-import os
 
 try:
     import requests
@@ -9,20 +8,21 @@ except ImportError:
     requests = None
 
 
-def run(query: str, count: int = 5) -> str:
+def run(query: str, api_key: str, count: int = 5) -> str:
     """Fetch news articles from NewsAPI matching the given query.
 
     @param query: Search keywords for finding relevant articles.
+    @param api_key: API key for NewsAPI.
     @param count: Maximum number of articles to return (default 5).
     @returns JSON string with a list of article titles, sources, and URLs.
+    @throws ValueError: If api_key is not provided.
     @throws RuntimeError: If the API call fails.
     """
     if requests is None:
-        raise ImportError("The 'requests' package is required. Install it with: pip install requests")
+        return "error: " + "The 'requests' package is required. Install it with: pip install requests"
 
-    api_key = os.environ.get("NEWS_API_KEY", "")
     if not api_key:
-        raise RuntimeError("NEWS_API_KEY environment variable is not set")
+        raise ValueError("api_key is required")
 
     url = "https://newsapi.org/v2/everything"
     params = {

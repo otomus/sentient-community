@@ -68,6 +68,18 @@
       "type": "boolean",
       "default": false,
       "description": "Whether this tool needs an external API key to function"
+    },
+    "dependencies": {
+      "type": "object",
+      "description": "External package dependencies per language. Server installs these at deploy time.",
+      "propertyNames": {
+        "enum": ["python", "go", "node", "java", "rust"]
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "pip/npm/go package names required by this tool"
+      }
     }
   }
 }

@@ -37,5 +37,10 @@
       "default": 500
     }
   ],
-  "requires_api_key": false
+  "requires_api_key": false,
+  "dependencies": {
+    "python": [
+      "Pillow"
+    ]
+  }
 }

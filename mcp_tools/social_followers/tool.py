@@ -1,7 +1,6 @@
 """Get follower count and list for a social media user."""
 
 import json
-import os
 
 try:
     import requests
@@ -9,23 +8,24 @@ except ImportError:
     requests = None
 
 
-def run(platform: str, username: str) -> str:
+def run(platform: str, username: str, api_key: str, instance_url: str = "") -> str:
     """Fetch the follower count for a user on the specified platform.
 
     @param platform: Name of the social media platform.
     @param username: The username to look up.
+    @param api_key: API key or access token for the platform.
+    @param instance_url: Mastodon instance URL (e.g. 'https://mastodon.social'). Required for Mastodon.
     @returns JSON string with follower count and user info.
+    @throws ValueError: If api_key is not provided.
     @throws RuntimeError: If the API call fails or platform is unsupported.
     """
     if requests is None:
-        raise ImportError("The 'requests' package is required. Install it with: pip install requests")
-
-    platform_lower = platform.lower()
-    env_key = f"{platform.upper()}_API_KEY"
-    api_key = os.environ.get(env_key, "")
+        return "error: " + "The 'requests' package is required. Install it with: pip install requests"
 
     if not api_key:
-        raise RuntimeError(f"{env_key} environment variable is not set")
+        raise ValueError("api_key is required")
+
+    platform_lower = platform.lower()
 
     if platform_lower == "twitter":
         url = f"https://api.twitter.com/2/users/by/username/{username}"
@@ -43,7 +43,7 @@ def run(platform: str, username: str) -> str:
         }, indent=2)
 
     if platform_lower == "mastodon":
-        instance = os.environ.get("MASTODON_INSTANCE", "https://mastodon.social")
+        instance = instance_url or "https://mastodon.social"
         lookup_url = f"{instance}/api/v1/accounts/lookup"
         headers = {"Authorization": f"Bearer {api_key}"}
         response = requests.get(lookup_url, params={"acct": username}, headers=headers, timeout=10)

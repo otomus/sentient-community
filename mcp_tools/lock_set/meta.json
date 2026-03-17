@@ -31,9 +31,14 @@
     {
       "name": "device_host",
       "type": "string",
-      "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
-      "required": false
+      "description": "IoT gateway host URL",
+      "required": true
     }
   ],
-  "requires_api_key": false
+  "requires_api_key": false,
+  "dependencies": {
+    "python": [
+      "requests"
+    ]
+  }
 }

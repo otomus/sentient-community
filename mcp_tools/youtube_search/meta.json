@@ -23,11 +23,22 @@
       "required": true
     },
     {
+      "name": "api_key",
+      "type": "string",
+      "description": "API key for the YouTube Data API v3",
+      "required": true
+    },
+    {
       "name": "max_results",
       "type": "int",
       "description": "Maximum number of results to return (default 5)",
       "required": false
     }
   ],
-  "requires_api_key": true
+  "requires_api_key": true,
+  "dependencies": {
+    "python": [
+      "requests"
+    ]
+  }
 }

@@ -1,7 +1,6 @@
 """Get trending topics on a social media platform."""
 
 import json
-import os
 
 try:
     import requests
@@ -9,23 +8,24 @@ except ImportError:
     requests = None
 
 
-def run(platform: str, region: str = "") -> str:
+def run(platform: str, api_key: str, region: str = "", instance_url: str = "") -> str:
     """Fetch currently trending topics from the specified platform.
 
     @param platform: Name of the social media platform.
+    @param api_key: API key or access token for the platform.
     @param region: Optional region/country code for localized trends.
+    @param instance_url: Mastodon instance URL (e.g. 'https://mastodon.social'). Required for Mastodon.
     @returns JSON string with a list of trending topics.
+    @throws ValueError: If api_key is not provided.
     @throws RuntimeError: If the API call fails or platform is unsupported.
     """
     if requests is None:
-        raise ImportError("The 'requests' package is required. Install it with: pip install requests")
-
-    platform_lower = platform.lower()
-    env_key = f"{platform.upper()}_API_KEY"
-    api_key = os.environ.get(env_key, "")
+        return "error: " + "The 'requests' package is required. Install it with: pip install requests"
 
     if not api_key:
-        raise RuntimeError(f"{env_key} environment variable is not set")
+        raise ValueError("api_key is required")
+
+    platform_lower = platform.lower()
 
     if platform_lower == "twitter":
         # Twitter v2 does not have a direct trends endpoint for free tier;
@@ -47,7 +47,7 @@ def run(platform: str, region: str = "") -> str:
         }, indent=2)
 
     if platform_lower == "mastodon":
-        instance = os.environ.get("MASTODON_INSTANCE", "https://mastodon.social")
+        instance = instance_url or "https://mastodon.social"
         url = f"{instance}/api/v1/trends/tags"
         headers = {"Authorization": f"Bearer {api_key}"}
         response = requests.get(url, headers=headers, timeout=10)

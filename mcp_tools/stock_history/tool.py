@@ -20,7 +20,7 @@ def run(symbol: str, period: str) -> str:
     @throws ValueError: If the period is not valid.
     """
     if yf is None:
-        raise ImportError("The 'yfinance' package is required. Install it with: pip install yfinance")
+        return "error: " + "The 'yfinance' package is required. Install it with: pip install yfinance"
 
     if period not in VALID_PERIODS:
         raise ValueError(f"Invalid period '{period}'. Must be one of: {', '.join(sorted(VALID_PERIODS))}")

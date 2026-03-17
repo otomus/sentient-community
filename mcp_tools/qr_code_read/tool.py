@@ -22,10 +22,8 @@ def run(image_path: str) -> str:
     if decoded_data is not None:
         return decoded_data
 
-    raise ImportError(
-        "No QR code reader available. Install one of: "
+    return "error: " + "No QR code reader available. Install one of: "
         "pip install pyzbar Pillow  OR  pip install opencv-python"
-    )
 
 
 def _try_pyzbar(image_path: str) -> str | None:

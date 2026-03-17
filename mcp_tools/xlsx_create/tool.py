@@ -17,10 +17,8 @@ def run(file_path: str, data: str) -> str:
     try:
         import openpyxl
     except ImportError:
-        raise ImportError(
-            "openpyxl is required but not installed. "
+        return "error: " + "openpyxl is required but not installed. "
             "Install it with: pip install openpyxl"
-        )
 
     try:
         rows = json.loads(data)

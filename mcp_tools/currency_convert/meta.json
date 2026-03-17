@@ -33,7 +33,18 @@
       "type": "string",
       "description": "Target currency code (e.g. GBP, JPY)",
       "required": true
+    },
+    {
+      "name": "api_key",
+      "type": "string",
+      "description": "API key for exchangerate-api.com",
+      "required": true
     }
   ],
-  "requires_api_key": true
+  "requires_api_key": true,
+  "dependencies": {
+    "python": [
+      "requests"
+    ]
+  }
 }

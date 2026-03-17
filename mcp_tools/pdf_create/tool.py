@@ -24,10 +24,8 @@ def run(file_path: str, content: str) -> str:
         from reportlab.lib.pagesizes import A4
         from reportlab.pdfgen import canvas
     except ImportError:
-        raise ImportError(
-            "reportlab is required but not installed. "
+        return "error: " + "reportlab is required but not installed. "
             "Install it with: pip install reportlab"
-        )
 
     resolved = os.path.abspath(file_path)
     parent_dir = os.path.dirname(resolved)

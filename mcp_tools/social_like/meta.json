@@ -27,7 +27,24 @@
       "type": "string",
       "description": "Unique identifier of the post to like",
       "required": true
+    },
+    {
+      "name": "api_key",
+      "type": "string",
+      "description": "API key or access token for the platform",
+      "required": true
+    },
+    {
+      "name": "instance_url",
+      "type": "string",
+      "description": "Mastodon instance URL (e.g. https://mastodon.social). Required for Mastodon.",
+      "required": false
     }
   ],
-  "requires_api_key": true
+  "requires_api_key": true,
+  "dependencies": {
+    "python": [
+      "requests"
+    ]
+  }
 }

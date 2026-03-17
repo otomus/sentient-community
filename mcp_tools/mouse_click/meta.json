@@ -41,5 +41,10 @@
       "required": false
     }
   ],
-  "requires_api_key": false
+  "requires_api_key": false,
+  "dependencies": {
+    "python": [
+      "pyautogui"
+    ]
+  }
 }

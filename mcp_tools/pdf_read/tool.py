@@ -15,10 +15,8 @@ def run(file_path: str) -> str:
     try:
         import pdfplumber
     except ImportError:
-        raise ImportError(
-            "pdfplumber is required but not installed. "
+        return "error: " + "pdfplumber is required but not installed. "
             "Install it with: pip install pdfplumber"
-        )
 
     resolved = os.path.abspath(file_path)
     if not os.path.exists(resolved):

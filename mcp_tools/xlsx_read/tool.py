@@ -17,10 +17,8 @@ def run(file_path: str, sheet: str = "") -> str:
     try:
         import openpyxl
     except ImportError:
-        raise ImportError(
-            "openpyxl is required but not installed. "
+        return "error: " + "openpyxl is required but not installed. "
             "Install it with: pip install openpyxl"
-        )
 
     resolved = os.path.abspath(file_path)
     if not os.path.exists(resolved):

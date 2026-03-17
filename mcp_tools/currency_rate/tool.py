@@ -1,7 +1,6 @@
 """Get the current exchange rate between two currencies."""
 
 import json
-import os
 
 try:
     import requests
@@ -9,20 +8,21 @@ except ImportError:
     requests = None
 
 
-def run(from_currency: str, to_currency: str) -> str:
+def run(from_currency: str, to_currency: str, api_key: str) -> str:
     """Fetch the live exchange rate for a currency pair.
 
     @param from_currency: ISO 4217 source currency code.
     @param to_currency: ISO 4217 target currency code.
+    @param api_key: API key for exchangerate-api.com.
     @returns JSON string containing the exchange rate.
+    @throws ValueError: If api_key is not provided.
     @throws RuntimeError: If the API call fails or currency is unsupported.
     """
     if requests is None:
-        raise ImportError("The 'requests' package is required. Install it with: pip install requests")
+        return "error: " + "The 'requests' package is required. Install it with: pip install requests"
 
-    api_key = os.environ.get("EXCHANGE_RATE_API_KEY", "")
     if not api_key:
-        raise RuntimeError("EXCHANGE_RATE_API_KEY environment variable is not set")
+        raise ValueError("api_key is required")
 
     src = from_currency.upper()
     tgt = to_currency.upper()

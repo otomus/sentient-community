@@ -14,10 +14,8 @@ def run(markdown_text: str) -> str:
     try:
         import markdown
     except ImportError:
-        raise ImportError(
-            "markdown is required but not installed. "
+        return "error: " + "markdown is required but not installed. "
             "Install it with: pip install markdown"
-        )
 
     extensions = ["tables", "fenced_code", "toc"]
     html = markdown.markdown(markdown_text, extensions=extensions)

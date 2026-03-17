@@ -1,7 +1,6 @@
 """Read the current value from an IoT sensor."""
 
 import json
-import os
 
 try:
     import requests
@@ -9,29 +8,25 @@ except ImportError:
     requests = None
 
 
-def _get_host(device_host: str) -> str:
-    """Resolve the IoT gateway host from parameter or environment."""
-    host = device_host or os.environ.get("SENTIENT_IOT_HOST", "")
-    if not host:
-        raise RuntimeError("No device_host provided and SENTIENT_IOT_HOST is not set")
-    return host.rstrip("/")
-
-
-def run(sensor_id: str, device_host: str = "") -> str:
+def run(sensor_id: str, device_host: str) -> str:
     """Read the current value from a sensor via the IoT gateway REST API.
 
     Calls GET {device_host}/api/v1/sensors/{sensor_id} to retrieve
     the latest reading.
 
     @param sensor_id: Unique identifier of the sensor.
-    @param device_host: IoT gateway URL (falls back to SENTIENT_IOT_HOST).
+    @param device_host: IoT gateway URL.
     @returns JSON string with the sensor reading.
+    @throws ValueError: If device_host is not provided.
     @throws RuntimeError: If the request fails.
     """
-    if requests is None:
-        raise ImportError("The 'requests' package is required. Install it with: pip install requests")
+    if not device_host:
+        raise ValueError("device_host is required")
 
-    host = _get_host(device_host)
+    if requests is None:
+        return "error: " + "The 'requests' package is required. Install it with: pip install requests"
+
+    host = device_host.rstrip("/")
     url = f"{host}/api/v1/sensors/{sensor_id}"
 
     response = requests.get(url, timeout=10)

@@ -15,10 +15,8 @@ def run(data: str, output_path: str, size: int = 10) -> str:
     try:
         import qrcode
     except ImportError:
-        raise ImportError(
-            "qrcode is required but not installed. "
+        return "error: " + "qrcode is required but not installed. "
             "Install it with: pip install qrcode[pil]"
-        )
 
     if not data.strip():
         raise ValueError("Data cannot be empty")

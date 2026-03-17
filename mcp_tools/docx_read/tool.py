@@ -15,10 +15,8 @@ def run(file_path: str) -> str:
     try:
         import docx
     except ImportError:
-        raise ImportError(
-            "python-docx is required but not installed. "
+        return "error: " + "python-docx is required but not installed. "
             "Install it with: pip install python-docx"
-        )
 
     resolved = os.path.abspath(file_path)
     if not os.path.exists(resolved):

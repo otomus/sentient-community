@@ -21,10 +21,8 @@ def run(chart_type: str, data: str, output_path: str, title: str = "") -> str:
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
     except ImportError:
-        raise ImportError(
-            "matplotlib is required but not installed. "
+        return "error: " + "matplotlib is required but not installed. "
             "Install it with: pip install matplotlib"
-        )
 
     if chart_type not in SUPPORTED_CHART_TYPES:
         raise ValueError(

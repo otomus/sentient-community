@@ -24,10 +24,8 @@ def run(data: str, output_path: str, barcode_type: str = "code128") -> str:
         import barcode as barcode_lib
         from barcode.writer import ImageWriter
     except ImportError:
-        raise ImportError(
-            "python-barcode is required but not installed. "
+        return "error: " + "python-barcode is required but not installed. "
             "Install it with: pip install python-barcode Pillow"
-        )
 
     if not data.strip():
         raise ValueError("Data cannot be empty")

@@ -15,10 +15,8 @@ def run(file_path: str) -> str:
     try:
         from pptx import Presentation
     except ImportError:
-        raise ImportError(
-            "python-pptx is required but not installed. "
+        return "error: " + "python-pptx is required but not installed. "
             "Install it with: pip install python-pptx"
-        )
 
     resolved = os.path.abspath(file_path)
     if not os.path.exists(resolved):

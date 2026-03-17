@@ -23,11 +23,28 @@
       "required": true
     },
     {
+      "name": "api_key",
+      "type": "string",
+      "description": "API key or access token for the platform",
+      "required": true
+    },
+    {
       "name": "region",
       "type": "string",
       "description": "Region or country code for localized trends (e.g. US, UK)",
       "required": false
+    },
+    {
+      "name": "instance_url",
+      "type": "string",
+      "description": "Mastodon instance URL (e.g. https://mastodon.social). Required for Mastodon.",
+      "required": false
     }
   ],
-  "requires_api_key": true
+  "requires_api_key": true,
+  "dependencies": {
+    "python": [
+      "requests"
+    ]
+  }
 }

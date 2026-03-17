@@ -17,7 +17,7 @@ def run(symbol: str) -> str:
     @throws RuntimeError: If the ticker symbol is invalid.
     """
     if yf is None:
-        raise ImportError("The 'yfinance' package is required. Install it with: pip install yfinance")
+        return "error: " + "The 'yfinance' package is required. Install it with: pip install yfinance"
 
     ticker = yf.Ticker(symbol.upper())
     info = ticker.info
