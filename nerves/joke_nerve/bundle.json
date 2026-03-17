@@ -16,36 +16,36 @@
   "tools": [
     {
       "name": "joke_fetcher",
-      "spec": "tools/joke_fetcher/spec.json",
+      "spec": "mcp_tools/joke_fetcher/spec.json",
       "implementations": {
-        "python": "tools/joke_fetcher/tool.py"
+        "python": "mcp_tools/joke_fetcher/tool.py"
       }
     },
     {
       "name": "generate_joke",
-      "spec": "tools/generate_joke/spec.json",
+      "spec": "mcp_tools/generate_joke/spec.json",
       "implementations": {}
     },
     {
       "name": "search_wikipedia",
-      "spec": "tools/search_wikipedia/spec.json",
+      "spec": "mcp_tools/search_wikipedia/spec.json",
       "implementations": {}
     },
     {
       "name": "voice_recognition",
-      "spec": "tools/voice_recognition/spec.json",
+      "spec": "mcp_tools/voice_recognition/spec.json",
       "implementations": {
-        "python": "tools/voice_recognition/tool.py"
+        "python": "mcp_tools/voice_recognition/tool.py"
       }
     },
     {
       "name": "get_article_content",
-      "spec": "tools/get_article_content/spec.json",
+      "spec": "mcp_tools/get_article_content/spec.json",
       "implementations": {}
     },
     {
       "name": "random_joke",
-      "spec": "tools/random_joke/spec.json",
+      "spec": "mcp_tools/random_joke/spec.json",
       "implementations": {}
     }
   ],

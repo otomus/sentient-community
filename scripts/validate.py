@@ -500,9 +500,9 @@ def _validate_all_connectors() -> list[str]:
 
 
 def _validate_all_tools() -> list[str]:
-    """Validate all tools in the tools/ directory."""
+    """Validate all tools in the mcp_tools/ directory."""
     errors = []
-    tools_dir = os.path.join(REPO_ROOT, "tools")
+    tools_dir = os.path.join(REPO_ROOT, "mcp_tools")
     for name in _collect_subdirs(tools_dir):
         print(f"Validating tool: {name}")
         errors.extend(validate_tool(os.path.join(tools_dir, name)))

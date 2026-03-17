@@ -42,7 +42,7 @@ MCP tools are Python functions that sentient-core can discover and install at ru
 ### Structure
 
 ```
-tools/{name}/
+mcp_tools/{name}/
 ├── meta.json     # Name, version, description, category, tags, parameters, implementations
 ├── tool.py       # Python implementation (run() function with docstring)
 ├── tool.go       # Go implementation (optional — provide at least one language)
@@ -55,7 +55,7 @@ Each tool must have at least one implementation. You can provide multiple — th
 
 ### Steps
 
-1. Create your tool directory under `tools/`
+1. Create your tool directory under `mcp_tools/`
 2. Add `meta.json` following `schemas/tool_meta.schema.json`
 3. Add `tool.py` with a `run()` function and a clear docstring
 4. Add `tests.json` with at least 2 test cases (see `schemas/tool_tests.schema.json`)

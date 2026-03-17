@@ -145,9 +145,9 @@ def collect_adapters() -> dict:
 
 
 def collect_tools() -> dict:
-    """Walk tools/ and extract tool metadata."""
+    """Walk mcp_tools/ and extract tool metadata."""
     tools = {}
-    tools_dir = os.path.join(REPO_ROOT, "tools")
+    tools_dir = os.path.join(REPO_ROOT, "mcp_tools")
 
     for name in sorted(os.listdir(tools_dir)) if os.path.isdir(tools_dir) else []:
         meta = _load_json(os.path.join(tools_dir, name, "meta.json"))

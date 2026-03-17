@@ -75,7 +75,7 @@ jobs:
 
           if [ "$ERRORS" -ne 0 ]; then
             echo ""
-            echo "Community PRs can modify: nerves/, adapters/{role}/{size}/{model}/, connectors/, tools/, mcps/"
+            echo "Community PRs can modify: nerves/, adapters/{role}/{size}/{model}/, connectors/, mcp_tools/, mcps/"
             echo "See CONTRIBUTING.md for details."
             exit 1
           fi
@@ -86,7 +86,7 @@ jobs:
         with:
           script: |
             const reasons = `${{ steps.path-check.outputs.reasons }}`;
-            const body = `## Validation Failed\n\nThis PR modifies protected paths:\n\n${reasons}\nCommunity PRs can modify: \`nerves/\`, \`adapters/{role}/{size}/{model}/\`, \`connectors/\`, \`tools/\`, \`mcps/\`. Default adapter files are core-managed. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.`;
+            const body = `## Validation Failed\n\nThis PR modifies protected paths:\n\n${reasons}\nCommunity PRs can modify: \`nerves/\`, \`adapters/{role}/{size}/{model}/\`, \`connectors/\`, \`mcp_tools/\`, \`mcps/\`. Default adapter files are core-managed. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.`;
             try {
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
@@ -250,7 +250,7 @@ jobs:
 
       - name: Run secret scan
         id: secret-check
-        run: python scripts/check_secrets.py nerves/ adapters/ connectors/ tools/ mcps/ 2>&1 | tee /tmp/secrets-output.txt
+        run: python scripts/check_secrets.py nerves/ adapters/ connectors/ mcp_tools/ mcps/ 2>&1 | tee /tmp/secrets-output.txt
 
       - name: Comment secret scan errors on PR
         if: failure() && steps.secret-check.outcome == 'failure'

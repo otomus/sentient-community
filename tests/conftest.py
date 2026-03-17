@@ -30,13 +30,13 @@ def schemas_dir(tmp_path):
 
 @pytest.fixture()
 def mock_repo(tmp_path):
-    """Create a minimal repo tree with schemas/, nerves/, adapters/, connectors/, tools/, mcps/.
+    """Create a minimal repo tree with schemas/, nerves/, adapters/, connectors/, mcp_tools/, mcps/.
 
     Returns the tmp_path (repo root). All schema files are copied so that
     load_schema / load_role_tuning_profiles work correctly when SCHEMAS_DIR
     is patched.
     """
-    for subdir in ("nerves", "adapters", "connectors", "tools", "mcps"):
+    for subdir in ("nerves", "adapters", "connectors", "mcp_tools", "mcps"):
         (tmp_path / subdir).mkdir()
     shutil.copytree(_REAL_SCHEMAS_DIR, tmp_path / "schemas")
     return tmp_path

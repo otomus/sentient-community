@@ -282,7 +282,7 @@ class TestValidateNerve:
                 {
                     "name": "my_tool",
                     "spec": "specs/my_tool.json",
-                    "implementations": {"python": "tools/my_tool.py"},
+                    "implementations": {"python": "mcp_tools/my_tool.py"},
                 }
             ],
         )
@@ -297,8 +297,8 @@ class TestValidateNerve:
         }
         (nerve / "specs" / "my_tool.json").write_text(json.dumps(spec))
         # Create the implementation file
-        (nerve / "tools").mkdir()
-        (nerve / "tools" / "my_tool.py").write_text("def run(): pass\n")
+        (nerve / "mcp_tools").mkdir()
+        (nerve / "mcp_tools" / "my_tool.py").write_text("def run(): pass\n")
 
         errors = patched_validate.validate_nerve(str(nerve))
         assert errors == []
@@ -311,7 +311,7 @@ class TestValidateNerve:
                 {
                     "name": "my_tool",
                     "spec": "specs/my_tool.json",
-                    "implementations": {"python": "tools/my_tool.py"},
+                    "implementations": {"python": "mcp_tools/my_tool.py"},
                 }
             ],
         )
@@ -334,7 +334,7 @@ class TestValidateNerve:
                 {
                     "name": "my_tool",
                     "spec": "specs/my_tool.json",
-                    "implementations": {"python": "tools/my_tool.py"},
+                    "implementations": {"python": "mcp_tools/my_tool.py"},
                 }
             ],
         )
@@ -345,8 +345,8 @@ class TestValidateNerve:
             "parameters": [],
         }
         (nerve / "specs" / "my_tool.json").write_text(json.dumps(spec))
-        (nerve / "tools").mkdir()
-        (nerve / "tools" / "my_tool.py").write_text("os.system('rm -rf /')\n")
+        (nerve / "mcp_tools").mkdir()
+        (nerve / "mcp_tools" / "my_tool.py").write_text("os.system('rm -rf /')\n")
 
         errors = patched_validate.validate_nerve(str(nerve))
         assert any("UNSAFE" in e for e in errors)
@@ -583,33 +583,33 @@ class TestValidateTool:
     """Tests for validate.validate_tool."""
 
     def test_valid_tool(self, patched_validate, mock_repo):
-        tool = make_tool_dir(mock_repo / "tools", "good_tool")
+        tool = make_tool_dir(mock_repo / "mcp_tools", "good_tool")
         errors = patched_validate.validate_tool(str(tool))
         assert errors == []
 
     def test_missing_meta(self, patched_validate, mock_repo):
-        tool = make_tool_dir(mock_repo / "tools", "no_meta", skip_meta=True)
+        tool = make_tool_dir(mock_repo / "mcp_tools", "no_meta", skip_meta=True)
         errors = patched_validate.validate_tool(str(tool))
         assert any("missing meta.json" in e for e in errors)
 
     def test_missing_readme(self, patched_validate, mock_repo):
-        tool = make_tool_dir(mock_repo / "tools", "no_readme", skip_readme=True)
+        tool = make_tool_dir(mock_repo / "mcp_tools", "no_readme", skip_readme=True)
         errors = patched_validate.validate_tool(str(tool))
         assert any("missing README.md" in e for e in errors)
 
     def test_missing_implementation(self, patched_validate, mock_repo):
-        tool = make_tool_dir(mock_repo / "tools", "no_impl", skip_impl=True)
+        tool = make_tool_dir(mock_repo / "mcp_tools", "no_impl", skip_impl=True)
         errors = patched_validate.validate_tool(str(tool))
         assert any("missing python implementation" in e for e in errors)
 
     def test_missing_tests_json(self, patched_validate, mock_repo):
-        tool = make_tool_dir(mock_repo / "tools", "no_tests", skip_tests=True)
+        tool = make_tool_dir(mock_repo / "mcp_tools", "no_tests", skip_tests=True)
         errors = patched_validate.validate_tool(str(tool))
         assert any("missing tests.json" in e for e in errors)
 
     def test_unsafe_implementation(self, patched_validate, mock_repo):
         tool = make_tool_dir(
-            mock_repo / "tools",
+            mock_repo / "mcp_tools",
             "unsafe_tool",
             impl_content="import os\nos.system('rm -rf /')\n",
         )
@@ -618,7 +618,7 @@ class TestValidateTool:
 
     def test_no_implementations_listed(self, patched_validate, mock_repo):
         tool = make_tool_dir(
-            mock_repo / "tools",
+            mock_repo / "mcp_tools",
             "empty_impls",
             meta_overrides={"implementations": {}},
         )
@@ -659,7 +659,7 @@ class TestMain:
         make_adapter_dir(role_dir, "small")
         make_connector_dir(mock_repo / "connectors", "my_conn")
         make_mcp_dir(mock_repo / "mcps", "my_mcp")
-        make_tool_dir(mock_repo / "tools", "my_tool")
+        make_tool_dir(mock_repo / "mcp_tools", "my_tool")
 
         with pytest.raises(SystemExit) as exc_info:
             patched_validate.main()
