@@ -6,25 +6,37 @@ collects Python packages, and either generates a requirements.txt
 or installs them directly.
 
 Usage:
-    # Generate requirements.txt only
+    # Generate requirements.txt only (inside community repo)
     python scripts/seed_dependencies.py
 
-    # Install directly
+    # Install directly (inside community repo)
     python scripts/seed_dependencies.py --install
 
     # Install for a specific tool
     python scripts/seed_dependencies.py --install --tool chart_create
+
+    # External consumer: point to cached tools directory
+    python seed_dependencies.py --tools-dir /path/to/.community/cache/mcp_tools
 """
 
 import json
-import os
 import subprocess
 import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-MCP_TOOLS_DIR = REPO_ROOT / "mcp_tools"
-REQUIREMENTS_PATH = REPO_ROOT / "requirements-tools.txt"
+
+
+def _parse_tools_dir() -> Path:
+    """Resolve the mcp_tools directory from --tools-dir or fallback to repo-relative path."""
+    for i, arg in enumerate(sys.argv):
+        if arg == "--tools-dir" and i + 1 < len(sys.argv):
+            return Path(sys.argv[i + 1])
+    return REPO_ROOT / "mcp_tools"
+
+
+MCP_TOOLS_DIR = _parse_tools_dir()
+REQUIREMENTS_PATH = MCP_TOOLS_DIR.parent / "requirements-tools.txt"
 
 
 def collect_dependencies(tool_filter: str = "") -> dict[str, set[str]]:
@@ -116,13 +128,21 @@ def install_dependencies(deps: dict[str, set[str]]) -> bool:
 
 
 def main() -> None:
-    """Entry point — collect deps, generate requirements, optionally install."""
-    do_install = "--install" in sys.argv
+    """Entry point — collect deps, generate requirements, optionally install.
+
+    When --tools-dir is provided (external consumer), --install is the default.
+    """
+    external_mode = "--tools-dir" in sys.argv
+    do_install = "--install" in sys.argv or external_mode
     tool_filter = ""
 
     for i, arg in enumerate(sys.argv):
         if arg == "--tool" and i + 1 < len(sys.argv):
             tool_filter = sys.argv[i + 1]
+
+    if not MCP_TOOLS_DIR.is_dir():
+        print(f"error: tools directory not found: {MCP_TOOLS_DIR}", file=sys.stderr)
+        sys.exit(1)
 
     deps = collect_dependencies(tool_filter)
     python_count = len(deps.get("python", set()))
@@ -131,15 +151,14 @@ def main() -> None:
         print("No dependencies found.")
         return
 
-    print(f"Found {python_count} unique Python dependencies across mcp_tools/")
-
-    req_path = write_requirements(deps)
-    print(f"Written to {req_path}")
+    print(f"Found {python_count} unique Python dependencies across {MCP_TOOLS_DIR}")
 
     if do_install:
         success = install_dependencies(deps)
         sys.exit(0 if success else 1)
     else:
+        req_path = write_requirements(deps)
+        print(f"Written to {req_path}")
         print("Run with --install to install them, or use:")
         print(f"  pip install -r {req_path}")
 
