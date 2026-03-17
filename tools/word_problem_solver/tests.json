@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Solve a simple arithmetic problem",
+    "args": { "query": "What is 25 * 4 + 10?" },
+    "expected_keywords": ["Error"]
+  },
+  {
+    "description": "Solve an algebra problem",
+    "args": { "query": "Solve for x: 2x + 5 = 15" },
+    "expected_keywords": ["Error"]
+  }
+]

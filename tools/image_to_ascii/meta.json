@@ -1,0 +1,15 @@
+{
+  "name": "image_to_ascii",
+  "version": "1.0.0",
+  "description": "Convert images to ASCII art from a URL",
+  "implementations": {
+    "python": "tool.py"
+  },
+  "author": { "github": "sentient-community" },
+  "category": "media",
+  "tags": ["image", "ascii", "art", "conversion", "text"],
+  "parameters": [
+    { "name": "query", "type": "string", "description": "URL of the image to convert to ASCII art", "required": true }
+  ],
+  "requires_api_key": false
+}

@@ -1,0 +1,15 @@
+{
+  "name": "gif_animation_tool",
+  "version": "1.0.0",
+  "description": "Generate animated GIFs from text descriptions using an external service",
+  "implementations": {
+    "python": "tool.py"
+  },
+  "author": { "github": "sentient-community" },
+  "category": "media",
+  "tags": ["gif", "animation", "image", "media", "generation"],
+  "parameters": [
+    { "name": "query", "type": "string", "description": "Text description of the animation to generate", "required": true }
+  ],
+  "requires_api_key": false
+}

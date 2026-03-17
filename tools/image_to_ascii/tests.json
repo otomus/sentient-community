@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Convert an image URL to ASCII art",
+    "args": { "query": "https://via.placeholder.com/100" },
+    "expected_keywords": ["Error"]
+  },
+  {
+    "description": "Invalid URL returns error gracefully",
+    "args": { "query": "not-a-url" },
+    "expect_error": true
+  }
+]

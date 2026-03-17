@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Process a simple voice query",
+    "args": { "query": "hello world" },
+    "expected_keywords": ["Error"]
+  },
+  {
+    "description": "Process a longer phrase",
+    "args": { "query": "what is the weather today" },
+    "expected_keywords": ["Error"]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "user_preference_analysis",
+  "version": "1.0.0",
+  "description": "Analyze user data for demographic insights and preference profiling",
+  "implementations": {
+    "python": "tool.py"
+  },
+  "author": { "github": "sentient-community" },
+  "category": "analytics",
+  "tags": ["user", "preference", "analysis", "demographics", "profiling"],
+  "parameters": [
+    { "name": "query", "type": "string", "description": "Query describing the user data to analyze", "required": true }
+  ],
+  "requires_api_key": false
+}

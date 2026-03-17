@@ -1,0 +1,15 @@
+{
+  "name": "video_editing_tool",
+  "version": "1.0.0",
+  "description": "Generate animated GIFs from text descriptions using external video editing services",
+  "implementations": {
+    "python": "tool.py"
+  },
+  "author": { "github": "sentient-community" },
+  "category": "media",
+  "tags": ["video", "editing", "gif", "animation", "media"],
+  "parameters": [
+    { "name": "query", "type": "string", "description": "Text description of the video or animation to generate", "required": true }
+  ],
+  "requires_api_key": false
+}

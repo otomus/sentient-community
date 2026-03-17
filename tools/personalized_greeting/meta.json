@@ -1,0 +1,15 @@
+{
+  "name": "personalized_greeting",
+  "version": "1.0.0",
+  "description": "Generate personalized greetings based on the time of day",
+  "implementations": {
+    "python": "tool.py"
+  },
+  "author": { "github": "sentient-community" },
+  "category": "entertainment",
+  "tags": ["greeting", "personalized", "time", "motivation"],
+  "parameters": [
+    { "name": "query", "type": "string", "description": "Optional user name for personalization", "required": false, "default": "" }
+  ],
+  "requires_api_key": false
+}

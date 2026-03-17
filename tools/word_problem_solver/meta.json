@@ -1,0 +1,15 @@
+{
+  "name": "word_problem_solver",
+  "version": "1.0.0",
+  "description": "Solve mathematical problems including arithmetic, algebra, and word problems",
+  "implementations": {
+    "python": "tool.py"
+  },
+  "author": { "github": "sentient-community" },
+  "category": "education",
+  "tags": ["math", "solver", "arithmetic", "algebra", "word-problems", "education"],
+  "parameters": [
+    { "name": "query", "type": "string", "description": "Mathematical problem or word problem to solve", "required": true }
+  ],
+  "requires_api_key": false
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Analyze user preferences with a query",
+    "args": { "query": "show me trending interests for age group 25-34" },
+    "expected_keywords": ["Error"]
+  },
+  {
+    "description": "Analyze interaction history",
+    "args": { "query": "summarize interaction history for user 12345" },
+    "expected_keywords": ["Error"]
+  }
+]

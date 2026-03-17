@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Returns a greeting without a name",
+    "args": {},
+    "expected_keywords": ["Good"]
+  },
+  {
+    "description": "Returns a personalized greeting with a name",
+    "args": { "query": "Alice" },
+    "expected_keywords": ["Alice", "Good"]
+  }
+]

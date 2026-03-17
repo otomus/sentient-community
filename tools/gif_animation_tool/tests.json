@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Generate a GIF from a simple prompt",
+    "args": { "query": "a cat dancing" },
+    "expected_keywords": ["gif", "url", "Error"]
+  },
+  {
+    "description": "Generate a GIF from a detailed prompt",
+    "args": { "query": "sunset over the ocean with waves crashing" },
+    "expected_keywords": ["gif", "url", "Error"]
+  }
+]
