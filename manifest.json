@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-17T13:49:23.668900+00:00",
+  "generated_at": "2026-03-17T16:29:46.810598+00:00",
   "nerves": {
     "joke_nerve": {
       "description": "Generate jokes, puns, and comedic content across various topics. Ensure the humor is appropriate for all audiences.",
@@ -308,6 +308,628 @@
     }
   },
   "connectors": {
+    "discord": {
+      "name": "discord",
+      "version": "1.0.0",
+      "description": "Discord connector using discord.js \u2014 bridges Discord server and DM messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "discord"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "document",
+          "sticker"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "document",
+          "sticker",
+          "reaction"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "bot_token",
+          "required": true,
+          "secret": true,
+          "description": "Discord bot token from Developer Portal"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Discord user IDs allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Discord channel IDs to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Channel IDs to observe read-only"
+        }
+      ]
+    },
+    "imessage-bluebubbles": {
+      "name": "imessage-bluebubbles",
+      "version": "1.0.0",
+      "description": "iMessage connector via BlueBubbles server \u2014 bridges iMessage to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "imessage"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "document",
+          "reaction"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "server_url",
+          "required": true,
+          "secret": false,
+          "description": "BlueBubbles server URL (e.g. http://localhost:1234)"
+        },
+        {
+          "name": "password",
+          "required": true,
+          "secret": true,
+          "description": "BlueBubbles server password"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Phone numbers or iMessage addresses allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Group chat GUIDs to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Group chat GUIDs to observe read-only"
+        }
+      ]
+    },
+    "imessage-imsg": {
+      "name": "imessage-imsg",
+      "version": "1.0.0",
+      "description": "iMessage connector via imsg AppleScript bridge \u2014 bridges iMessage on macOS to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "imessage"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "audio",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Phone numbers or iMessage addresses allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Group chat names to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Group chat names to observe read-only"
+        },
+        {
+          "name": "poll_interval_ms",
+          "required": false,
+          "secret": false,
+          "description": "Polling interval in milliseconds (default: 2000)"
+        }
+      ]
+    },
+    "matrix": {
+      "name": "matrix",
+      "version": "1.0.0",
+      "description": "Matrix connector using matrix-js-sdk \u2014 bridges Matrix room messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "matrix"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "audio",
+          "document",
+          "reaction"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "homeserver_url",
+          "required": true,
+          "secret": false,
+          "description": "Matrix homeserver URL (e.g. https://matrix.org)"
+        },
+        {
+          "name": "access_token",
+          "required": true,
+          "secret": true,
+          "description": "Matrix bot user access token"
+        },
+        {
+          "name": "user_id",
+          "required": true,
+          "secret": false,
+          "description": "Matrix bot user ID (e.g. @bot:matrix.org)"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Matrix user IDs allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Matrix room IDs to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Room IDs to observe read-only"
+        }
+      ]
+    },
+    "nextcloud-talk": {
+      "name": "nextcloud-talk",
+      "version": "1.0.0",
+      "description": "Nextcloud Talk connector \u2014 bridges Nextcloud Talk chat messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "nextcloud-talk"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "document"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "nextcloud_url",
+          "required": true,
+          "secret": false,
+          "description": "Nextcloud server URL (e.g. https://cloud.example.com)"
+        },
+        {
+          "name": "username",
+          "required": true,
+          "secret": false,
+          "description": "Nextcloud bot user account username"
+        },
+        {
+          "name": "password",
+          "required": true,
+          "secret": true,
+          "description": "Nextcloud bot user account password or app token"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Nextcloud user IDs allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Talk room tokens to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Room tokens to observe read-only"
+        },
+        {
+          "name": "poll_interval_ms",
+          "required": false,
+          "secret": false,
+          "description": "Polling interval in milliseconds (default: 3000)"
+        }
+      ]
+    },
+    "nostr": {
+      "name": "nostr",
+      "version": "1.0.0",
+      "description": "Nostr connector using NIP-04 encrypted DMs \u2014 bridges Nostr direct messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "nostr"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text"
+        ],
+        "outgoing": [
+          "text"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "private_key",
+          "required": true,
+          "secret": true,
+          "description": "Nostr private key in hex or nsec format"
+        },
+        {
+          "name": "relays",
+          "required": true,
+          "secret": false,
+          "description": "Array of Nostr relay WebSocket URLs"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Nostr public keys (npub or hex) allowed to interact"
+        }
+      ]
+    },
+    "signal": {
+      "name": "signal",
+      "version": "1.0.0",
+      "description": "Signal connector using signal-cli REST API \u2014 bridges Signal messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "signal"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "document",
+          "sticker",
+          "contact"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "audio",
+          "document",
+          "sticker",
+          "reaction"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "signal_cli_url",
+          "required": true,
+          "secret": false,
+          "description": "URL of the signal-cli REST API (e.g. http://localhost:8080)"
+        },
+        {
+          "name": "phone_number",
+          "required": true,
+          "secret": true,
+          "description": "Registered Signal phone number (e.g. +1234567890)"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Phone numbers allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Signal group IDs to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Group IDs to observe read-only"
+        }
+      ]
+    },
+    "slack": {
+      "name": "slack",
+      "version": "1.0.0",
+      "description": "Slack connector using Bolt \u2014 bridges Slack workspace messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "slack"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "audio",
+          "document",
+          "reaction"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "bot_token",
+          "required": true,
+          "secret": true,
+          "description": "Slack Bot User OAuth Token (xoxb-...)"
+        },
+        {
+          "name": "app_token",
+          "required": true,
+          "secret": true,
+          "description": "Slack App-Level Token for Socket Mode (xapp-...)"
+        },
+        {
+          "name": "signing_secret",
+          "required": true,
+          "secret": true,
+          "description": "Slack app signing secret"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Slack user IDs allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Slack channel IDs to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Channel IDs to observe read-only"
+        }
+      ]
+    },
+    "teams": {
+      "name": "teams",
+      "version": "1.0.0",
+      "description": "Microsoft Teams connector using Bot Framework \u2014 bridges Teams messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "teams"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "document",
+          "card"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "app_id",
+          "required": true,
+          "secret": false,
+          "description": "Microsoft App ID from Azure Bot registration"
+        },
+        {
+          "name": "app_password",
+          "required": true,
+          "secret": true,
+          "description": "Microsoft App password/secret"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Azure AD user IDs allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Teams channel IDs to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Channel IDs to observe read-only"
+        },
+        {
+          "name": "port",
+          "required": false,
+          "secret": false,
+          "description": "HTTP port for incoming webhooks (default: 3978)"
+        }
+      ]
+    },
     "telegram": {
       "name": "telegram",
       "version": "1.0.0",
@@ -380,6 +1002,124 @@
         }
       ]
     },
+    "tlon": {
+      "name": "tlon",
+      "version": "1.0.0",
+      "description": "Tlon Messenger connector \u2014 bridges Tlon peer-to-peer chat messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "tlon"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text"
+        ],
+        "outgoing": [
+          "text"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "ship_url",
+          "required": true,
+          "secret": false,
+          "description": "Urbit ship URL (e.g. http://localhost:8080)"
+        },
+        {
+          "name": "ship_code",
+          "required": true,
+          "secret": true,
+          "description": "Urbit ship access code (+code)"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Urbit ship names allowed to interact (e.g. ~zod)"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Tlon group/channel paths to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Group/channel paths to observe read-only"
+        }
+      ]
+    },
+    "webchat": {
+      "name": "webchat",
+      "version": "1.0.0",
+      "description": "WebChat connector \u2014 browser-based chat UI bridging to Sentient brain via Redis and WebSocket",
+      "language": "javascript",
+      "platforms": [
+        "webchat"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "audio",
+          "document",
+          "card"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "port",
+          "required": false,
+          "secret": false,
+          "description": "HTTP/WebSocket server port (default: 3100)"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Session IDs or usernames allowed to interact"
+        },
+        {
+          "name": "cors_origins",
+          "required": false,
+          "secret": false,
+          "description": "Allowed CORS origins (default: *)"
+        }
+      ]
+    },
     "whatsapp": {
       "name": "whatsapp",
       "version": "1.0.0",
@@ -446,9 +1186,1713 @@
           "description": "Group IDs to observe read-only"
         }
       ]
+    },
+    "zalo": {
+      "name": "zalo",
+      "version": "1.0.0",
+      "description": "Zalo connector using Zalo Official Account API \u2014 bridges Zalo OA messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "zalo"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image",
+          "document"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "access_token",
+          "required": true,
+          "secret": true,
+          "description": "Zalo OA access token"
+        },
+        {
+          "name": "refresh_token",
+          "required": true,
+          "secret": true,
+          "description": "Zalo OA refresh token for auto-renewal"
+        },
+        {
+          "name": "app_id",
+          "required": true,
+          "secret": false,
+          "description": "Zalo app ID"
+        },
+        {
+          "name": "secret_key",
+          "required": true,
+          "secret": true,
+          "description": "Zalo app secret key"
+        },
+        {
+          "name": "webhook_port",
+          "required": false,
+          "secret": false,
+          "description": "Port for Zalo webhook callbacks (default: 3200)"
+        },
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Zalo user IDs allowed to interact"
+        }
+      ]
+    },
+    "zalo-personal": {
+      "name": "zalo-personal",
+      "version": "1.0.0",
+      "description": "Zalo Personal connector via QR login \u2014 bridges personal Zalo messages to Sentient brain via Redis",
+      "language": "javascript",
+      "platforms": [
+        "zalo"
+      ],
+      "author": "sentient-community",
+      "capabilities": {
+        "incoming": [
+          "text",
+          "image",
+          "document"
+        ],
+        "outgoing": [
+          "text",
+          "image"
+        ]
+      },
+      "config_fields": [
+        {
+          "name": "bot_name",
+          "required": false,
+          "secret": false,
+          "description": "Bot display name (default: Sentient)"
+        },
+        {
+          "name": "bot_aliases",
+          "required": false,
+          "secret": false,
+          "description": "Alternative names the bot responds to"
+        },
+        {
+          "name": "whitelisted_users",
+          "required": false,
+          "secret": false,
+          "description": "Zalo user IDs allowed to interact"
+        },
+        {
+          "name": "whitelisted_groups",
+          "required": false,
+          "secret": false,
+          "description": "Zalo group IDs to process messages from"
+        },
+        {
+          "name": "monitor_groups",
+          "required": false,
+          "secret": false,
+          "description": "Group IDs to observe read-only"
+        }
+      ]
     }
   },
   "tools": {
+    "actuator_get": {
+      "name": "actuator_get",
+      "version": "1.0.0",
+      "description": "Get the current state of an IoT actuator",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "iot",
+      "tags": [
+        "iot",
+        "actuator",
+        "state",
+        "read"
+      ],
+      "parameters": [
+        {
+          "name": "actuator_id",
+          "type": "string",
+          "description": "Unique identifier of the actuator",
+          "required": true
+        },
+        {
+          "name": "device_host",
+          "type": "string",
+          "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "actuator_set": {
+      "name": "actuator_set",
+      "version": "1.0.0",
+      "description": "Set the value of an IoT actuator",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "iot",
+      "tags": [
+        "iot",
+        "actuator",
+        "set",
+        "control"
+      ],
+      "parameters": [
+        {
+          "name": "actuator_id",
+          "type": "string",
+          "description": "Unique identifier of the actuator",
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "description": "Value to set on the actuator",
+          "required": true
+        },
+        {
+          "name": "device_host",
+          "type": "string",
+          "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "audio_convert": {
+      "name": "audio_convert",
+      "version": "1.0.0",
+      "description": "Convert audio to a different format (mp3, wav, ogg, flac) using ffmpeg",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "audio",
+        "convert",
+        "format",
+        "mp3",
+        "wav",
+        "ogg",
+        "flac",
+        "ffmpeg"
+      ],
+      "parameters": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "description": "Path to the source audio file",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Path where the converted audio will be saved",
+          "required": true
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "description": "Target format: mp3, wav, ogg, or flac",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "audio_record": {
+      "name": "audio_record",
+      "version": "1.0.0",
+      "description": "Record audio from the microphone for a specified duration",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "audio",
+        "record",
+        "microphone",
+        "capture",
+        "sounddevice"
+      ],
+      "parameters": [
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Path where the recorded audio will be saved (WAV format)",
+          "required": true
+        },
+        {
+          "name": "duration",
+          "type": "number",
+          "description": "Recording duration in seconds",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "barcode_generate": {
+      "name": "barcode_generate",
+      "version": "1.0.0",
+      "description": "Generate a barcode image (Code128, EAN-13, or UPC-A)",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "visualization",
+      "tags": [
+        "barcode",
+        "code128",
+        "ean13",
+        "upc",
+        "generate",
+        "image",
+        "visualization"
+      ],
+      "parameters": [
+        {
+          "name": "data",
+          "type": "string",
+          "description": "The data to encode in the barcode",
+          "required": true
+        },
+        {
+          "name": "barcode_type",
+          "type": "string",
+          "description": "Barcode type: code128, ean13, or upc",
+          "required": false,
+          "default": "code128"
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "File path to save the barcode image",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "barcode_read": {
+      "name": "barcode_read",
+      "version": "1.0.0",
+      "description": "Read and decode a barcode from an image file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "visualization",
+      "tags": [
+        "barcode",
+        "decode",
+        "read",
+        "scan",
+        "image",
+        "visualization"
+      ],
+      "parameters": [
+        {
+          "name": "image_path",
+          "type": "string",
+          "description": "Path to the image file containing a barcode",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "base64_decode": {
+      "name": "base64_decode",
+      "version": "1.0.0",
+      "description": "Decode a base64 string back to plain text",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "base64",
+        "decode",
+        "binary",
+        "data"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "type": "string",
+          "description": "Base64 string to decode",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "base64_encode": {
+      "name": "base64_encode",
+      "version": "1.0.0",
+      "description": "Encode a string to base64",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "base64",
+        "encode",
+        "binary",
+        "data"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "type": "string",
+          "description": "String to encode",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "calendar_create_event": {
+      "name": "calendar_create_event",
+      "version": "1.0.0",
+      "description": "Create a new calendar event",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "calendar",
+        "event",
+        "create",
+        "schedule"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Event title",
+          "required": true
+        },
+        {
+          "name": "start",
+          "type": "string",
+          "description": "Start datetime in ISO format (e.g. 2026-03-17T10:00:00)",
+          "required": true
+        },
+        {
+          "name": "end",
+          "type": "string",
+          "description": "End datetime in ISO format (e.g. 2026-03-17T11:00:00)",
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "Event description or notes",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "calendar_delete_event": {
+      "name": "calendar_delete_event",
+      "version": "1.0.0",
+      "description": "Delete a calendar event by its identifier",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "calendar",
+        "event",
+        "delete",
+        "remove"
+      ],
+      "parameters": [
+        {
+          "name": "event_id",
+          "type": "string",
+          "description": "Unique identifier of the event to delete",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "calendar_events": {
+      "name": "calendar_events",
+      "version": "1.0.0",
+      "description": "List calendar events for a given date range",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "calendar",
+        "events",
+        "schedule",
+        "agenda"
+      ],
+      "parameters": [
+        {
+          "name": "date",
+          "type": "string",
+          "description": "Start date in ISO format (e.g. 2026-03-17). Defaults to today.",
+          "required": false
+        },
+        {
+          "name": "days",
+          "type": "int",
+          "description": "Number of days to look ahead (default 7)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "cert_check": {
+      "name": "cert_check",
+      "version": "1.0.0",
+      "description": "Check the SSL/TLS certificate of a domain",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "security",
+      "tags": [
+        "ssl",
+        "tls",
+        "certificate",
+        "https",
+        "security"
+      ],
+      "parameters": [
+        {
+          "name": "domain",
+          "type": "string",
+          "description": "Domain to check",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "chart_create": {
+      "name": "chart_create",
+      "version": "1.0.0",
+      "description": "Create a chart image (bar, line, pie, or scatter) from JSON data",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "visualization",
+      "tags": [
+        "chart",
+        "plot",
+        "graph",
+        "bar",
+        "line",
+        "pie",
+        "scatter",
+        "visualization",
+        "matplotlib"
+      ],
+      "parameters": [
+        {
+          "name": "chart_type",
+          "type": "string",
+          "description": "Type of chart: bar, line, pie, or scatter",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "description": "JSON string with chart data. For bar/line/scatter: {\"labels\": [...], \"values\": [...]}. For pie: {\"labels\": [...], \"values\": [...]}",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "File path to save the chart image (e.g. chart.png)",
+          "required": true
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Optional chart title",
+          "required": false,
+          "default": ""
+        }
+      ],
+      "requires_api_key": false
+    },
+    "clipboard_read": {
+      "name": "clipboard_read",
+      "version": "1.0.0",
+      "description": "Read the current contents of the system clipboard",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "clipboard",
+        "read",
+        "paste",
+        "desktop",
+        "automation"
+      ],
+      "parameters": [],
+      "requires_api_key": false
+    },
+    "clipboard_write": {
+      "name": "clipboard_write",
+      "version": "1.0.0",
+      "description": "Write text to the system clipboard",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "clipboard",
+        "write",
+        "copy",
+        "desktop",
+        "automation"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text to write to the clipboard",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "csv_read": {
+      "name": "csv_read",
+      "version": "1.0.0",
+      "description": "Read data from a CSV file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "csv",
+        "read",
+        "data",
+        "tabular",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Path to the CSV file to read",
+          "required": true
+        },
+        {
+          "name": "delimiter",
+          "type": "string",
+          "description": "Column delimiter character (defaults to comma)",
+          "required": false,
+          "default": ","
+        }
+      ],
+      "requires_api_key": false
+    },
+    "csv_write": {
+      "name": "csv_write",
+      "version": "1.0.0",
+      "description": "Write data to a CSV file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "csv",
+        "write",
+        "create",
+        "data",
+        "tabular",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Output path for the CSV file",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "description": "JSON string containing an array of arrays (rows and cells)",
+          "required": true
+        },
+        {
+          "name": "delimiter",
+          "type": "string",
+          "description": "Column delimiter character (defaults to comma)",
+          "required": false,
+          "default": ","
+        }
+      ],
+      "requires_api_key": false
+    },
+    "currency_convert": {
+      "name": "currency_convert",
+      "version": "1.0.0",
+      "description": "Convert an amount between currencies using live exchange rates",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "currency",
+        "convert",
+        "exchange",
+        "finance"
+      ],
+      "parameters": [
+        {
+          "name": "amount",
+          "type": "float",
+          "description": "Amount to convert",
+          "required": true
+        },
+        {
+          "name": "from_currency",
+          "type": "string",
+          "description": "Source currency code (e.g. USD, EUR)",
+          "required": true
+        },
+        {
+          "name": "to_currency",
+          "type": "string",
+          "description": "Target currency code (e.g. GBP, JPY)",
+          "required": true
+        }
+      ],
+      "requires_api_key": true
+    },
+    "currency_rate": {
+      "name": "currency_rate",
+      "version": "1.0.0",
+      "description": "Get the current exchange rate between two currencies",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "currency",
+        "exchange",
+        "rate",
+        "finance"
+      ],
+      "parameters": [
+        {
+          "name": "from_currency",
+          "type": "string",
+          "description": "Source currency code (e.g. USD, EUR)",
+          "required": true
+        },
+        {
+          "name": "to_currency",
+          "type": "string",
+          "description": "Target currency code (e.g. GBP, JPY)",
+          "required": true
+        }
+      ],
+      "requires_api_key": true
+    },
+    "decrypt_text": {
+      "name": "decrypt_text",
+      "version": "1.0.0",
+      "description": "Decrypt a string that was encrypted with encrypt_text",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "security",
+      "tags": [
+        "decrypt",
+        "crypto",
+        "secret",
+        "aes",
+        "cipher"
+      ],
+      "parameters": [
+        {
+          "name": "ciphertext",
+          "type": "string",
+          "description": "Base64 ciphertext from encrypt_text",
+          "required": true
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "description": "Decryption key (same key used to encrypt)",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "device_list": {
+      "name": "device_list",
+      "version": "1.0.0",
+      "description": "List all connected IoT devices on the gateway",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "iot",
+      "tags": [
+        "iot",
+        "device",
+        "list",
+        "discovery"
+      ],
+      "parameters": [
+        {
+          "name": "device_host",
+          "type": "string",
+          "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "device_status": {
+      "name": "device_status",
+      "version": "1.0.0",
+      "description": "Get the status of a connected IoT device",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "iot",
+      "tags": [
+        "iot",
+        "device",
+        "status",
+        "health"
+      ],
+      "parameters": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "description": "Unique identifier of the device",
+          "required": true
+        },
+        {
+          "name": "device_host",
+          "type": "string",
+          "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "diagram_create": {
+      "name": "diagram_create",
+      "version": "1.0.0",
+      "description": "Create a diagram image from a text definition (flowchart, sequence, or class)",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "visualization",
+      "tags": [
+        "diagram",
+        "flowchart",
+        "sequence",
+        "class",
+        "graphviz",
+        "svg",
+        "visualization"
+      ],
+      "parameters": [
+        {
+          "name": "diagram_type",
+          "type": "string",
+          "description": "Type of diagram: flowchart, sequence, or class",
+          "required": true
+        },
+        {
+          "name": "definition",
+          "type": "string",
+          "description": "Diagram definition in a simple text syntax. For flowchart: 'A -> B -> C'. For sequence: 'A -> B: message'. For class: 'ClassName: method1, method2'",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "File path to save the diagram (supports .svg and .png)",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "diff_compute": {
+      "name": "diff_compute",
+      "version": "1.0.0",
+      "description": "Compute a unified diff between two text strings",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "diff",
+        "compare",
+        "text",
+        "changes",
+        "delta"
+      ],
+      "parameters": [
+        {
+          "name": "old",
+          "type": "string",
+          "description": "Original text",
+          "required": true
+        },
+        {
+          "name": "new",
+          "type": "string",
+          "description": "Modified text",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "dir_create": {
+      "name": "dir_create",
+      "version": "1.0.0",
+      "description": "Create a directory, including parent directories if needed",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "directory",
+        "create",
+        "mkdir",
+        "folder"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Directory path to create",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "dir_delete": {
+      "name": "dir_delete",
+      "version": "1.0.0",
+      "description": "Delete a directory and all its contents",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "directory",
+        "delete",
+        "remove",
+        "rmdir",
+        "cleanup"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Directory path to delete",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "dir_list": {
+      "name": "dir_list",
+      "version": "1.0.0",
+      "description": "List contents of a directory",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "directory",
+        "list",
+        "ls",
+        "files",
+        "folders"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Directory path",
+          "required": true
+        },
+        {
+          "name": "pattern",
+          "type": "string",
+          "description": "Glob pattern to filter (e.g. \"*.py\")",
+          "required": false,
+          "default": "*"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "dns_lookup": {
+      "name": "dns_lookup",
+      "version": "1.0.0",
+      "description": "Perform a DNS lookup for a domain name",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "web",
+      "tags": [
+        "dns",
+        "lookup",
+        "domain",
+        "resolve",
+        "network"
+      ],
+      "parameters": [
+        {
+          "name": "domain",
+          "type": "string",
+          "description": "Domain name to look up",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Record type: A, AAAA, MX, TXT, CNAME, NS",
+          "required": false,
+          "default": "A"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docker_build": {
+      "name": "docker_build",
+      "version": "1.0.0",
+      "description": "Build a Docker image from a Dockerfile",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "docker",
+        "image",
+        "build",
+        "dockerfile",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Path to the build context directory containing the Dockerfile",
+          "required": true
+        },
+        {
+          "name": "tag",
+          "type": "string",
+          "description": "Tag for the built image (e.g. 'myapp:latest')",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docker_exec": {
+      "name": "docker_exec",
+      "version": "1.0.0",
+      "description": "Execute a command inside a running Docker container",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "docker",
+        "container",
+        "exec",
+        "command",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "container_id",
+          "type": "string",
+          "description": "Container ID or name to execute the command in",
+          "required": true
+        },
+        {
+          "name": "command",
+          "type": "string",
+          "description": "Command to execute inside the container",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docker_logs": {
+      "name": "docker_logs",
+      "version": "1.0.0",
+      "description": "Get logs from a Docker container",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "docker",
+        "container",
+        "logs",
+        "debugging",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "container_id",
+          "type": "string",
+          "description": "Container ID or name to get logs from",
+          "required": true
+        },
+        {
+          "name": "tail",
+          "type": "number",
+          "description": "Number of lines to show from the end of the logs",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docker_ps": {
+      "name": "docker_ps",
+      "version": "1.0.0",
+      "description": "List Docker containers",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "docker",
+        "container",
+        "list",
+        "ps",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "all",
+          "type": "boolean",
+          "description": "Show all containers including stopped ones",
+          "required": false,
+          "default": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docker_pull": {
+      "name": "docker_pull",
+      "version": "1.0.0",
+      "description": "Pull a Docker image from a registry",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "docker",
+        "image",
+        "pull",
+        "registry",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "image",
+          "type": "string",
+          "description": "Image name to pull (e.g. 'nginx:latest')",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docker_run": {
+      "name": "docker_run",
+      "version": "1.0.0",
+      "description": "Run a Docker container from a specified image",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "docker",
+        "container",
+        "run",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "image",
+          "type": "string",
+          "description": "Docker image to run (e.g. 'nginx:latest')",
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "Optional name for the container",
+          "required": false
+        },
+        {
+          "name": "ports",
+          "type": "string",
+          "description": "Port mapping in host:container format (e.g. '8080:80')",
+          "required": false
+        },
+        {
+          "name": "detach",
+          "type": "boolean",
+          "description": "Run container in detached mode",
+          "required": false,
+          "default": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docker_stop": {
+      "name": "docker_stop",
+      "version": "1.0.0",
+      "description": "Stop a running Docker container",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "docker",
+        "container",
+        "stop",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "container_id",
+          "type": "string",
+          "description": "Container ID or name to stop",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docx_create": {
+      "name": "docx_create",
+      "version": "1.0.0",
+      "description": "Create a DOCX file from text content",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "docx",
+        "word",
+        "create",
+        "write",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Output path for the DOCX file",
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "description": "Text content to write into the DOCX file",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "docx_read": {
+      "name": "docx_read",
+      "version": "1.0.0",
+      "description": "Read text content from a DOCX file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "docx",
+        "word",
+        "read",
+        "extract",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Path to the DOCX file to read",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "email_reply": {
+      "name": "email_reply",
+      "version": "1.0.0",
+      "description": "Reply to an email message",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "communication",
+      "tags": [
+        "email",
+        "reply",
+        "respond",
+        "imap",
+        "smtp"
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Message ID to reply to",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "description": "Reply body text",
+          "required": true
+        }
+      ],
+      "requires_api_key": true
+    },
+    "encrypt_text": {
+      "name": "encrypt_text",
+      "version": "1.0.0",
+      "description": "Encrypt a string using a symmetric key",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "security",
+      "tags": [
+        "encrypt",
+        "crypto",
+        "secret",
+        "aes",
+        "cipher"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text to encrypt",
+          "required": true
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "description": "Encryption key (will be hashed to 32 bytes)",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_append": {
+      "name": "file_append",
+      "version": "1.0.0",
+      "description": "Append content to the end of a file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "append",
+        "add",
+        "write",
+        "log"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Path to the file",
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "description": "Content to append",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_copy": {
+      "name": "file_copy",
+      "version": "1.0.0",
+      "description": "Copy a file from source to destination",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "copy",
+        "duplicate",
+        "backup"
+      ],
+      "parameters": [
+        {
+          "name": "source",
+          "type": "string",
+          "description": "Source file path",
+          "required": true
+        },
+        {
+          "name": "dest",
+          "type": "string",
+          "description": "Destination file path",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_delete": {
+      "name": "file_delete",
+      "version": "1.0.0",
+      "description": "Delete a file at the given path",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "delete",
+        "remove",
+        "cleanup"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Path to the file to delete",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_exists": {
+      "name": "file_exists",
+      "version": "1.0.0",
+      "description": "Check whether a file exists at the given path",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "exists",
+        "check",
+        "stat"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Path to check",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_grep": {
+      "name": "file_grep",
+      "version": "1.0.0",
+      "description": "Search for a text pattern inside files",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "grep",
+        "search",
+        "content",
+        "pattern",
+        "text"
+      ],
+      "parameters": [
+        {
+          "name": "pattern",
+          "type": "string",
+          "description": "Text or regex pattern to search for",
+          "required": true
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "description": "File or directory to search in",
+          "required": false,
+          "default": "."
+        },
+        {
+          "name": "glob",
+          "type": "string",
+          "description": "File glob filter (e.g. \"*.py\")",
+          "required": false,
+          "default": "*"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_info": {
+      "name": "file_info",
+      "version": "1.0.0",
+      "description": "Get metadata about a file including size, modification time, and permissions",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "info",
+        "metadata",
+        "stat",
+        "size",
+        "permissions"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Path to the file",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_move": {
+      "name": "file_move",
+      "version": "1.0.0",
+      "description": "Move or rename a file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "move",
+        "rename",
+        "relocate"
+      ],
+      "parameters": [
+        {
+          "name": "source",
+          "type": "string",
+          "description": "Current file path",
+          "required": true
+        },
+        {
+          "name": "dest",
+          "type": "string",
+          "description": "New file path",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_read": {
+      "name": "file_read",
+      "version": "1.0.0",
+      "description": "Read the contents of a file at the given path",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "read",
+        "open",
+        "content",
+        "text"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Path to the file to read",
+          "required": true
+        },
+        {
+          "name": "offset",
+          "type": "number",
+          "description": "Line number to start reading from (0-based)",
+          "required": false,
+          "default": 0
+        },
+        {
+          "name": "limit",
+          "type": "number",
+          "description": "Maximum number of lines to read (0 = all)",
+          "required": false,
+          "default": 0
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_search": {
+      "name": "file_search",
+      "version": "1.0.0",
+      "description": "Search for files matching a glob pattern in a directory tree",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "search",
+        "find",
+        "glob",
+        "pattern"
+      ],
+      "parameters": [
+        {
+          "name": "pattern",
+          "type": "string",
+          "description": "Glob pattern (e.g. \"**/*.py\")",
+          "required": true
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Root directory to search from",
+          "required": false,
+          "default": "."
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_watch": {
+      "name": "file_watch",
+      "version": "1.0.0",
+      "description": "Watch a file or directory for changes and report the current state",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "watch",
+        "monitor",
+        "changes",
+        "poll"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "File or directory to watch",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "file_write": {
+      "name": "file_write",
+      "version": "1.0.0",
+      "description": "Write content to a file, creating it if it does not exist",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "filesystem",
+      "tags": [
+        "file",
+        "write",
+        "create",
+        "save",
+        "output"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "Path to the file to write",
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "description": "Content to write",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
     "gif_animation_tool": {
       "name": "gif_animation_tool",
       "version": "1.0.0",
@@ -470,6 +2914,369 @@
           "name": "query",
           "type": "string",
           "description": "Text description of the animation to generate",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "gif_create": {
+      "name": "gif_create",
+      "version": "1.0.0",
+      "description": "Create an animated GIF from a list of image files",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "gif",
+        "animation",
+        "image",
+        "create",
+        "pillow"
+      ],
+      "parameters": [
+        {
+          "name": "image_paths",
+          "type": "string",
+          "description": "JSON array of image file paths (e.g. '[\"frame1.png\", \"frame2.png\"]')",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Path where the GIF will be saved",
+          "required": true
+        },
+        {
+          "name": "duration",
+          "type": "number",
+          "description": "Duration per frame in milliseconds (default: 500)",
+          "required": false,
+          "default": 500
+        }
+      ],
+      "requires_api_key": false
+    },
+    "hash_compute": {
+      "name": "hash_compute",
+      "version": "1.0.0",
+      "description": "Compute a cryptographic hash of the input string using the specified algorithm",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "hash",
+        "sha256",
+        "md5",
+        "checksum",
+        "crypto"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "type": "string",
+          "description": "String to hash",
+          "required": true
+        },
+        {
+          "name": "algorithm",
+          "type": "string",
+          "description": "Hash algorithm: md5, sha1, sha256, sha512",
+          "required": false,
+          "default": "sha256"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "hash_verify": {
+      "name": "hash_verify",
+      "version": "1.0.0",
+      "description": "Verify that an input matches an expected hash",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "security",
+      "tags": [
+        "hash",
+        "verify",
+        "check",
+        "integrity",
+        "checksum"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "type": "string",
+          "description": "String to verify",
+          "required": true
+        },
+        {
+          "name": "hash",
+          "type": "string",
+          "description": "Expected hash value",
+          "required": true
+        },
+        {
+          "name": "algorithm",
+          "type": "string",
+          "description": "Hash algorithm: md5, sha1, sha256, sha512",
+          "required": false,
+          "default": "sha256"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "http_delete": {
+      "name": "http_delete",
+      "version": "1.0.0",
+      "description": "Send an HTTP DELETE request to a URL",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "web",
+      "tags": [
+        "http",
+        "delete",
+        "request",
+        "api",
+        "remove"
+      ],
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL to send the request to",
+          "required": true
+        },
+        {
+          "name": "headers",
+          "type": "string",
+          "description": "JSON string of headers",
+          "required": false,
+          "default": "{}"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "http_post": {
+      "name": "http_post",
+      "version": "1.0.0",
+      "description": "Send an HTTP POST request to a URL",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "web",
+      "tags": [
+        "http",
+        "post",
+        "request",
+        "api",
+        "web"
+      ],
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL to send the request to",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "description": "Request body (JSON string)",
+          "required": true
+        },
+        {
+          "name": "headers",
+          "type": "string",
+          "description": "JSON string of headers",
+          "required": false,
+          "default": "{}"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "http_put": {
+      "name": "http_put",
+      "version": "1.0.0",
+      "description": "Send an HTTP PUT request to a URL",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "web",
+      "tags": [
+        "http",
+        "put",
+        "request",
+        "api",
+        "update"
+      ],
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL to send the request to",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "description": "Request body (JSON string)",
+          "required": true
+        },
+        {
+          "name": "headers",
+          "type": "string",
+          "description": "JSON string of headers",
+          "required": false,
+          "default": "{}"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "image_convert": {
+      "name": "image_convert",
+      "version": "1.0.0",
+      "description": "Convert an image to a different format (png, jpg, webp, bmp)",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "image",
+        "convert",
+        "format",
+        "png",
+        "jpg",
+        "webp",
+        "bmp",
+        "pillow"
+      ],
+      "parameters": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "description": "Path to the source image file",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Path where the converted image will be saved",
+          "required": true
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "description": "Target format: png, jpg, webp, or bmp",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "image_crop": {
+      "name": "image_crop",
+      "version": "1.0.0",
+      "description": "Crop an image to the specified bounding box",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "image",
+        "crop",
+        "trim",
+        "cut",
+        "pillow"
+      ],
+      "parameters": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "description": "Path to the source image file",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Path where the cropped image will be saved",
+          "required": true
+        },
+        {
+          "name": "left",
+          "type": "number",
+          "description": "Left edge of the crop box in pixels",
+          "required": true
+        },
+        {
+          "name": "top",
+          "type": "number",
+          "description": "Top edge of the crop box in pixels",
+          "required": true
+        },
+        {
+          "name": "right",
+          "type": "number",
+          "description": "Right edge of the crop box in pixels",
+          "required": true
+        },
+        {
+          "name": "bottom",
+          "type": "number",
+          "description": "Bottom edge of the crop box in pixels",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "image_resize": {
+      "name": "image_resize",
+      "version": "1.0.0",
+      "description": "Resize an image to the specified width and height",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "image",
+        "resize",
+        "scale",
+        "dimensions",
+        "pillow"
+      ],
+      "parameters": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "description": "Path to the source image file",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Path where the resized image will be saved",
+          "required": true
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "description": "Target width in pixels",
+          "required": true
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "description": "Target height in pixels",
           "required": true
         }
       ],
@@ -501,6 +3308,40 @@
       ],
       "requires_api_key": false
     },
+    "image_to_text": {
+      "name": "image_to_text",
+      "version": "1.0.0",
+      "description": "Extract text from an image using OCR (pytesseract)",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "image",
+        "ocr",
+        "text",
+        "extract",
+        "tesseract",
+        "recognition"
+      ],
+      "parameters": [
+        {
+          "name": "image_path",
+          "type": "string",
+          "description": "Path to the image file to extract text from",
+          "required": true
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "description": "Tesseract language code (default: eng)",
+          "required": false,
+          "default": "eng"
+        }
+      ],
+      "requires_api_key": false
+    },
     "joke_fetcher": {
       "name": "joke_fetcher",
       "version": "1.0.0",
@@ -524,6 +3365,587 @@
           "description": "Joke category: Any, Programming, Misc, Pun, Spooky, Christmas",
           "required": false,
           "default": "Any"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "json_format": {
+      "name": "json_format",
+      "version": "1.0.0",
+      "description": "Format a JSON object as a pretty-printed string",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "json",
+        "format",
+        "pretty",
+        "serialize",
+        "data"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "JSON string to format",
+          "required": true
+        },
+        {
+          "name": "indent",
+          "type": "number",
+          "description": "Indentation level",
+          "required": false,
+          "default": 2
+        }
+      ],
+      "requires_api_key": false
+    },
+    "json_parse": {
+      "name": "json_parse",
+      "version": "1.0.0",
+      "description": "Parse a JSON string into a structured object and return the result",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "json",
+        "parse",
+        "deserialize",
+        "data"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "JSON string to parse",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "json_query": {
+      "name": "json_query",
+      "version": "1.0.0",
+      "description": "Query a JSON object using dot-notation path and return the matched value",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "json",
+        "query",
+        "jmespath",
+        "extract",
+        "data"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "JSON string to query",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "string",
+          "description": "Dot-notation path (e.g. \"user.name\" or \"items.0.id\")",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "keyboard_press": {
+      "name": "keyboard_press",
+      "version": "1.0.0",
+      "description": "Press a key or key combination on the keyboard",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "keyboard",
+        "press",
+        "hotkey",
+        "shortcut",
+        "automation",
+        "desktop"
+      ],
+      "parameters": [
+        {
+          "name": "key",
+          "type": "string",
+          "description": "Key to press (e.g. enter, tab, a, f1)",
+          "required": true
+        },
+        {
+          "name": "modifiers",
+          "type": "string",
+          "description": "Comma-separated modifier keys (e.g. ctrl,shift)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "keyboard_type": {
+      "name": "keyboard_type",
+      "version": "1.0.0",
+      "description": "Type a text string using keyboard simulation",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "keyboard",
+        "type",
+        "text",
+        "automation",
+        "desktop"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text string to type",
+          "required": true
+        },
+        {
+          "name": "interval",
+          "type": "number",
+          "description": "Seconds between each keystroke",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "lock_set": {
+      "name": "lock_set",
+      "version": "1.0.0",
+      "description": "Set the state of a smart lock (lock or unlock)",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "iot",
+      "tags": [
+        "iot",
+        "lock",
+        "smart-lock",
+        "security"
+      ],
+      "parameters": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "description": "Unique identifier of the smart lock",
+          "required": true
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "description": "Desired lock state: 'lock' or 'unlock'",
+          "required": true
+        },
+        {
+          "name": "device_host",
+          "type": "string",
+          "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "markdown_to_html": {
+      "name": "markdown_to_html",
+      "version": "1.0.0",
+      "description": "Convert Markdown text to HTML",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "markdown",
+        "html",
+        "convert",
+        "format",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "markdown_text",
+          "type": "string",
+          "description": "Markdown text to convert to HTML",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "markdown_to_pdf": {
+      "name": "markdown_to_pdf",
+      "version": "1.0.0",
+      "description": "Convert Markdown text to a PDF file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "markdown",
+        "pdf",
+        "convert",
+        "export",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "markdown_text",
+          "type": "string",
+          "description": "Markdown text to convert to PDF",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Output path for the generated PDF file",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "math_eval": {
+      "name": "math_eval",
+      "version": "1.0.0",
+      "description": "Safely evaluate a mathematical expression and return the numeric result",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "math",
+        "calculate",
+        "expression",
+        "arithmetic",
+        "compute"
+      ],
+      "parameters": [
+        {
+          "name": "expression",
+          "type": "string",
+          "description": "Mathematical expression to evaluate (e.g. \"2 + 3 * 4\")",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "mouse_click": {
+      "name": "mouse_click",
+      "version": "1.0.0",
+      "description": "Click the mouse at specified screen coordinates",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "mouse",
+        "click",
+        "automation",
+        "desktop"
+      ],
+      "parameters": [
+        {
+          "name": "x",
+          "type": "integer",
+          "description": "X coordinate on screen",
+          "required": true
+        },
+        {
+          "name": "y",
+          "type": "integer",
+          "description": "Y coordinate on screen",
+          "required": true
+        },
+        {
+          "name": "button",
+          "type": "string",
+          "description": "Mouse button to click (left, right, middle)",
+          "required": false
+        },
+        {
+          "name": "clicks",
+          "type": "integer",
+          "description": "Number of clicks to perform",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "mouse_move": {
+      "name": "mouse_move",
+      "version": "1.0.0",
+      "description": "Move the mouse cursor to specified screen coordinates",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "mouse",
+        "move",
+        "cursor",
+        "automation",
+        "desktop"
+      ],
+      "parameters": [
+        {
+          "name": "x",
+          "type": "integer",
+          "description": "X coordinate to move to",
+          "required": true
+        },
+        {
+          "name": "y",
+          "type": "integer",
+          "description": "Y coordinate to move to",
+          "required": true
+        },
+        {
+          "name": "duration",
+          "type": "number",
+          "description": "Duration of movement in seconds",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "mouse_scroll": {
+      "name": "mouse_scroll",
+      "version": "1.0.0",
+      "description": "Scroll the mouse wheel at an optional position",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "mouse",
+        "scroll",
+        "wheel",
+        "automation",
+        "desktop"
+      ],
+      "parameters": [
+        {
+          "name": "clicks",
+          "type": "integer",
+          "description": "Number of scroll clicks (positive=up, negative=down)",
+          "required": true
+        },
+        {
+          "name": "x",
+          "type": "integer",
+          "description": "X coordinate to scroll at",
+          "required": false
+        },
+        {
+          "name": "y",
+          "type": "integer",
+          "description": "Y coordinate to scroll at",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "news_fetch": {
+      "name": "news_fetch",
+      "version": "1.0.0",
+      "description": "Fetch news articles matching a search query",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "news",
+        "articles",
+        "search",
+        "media"
+      ],
+      "parameters": [
+        {
+          "name": "query",
+          "type": "string",
+          "description": "Search query for news articles",
+          "required": true
+        },
+        {
+          "name": "count",
+          "type": "int",
+          "description": "Number of articles to return (default 5)",
+          "required": false
+        }
+      ],
+      "requires_api_key": true
+    },
+    "note_delete": {
+      "name": "note_delete",
+      "version": "1.0.0",
+      "description": "Delete a note by its identifier using the platform-specific notes app",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "notes",
+        "delete",
+        "remove",
+        "productivity"
+      ],
+      "parameters": [
+        {
+          "name": "note_id",
+          "type": "string",
+          "description": "Unique identifier (title) of the note to delete",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "notification_send": {
+      "name": "notification_send",
+      "version": "1.0.0",
+      "description": "Send a push notification",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "communication",
+      "tags": [
+        "notification",
+        "push",
+        "alert",
+        "notify"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Notification title",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "description": "Notification body",
+          "required": true
+        },
+        {
+          "name": "target",
+          "type": "string",
+          "description": "Target platform or device",
+          "required": false,
+          "default": "local"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "password_generate": {
+      "name": "password_generate",
+      "version": "1.0.0",
+      "description": "Generate a cryptographically secure random password",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "security",
+      "tags": [
+        "password",
+        "generate",
+        "random",
+        "secure",
+        "credential"
+      ],
+      "parameters": [
+        {
+          "name": "length",
+          "type": "number",
+          "description": "Password length",
+          "required": false,
+          "default": 20
+        },
+        {
+          "name": "charset",
+          "type": "string",
+          "description": "Character set: alphanumeric, ascii, digits, hex",
+          "required": false,
+          "default": "ascii"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "pdf_create": {
+      "name": "pdf_create",
+      "version": "1.0.0",
+      "description": "Create a PDF file from text content",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "pdf",
+        "create",
+        "write",
+        "generate",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Output path for the PDF file",
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "description": "Text content to write into the PDF",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "pdf_read": {
+      "name": "pdf_read",
+      "version": "1.0.0",
+      "description": "Read text content from a PDF file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "pdf",
+        "read",
+        "extract",
+        "text",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Path to the PDF file to read",
+          "required": true
         }
       ],
       "requires_api_key": false
@@ -554,6 +3976,702 @@
       ],
       "requires_api_key": false
     },
+    "port_scan": {
+      "name": "port_scan",
+      "version": "1.0.0",
+      "description": "Check which ports are open on a host",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "security",
+      "tags": [
+        "port",
+        "scan",
+        "network",
+        "security",
+        "firewall"
+      ],
+      "parameters": [
+        {
+          "name": "host",
+          "type": "string",
+          "description": "Host to scan",
+          "required": true
+        },
+        {
+          "name": "ports",
+          "type": "string",
+          "description": "Comma-separated port numbers or range (e.g. \"80,443\" or \"20-25\")",
+          "required": false,
+          "default": "22,80,443,8080,8443"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "pptx_create": {
+      "name": "pptx_create",
+      "version": "1.0.0",
+      "description": "Create a PowerPoint PPTX file from JSON slide data",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "pptx",
+        "powerpoint",
+        "create",
+        "write",
+        "presentation",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Output path for the PowerPoint file",
+          "required": true
+        },
+        {
+          "name": "slides",
+          "type": "string",
+          "description": "JSON array of slide objects, each with 'title' and 'content' fields",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "pptx_read": {
+      "name": "pptx_read",
+      "version": "1.0.0",
+      "description": "Read text content from a PowerPoint PPTX file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "pptx",
+        "powerpoint",
+        "read",
+        "extract",
+        "presentation",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Path to the PowerPoint file to read",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "process_kill": {
+      "name": "process_kill",
+      "version": "1.0.0",
+      "description": "Kill a process by PID with a specified signal",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "process",
+        "kill",
+        "signal",
+        "system",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "pid",
+          "type": "number",
+          "description": "Process ID to send the signal to",
+          "required": true
+        },
+        {
+          "name": "signal",
+          "type": "string",
+          "description": "Signal name to send (e.g. 'TERM', 'KILL', 'HUP')",
+          "required": false,
+          "default": "TERM"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "process_list": {
+      "name": "process_list",
+      "version": "1.0.0",
+      "description": "List running system processes with optional filtering",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "process",
+        "list",
+        "ps",
+        "system",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "filter",
+          "type": "string",
+          "description": "Optional string to filter process names",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "process_run": {
+      "name": "process_run",
+      "version": "1.0.0",
+      "description": "Run a system process safely using subprocess",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "docker",
+      "tags": [
+        "process",
+        "subprocess",
+        "run",
+        "system",
+        "infrastructure"
+      ],
+      "parameters": [
+        {
+          "name": "command",
+          "type": "string",
+          "description": "Command to execute (parsed safely with shlex.split)",
+          "required": true
+        },
+        {
+          "name": "timeout",
+          "type": "number",
+          "description": "Timeout in seconds for the command",
+          "required": false,
+          "default": 30
+        }
+      ],
+      "requires_api_key": false
+    },
+    "qr_code_generate": {
+      "name": "qr_code_generate",
+      "version": "1.0.0",
+      "description": "Generate a QR code image from text or URL data",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "visualization",
+      "tags": [
+        "qr",
+        "qrcode",
+        "barcode",
+        "generate",
+        "image",
+        "visualization"
+      ],
+      "parameters": [
+        {
+          "name": "data",
+          "type": "string",
+          "description": "The data to encode in the QR code (text, URL, etc.)",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "File path to save the QR code image",
+          "required": true
+        },
+        {
+          "name": "size",
+          "type": "integer",
+          "description": "Box size in pixels for each QR module",
+          "required": false,
+          "default": 10
+        }
+      ],
+      "requires_api_key": false
+    },
+    "qr_code_read": {
+      "name": "qr_code_read",
+      "version": "1.0.0",
+      "description": "Read and decode a QR code from an image file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "visualization",
+      "tags": [
+        "qr",
+        "qrcode",
+        "decode",
+        "read",
+        "scan",
+        "image",
+        "visualization"
+      ],
+      "parameters": [
+        {
+          "name": "image_path",
+          "type": "string",
+          "description": "Path to the image file containing a QR code",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "regex_match": {
+      "name": "regex_match",
+      "version": "1.0.0",
+      "description": "Test a regular expression pattern against text and return all matches",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "regex",
+        "match",
+        "pattern",
+        "search",
+        "text"
+      ],
+      "parameters": [
+        {
+          "name": "pattern",
+          "type": "string",
+          "description": "Regular expression pattern",
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text to match against",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "regex_replace": {
+      "name": "regex_replace",
+      "version": "1.0.0",
+      "description": "Find and replace text using a regular expression pattern",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "regex",
+        "replace",
+        "substitute",
+        "pattern",
+        "text"
+      ],
+      "parameters": [
+        {
+          "name": "pattern",
+          "type": "string",
+          "description": "Regular expression pattern to find",
+          "required": true
+        },
+        {
+          "name": "replacement",
+          "type": "string",
+          "description": "Replacement string",
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text to modify",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "sensor_list": {
+      "name": "sensor_list",
+      "version": "1.0.0",
+      "description": "List all available sensors on the IoT gateway",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "iot",
+      "tags": [
+        "iot",
+        "sensor",
+        "list",
+        "discovery"
+      ],
+      "parameters": [
+        {
+          "name": "device_host",
+          "type": "string",
+          "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "sensor_read": {
+      "name": "sensor_read",
+      "version": "1.0.0",
+      "description": "Read the current value from an IoT sensor",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "iot",
+      "tags": [
+        "iot",
+        "sensor",
+        "read",
+        "data"
+      ],
+      "parameters": [
+        {
+          "name": "sensor_id",
+          "type": "string",
+          "description": "Unique identifier of the sensor to read",
+          "required": true
+        },
+        {
+          "name": "device_host",
+          "type": "string",
+          "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "sms_send": {
+      "name": "sms_send",
+      "version": "1.0.0",
+      "description": "Send an SMS text message",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "communication",
+      "tags": [
+        "sms",
+        "text",
+        "message",
+        "send",
+        "phone"
+      ],
+      "parameters": [
+        {
+          "name": "to",
+          "type": "string",
+          "description": "Phone number to send to",
+          "required": true
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "description": "Message text",
+          "required": true
+        }
+      ],
+      "requires_api_key": true
+    },
+    "social_followers": {
+      "name": "social_followers",
+      "version": "1.0.0",
+      "description": "Get follower count and list for a social media user",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "social",
+      "tags": [
+        "social",
+        "followers",
+        "analytics",
+        "profile"
+      ],
+      "parameters": [
+        {
+          "name": "platform",
+          "type": "string",
+          "description": "Social media platform (e.g. twitter, instagram, mastodon)",
+          "required": true
+        },
+        {
+          "name": "username",
+          "type": "string",
+          "description": "Username to look up followers for",
+          "required": true
+        }
+      ],
+      "requires_api_key": true
+    },
+    "social_like": {
+      "name": "social_like",
+      "version": "1.0.0",
+      "description": "Like a social media post on a specified platform",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "social",
+      "tags": [
+        "social",
+        "like",
+        "engagement",
+        "post"
+      ],
+      "parameters": [
+        {
+          "name": "platform",
+          "type": "string",
+          "description": "Social media platform (e.g. twitter, instagram, mastodon)",
+          "required": true
+        },
+        {
+          "name": "post_id",
+          "type": "string",
+          "description": "Unique identifier of the post to like",
+          "required": true
+        }
+      ],
+      "requires_api_key": true
+    },
+    "social_trending": {
+      "name": "social_trending",
+      "version": "1.0.0",
+      "description": "Get trending topics on a social media platform",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "social",
+      "tags": [
+        "social",
+        "trending",
+        "topics",
+        "viral"
+      ],
+      "parameters": [
+        {
+          "name": "platform",
+          "type": "string",
+          "description": "Social media platform (e.g. twitter, mastodon)",
+          "required": true
+        },
+        {
+          "name": "region",
+          "type": "string",
+          "description": "Region or country code for localized trends (e.g. US, UK)",
+          "required": false
+        }
+      ],
+      "requires_api_key": true
+    },
+    "stock_history": {
+      "name": "stock_history",
+      "version": "1.0.0",
+      "description": "Get historical stock price data for a given ticker symbol",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "stock",
+        "history",
+        "finance",
+        "market",
+        "chart"
+      ],
+      "parameters": [
+        {
+          "name": "symbol",
+          "type": "string",
+          "description": "Stock ticker symbol (e.g. AAPL, MSFT)",
+          "required": true
+        },
+        {
+          "name": "period",
+          "type": "string",
+          "description": "Time period: 1d, 5d, 1mo, 3mo, or 1y",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "stock_quote": {
+      "name": "stock_quote",
+      "version": "1.0.0",
+      "description": "Get the current stock quote for a given ticker symbol",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "stock",
+        "quote",
+        "finance",
+        "market"
+      ],
+      "parameters": [
+        {
+          "name": "symbol",
+          "type": "string",
+          "description": "Stock ticker symbol (e.g. AAPL, MSFT)",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "table_format": {
+      "name": "table_format",
+      "version": "1.0.0",
+      "description": "Format data as a text table with optional headers and multiple styles",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "visualization",
+      "tags": [
+        "table",
+        "format",
+        "text",
+        "tabulate",
+        "grid",
+        "markdown",
+        "visualization"
+      ],
+      "parameters": [
+        {
+          "name": "data",
+          "type": "string",
+          "description": "JSON array of arrays representing table rows",
+          "required": true
+        },
+        {
+          "name": "headers",
+          "type": "string",
+          "description": "JSON array of header strings",
+          "required": false,
+          "default": ""
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "description": "Table format: plain, grid, or pipe",
+          "required": false,
+          "default": "grid"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "thermostat_read": {
+      "name": "thermostat_read",
+      "version": "1.0.0",
+      "description": "Read the current temperature and settings from a smart thermostat",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "iot",
+      "tags": [
+        "iot",
+        "thermostat",
+        "temperature",
+        "hvac"
+      ],
+      "parameters": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "description": "Unique identifier of the thermostat device",
+          "required": true
+        },
+        {
+          "name": "device_host",
+          "type": "string",
+          "description": "IoT gateway host URL (defaults to SENTIENT_IOT_HOST env var)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "translate_text": {
+      "name": "translate_text",
+      "version": "1.0.0",
+      "description": "Translate text between languages using a translation API",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "external",
+      "tags": [
+        "translate",
+        "language",
+        "text",
+        "i18n"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text to translate",
+          "required": true
+        },
+        {
+          "name": "target_language",
+          "type": "string",
+          "description": "Target language code (e.g. es, fr, de, ja)",
+          "required": true
+        },
+        {
+          "name": "source_language",
+          "type": "string",
+          "description": "Source language code (auto-detected if omitted)",
+          "required": false
+        }
+      ],
+      "requires_api_key": true
+    },
+    "url_shorten": {
+      "name": "url_shorten",
+      "version": "1.0.0",
+      "description": "Shorten a URL using a free URL shortening service",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "web",
+      "tags": [
+        "url",
+        "shorten",
+        "link",
+        "short"
+      ],
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL to shorten",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
     "user_preference_analysis": {
       "name": "user_preference_analysis",
       "version": "1.0.0",
@@ -580,6 +4698,72 @@
       ],
       "requires_api_key": false
     },
+    "uuid_generate": {
+      "name": "uuid_generate",
+      "version": "1.0.0",
+      "description": "Generate a new universally unique identifier (UUID)",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "data",
+      "tags": [
+        "uuid",
+        "id",
+        "unique",
+        "generate",
+        "identifier"
+      ],
+      "parameters": [
+        {
+          "name": "version",
+          "type": "string",
+          "description": "UUID version: 4 (random) or 1 (time-based)",
+          "required": false,
+          "default": "4"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "video_download": {
+      "name": "video_download",
+      "version": "1.0.0",
+      "description": "Download a video from a URL using yt-dlp",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "video",
+        "download",
+        "yt-dlp",
+        "youtube",
+        "url"
+      ],
+      "parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "description": "URL of the video to download",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Path where the downloaded video will be saved",
+          "required": true
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "description": "Video format or yt-dlp format selector (e.g. 'mp4', 'best', 'bestvideo+bestaudio')",
+          "required": false,
+          "default": "best"
+        }
+      ],
+      "requires_api_key": false
+    },
     "video_editing_tool": {
       "name": "video_editing_tool",
       "version": "1.0.0",
@@ -601,6 +4785,116 @@
           "name": "query",
           "type": "string",
           "description": "Text description of the video or animation to generate",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "video_extract_frames": {
+      "name": "video_extract_frames",
+      "version": "1.0.0",
+      "description": "Extract frames from a video at a specified frame rate using ffmpeg",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "video",
+        "frames",
+        "extract",
+        "ffmpeg",
+        "screenshot"
+      ],
+      "parameters": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "description": "Path to the source video file",
+          "required": true
+        },
+        {
+          "name": "output_dir",
+          "type": "string",
+          "description": "Directory where extracted frames will be saved",
+          "required": true
+        },
+        {
+          "name": "fps",
+          "type": "number",
+          "description": "Frames per second to extract (default: 1)",
+          "required": false,
+          "default": 1
+        }
+      ],
+      "requires_api_key": false
+    },
+    "video_get_info": {
+      "name": "video_get_info",
+      "version": "1.0.0",
+      "description": "Get video metadata (duration, resolution, codec, etc.) using ffprobe",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "video",
+        "metadata",
+        "info",
+        "ffprobe",
+        "duration",
+        "resolution"
+      ],
+      "parameters": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "description": "Path to the video file",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "video_trim": {
+      "name": "video_trim",
+      "version": "1.0.0",
+      "description": "Trim a video by start and end time using ffmpeg",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "media",
+      "tags": [
+        "video",
+        "trim",
+        "cut",
+        "clip",
+        "ffmpeg"
+      ],
+      "parameters": [
+        {
+          "name": "input_path",
+          "type": "string",
+          "description": "Path to the source video file",
+          "required": true
+        },
+        {
+          "name": "output_path",
+          "type": "string",
+          "description": "Path where the trimmed video will be saved",
+          "required": true
+        },
+        {
+          "name": "start",
+          "type": "string",
+          "description": "Start time in HH:MM:SS format",
+          "required": true
+        },
+        {
+          "name": "end",
+          "type": "string",
+          "description": "End time in HH:MM:SS format",
           "required": true
         }
       ],
@@ -632,6 +4926,146 @@
       ],
       "requires_api_key": false
     },
+    "vuln_scan": {
+      "name": "vuln_scan",
+      "version": "1.0.0",
+      "description": "Scan a file or directory for common security vulnerabilities",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "security",
+      "tags": [
+        "vulnerability",
+        "scan",
+        "security",
+        "audit",
+        "code"
+      ],
+      "parameters": [
+        {
+          "name": "path",
+          "type": "string",
+          "description": "File or directory to scan",
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Scan type: secrets, code, dependencies",
+          "required": false,
+          "default": "secrets"
+        }
+      ],
+      "requires_api_key": false
+    },
+    "whois_lookup": {
+      "name": "whois_lookup",
+      "version": "1.0.0",
+      "description": "Look up WHOIS registration information for a domain",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "web",
+      "tags": [
+        "whois",
+        "domain",
+        "registration",
+        "lookup",
+        "network"
+      ],
+      "parameters": [
+        {
+          "name": "domain",
+          "type": "string",
+          "description": "Domain name to look up",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "window_focus": {
+      "name": "window_focus",
+      "version": "1.0.0",
+      "description": "Focus and activate a window by its title",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "window",
+        "focus",
+        "activate",
+        "desktop",
+        "automation"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Title (or partial title) of the window to focus",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "window_list": {
+      "name": "window_list",
+      "version": "1.0.0",
+      "description": "List all open windows on the desktop",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "window",
+        "list",
+        "desktop",
+        "automation"
+      ],
+      "parameters": [],
+      "requires_api_key": false
+    },
+    "window_resize": {
+      "name": "window_resize",
+      "version": "1.0.0",
+      "description": "Resize a window by its title to specified dimensions",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "desktop",
+      "tags": [
+        "window",
+        "resize",
+        "desktop",
+        "automation"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Title (or partial title) of the window to resize",
+          "required": true
+        },
+        {
+          "name": "width",
+          "type": "integer",
+          "description": "Target width in pixels",
+          "required": true
+        },
+        {
+          "name": "height",
+          "type": "integer",
+          "description": "Target height in pixels",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
     "word_problem_solver": {
       "name": "word_problem_solver",
       "version": "1.0.0",
@@ -658,6 +5092,127 @@
         }
       ],
       "requires_api_key": false
+    },
+    "xlsx_create": {
+      "name": "xlsx_create",
+      "version": "1.0.0",
+      "description": "Create an Excel XLSX file from JSON data",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "xlsx",
+        "excel",
+        "create",
+        "write",
+        "spreadsheet",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Output path for the Excel file",
+          "required": true
+        },
+        {
+          "name": "data",
+          "type": "string",
+          "description": "JSON string containing an array of arrays (rows and cells)",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "xlsx_read": {
+      "name": "xlsx_read",
+      "version": "1.0.0",
+      "description": "Read data from an Excel XLSX file",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "documents",
+      "tags": [
+        "xlsx",
+        "excel",
+        "read",
+        "spreadsheet",
+        "document"
+      ],
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "string",
+          "description": "Path to the Excel file to read",
+          "required": true
+        },
+        {
+          "name": "sheet",
+          "type": "string",
+          "description": "Name of the sheet to read (defaults to the active sheet)",
+          "required": false
+        }
+      ],
+      "requires_api_key": false
+    },
+    "youtube_info": {
+      "name": "youtube_info",
+      "version": "1.0.0",
+      "description": "Get detailed information about a YouTube video",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "social",
+      "tags": [
+        "youtube",
+        "video",
+        "info",
+        "metadata"
+      ],
+      "parameters": [
+        {
+          "name": "video_id",
+          "type": "string",
+          "description": "YouTube video ID (e.g. dQw4w9WgXcQ)",
+          "required": true
+        }
+      ],
+      "requires_api_key": false
+    },
+    "youtube_search": {
+      "name": "youtube_search",
+      "version": "1.0.0",
+      "description": "Search YouTube videos by query",
+      "implementations": {
+        "python": "tool.py"
+      },
+      "author": "sentient-community",
+      "category": "social",
+      "tags": [
+        "youtube",
+        "search",
+        "video",
+        "media"
+      ],
+      "parameters": [
+        {
+          "name": "query",
+          "type": "string",
+          "description": "Search query for YouTube videos",
+          "required": true
+        },
+        {
+          "name": "max_results",
+          "type": "int",
+          "description": "Maximum number of results to return (default 5)",
+          "required": false
+        }
+      ],
+      "requires_api_key": true
     }
   },
   "mcps": {
@@ -685,6 +5240,140 @@
         "rental"
       ],
       "category": "travel"
+    },
+    "apple_notes": {
+      "name": "apple_notes",
+      "version": "1.0.0",
+      "description": "Apple Notes on macOS \u2014 search, create, read, and update notes",
+      "source": "npm",
+      "package": "apple-notes-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "apple-notes-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "search_notes",
+        "create_note",
+        "read_note",
+        "update_note"
+      ],
+      "capabilities": [
+        "notes",
+        "writing",
+        "organization",
+        "apple",
+        "macos"
+      ],
+      "category": "productivity"
+    },
+    "apple_reminders": {
+      "name": "apple_reminders",
+      "version": "1.0.0",
+      "description": "Apple Reminders on macOS \u2014 manage reminders, tasks, and to-do lists",
+      "source": "npm",
+      "package": "apple-reminders-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "apple-reminders-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "list_reminders",
+        "create_reminder",
+        "complete_reminder",
+        "search_reminders"
+      ],
+      "capabilities": [
+        "tasks",
+        "reminders",
+        "todo",
+        "apple",
+        "macos"
+      ],
+      "category": "productivity"
+    },
+    "bear_notes": {
+      "name": "bear_notes",
+      "version": "1.0.0",
+      "description": "Bear markdown notes \u2014 search, create, read, and tag notes",
+      "source": "npm",
+      "package": "bear-notes-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "bear-notes-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "search_notes",
+        "create_note",
+        "read_note",
+        "add_tag"
+      ],
+      "capabilities": [
+        "notes",
+        "markdown",
+        "writing",
+        "tags",
+        "macos"
+      ],
+      "category": "productivity"
+    },
+    "camera": {
+      "name": "camera",
+      "version": "1.0.0",
+      "description": "Photo and video capture \u2014 take photos, record video, and list available cameras",
+      "source": "npm",
+      "package": "camera-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "camera-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "take_photo",
+        "record_video",
+        "list_cameras"
+      ],
+      "capabilities": [
+        "camera",
+        "photo",
+        "video",
+        "capture",
+        "webcam"
+      ],
+      "category": "media"
+    },
+    "canvas": {
+      "name": "canvas",
+      "version": "1.0.0",
+      "description": "Visual workspace and app-to-UI generation \u2014 create canvases, draw, render components, and export images",
+      "source": "npm",
+      "package": "canvas-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "canvas-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "create_canvas",
+        "draw",
+        "render_component",
+        "export_image"
+      ],
+      "capabilities": [
+        "visual",
+        "drawing",
+        "ui_generation",
+        "design",
+        "workspace"
+      ],
+      "category": "creative"
     },
     "chrono": {
       "name": "chrono",
@@ -764,6 +5453,33 @@
       ],
       "category": "developer"
     },
+    "cron": {
+      "name": "cron",
+      "version": "1.0.0",
+      "description": "Scheduled task execution \u2014 create, list, delete schedules, and trigger jobs on demand",
+      "source": "npm",
+      "package": "cron-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "cron-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "create_schedule",
+        "list_schedules",
+        "delete_schedule",
+        "trigger_now"
+      ],
+      "capabilities": [
+        "scheduling",
+        "cron",
+        "timer",
+        "automation",
+        "recurring"
+      ],
+      "category": "automation"
+    },
     "duckduckgo": {
       "name": "duckduckgo",
       "version": "1.0.0",
@@ -789,6 +5505,62 @@
       ],
       "category": "search"
     },
+    "eight_sleep": {
+      "name": "eight_sleep",
+      "version": "1.0.0",
+      "description": "8Sleep smart mattress \u2014 sleep data, temperature control, and alarms",
+      "source": "npm",
+      "package": "eight-sleep-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "eight-sleep-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "get_sleep_data",
+        "set_temperature",
+        "get_status",
+        "set_alarm"
+      ],
+      "capabilities": [
+        "sleep",
+        "temperature",
+        "health",
+        "smart_home",
+        "wellness"
+      ],
+      "category": "smart_home",
+      "auth_env": "EIGHT_SLEEP_TOKEN"
+    },
+    "email": {
+      "name": "email",
+      "version": "1.0.0",
+      "description": "General email via SMTP and IMAP \u2014 send, read, search emails, and list folders",
+      "source": "npm",
+      "package": "email-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "email-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "send_email",
+        "read_emails",
+        "search_emails",
+        "list_folders"
+      ],
+      "capabilities": [
+        "email",
+        "smtp",
+        "imap",
+        "send",
+        "inbox"
+      ],
+      "category": "communication",
+      "auth_env": "EMAIL_CREDENTIALS"
+    },
     "fetch": {
       "name": "fetch",
       "version": "1.0.0",
@@ -812,6 +5584,33 @@
       ],
       "category": "utilities"
     },
+    "gif_search": {
+      "name": "gif_search",
+      "version": "1.0.0",
+      "description": "GIF search via Giphy and Tenor \u2014 search, browse trending, and get random GIFs",
+      "source": "npm",
+      "package": "gif-search-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "gif-search-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "search_gifs",
+        "trending_gifs",
+        "random_gif"
+      ],
+      "capabilities": [
+        "gif",
+        "animation",
+        "meme",
+        "media",
+        "fun"
+      ],
+      "category": "media",
+      "auth_env": "GIPHY_API_KEY"
+    },
     "github": {
       "name": "github",
       "version": "1.0.0",
@@ -833,6 +5632,35 @@
       ],
       "category": "developer",
       "auth_env": "GITHUB_TOKEN"
+    },
+    "gmail": {
+      "name": "gmail",
+      "version": "1.0.0",
+      "description": "Gmail email with Pub/Sub triggers \u2014 send, search, read emails, and watch inbox notifications",
+      "source": "npm",
+      "package": "gmail-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "gmail-mcp-server"
+      ],
+      "auth_type": "oauth2",
+      "tools": [
+        "send_email",
+        "search_emails",
+        "read_email",
+        "list_labels",
+        "watch_inbox"
+      ],
+      "capabilities": [
+        "email",
+        "gmail",
+        "send",
+        "inbox",
+        "notifications"
+      ],
+      "category": "communication",
+      "auth_provider": "google"
     },
     "google_calendar": {
       "name": "google_calendar",
@@ -878,6 +5706,33 @@
       "category": "iot",
       "auth_env": "HA_TOKEN"
     },
+    "image_gen": {
+      "name": "image_gen",
+      "version": "1.0.0",
+      "description": "AI image generation \u2014 generate, edit, and describe images using diffusion models",
+      "source": "npm",
+      "package": "image-gen-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "image-gen-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "generate_image",
+        "edit_image",
+        "describe_image"
+      ],
+      "capabilities": [
+        "image_generation",
+        "art",
+        "creative",
+        "dall_e",
+        "stable_diffusion"
+      ],
+      "category": "creative",
+      "auth_env": "IMAGE_GEN_API_KEY"
+    },
     "notion": {
       "name": "notion",
       "version": "1.0.0",
@@ -899,6 +5754,62 @@
       ],
       "category": "productivity",
       "auth_env": "NOTION_API_KEY"
+    },
+    "obsidian": {
+      "name": "obsidian",
+      "version": "1.0.0",
+      "description": "Obsidian knowledge graph notes \u2014 search, read, create, and manage markdown notes",
+      "source": "npm",
+      "package": "obsidian-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "obsidian-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "search_notes",
+        "read_note",
+        "create_note",
+        "update_note",
+        "list_notes"
+      ],
+      "capabilities": [
+        "notes",
+        "knowledge_graph",
+        "markdown",
+        "writing",
+        "pkm"
+      ],
+      "category": "productivity"
+    },
+    "onepassword": {
+      "name": "onepassword",
+      "version": "1.0.0",
+      "description": "1Password secure credentials \u2014 retrieve, list, and search items across vaults",
+      "source": "npm",
+      "package": "1password-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "1password-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "get_item",
+        "list_items",
+        "list_vaults",
+        "search_items"
+      ],
+      "capabilities": [
+        "passwords",
+        "secrets",
+        "credentials",
+        "security",
+        "vault"
+      ],
+      "category": "security",
+      "auth_env": "OP_SERVICE_ACCOUNT_TOKEN"
     },
     "open_library": {
       "name": "open_library",
@@ -926,6 +5837,87 @@
         "library"
       ],
       "category": "knowledge"
+    },
+    "peekaboo": {
+      "name": "peekaboo",
+      "version": "1.0.0",
+      "description": "Screen capture and control \u2014 capture screens, windows, list windows, and perform OCR",
+      "source": "npm",
+      "package": "peekaboo-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "peekaboo-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "capture_screen",
+        "capture_window",
+        "list_windows",
+        "ocr_screen"
+      ],
+      "capabilities": [
+        "screenshot",
+        "screen_capture",
+        "ocr",
+        "vision",
+        "desktop"
+      ],
+      "category": "utility"
+    },
+    "perplexity": {
+      "name": "perplexity",
+      "version": "1.0.0",
+      "description": "Perplexity AI \u2014 search-augmented generation with real-time knowledge",
+      "source": "npm",
+      "package": "perplexity-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "perplexity-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "search",
+        "ask"
+      ],
+      "capabilities": [
+        "search",
+        "qa",
+        "research",
+        "knowledge"
+      ],
+      "category": "ai",
+      "auth_env": "PERPLEXITY_API_KEY"
+    },
+    "philips_hue": {
+      "name": "philips_hue",
+      "version": "1.0.0",
+      "description": "Philips Hue smart lighting \u2014 control lights, scenes, and rooms",
+      "source": "npm",
+      "package": "philips-hue-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "philips-hue-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "list_lights",
+        "set_light",
+        "set_scene",
+        "list_rooms",
+        "toggle_light"
+      ],
+      "capabilities": [
+        "lighting",
+        "smart_home",
+        "hue",
+        "automation",
+        "scenes"
+      ],
+      "category": "smart_home",
+      "auth_env": "HUE_BRIDGE_TOKEN"
     },
     "playwright": {
       "name": "playwright",
@@ -982,6 +5974,32 @@
       ],
       "category": "news"
     },
+    "shazam": {
+      "name": "shazam",
+      "version": "1.0.0",
+      "description": "Shazam song recognition \u2014 identify and search for songs",
+      "source": "npm",
+      "package": "shazam-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "shazam-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "identify_song",
+        "search_songs"
+      ],
+      "capabilities": [
+        "music",
+        "recognition",
+        "identify",
+        "song",
+        "audio"
+      ],
+      "category": "music",
+      "auth_env": "SHAZAM_API_KEY"
+    },
     "slack": {
       "name": "slack",
       "version": "1.0.0",
@@ -1004,6 +6022,94 @@
       "category": "communication",
       "auth_provider": "slack"
     },
+    "sonos": {
+      "name": "sonos",
+      "version": "1.0.0",
+      "description": "Sonos multi-room audio \u2014 control playback, volume, and room grouping",
+      "source": "npm",
+      "package": "sonos-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "sonos-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "play",
+        "pause",
+        "volume",
+        "list_rooms",
+        "group_rooms",
+        "now_playing"
+      ],
+      "capabilities": [
+        "music",
+        "audio",
+        "multiroom",
+        "speakers",
+        "smart_home"
+      ],
+      "category": "music"
+    },
+    "spotify": {
+      "name": "spotify",
+      "version": "1.0.0",
+      "description": "Spotify music playback \u2014 control playback, search, and manage queue",
+      "source": "npm",
+      "package": "spotify-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "spotify-mcp-server"
+      ],
+      "auth_type": "oauth2",
+      "tools": [
+        "play",
+        "pause",
+        "next",
+        "previous",
+        "search",
+        "queue",
+        "now_playing"
+      ],
+      "capabilities": [
+        "music",
+        "playback",
+        "playlist",
+        "streaming",
+        "audio"
+      ],
+      "category": "music",
+      "auth_provider": "spotify"
+    },
+    "things3": {
+      "name": "things3",
+      "version": "1.0.0",
+      "description": "Things 3 GTD task manager \u2014 manage to-dos, projects, and task workflows",
+      "source": "npm",
+      "package": "things3-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "things3-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "list_todos",
+        "create_todo",
+        "complete_todo",
+        "search_todos",
+        "list_projects"
+      ],
+      "capabilities": [
+        "tasks",
+        "gtd",
+        "todo",
+        "projects",
+        "productivity"
+      ],
+      "category": "productivity"
+    },
     "todoist": {
       "name": "todoist",
       "version": "1.0.0",
@@ -1025,6 +6131,146 @@
       ],
       "category": "productivity",
       "auth_env": "TODOIST_API_KEY"
+    },
+    "trello": {
+      "name": "trello",
+      "version": "1.0.0",
+      "description": "Trello kanban boards \u2014 manage boards, cards, lists, and comments",
+      "source": "npm",
+      "package": "trello-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "trello-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "list_boards",
+        "list_cards",
+        "create_card",
+        "move_card",
+        "add_comment"
+      ],
+      "capabilities": [
+        "kanban",
+        "boards",
+        "cards",
+        "project_management",
+        "tasks"
+      ],
+      "category": "productivity",
+      "auth_env": "TRELLO_API_KEY"
+    },
+    "twitter": {
+      "name": "twitter",
+      "version": "1.0.0",
+      "description": "Twitter/X integration \u2014 post tweets, search, get timelines, and reply",
+      "source": "npm",
+      "package": "twitter-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "twitter-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "post_tweet",
+        "search_tweets",
+        "get_timeline",
+        "reply_tweet",
+        "get_user"
+      ],
+      "capabilities": [
+        "twitter",
+        "social",
+        "tweets",
+        "posting",
+        "search"
+      ],
+      "category": "social",
+      "auth_env": "TWITTER_BEARER_TOKEN"
+    },
+    "voice": {
+      "name": "voice",
+      "version": "1.0.0",
+      "description": "Voice wake word and talk mode \u2014 listen, speak, and convert between text and speech",
+      "source": "npm",
+      "package": "voice-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "voice-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "start_listening",
+        "stop_listening",
+        "text_to_speech",
+        "speech_to_text"
+      ],
+      "capabilities": [
+        "voice",
+        "speech",
+        "tts",
+        "stt",
+        "wake_word"
+      ],
+      "category": "voice"
+    },
+    "weather": {
+      "name": "weather",
+      "version": "1.0.0",
+      "description": "Weather forecasts and conditions \u2014 get current weather, forecasts, alerts, and hourly data",
+      "source": "npm",
+      "package": "weather-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "weather-mcp-server"
+      ],
+      "auth_type": "api_key",
+      "tools": [
+        "get_forecast",
+        "get_current",
+        "get_alerts",
+        "get_hourly"
+      ],
+      "capabilities": [
+        "weather",
+        "forecast",
+        "temperature",
+        "conditions",
+        "climate"
+      ],
+      "category": "weather",
+      "auth_env": "WEATHER_API_KEY"
+    },
+    "webhooks": {
+      "name": "webhooks",
+      "version": "1.0.0",
+      "description": "External trigger endpoints \u2014 create, list, delete webhooks, and view webhook logs",
+      "source": "npm",
+      "package": "webhooks-mcp-server",
+      "command": [
+        "npx",
+        "-y",
+        "webhooks-mcp-server"
+      ],
+      "auth_type": "none",
+      "tools": [
+        "create_webhook",
+        "list_webhooks",
+        "delete_webhook",
+        "get_webhook_logs"
+      ],
+      "capabilities": [
+        "webhooks",
+        "triggers",
+        "http",
+        "automation",
+        "events"
+      ],
+      "category": "automation"
     },
     "wikipedia": {
       "name": "wikipedia",
@@ -1117,9 +6363,9 @@
   "stats": {
     "total_nerves": 1,
     "total_adapters": 31,
-    "total_connectors": 2,
-    "total_tools": 8,
-    "total_mcps": 18
+    "total_connectors": 15,
+    "total_tools": 122,
+    "total_mcps": 43
   },
   "leaderboard": {}
 }
