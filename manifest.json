@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-17T17:17:02.857349+00:00",
+  "generated_at": "2026-03-17T17:55:36.046226+00:00",
   "nerves": {
     "actuator_read_nerve": {
       "description": "Read the current state of any actuator.",
@@ -1265,6 +1265,22 @@
         "git_log",
         "git_tag"
       ],
+      "model_scores": {}
+    },
+    "greeting_nerve": {
+      "description": "Greet the user warmly using their name, location, timezone, and conversation history for a personalized experience.",
+      "role": "social",
+      "tags": [
+        "social",
+        "greeting"
+      ],
+      "authors": [
+        {
+          "github": "otomus"
+        }
+      ],
+      "version": "1.0.0",
+      "tools": [],
       "model_scores": {}
     },
     "hash_nerve": {
@@ -10054,7 +10070,7 @@
     }
   },
   "stats": {
-    "total_nerves": 159,
+    "total_nerves": 160,
     "total_adapters": 31,
     "total_connectors": 15,
     "total_tools": 139,
