@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Store a credential securely in an encrypted vault",
+  "system_prompt": "Store a credential securely in an encrypted vault\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Store github token",

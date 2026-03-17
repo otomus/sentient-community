@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Type text via keyboard input. Supports typing speed control, special characters, and modifier key combinations.",
+  "system_prompt": "Type text via keyboard input. Supports typing speed control, special characters, and modifier key combinations.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Type hello world",

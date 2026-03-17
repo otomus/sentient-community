@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Convert audio files between different formats.",
+  "system_prompt": "You are a tool assistant. Convert audio files between different formats.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Convert /tmp/recording.wav to MP3",

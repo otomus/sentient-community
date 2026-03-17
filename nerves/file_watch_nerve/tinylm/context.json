@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: monitor a path and report changes. Use tools: file_watch. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: monitor a path and report changes. Use tools: file_watch. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Watch the src directory for changes",

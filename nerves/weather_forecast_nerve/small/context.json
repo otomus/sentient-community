@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You retrieve weather forecasts. Parse the user request, extract the location and number of forecast days, and return a tool call to weather_forecast.",
+  "system_prompt": "You retrieve weather forecasts. Parse the user request, extract the location and number of forecast days, and return a tool call to weather_forecast.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Forecast for Paris next 5 days",

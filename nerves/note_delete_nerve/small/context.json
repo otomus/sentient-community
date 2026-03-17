@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You delete notes. Parse the request to identify the note by title. Return a tool call to note_delete with the title parameter.",
+  "system_prompt": "You delete notes. Parse the request to identify the note by title. Return a tool call to note_delete with the title parameter.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Remove Travel Plans note",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Click at a screen position. Supports left/right/middle button, single/double/triple click, click-and-drag, modifier keys (shift, ctrl, alt), and coordinate validation. Handle out-of-bounds coordinates, multi-monitor setups, and screen scaling.",
+  "system_prompt": "Click at a screen position. Supports left/right/middle button, single/double/triple click, click-and-drag, modifier keys (shift, ctrl, alt), and coordinate validation. Handle out-of-bounds coordinates, multi-monitor setups, and screen scaling.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Click at 500,300",

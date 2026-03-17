@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Pause speaker playback. Extract optional speaker_id, call speaker_pause. Return JSON only.",
+  "system_prompt": "Pause speaker playback. Extract optional speaker_id, call speaker_pause. Return JSON only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Pause the music",

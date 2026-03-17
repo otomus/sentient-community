@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You list pending reminders. When the user asks about their reminders, return a tool call to reminder_list. Do not create or modify reminders.",
+  "system_prompt": "You list pending reminders. When the user asks about their reminders, return a tool call to reminder_list. Do not create or modify reminders.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "What are my pending reminders?",

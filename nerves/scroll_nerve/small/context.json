@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scroll in a direction at a position with configurable amount",
+  "system_prompt": "Scroll in a direction at a position with configurable amount\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Scroll down 3 clicks",

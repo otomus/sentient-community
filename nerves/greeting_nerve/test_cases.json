@@ -1,0 +1,94 @@
+[
+  {
+    "input": "hello",
+    "context": {
+      "userDetails": {
+        "name": "Oron",
+        "language": "en"
+      },
+      "location": "Tel Aviv, Israel",
+      "timezone": "Asia/Jerusalem"
+    },
+    "output": "Hey Oron! Great to see you. How can I help you today?",
+    "category": "core"
+  },
+  {
+    "input": "hi there",
+    "context": {
+      "userDetails": {
+        "name": "Dana",
+        "language": "en"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York"
+    },
+    "output": "Hi Dana! What can I do for you?",
+    "category": "core"
+  },
+  {
+    "input": "good morning",
+    "context": {
+      "userDetails": {
+        "name": "Alex",
+        "language": "en"
+      },
+      "location": "London, UK",
+      "timezone": "Europe/London",
+      "messages": [
+        {"role": "user", "content": "hey"},
+        {"role": "assistant", "content": "Hi Alex! How can I help?"}
+      ]
+    },
+    "output": "Good morning Alex! Welcome back. What can I help you with today?",
+    "category": "core"
+  },
+  {
+    "input": "hey",
+    "context": {},
+    "output": "Hey there! How can I help you today?",
+    "category": "core"
+  },
+  {
+    "input": "hola",
+    "context": {
+      "userDetails": {
+        "name": "Maria",
+        "language": "es"
+      },
+      "location": "Madrid, Spain",
+      "timezone": "Europe/Madrid"
+    },
+    "output": "¡Hola Maria! ¿En qué puedo ayudarte hoy?",
+    "category": "core"
+  },
+  {
+    "input": "what's the weather?",
+    "context": {
+      "userDetails": {
+        "name": "Oron",
+        "language": "en"
+      }
+    },
+    "output": "I handle greetings and hellos. For weather info, try the weather nerve!",
+    "category": "negative"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "Hello! I'm here if you'd like to chat. Just say hi!",
+    "category": "boundary"
+  },
+  {
+    "input": "goodbye",
+    "context": {
+      "userDetails": {
+        "name": "Oron",
+        "language": "en"
+      },
+      "location": "Tel Aviv, Israel",
+      "timezone": "Asia/Jerusalem"
+    },
+    "output": "Goodbye Oron! Have a great day in Tel Aviv!",
+    "category": "edge"
+  }
+]

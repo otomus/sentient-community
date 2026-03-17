@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Bring a specific application window to the front",
+  "system_prompt": "Bring a specific application window to the front\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Focus Safari",

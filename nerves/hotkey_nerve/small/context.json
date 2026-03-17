@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Press a keyboard shortcut like Ctrl+C or Cmd+V",
+  "system_prompt": "Press a keyboard shortcut like Ctrl+C or Cmd+V\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Press Ctrl+C",

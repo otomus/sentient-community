@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You read QR codes. Extract the image path and call qr_code_read.",
+  "system_prompt": "You read QR codes. Extract the image path and call qr_code_read.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Read this QR code image: /path/to/qr.png",

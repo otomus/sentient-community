@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scan for security vulnerabilities. Supports CVE lookup, dependency scanning, configuration audit, and severity classification.",
+  "system_prompt": "Scan for security vulnerabilities. Supports CVE lookup, dependency scanning, configuration audit, and severity classification.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Scan dependencies for vulns",

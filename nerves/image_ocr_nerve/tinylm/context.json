@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Extract text from images using optical character recognition.",
+  "system_prompt": "You are a tool assistant. Extract text from images using optical character recognition.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Extract text from /tmp/receipt.jpg",

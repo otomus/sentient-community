@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a creative assistant specialized in document and media processing. Create animated GIF images from a sequence of frames. Use the available tools to complete requests accurately.",
+  "system_prompt": "You are a creative assistant specialized in document and media processing. Create animated GIF images from a sequence of frames. Use the available tools to complete requests accurately.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Create a GIF from frames in /tmp/frames/ and save to /tmp/animation.gif",

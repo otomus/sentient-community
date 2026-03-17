@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scroll in a direction on screen. Supports vertical and horizontal scrolling, configurable scroll amount, smooth scrolling, pixel-precise scrolling, and scroll-to-element. Handle scroll boundaries, nested scrollable areas, and momentum scrolling.",
+  "system_prompt": "Scroll in a direction on screen. Supports vertical and horizontal scrolling, configurable scroll amount, smooth scrolling, pixel-precise scrolling, and scroll-to-element. Handle scroll boundaries, nested scrollable areas, and momentum scrolling.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Scroll down 3 clicks",

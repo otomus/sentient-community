@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Click at a screen position. Supports left/right/middle button, single/double/triple click, and click-and-drag operations.",
+  "system_prompt": "Click at a screen position. Supports left/right/middle button, single/double/triple click, and click-and-drag operations.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Click at 500,300",

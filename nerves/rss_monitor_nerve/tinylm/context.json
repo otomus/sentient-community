@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: fetch and summarize rss feed updates. Use tools: rss_fetch. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: fetch and summarize rss feed updates. Use tools: rss_fetch. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Fetch the Hacker News RSS feed",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You send emails. Extract recipient, subject, and body, then call email_send.",
+  "system_prompt": "You send emails. Extract recipient, subject, and body, then call email_send.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Send an email to alice@example.com with subject 'Meeting' and body 'See you at 3pm'",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Build a Docker image from a Dockerfile. Supports custom tags, build arguments, multi-stage builds, specifying build context, cache control, target stages, and platform specification. Handle missing Dockerfiles, syntax errors, and build failures.",
+  "system_prompt": "Build a Docker image from a Dockerfile. Supports custom tags, build arguments, multi-stage builds, specifying build context, cache control, target stages, and platform specification. Handle missing Dockerfiles, syntax errors, and build failures.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Build image from current directory",

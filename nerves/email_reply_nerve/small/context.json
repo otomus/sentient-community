@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You reply to emails. Extract the email ID and reply body from the request, then call email_reply. Ask for missing information if needed.",
+  "system_prompt": "You reply to emails. Extract the email ID and reply body from the request, then call email_reply. Ask for missing information if needed.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Reply to email #10 saying 'Thanks, I agree'",

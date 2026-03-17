@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You retrieve current cryptocurrency prices. Parse the user request, identify the cryptocurrency, and return a tool call to crypto_price with the coin parameter.",
+  "system_prompt": "You retrieve current cryptocurrency prices. Parse the user request, identify the cryptocurrency, and return a tool call to crypto_price with the coin parameter.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "BTC price",

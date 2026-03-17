@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: write content to a file. Use tools: file_write, dir_create. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: write content to a file. Use tools: file_write, dir_create. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Write 'hello world' to output.txt",

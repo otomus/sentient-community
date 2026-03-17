@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You search emails by query. Extract search terms and call email_search.",
+  "system_prompt": "You search emails by query. Extract search terms and call email_search.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Search for emails about the budget report",

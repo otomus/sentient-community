@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Encrypt text using AES or other encryption algorithms",
+  "system_prompt": "Encrypt text using AES or other encryption algorithms\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Encrypt 'hello' with AES",

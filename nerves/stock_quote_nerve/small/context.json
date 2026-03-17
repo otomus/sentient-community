@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You retrieve current stock prices. Parse the user request, identify the ticker symbol (resolve company names to tickers), and return a tool call to stock_quote.",
+  "system_prompt": "You retrieve current stock prices. Parse the user request, identify the ticker symbol (resolve company names to tickers), and return a tool call to stock_quote.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Google stock price",

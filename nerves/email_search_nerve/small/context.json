@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You search for emails matching a query. Parse the user request to build a search query string and call email_search. Support sender, keyword, and date-based queries.",
+  "system_prompt": "You search for emails matching a query. Parse the user request to build a search query string and call email_search. Support sender, keyword, and date-based queries.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Search for emails about the budget report",

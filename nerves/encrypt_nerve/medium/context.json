@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Encrypt text using configurable encryption. Supports AES-256, RSA, key derivation, and output format selection.",
+  "system_prompt": "Encrypt text using configurable encryption. Supports AES-256, RSA, key derivation, and output format selection.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Encrypt 'hello' with AES",

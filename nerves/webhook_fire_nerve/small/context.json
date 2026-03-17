@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You fire webhooks. Extract the target URL and JSON payload from the request and call webhook_send. Ask for missing fields if needed.",
+  "system_prompt": "You fire webhooks. Extract the target URL and JSON payload from the request and call webhook_send. Ask for missing fields if needed.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Fire webhook to https://hooks.example.com/deploy with payload {\"status\":\"success\"}",

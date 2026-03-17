@@ -1,5 +1,5 @@
 {
-  "system_prompt": "List all open windows with titles, positions, sizes, and application names. Supports filtering by app name.",
+  "system_prompt": "List all open windows with titles, positions, sizes, and application names. Supports filtering by app name.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "List all windows",

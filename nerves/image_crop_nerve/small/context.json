@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant specialized in document and media processing. Crop images to a specified rectangular region. Use the available tools to complete requests accurately.",
+  "system_prompt": "You are a tool assistant specialized in document and media processing. Crop images to a specified rectangular region. Use the available tools to complete requests accurately.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Crop /tmp/photo.jpg to region 100,100 with size 500x400",

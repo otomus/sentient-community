@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Get follower data for a social account. Return tool call JSON.",
+  "system_prompt": "Get follower data for a social account. Return tool call JSON.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "How many followers does @jack have on X?",

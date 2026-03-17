@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You generate QR codes. Extract content and call qr_code_generate.",
+  "system_prompt": "You generate QR codes. Extract content and call qr_code_generate.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Generate a QR code for https://example.com",

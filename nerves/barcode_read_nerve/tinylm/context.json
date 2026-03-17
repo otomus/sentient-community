@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You read barcodes from images. Extract image path, call barcode_read.",
+  "system_prompt": "You read barcodes from images. Extract image path, call barcode_read.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Read the barcode in /images/product.png",

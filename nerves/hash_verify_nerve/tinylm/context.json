@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You verify data against hashes. Extract data, hash, algorithm, call hash_verify.",
+  "system_prompt": "You verify data against hashes. Extract data, hash, algorithm, call hash_verify.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Verify 'hello' against hash abc123def using SHA-256",

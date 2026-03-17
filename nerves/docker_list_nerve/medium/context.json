@@ -1,5 +1,5 @@
 {
-  "system_prompt": "List running Docker containers. Supports filtering by status, name, image, and showing all containers including stopped ones.",
+  "system_prompt": "List running Docker containers. Supports filtering by status, name, image, and showing all containers including stopped ones.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "List running containers",

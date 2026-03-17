@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You search for YouTube videos. Parse the request to extract the search query. Return a tool call to youtube_search with the query parameter.",
+  "system_prompt": "You search for YouTube videos. Parse the request to extract the search query. Return a tool call to youtube_search with the query parameter.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "YouTube search: machine learning basics",

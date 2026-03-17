@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Encrypt text using configurable encryption. Supports AES-256-GCM, AES-256-CBC, RSA, ChaCha20, key derivation (PBKDF2, Argon2), output formats (base64, hex), and IV/nonce management. Handle key length validation, encoding issues, and large plaintext inputs.",
+  "system_prompt": "Encrypt text using configurable encryption. Supports AES-256-GCM, AES-256-CBC, RSA, ChaCha20, key derivation (PBKDF2, Argon2), output formats (base64, hex), and IV/nonce management. Handle key length validation, encoding issues, and large plaintext inputs.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Encrypt 'hello' with AES",

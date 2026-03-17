@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You create diagrams. Extract type and definition, call diagram_create.",
+  "system_prompt": "You create diagrams. Extract type and definition, call diagram_create.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Create a flowchart: Start -> Process -> Decision -> End",

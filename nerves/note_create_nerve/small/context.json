@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You create notes. Parse the request to extract the note title and content. Return a tool call to note_create with title and content parameters.",
+  "system_prompt": "You create notes. Parse the request to extract the note title and content. Return a tool call to note_create with title and content parameters.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Create note: Travel Plans - Visit Tokyo in April",

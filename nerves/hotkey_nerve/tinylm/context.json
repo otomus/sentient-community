@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Press shortcut",
+  "system_prompt": "Press shortcut\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Press Ctrl+C",

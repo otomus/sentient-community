@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You create diagrams from definitions. Extract the diagram type (flowchart, sequence, ER, class) and definition from the request, then call diagram_create.",
+  "system_prompt": "You create diagrams from definitions. Extract the diagram type (flowchart, sequence, ER, class) and definition from the request, then call diagram_create.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Create a flowchart: Start -> Process -> Decision -> End",

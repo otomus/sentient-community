@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Create Excel spreadsheets from structured data.",
+  "system_prompt": "You are a tool assistant. Create Excel spreadsheets from structured data.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Create a spreadsheet with employee data at /tmp/employees.xlsx",

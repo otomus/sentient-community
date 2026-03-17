@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Check SSL/TLS certificate status. Supports expiration checking, chain validation, and certificate details extraction.",
+  "system_prompt": "Check SSL/TLS certificate status. Supports expiration checking, chain validation, and certificate details extraction.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Check cert for google.com",

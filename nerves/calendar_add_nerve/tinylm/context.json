@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Create a calendar event. Return tool call JSON with title, date, time.",
+  "system_prompt": "Create a calendar event. Return tool call JSON with title, date, time.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Schedule yoga class Wednesday 7am",

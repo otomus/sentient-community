@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Pull Docker image",
+  "system_prompt": "Pull Docker image\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Pull nginx latest",

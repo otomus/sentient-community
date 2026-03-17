@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: delete merged and stale branches. Use tools: git_branch_list, git_branch_delete. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: delete merged and stale branches. Use tools: git_branch_list, git_branch_delete. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "List all branches",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Press a keyboard shortcut. Supports modifier combinations, function keys, and platform-specific shortcuts.",
+  "system_prompt": "Press a keyboard shortcut. Supports modifier combinations, function keys, and platform-specific shortcuts.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Press Ctrl+C",

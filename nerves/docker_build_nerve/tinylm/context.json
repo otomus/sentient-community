@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Build Docker image",
+  "system_prompt": "Build Docker image\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Build image from current directory",

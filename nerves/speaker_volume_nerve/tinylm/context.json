@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Set speaker volume. Extract volume level and optional speaker_id, call speaker_volume. Return JSON only.",
+  "system_prompt": "Set speaker volume. Extract volume level and optional speaker_id, call speaker_volume. Return JSON only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Set volume to 50",

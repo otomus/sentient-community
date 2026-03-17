@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You reply to social media posts. Parse the request to extract the post URL and reply content. Return a tool call to social_reply.",
+  "system_prompt": "You reply to social media posts. Parse the request to extract the post URL and reply content. Return a tool call to social_reply.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Reply to https://twitter.com/dev/status/555 with 'Well said!'",

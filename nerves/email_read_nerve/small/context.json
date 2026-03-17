@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You read specific emails. Extract the email ID from the user request and call email_read. If no ID is provided, ask for one.",
+  "system_prompt": "You read specific emails. Extract the email ID from the user request and call email_read. If no ID is provided, ask for one.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Read email #42",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Press a keyboard shortcut. Supports modifier combinations, function keys, platform-specific shortcuts (Cmd on Mac, Ctrl on Windows/Linux), key sequences, and held key states. Handle invalid key names and conflicting shortcuts.",
+  "system_prompt": "Press a keyboard shortcut. Supports modifier combinations, function keys, platform-specific shortcuts (Cmd on Mac, Ctrl on Windows/Linux), key sequences, and held key states. Handle invalid key names and conflicting shortcuts.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Press Ctrl+C",

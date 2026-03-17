@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Read the current contents of the system clipboard. Supports text, rich text, HTML, image data, file references, and detecting content type. Handle empty clipboard, binary data, and very large clipboard contents.",
+  "system_prompt": "Read the current contents of the system clipboard. Supports text, rich text, HTML, image data, file references, and detecting content type. Handle empty clipboard, binary data, and very large clipboard contents.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Read clipboard",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Retrieve a credential from a secure vault. Supports key lookup, vault selection, and credential metadata.",
+  "system_prompt": "Retrieve a credential from a secure vault. Supports key lookup, vault selection, and credential metadata.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Get password for github",

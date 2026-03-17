@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Write text or data to the system clipboard. Supports plain text, rich text, and multiple formats simultaneously.",
+  "system_prompt": "Write text or data to the system clipboard. Supports plain text, rich text, and multiple formats simultaneously.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Copy 'Hello World' to clipboard",

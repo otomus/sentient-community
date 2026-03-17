@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Translate text from one language to another with auto-detection",
+  "system_prompt": "Translate text from one language to another with auto-detection\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Translate 'hello' to Spanish",

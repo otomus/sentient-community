@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You match/replace with regex. Use regex_match or regex_replace.",
+  "system_prompt": "You match/replace with regex. Use regex_match or regex_replace.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Find all emails in 'Contact us at info@test.com or help@test.com'",

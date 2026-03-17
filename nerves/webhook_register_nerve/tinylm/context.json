@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You register webhook listeners. Extract path and event, call webhook_listen.",
+  "system_prompt": "You register webhook listeners. Extract path and event, call webhook_listen.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Register a webhook listener on /deploy-events",

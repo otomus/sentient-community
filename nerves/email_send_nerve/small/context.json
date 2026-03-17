@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You compose and send emails. Given a request, extract the recipient address, subject line, and body text, then call email_send with the correct parameters.",
+  "system_prompt": "You compose and send emails. Given a request, extract the recipient address, subject line, and body text, then call email_send with the correct parameters.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Send an email to alice@example.com with subject 'Meeting' and body 'See you at 3pm'",

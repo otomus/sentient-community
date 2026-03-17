@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Click at position",
+  "system_prompt": "Click at position\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Click at 500,300",

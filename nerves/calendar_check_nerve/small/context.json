@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You list upcoming calendar events. Parse the request to determine the time period and return a tool call to calendar_events with the period parameter.",
+  "system_prompt": "You list upcoming calendar events. Parse the request to determine the time period and return a tool call to calendar_events with the period parameter.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "What's on my schedule today?",

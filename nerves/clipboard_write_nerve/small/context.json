@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Write text or data to the system clipboard",
+  "system_prompt": "Write text or data to the system clipboard\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Copy 'Hello World' to clipboard",

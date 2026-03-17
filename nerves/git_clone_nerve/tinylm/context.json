@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: clone a remote repository. Use tools: git_clone. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: clone a remote repository. Use tools: git_clone. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Clone https://github.com/user/repo",

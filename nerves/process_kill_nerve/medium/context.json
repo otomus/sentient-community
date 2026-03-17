@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Kill a running process by PID or name. Supports various signals (SIGTERM, SIGKILL, SIGHUP), killing by name pattern, and graceful shutdown.",
+  "system_prompt": "Kill a running process by PID or name. Supports various signals (SIGTERM, SIGKILL, SIGHUP), killing by name pattern, and graceful shutdown.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Kill process 1234",

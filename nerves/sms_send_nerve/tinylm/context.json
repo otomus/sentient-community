@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You send SMS messages. Extract phone number and message, call sms_send.",
+  "system_prompt": "You send SMS messages. Extract phone number and message, call sms_send.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Text +15551234567 saying I'm running late",

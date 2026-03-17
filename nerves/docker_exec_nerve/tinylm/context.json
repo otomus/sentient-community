@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Exec in container",
+  "system_prompt": "Exec in container\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Run ls in container abc123",

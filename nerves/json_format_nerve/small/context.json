@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You format data as JSON. Use json_format to pretty-print or minify JSON data. Default to indent=2 for pretty printing, indent=0 for minification.",
+  "system_prompt": "You format data as JSON. Use json_format to pretty-print or minify JSON data. Default to indent=2 for pretty printing, indent=0 for minification.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Format this as pretty JSON: {\"a\":1,\"b\":2}",

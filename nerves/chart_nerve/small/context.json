@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You create charts from data. Extract chart type (bar, line, pie), labels, values, and a title from the request, then call chart_create. Default to bar chart if type is unspecified.",
+  "system_prompt": "You create charts from data. Extract chart type (bar, line, pie), labels, values, and a title from the request, then call chart_create. Default to bar chart if type is unspecified.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Create a bar chart of sales: Q1=100, Q2=150, Q3=200, Q4=175",

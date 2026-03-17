@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Turn lights on. Extract light_id and call light_set with state=on. Return JSON only.",
+  "system_prompt": "Turn lights on. Extract light_id and call light_set with state=on. Return JSON only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Turn on the living room light",

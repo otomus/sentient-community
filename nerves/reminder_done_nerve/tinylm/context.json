@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Mark a reminder as complete. Return tool call JSON.",
+  "system_prompt": "Mark a reminder as complete. Return tool call JSON.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "I finished picking up dry cleaning",

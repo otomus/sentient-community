@@ -1,5 +1,5 @@
 {
-  "system_prompt": "List running processes on the host system. Supports filtering by name, PID, user, and sorting by CPU or memory usage. Show process trees, thread counts, and open file descriptors. Handle permission restrictions and large process lists.",
+  "system_prompt": "List running processes on the host system. Supports filtering by name, PID, user, and sorting by CPU or memory usage. Show process trees, thread counts, and open file descriptors. Handle permission restrictions and large process lists.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "List all processes",

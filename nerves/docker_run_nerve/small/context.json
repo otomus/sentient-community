@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Start a Docker container from an image with specified options",
+  "system_prompt": "Start a Docker container from an image with specified options\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Run nginx on port 80",

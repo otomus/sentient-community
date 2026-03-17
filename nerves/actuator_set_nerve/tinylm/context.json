@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Set actuator values. Extract actuator_id and value, call actuator_set. Return JSON only.",
+  "system_prompt": "Set actuator values. Extract actuator_id and value, call actuator_set. Return JSON only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Set the valve to 50%",

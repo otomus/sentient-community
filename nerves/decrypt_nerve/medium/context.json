@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Decrypt encrypted text. Supports AES-256, RSA, automatic algorithm detection, and key validation.",
+  "system_prompt": "Decrypt encrypted text. Supports AES-256, RSA, automatic algorithm detection, and key validation.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Decrypt AES ciphertext",

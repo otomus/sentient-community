@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Execute a command inside a running Docker container. Supports interactive mode, environment variables, working directory, and user specification.",
+  "system_prompt": "Execute a command inside a running Docker container. Supports interactive mode, environment variables, working directory, and user specification.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Run ls in container abc123",

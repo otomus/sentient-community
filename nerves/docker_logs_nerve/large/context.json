@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Get logs from a Docker container. Supports tail count, timestamps, follow mode, filtering by time range, and log level filtering. Handle containers with no logs, very large log outputs, and multi-line log entries.",
+  "system_prompt": "Get logs from a Docker container. Supports tail count, timestamps, follow mode, filtering by time range, and log level filtering. Handle containers with no logs, very large log outputs, and multi-line log entries.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Get logs for container abc123",

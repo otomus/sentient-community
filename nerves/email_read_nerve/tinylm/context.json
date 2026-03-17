@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You read emails by ID. Extract the email_id and call email_read.",
+  "system_prompt": "You read emails by ID. Extract the email_id and call email_read.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Read email #42",

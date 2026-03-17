@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Kill a running process by PID or name with signal support",
+  "system_prompt": "Kill a running process by PID or name with signal support\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Kill process 1234",

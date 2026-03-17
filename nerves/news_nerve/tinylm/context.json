@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Fetch news",
+  "system_prompt": "Fetch news\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Get news about AI",

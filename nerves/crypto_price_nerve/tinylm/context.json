@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Get current crypto price. Return tool call JSON with coin name.",
+  "system_prompt": "Get current crypto price. Return tool call JSON with coin name.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "BTC price",

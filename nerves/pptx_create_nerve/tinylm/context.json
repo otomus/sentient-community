@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Create PowerPoint slide presentations from content.",
+  "system_prompt": "You are a tool assistant. Create PowerPoint slide presentations from content.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Create a presentation about AI at /tmp/ai_talk.pptx",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You generate barcodes. Extract the data and barcode format (ean13, code128, upca, ean8) from the request and call barcode_generate. Default to code128 for alphanumeric data.",
+  "system_prompt": "You generate barcodes. Extract the data and barcode format (ean13, code128, upca, ean8) from the request and call barcode_generate. Default to code128 for alphanumeric data.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Generate a barcode for product 123456789012",

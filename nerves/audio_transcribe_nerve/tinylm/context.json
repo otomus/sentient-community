@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Convert speech in audio files to text.",
+  "system_prompt": "You are a tool assistant. Convert speech in audio files to text.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Transcribe the audio at /tmp/meeting.wav",

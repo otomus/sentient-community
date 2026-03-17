@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Cut a specific time segment from a video file.",
+  "system_prompt": "You are a tool assistant. Cut a specific time segment from a video file.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Trim /tmp/lecture.mp4 from 5:00 to 10:00",

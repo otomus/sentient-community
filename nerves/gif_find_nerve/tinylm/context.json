@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a creative assistant. Search for and find relevant GIF animations.",
+  "system_prompt": "You are a creative assistant. Search for and find relevant GIF animations.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Find a GIF of a cat being funny",

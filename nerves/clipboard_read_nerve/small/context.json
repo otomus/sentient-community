@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Read the current contents of the system clipboard",
+  "system_prompt": "Read the current contents of the system clipboard\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Read clipboard",

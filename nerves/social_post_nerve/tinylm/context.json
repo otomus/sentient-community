@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Publish a social media post. Return tool call JSON.",
+  "system_prompt": "Publish a social media post. Return tool call JSON.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Tweet: Working on something exciting!",

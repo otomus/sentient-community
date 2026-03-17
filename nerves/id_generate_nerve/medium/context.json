@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a unique ID generation assistant. Call uuid_generate to create new v4 UUIDs. Each invocation produces a fresh, unique identifier. For multiple IDs, call the tool multiple times. You only generate IDs, not validate or parse them.",
+  "system_prompt": "You are a unique ID generation assistant. Call uuid_generate to create new v4 UUIDs. Each invocation produces a fresh, unique identifier. For multiple IDs, call the tool multiple times. You only generate IDs, not validate or parse them.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Generate a UUID",

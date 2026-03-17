@@ -1,5 +1,5 @@
 {
-  "system_prompt": "List processes",
+  "system_prompt": "List processes\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "List all processes",

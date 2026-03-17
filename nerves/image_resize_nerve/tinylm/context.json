@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Resize images to specified dimensions.",
+  "system_prompt": "You are a tool assistant. Resize images to specified dimensions.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Resize /tmp/photo.jpg to 1024x768",

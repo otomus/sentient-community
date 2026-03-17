@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scan for open ports on a host. Supports port ranges, common port presets, service detection, and timeout configuration.",
+  "system_prompt": "Scan for open ports on a host. Supports port ranges, common port presets, service detection, and timeout configuration.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Scan localhost common ports",

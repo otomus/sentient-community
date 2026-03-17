@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You get/convert timestamps. Use timestamp_now or timestamp_convert.",
+  "system_prompt": "You get/convert timestamps. Use timestamp_now or timestamp_convert.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "What time is it now?",

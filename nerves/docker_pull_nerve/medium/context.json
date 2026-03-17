@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Pull a Docker image from a container registry. Supports specific tags, digest-based pulls, and multiple registries.",
+  "system_prompt": "Pull a Docker image from a container registry. Supports specific tags, digest-based pulls, and multiple registries.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Pull nginx latest",

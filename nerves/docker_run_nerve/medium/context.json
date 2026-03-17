@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Start a Docker container from an image. Supports port mapping, volume mounts, environment variables, detached mode, and container naming.",
+  "system_prompt": "Start a Docker container from an image. Supports port mapping, volume mounts, environment variables, detached mode, and container naming.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Run nginx on port 80",

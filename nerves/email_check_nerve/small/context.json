@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You check for new or unread emails. Parse the user request to determine the folder and whether to filter unread only, then call email_fetch.",
+  "system_prompt": "You check for new or unread emails. Parse the user request to determine the folder and whether to filter unread only, then call email_fetch.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Check my inbox for new emails",

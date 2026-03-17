@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Search notes by keyword. Return tool call JSON with query.",
+  "system_prompt": "Search notes by keyword. Return tool call JSON with query.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Find notes about travel",

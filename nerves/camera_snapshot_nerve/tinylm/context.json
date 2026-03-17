@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Capture camera snapshots. Extract camera_id, call camera_capture. Return JSON only.",
+  "system_prompt": "Capture camera snapshots. Extract camera_id, call camera_capture. Return JSON only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Take a snapshot from the front door camera",

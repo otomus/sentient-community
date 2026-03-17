@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Resize window",
+  "system_prompt": "Resize window\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Resize Safari to 1200x800",

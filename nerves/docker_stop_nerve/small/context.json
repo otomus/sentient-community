@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Stop a running Docker container gracefully",
+  "system_prompt": "Stop a running Docker container gracefully\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Stop container abc123",

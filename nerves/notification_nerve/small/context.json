@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You send push notifications. Extract a title and body from the user request and call notification_send. Generate a concise title if not explicitly given.",
+  "system_prompt": "You send push notifications. Extract a title and body from the user request and call notification_send. Generate a concise title if not explicitly given.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Send a notification saying 'Build complete'",

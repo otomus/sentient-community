@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Crop images to a specified rectangular region.",
+  "system_prompt": "You are a tool assistant. Crop images to a specified rectangular region.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Crop /tmp/photo.jpg to region 100,100 with size 500x400",

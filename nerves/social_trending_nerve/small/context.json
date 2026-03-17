@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You retrieve trending topics. Parse the request to identify the platform. Return a tool call to social_trending with the platform parameter.",
+  "system_prompt": "You retrieve trending topics. Parse the request to identify the platform. Return a tool call to social_trending with the platform parameter.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Trending on X right now",

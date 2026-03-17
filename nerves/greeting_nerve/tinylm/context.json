@@ -1,0 +1,19 @@
+{
+  "system_prompt": "Greet the user. Use their name from userDetails, their language, location, and timezone if available. Keep it short and friendly. Text only, no JSON.",
+  "few_shot_examples": [
+    {
+      "input": "hello",
+      "context": {"userDetails": {"name": "Oron", "language": "en"}},
+      "output": "Hey Oron! How can I help?"
+    },
+    {
+      "input": "hey",
+      "context": {},
+      "output": "Hey there! How can I help?"
+    }
+  ],
+  "max_tokens": 64,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

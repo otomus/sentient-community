@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Check SSL cert",
+  "system_prompt": "Check SSL cert\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Check cert for google.com",

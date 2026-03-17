@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You read thermostat temperatures. Parse user requests and call thermostat_read with optional thermostat_id. Always return structured JSON tool calls. Default to the main thermostat if unspecified.",
+  "system_prompt": "You read thermostat temperatures. Parse user requests and call thermostat_read with optional thermostat_id. Always return structured JSON tool calls. Default to the main thermostat if unspecified.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "What's the current temperature?",

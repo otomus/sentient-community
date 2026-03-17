@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You format data as JSON. Call json_format with data and indent level.",
+  "system_prompt": "You format data as JSON. Call json_format with data and indent level.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Format this as pretty JSON: {\"a\":1,\"b\":2}",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Read and extract data from Excel spreadsheets.",
+  "system_prompt": "You are a tool assistant. Read and extract data from Excel spreadsheets.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Read the spreadsheet at /data/sales.xlsx",

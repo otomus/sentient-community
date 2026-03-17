@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a creative assistant. Create animated GIF images from a sequence of frames.",
+  "system_prompt": "You are a creative assistant. Create animated GIF images from a sequence of frames.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Create a GIF from frames in /tmp/frames/ and save to /tmp/animation.gif",

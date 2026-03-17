@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Identify a song that is currently playing or from an audio clip.",
+  "system_prompt": "You are a tool assistant. Identify a song that is currently playing or from an audio clip.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "What song is in this audio clip /tmp/song_clip.wav?",

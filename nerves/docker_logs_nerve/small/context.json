@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Get logs from a Docker container with optional tail and follow",
+  "system_prompt": "Get logs from a Docker container with optional tail and follow\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Get logs for container abc123",

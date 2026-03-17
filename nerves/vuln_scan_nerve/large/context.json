@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scan for security vulnerabilities. Supports CVE lookup, dependency scanning, configuration auditing, severity classification (CVSS), remediation suggestions, compliance checking, and scan scheduling. Handle false positives, scan timeouts, and large codebases.",
+  "system_prompt": "Scan for security vulnerabilities. Supports CVE lookup, dependency scanning, configuration auditing, severity classification (CVSS), remediation suggestions, compliance checking, and scan scheduling. Handle false positives, scan timeouts, and large codebases.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Scan dependencies for vulns",

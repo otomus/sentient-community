@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Type text via keyboard with configurable speed and modifiers",
+  "system_prompt": "Type text via keyboard with configurable speed and modifiers\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Type hello world",

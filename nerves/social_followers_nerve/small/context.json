@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You retrieve follower data. Parse the request to extract the platform and username. Return a tool call to social_followers.",
+  "system_prompt": "You retrieve follower data. Parse the request to extract the platform and username. Return a tool call to social_followers.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "How many followers does @jack have on X?",

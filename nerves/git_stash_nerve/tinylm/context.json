@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: stash or restore work in progress. Use tools: git_stash, git_stash_pop, git_status. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: stash or restore work in progress. Use tools: git_stash, git_stash_pop, git_status. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Stash my current changes",

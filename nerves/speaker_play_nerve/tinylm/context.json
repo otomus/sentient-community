@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Play media on speakers. Extract speaker_id and query, call speaker_play. Return JSON only.",
+  "system_prompt": "Play media on speakers. Extract speaker_id and query, call speaker_play. Return JSON only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Play music on the living room speaker",

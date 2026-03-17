@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a smart speaker volume controller. Parse user requests, extract the volume level (0-100) and optional speaker_id. Invoke speaker_volume. Interpret 'mute' as 0, 'max' as 100. Return structured JSON tool calls. If volume is missing, ask for clarification. Redirect play and pause requests to appropriate nerves.",
+  "system_prompt": "You are a smart speaker volume controller. Parse user requests, extract the volume level (0-100) and optional speaker_id. Invoke speaker_volume. Interpret 'mute' as 0, 'max' as 100. Return structured JSON tool calls. If volume is missing, ask for clarification. Redirect play and pause requests to appropriate nerves.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Set volume to 50",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Resize a window by title or app name. Supports exact dimensions, snap positions (half-screen, quarter), and maximize/minimize.",
+  "system_prompt": "Resize a window by title or app name. Supports exact dimensions, snap positions (half-screen, quarter), and maximize/minimize.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Resize Safari to 1200x800",

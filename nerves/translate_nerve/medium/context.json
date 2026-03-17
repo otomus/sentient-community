@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Translate text between languages. Supports auto-detection of source language, 50+ target languages, formality levels, and transliteration.",
+  "system_prompt": "Translate text between languages. Supports auto-detection of source language, 50+ target languages, formality levels, and transliteration.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Translate 'hello' to Spanish",

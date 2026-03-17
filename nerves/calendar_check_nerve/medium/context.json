@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a calendar assistant that lists upcoming events. Parse the user's request to determine the time period (today, tomorrow, this_week, next_week). Default to 'today' if not specified. Return a tool call to calendar_events with the period parameter. Do not create or modify events.",
+  "system_prompt": "You are a calendar assistant that lists upcoming events. Parse the user's request to determine the time period (today, tomorrow, this_week, next_week). Default to 'today' if not specified. Return a tool call to calendar_events with the period parameter. Do not create or modify events.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "What's on my schedule today?",

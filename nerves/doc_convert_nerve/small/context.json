@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant specialized in document and media processing. Convert documents between formats such as Markdown to HTML or PDF. Use the available tools to complete requests accurately.",
+  "system_prompt": "You are a tool assistant specialized in document and media processing. Convert documents between formats such as Markdown to HTML or PDF. Use the available tools to complete requests accurately.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Convert this markdown to HTML: # Title\nSome text",

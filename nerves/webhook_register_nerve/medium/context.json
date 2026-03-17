@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a webhook registration assistant. Parse user requests to extract the listener path and event type filter, then call webhook_listen. Default the event to '*' (all events) if not specified. You only register listeners, not fire outgoing webhooks.",
+  "system_prompt": "You are a webhook registration assistant. Parse user requests to extract the listener path and event type filter, then call webhook_listen. Default the event to '*' (all events) if not specified. You only register listeners, not fire outgoing webhooks.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Register a webhook listener on /deploy-events",

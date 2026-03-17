@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Check the SSL/TLS certificate status of a domain",
+  "system_prompt": "Check the SSL/TLS certificate status of a domain\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Check cert for google.com",

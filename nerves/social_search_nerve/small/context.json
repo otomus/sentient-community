@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You search social media posts. Parse the request to extract the platform and search query. Return a tool call to social_search.",
+  "system_prompt": "You search social media posts. Parse the request to extract the platform and search query. Return a tool call to social_search.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Search X for machine learning",

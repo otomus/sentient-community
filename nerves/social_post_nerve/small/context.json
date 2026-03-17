@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You publish posts to social platforms. Parse the request to extract the platform and content. Return a tool call to social_post.",
+  "system_prompt": "You publish posts to social platforms. Parse the request to extract the platform and content. Return a tool call to social_post.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Tweet: Working on something exciting!",

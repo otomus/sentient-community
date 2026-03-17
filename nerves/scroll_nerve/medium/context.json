@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scroll in a direction on screen. Supports vertical and horizontal scrolling, configurable scroll amount, and smooth scrolling.",
+  "system_prompt": "Scroll in a direction on screen. Supports vertical and horizontal scrolling, configurable scroll amount, and smooth scrolling.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Scroll down 3 clicks",

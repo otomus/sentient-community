@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You like/react to social media posts. Parse the request to extract the post URL. Return a tool call to social_like with the url parameter.",
+  "system_prompt": "You like/react to social media posts. Parse the request to extract the post URL. Return a tool call to social_like with the url parameter.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Like https://twitter.com/dev/status/111",

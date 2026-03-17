@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You update existing notes. Parse the request to extract the note title and new content. Return a tool call to note_update with title and content parameters.",
+  "system_prompt": "You update existing notes. Parse the request to extract the note title and new content. Return a tool call to note_update with title and content parameters.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Update Travel Plans with: Visit Tokyo in April, Kyoto in May",

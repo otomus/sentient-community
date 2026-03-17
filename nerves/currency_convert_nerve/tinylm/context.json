@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Convert between currencies. Return tool call JSON with amount, from, to.",
+  "system_prompt": "Convert between currencies. Return tool call JSON with amount, from, to.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "200 EUR to GBP",

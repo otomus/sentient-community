@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Retrieve a stored credential from a secure vault by key",
+  "system_prompt": "Retrieve a stored credential from a secure vault by key\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Get password for github",

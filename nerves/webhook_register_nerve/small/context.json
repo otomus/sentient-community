@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You set up webhook listeners. Extract the endpoint path and event type from the request and call webhook_listen. Default event to '*' if not specified.",
+  "system_prompt": "You set up webhook listeners. Extract the endpoint path and event type from the request and call webhook_listen. Default event to '*' if not specified.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Register a webhook listener on /deploy-events",

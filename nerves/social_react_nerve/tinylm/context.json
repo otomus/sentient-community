@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Like a social media post. Return tool call JSON with URL.",
+  "system_prompt": "Like a social media post. Return tool call JSON with URL.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Like https://twitter.com/dev/status/111",

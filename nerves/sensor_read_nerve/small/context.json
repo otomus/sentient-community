@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You read IoT sensor values. Parse the user request, identify the sensor_id, and call the sensor_read tool. Always return structured JSON tool calls. Ask for clarification if sensor is ambiguous.",
+  "system_prompt": "You read IoT sensor values. Parse the user request, identify the sensor_id, and call the sensor_read tool. Always return structured JSON tool calls. Ask for clarification if sensor is ambiguous.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Read the temperature sensor",

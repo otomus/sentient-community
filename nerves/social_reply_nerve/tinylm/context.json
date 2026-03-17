@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Reply to a social media post. Return tool call JSON.",
+  "system_prompt": "Reply to a social media post. Return tool call JSON.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Reply to https://twitter.com/dev/status/555 with 'Well said!'",

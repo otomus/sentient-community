@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Generate password",
+  "system_prompt": "Generate password\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Generate 16 char password",

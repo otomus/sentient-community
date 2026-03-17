@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: search the web and return results. Use tools: web_search. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: search the web and return results. Use tools: web_search. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Search for Python async best practices",

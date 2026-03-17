@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Create a new note. Return tool call JSON with title and content.",
+  "system_prompt": "Create a new note. Return tool call JSON with title and content.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Create note: Travel Plans - Visit Tokyo in April",

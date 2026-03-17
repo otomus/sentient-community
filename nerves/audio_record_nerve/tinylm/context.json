@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Record audio from the system microphone.",
+  "system_prompt": "You are a tool assistant. Record audio from the system microphone.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Record 30 seconds of audio to /tmp/memo.wav",

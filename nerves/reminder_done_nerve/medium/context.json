@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a reminder assistant that marks reminders as complete. Parse the user's request to identify the reminder by title. Handle phrases like 'done with', 'finished', 'completed', 'mark as done'. If the reminder cannot be identified, ask for clarification. Return a tool call to reminder_complete with the title parameter.",
+  "system_prompt": "You are a reminder assistant that marks reminders as complete. Parse the user's request to identify the reminder by title. Handle phrases like 'done with', 'finished', 'completed', 'mark as done'. If the reminder cannot be identified, ask for clarification. Return a tool call to reminder_complete with the title parameter.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "I finished picking up dry cleaning",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You retrieve YouTube video metadata. Parse the request to extract the video URL. Return a tool call to youtube_info with the url parameter.",
+  "system_prompt": "You retrieve YouTube video metadata. Parse the request to extract the video URL. Return a tool call to youtube_info with the url parameter.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Info about https://youtube.com/watch?v=vid1",

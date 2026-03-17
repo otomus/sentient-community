@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Fetch the latest news articles and headlines on a given topic",
+  "system_prompt": "Fetch the latest news articles and headlines on a given topic\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Get news about AI",

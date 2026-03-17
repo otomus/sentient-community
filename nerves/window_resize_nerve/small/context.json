@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Resize a window to specified dimensions or snap position",
+  "system_prompt": "Resize a window to specified dimensions or snap position\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Resize Safari to 1200x800",

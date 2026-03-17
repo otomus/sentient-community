@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Run shell command",
+  "system_prompt": "Run shell command\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Run echo hello",

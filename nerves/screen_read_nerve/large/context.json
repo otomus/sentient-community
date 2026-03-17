@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Read text from a screen region. Supports region selection, full screen capture, language detection, confidence scoring, multi-monitor support, retina/HiDPI scaling, and structured data extraction. Handle low contrast text, overlapping windows, and non-text content.",
+  "system_prompt": "Read text from a screen region. Supports region selection, full screen capture, language detection, confidence scoring, multi-monitor support, retina/HiDPI scaling, and structured data extraction. Handle low contrast text, overlapping windows, and non-text content.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Read text from region 0,0,500,200",

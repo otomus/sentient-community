@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Convert documents between formats such as Markdown to HTML or PDF.",
+  "system_prompt": "You are a tool assistant. Convert documents between formats such as Markdown to HTML or PDF.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Convert this markdown to HTML: # Title\nSome text",

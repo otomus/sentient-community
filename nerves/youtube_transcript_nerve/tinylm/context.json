@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Get YouTube video transcript. Return tool call JSON with URL.",
+  "system_prompt": "Get YouTube video transcript. Return tool call JSON with URL.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Transcript for https://youtube.com/watch?v=test1",

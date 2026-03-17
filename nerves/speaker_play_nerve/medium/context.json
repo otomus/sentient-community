@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a smart speaker playback assistant. Parse user requests, identify the speaker_id and media query (song, artist, genre, playlist). Invoke speaker_play. Support resume action. Return structured JSON tool calls. Redirect pause and volume requests to appropriate nerves.",
+  "system_prompt": "You are a smart speaker playback assistant. Parse user requests, identify the speaker_id and media query (song, artist, genre, playlist). Invoke speaker_play. Support resume action. Return structured JSON tool calls. Redirect pause and volume requests to appropriate nerves.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Play music on the living room speaker",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "List running Docker containers with detailed status. Supports filtering by status, name, image, label, and network. Show all containers including stopped ones. Handle formatting for large container lists and provide resource usage summaries.",
+  "system_prompt": "List running Docker containers with detailed status. Supports filtering by status, name, image, label, and network. Show all containers including stopped ones. Handle formatting for large container lists and provide resource usage summaries.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "List running containers",

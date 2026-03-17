@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You compare two texts. Extract both texts and call diff_compute.",
+  "system_prompt": "You compare two texts. Extract both texts and call diff_compute.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Compare 'hello world' with 'hello there'",

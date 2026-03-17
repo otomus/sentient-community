@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Start a container",
+  "system_prompt": "Start a container\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Run nginx on port 80",

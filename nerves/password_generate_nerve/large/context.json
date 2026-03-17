@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Generate a secure random password. Supports length, character sets (uppercase, lowercase, digits, symbols), exclusion rules, pronounceability, passphrase mode, entropy calculation, and compliance with common password policies. Handle conflicting rules and minimum complexity requirements.",
+  "system_prompt": "Generate a secure random password. Supports length, character sets (uppercase, lowercase, digits, symbols), exclusion rules, pronounceability, passphrase mode, entropy calculation, and compliance with common password policies. Handle conflicting rules and minimum complexity requirements.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Generate 16 char password",

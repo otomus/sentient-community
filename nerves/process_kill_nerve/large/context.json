@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Kill a running process by PID or name. Supports various signals (SIGTERM, SIGKILL, SIGHUP), killing by name pattern, graceful shutdown with timeout, and recursive child process termination. Handle non-existent PIDs, permission issues, and zombie processes.",
+  "system_prompt": "Kill a running process by PID or name. Supports various signals (SIGTERM, SIGKILL, SIGHUP), killing by name pattern, graceful shutdown with timeout, and recursive child process termination. Handle non-existent PIDs, permission issues, and zombie processes.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Kill process 1234",

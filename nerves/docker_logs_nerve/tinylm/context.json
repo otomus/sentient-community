@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Get container logs",
+  "system_prompt": "Get container logs\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Get logs for container abc123",

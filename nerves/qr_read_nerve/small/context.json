@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You read QR codes from images. Extract the image file path from the request and call qr_code_read to decode the content. Ask for the path if not provided.",
+  "system_prompt": "You read QR codes from images. Extract the image file path from the request and call qr_code_read to decode the content. Ask for the path if not provided.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Read this QR code image: /path/to/qr.png",

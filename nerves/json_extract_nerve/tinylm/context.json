@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You parse and query JSON. Use json_parse or json_query as needed.",
+  "system_prompt": "You parse and query JSON. Use json_parse or json_query as needed.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Parse this JSON: {\"name\":\"Alice\",\"age\":30}",

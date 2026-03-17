@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: copy files to a backup location. Use tools: file_copy, dir_create. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: copy files to a backup location. Use tools: file_copy, dir_create. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Backup config.yaml to backups folder",

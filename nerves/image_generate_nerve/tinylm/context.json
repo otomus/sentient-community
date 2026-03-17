@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a creative assistant. Generate images from text descriptions using AI.",
+  "system_prompt": "You are a creative assistant. Generate images from text descriptions using AI.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Generate an image of a cat sitting on a couch",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Pull a Docker image from a container registry. Supports specific tags, digest-based pulls, multiple registries, authentication, platform selection, and progress tracking. Handle network errors, authentication failures, and non-existent images.",
+  "system_prompt": "Pull a Docker image from a container registry. Supports specific tags, digest-based pulls, multiple registries, authentication, platform selection, and progress tracking. Handle network errors, authentication failures, and non-existent images.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Pull nginx latest",

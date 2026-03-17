@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Bring a window to the front by title or application name. Supports partial matching, window index selection, and minimized window restoration.",
+  "system_prompt": "Bring a window to the front by title or application name. Supports partial matching, window index selection, and minimized window restoration.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Focus Safari",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Update a note's content. Return tool call JSON with title and new content.",
+  "system_prompt": "Update a note's content. Return tool call JSON with title and new content.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Update Travel Plans with: Visit Tokyo in April, Kyoto in May",

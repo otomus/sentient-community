@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: detect and surface merge conflicts. Use tools: git_status, git_diff, file_read. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: detect and surface merge conflicts. Use tools: git_status, git_diff, file_read. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Are there any merge conflicts?",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Set light brightness. Extract light_id and brightness, call light_set. Return JSON only.",
+  "system_prompt": "Set light brightness. Extract light_id and brightness, call light_set. Return JSON only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Set living room light to 50%",

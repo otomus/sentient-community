@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Extract text content from PDF files for processing and analysis.",
+  "system_prompt": "You are a tool assistant. Extract text content from PDF files for processing and analysis.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Extract text from this PDF: /docs/report.pdf",

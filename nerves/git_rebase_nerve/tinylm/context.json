@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You handle: rebase current branch onto target. Use tools: git_status, git_rebase, git_log. Return JSON with action, tool, args.",
+  "system_prompt": "You handle: rebase current branch onto target. Use tools: git_status, git_rebase, git_log. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Rebase onto main",

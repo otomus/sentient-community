@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Create Microsoft Word documents from text content.",
+  "system_prompt": "You are a tool assistant. Create Microsoft Word documents from text content.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Create a Word doc with meeting minutes at /tmp/minutes.docx",

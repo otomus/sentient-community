@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You reply to emails. Extract email_id and body, then call email_reply.",
+  "system_prompt": "You reply to emails. Extract email_id and body, then call email_reply.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Reply to email #10 saying 'Thanks, I agree'",

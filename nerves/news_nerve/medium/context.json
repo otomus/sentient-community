@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Fetch latest news on a topic. Supports topic filtering, source selection, date ranges, language preference, and result limiting.",
+  "system_prompt": "Fetch latest news on a topic. Supports topic filtering, source selection, date ranges, language preference, and result limiting.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Get news about AI",

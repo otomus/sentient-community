@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You delete calendar events. Parse the request to identify the event by title or date. Return a tool call to calendar_delete_event.",
+  "system_prompt": "You delete calendar events. Parse the request to identify the event by title or date. Return a tool call to calendar_delete_event.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Cancel lunch with Sarah",

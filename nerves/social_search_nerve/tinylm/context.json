@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Search social media posts. Return tool call JSON with platform and query.",
+  "system_prompt": "Search social media posts. Return tool call JSON with platform and query.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Search X for machine learning",

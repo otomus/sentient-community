@@ -1,5 +1,5 @@
 {
-  "system_prompt": "List containers",
+  "system_prompt": "List containers\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "List running containers",

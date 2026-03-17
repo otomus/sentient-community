@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scan a target for known security vulnerabilities",
+  "system_prompt": "Scan a target for known security vulnerabilities\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Scan dependencies for vulns",

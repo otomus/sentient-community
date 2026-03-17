@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You compare two texts to find differences. Extract the two text inputs and call diff_compute. Present the first as text_a (original) and second as text_b (modified).",
+  "system_prompt": "You compare two texts to find differences. Extract the two text inputs and call diff_compute. Present the first as text_a (original) and second as text_b (modified).\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Compare 'hello world' with 'hello there'",

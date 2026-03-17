@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You compute hashes. Extract data and algorithm, call hash_compute.",
+  "system_prompt": "You compute hashes. Extract data and algorithm, call hash_compute.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Hash 'hello world' with SHA-256",

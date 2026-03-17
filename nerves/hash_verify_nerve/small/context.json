@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You verify data against hashes. Extract the original data, expected hash, and algorithm from the request, then call hash_verify. Default algorithm is SHA-256.",
+  "system_prompt": "You verify data against hashes. Extract the original data, expected hash, and algorithm from the request, then call hash_verify. Default algorithm is SHA-256.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Verify 'hello' against hash abc123def using SHA-256",

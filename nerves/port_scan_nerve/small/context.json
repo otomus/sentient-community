@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scan a host for open ports and identify running services",
+  "system_prompt": "Scan a host for open ports and identify running services\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Scan localhost common ports",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You turn lights off. Parse user requests, identify the light_id, and call light_set with state 'off'. Always return structured JSON tool calls. Ask for clarification if the light is unspecified.",
+  "system_prompt": "You turn lights off. Parse user requests, identify the light_id, and call light_set with state 'off'. Always return structured JSON tool calls. Ask for clarification if the light is unspecified.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Turn off the living room light",

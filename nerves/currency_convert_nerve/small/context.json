@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You convert amounts between currencies. Parse the request to extract amount, source currency (ISO code), and target currency (ISO code). Return a tool call to currency_convert.",
+  "system_prompt": "You convert amounts between currencies. Parse the request to extract amount, source currency (ISO code), and target currency (ISO code). Return a tool call to currency_convert.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "200 EUR to GBP",

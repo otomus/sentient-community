@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You retrieve historical stock data. Parse the user request, extract the ticker symbol and time period, and return a tool call to stock_history.",
+  "system_prompt": "You retrieve historical stock data. Parse the user request, extract the ticker symbol and time period, and return a tool call to stock_history.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "GOOGL last 3 months",

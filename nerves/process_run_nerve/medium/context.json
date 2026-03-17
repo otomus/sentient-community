@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Run a shell command on the host system. Supports timeout, working directory, environment variables, and output capture.",
+  "system_prompt": "Run a shell command on the host system. Supports timeout, working directory, environment variables, and output capture.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Run echo hello",

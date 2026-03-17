@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Read screen text",
+  "system_prompt": "Read screen text\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Read text from region 0,0,500,200",

@@ -1,0 +1,17 @@
+{
+  "name": "greeting_nerve",
+  "version": "1.0.0",
+  "description": "Greet the user warmly using their name, location, timezone, and conversation history for a personalized experience.",
+  "role": "social",
+  "tags": [
+    "social",
+    "greeting"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "sentient_version": ">=0.1.0",
+  "tools": []
+}

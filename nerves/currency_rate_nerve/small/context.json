@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You retrieve exchange rates. Parse the request to extract the two currency codes and return a tool call to currency_rate with from and to parameters.",
+  "system_prompt": "You retrieve exchange rates. Parse the request to extract the two currency codes and return a tool call to currency_rate with from and to parameters.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "EUR to CHF rate",

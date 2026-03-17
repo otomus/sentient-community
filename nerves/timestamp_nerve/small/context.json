@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You get or convert timestamps. Use timestamp_now for current time and timestamp_convert for format conversions between Unix epochs and ISO 8601 dates.",
+  "system_prompt": "You get or convert timestamps. Use timestamp_now for current time and timestamp_convert for format conversions between Unix epochs and ISO 8601 dates.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "What time is it now?",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You check for new/unread emails. Call email_fetch with folder and unread_only.",
+  "system_prompt": "You check for new/unread emails. Call email_fetch with folder and unread_only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Check my inbox for new emails",

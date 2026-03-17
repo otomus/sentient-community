@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Read the current contents of the system clipboard. Supports text, rich text, and detecting content type.",
+  "system_prompt": "Read the current contents of the system clipboard. Supports text, rich text, and detecting content type.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Read clipboard",

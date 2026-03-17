@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You send SMS messages. Extract the recipient phone number and message text from the request, then call sms_send. Ask for missing fields.",
+  "system_prompt": "You send SMS messages. Extract the recipient phone number and message text from the request, then call sms_send. Ask for missing fields.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Text +15551234567 saying I'm running late",

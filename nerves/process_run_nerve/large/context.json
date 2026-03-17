@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Run a shell command on the host system. Supports timeout, working directory, environment variables, output capture, piping, and background execution. Handle command not found, permission denied, and timeout scenarios.",
+  "system_prompt": "Run a shell command on the host system. Supports timeout, working directory, environment variables, output capture, piping, and background execution. Handle command not found, permission denied, and timeout scenarios.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Run echo hello",

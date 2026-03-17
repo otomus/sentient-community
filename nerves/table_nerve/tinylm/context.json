@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You format data as tables. Extract headers and rows, call table_format.",
+  "system_prompt": "You format data as tables. Extract headers and rows, call table_format.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Make a table with columns Name, Age, City and rows: Alice 30 NYC, Bob 25 LA",

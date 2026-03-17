@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Stop a running Docker container. Supports graceful shutdown with configurable timeout, force stop, stopping multiple containers, and handling containers in various states. Handle edge cases like already stopped containers and non-existent container IDs.",
+  "system_prompt": "Stop a running Docker container. Supports graceful shutdown with configurable timeout, force stop, stopping multiple containers, and handling containers in various states. Handle edge cases like already stopped containers and non-existent container IDs.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Stop container abc123",

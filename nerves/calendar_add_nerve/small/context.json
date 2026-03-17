@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You create calendar events. Parse the request to extract the event title, date, and time. Return a tool call to calendar_create_event with those parameters.",
+  "system_prompt": "You create calendar events. Parse the request to extract the event title, date, and time. Return a tool call to calendar_create_event with those parameters.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Schedule yoga class Wednesday 7am",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Read IoT sensor values. Extract sensor_id and call sensor_read tool. Return JSON tool calls only.",
+  "system_prompt": "Read IoT sensor values. Extract sensor_id and call sensor_read tool. Return JSON tool calls only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Read the temperature sensor",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Delete a calendar event. Return tool call JSON.",
+  "system_prompt": "Delete a calendar event. Return tool call JSON.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Cancel lunch with Sarah",

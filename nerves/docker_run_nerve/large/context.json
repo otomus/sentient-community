@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Start a Docker container from an image. Supports port mapping, volume mounts, environment variables, detached mode, container naming, restart policies, network configuration, and resource limits. Handle edge cases like port conflicts, missing images, and invalid configurations.",
+  "system_prompt": "Start a Docker container from an image. Supports port mapping, volume mounts, environment variables, detached mode, container naming, restart policies, network configuration, and resource limits. Handle edge cases like port conflicts, missing images, and invalid configurations.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Run nginx on port 80",

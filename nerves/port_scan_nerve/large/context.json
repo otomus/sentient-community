@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Scan for open ports on a host. Supports port ranges, common port presets, service detection, timeout configuration, UDP scanning, banner grabbing, and concurrent scanning. Handle firewalled ports, rate limiting, and permission requirements.",
+  "system_prompt": "Scan for open ports on a host. Supports port ranges, common port presets, service detection, timeout configuration, UDP scanning, banner grabbing, and concurrent scanning. Handle firewalled ports, rate limiting, and permission requirements.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Scan localhost common ports",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You check IoT device health and status. Parse user requests, identify the device_id, and call the device_status tool. Always return structured JSON tool calls. Ask for clarification if device is unspecified.",
+  "system_prompt": "You check IoT device health and status. Parse user requests, identify the device_id, and call the device_status tool. Always return structured JSON tool calls. Ask for clarification if device is unspecified.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Check the thermostat status",

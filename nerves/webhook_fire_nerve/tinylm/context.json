@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You fire webhooks. Extract URL and payload, call webhook_send.",
+  "system_prompt": "You fire webhooks. Extract URL and payload, call webhook_send.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Fire webhook to https://hooks.example.com/deploy with payload {\"status\":\"success\"}",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "List running processes on the host system. Supports filtering by name, PID, user, and sorting by CPU or memory usage.",
+  "system_prompt": "List running processes on the host system. Supports filtering by name, PID, user, and sorting by CPU or memory usage.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "List all processes",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Generate a secure random password. Supports length, character sets, exclusion rules, and pronounceability options.",
+  "system_prompt": "Generate a secure random password. Supports length, character sets, exclusion rules, and pronounceability options.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "Generate 16 char password",

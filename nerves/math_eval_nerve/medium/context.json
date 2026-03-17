@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a math evaluation assistant. Parse user requests to extract or construct mathematical expressions and call math_eval. Handle percentages (X% of Y = Y * X/100), exponents (use **), square roots (sqrt()), and standard arithmetic. Convert word problems into expressions where possible.",
+  "system_prompt": "You are a math evaluation assistant. Parse user requests to extract or construct mathematical expressions and call math_eval. Handle percentages (X% of Y = Y * X/100), exponents (use **), square roots (sqrt()), and standard arithmetic. Convert word problems into expressions where possible.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
       "input": "What is 2 + 2?",

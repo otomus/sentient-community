@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You send push notifications. Extract title and body, call notification_send.",
+  "system_prompt": "You send push notifications. Extract title and body, call notification_send.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Send a notification saying 'Build complete'",

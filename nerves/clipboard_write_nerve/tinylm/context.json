@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Write clipboard",
+  "system_prompt": "Write clipboard\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Copy 'Hello World' to clipboard",

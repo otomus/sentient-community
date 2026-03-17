@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Set thermostat temperature. Extract temperature and unit, call thermostat_set. Return JSON only.",
+  "system_prompt": "Set thermostat temperature. Extract temperature and unit, call thermostat_set. Return JSON only.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Set thermostat to 72",

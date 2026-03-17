@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Decrypt encrypted text. Supports AES-256-GCM, AES-256-CBC, RSA, ChaCha20, automatic algorithm detection, key validation, and integrity verification. Handle wrong keys, corrupted ciphertext, and format detection errors.",
+  "system_prompt": "Decrypt encrypted text. Supports AES-256-GCM, AES-256-CBC, RSA, ChaCha20, automatic algorithm detection, key validation, and integrity verification. Handle wrong keys, corrupted ciphertext, and format detection errors.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.",
   "few_shot_examples": [
     {
       "input": "Decrypt AES ciphertext",

@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Create a reminder. Return tool call JSON with title and due date.",
+  "system_prompt": "Create a reminder. Return tool call JSON with title and due date.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Remind me to water plants",

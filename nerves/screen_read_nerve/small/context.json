@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Capture a screen region and extract text using OCR",
+  "system_prompt": "Capture a screen region and extract text using OCR\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Read text from region 0,0,500,200",

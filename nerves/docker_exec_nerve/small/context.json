@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Execute a command inside a running Docker container",
+  "system_prompt": "Execute a command inside a running Docker container\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
       "input": "Run ls in container abc123",

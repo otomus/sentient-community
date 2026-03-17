@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You are a tool assistant. Create PDF documents from text content and structured data.",
+  "system_prompt": "You are a tool assistant. Create PDF documents from text content and structured data.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Create a PDF with the text 'Meeting Notes' and save to /tmp/notes.pdf",

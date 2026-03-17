@@ -1,5 +1,5 @@
 {
-  "system_prompt": "You encode/decode base64. Use base64_encode or base64_decode.",
+  "system_prompt": "You encode/decode base64. Use base64_encode or base64_decode.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
       "input": "Encode 'hello world' to base64",
