@@ -1,13 +1,15 @@
 {
   "name": "browse_nerve",
   "version": "1.0.0",
-  "description": "Open a URL and extract its content",
+  "description": "Open a URL in a headless browser, render JavaScript, and extract the page content",
   "role": "brain",
   "mode": "tool_required",
   "tags": [
     "browser",
     "web",
-    "scraping"
+    "scraping",
+    "render",
+    "headless"
   ],
   "authors": [
     {

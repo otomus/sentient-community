@@ -1,12 +1,14 @@
 {
   "name": "sensor_nerve",
   "version": "1.0.0",
-  "description": "Read sensor values and list available sensors",
+  "description": "Read values from IoT sensors and list all available sensors",
   "role": "nerve",
   "mode": "tool_required",
   "tags": [
     "iot",
-    "sensor"
+    "sensor",
+    "telemetry",
+    "reading"
   ],
   "authors": [
     {

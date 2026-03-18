@@ -1,13 +1,15 @@
 {
   "name": "speaker_nerve",
   "version": "1.0.0",
-  "description": "Control speaker playback and volume",
+  "description": "Control smart speaker playback, volume, and audio output",
   "role": "nerve",
   "mode": "tool_required",
   "tags": [
     "iot",
     "speaker",
-    "audio"
+    "audio",
+    "playback",
+    "volume"
   ],
   "authors": [
     {

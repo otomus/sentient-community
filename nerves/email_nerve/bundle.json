@@ -1,12 +1,15 @@
 {
   "name": "email_nerve",
   "version": "1.0.0",
-  "description": "Full email operations (send, receive, read, reply, search)",
+  "description": "Send, receive, read, reply to, and search emails via IMAP and SMTP",
   "role": "communication",
   "mode": "tool_required",
   "tags": [
     "communication",
-    "email"
+    "email",
+    "imap",
+    "smtp",
+    "inbox"
   ],
   "authors": [
     {

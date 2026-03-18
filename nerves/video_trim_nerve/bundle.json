@@ -1,12 +1,13 @@
 {
   "name": "video_trim_nerve",
   "version": "1.0.0",
-  "description": "Cut a specific time segment from a video file.",
+  "description": "Cut a specific time segment from a video file and save as a new clip",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "video",
     "trim",
+    "cut",
     "edit"
   ],
   "authors": [

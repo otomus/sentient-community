@@ -1,13 +1,13 @@
 {
     "name": "video_transcribe_nerve",
     "version": "1.0.0",
-    "description": "Extract text transcript from video content.",
+    "description": "Extract the audio track from a video and transcribe speech to text",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "video",
         "transcribe",
-        "speech"
+        "speech-to-text"
     ],
     "authors": [
         {

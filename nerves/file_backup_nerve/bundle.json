@@ -1,12 +1,14 @@
 {
   "name": "file_backup_nerve",
   "version": "1.0.0",
-  "description": "Copy files to a backup location",
+  "description": "Copy files and directories to a backup location",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "file",
-    "backup"
+    "backup",
+    "copy",
+    "archive"
   ],
   "authors": [
     {

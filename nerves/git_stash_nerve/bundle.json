@@ -1,12 +1,14 @@
 {
   "name": "git_stash_nerve",
   "version": "1.0.0",
-  "description": "Stash or restore work in progress",
+  "description": "Stash uncommitted changes and restore them later",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "stash",
+    "wip"
   ],
   "authors": [
     {

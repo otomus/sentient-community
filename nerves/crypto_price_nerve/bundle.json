@@ -1,13 +1,14 @@
 {
     "name": "crypto_price_nerve",
     "version": "1.0.0",
-    "description": "Get the current price of a cryptocurrency.",
+    "description": "Get the current market price of a cryptocurrency by name or symbol",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "finance",
         "crypto",
-        "tool"
+        "price",
+        "realtime"
     ],
     "authors": [
         {

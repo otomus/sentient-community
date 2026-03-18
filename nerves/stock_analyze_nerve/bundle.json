@@ -1,13 +1,15 @@
 {
     "name": "stock_analyze_nerve",
     "version": "1.0.0",
-    "description": "Analyze a stock with fundamentals and technicals",
+    "description": "Perform fundamental and technical analysis on a stock with charts and commentary",
     "role": "brain",
     "mode": "tool_required",
     "tags": [
         "finance",
         "stock",
-        "analysis"
+        "analysis",
+        "fundamentals",
+        "technicals"
     ],
     "authors": [
         {

@@ -1,13 +1,15 @@
 {
     "name": "image_generate_nerve",
     "version": "1.0.0",
-    "description": "Generate images from text descriptions using AI.",
+    "description": "Generate new images from text descriptions using AI image models",
     "role": "creative",
     "mode": "tool_required",
     "tags": [
         "image",
         "generate",
-        "ai"
+        "ai",
+        "dall-e",
+        "creative"
     ],
     "authors": [
         {

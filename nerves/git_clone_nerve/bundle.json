@@ -1,12 +1,14 @@
 {
   "name": "git_clone_nerve",
   "version": "1.0.0",
-  "description": "Clone a remote repository",
+  "description": "Clone a remote Git repository to the local machine",
   "role": "code",
   "mode": "tool_required",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "clone",
+    "remote"
   ],
   "authors": [
     {

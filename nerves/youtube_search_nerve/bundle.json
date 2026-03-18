@@ -1,13 +1,13 @@
 {
   "name": "youtube_search_nerve",
   "version": "1.0.0",
-  "description": "Search for YouTube videos by keyword.",
+  "description": "Search YouTube for videos matching a keyword query",
   "role": "tool",
   "mode": "tool_required",
   "tags": [
     "youtube",
-    "video",
-    "tool"
+    "search",
+    "discover"
   ],
   "authors": [
     {

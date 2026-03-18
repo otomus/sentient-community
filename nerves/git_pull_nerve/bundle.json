@@ -1,12 +1,14 @@
 {
   "name": "git_pull_nerve",
   "version": "1.0.0",
-  "description": "Pull and integrate remote changes",
+  "description": "Fetch and integrate changes from a remote repository",
   "role": "code",
   "mode": "tool_required",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "pull",
+    "fetch"
   ],
   "authors": [
     {

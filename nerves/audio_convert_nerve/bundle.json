@@ -1,13 +1,14 @@
 {
   "name": "audio_convert_nerve",
   "version": "1.0.0",
-  "description": "Convert audio files between different formats.",
+  "description": "Convert an audio file from one format to another (e.g. WAV to MP3)",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "audio",
     "convert",
-    "format"
+    "format",
+    "transcode"
   ],
   "authors": [
     {

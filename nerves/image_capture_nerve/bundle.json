@@ -1,13 +1,15 @@
 {
     "name": "image_capture_nerve",
     "version": "1.0.0",
-    "description": "Capture a screenshot of the current screen.",
+    "description": "Capture a screenshot of the current desktop screen",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "image",
         "screenshot",
-        "capture"
+        "desktop",
+        "capture",
+        "screen"
     ],
     "authors": [
         {

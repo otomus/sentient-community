@@ -1,12 +1,15 @@
 {
   "name": "csv_nerve",
   "version": "1.0.0",
-  "description": "Read and write CSV data",
+  "description": "Parse, query, and write CSV tabular data",
   "role": "brain",
   "mode": "reasoning",
   "tags": [
     "data",
-    "csv"
+    "csv",
+    "tabular",
+    "parse",
+    "spreadsheet"
   ],
   "authors": [
     {

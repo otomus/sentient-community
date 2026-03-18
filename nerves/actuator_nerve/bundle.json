@@ -1,12 +1,15 @@
 {
   "name": "actuator_nerve",
   "version": "1.0.0",
-  "description": "Control and read any actuator",
+  "description": "Send commands to and read state from any IoT actuator",
   "role": "nerve",
   "mode": "tool_required",
   "tags": [
     "iot",
-    "actuator"
+    "actuator",
+    "control",
+    "motor",
+    "relay"
   ],
   "authors": [
     {

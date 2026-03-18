@@ -1,12 +1,15 @@
 {
   "name": "social_nerve",
   "version": "1.0.0",
-  "description": "Full social media operations on any platform",
+  "description": "Read, post, reply, and manage content across social media platforms",
   "role": "communication",
   "mode": "tool_required",
   "tags": [
     "communication",
-    "social"
+    "social",
+    "post",
+    "reply",
+    "feed"
   ],
   "authors": [
     {

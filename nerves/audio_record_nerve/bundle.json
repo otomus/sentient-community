@@ -1,13 +1,14 @@
 {
   "name": "audio_record_nerve",
   "version": "1.0.0",
-  "description": "Record audio from the system microphone.",
+  "description": "Record live audio from the system microphone to a file",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "audio",
     "record",
-    "microphone"
+    "microphone",
+    "capture"
   ],
   "authors": [
     {

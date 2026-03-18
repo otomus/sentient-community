@@ -1,13 +1,15 @@
 {
     "name": "screen_read_nerve",
     "version": "1.0.0",
-    "description": "Read text from a screen region",
+    "description": "Capture a live screen region and extract visible text via OCR",
     "role": "tool",
     "mode": "reasoning",
     "tags": [
         "desktop",
         "screen",
-        "ocr"
+        "ocr",
+        "live",
+        "region"
     ],
     "authors": [
         {

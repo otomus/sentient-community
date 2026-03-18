@@ -1,13 +1,13 @@
 {
   "name": "youtube_info_nerve",
   "version": "1.0.0",
-  "description": "Get metadata for a YouTube video including title, views, and description.",
+  "description": "Retrieve metadata for a YouTube video such as title, views, and description",
   "role": "tool",
   "mode": "tool_required",
   "tags": [
     "youtube",
-    "video",
-    "tool"
+    "metadata",
+    "video-info"
   ],
   "authors": [
     {

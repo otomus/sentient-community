@@ -1,12 +1,14 @@
 {
   "name": "git_branch_nerve",
   "version": "1.0.0",
-  "description": "Create and switch to a new branch",
+  "description": "Create, list, or switch Git branches",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "branch",
+    "checkout"
   ],
   "authors": [
     {

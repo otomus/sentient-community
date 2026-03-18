@@ -1,12 +1,14 @@
 {
   "name": "git_cleanup_nerve",
   "version": "1.0.0",
-  "description": "Delete merged and stale branches",
+  "description": "Delete merged and stale Git branches to keep the repo tidy",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "cleanup",
+    "prune"
   ],
   "authors": [
     {

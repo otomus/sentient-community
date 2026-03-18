@@ -1,13 +1,14 @@
 {
     "name": "youtube_transcript_nerve",
     "version": "1.0.0",
-    "description": "Get the transcript from a YouTube video.",
+    "description": "Download the text transcript or captions from a YouTube video",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "youtube",
-        "video",
-        "tool"
+        "transcript",
+        "captions",
+        "subtitles"
     ],
     "authors": [
         {

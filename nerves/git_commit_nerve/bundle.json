@@ -1,12 +1,14 @@
 {
   "name": "git_commit_nerve",
   "version": "1.0.0",
-  "description": "Stage and commit clean changes",
+  "description": "Stage changed files and create a Git commit with a message",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "commit",
+    "stage"
   ],
   "authors": [
     {

@@ -1,13 +1,15 @@
 {
   "name": "doc_convert_nerve",
   "version": "1.0.0",
-  "description": "Convert documents between formats such as Markdown to HTML or PDF.",
+  "description": "Convert documents between formats: Markdown to HTML, Markdown to PDF, DOCX to text",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "document",
     "convert",
-    "format"
+    "format",
+    "markdown",
+    "export"
   ],
   "authors": [
     {

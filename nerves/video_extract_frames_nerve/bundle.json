@@ -1,13 +1,14 @@
 {
   "name": "video_extract_frames_nerve",
   "version": "1.0.0",
-  "description": "Extract individual frames from video files.",
+  "description": "Extract individual still frames from a video file at specified intervals",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "video",
     "frames",
-    "extract"
+    "extract",
+    "image"
   ],
   "authors": [
     {

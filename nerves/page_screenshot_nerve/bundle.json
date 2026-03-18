@@ -1,13 +1,15 @@
 {
   "name": "page_screenshot_nerve",
   "version": "1.0.0",
-  "description": "Screenshot a web page",
+  "description": "Render a web page in a headless browser and capture a screenshot image",
   "role": "vision",
   "mode": "tool_required",
   "tags": [
     "browser",
     "web",
-    "screenshot"
+    "screenshot",
+    "render",
+    "image"
   ],
   "authors": [
     {

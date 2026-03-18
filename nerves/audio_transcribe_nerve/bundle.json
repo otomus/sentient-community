@@ -1,13 +1,14 @@
 {
     "name": "audio_transcribe_nerve",
     "version": "1.0.0",
-    "description": "Convert speech in audio files to text.",
+    "description": "Transcribe speech from an audio file to text using speech recognition",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "audio",
         "transcribe",
-        "speech"
+        "speech-to-text",
+        "asr"
     ],
     "authors": [
         {

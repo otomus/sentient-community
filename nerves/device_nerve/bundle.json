@@ -1,12 +1,14 @@
 {
   "name": "device_nerve",
   "version": "1.0.0",
-  "description": "List and check health of connected devices",
+  "description": "List connected IoT devices and check their health and status",
   "role": "nerve",
   "mode": "tool_required",
   "tags": [
     "iot",
-    "device"
+    "device",
+    "inventory",
+    "health-check"
   ],
   "authors": [
     {

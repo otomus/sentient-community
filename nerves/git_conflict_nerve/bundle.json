@@ -1,12 +1,14 @@
 {
   "name": "git_conflict_nerve",
   "version": "1.0.0",
-  "description": "Detect and surface merge conflicts",
+  "description": "Detect, display, and help resolve Git merge conflicts",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "conflict",
+    "merge-conflict"
   ],
   "authors": [
     {

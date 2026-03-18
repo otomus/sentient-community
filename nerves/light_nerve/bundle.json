@@ -1,12 +1,15 @@
 {
   "name": "light_nerve",
   "version": "1.0.0",
-  "description": "Control and query light state (on/off/brightness/color)",
+  "description": "Control smart lights: on/off, brightness, and color",
   "role": "nerve",
   "mode": "tool_required",
   "tags": [
     "iot",
-    "light"
+    "light",
+    "hue",
+    "brightness",
+    "smart-home"
   ],
   "authors": [
     {

@@ -1,12 +1,15 @@
 {
   "name": "image_edit_nerve",
   "version": "1.0.0",
-  "description": "Resize, crop, and convert images",
+  "description": "Resize, crop, rotate, and convert image files",
   "role": "brain",
   "mode": "reasoning",
   "tags": [
     "image",
-    "editing"
+    "editing",
+    "resize",
+    "crop",
+    "convert"
   ],
   "authors": [
     {

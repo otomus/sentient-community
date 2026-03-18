@@ -1,13 +1,15 @@
 {
     "name": "portfolio_review_nerve",
     "version": "1.0.0",
-    "description": "Review portfolio allocation and performance",
+    "description": "Review investment portfolio allocation, returns, and rebalancing suggestions",
     "role": "brain",
     "mode": "tool_required",
     "tags": [
         "finance",
         "portfolio",
-        "review"
+        "review",
+        "allocation",
+        "performance"
     ],
     "authors": [
         {

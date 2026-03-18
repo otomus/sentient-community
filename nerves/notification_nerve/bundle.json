@@ -6,7 +6,9 @@
   "mode": "tool_required",
   "tags": [
     "communication",
-    "notification"
+    "notification",
+    "push",
+    "alert"
   ],
   "authors": [
     {

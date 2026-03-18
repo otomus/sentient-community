@@ -1,13 +1,14 @@
 {
   "name": "pptx_nerve",
   "version": "1.0.0",
-  "description": "Read from and create PowerPoint presentations",
+  "description": "Read from and create PowerPoint (.pptx) presentations",
   "role": "brain",
   "mode": "reasoning",
   "tags": [
     "document",
     "pptx",
-    "powerpoint"
+    "powerpoint",
+    "slides"
   ],
   "authors": [
     {

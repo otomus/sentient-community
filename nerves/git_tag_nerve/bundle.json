@@ -1,12 +1,14 @@
 {
   "name": "git_tag_nerve",
   "version": "1.0.0",
-  "description": "Tag a release point",
+  "description": "Create and manage Git tags for release points",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "tag",
+    "release"
   ],
   "authors": [
     {

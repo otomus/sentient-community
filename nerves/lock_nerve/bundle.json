@@ -1,12 +1,15 @@
 {
   "name": "lock_nerve",
   "version": "1.0.0",
-  "description": "Lock or unlock a smart door lock.",
+  "description": "Lock or unlock a smart door lock remotely",
   "role": "tool",
   "mode": "tool_required",
   "tags": [
     "iot",
-    "lock"
+    "lock",
+    "door",
+    "smart-home",
+    "security"
   ],
   "authors": [
     {

@@ -1,12 +1,15 @@
 {
     "name": "sleep_data_nerve",
     "version": "1.0.0",
-    "description": "Read sleep tracker data from a connected sleep device.",
+    "description": "Read sleep tracking data from a connected sleep device like Eight Sleep",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "iot",
-        "health"
+        "health",
+        "sleep",
+        "tracker",
+        "eight-sleep"
     ],
     "authors": [
         {

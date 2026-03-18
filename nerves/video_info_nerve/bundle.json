@@ -1,12 +1,13 @@
 {
   "name": "video_info_nerve",
   "version": "1.0.0",
-  "description": "Get metadata and technical details about a video file.",
+  "description": "Read metadata and technical details (codec, duration, resolution) from a video file",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "video",
     "metadata",
+    "probe",
     "info"
   ],
   "authors": [

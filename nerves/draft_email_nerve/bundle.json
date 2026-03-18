@@ -1,12 +1,14 @@
 {
     "name": "draft_email_nerve",
     "version": "1.0.0",
-    "description": "Draft a professional email",
+    "description": "Compose a polished email draft using AI without sending it",
     "role": "communication",
     "mode": "reasoning",
     "tags": [
         "writing",
         "email",
+        "draft",
+        "compose",
         "communication"
     ],
     "authors": [

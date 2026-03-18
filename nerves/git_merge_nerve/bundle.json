@@ -1,12 +1,14 @@
 {
   "name": "git_merge_nerve",
   "version": "1.0.0",
-  "description": "Merge a branch into current",
+  "description": "Merge a source branch into the current branch",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "merge",
+    "integrate"
   ],
   "authors": [
     {

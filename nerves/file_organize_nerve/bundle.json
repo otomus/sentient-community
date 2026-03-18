@@ -1,12 +1,14 @@
 {
   "name": "file_organize_nerve",
   "version": "1.0.0",
-  "description": "Move and rename files to target structure",
+  "description": "Move, rename, and reorganize files into a target directory structure",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "file",
-    "organization"
+    "organization",
+    "move",
+    "rename"
   ],
   "authors": [
     {

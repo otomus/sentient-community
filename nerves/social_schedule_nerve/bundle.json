@@ -1,13 +1,15 @@
 {
     "name": "social_schedule_nerve",
     "version": "1.0.0",
-    "description": "Draft and schedule social media posts",
+    "description": "Draft social media content using AI and schedule it for future publication",
     "role": "communication",
     "mode": "tool_required",
     "tags": [
         "marketing",
         "social-media",
-        "scheduling"
+        "scheduling",
+        "calendar",
+        "queue"
     ],
     "authors": [
         {

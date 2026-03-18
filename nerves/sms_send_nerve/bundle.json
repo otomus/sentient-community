@@ -6,7 +6,9 @@
   "mode": "tool_required",
   "tags": [
     "communication",
-    "sms"
+    "sms",
+    "text-message",
+    "send"
   ],
   "authors": [
     {

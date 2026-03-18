@@ -1,12 +1,14 @@
 {
   "name": "pdf_nerve",
   "version": "1.0.0",
-  "description": "Read from and create PDF documents",
+  "description": "Read text from and create PDF documents",
   "role": "brain",
   "mode": "reasoning",
   "tags": [
     "document",
-    "pdf"
+    "pdf",
+    "read",
+    "create"
   ],
   "authors": [
     {

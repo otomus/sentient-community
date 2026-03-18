@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-18T18:25:42.994686+00:00",
+  "generated_at": "2026-03-18T19:40:07.585188+00:00",
   "nerves": {
     "academic_research_nerve": {
       "description": "Find and summarize academic papers on a topic",
@@ -26,12 +26,15 @@
       "model_scores": {}
     },
     "actuator_nerve": {
-      "description": "Control and read any actuator",
+      "description": "Send commands to and read state from any IoT actuator",
       "role": "nerve",
       "mode": "tool_required",
       "tags": [
         "iot",
-        "actuator"
+        "actuator",
+        "control",
+        "motor",
+        "relay"
       ],
       "authors": [
         {
@@ -67,13 +70,14 @@
       "model_scores": {}
     },
     "audio_convert_nerve": {
-      "description": "Convert audio files between different formats.",
+      "description": "Convert an audio file from one format to another (e.g. WAV to MP3)",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "audio",
         "convert",
-        "format"
+        "format",
+        "transcode"
       ],
       "authors": [
         {
@@ -87,13 +91,14 @@
       "model_scores": {}
     },
     "audio_record_nerve": {
-      "description": "Record audio from the system microphone.",
+      "description": "Record live audio from the system microphone to a file",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "audio",
         "record",
-        "microphone"
+        "microphone",
+        "capture"
       ],
       "authors": [
         {
@@ -107,13 +112,14 @@
       "model_scores": {}
     },
     "audio_synthesize_nerve": {
-      "description": "Convert text to speech audio.",
+      "description": "Generate spoken audio from text using text-to-speech synthesis",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "audio",
         "tts",
-        "speech"
+        "text-to-speech",
+        "synthesis"
       ],
       "authors": [
         {
@@ -127,13 +133,14 @@
       "model_scores": {}
     },
     "audio_transcribe_nerve": {
-      "description": "Convert speech in audio files to text.",
+      "description": "Transcribe speech from an audio file to text using speech recognition",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "audio",
         "transcribe",
-        "speech"
+        "speech-to-text",
+        "asr"
       ],
       "authors": [
         {
@@ -187,13 +194,15 @@
       "model_scores": {}
     },
     "browse_nerve": {
-      "description": "Open a URL and extract its content",
+      "description": "Open a URL in a headless browser, render JavaScript, and extract the page content",
       "role": "brain",
       "mode": "tool_required",
       "tags": [
         "browser",
         "web",
-        "scraping"
+        "scraping",
+        "render",
+        "headless"
       ],
       "authors": [
         {
@@ -209,13 +218,14 @@
       "model_scores": {}
     },
     "budget_nerve": {
-      "description": "Create or review a budget",
+      "description": "Create, review, and visualize a personal or project budget",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "finance",
         "budget",
-        "planning"
+        "planning",
+        "spending"
       ],
       "authors": [
         {
@@ -250,12 +260,15 @@
       "model_scores": {}
     },
     "camera_snapshot_nerve": {
-      "description": "Capture an image from a connected camera.",
+      "description": "Capture a still photo from a connected IoT camera",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "iot",
-        "camera"
+        "camera",
+        "snapshot",
+        "photo",
+        "surveillance"
       ],
       "authors": [
         {
@@ -339,7 +352,9 @@
       "tags": [
         "desktop",
         "mouse",
-        "click"
+        "click",
+        "cursor",
+        "input"
       ],
       "authors": [
         {
@@ -501,13 +516,15 @@
       "model_scores": {}
     },
     "crypto_analyze_nerve": {
-      "description": "Analyze a cryptocurrency",
+      "description": "Research and analyze a cryptocurrency with market trends, news, and charts",
       "role": "brain",
       "mode": "tool_required",
       "tags": [
         "finance",
         "crypto",
-        "analysis"
+        "analysis",
+        "trends",
+        "research"
       ],
       "authors": [
         {
@@ -523,13 +540,14 @@
       "model_scores": {}
     },
     "crypto_price_nerve": {
-      "description": "Get the current price of a cryptocurrency.",
+      "description": "Get the current market price of a cryptocurrency by name or symbol",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "finance",
         "crypto",
-        "tool"
+        "price",
+        "realtime"
       ],
       "authors": [
         {
@@ -543,12 +561,15 @@
       "model_scores": {}
     },
     "csv_nerve": {
-      "description": "Read and write CSV data",
+      "description": "Parse, query, and write CSV tabular data",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "data",
-        "csv"
+        "csv",
+        "tabular",
+        "parse",
+        "spreadsheet"
       ],
       "authors": [
         {
@@ -562,12 +583,15 @@
       "model_scores": {}
     },
     "currency_nerve": {
-      "description": "Convert currencies and get exchange rates",
+      "description": "Convert between fiat currencies and retrieve live exchange rates",
       "role": "brain",
       "mode": "tool_required",
       "tags": [
         "finance",
-        "currency"
+        "currency",
+        "exchange-rate",
+        "forex",
+        "convert"
       ],
       "authors": [
         {
@@ -715,12 +739,14 @@
       "model_scores": {}
     },
     "device_nerve": {
-      "description": "List and check health of connected devices",
+      "description": "List connected IoT devices and check their health and status",
       "role": "nerve",
       "mode": "tool_required",
       "tags": [
         "iot",
-        "device"
+        "device",
+        "inventory",
+        "health-check"
       ],
       "authors": [
         {
@@ -753,13 +779,15 @@
       "model_scores": {}
     },
     "doc_convert_nerve": {
-      "description": "Convert documents between formats such as Markdown to HTML or PDF.",
+      "description": "Convert documents between formats: Markdown to HTML, Markdown to PDF, DOCX to text",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "document",
         "convert",
-        "format"
+        "format",
+        "markdown",
+        "export"
       ],
       "authors": [
         {
@@ -802,13 +830,14 @@
       "model_scores": {}
     },
     "docx_nerve": {
-      "description": "Read from and create Word documents",
+      "description": "Read from and create Microsoft Word (.docx) documents",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "document",
         "docx",
-        "word"
+        "word",
+        "microsoft"
       ],
       "authors": [
         {
@@ -863,12 +892,14 @@
       "model_scores": {}
     },
     "draft_email_nerve": {
-      "description": "Draft a professional email",
+      "description": "Compose a polished email draft using AI without sending it",
       "role": "communication",
       "mode": "reasoning",
       "tags": [
         "writing",
         "email",
+        "draft",
+        "compose",
         "communication"
       ],
       "authors": [
@@ -884,12 +915,15 @@
       "model_scores": {}
     },
     "email_nerve": {
-      "description": "Full email operations (send, receive, read, reply, search)",
+      "description": "Send, receive, read, reply to, and search emails via IMAP and SMTP",
       "role": "communication",
       "mode": "tool_required",
       "tags": [
         "communication",
-        "email"
+        "email",
+        "imap",
+        "smtp",
+        "inbox"
       ],
       "authors": [
         {
@@ -988,13 +1022,15 @@
       "model_scores": {}
     },
     "expense_track_nerve": {
-      "description": "Log and categorize an expense",
+      "description": "Log, categorize, and total individual expenses",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "finance",
         "expense",
-        "tracking"
+        "tracking",
+        "categorize",
+        "receipt"
       ],
       "authors": [
         {
@@ -1075,12 +1111,14 @@
       "model_scores": {}
     },
     "file_backup_nerve": {
-      "description": "Copy files to a backup location",
+      "description": "Copy files and directories to a backup location",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "file",
-        "backup"
+        "backup",
+        "copy",
+        "archive"
       ],
       "authors": [
         {
@@ -1095,12 +1133,14 @@
       "model_scores": {}
     },
     "file_diff_nerve": {
-      "description": "Compare two files",
+      "description": "Compare two files line-by-line and show differences",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "file",
-        "comparison"
+        "comparison",
+        "diff",
+        "delta"
       ],
       "authors": [
         {
@@ -1115,12 +1155,15 @@
       "model_scores": {}
     },
     "file_find_nerve": {
-      "description": "Find files matching a pattern",
+      "description": "Search for files by name pattern or content with glob and grep",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "file",
-        "search"
+        "search",
+        "glob",
+        "grep",
+        "find"
       ],
       "authors": [
         {
@@ -1135,12 +1178,15 @@
       "model_scores": {}
     },
     "file_nerve": {
-      "description": "Read and write files",
+      "description": "Read, write, and check existence of files and create directories",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "file",
-        "filesystem"
+        "filesystem",
+        "read",
+        "write",
+        "crud"
       ],
       "authors": [
         {
@@ -1157,12 +1203,14 @@
       "model_scores": {}
     },
     "file_organize_nerve": {
-      "description": "Move and rename files to target structure",
+      "description": "Move, rename, and reorganize files into a target directory structure",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "file",
-        "organization"
+        "organization",
+        "move",
+        "rename"
       ],
       "authors": [
         {
@@ -1178,12 +1226,15 @@
       "model_scores": {}
     },
     "file_watch_nerve": {
-      "description": "Monitor a path and report changes",
+      "description": "Monitor a file or directory for changes and report events in real time",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "file",
-        "monitoring"
+        "monitoring",
+        "watch",
+        "events",
+        "inotify"
       ],
       "authors": [
         {
@@ -1282,12 +1333,14 @@
       "model_scores": {}
     },
     "git_branch_nerve": {
-      "description": "Create and switch to a new branch",
+      "description": "Create, list, or switch Git branches",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "branch",
+        "checkout"
       ],
       "authors": [
         {
@@ -1302,12 +1355,14 @@
       "model_scores": {}
     },
     "git_cleanup_nerve": {
-      "description": "Delete merged and stale branches",
+      "description": "Delete merged and stale Git branches to keep the repo tidy",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "cleanup",
+        "prune"
       ],
       "authors": [
         {
@@ -1322,12 +1377,14 @@
       "model_scores": {}
     },
     "git_clone_nerve": {
-      "description": "Clone a remote repository",
+      "description": "Clone a remote Git repository to the local machine",
       "role": "code",
       "mode": "tool_required",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "clone",
+        "remote"
       ],
       "authors": [
         {
@@ -1341,12 +1398,14 @@
       "model_scores": {}
     },
     "git_commit_nerve": {
-      "description": "Stage and commit clean changes",
+      "description": "Stage changed files and create a Git commit with a message",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "commit",
+        "stage"
       ],
       "authors": [
         {
@@ -1363,12 +1422,14 @@
       "model_scores": {}
     },
     "git_conflict_nerve": {
-      "description": "Detect and surface merge conflicts",
+      "description": "Detect, display, and help resolve Git merge conflicts",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "conflict",
+        "merge-conflict"
       ],
       "authors": [
         {
@@ -1384,12 +1445,15 @@
       "model_scores": {}
     },
     "git_history_nerve": {
-      "description": "Investigate commit history",
+      "description": "Browse and search Git commit history and diffs",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "log",
+        "history",
+        "blame"
       ],
       "authors": [
         {
@@ -1404,12 +1468,14 @@
       "model_scores": {}
     },
     "git_merge_nerve": {
-      "description": "Merge a branch into current",
+      "description": "Merge a source branch into the current branch",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "merge",
+        "integrate"
       ],
       "authors": [
         {
@@ -1425,12 +1491,14 @@
       "model_scores": {}
     },
     "git_pull_nerve": {
-      "description": "Pull and integrate remote changes",
+      "description": "Fetch and integrate changes from a remote repository",
       "role": "code",
       "mode": "tool_required",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "pull",
+        "fetch"
       ],
       "authors": [
         {
@@ -1445,12 +1513,14 @@
       "model_scores": {}
     },
     "git_push_nerve": {
-      "description": "Push local commits to remote",
+      "description": "Push local commits to a remote repository",
       "role": "code",
       "mode": "tool_required",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "push",
+        "remote"
       ],
       "authors": [
         {
@@ -1465,12 +1535,14 @@
       "model_scores": {}
     },
     "git_rebase_nerve": {
-      "description": "Rebase current branch onto target",
+      "description": "Rebase the current branch onto a target branch",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "rebase",
+        "replay"
       ],
       "authors": [
         {
@@ -1486,12 +1558,14 @@
       "model_scores": {}
     },
     "git_stash_nerve": {
-      "description": "Stash or restore work in progress",
+      "description": "Stash uncommitted changes and restore them later",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "stash",
+        "wip"
       ],
       "authors": [
         {
@@ -1507,12 +1581,14 @@
       "model_scores": {}
     },
     "git_tag_nerve": {
-      "description": "Tag a release point",
+      "description": "Create and manage Git tags for release points",
       "role": "code",
       "mode": "reasoning",
       "tags": [
         "git",
-        "version-control"
+        "version-control",
+        "tag",
+        "release"
       ],
       "authors": [
         {
@@ -1641,7 +1717,9 @@
       "tags": [
         "desktop",
         "keyboard",
-        "shortcut"
+        "shortcut",
+        "hotkey",
+        "input"
       ],
       "authors": [
         {
@@ -1655,13 +1733,15 @@
       "model_scores": {}
     },
     "image_capture_nerve": {
-      "description": "Capture a screenshot of the current screen.",
+      "description": "Capture a screenshot of the current desktop screen",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "image",
         "screenshot",
-        "capture"
+        "desktop",
+        "capture",
+        "screen"
       ],
       "authors": [
         {
@@ -1675,12 +1755,15 @@
       "model_scores": {}
     },
     "image_edit_nerve": {
-      "description": "Resize, crop, and convert images",
+      "description": "Resize, crop, rotate, and convert image files",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "image",
-        "editing"
+        "editing",
+        "resize",
+        "crop",
+        "convert"
       ],
       "authors": [
         {
@@ -1696,13 +1779,15 @@
       "model_scores": {}
     },
     "image_generate_nerve": {
-      "description": "Generate images from text descriptions using AI.",
+      "description": "Generate new images from text descriptions using AI image models",
       "role": "creative",
       "mode": "tool_required",
       "tags": [
         "image",
         "generate",
-        "ai"
+        "ai",
+        "dall-e",
+        "creative"
       ],
       "authors": [
         {
@@ -1716,13 +1801,14 @@
       "model_scores": {}
     },
     "image_ocr_nerve": {
-      "description": "Extract text from images using optical character recognition.",
+      "description": "Extract text from a static image file using optical character recognition",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "image",
         "ocr",
-        "text"
+        "text-extraction",
+        "document"
       ],
       "authors": [
         {
@@ -1892,12 +1978,15 @@
       "model_scores": {}
     },
     "light_nerve": {
-      "description": "Control and query light state (on/off/brightness/color)",
+      "description": "Control smart lights: on/off, brightness, and color",
       "role": "nerve",
       "mode": "tool_required",
       "tags": [
         "iot",
-        "light"
+        "light",
+        "hue",
+        "brightness",
+        "smart-home"
       ],
       "authors": [
         {
@@ -1951,12 +2040,15 @@
       "model_scores": {}
     },
     "lock_nerve": {
-      "description": "Lock or unlock a smart door lock.",
+      "description": "Lock or unlock a smart door lock remotely",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "iot",
-        "lock"
+        "lock",
+        "door",
+        "smart-home",
+        "security"
       ],
       "authors": [
         {
@@ -1993,13 +2085,15 @@
       "model_scores": {}
     },
     "music_identify_nerve": {
-      "description": "Identify a song that is currently playing or from an audio clip.",
+      "description": "Identify a song playing in the environment or from an audio clip via Shazam",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "audio",
         "music",
-        "identify"
+        "identify",
+        "shazam",
+        "recognition"
       ],
       "authors": [
         {
@@ -2057,7 +2151,9 @@
       "mode": "tool_required",
       "tags": [
         "communication",
-        "notification"
+        "notification",
+        "push",
+        "alert"
       ],
       "authors": [
         {
@@ -2093,13 +2189,15 @@
       "model_scores": {}
     },
     "page_screenshot_nerve": {
-      "description": "Screenshot a web page",
+      "description": "Render a web page in a headless browser and capture a screenshot image",
       "role": "vision",
       "mode": "tool_required",
       "tags": [
         "browser",
         "web",
-        "screenshot"
+        "screenshot",
+        "render",
+        "image"
       ],
       "authors": [
         {
@@ -2135,12 +2233,14 @@
       "model_scores": {}
     },
     "pdf_nerve": {
-      "description": "Read from and create PDF documents",
+      "description": "Read text from and create PDF documents",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "document",
-        "pdf"
+        "pdf",
+        "read",
+        "create"
       ],
       "authors": [
         {
@@ -2219,13 +2319,15 @@
       "model_scores": {}
     },
     "portfolio_review_nerve": {
-      "description": "Review portfolio allocation and performance",
+      "description": "Review investment portfolio allocation, returns, and rebalancing suggestions",
       "role": "brain",
       "mode": "tool_required",
       "tags": [
         "finance",
         "portfolio",
-        "review"
+        "review",
+        "allocation",
+        "performance"
       ],
       "authors": [
         {
@@ -2241,13 +2343,14 @@
       "model_scores": {}
     },
     "pptx_nerve": {
-      "description": "Read from and create PowerPoint presentations",
+      "description": "Read from and create PowerPoint (.pptx) presentations",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "document",
         "pptx",
-        "powerpoint"
+        "powerpoint",
+        "slides"
       ],
       "authors": [
         {
@@ -2511,13 +2614,15 @@
       "model_scores": {}
     },
     "screen_read_nerve": {
-      "description": "Read text from a screen region",
+      "description": "Capture a live screen region and extract visible text via OCR",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "desktop",
         "screen",
-        "ocr"
+        "ocr",
+        "live",
+        "region"
       ],
       "authors": [
         {
@@ -2538,7 +2643,9 @@
       "tags": [
         "desktop",
         "mouse",
-        "scroll"
+        "scroll",
+        "wheel",
+        "input"
       ],
       "authors": [
         {
@@ -2552,12 +2659,14 @@
       "model_scores": {}
     },
     "sensor_nerve": {
-      "description": "Read sensor values and list available sensors",
+      "description": "Read values from IoT sensors and list all available sensors",
       "role": "nerve",
       "mode": "tool_required",
       "tags": [
         "iot",
-        "sensor"
+        "sensor",
+        "telemetry",
+        "reading"
       ],
       "authors": [
         {
@@ -2593,12 +2702,15 @@
       "model_scores": {}
     },
     "sleep_data_nerve": {
-      "description": "Read sleep tracker data from a connected sleep device.",
+      "description": "Read sleep tracking data from a connected sleep device like Eight Sleep",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "iot",
-        "health"
+        "health",
+        "sleep",
+        "tracker",
+        "eight-sleep"
       ],
       "authors": [
         {
@@ -2617,7 +2729,9 @@
       "mode": "tool_required",
       "tags": [
         "communication",
-        "sms"
+        "sms",
+        "text-message",
+        "send"
       ],
       "authors": [
         {
@@ -2631,12 +2745,15 @@
       "model_scores": {}
     },
     "social_nerve": {
-      "description": "Full social media operations on any platform",
+      "description": "Read, post, reply, and manage content across social media platforms",
       "role": "communication",
       "mode": "tool_required",
       "tags": [
         "communication",
-        "social"
+        "social",
+        "post",
+        "reply",
+        "feed"
       ],
       "authors": [
         {
@@ -2650,13 +2767,15 @@
       "model_scores": {}
     },
     "social_schedule_nerve": {
-      "description": "Draft and schedule social media posts",
+      "description": "Draft social media content using AI and schedule it for future publication",
       "role": "communication",
       "mode": "tool_required",
       "tags": [
         "marketing",
         "social-media",
-        "scheduling"
+        "scheduling",
+        "calendar",
+        "queue"
       ],
       "authors": [
         {
@@ -2671,13 +2790,15 @@
       "model_scores": {}
     },
     "speaker_nerve": {
-      "description": "Control speaker playback and volume",
+      "description": "Control smart speaker playback, volume, and audio output",
       "role": "nerve",
       "mode": "tool_required",
       "tags": [
         "iot",
         "speaker",
-        "audio"
+        "audio",
+        "playback",
+        "volume"
       ],
       "authors": [
         {
@@ -2758,13 +2879,15 @@
       "model_scores": {}
     },
     "stock_analyze_nerve": {
-      "description": "Analyze a stock with fundamentals and technicals",
+      "description": "Perform fundamental and technical analysis on a stock with charts and commentary",
       "role": "brain",
       "mode": "tool_required",
       "tags": [
         "finance",
         "stock",
-        "analysis"
+        "analysis",
+        "fundamentals",
+        "technicals"
       ],
       "authors": [
         {
@@ -2781,12 +2904,15 @@
       "model_scores": {}
     },
     "stock_nerve": {
-      "description": "Get current and historical stock data",
+      "description": "Retrieve current quotes and historical price data for stocks",
       "role": "brain",
       "mode": "tool_required",
       "tags": [
         "finance",
-        "stock"
+        "stock",
+        "price",
+        "quotes",
+        "market-data"
       ],
       "authors": [
         {
@@ -2887,13 +3013,14 @@
       "model_scores": {}
     },
     "thermostat_nerve": {
-      "description": "Control and read thermostat temperature",
+      "description": "Read and set temperature on a smart thermostat",
       "role": "nerve",
       "mode": "tool_required",
       "tags": [
         "iot",
         "thermostat",
-        "temperature"
+        "temperature",
+        "hvac"
       ],
       "authors": [
         {
@@ -2975,7 +3102,8 @@
       "tags": [
         "desktop",
         "keyboard",
-        "type"
+        "type",
+        "text-input"
       ],
       "authors": [
         {
@@ -3011,13 +3139,13 @@
       "model_scores": {}
     },
     "video_download_nerve": {
-      "description": "Download videos from URLs.",
+      "description": "Download a video file from a URL to local storage",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "video",
         "download",
-        "media"
+        "save"
       ],
       "authors": [
         {
@@ -3031,13 +3159,14 @@
       "model_scores": {}
     },
     "video_extract_frames_nerve": {
-      "description": "Extract individual frames from video files.",
+      "description": "Extract individual still frames from a video file at specified intervals",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "video",
         "frames",
-        "extract"
+        "extract",
+        "image"
       ],
       "authors": [
         {
@@ -3051,12 +3180,13 @@
       "model_scores": {}
     },
     "video_info_nerve": {
-      "description": "Get metadata and technical details about a video file.",
+      "description": "Read metadata and technical details (codec, duration, resolution) from a video file",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "video",
         "metadata",
+        "probe",
         "info"
       ],
       "authors": [
@@ -3071,13 +3201,13 @@
       "model_scores": {}
     },
     "video_transcribe_nerve": {
-      "description": "Extract text transcript from video content.",
+      "description": "Extract the audio track from a video and transcribe speech to text",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "video",
         "transcribe",
-        "speech"
+        "speech-to-text"
       ],
       "authors": [
         {
@@ -3092,12 +3222,13 @@
       "model_scores": {}
     },
     "video_trim_nerve": {
-      "description": "Cut a specific time segment from a video file.",
+      "description": "Cut a specific time segment from a video file and save as a new clip",
       "role": "tool",
       "mode": "reasoning",
       "tags": [
         "video",
         "trim",
+        "cut",
         "edit"
       ],
       "authors": [
@@ -3150,12 +3281,14 @@
       "model_scores": {}
     },
     "web_fetch_nerve": {
-      "description": "Make an HTTP request and return response",
+      "description": "Make HTTP requests (GET, POST, etc.) and return the raw response",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "web",
-        "http"
+        "http",
+        "request",
+        "api"
       ],
       "authors": [
         {
@@ -3170,12 +3303,14 @@
       "model_scores": {}
     },
     "web_scrape_nerve": {
-      "description": "Extract content from a URL",
+      "description": "Fetch and extract raw content from a URL via HTTP without browser rendering",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "web",
-        "scraping"
+        "scraping",
+        "fetch",
+        "raw"
       ],
       "authors": [
         {
@@ -3189,12 +3324,14 @@
       "model_scores": {}
     },
     "web_search_nerve": {
-      "description": "Search the web and return results",
+      "description": "Search the web using a search engine and return ranked results",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "web",
-        "search"
+        "search",
+        "query",
+        "duckduckgo"
       ],
       "authors": [
         {
@@ -3267,13 +3404,14 @@
       "model_scores": {}
     },
     "xlsx_nerve": {
-      "description": "Read from and create Excel spreadsheets",
+      "description": "Read from and create Excel (.xlsx) spreadsheets",
       "role": "brain",
       "mode": "reasoning",
       "tags": [
         "document",
         "xlsx",
-        "excel"
+        "excel",
+        "spreadsheet"
       ],
       "authors": [
         {
@@ -3287,13 +3425,13 @@
       "model_scores": {}
     },
     "youtube_info_nerve": {
-      "description": "Get metadata for a YouTube video including title, views, and description.",
+      "description": "Retrieve metadata for a YouTube video such as title, views, and description",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "youtube",
-        "video",
-        "tool"
+        "metadata",
+        "video-info"
       ],
       "authors": [
         {
@@ -3307,13 +3445,13 @@
       "model_scores": {}
     },
     "youtube_search_nerve": {
-      "description": "Search for YouTube videos by keyword.",
+      "description": "Search YouTube for videos matching a keyword query",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "youtube",
-        "video",
-        "tool"
+        "search",
+        "discover"
       ],
       "authors": [
         {
@@ -3327,13 +3465,14 @@
       "model_scores": {}
     },
     "youtube_transcript_nerve": {
-      "description": "Get the transcript from a YouTube video.",
+      "description": "Download the text transcript or captions from a YouTube video",
       "role": "tool",
       "mode": "tool_required",
       "tags": [
         "youtube",
-        "video",
-        "tool"
+        "transcript",
+        "captions",
+        "subtitles"
       ],
       "authors": [
         {

@@ -1,12 +1,15 @@
 {
   "name": "stock_nerve",
   "version": "1.0.0",
-  "description": "Get current and historical stock data",
+  "description": "Retrieve current quotes and historical price data for stocks",
   "role": "brain",
   "mode": "tool_required",
   "tags": [
     "finance",
-    "stock"
+    "stock",
+    "price",
+    "quotes",
+    "market-data"
   ],
   "authors": [
     {

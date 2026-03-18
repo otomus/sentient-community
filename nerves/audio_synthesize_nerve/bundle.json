@@ -1,13 +1,14 @@
 {
     "name": "audio_synthesize_nerve",
     "version": "1.0.0",
-    "description": "Convert text to speech audio.",
+    "description": "Generate spoken audio from text using text-to-speech synthesis",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "audio",
         "tts",
-        "speech"
+        "text-to-speech",
+        "synthesis"
     ],
     "authors": [
         {

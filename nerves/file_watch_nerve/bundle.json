@@ -1,12 +1,15 @@
 {
   "name": "file_watch_nerve",
   "version": "1.0.0",
-  "description": "Monitor a path and report changes",
+  "description": "Monitor a file or directory for changes and report events in real time",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "file",
-    "monitoring"
+    "monitoring",
+    "watch",
+    "events",
+    "inotify"
   ],
   "authors": [
     {

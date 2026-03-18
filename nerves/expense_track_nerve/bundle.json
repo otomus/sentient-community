@@ -1,13 +1,15 @@
 {
     "name": "expense_track_nerve",
     "version": "1.0.0",
-    "description": "Log and categorize an expense",
+    "description": "Log, categorize, and total individual expenses",
     "role": "brain",
     "mode": "reasoning",
     "tags": [
         "finance",
         "expense",
-        "tracking"
+        "tracking",
+        "categorize",
+        "receipt"
     ],
     "authors": [
         {

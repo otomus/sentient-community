@@ -1,12 +1,15 @@
 {
   "name": "file_nerve",
   "version": "1.0.0",
-  "description": "Read and write files",
+  "description": "Read, write, and check existence of files and create directories",
   "role": "brain",
   "mode": "reasoning",
   "tags": [
     "file",
-    "filesystem"
+    "filesystem",
+    "read",
+    "write",
+    "crud"
   ],
   "authors": [
     {

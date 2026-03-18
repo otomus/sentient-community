@@ -1,13 +1,14 @@
 {
   "name": "xlsx_nerve",
   "version": "1.0.0",
-  "description": "Read from and create Excel spreadsheets",
+  "description": "Read from and create Excel (.xlsx) spreadsheets",
   "role": "brain",
   "mode": "reasoning",
   "tags": [
     "document",
     "xlsx",
-    "excel"
+    "excel",
+    "spreadsheet"
   ],
   "authors": [
     {

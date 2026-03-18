@@ -1,12 +1,15 @@
 {
   "name": "git_history_nerve",
   "version": "1.0.0",
-  "description": "Investigate commit history",
+  "description": "Browse and search Git commit history and diffs",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "log",
+    "history",
+    "blame"
   ],
   "authors": [
     {

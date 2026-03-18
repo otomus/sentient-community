@@ -1,13 +1,13 @@
 {
   "name": "video_download_nerve",
   "version": "1.0.0",
-  "description": "Download videos from URLs.",
+  "description": "Download a video file from a URL to local storage",
   "role": "tool",
   "mode": "tool_required",
   "tags": [
     "video",
     "download",
-    "media"
+    "save"
   ],
   "authors": [
     {

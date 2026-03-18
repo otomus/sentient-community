@@ -1,13 +1,14 @@
 {
   "name": "docx_nerve",
   "version": "1.0.0",
-  "description": "Read from and create Word documents",
+  "description": "Read from and create Microsoft Word (.docx) documents",
   "role": "brain",
   "mode": "reasoning",
   "tags": [
     "document",
     "docx",
-    "word"
+    "word",
+    "microsoft"
   ],
   "authors": [
     {

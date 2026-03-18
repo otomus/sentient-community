@@ -1,12 +1,14 @@
 {
     "name": "web_search_nerve",
     "version": "1.0.0",
-    "description": "Search the web and return results",
+    "description": "Search the web using a search engine and return ranked results",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "web",
-        "search"
+        "search",
+        "query",
+        "duckduckgo"
     ],
     "authors": [
         {

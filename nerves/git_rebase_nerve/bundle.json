@@ -1,12 +1,14 @@
 {
   "name": "git_rebase_nerve",
   "version": "1.0.0",
-  "description": "Rebase current branch onto target",
+  "description": "Rebase the current branch onto a target branch",
   "role": "code",
   "mode": "reasoning",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "rebase",
+    "replay"
   ],
   "authors": [
     {

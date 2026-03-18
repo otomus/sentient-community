@@ -1,12 +1,14 @@
 {
   "name": "git_push_nerve",
   "version": "1.0.0",
-  "description": "Push local commits to remote",
+  "description": "Push local commits to a remote repository",
   "role": "code",
   "mode": "tool_required",
   "tags": [
     "git",
-    "version-control"
+    "version-control",
+    "push",
+    "remote"
   ],
   "authors": [
     {

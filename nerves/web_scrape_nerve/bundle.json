@@ -1,12 +1,14 @@
 {
     "name": "web_scrape_nerve",
     "version": "1.0.0",
-    "description": "Extract content from a URL",
+    "description": "Fetch and extract raw content from a URL via HTTP without browser rendering",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "web",
-        "scraping"
+        "scraping",
+        "fetch",
+        "raw"
     ],
     "authors": [
         {

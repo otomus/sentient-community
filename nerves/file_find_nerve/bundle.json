@@ -1,12 +1,15 @@
 {
   "name": "file_find_nerve",
   "version": "1.0.0",
-  "description": "Find files matching a pattern",
+  "description": "Search for files by name pattern or content with glob and grep",
   "role": "tool",
   "mode": "reasoning",
   "tags": [
     "file",
-    "search"
+    "search",
+    "glob",
+    "grep",
+    "find"
   ],
   "authors": [
     {

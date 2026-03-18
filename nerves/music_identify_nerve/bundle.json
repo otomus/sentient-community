@@ -1,13 +1,15 @@
 {
     "name": "music_identify_nerve",
     "version": "1.0.0",
-    "description": "Identify a song that is currently playing or from an audio clip.",
+    "description": "Identify a song playing in the environment or from an audio clip via Shazam",
     "role": "tool",
     "mode": "tool_required",
     "tags": [
         "audio",
         "music",
-        "identify"
+        "identify",
+        "shazam",
+        "recognition"
     ],
     "authors": [
         {

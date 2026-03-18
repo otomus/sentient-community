@@ -1,13 +1,14 @@
 {
     "name": "budget_nerve",
     "version": "1.0.0",
-    "description": "Create or review a budget",
+    "description": "Create, review, and visualize a personal or project budget",
     "role": "brain",
     "mode": "reasoning",
     "tags": [
         "finance",
         "budget",
-        "planning"
+        "planning",
+        "spending"
     ],
     "authors": [
         {
