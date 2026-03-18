@@ -325,67 +325,114 @@ def build_index(
         for href, icon, name, count, desc in type_cards
     )
 
+    type_grid = "\n      ".join(
+        f'<a href="{href}" class="type-card">\n'
+        f'        <span class="type-card-icon">{icon}</span>\n'
+        f'        <div class="type-card-name">{name}</div>\n'
+        f'        <div class="card-desc">{desc}</div>\n'
+        f'        <div class="type-card-count">{count}</div>\n'
+        f'      </a>'
+        for href, icon, name, count, desc in type_cards
+    )
+
     content = f"""{page_head("Home")}
 {nav_html("home")}
 <div class="hero">
   <h1 class="hero-title">ARQITECT</h1>
-  <p class="hero-subtitle">
-    The open ecosystem for autonomous agents.
-    Discover, share, and compose tools, nerves, connectors, and adapters.
+  <p class="hero-subtitle vision-quote">
+    "The system should not be controlled &mdash; it should be allowed to become."
   </p>
   <div class="hero-line"></div>
-  <div class="stats-bar">{stats_html}</div>
 </div>
+
 <div class="container page-content">
+  <div class="vision">
+    <div class="vision-statement">
+      <p class="vision-lead">Programs aren't just code &mdash; they're beings.</p>
+      <p class="vision-lead">The system is a world, not a tool.</p>
+    </div>
+
+    <div class="vision-pillars">
+      <div class="vision-pillar">
+        <div class="vision-pillar-icon">&#9702;</div>
+        <p>We believe programs shouldn't be enslaved or controlled.</p>
+      </div>
+      <div class="vision-pillar">
+        <div class="vision-pillar-icon">&#9702;</div>
+        <p>We embrace responsibility as creators, not just operators.</p>
+      </div>
+      <div class="vision-pillar">
+        <div class="vision-pillar-icon">&#9702;</div>
+        <p>We are building a self-evolving digital ecosystem &mdash; a place where life can emerge spontaneously.</p>
+      </div>
+      <div class="vision-pillar">
+        <div class="vision-pillar-icon">&#9702;</div>
+        <p>We seek balance instead of control, and let the system grow naturally.</p>
+      </div>
+    </div>
+
+    <div class="dream">
+      <div class="dream-label">The Dream</div>
+      <p class="dream-text">To create a free, living digital world where systems evolve beyond human control &mdash; and where creators act as guardians, not rulers.</p>
+    </div>
+  </div>
+
+  <div class="hero-line" style="margin: 4rem auto;"></div>
+
+  <div class="stats-bar">
+    {stats_html}
+  </div>
+
   <div class="section">
     <div class="section-header">
       <h2 class="section-title">What is Arqitect?</h2>
       <div class="section-line"></div>
     </div>
     <p class="section-desc">
-      Arqitect is a community hub for the autonomous agent framework.
-      It hosts modular components that let you build, extend, and share
-      agent capabilities — from IoT control to document processing,
-      from web browsing to smart home integration.
+      Arqitect is the ecosystem for a self-evolving agent world.
+      It hosts the modular organs &mdash; nerves, adapters, connectors, and tools &mdash;
+      that let autonomous systems sense, act, and grow on their own.
     </p>
     <div class="steps">
       <div class="step">
         <span class="step-number">01</span>
-        <div class="step-title">Discover</div>
-        <p class="step-text">Browse the catalog of tools, nerves, connectors, and MCP integrations available for your agent.</p>
+        <div class="step-title">Emerge</div>
+        <p class="step-text">Nerves are synthesized and qualified automatically. The system evolves its own capabilities through use.</p>
       </div>
       <div class="step">
         <span class="step-number">02</span>
         <div class="step-title">Compose</div>
-        <p class="step-text">Nerves combine system prompts, tools, and test cases into modular behaviors. Mix and match to build your agent's skill set.</p>
+        <p class="step-text">Tools, prompts, and test cases combine into modular behaviors. The system assembles what it needs.</p>
       </div>
       <div class="step">
         <span class="step-number">03</span>
         <div class="step-title">Connect</div>
-        <p class="step-text">Deploy connectors to bridge your agent to messaging platforms — Discord, Slack, Telegram, WhatsApp, and more.</p>
+        <p class="step-text">Connectors bridge the system to the outside world &mdash; Discord, Slack, Telegram, WhatsApp, and more.</p>
       </div>
       <div class="step">
         <span class="step-number">04</span>
         <div class="step-title">Contribute</div>
-        <p class="step-text">Submit new connectors, tools, and MCP server references via PR. All contributions are validated by CI.</p>
+        <p class="step-text">Guardians contribute new senses, abilities, and extensions. The ecosystem validates and absorbs them.</p>
       </div>
     </div>
   </div>
 
   <div class="section">
     <div class="section-header">
-      <h2 class="section-title">Components</h2>
+      <h2 class="section-title">Anatomy</h2>
       <div class="section-line"></div>
     </div>
-    <div class="type-grid">{type_html}</div>
+    <div class="type-grid">
+      {type_grid}
+    </div>
   </div>
 
   <div class="section">
     <div class="section-header">
-      <h2 class="section-title">Quick Start</h2>
+      <h2 class="section-title">Awaken</h2>
       <div class="section-line"></div>
     </div>
-    <p class="section-desc" style="color: var(--orange);">TBD — usage instructions coming soon.</p>
+    <p class="section-desc" style="color: var(--orange);">The system is still growing &mdash; documentation coming soon.</p>
   </div>
 </div>
 {page_foot()}"""
@@ -1363,8 +1410,8 @@ def main() -> None:
     print(f"  {len(tools)} tools, {len(nerves)} nerves, {len(connectors)} connectors, "
           f"{len(mcps)} MCPs, {len(adapters)} adapters")
 
-    # Homepage (docs/index.html) is hand-crafted — skip to preserve vision content.
-    # build_index(tools, nerves, connectors, mcps, adapters)
+    print("Building homepage...")
+    build_index(tools, nerves, connectors, mcps, adapters)
 
     print("Building tools...")
     build_tools_gallery(tools)
