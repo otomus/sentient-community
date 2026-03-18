@@ -161,7 +161,8 @@ def nav_html(active: str, depth: int = 0) -> str:
     for href, label in links:
         cls = ' class="active"' if label.lower() == active.lower() else ""
         items.append(f'<a href="{prefix}{href}"{cls}>{label}</a>')
-    return f"""<nav class="nav">
+    return f"""<div class="wip-banner">Work in progress — coming soon</div>
+<nav class="nav">
   <div class="nav-inner">
     <a href="{prefix}index.html" class="nav-logo">ARQITECT</a>
     <button class="nav-toggle" aria-label="Menu">&#9776;</button>

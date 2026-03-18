@@ -81,6 +81,19 @@ body::after {
 a { color: var(--cyan); text-decoration: none; transition: all 0.2s; }
 a:hover { color: #fff; text-shadow: var(--glow-sm); }
 
+/* ---- WIP BANNER ---- */
+.wip-banner {
+  background: var(--orange);
+  color: var(--bg-void);
+  text-align: center;
+  padding: 0.4rem 1rem;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
 /* ---- NAVBAR ---- */
 .nav {
   position: sticky;
