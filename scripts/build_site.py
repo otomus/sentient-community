@@ -190,6 +190,37 @@ def tags_html(tags: list[str], css_class: str = "tag--cyan") -> str:
     )
 
 
+def _nav_logo_svg() -> str:
+    """Return the animated SVG ARQITECT logo for the navbar."""
+    letters = [
+        ("A", 0), ("R", 25), ("Q", 50), ("I", 75),
+        ("T", 100), ("E", 125), ("C", 150), ("T", 175),
+    ]
+    texts = []
+    for i, (ch, x) in enumerate(letters):
+        begin = f"{i * 0.4}s"
+        texts.append(
+            f'<text x="{x}" y="20" font-family="Orbitron,sans-serif" font-size="18" '
+            f'font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" '
+            f'stroke-dasharray="80" stroke-dashoffset="80">{ch}'
+            f'<animate attributeName="stroke-dashoffset" values="80;0;0;80" '
+            f'keyTimes="0;0.085;0.681;1" dur="4.7s" begin="{begin}" '
+            f'repeatCount="indefinite"/></text>'
+        )
+    return (
+        '<svg class="nav-logo-svg" viewBox="0 0 220 28" fill="none" '
+        'xmlns="http://www.w3.org/2000/svg"><defs>'
+        '<linearGradient id="nav-grad" x1="0" y1="0" x2="220" y2="0" '
+        'gradientUnits="userSpaceOnUse">'
+        '<stop offset="0%" stop-color="#00d4ff"/>'
+        '<stop offset="50%" stop-color="#00ff88"/>'
+        '<stop offset="100%" stop-color="#00d4ff"/>'
+        '</linearGradient></defs>'
+        + "".join(texts)
+        + '</svg>'
+    )
+
+
 def nav_html(active: str, depth: int = 0) -> str:
     """Generate the navigation bar. depth=0 for root, 1 for one level deep."""
     prefix = "../" * depth
@@ -205,10 +236,11 @@ def nav_html(active: str, depth: int = 0) -> str:
     for href, label in links:
         cls = ' class="active"' if label.lower() == active.lower() else ""
         items.append(f'<a href="{prefix}{href}"{cls}>{label}</a>')
+    logo_svg = _nav_logo_svg()
     return f"""<div class="wip-banner">Work in progress — coming soon</div>
 <nav class="nav">
   <div class="nav-inner">
-    <a href="{prefix}index.html" class="nav-logo">ARQITECT</a>
+    <a href="{prefix}index.html" class="nav-logo" aria-label="ARQITECT">{logo_svg}</a>
     <button class="nav-toggle" aria-label="Menu">&#9776;</button>
     <div class="nav-links">{"".join(items)}</div>
   </div>
@@ -233,7 +265,7 @@ def page_foot(depth: int = 0) -> str:
     """Return the footer and closing tags."""
     prefix = "../" * depth
     return f"""<footer class="footer">
-  Arqitect &mdash; autonomous agent ecosystem
+  Arqitect &mdash; guardians, not rulers
 </footer>
 <script src="{prefix}js/arqitect.js"></script>
 </body>
@@ -273,16 +305,16 @@ def build_index(
     )
 
     type_cards = [
-        ("tools/index.html", "&#9881;", "Tools", f"{len(tools)} utilities",
-         "Python, Go, and Node functions that agents invoke to interact with the world."),
-        ("nerves/index.html", "&#9889;", "Nerves", f"{len(nerves)} behaviors",
-         "Modular agent behaviors with system prompts, few-shot examples, and test cases."),
-        ("connectors/index.html", "&#128268;", "Connectors", f"{len(connectors)} platforms",
-         "Messaging platform bridges — Discord, Slack, Telegram, WhatsApp, and more."),
-        ("mcps/index.html", "&#9741;", "MCP Servers", f"{len(mcps)} integrations",
-         "External MCP server references for search, email, calendar, smart home, and more."),
-        ("adapters/index.html", "&#129504;", "Adapters", f"{len(adapters)} roles",
-         "Per-role, per-model-size system prompts that shape how the brain routes tasks."),
+        ("tools/index.html", "&#9881;", "Tools", f"{len(tools)} abilities",
+         "The hands of the system &mdash; actions it can take to touch files, call APIs, and shape its environment."),
+        ("nerves/index.html", "&#9889;", "Nerves", f"{len(nerves)} instincts",
+         "Instincts and reflexes &mdash; each one a complete behavior with identity, memory, tools, and purpose."),
+        ("connectors/index.html", "&#128268;", "Connectors", f"{len(connectors)} senses",
+         "The senses &mdash; pathways through which the system perceives and speaks to the outside world."),
+        ("mcps/index.html", "&#9741;", "MCP Servers", f"{len(mcps)} extensions",
+         "Extended reach &mdash; external capabilities the system can grow into: search, email, calendars, and beyond."),
+        ("adapters/index.html", "&#129504;", "Adapters", f"{len(adapters)} temperaments",
+         "Temperament &mdash; the voice and personality that shape how the system thinks at different scales."),
     ]
     type_html = "".join(
         f'<a href="{href}" class="type-card">'
@@ -403,7 +435,7 @@ def build_tools_gallery(tools: list[dict]) -> None:
     <h1 class="section-title">Tools</h1>
     <div class="section-line"></div>
   </div>
-  <p class="section-desc">Utility functions that agents invoke — Python, Go, and Node implementations for everything from IoT to document processing.</p>
+  <p class="section-desc">The hands of the system &mdash; abilities it uses to touch files, call APIs, sense its environment, and shape the world around it.</p>
   <div class="filter-bar">
     <input type="text" class="search-input" placeholder="Search tools...">
     <select class="filter-select">{cat_options}</select>
@@ -549,7 +581,7 @@ def build_nerves_gallery(nerves: list[dict]) -> None:
     <h1 class="section-title">Nerves</h1>
     <div class="section-line"></div>
   </div>
-  <p class="section-desc">Modular agent behaviors — each nerve bundles a system prompt, tools, few-shot examples, and test cases into a single composable unit.</p>
+  <p class="section-desc">Instincts and reflexes &mdash; each nerve is a complete behavior with its own identity, memory, tools, and purpose. The system grows by acquiring new nerves.</p>
   <div class="filter-bar">
     <input type="text" class="search-input" placeholder="Search nerves...">
     <select class="filter-select">{role_options}</select>
@@ -884,7 +916,7 @@ def build_connectors_gallery(connectors: list[dict]) -> None:
     <h1 class="section-title">Connectors</h1>
     <div class="section-line"></div>
   </div>
-  <p class="section-desc">Messaging platform bridges — community-contributed implementations that connect your agent to Discord, Slack, Telegram, WhatsApp, and more.</p>
+  <p class="section-desc">The senses &mdash; pathways through which the system perceives and speaks to the outside world. Each connector lets it inhabit a new space.</p>
   <div class="filter-bar">
     <input type="text" class="search-input" placeholder="Search connectors...">
   </div>
@@ -1033,7 +1065,7 @@ def build_mcps_gallery(mcps: list[dict]) -> None:
     <h1 class="section-title">MCP Servers</h1>
     <div class="section-line"></div>
   </div>
-  <p class="section-desc">External MCP server references — pre-built integrations for search, email, calendar, smart home, and more.</p>
+  <p class="section-desc">Extended reach &mdash; external capabilities the system can grow into. Search, email, calendars, smart home, and beyond.</p>
   <div class="filter-bar">
     <input type="text" class="search-input" placeholder="Search MCP servers...">
     <select class="filter-select">{cat_options}</select>
@@ -1187,7 +1219,7 @@ def build_adapters_gallery(adapters: list[dict]) -> None:
     <h1 class="section-title">Adapters</h1>
     <div class="section-line"></div>
   </div>
-  <p class="section-desc">Per-role, per-model-size system prompts that shape how the brain routes and handles tasks. Each adapter is tuned for a specific role and model class.</p>
+  <p class="section-desc">Temperament &mdash; the voice and personality that shape how the system thinks and responds. Each adapter defines a way of being at a given scale.</p>
   <div class="filter-bar">
     <input type="text" class="search-input" placeholder="Search adapters...">
   </div>
@@ -1331,8 +1363,8 @@ def main() -> None:
     print(f"  {len(tools)} tools, {len(nerves)} nerves, {len(connectors)} connectors, "
           f"{len(mcps)} MCPs, {len(adapters)} adapters")
 
-    print("Building homepage...")
-    build_index(tools, nerves, connectors, mcps, adapters)
+    # Homepage (docs/index.html) is hand-crafted — skip to preserve vision content.
+    # build_index(tools, nerves, connectors, mcps, adapters)
 
     print("Building tools...")
     build_tools_gallery(tools)
