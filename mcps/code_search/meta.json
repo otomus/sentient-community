@@ -1,0 +1,12 @@
+{
+  "name": "code_search",
+  "version": "1.0.0",
+  "description": "Semantic code search — ripgrep combined with tree-sitter AST parsing for intelligent code navigation",
+  "source": "npm",
+  "package": "@probelabs/probe",
+  "command": ["npx", "-y", "@probelabs/probe", "mcp"],
+  "auth_type": "none",
+  "tools": ["search", "query", "extract"],
+  "capabilities": ["code_search", "ast_parsing", "semantic_search"],
+  "category": "coding"
+}

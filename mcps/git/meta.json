@@ -1,0 +1,12 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "Comprehensive git operations — branching, merging, rebasing, stashing, and changelog analysis",
+  "source": "npm",
+  "package": "@cyanheads/git-mcp-server",
+  "command": ["npx", "-y", "@cyanheads/git-mcp-server"],
+  "auth_type": "none",
+  "tools": ["git_init", "git_clone", "git_status", "git_add", "git_commit", "git_diff", "git_log", "git_show", "git_blame", "git_reflog", "git_branch", "git_checkout", "git_merge", "git_rebase", "git_cherry_pick", "git_remote", "git_fetch", "git_pull", "git_push", "git_tag", "git_stash", "git_reset", "git_worktree", "git_clean", "git_changelog_analyze", "git_set_working_dir", "git_clear_working_dir", "git_wrapup_instructions"],
+  "capabilities": ["git", "version_control", "branching", "merging", "changelog"],
+  "category": "coding"
+}

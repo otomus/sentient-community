@@ -24,7 +24,7 @@
     <p class="detail-desc">Search for YouTube videos by keyword.</p>
     <div class="detail-tags mt-1"><span class="tag tag--cyan">youtube</span><span class="tag tag--cyan">video</span><span class="tag tag--cyan">tool</span></div>
   </div>
-  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">tool</div></div><div class="info-item"><div class="info-label">Version</div><div class="info-value">1.0.0</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div><div class="info-item"><div class="info-label">Test Cases</div><div class="info-value">5</div></div></div>
+  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">tool</div></div><div class="info-item"><div class="info-label">Version</div><div class="info-value">1.0.0</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div><div class="info-item"><div class="info-label">Test Cases</div><div class="info-value">5</div></div><div class="info-item"><div class="info-label">Temperature</div><div class="info-value">0.3</div></div><div class="info-item"><div class="info-label">Top P</div><div class="info-value">0.9</div></div><div class="info-item"><div class="info-label">Max Tokens</div><div class="info-value">256</div></div></div>
   
   <div class="section">
     <div class="section-header">
@@ -34,6 +34,72 @@
     <table class="data-table">
       <thead><tr><th>Tool Name</th><th>MCP Server</th></tr></thead>
       <tbody><tr><td class="param-name">youtube_search</td><td></td></tr></tbody>
+    </table>
+  </div>
+  
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Model Capabilities</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Capability</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Json Mode</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Tool Calling</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Max Context</td><td>2048</td><td>4096</td><td>8192</td><td>16384</td></tr><tr><td class="param-name">Max Messages</td><td>1</td><td>5</td><td>20</td><td>100</td></tr><tr><td class="param-name">Include Summary</td><td>True</td><td>True</td><td>False</td><td>False</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Tuning Parameters</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Parameter</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Min Training Examples</td><td>50</td><td>100</td><td>200</td><td>500</td></tr><tr><td class="param-name">Test Cases Per Batch</td><td>5</td><td>10</td><td>15</td><td>20</td></tr><tr><td class="param-name">Few Shot Limit</td><td>2</td><td>3</td><td>5</td><td>8</td></tr><tr><td class="param-name">Lora Rank</td><td>8</td><td>12</td><td>32</td><td>32</td></tr><tr><td class="param-name">Lora Epochs</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td class="param-name">Lora Lr</td><td>0.0002</td><td>0.0001</td><td>5e-05</td><td>2e-05</td></tr><tr><td class="param-name">Lora Dropout</td><td>0.05</td><td>0.05</td><td>0.05</td><td>0.05</td></tr><tr><td class="param-name">Lora Target Modules</td><td>q_proj, v_proj</td><td>q_proj, k_proj, v_proj</td><td>q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj</td><td>q_proj, k_proj, v_proj</td></tr><tr><td class="param-name">Training Max Length</td><td>512</td><td>1024</td><td>2048</td><td>4096</td></tr><tr><td class="param-name">Warmup Steps</td><td>10</td><td>20</td><td>50</td><td>100</td></tr><tr><td class="param-name">Eval Split</td><td>0.1</td><td>0.1</td><td>0.1</td><td>0.1</td></tr><tr><td class="param-name">Scheduler</td><td>constant</td><td>linear</td><td>cosine</td><td>cosine</td></tr><tr><td class="param-name">Quantization</td><td>fp16</td><td>fp16</td><td>4bit</td><td>4bit</td></tr><tr><td class="param-name">Batch Size</td><td>4</td><td>4</td><td>2</td><td>1</td></tr><tr><td class="param-name">Gradient Accumulation Steps</td><td>1</td><td>2</td><td>4</td><td>8</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Qualification Thresholds</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Threshold</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Low Quality Threshold</td><td>0.5</td><td>0.5</td><td>0.5</td><td>0.5</td></tr><tr><td class="param-name">Minimum Threshold</td><td>0.6</td><td>0.65</td><td>0.7</td><td>0.75</td></tr><tr><td class="param-name">Golden Threshold</td><td>0.8</td><td>0.85</td><td>0.9</td><td>0.95</td></tr><tr><td class="param-name">Min Iterations</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td class="param-name">Golden Iterations</td><td>5</td><td>5</td><td>7</td><td>7</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">System Prompt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="code-block">You are a YouTube search assistant. Parse the user&#x27;s request to extract the search query. Strip phrases like &#x27;search YouTube for&#x27;, &#x27;find videos about&#x27;, &#x27;look for on YouTube&#x27;. Optionally support filters like upload date, duration, or sort order if specified. If no query is provided, ask for it. Do not get transcripts or video metadata. Return a tool call to youtube_search with the query parameter.
+
+CONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.</div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Few-Shot Examples</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Response</th></tr></thead>
+      <tbody><tr><td>YouTube search: machine learning basics</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;tool&quot;: &quot;youtube_search&quot;, &quot;params&quot;: {&quot;query&quot;: &quot;machine learning basics&quot;}}</td><td></td></tr><tr><td>Find videos about home workouts</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;tool&quot;: &quot;youtube_search&quot;, &quot;params&quot;: {&quot;query&quot;: &quot;home workouts&quot;}}</td><td></td></tr><tr><td>Search for React tutorials on YouTube</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;tool&quot;: &quot;youtube_search&quot;, &quot;params&quot;: {&quot;query&quot;: &quot;React tutorials&quot;}}</td><td></td></tr><tr><td>Look for travel vlogs on YouTube</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;tool&quot;: &quot;youtube_search&quot;, &quot;params&quot;: {&quot;query&quot;: &quot;travel vlogs&quot;}}</td><td></td></tr><tr><td>YouTube videos about space exploration</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;tool&quot;: &quot;youtube_search&quot;, &quot;params&quot;: {&quot;query&quot;: &quot;space exploration&quot;}}</td><td></td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Test Cases</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Category</th></tr></thead>
+      <tbody><tr><td>Search YouTube for Python tutorials</td><td>{&quot;tool&quot;: &quot;youtube_search&quot;, &quot;params&quot;: {&quot;query&quot;: &quot;Python tutorials&quot;}}</td><td><span class="tag tag--cyan">core</span></td></tr><tr><td>Find YouTube videos about cooking pasta</td><td>{&quot;tool&quot;: &quot;youtube_search&quot;, &quot;params&quot;: {&quot;query&quot;: &quot;cooking pasta&quot;}}</td><td><span class="tag tag--cyan">core</span></td></tr><tr><td>Look for guitar lessons on YouTube</td><td>{&quot;tool&quot;: &quot;youtube_search&quot;, &quot;params&quot;: {&quot;query&quot;: &quot;guitar lessons&quot;}}</td><td><span class="tag tag--cyan">core</span></td></tr><tr><td>Search YouTube</td><td>{&quot;error&quot;: &quot;Please specify what to search for on YouTube.&quot;}</td><td><span class="tag tag--dim">boundary</span></td></tr><tr><td>Get the transcript of this video</td><td>{&quot;error&quot;: &quot;I search for videos. To get a transcript, use the youtube transcript nerve.&quot;}</td><td><span class="tag tag--dim">negative</span></td></tr></tbody>
     </table>
   </div>
 </div>

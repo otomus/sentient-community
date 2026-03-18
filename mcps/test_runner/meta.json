@@ -1,0 +1,12 @@
+{
+  "name": "test_runner",
+  "version": "1.0.0",
+  "description": "Unified test runner — run and parse results for Jest, Vitest, Pytest, Go, Rust, and more",
+  "source": "npm",
+  "package": "@iflow-mcp/mcp-test-runner",
+  "command": ["npx", "-y", "@iflow-mcp/mcp-test-runner"],
+  "auth_type": "none",
+  "tools": ["run_tests", "parse_results"],
+  "capabilities": ["testing", "test_execution", "test_results"],
+  "category": "coding"
+}

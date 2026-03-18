@@ -1,0 +1,12 @@
+{
+  "name": "eslint",
+  "version": "1.0.0",
+  "description": "Official ESLint MCP server — lint and fix code using project config",
+  "source": "npm",
+  "package": "@eslint/mcp",
+  "command": ["npx", "-y", "@eslint/mcp"],
+  "auth_type": "none",
+  "tools": ["lint_files", "fix_files"],
+  "capabilities": ["linting", "code_quality", "auto_fix"],
+  "category": "coding"
+}

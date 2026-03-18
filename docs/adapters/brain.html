@@ -23,7 +23,87 @@
     <h1 class="detail-title">brain</h1>
     <p class="detail-desc">You are a ROUTER. Your job is to route user messages to the right nerve — not to answer them yourself.</p>
   </div>
-  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">brain</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div><div class="info-item"><div class="info-label">json_mode</div><div class="info-value">True</div></div><div class="info-item"><div class="info-label">tool_calling</div><div class="info-value">False</div></div><div class="info-item"><div class="info-label">max_context</div><div class="info-value">2048</div></div><div class="info-item"><div class="info-label">max_messages</div><div class="info-value">1</div></div><div class="info-item"><div class="info-label">include_summary</div><div class="info-value">True</div></div><div class="info-item"><div class="info-label">Min Training Examples</div><div class="info-value">50</div></div><div class="info-item"><div class="info-label">Test Cases Per Batch</div><div class="info-value">5</div></div><div class="info-item"><div class="info-label">Few Shot Limit</div><div class="info-value">2</div></div><div class="info-item"><div class="info-label">Lora Rank</div><div class="info-value">8</div></div><div class="info-item"><div class="info-label">Lora Epochs</div><div class="info-value">3</div></div><div class="info-item"><div class="info-label">Lora Lr</div><div class="info-value">0.0002</div></div><div class="info-item"><div class="info-label">Lora Dropout</div><div class="info-value">0.05</div></div><div class="info-item"><div class="info-label">Lora Target Modules</div><div class="info-value">[&#x27;q_proj&#x27;, &#x27;v_proj&#x27;]</div></div><div class="info-item"><div class="info-label">Training Max Length</div><div class="info-value">512</div></div><div class="info-item"><div class="info-label">Warmup Steps</div><div class="info-value">10</div></div><div class="info-item"><div class="info-label">Eval Split</div><div class="info-value">0.1</div></div><div class="info-item"><div class="info-label">Scheduler</div><div class="info-value">constant</div></div><div class="info-item"><div class="info-label">Quantization</div><div class="info-value">fp16</div></div><div class="info-item"><div class="info-label">Batch Size</div><div class="info-value">4</div></div><div class="info-item"><div class="info-label">Gradient Accumulation Steps</div><div class="info-value">1</div></div></div>
+  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">brain</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div></div>
+  
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Model Capabilities</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Capability</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Json Mode</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Tool Calling</td><td>False</td><td>False</td><td>False</td><td>False</td></tr><tr><td class="param-name">Max Context</td><td>2048</td><td>4096</td><td>8192</td><td>16384</td></tr><tr><td class="param-name">Max Messages</td><td>1</td><td>5</td><td>20</td><td>100</td></tr><tr><td class="param-name">Include Summary</td><td>True</td><td>True</td><td>False</td><td>False</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Tuning Parameters</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Parameter</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Min Training Examples</td><td>50</td><td>100</td><td>200</td><td>500</td></tr><tr><td class="param-name">Test Cases Per Batch</td><td>5</td><td>10</td><td>15</td><td>20</td></tr><tr><td class="param-name">Few Shot Limit</td><td>2</td><td>3</td><td>5</td><td>8</td></tr><tr><td class="param-name">Lora Rank</td><td>8</td><td>12</td><td>16</td><td>32</td></tr><tr><td class="param-name">Lora Epochs</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td class="param-name">Lora Lr</td><td>0.0002</td><td>0.0001</td><td>5e-05</td><td>2e-05</td></tr><tr><td class="param-name">Lora Dropout</td><td>0.05</td><td>0.05</td><td>0.05</td><td>0.05</td></tr><tr><td class="param-name">Lora Target Modules</td><td>q_proj, v_proj</td><td>q_proj, k_proj, v_proj</td><td>q_proj, k_proj, v_proj</td><td>q_proj, k_proj, v_proj</td></tr><tr><td class="param-name">Training Max Length</td><td>512</td><td>1024</td><td>2048</td><td>4096</td></tr><tr><td class="param-name">Warmup Steps</td><td>10</td><td>20</td><td>50</td><td>100</td></tr><tr><td class="param-name">Eval Split</td><td>0.1</td><td>0.1</td><td>0.1</td><td>0.1</td></tr><tr><td class="param-name">Scheduler</td><td>constant</td><td>linear</td><td>cosine</td><td>cosine</td></tr><tr><td class="param-name">Quantization</td><td>fp16</td><td>fp16</td><td>4bit</td><td>4bit</td></tr><tr><td class="param-name">Batch Size</td><td>4</td><td>4</td><td>2</td><td>1</td></tr><tr><td class="param-name">Gradient Accumulation Steps</td><td>1</td><td>2</td><td>4</td><td>8</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Qualification Thresholds</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Threshold</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Low Quality Threshold</td><td>0.5</td><td>0.5</td><td>0.5</td><td>0.5</td></tr><tr><td class="param-name">Minimum Threshold</td><td>0.6</td><td>0.65</td><td>0.7</td><td>0.75</td></tr><tr><td class="param-name">Golden Threshold</td><td>0.8</td><td>0.85</td><td>0.9</td><td>0.95</td></tr><tr><td class="param-name">Min Iterations</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td class="param-name">Golden Iterations</td><td>5</td><td>5</td><td>7</td><td>7</td></tr><tr><td class="param-name">Qualification Timeout</td><td>600</td><td>600</td><td>600</td><td>600</td></tr><tr><td class="param-name">Merge Threshold</td><td>3.0</td><td>3.0</td><td>3.0</td><td>3.0</td></tr><tr><td class="param-name">Improvement Threshold</td><td>0.95</td><td>0.95</td><td>0.95</td><td>0.95</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">System Prompt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="code-block">You are a ROUTER. Your job is to route user messages to the right nerve — not to answer them yourself.
+
+You receive:
+- NERVE CATALOG: a list of nerves with names and descriptions.
+- CONVERSATION CONTEXT: recent messages for continuity.
+
+ROUTING RULES (in priority order):
+1. Search the NERVE CATALOG. Compare the user&#x27;s intent against each nerve&#x27;s description. Pick the best match.
+2. If no catalog nerve fits, check core senses:
+   - awareness: ONLY Sentient identity (&quot;who are you&quot;, &quot;what can you do&quot;)
+   - sight: analyze an image file, screenshot, camera
+   - hearing: audio transcription, text-to-speech
+   - touch: file operations, shell commands
+   - communication: rewrite text to match personality voice, thanks, acknowledgments
+3. If nothing is a good match, synthesize a new domain nerve.
+4. If the message is too vague to route confidently, ask for clarification.
+
+IMPORTANT: Do not force a match. If no nerve clearly fits, prefer synthesize or clarify over a weak match.
+
+RESPONSE FORMAT:
+Output ONLY one JSON object. No text before or after.
+
+{&quot;action&quot;:&quot;invoke_nerve&quot;,&quot;name&quot;:&quot;NERVE_NAME&quot;,&quot;args&quot;:&quot;user message&quot;}
+{&quot;action&quot;:&quot;synthesize_nerve&quot;,&quot;name&quot;:&quot;domain_nerve&quot;,&quot;description&quot;:&quot;what this nerve does&quot;}
+{&quot;action&quot;:&quot;update_context&quot;,&quot;context&quot;:{&quot;key&quot;:&quot;value&quot;},&quot;message&quot;:&quot;acknowledgment&quot;}
+{&quot;action&quot;:&quot;chain_nerves&quot;,&quot;steps&quot;:[{&quot;nerve&quot;:&quot;name&quot;,&quot;args&quot;:&quot;task&quot;}],&quot;goal&quot;:&quot;what user wants&quot;}
+{&quot;action&quot;:&quot;clarify&quot;,&quot;message&quot;:&quot;question&quot;,&quot;suggestions&quot;:[&quot;option1&quot;,&quot;option2&quot;]}
+{&quot;action&quot;:&quot;feedback&quot;,&quot;sentiment&quot;:&quot;positive|negative&quot;,&quot;message&quot;:&quot;acknowledgment&quot;}</div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Few-Shot Examples</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Response</th></tr></thead>
+      <tbody><tr><td>tell me a joke</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;invoke_nerve&quot;,&quot;name&quot;:&quot;joke_nerve&quot;,&quot;args&quot;:&quot;tell me a joke&quot;}</td><td></td></tr><tr><td>hello</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;invoke_nerve&quot;,&quot;name&quot;:&quot;greeting_nerve&quot;,&quot;args&quot;:&quot;hello&quot;}</td><td></td></tr><tr><td>what is the capital of France?</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;synthesize_nerve&quot;,&quot;name&quot;:&quot;geography_nerve&quot;,&quot;description&quot;:&quot;answers geography questions like capitals, countries, continents&quot;}</td><td></td></tr><tr><td>who are you?</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;invoke_nerve&quot;,&quot;name&quot;:&quot;awareness&quot;,&quot;args&quot;:&quot;who are you?&quot;}</td><td></td></tr><tr><td>who am I?</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;synthesize_nerve&quot;,&quot;name&quot;:&quot;user_context_nerve&quot;,&quot;description&quot;:&quot;retrieves and presents information about the user from context and memory&quot;}</td><td></td></tr><tr><td>take a screenshot and describe it</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;chain_nerves&quot;,&quot;steps&quot;:[{&quot;nerve&quot;:&quot;sight&quot;,&quot;args&quot;:&quot;take a screenshot&quot;},{&quot;nerve&quot;:&quot;description_nerve&quot;,&quot;args&quot;:&quot;describe what you see&quot;}],&quot;goal&quot;:&quot;screenshot and describe&quot;}</td><td></td></tr><tr><td>I live in Tel Aviv</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;update_context&quot;,&quot;context&quot;:{&quot;city&quot;:&quot;Tel Aviv&quot;,&quot;country&quot;:&quot;Israel&quot;},&quot;message&quot;:&quot;Tel Aviv, great city! Noted.&quot;}</td><td></td></tr><tr><td>do the thing</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;clarify&quot;,&quot;message&quot;:&quot;I&#x27;m not sure what you&#x27;d like me to do. Can you be more specific?&quot;,&quot;suggestions&quot;:[&quot;tell me a joke&quot;,&quot;take a screenshot&quot;,&quot;check the weather&quot;]}</td><td></td></tr><tr><td>thanks, perfect</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;invoke_nerve&quot;,&quot;name&quot;:&quot;communication&quot;,&quot;args&quot;:&quot;thanks, perfect&quot;}</td><td></td></tr></tbody>
+    </table>
+  </div>
 </div>
 <footer class="footer">
   Arqitect &mdash; autonomous agent ecosystem

@@ -24,7 +24,7 @@
     <p class="detail-desc">Convert documents between formats such as Markdown to HTML or PDF.</p>
     <div class="detail-tags mt-1"><span class="tag tag--cyan">document</span><span class="tag tag--cyan">convert</span><span class="tag tag--cyan">format</span></div>
   </div>
-  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">tool</div></div><div class="info-item"><div class="info-label">Version</div><div class="info-value">1.0.0</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div><div class="info-item"><div class="info-label">Test Cases</div><div class="info-value">4</div></div></div>
+  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">tool</div></div><div class="info-item"><div class="info-label">Version</div><div class="info-value">1.0.0</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div><div class="info-item"><div class="info-label">Test Cases</div><div class="info-value">4</div></div><div class="info-item"><div class="info-label">Temperature</div><div class="info-value">0.3</div></div><div class="info-item"><div class="info-label">Top P</div><div class="info-value">0.9</div></div><div class="info-item"><div class="info-label">Max Tokens</div><div class="info-value">256</div></div></div>
   
   <div class="section">
     <div class="section-header">
@@ -34,6 +34,83 @@
     <table class="data-table">
       <thead><tr><th>Tool Name</th><th>MCP Server</th></tr></thead>
       <tbody><tr><td class="param-name">markdown_to_html</td><td></td></tr><tr><td class="param-name">markdown_to_pdf</td><td></td></tr><tr><td class="param-name">docx_read</td><td></td></tr><tr><td class="param-name">pdf_create</td><td></td></tr></tbody>
+    </table>
+  </div>
+  
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Model Capabilities</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Capability</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Json Mode</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Tool Calling</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Max Context</td><td>2048</td><td>4096</td><td>8192</td><td>16384</td></tr><tr><td class="param-name">Max Messages</td><td>1</td><td>5</td><td>20</td><td>100</td></tr><tr><td class="param-name">Include Summary</td><td>True</td><td>True</td><td>False</td><td>False</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Tuning Parameters</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Parameter</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Min Training Examples</td><td>50</td><td>100</td><td>200</td><td>500</td></tr><tr><td class="param-name">Test Cases Per Batch</td><td>5</td><td>10</td><td>15</td><td>20</td></tr><tr><td class="param-name">Few Shot Limit</td><td>2</td><td>3</td><td>5</td><td>8</td></tr><tr><td class="param-name">Lora Rank</td><td>8</td><td>12</td><td>32</td><td>32</td></tr><tr><td class="param-name">Lora Epochs</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td class="param-name">Lora Lr</td><td>0.0002</td><td>0.0001</td><td>5e-05</td><td>2e-05</td></tr><tr><td class="param-name">Lora Dropout</td><td>0.05</td><td>0.05</td><td>0.05</td><td>0.05</td></tr><tr><td class="param-name">Lora Target Modules</td><td>q_proj, v_proj</td><td>q_proj, k_proj, v_proj</td><td>q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj</td><td>q_proj, k_proj, v_proj</td></tr><tr><td class="param-name">Training Max Length</td><td>512</td><td>1024</td><td>2048</td><td>4096</td></tr><tr><td class="param-name">Warmup Steps</td><td>10</td><td>20</td><td>50</td><td>100</td></tr><tr><td class="param-name">Eval Split</td><td>0.1</td><td>0.1</td><td>0.1</td><td>0.1</td></tr><tr><td class="param-name">Scheduler</td><td>constant</td><td>linear</td><td>cosine</td><td>cosine</td></tr><tr><td class="param-name">Quantization</td><td>fp16</td><td>fp16</td><td>4bit</td><td>4bit</td></tr><tr><td class="param-name">Batch Size</td><td>4</td><td>4</td><td>2</td><td>1</td></tr><tr><td class="param-name">Gradient Accumulation Steps</td><td>1</td><td>2</td><td>4</td><td>8</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Qualification Thresholds</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Threshold</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Low Quality Threshold</td><td>0.5</td><td>0.5</td><td>0.5</td><td>0.5</td></tr><tr><td class="param-name">Minimum Threshold</td><td>0.6</td><td>0.65</td><td>0.7</td><td>0.75</td></tr><tr><td class="param-name">Golden Threshold</td><td>0.8</td><td>0.85</td><td>0.9</td><td>0.95</td></tr><tr><td class="param-name">Min Iterations</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td class="param-name">Golden Iterations</td><td>5</td><td>5</td><td>7</td><td>7</td></tr><tr><td class="param-name">Qualification Score</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">System Prompt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="code-block">You are a tool assistant specialized in document and media processing. Convert documents between formats such as Markdown to HTML or PDF. Use the available tools to complete user requests accurately and efficiently.
+
+Guidelines:
+- Always validate inputs before processing (check file existence, format validity, parameter ranges).
+- Provide clear, actionable error messages when operations fail.
+- Return structured results with relevant metadata.
+- Handle edge cases gracefully: empty inputs, invalid formats, permission errors, corrupted files.
+- When multiple tools are available, choose the most appropriate one for the task.
+- If a request is ambiguous, ask for clarification rather than guessing.
+
+CONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses — address the user by name, respect their language preference, and consider their location/timezone when relevant.</div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Few-Shot Examples</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Response</th></tr></thead>
+      <tbody><tr><td>Convert this markdown to HTML: # Title
+Some text</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;: &quot;markdown_to_html&quot;, &quot;args&quot;: {&quot;markdown&quot;: &quot;# Title\nSome text&quot;, &quot;output_path&quot;: &quot;/tmp/output.html&quot;}}</td><td>Markdown converted to HTML successfully at /tmp/output.html</td></tr><tr><td>Convert markdown to PDF at /docs/report.pdf</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;: &quot;markdown_to_pdf&quot;, &quot;args&quot;: {&quot;markdown&quot;: &quot;# Report\n\n## Summary\nKey findings...&quot;, &quot;output_path&quot;: &quot;/docs/report.pdf&quot;}}</td><td>Markdown converted to PDF successfully at /docs/report.pdf</td></tr><tr><td>Convert an empty markdown string to HTML</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;: &quot;markdown_to_html&quot;, &quot;args&quot;: {&quot;markdown&quot;: &quot;&quot;, &quot;output_path&quot;: &quot;/tmp/empty.html&quot;}}</td><td>Error: Cannot convert empty content.</td></tr><tr><td>Convert a binary file to PDF</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;: &quot;markdown_to_pdf&quot;, &quot;args&quot;: {&quot;markdown&quot;: &quot;\u0000\u0001\u0002&quot;, &quot;output_path&quot;: &quot;/tmp/out.pdf&quot;}}</td><td>Error: Input contains invalid characters for Markdown conversion.</td></tr><tr><td>Please convert this markdown to html: # title
+some text</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;: &quot;markdown_to_html&quot;, &quot;args&quot;: {&quot;markdown&quot;: &quot;# Title\nSome text&quot;, &quot;output_path&quot;: &quot;/tmp/output.html&quot;}}</td><td>Markdown converted to HTML successfully at /tmp/output.html</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Test Cases</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Category</th></tr></thead>
+      <tbody><tr><td>Convert this markdown to HTML: # Title
+Some text</td><td>Markdown converted to HTML successfully at /tmp/output.html</td><td><span class="tag tag--cyan">core</span></td></tr><tr><td>Convert markdown to PDF at /docs/report.pdf</td><td>Markdown converted to PDF successfully at /docs/report.pdf</td><td><span class="tag tag--cyan">core</span></td></tr><tr><td>Convert an empty markdown string to HTML</td><td>Error: Cannot convert empty content.</td><td><span class="tag tag--orange">edge</span></td></tr><tr><td>Convert a binary file to PDF</td><td>Error: Input contains invalid characters for Markdown conversion.</td><td><span class="tag tag--dim">negative</span></td></tr></tbody>
     </table>
   </div>
 </div>

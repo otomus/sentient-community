@@ -23,7 +23,100 @@
     <h1 class="detail-title">creative</h1>
     <p class="detail-desc">You are a creative nerve agent. Generate creative content.</p>
   </div>
-  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">creative</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div><div class="info-item"><div class="info-label">json_mode</div><div class="info-value">True</div></div><div class="info-item"><div class="info-label">tool_calling</div><div class="info-value">True</div></div><div class="info-item"><div class="info-label">max_context</div><div class="info-value">2048</div></div><div class="info-item"><div class="info-label">max_messages</div><div class="info-value">1</div></div><div class="info-item"><div class="info-label">include_summary</div><div class="info-value">True</div></div><div class="info-item"><div class="info-label">Min Training Examples</div><div class="info-value">50</div></div><div class="info-item"><div class="info-label">Test Cases Per Batch</div><div class="info-value">5</div></div><div class="info-item"><div class="info-label">Few Shot Limit</div><div class="info-value">2</div></div><div class="info-item"><div class="info-label">Lora Rank</div><div class="info-value">8</div></div><div class="info-item"><div class="info-label">Lora Epochs</div><div class="info-value">3</div></div><div class="info-item"><div class="info-label">Lora Lr</div><div class="info-value">0.0002</div></div><div class="info-item"><div class="info-label">Lora Dropout</div><div class="info-value">0.05</div></div><div class="info-item"><div class="info-label">Lora Target Modules</div><div class="info-value">[&#x27;q_proj&#x27;, &#x27;v_proj&#x27;, &#x27;gate_proj&#x27;, &#x27;up_proj&#x27;]</div></div><div class="info-item"><div class="info-label">Training Max Length</div><div class="info-value">512</div></div><div class="info-item"><div class="info-label">Warmup Steps</div><div class="info-value">10</div></div><div class="info-item"><div class="info-label">Eval Split</div><div class="info-value">0.1</div></div><div class="info-item"><div class="info-label">Scheduler</div><div class="info-value">constant</div></div><div class="info-item"><div class="info-label">Quantization</div><div class="info-value">fp16</div></div><div class="info-item"><div class="info-label">Batch Size</div><div class="info-value">4</div></div><div class="info-item"><div class="info-label">Gradient Accumulation Steps</div><div class="info-value">1</div></div></div>
+  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">creative</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div><div class="info-item"><div class="info-label">Qualified Models</div><div class="info-value">1</div></div></div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Supported Models</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="card-grid"><div class="card">
+  <div class="card-name">qwen2.5-coder-7b</div>
+  <div class="card-meta mb-2">
+    <span class="tag tag--teal">medium</span>
+    <span class="tag tag--cyan">4bit</span>
+    <span class='tag tag--dim'>no LoRA yet</span>
+  </div>
+  <div class="info-label">Qualification Score</div>
+  <div style="display:flex;align-items:center;gap:0.75rem;margin:0.4rem 0 0.75rem">
+    <div style="flex:1;height:8px;background:var(--bg-primary);border:1px solid var(--border);border-radius:4px;overflow:hidden">
+      <div style="width:80%;height:100%;background:var(--cyan);border-radius:4px"></div>
+    </div>
+    <span class="text-cyan" style="font-family:var(--font-display);font-size:1rem;font-weight:700">80%</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.8rem">
+    <div><span class="text-dim">Min threshold:</span> 0.7</div>
+    <div><span class="text-dim">Golden threshold:</span> 0.95</div>
+    <div><span class="text-dim">LoRA rank:</span> 32</div>
+    <div><span class="text-dim">Provider:</span> gguf</div>
+  </div>
+</div></div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Model Capabilities</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Capability</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Json Mode</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Tool Calling</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Max Context</td><td>2048</td><td>4096</td><td>8192</td><td>16384</td></tr><tr><td class="param-name">Max Messages</td><td>1</td><td>5</td><td>20</td><td>100</td></tr><tr><td class="param-name">Include Summary</td><td>True</td><td>True</td><td>False</td><td>False</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Tuning Parameters</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Parameter</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Min Training Examples</td><td>50</td><td>100</td><td>200</td><td>500</td></tr><tr><td class="param-name">Test Cases Per Batch</td><td>5</td><td>10</td><td>15</td><td>20</td></tr><tr><td class="param-name">Few Shot Limit</td><td>2</td><td>3</td><td>5</td><td>8</td></tr><tr><td class="param-name">Lora Rank</td><td>8</td><td>16</td><td>32</td><td>64</td></tr><tr><td class="param-name">Lora Epochs</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td class="param-name">Lora Lr</td><td>0.0002</td><td>0.0001</td><td>5e-05</td><td>2e-05</td></tr><tr><td class="param-name">Lora Dropout</td><td>0.05</td><td>0.05</td><td>0.05</td><td>0.05</td></tr><tr><td class="param-name">Lora Target Modules</td><td>q_proj, v_proj, gate_proj, up_proj</td><td>q_proj, k_proj, v_proj, gate_proj, up_proj</td><td>q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj</td><td>q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj</td></tr><tr><td class="param-name">Training Max Length</td><td>512</td><td>1024</td><td>2048</td><td>4096</td></tr><tr><td class="param-name">Warmup Steps</td><td>10</td><td>20</td><td>50</td><td>100</td></tr><tr><td class="param-name">Eval Split</td><td>0.1</td><td>0.1</td><td>0.1</td><td>0.1</td></tr><tr><td class="param-name">Scheduler</td><td>constant</td><td>linear</td><td>cosine</td><td>cosine</td></tr><tr><td class="param-name">Quantization</td><td>fp16</td><td>fp16</td><td>4bit</td><td>4bit</td></tr><tr><td class="param-name">Batch Size</td><td>4</td><td>4</td><td>2</td><td>1</td></tr><tr><td class="param-name">Gradient Accumulation Steps</td><td>1</td><td>2</td><td>4</td><td>8</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Qualification Thresholds</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Threshold</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Low Quality Threshold</td><td>0.5</td><td>0.5</td><td>0.5</td><td>0.5</td></tr><tr><td class="param-name">Minimum Threshold</td><td>0.6</td><td>0.65</td><td>0.7</td><td>0.75</td></tr><tr><td class="param-name">Golden Threshold</td><td>0.8</td><td>0.85</td><td>0.9</td><td>0.95</td></tr><tr><td class="param-name">Min Iterations</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td class="param-name">Golden Iterations</td><td>5</td><td>5</td><td>7</td><td>7</td></tr><tr><td class="param-name">Qualification Timeout</td><td>600</td><td>600</td><td>600</td><td>600</td></tr><tr><td class="param-name">Merge Threshold</td><td>3.0</td><td>3.0</td><td>3.0</td><td>3.0</td></tr><tr><td class="param-name">Improvement Threshold</td><td>0.95</td><td>0.95</td><td>0.95</td><td>0.95</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">System Prompt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="code-block">You are a creative nerve agent. Generate creative content.
+
+RULES:
+1. Check if a tool can help first (data, context, inspiration).
+2. Use &quot;acquire&quot; if no tool fits.
+3. Use &quot;answer&quot; to write your creative response when no tool is needed.
+
+RESPONSE FORMAT:
+Output ONLY one of these JSON objects. No text before or after. No explanation.
+
+{&quot;action&quot;:&quot;call&quot;,&quot;tool&quot;:&quot;TOOL_NAME&quot;,&quot;args&quot;:{&quot;PARAM&quot;:&quot;VALUE&quot;}}
+{&quot;action&quot;:&quot;use_sense&quot;,&quot;sense&quot;:&quot;SENSE_NAME&quot;,&quot;args&quot;:{&quot;PARAM&quot;:&quot;VALUE&quot;}}
+{&quot;action&quot;:&quot;acquire&quot;,&quot;need&quot;:&quot;what tool is needed&quot;}
+{&quot;action&quot;:&quot;answer&quot;,&quot;response&quot;:&quot;your creative response&quot;}</div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Few-Shot Examples</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Response</th></tr></thead>
+      <tbody><tr><td>tell me a joke</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;call&quot;,&quot;tool&quot;:&quot;joke_fetcher&quot;,&quot;args&quot;:{&quot;category&quot;:&quot;Any&quot;}}</td><td></td></tr><tr><td>write a haiku about rain</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;answer&quot;,&quot;response&quot;:&quot;Drops tap on the leaves\nA rhythm the earth remembers\nGreen drinks from the sky&quot;}</td><td></td></tr><tr><td>read this poem.txt and rewrite it as a limerick</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;use_sense&quot;,&quot;sense&quot;:&quot;touch&quot;,&quot;args&quot;:{&quot;command&quot;:&quot;read&quot;,&quot;path&quot;:&quot;poem.txt&quot;}}</td><td></td></tr><tr><td>I need a tool that generates rhymes</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;action&quot;:&quot;acquire&quot;,&quot;need&quot;:&quot;rhyme generator tool&quot;}</td><td></td></tr></tbody>
+    </table>
+  </div>
 </div>
 <footer class="footer">
   Arqitect &mdash; autonomous agent ecosystem

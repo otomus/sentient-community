@@ -550,6 +550,9 @@ a:hover { color: #fff; text-shadow: var(--glow-sm); }
   border-bottom: 1px solid var(--border);
   color: var(--text-primary);
   vertical-align: top;
+  max-width: 220px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .data-table tr:hover td {

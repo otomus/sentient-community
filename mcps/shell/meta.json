@@ -1,0 +1,12 @@
+{
+  "name": "shell",
+  "version": "1.0.0",
+  "description": "Shell command execution — run commands and manage processes",
+  "source": "npm",
+  "package": "@mako10k/mcp-shell-server",
+  "command": ["npx", "-y", "@mako10k/mcp-shell-server"],
+  "auth_type": "none",
+  "tools": ["shell_execute", "list_processes", "terminate_process"],
+  "capabilities": ["shell", "command_execution", "process_management"],
+  "category": "coding"
+}

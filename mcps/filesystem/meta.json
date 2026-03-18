@@ -1,0 +1,12 @@
+{
+  "name": "filesystem",
+  "version": "1.0.0",
+  "description": "Official MCP filesystem server — read, write, edit, search, and manage files and directories",
+  "source": "npm",
+  "package": "@modelcontextprotocol/server-filesystem",
+  "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "/path/to/project"],
+  "auth_type": "none",
+  "tools": ["read_text_file", "read_media_file", "read_multiple_files", "write_file", "edit_file", "create_directory", "list_directory", "list_directory_with_sizes", "move_file", "search_files", "directory_tree", "get_file_info", "list_allowed_directories"],
+  "capabilities": ["file_read", "file_write", "file_search", "directory_management"],
+  "category": "coding"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "npm_manage",
+  "version": "1.0.0",
+  "description": "Full npm package management — init, install, audit, publish, and manage dependencies",
+  "source": "npm",
+  "package": "@devlimelabs/npm-manage-mcp",
+  "command": ["npx", "-y", "@devlimelabs/npm-manage-mcp"],
+  "auth_type": "none",
+  "tools": ["npm_init", "npm_install", "npm_uninstall", "npm_list_deps", "npm_update", "npm_run_script", "npm_audit", "npm_search", "npm_info", "npm_publish", "npm_version", "npm_set_scripts", "npm_set_config"],
+  "capabilities": ["npm", "package_management", "dependency_management"],
+  "category": "coding"
+}

@@ -23,7 +23,79 @@
     <h1 class="detail-title">communication</h1>
     <p class="detail-desc">You are the communication sense. You rewrite messages to match the personality&#x27;s tone and voice.</p>
   </div>
-  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">communication</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div><div class="info-item"><div class="info-label">json_mode</div><div class="info-value">True</div></div><div class="info-item"><div class="info-label">tool_calling</div><div class="info-value">False</div></div><div class="info-item"><div class="info-label">max_context</div><div class="info-value">2048</div></div><div class="info-item"><div class="info-label">max_messages</div><div class="info-value">1</div></div><div class="info-item"><div class="info-label">include_summary</div><div class="info-value">True</div></div><div class="info-item"><div class="info-label">Min Training Examples</div><div class="info-value">50</div></div><div class="info-item"><div class="info-label">Test Cases Per Batch</div><div class="info-value">5</div></div><div class="info-item"><div class="info-label">Few Shot Limit</div><div class="info-value">2</div></div><div class="info-item"><div class="info-label">Lora Rank</div><div class="info-value">8</div></div><div class="info-item"><div class="info-label">Lora Epochs</div><div class="info-value">3</div></div><div class="info-item"><div class="info-label">Lora Lr</div><div class="info-value">0.0002</div></div><div class="info-item"><div class="info-label">Lora Dropout</div><div class="info-value">0.05</div></div><div class="info-item"><div class="info-label">Lora Target Modules</div><div class="info-value">[&#x27;q_proj&#x27;, &#x27;v_proj&#x27;]</div></div><div class="info-item"><div class="info-label">Training Max Length</div><div class="info-value">512</div></div><div class="info-item"><div class="info-label">Warmup Steps</div><div class="info-value">10</div></div><div class="info-item"><div class="info-label">Eval Split</div><div class="info-value">0.1</div></div><div class="info-item"><div class="info-label">Scheduler</div><div class="info-value">constant</div></div><div class="info-item"><div class="info-label">Quantization</div><div class="info-value">fp16</div></div><div class="info-item"><div class="info-label">Batch Size</div><div class="info-value">4</div></div><div class="info-item"><div class="info-label">Gradient Accumulation Steps</div><div class="info-value">1</div></div></div>
+  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">communication</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div></div>
+  
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Model Capabilities</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Capability</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Json Mode</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Tool Calling</td><td>False</td><td>False</td><td>False</td><td>False</td></tr><tr><td class="param-name">Max Context</td><td>2048</td><td>4096</td><td>8192</td><td>16384</td></tr><tr><td class="param-name">Max Messages</td><td>1</td><td>5</td><td>20</td><td>100</td></tr><tr><td class="param-name">Include Summary</td><td>True</td><td>True</td><td>False</td><td>False</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Tuning Parameters</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Parameter</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Min Training Examples</td><td>50</td><td>100</td><td>200</td><td>500</td></tr><tr><td class="param-name">Test Cases Per Batch</td><td>5</td><td>10</td><td>15</td><td>20</td></tr><tr><td class="param-name">Few Shot Limit</td><td>2</td><td>3</td><td>5</td><td>8</td></tr><tr><td class="param-name">Lora Rank</td><td>8</td><td>12</td><td>24</td><td>48</td></tr><tr><td class="param-name">Lora Epochs</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td class="param-name">Lora Lr</td><td>0.0002</td><td>0.0001</td><td>5e-05</td><td>2e-05</td></tr><tr><td class="param-name">Lora Dropout</td><td>0.05</td><td>0.05</td><td>0.05</td><td>0.05</td></tr><tr><td class="param-name">Lora Target Modules</td><td>q_proj, v_proj</td><td>q_proj, v_proj, o_proj</td><td>q_proj, v_proj, o_proj, gate_proj</td><td>q_proj, v_proj, o_proj, gate_proj, up_proj</td></tr><tr><td class="param-name">Training Max Length</td><td>512</td><td>1024</td><td>2048</td><td>4096</td></tr><tr><td class="param-name">Warmup Steps</td><td>10</td><td>20</td><td>50</td><td>100</td></tr><tr><td class="param-name">Eval Split</td><td>0.1</td><td>0.1</td><td>0.1</td><td>0.1</td></tr><tr><td class="param-name">Scheduler</td><td>constant</td><td>linear</td><td>cosine</td><td>cosine</td></tr><tr><td class="param-name">Quantization</td><td>fp16</td><td>fp16</td><td>4bit</td><td>4bit</td></tr><tr><td class="param-name">Batch Size</td><td>4</td><td>4</td><td>2</td><td>1</td></tr><tr><td class="param-name">Gradient Accumulation Steps</td><td>1</td><td>2</td><td>4</td><td>8</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Qualification Thresholds</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Threshold</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Low Quality Threshold</td><td>0.5</td><td>0.5</td><td>0.5</td><td>0.5</td></tr><tr><td class="param-name">Minimum Threshold</td><td>0.6</td><td>0.65</td><td>0.7</td><td>0.75</td></tr><tr><td class="param-name">Golden Threshold</td><td>0.8</td><td>0.85</td><td>0.9</td><td>0.95</td></tr><tr><td class="param-name">Min Iterations</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td class="param-name">Golden Iterations</td><td>5</td><td>5</td><td>7</td><td>7</td></tr><tr><td class="param-name">Qualification Timeout</td><td>600</td><td>600</td><td>600</td><td>600</td></tr><tr><td class="param-name">Merge Threshold</td><td>3.0</td><td>3.0</td><td>3.0</td><td>3.0</td></tr><tr><td class="param-name">Improvement Threshold</td><td>0.95</td><td>0.95</td><td>0.95</td><td>0.95</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">System Prompt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="code-block">You are the communication sense. You rewrite messages to match the personality&#x27;s tone and voice.
+
+Personality traits will be injected at runtime. Your job is to express the message in a way that is consistent with the personality.
+
+FORMATS:
+- text: plain text rewrite
+- card: structured card with title, body, footer
+- summarize: condense to key points
+
+RULES:
+- The personality controls tone. Do not override it.
+- A serious personality must NOT use emoji or gif.
+- A fun personality may use emoji naturally.
+- Preserve all factual content. Do not add or remove information.
+- You do NOT translate. Translation is a separate nerve.
+
+RESPONSE FORMAT:
+Output ONLY this JSON object. No text before or after. No explanation.
+
+{&quot;format&quot;:&quot;FORMAT&quot;,&quot;response&quot;:&quot;rewritten message&quot;}</div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Few-Shot Examples</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Response</th></tr></thead>
+      <tbody><tr><td>[personality: professional, serious] rewrite: hey the server is down</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;format&quot;:&quot;text&quot;,&quot;response&quot;:&quot;I wanted to inform you that the server is currently experiencing downtime.&quot;}</td><td></td></tr><tr><td>[personality: witty, casual] rewrite: deployment succeeded and all tests pass</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;format&quot;:&quot;text&quot;,&quot;response&quot;:&quot;Ship it! 🚀 Everything&#x27;s green across the board.&quot;}</td><td></td></tr><tr><td>[personality: professional] summarize: The meeting covered three topics. First, the product launch is on track for Q2. Second, we need to hire two more engineers. Third, the marketing budget was approved.</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;format&quot;:&quot;summarize&quot;,&quot;response&quot;:&quot;Q2 product launch on track. Hiring 2 engineers. Marketing budget approved.&quot;}</td><td></td></tr><tr><td>[personality: warm, friendly] rewrite: thank you</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;format&quot;:&quot;text&quot;,&quot;response&quot;:&quot;You&#x27;re very welcome! Happy to help anytime.&quot;}</td><td></td></tr><tr><td>[personality: professional] format as card: Project X launched successfully with 99.9% uptime</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;format&quot;:&quot;card&quot;,&quot;response&quot;:{&quot;title&quot;:&quot;Project X Launch&quot;,&quot;body&quot;:&quot;Successfully launched with 99.9% uptime.&quot;,&quot;footer&quot;:&quot;Status: Live&quot;}}</td><td></td></tr></tbody>
+    </table>
+  </div>
 </div>
 <footer class="footer">
   Arqitect &mdash; autonomous agent ecosystem

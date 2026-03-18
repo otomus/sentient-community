@@ -1,0 +1,12 @@
+{
+  "name": "lsp",
+  "version": "1.0.0",
+  "description": "Language Server Protocol bridge — IDE-independent, multi-language code intelligence",
+  "source": "npm",
+  "package": "cclsp",
+  "command": ["npx", "-y", "cclsp"],
+  "auth_type": "none",
+  "tools": ["find_definition", "find_references", "rename_symbol", "rename_symbol_strict", "get_diagnostics", "restart_server"],
+  "capabilities": ["lsp", "code_navigation", "refactoring", "diagnostics"],
+  "category": "coding"
+}

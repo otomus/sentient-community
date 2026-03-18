@@ -64,9 +64,37 @@ def load_nerves() -> list[dict]:
                 if (d / size).is_dir():
                     sizes.append(size)
             bj["_sizes"] = sizes
-            # load test cases count
+            # load test cases
             tc = load_json(d / "test_cases.json")
-            bj["_test_count"] = len(tc) if isinstance(tc, list) else 0
+            bj["_test_cases"] = tc if isinstance(tc, list) else []
+            bj["_test_count"] = len(bj["_test_cases"])
+            # load per-size meta and context
+            size_data = {}
+            models = []
+            for size in sizes:
+                sd = {}
+                size_dir = d / size
+                meta = load_json(size_dir / "meta.json")
+                ctx = load_json(size_dir / "context.json")
+                if meta and isinstance(meta, dict):
+                    sd["meta"] = meta
+                if ctx and isinstance(ctx, dict):
+                    sd["context"] = ctx
+                # discover model-specific subdirs
+                sd["models"] = {}
+                for child in sorted(size_dir.iterdir()):
+                    if child.is_dir():
+                        model_meta = load_json(child / "meta.json")
+                        model_ctx = load_json(child / "context.json")
+                        if model_meta and isinstance(model_meta, dict):
+                            model_entry = {"meta": model_meta, "size": size, "name": child.name}
+                            if model_ctx and isinstance(model_ctx, dict):
+                                model_entry["context"] = model_ctx
+                            sd["models"][child.name] = model_entry
+                            models.append(model_entry)
+                size_data[size] = sd
+            bj["_size_data"] = size_data
+            bj["_models"] = models
             results.append(bj)
     return results
 
@@ -114,20 +142,36 @@ def load_adapters() -> list[dict]:
     for d in sorted(adir.iterdir()):
         if not d.is_dir():
             continue
-        adapter = {"name": d.name, "_dir": d.name, "_sizes": []}
+        adapter = {"name": d.name, "_dir": d.name, "_sizes": [], "_size_data": {}, "_models": []}
         for size in ("tinylm", "small", "medium", "large"):
             sd = d / size
             if sd.is_dir():
                 adapter["_sizes"].append(size)
+                sdata = {}
                 ctx = load_json(sd / "context.json")
                 meta = load_json(sd / "meta.json")
-                if ctx and "description" not in adapter:
-                    # extract first line of system_prompt as description
-                    sp = ctx.get("system_prompt", "")
-                    first = sp.split("\n")[0][:200] if sp else ""
-                    adapter["description"] = first
+                if ctx:
+                    sdata["context"] = ctx
+                    if "description" not in adapter:
+                        sp = ctx.get("system_prompt", "")
+                        first = sp.split("\n")[0][:200] if sp else ""
+                        adapter["description"] = first
                 if meta:
+                    sdata["meta"] = meta
                     adapter.setdefault("_meta_sample", meta)
+                # discover model-specific subdirs (e.g. qwen2.5-coder-7b/)
+                sdata["models"] = {}
+                for child in sorted(sd.iterdir()):
+                    if child.is_dir():
+                        model_meta = load_json(child / "meta.json")
+                        model_ctx = load_json(child / "context.json")
+                        if model_meta and isinstance(model_meta, dict):
+                            model_entry = {"meta": model_meta, "size": size, "name": child.name}
+                            if model_ctx and isinstance(model_ctx, dict):
+                                model_entry["context"] = model_ctx
+                            sdata["models"][child.name] = model_entry
+                            adapter["_models"].append(model_entry)
+                adapter["_size_data"][size] = sdata
         results.append(adapter)
     return results
 
@@ -517,8 +561,199 @@ def build_nerves_gallery(nerves: list[dict]) -> None:
     write_page("nerves/index.html", content)
 
 
+def _build_tuning_table(size_data: dict) -> str:
+    """Build a comparison table of tuning params across model sizes."""
+    if not size_data:
+        return ""
+    # collect all tuning keys
+    all_keys: list[str] = []
+    for sd in size_data.values():
+        meta = sd.get("meta", {})
+        for k in meta.get("tuning", {}):
+            if k not in all_keys:
+                all_keys.append(k)
+    if not all_keys:
+        return ""
+    sizes = list(size_data.keys())
+    header = "<th>Parameter</th>" + "".join(f"<th>{E(s)}</th>" for s in sizes)
+    rows = ""
+    for k in all_keys:
+        label = k.replace("_", " ").title()
+        cells = ""
+        for s in sizes:
+            val = size_data[s].get("meta", {}).get("tuning", {}).get(k, "—")
+            if isinstance(val, list):
+                val = ", ".join(str(v) for v in val)
+            cells += f"<td>{E(str(val))}</td>"
+        rows += f'<tr><td class="param-name">{E(label)}</td>{cells}</tr>'
+    return f"""
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Tuning Parameters</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr>{header}</tr></thead>
+      <tbody>{rows}</tbody>
+    </table>
+  </div>"""
+
+
+def _build_qualification_table(size_data: dict) -> str:
+    """Build a comparison table of qualification thresholds across model sizes."""
+    if not size_data:
+        return ""
+    all_keys: list[str] = []
+    for sd in size_data.values():
+        meta = sd.get("meta", {})
+        for k in meta.get("qualification", {}):
+            if k not in all_keys:
+                all_keys.append(k)
+    if not all_keys:
+        return ""
+    sizes = list(size_data.keys())
+    header = "<th>Threshold</th>" + "".join(f"<th>{E(s)}</th>" for s in sizes)
+    rows = ""
+    for k in all_keys:
+        label = k.replace("_", " ").title()
+        cells = ""
+        for s in sizes:
+            val = size_data[s].get("meta", {}).get("qualification", {}).get(k, "—")
+            cells += f"<td>{E(str(val))}</td>"
+        rows += f'<tr><td class="param-name">{E(label)}</td>{cells}</tr>'
+    return f"""
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Qualification Thresholds</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr>{header}</tr></thead>
+      <tbody>{rows}</tbody>
+    </table>
+  </div>"""
+
+
+def _build_capabilities_table(size_data: dict) -> str:
+    """Build a comparison table of capabilities across model sizes."""
+    if not size_data:
+        return ""
+    all_keys: list[str] = []
+    for sd in size_data.values():
+        meta = sd.get("meta", {})
+        for k in meta.get("capabilities", {}):
+            if k not in all_keys:
+                all_keys.append(k)
+    if not all_keys:
+        return ""
+    sizes = list(size_data.keys())
+    header = "<th>Capability</th>" + "".join(f"<th>{E(s)}</th>" for s in sizes)
+    rows = ""
+    for k in all_keys:
+        label = k.replace("_", " ").title()
+        cells = ""
+        for s in sizes:
+            val = size_data[s].get("meta", {}).get("capabilities", {}).get(k, "—")
+            cells += f"<td>{E(str(val))}</td>"
+        rows += f'<tr><td class="param-name">{E(label)}</td>{cells}</tr>'
+    return f"""
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Model Capabilities</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr>{header}</tr></thead>
+      <tbody>{rows}</tbody>
+    </table>
+  </div>"""
+
+
+def _build_system_prompt_section(size_data: dict) -> str:
+    """Show system prompt from the largest available size."""
+    for size in ("large", "medium", "small", "tinylm"):
+        ctx = size_data.get(size, {}).get("context", {})
+        sp = ctx.get("system_prompt", "")
+        if sp:
+            return f"""
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">System Prompt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="code-block">{E(sp)}</div>
+  </div>"""
+    return ""
+
+
+def _build_few_shot_section(size_data: dict) -> str:
+    """Show few-shot examples from the largest available size."""
+    for size in ("large", "medium", "small", "tinylm"):
+        ctx = size_data.get(size, {}).get("context", {})
+        examples = ctx.get("few_shot_examples", [])
+        if examples:
+            rows = ""
+            for ex in examples:
+                inp = ex.get("input", "")
+                out = ex.get("output", "")
+                if not isinstance(out, str):
+                    out = json.dumps(out, indent=2)
+                resp = ex.get("response", "")
+                if not isinstance(resp, str):
+                    resp = json.dumps(resp, indent=2)
+                rows += (
+                    f'<tr><td>{E(inp)}</td>'
+                    f'<td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{E(out)}</td>'
+                    f'<td>{E(resp)}</td></tr>'
+                )
+            return f"""
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Few-Shot Examples</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Response</th></tr></thead>
+      <tbody>{rows}</tbody>
+    </table>
+  </div>"""
+    return ""
+
+
+def _build_test_cases_section(test_cases: list[dict]) -> str:
+    """Build a test cases table."""
+    if not test_cases:
+        return ""
+    rows = ""
+    for tc in test_cases:
+        inp = tc.get("input", "")
+        out = tc.get("output", "")
+        if not isinstance(inp, str):
+            inp = json.dumps(inp, indent=2)
+        if not isinstance(out, str):
+            out = json.dumps(out, indent=2)
+        cat = tc.get("category", "")
+        cat_cls = {"core": "tag--cyan", "edge": "tag--orange", "negative": "tag--dim"}.get(cat, "tag--dim")
+        rows += (
+            f'<tr><td>{E(inp)}</td>'
+            f'<td>{E(out)}</td>'
+            f'<td><span class="tag {cat_cls}">{E(cat)}</span></td></tr>'
+        )
+    return f"""
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Test Cases</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Category</th></tr></thead>
+      <tbody>{rows}</tbody>
+    </table>
+  </div>"""
+
+
 def build_nerve_detail(nerve: dict) -> None:
-    """Build a single nerve detail page."""
+    """Build a single nerve detail page with deep tuning and qualification data."""
     name = nerve.get("name", nerve.get("_dir", "unknown"))
     desc = nerve.get("description", "")
     role = nerve.get("role", "")
@@ -526,7 +761,10 @@ def build_nerve_detail(nerve: dict) -> None:
     version = nerve.get("version", "")
     sizes = nerve.get("_sizes", [])
     test_count = nerve.get("_test_count", 0)
+    test_cases = nerve.get("_test_cases", [])
     tools_list = nerve.get("tools", [])
+    size_data = nerve.get("_size_data", {})
+    models = nerve.get("_models", [])
 
     info_items = []
     if role:
@@ -536,6 +774,17 @@ def build_nerve_detail(nerve: dict) -> None:
     if sizes:
         info_items.append(("Model Sizes", ", ".join(sizes)))
     info_items.append(("Test Cases", str(test_count)))
+    # add inference params from largest context
+    for size in ("large", "medium", "small", "tinylm"):
+        ctx = size_data.get(size, {}).get("context", {})
+        if ctx:
+            if "temperature" in ctx:
+                info_items.append(("Temperature", str(ctx["temperature"])))
+            if "top_p" in ctx:
+                info_items.append(("Top P", str(ctx["top_p"])))
+            if "max_tokens" in ctx:
+                info_items.append(("Max Tokens", str(ctx["max_tokens"])))
+            break
 
     info_html = "".join(
         f'<div class="info-item"><div class="info-label">{E(l)}</div>'
@@ -566,6 +815,14 @@ def build_nerve_detail(nerve: dict) -> None:
     </table>
   </div>"""
 
+    models_section = _build_supported_models_section(models)
+    capabilities_section = _build_capabilities_table(size_data)
+    tuning_section = _build_tuning_table(size_data)
+    qualification_section = _build_qualification_table(size_data)
+    prompt_section = _build_system_prompt_section(size_data)
+    few_shot_section = _build_few_shot_section(size_data)
+    test_section = _build_test_cases_section(test_cases)
+
     content = f"""{page_head(name, depth=1)}
 {nav_html("nerves", depth=1)}
 <div class="container page-content">
@@ -579,6 +836,13 @@ def build_nerve_detail(nerve: dict) -> None:
   </div>
   <div class="info-grid">{info_html}</div>
   {tools_section}
+  {models_section}
+  {capabilities_section}
+  {tuning_section}
+  {qualification_section}
+  {prompt_section}
+  {few_shot_section}
+  {test_section}
 </div>
 {page_foot(depth=1)}"""
     write_page(f"nerves/{name}.html", content)
@@ -934,32 +1198,100 @@ def build_adapters_gallery(adapters: list[dict]) -> None:
     write_page("adapters/index.html", content)
 
 
+def _build_supported_models_section(models: list[dict]) -> str:
+    """Build a supported models section showing per-model qualification and tuning."""
+    if not models:
+        return ""
+    cards = ""
+    for m in models:
+        meta = m.get("meta", {})
+        mname = m.get("name", "unknown")
+        size = m.get("size", "")
+        qual = meta.get("qualification", {})
+        tuning = meta.get("tuning", {})
+        score = qual.get("current_score", qual.get("qualification_score", "—"))
+        min_thresh = qual.get("minimum_threshold", "—")
+        golden_thresh = qual.get("golden_threshold", "—")
+        has_lora = meta.get("has_lora", False)
+        lora_rank = tuning.get("lora_rank", "—")
+        quant = tuning.get("quantization", "—")
+
+        # score color
+        if isinstance(score, (int, float)):
+            if isinstance(golden_thresh, (int, float)) and score >= golden_thresh:
+                score_cls = "text-teal"
+            elif isinstance(min_thresh, (int, float)) and score >= min_thresh:
+                score_cls = "text-cyan"
+            else:
+                score_cls = "text-orange"
+            score_display = f"{score:.0%}" if score <= 1 else str(score)
+        else:
+            score_cls = "text-dim"
+            score_display = str(score)
+
+        # progress bar
+        score_pct = float(score) * 100 if isinstance(score, (int, float)) else 0
+        bar_color = "var(--teal)" if score_cls == "text-teal" else ("var(--cyan)" if score_cls == "text-cyan" else "var(--orange)")
+
+        cards += f"""<div class="card">
+  <div class="card-name">{E(mname)}</div>
+  <div class="card-meta mb-2">
+    <span class="tag tag--teal">{E(size)}</span>
+    <span class="tag tag--cyan">{E(str(quant))}</span>
+    {"<span class='tag tag--orange'>LoRA trained</span>" if has_lora else "<span class='tag tag--dim'>no LoRA yet</span>"}
+  </div>
+  <div class="info-label">Qualification Score</div>
+  <div style="display:flex;align-items:center;gap:0.75rem;margin:0.4rem 0 0.75rem">
+    <div style="flex:1;height:8px;background:var(--bg-primary);border:1px solid var(--border);border-radius:4px;overflow:hidden">
+      <div style="width:{score_pct:.0f}%;height:100%;background:{bar_color};border-radius:4px"></div>
+    </div>
+    <span class="{score_cls}" style="font-family:var(--font-display);font-size:1rem;font-weight:700">{score_display}</span>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.8rem">
+    <div><span class="text-dim">Min threshold:</span> {E(str(min_thresh))}</div>
+    <div><span class="text-dim">Golden threshold:</span> {E(str(golden_thresh))}</div>
+    <div><span class="text-dim">LoRA rank:</span> {E(str(lora_rank))}</div>
+    <div><span class="text-dim">Provider:</span> {E(meta.get("provider", "—"))}</div>
+  </div>
+</div>"""
+
+    return f"""
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Supported Models</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="card-grid">{cards}</div>
+  </div>"""
+
+
 def build_adapter_detail(adapter: dict) -> None:
-    """Build a single adapter detail page."""
+    """Build a single adapter detail page with deep tuning and qualification data."""
     name = adapter.get("name", adapter.get("_dir", "unknown"))
     desc = adapter.get("description", "")
     sizes = adapter.get("_sizes", [])
-    meta_sample = adapter.get("_meta_sample", {})
+    size_data = adapter.get("_size_data", {})
+    models = adapter.get("_models", [])
 
     info_items = [
         ("Role", name),
         ("Model Sizes", ", ".join(sizes) if sizes else "none"),
     ]
-    caps = meta_sample.get("capabilities", {})
-    if caps:
-        for ck, cv in caps.items():
-            info_items.append((ck, str(cv)))
-
-    tuning = meta_sample.get("tuning", {})
-    if tuning:
-        for tk, tv in tuning.items():
-            info_items.append((tk.replace("_", " ").title(), str(tv)))
+    if models:
+        info_items.append(("Qualified Models", str(len(models))))
 
     info_html = "".join(
         f'<div class="info-item"><div class="info-label">{E(l)}</div>'
         f'<div class="info-value">{E(str(v))}</div></div>'
         for l, v in info_items
     )
+
+    models_section = _build_supported_models_section(models)
+    capabilities_section = _build_capabilities_table(size_data)
+    tuning_section = _build_tuning_table(size_data)
+    qualification_section = _build_qualification_table(size_data)
+    prompt_section = _build_system_prompt_section(size_data)
+    few_shot_section = _build_few_shot_section(size_data)
 
     content = f"""{page_head(name, depth=1)}
 {nav_html("adapters", depth=1)}
@@ -972,6 +1304,12 @@ def build_adapter_detail(adapter: dict) -> None:
     <p class="detail-desc">{E(desc[:300])}</p>
   </div>
   <div class="info-grid">{info_html}</div>
+  {models_section}
+  {capabilities_section}
+  {tuning_section}
+  {qualification_section}
+  {prompt_section}
+  {few_shot_section}
 </div>
 {page_foot(depth=1)}"""
     write_page(f"adapters/{name}.html", content)

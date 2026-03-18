@@ -1,0 +1,13 @@
+{
+  "name": "code_sandbox",
+  "version": "1.0.0",
+  "description": "Sandboxed code execution — run Python and JavaScript in isolated cloud VMs",
+  "source": "npm",
+  "package": "@e2b/mcp-server",
+  "command": ["npx", "-y", "@e2b/mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "E2B_API_KEY",
+  "tools": ["execute_python", "execute_javascript", "create_file", "read_file", "install_packages"],
+  "capabilities": ["code_execution", "sandboxing", "python", "javascript"],
+  "category": "coding"
+}
