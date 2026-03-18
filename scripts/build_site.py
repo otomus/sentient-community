@@ -389,11 +389,11 @@ def build_tools_gallery(tools: list[dict]) -> None:
             meta_bits.append(f'<span class="tag tag--cyan">{E(tg)}</span>')
 
         cards.append(
-            f'<div class="card fade-in" data-search="{E(search_text)}" '
-            f'data-tags="{E(tag_str)}" data-category="{E(cat)}">'
-            f'<div class="card-name"><a href="{E(name)}.html">{E(name)}</a></div>'
+            f'<a href="{E(name)}.html" class="card fade-in" data-search="{E(search_text)}" '
+            f'data-tags="{E(tag_str)}" data-category="{E(cat)}" style="text-decoration:none;color:inherit">'
+            f'<div class="card-name">{E(name)}</div>'
             f'<div class="card-desc">{E(desc)}</div>'
-            f'<div class="card-meta">{"".join(meta_bits)}</div></div>'
+            f'<div class="card-meta">{"".join(meta_bits)}</div></a>'
         )
 
     content = f"""{page_head("Tools", depth=1)}
@@ -535,11 +535,11 @@ def build_nerves_gallery(nerves: list[dict]) -> None:
             meta_bits.append(f'<span class="tag tag--dim">{tool_count} tool{"s" if tool_count != 1 else ""}</span>')
 
         cards.append(
-            f'<div class="card fade-in" data-search="{E(search_text)}" '
-            f'data-tags="{E(tag_str)}" data-category="{E(role)}">'
-            f'<div class="card-name"><a href="{E(name)}.html">{E(name)}</a></div>'
+            f'<a href="{E(name)}.html" class="card fade-in" data-search="{E(search_text)}" '
+            f'data-tags="{E(tag_str)}" data-category="{E(role)}" style="text-decoration:none;color:inherit">'
+            f'<div class="card-name">{E(name)}</div>'
             f'<div class="card-desc">{E(desc)}</div>'
-            f'<div class="card-meta">{"".join(meta_bits)}</div></div>'
+            f'<div class="card-meta">{"".join(meta_bits)}</div></a>'
         )
 
     content = f"""{page_head("Nerves", depth=1)}
@@ -800,9 +800,9 @@ def build_nerve_detail(nerve: dict) -> None:
             if isinstance(t, dict):
                 tname = t.get("name", "")
                 tmcp = t.get("mcp", "")
-                rows += f'<tr><td class="param-name">{E(tname)}</td><td>{E(tmcp)}</td></tr>'
+                rows += f'<tr><td class="param-name"><a href="../tools/{E(tname)}.html">{E(tname)}</a></td><td>{E(tmcp)}</td></tr>'
             else:
-                rows += f'<tr><td class="param-name">{E(str(t))}</td><td></td></tr>'
+                rows += f'<tr><td class="param-name"><a href="../tools/{E(str(t))}.html">{E(str(t))}</a></td><td></td></tr>'
         tools_section = f"""
   <div class="section">
     <div class="section-header">
@@ -870,11 +870,11 @@ def build_connectors_gallery(connectors: list[dict]) -> None:
             meta_bits.append(f'<span class="tag tag--dim">{len(caps_in)} input types</span>')
 
         cards.append(
-            f'<div class="card fade-in" data-search="{E(search_text)}" '
-            f'data-tags="{E(" ".join(platforms))}" data-category="{E(lang)}">'
-            f'<div class="card-name"><a href="{E(name)}.html">{E(name)}</a></div>'
+            f'<a href="{E(name)}.html" class="card fade-in" data-search="{E(search_text)}" '
+            f'data-tags="{E(" ".join(platforms))}" data-category="{E(lang)}" style="text-decoration:none;color:inherit">'
+            f'<div class="card-name">{E(name)}</div>'
             f'<div class="card-desc">{E(desc)}</div>'
-            f'<div class="card-meta">{"".join(meta_bits)}</div></div>'
+            f'<div class="card-meta">{"".join(meta_bits)}</div></a>'
         )
 
     content = f"""{page_head("Connectors", depth=1)}
@@ -1019,11 +1019,11 @@ def build_mcps_gallery(mcps: list[dict]) -> None:
             meta_bits.append(f'<span class="tag tag--cyan">{len(mtools)} tools</span>')
 
         cards.append(
-            f'<div class="card fade-in" data-search="{E(search_text)}" '
-            f'data-tags="{E(cat)}" data-category="{E(cat)}">'
-            f'<div class="card-name"><a href="{E(name)}.html">{E(name)}</a></div>'
+            f'<a href="{E(name)}.html" class="card fade-in" data-search="{E(search_text)}" '
+            f'data-tags="{E(cat)}" data-category="{E(cat)}" style="text-decoration:none;color:inherit">'
+            f'<div class="card-name">{E(name)}</div>'
             f'<div class="card-desc">{E(desc)}</div>'
-            f'<div class="card-meta">{"".join(meta_bits)}</div></div>'
+            f'<div class="card-meta">{"".join(meta_bits)}</div></a>'
         )
 
     content = f"""{page_head("MCP Servers", depth=1)}
@@ -1173,11 +1173,11 @@ def build_adapters_gallery(adapters: list[dict]) -> None:
             meta_bits.append(f'<span class="tag tag--teal">{len(sizes)} sizes</span>')
 
         cards.append(
-            f'<div class="card fade-in" data-search="{E(search_text)}" '
-            f'data-tags="{E(name)}" data-category="{E(name)}">'
-            f'<div class="card-name"><a href="{E(name)}.html">{E(name)}</a></div>'
+            f'<a href="{E(name)}.html" class="card fade-in" data-search="{E(search_text)}" '
+            f'data-tags="{E(name)}" data-category="{E(name)}" style="text-decoration:none;color:inherit">'
+            f'<div class="card-name">{E(name)}</div>'
             f'<div class="card-desc">{E(desc[:200])}</div>'
-            f'<div class="card-meta">{"".join(meta_bits)}</div></div>'
+            f'<div class="card-meta">{"".join(meta_bits)}</div></a>'
         )
 
     content = f"""{page_head("Adapters", depth=1)}
