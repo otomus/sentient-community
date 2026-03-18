@@ -81,23 +81,41 @@ body::after {
 a { color: var(--cyan); text-decoration: none; transition: all 0.2s; }
 a:hover { color: #fff; text-shadow: var(--glow-sm); }
 
-/* ---- WIP BANNER ---- */
+/* ---- WIP RIBBON ---- */
 .wip-banner {
-  background: var(--orange);
-  color: var(--bg-void);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
   text-align: center;
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 1rem;
   font-family: var(--font-display);
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
+  color: #000;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ff9500,
+    #ff9500 10px,
+    #ff6a00 10px,
+    #ff6a00 20px
+  );
+  box-shadow: 0 4px 20px rgba(255, 106, 0, 0.6);
+  animation: ribbon-pulse 2s ease-in-out infinite;
+}
+
+@keyframes ribbon-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(255, 106, 0, 0.6), 0 0 40px rgba(255, 106, 0, 0.3); }
+  50% { box-shadow: 0 4px 30px rgba(255, 106, 0, 0.9), 0 0 60px rgba(255, 106, 0, 0.5); }
 }
 
 /* ---- NAVBAR ---- */
 .nav {
   position: sticky;
-  top: 0;
+  top: 38px;
   z-index: 100;
   background: rgba(5, 5, 16, 0.92);
   backdrop-filter: blur(12px);

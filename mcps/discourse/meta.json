@@ -1,0 +1,13 @@
+{
+  "name": "discourse",
+  "version": "1.0.0",
+  "description": "Discourse forums — topics, posts, categories, and user management",
+  "source": "npm",
+  "package": "discourse-mcp-server",
+  "command": ["npx", "-y", "discourse-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "DISCOURSE_API_KEY",
+  "tools": [],
+  "capabilities": ["topics", "posts", "categories", "users"],
+  "category": "communication"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "telegram",
+  "version": "1.0.0",
+  "description": "Telegram messaging — chats, messages, channels, and bot management",
+  "source": "npm",
+  "package": "telegram-mcp-server",
+  "command": ["npx", "-y", "telegram-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "TELEGRAM_API_TOKEN",
+  "tools": [],
+  "capabilities": ["messages", "channels", "groups", "bots"],
+  "category": "communication"
+}

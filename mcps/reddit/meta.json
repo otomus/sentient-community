@@ -1,0 +1,13 @@
+{
+  "name": "reddit",
+  "version": "1.0.0",
+  "description": "Reddit — browse subreddits, posts, comments, and search",
+  "source": "npm",
+  "package": "reddit-mcp-server",
+  "command": ["npx", "-y", "reddit-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "REDDIT_CLIENT_ID",
+  "tools": [],
+  "capabilities": ["subreddits", "posts", "comments", "search"],
+  "category": "social"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "supabase",
+  "version": "1.0.0",
+  "description": "Supabase backend — database queries, auth, storage, and edge functions",
+  "source": "npm",
+  "package": "supabase-mcp-server",
+  "command": ["npx", "-y", "supabase-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "SUPABASE_ACCESS_TOKEN",
+  "tools": [],
+  "capabilities": ["sql", "auth", "storage", "functions"],
+  "category": "database"
+}

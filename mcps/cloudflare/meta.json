@@ -1,0 +1,13 @@
+{
+  "name": "cloudflare",
+  "version": "1.0.0",
+  "description": "Cloudflare platform — Workers, KV, R2, Pages, and DNS management",
+  "source": "npm",
+  "package": "@cloudflare/mcp-server-cloudflare",
+  "command": ["npx", "-y", "@cloudflare/mcp-server-cloudflare"],
+  "auth_type": "api_key",
+  "auth_env": "CLOUDFLARE_API_TOKEN",
+  "tools": [],
+  "capabilities": ["workers", "kv", "r2", "pages", "dns"],
+  "category": "cloud"
+}

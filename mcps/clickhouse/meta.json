@@ -1,0 +1,13 @@
+{
+  "name": "clickhouse",
+  "version": "1.0.0",
+  "description": "ClickHouse analytics database — schema inspection and SQL queries",
+  "source": "npm",
+  "package": "@clickhouse/mcp-clickhouse",
+  "command": ["npx", "-y", "@clickhouse/mcp-clickhouse"],
+  "auth_type": "api_key",
+  "auth_env": "CLICKHOUSE_HOST",
+  "tools": [],
+  "capabilities": ["sql", "schema", "analytics"],
+  "category": "database"
+}

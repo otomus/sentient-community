@@ -1,0 +1,13 @@
+{
+  "name": "product_hunt",
+  "version": "1.0.0",
+  "description": "Product Hunt — trending products, collections, and maker profiles",
+  "source": "npm",
+  "package": "producthunt-mcp-server",
+  "command": ["npx", "-y", "producthunt-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "PRODUCTHUNT_API_TOKEN",
+  "tools": [],
+  "capabilities": ["trending", "products", "collections", "makers"],
+  "category": "social"
+}

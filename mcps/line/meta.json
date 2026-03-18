@@ -1,0 +1,13 @@
+{
+  "name": "line",
+  "version": "1.0.0",
+  "description": "LINE messaging — send messages, manage groups, and rich menus",
+  "source": "npm",
+  "package": "@line/line-bot-mcp-server",
+  "command": ["npx", "-y", "@line/line-bot-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "LINE_CHANNEL_ACCESS_TOKEN",
+  "tools": [],
+  "capabilities": ["messages", "groups", "rich_menus", "push"],
+  "category": "communication"
+}

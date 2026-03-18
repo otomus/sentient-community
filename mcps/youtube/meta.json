@@ -1,0 +1,13 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "YouTube — video management, playlists, channels, and analytics",
+  "source": "npm",
+  "package": "youtube-mcp-server",
+  "command": ["npx", "-y", "youtube-mcp-server"],
+  "auth_type": "oauth2",
+  "auth_provider": "google",
+  "tools": [],
+  "capabilities": ["videos", "playlists", "channels", "analytics", "upload"],
+  "category": "media"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "feishu",
+  "version": "1.0.0",
+  "description": "Feishu/Lark — documents, messages, calendars, and workspace management",
+  "source": "npm",
+  "package": "feishu-mcp-server",
+  "command": ["npx", "-y", "feishu-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "FEISHU_APP_ID",
+  "tools": [],
+  "capabilities": ["documents", "messages", "calendar", "workspace"],
+  "category": "communication"
+}

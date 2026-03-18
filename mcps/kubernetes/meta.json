@@ -1,0 +1,12 @@
+{
+  "name": "kubernetes",
+  "version": "1.0.0",
+  "description": "Kubernetes cluster management — pods, deployments, services, and logs",
+  "source": "npm",
+  "package": "mcp-server-kubernetes",
+  "command": ["npx", "-y", "mcp-server-kubernetes"],
+  "auth_type": "none",
+  "tools": [],
+  "capabilities": ["pods", "deployments", "services", "logs", "cluster"],
+  "category": "cloud"
+}

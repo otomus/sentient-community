@@ -1,0 +1,13 @@
+{
+  "name": "google_drive",
+  "version": "1.0.0",
+  "description": "Google Drive — files, folders, sharing, and document management",
+  "source": "npm",
+  "package": "google-drive-mcp-server",
+  "command": ["npx", "-y", "google-drive-mcp-server"],
+  "auth_type": "oauth2",
+  "auth_provider": "google",
+  "tools": [],
+  "capabilities": ["files", "folders", "sharing", "search"],
+  "category": "productivity"
+}

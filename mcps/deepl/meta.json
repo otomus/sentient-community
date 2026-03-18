@@ -1,0 +1,13 @@
+{
+  "name": "deepl",
+  "version": "1.0.0",
+  "description": "DeepL translation — translate and rephrase text between 30+ languages",
+  "source": "npm",
+  "package": "@deepl/mcp-server",
+  "command": ["npx", "-y", "@deepl/mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "DEEPL_AUTH_KEY",
+  "tools": [],
+  "capabilities": ["translate", "rephrase", "detect_language"],
+  "category": "language"
+}

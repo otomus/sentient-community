@@ -1,0 +1,13 @@
+{
+  "name": "redis",
+  "version": "1.0.0",
+  "description": "Redis Cloud — key-value operations, streams, and cluster management",
+  "source": "npm",
+  "package": "@redis/mcp-redis-cloud",
+  "command": ["npx", "-y", "@redis/mcp-redis-cloud"],
+  "auth_type": "api_key",
+  "auth_env": "REDIS_CLOUD_API_KEY",
+  "tools": [],
+  "capabilities": ["keyvalue", "streams", "cluster", "pubsub"],
+  "category": "database"
+}

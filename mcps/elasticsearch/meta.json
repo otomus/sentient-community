@@ -1,0 +1,13 @@
+{
+  "name": "elasticsearch",
+  "version": "1.0.0",
+  "description": "Elasticsearch — search, index, and manage documents and clusters",
+  "source": "npm",
+  "package": "elasticsearch-mcp-server",
+  "command": ["npx", "-y", "elasticsearch-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "ELASTICSEARCH_URL",
+  "tools": [],
+  "capabilities": ["search", "index", "cluster", "aggregations"],
+  "category": "database"
+}

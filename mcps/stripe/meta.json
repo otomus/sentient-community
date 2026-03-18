@@ -1,0 +1,13 @@
+{
+  "name": "stripe",
+  "version": "1.0.0",
+  "description": "Stripe payments — charges, subscriptions, customers, and invoices",
+  "source": "npm",
+  "package": "stripe-mcp-server",
+  "command": ["npx", "-y", "stripe-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "STRIPE_SECRET_KEY",
+  "tools": [],
+  "capabilities": ["payments", "subscriptions", "customers", "invoices"],
+  "category": "finance"
+}

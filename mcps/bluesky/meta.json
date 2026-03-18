@@ -1,0 +1,13 @@
+{
+  "name": "bluesky",
+  "version": "1.0.0",
+  "description": "Bluesky social — posts, follows, feeds, and profile management",
+  "source": "npm",
+  "package": "bluesky-context-server",
+  "command": ["npx", "-y", "bluesky-context-server"],
+  "auth_type": "api_key",
+  "auth_env": "BLUESKY_APP_PASSWORD",
+  "tools": [],
+  "capabilities": ["posts", "follows", "feeds", "profile"],
+  "category": "social"
+}

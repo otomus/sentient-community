@@ -1,0 +1,13 @@
+{
+  "name": "linear",
+  "version": "1.0.0",
+  "description": "Linear project management — issues, projects, cycles, and teams",
+  "source": "npm",
+  "package": "linear-mcp-server",
+  "command": ["npx", "-y", "linear-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "LINEAR_API_KEY",
+  "tools": [],
+  "capabilities": ["issues", "projects", "cycles", "teams"],
+  "category": "productivity"
+}

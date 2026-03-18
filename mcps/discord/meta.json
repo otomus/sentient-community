@@ -1,0 +1,13 @@
+{
+  "name": "discord",
+  "version": "1.0.0",
+  "description": "Discord — servers, channels, messages, and bot interactions",
+  "source": "npm",
+  "package": "discord-mcp-server",
+  "command": ["npx", "-y", "discord-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "DISCORD_BOT_TOKEN",
+  "tools": [],
+  "capabilities": ["messages", "channels", "servers", "bots"],
+  "category": "communication"
+}

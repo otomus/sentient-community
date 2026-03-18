@@ -1,0 +1,12 @@
+{
+  "name": "terraform",
+  "version": "1.0.0",
+  "description": "Infrastructure as Code — plan, apply, and manage Terraform configurations",
+  "source": "npm",
+  "package": "@hashicorp/terraform-mcp-server",
+  "command": ["npx", "-y", "@hashicorp/terraform-mcp-server"],
+  "auth_type": "none",
+  "tools": [],
+  "capabilities": ["plan", "apply", "state", "infrastructure"],
+  "category": "devops"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "tiktok",
+  "version": "1.0.0",
+  "description": "TikTok — video trends, content discovery, and creator tools",
+  "source": "npm",
+  "package": "tiktok-mcp-server",
+  "command": ["npx", "-y", "tiktok-mcp-server"],
+  "auth_type": "api_key",
+  "auth_env": "TIKTOK_API_KEY",
+  "tools": [],
+  "capabilities": ["trends", "videos", "creators", "discover"],
+  "category": "social"
+}

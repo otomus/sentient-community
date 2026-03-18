@@ -1,0 +1,13 @@
+{
+  "name": "teams",
+  "version": "1.0.0",
+  "description": "Microsoft Teams — messaging, meetings, and channel management",
+  "source": "npm",
+  "package": "@inditextech/mcp-teams-server",
+  "command": ["npx", "-y", "@inditextech/mcp-teams-server"],
+  "auth_type": "oauth2",
+  "auth_provider": "microsoft",
+  "tools": [],
+  "capabilities": ["messages", "meetings", "channels", "teams"],
+  "category": "communication"
+}

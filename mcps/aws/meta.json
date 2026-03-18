@@ -1,0 +1,13 @@
+{
+  "name": "aws",
+  "version": "1.0.0",
+  "description": "AWS cloud services — EC2, S3, Lambda, CloudWatch, and infrastructure management",
+  "source": "npm",
+  "package": "@aws/mcp",
+  "command": ["npx", "-y", "@aws/mcp"],
+  "auth_type": "api_key",
+  "auth_env": "AWS_ACCESS_KEY_ID",
+  "tools": [],
+  "capabilities": ["ec2", "s3", "lambda", "cloudwatch", "infrastructure"],
+  "category": "cloud"
+}

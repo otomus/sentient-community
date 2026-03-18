@@ -1,0 +1,13 @@
+{
+  "name": "linkedin",
+  "version": "1.0.0",
+  "description": "LinkedIn — profile data, posts, connections, and content publishing",
+  "source": "npm",
+  "package": "linkedin-mcp-server",
+  "command": ["npx", "-y", "linkedin-mcp-server"],
+  "auth_type": "oauth2",
+  "auth_provider": "linkedin",
+  "tools": [],
+  "capabilities": ["profile", "posts", "connections", "publish"],
+  "category": "social"
+}

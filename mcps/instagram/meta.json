@@ -1,0 +1,13 @@
+{
+  "name": "instagram",
+  "version": "1.0.0",
+  "description": "Instagram — media, stories, profiles, and content management",
+  "source": "npm",
+  "package": "instagram-mcp-server",
+  "command": ["npx", "-y", "instagram-mcp-server"],
+  "auth_type": "oauth2",
+  "auth_provider": "instagram",
+  "tools": [],
+  "capabilities": ["media", "stories", "profiles", "publish"],
+  "category": "social"
+}
