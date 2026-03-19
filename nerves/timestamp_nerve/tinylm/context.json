@@ -4,14 +4,14 @@
     {
       "input": "What time is it now?",
       "output": {
-        "tool": "timestamp_now",
+        "tool": "get_current_time",
         "params": {}
       }
     },
     {
       "input": "Convert 1700000000 to a readable date",
       "output": {
-        "tool": "timestamp_convert",
+        "tool": "convert_timezone",
         "params": {
           "timestamp": 1700000000,
           "format": "iso8601"

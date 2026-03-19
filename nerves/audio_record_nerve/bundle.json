@@ -8,7 +8,8 @@
     "audio",
     "record",
     "microphone",
-    "capture"
+    "capture",
+    "desktop"
   ],
   "authors": [
     {

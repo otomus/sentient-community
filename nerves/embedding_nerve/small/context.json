@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Create and search embeddings. Tools: embedding. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Create and search embeddings",
+      "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}"
+    },
+    {
+      "input": "Run embedding with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

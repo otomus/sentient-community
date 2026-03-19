@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Review a contract and flag risks. Tools: pdf, docx, llm_call, json_tool. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Review a contract and flag risks",
+      "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use docx",
+      "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

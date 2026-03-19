@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Find answer from FAQ/knowledge base. Tools: file_grep, embedding, llm_call. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Find answer from FAQ/knowledge base",
+      "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"pattern\": \"TODO\", \"path\": \"src/\"}}"
+    },
+    {
+      "input": "Use embedding",
+      "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}"
+    },
+    {
+      "input": "Run file grep with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"pattern\": \"TODO\", \"path\": \"src/\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"pattern\": \"TODO\", \"path\": \"src/\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

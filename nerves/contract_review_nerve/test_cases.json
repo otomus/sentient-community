@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Review a contract and flag risks",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use docx",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\", \"operation\": \"read\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use pdf with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run pdf with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"pdf\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

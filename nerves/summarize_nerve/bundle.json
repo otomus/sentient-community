@@ -1,35 +1,40 @@
 {
-    "name": "summarize_nerve",
-    "version": "1.0.0",
-    "description": "Summarize a document or URL",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "writing",
-        "summary",
-        "content"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_scrape",
-            "mcp": "web_scrape",
-            "implementations": {}
-        },
-        {
-            "name": "pdf_read",
-            "mcp": "pdf_read",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "summarize_nerve",
+  "version": "1.0.0",
+  "description": "Summarize a document or URL",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "writing",
+    "summary",
+    "content",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_scrape",
+      "implementations": {
+        "python": "mcp_tools/web_scrape/tool.py"
+      }
+    },
+    {
+      "name": "pdf",
+      "implementations": {
+        "python": "mcp_tools/pdf/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

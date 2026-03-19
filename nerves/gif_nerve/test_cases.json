@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Find and create GIFs",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use gif create",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"gif_create\", \"args\": {\"frames\": [], \"output\": \"animation.gif\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use gif search with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run gif search with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"gif_search\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

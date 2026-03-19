@@ -1,30 +1,34 @@
 {
-    "name": "risk_assess_nerve",
-    "version": "1.0.0",
-    "description": "Assess project risks",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "project-management",
-        "risk",
-        "assessment"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "risk_assess_nerve",
+  "version": "1.0.0",
+  "description": "Assess project risks",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "project-management",
+    "risk",
+    "assessment",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

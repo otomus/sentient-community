@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Review a contract and flag risks. Available tools: pdf, docx, llm_call, json_tool. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Review a contract and flag risks",
+      "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use docx",
+      "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    },
+    {
+      "input": "Run pdf with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

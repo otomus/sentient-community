@@ -8,7 +8,8 @@
     "document",
     "pptx",
     "powerpoint",
-    "slides"
+    "slides",
+    "desktop"
   ],
   "authors": [
     {
@@ -19,7 +20,9 @@
   "tools": [
     {
       "name": "pptx",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/pptx/tool.py"
+      }
     }
   ]
 }

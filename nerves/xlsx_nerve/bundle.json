@@ -8,7 +8,8 @@
     "document",
     "xlsx",
     "excel",
-    "spreadsheet"
+    "spreadsheet",
+    "desktop"
   ],
   "authors": [
     {
@@ -19,7 +20,9 @@
   "tools": [
     {
       "name": "xlsx",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/xlsx/tool.py"
+      }
     }
   ]
 }

@@ -9,7 +9,9 @@
     "convert",
     "format",
     "markdown",
-    "export"
+    "export",
+    "desktop",
+    "server"
   ],
   "authors": [
     {
@@ -19,27 +21,21 @@
   "arqitect_version": ">=0.1.0",
   "tools": [
     {
-      "name": "markdown_to_html",
+      "name": "markdown_convert",
       "implementations": {
-        "python": "mcp_tools/markdown_to_html/tool.py"
+        "python": "mcp_tools/markdown_convert/tool.py"
       }
     },
     {
-      "name": "markdown_to_pdf",
+      "name": "docx",
       "implementations": {
-        "python": "mcp_tools/markdown_to_pdf/tool.py"
+        "python": "mcp_tools/docx/tool.py"
       }
     },
     {
-      "name": "docx_read",
+      "name": "pdf",
       "implementations": {
-        "python": "mcp_tools/docx_read/tool.py"
-      }
-    },
-    {
-      "name": "pdf_create",
-      "implementations": {
-        "python": "mcp_tools/pdf_create/tool.py"
+        "python": "mcp_tools/pdf/tool.py"
       }
     }
   ]

@@ -1,40 +1,45 @@
 {
-    "name": "infra_audit_nerve",
-    "version": "1.0.0",
-    "description": "Audit infrastructure health",
-    "role": "code",
-    "mode": "tool_required",
-    "tags": [
-        "devops",
-        "infrastructure",
-        "audit"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "docker_ps",
-            "mcp": "docker_ps",
-            "implementations": {}
-        },
-        {
-            "name": "process_list",
-            "mcp": "process_list",
-            "implementations": {}
-        },
-        {
-            "name": "port_scan",
-            "mcp": "port_scan",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "infra_audit_nerve",
+  "version": "1.0.0",
+  "description": "Audit infrastructure health",
+  "role": "code",
+  "mode": "tool_required",
+  "tags": [
+    "devops",
+    "infrastructure",
+    "audit",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "docker_ps",
+      "implementations": {
+        "python": "mcp_tools/docker_ps/tool.py"
+      }
+    },
+    {
+      "name": "process_list",
+      "implementations": {
+        "python": "mcp_tools/process_list/tool.py"
+      }
+    },
+    {
+      "name": "port_scan",
+      "implementations": {
+        "python": "mcp_tools/port_scan/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

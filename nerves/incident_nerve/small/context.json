@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Investigate and triage an incident. Tools: log, docker_logs, process_list, alert_send. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Investigate and triage an incident",
+      "output": "{\"action\": \"call\", \"tool\": \"log\", \"args\": {\"path\": \"/var/log/app.log\", \"lines\": 100}}"
+    },
+    {
+      "input": "Use docker logs",
+      "output": "{\"action\": \"call\", \"tool\": \"docker_logs\", \"args\": {\"container\": \"my-container\"}}"
+    },
+    {
+      "input": "Use process list",
+      "output": "{\"action\": \"call\", \"tool\": \"process_list\", \"args\": {}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

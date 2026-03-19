@@ -4,7 +4,7 @@
     {
       "input": "Find all emails in 'Contact us at info@test.com or help@test.com'",
       "output": {
-        "tool": "regex_match",
+        "tool": "regex",
         "params": {
           "text": "Contact us at info@test.com or help@test.com",
           "pattern": "[\\w.+-]+@[\\w-]+\\.[\\w.]+"
@@ -14,7 +14,7 @@
     {
       "input": "Replace all digits in 'abc123def456' with X",
       "output": {
-        "tool": "regex_replace",
+        "tool": "regex",
         "params": {
           "text": "abc123def456",
           "pattern": "\\d",
@@ -25,7 +25,7 @@
     {
       "input": "Match phone numbers in 'Call 555-1234 or 555-5678'",
       "output": {
-        "tool": "regex_match",
+        "tool": "regex",
         "params": {
           "text": "Call 555-1234 or 555-5678",
           "pattern": "\\d{3}-\\d{4}"
@@ -35,7 +35,7 @@
     {
       "input": "Remove all vowels from 'Hello World'",
       "output": {
-        "tool": "regex_replace",
+        "tool": "regex",
         "params": {
           "text": "Hello World",
           "pattern": "[aeiouAEIOU]",
@@ -46,7 +46,7 @@
     {
       "input": "Does 'test@email.com' look like a valid email?",
       "output": {
-        "tool": "regex_match",
+        "tool": "regex",
         "params": {
           "text": "test@email.com",
           "pattern": "^[\\w.+-]+@[\\w-]+\\.[\\w.]+$"

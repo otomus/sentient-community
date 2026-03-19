@@ -6,7 +6,8 @@
   "mode": "tool_required",
   "tags": [
     "web",
-    "dns"
+    "dns",
+    "server"
   ],
   "authors": [
     {

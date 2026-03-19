@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Deploy an application. Tools: git_status, docker_build, docker_run, alert_send.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Deploy an application",
+      "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}"
+    },
+    {
+      "input": "Use docker build",
+      "output": "{\"action\": \"call\", \"tool\": \"docker_build\", \"args\": {\"path\": \".\", \"tag\": \"my-image:latest\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

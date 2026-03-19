@@ -6,7 +6,8 @@
   "mode": "tool_required",
   "tags": [
     "webhook",
-    "integration"
+    "integration",
+    "server"
   ],
   "authors": [
     {
@@ -17,7 +18,9 @@
   "tools": [
     {
       "name": "webhook",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/webhook/tool.py"
+      }
     }
   ]
 }

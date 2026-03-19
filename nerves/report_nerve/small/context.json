@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Generate a data report with charts. Tools: csv, math_eval, chart_create, pdf. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Generate a data report with charts",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use math eval",
+      "output": "{\"action\": \"call\", \"tool\": \"math_eval\", \"args\": {\"expression\": \"2 + 2 * 3\"}}"
+    },
+    {
+      "input": "Use chart create",
+      "output": "{\"action\": \"call\", \"tool\": \"chart_create\", \"args\": {\"type\": \"bar\", \"data\": [], \"title\": \"Chart\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

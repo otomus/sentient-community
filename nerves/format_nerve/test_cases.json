@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Format source files",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_format\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run code format with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_format\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use code format with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_format\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run code format with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_format\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"code_format\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

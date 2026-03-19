@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Check software license compatibility. Tools: code_deps, web_search, json_tool.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Check software license compatibility",
+      "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {\"path\": \".\"}}"
+    },
+    {
+      "input": "Use web search",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -8,7 +8,9 @@
     "document",
     "pdf",
     "read",
-    "create"
+    "create",
+    "desktop",
+    "server"
   ],
   "authors": [
     {
@@ -19,7 +21,9 @@
   "tools": [
     {
       "name": "pdf",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/pdf/tool.py"
+      }
     }
   ]
 }

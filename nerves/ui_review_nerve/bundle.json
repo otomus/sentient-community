@@ -1,35 +1,39 @@
 {
-    "name": "ui_review_nerve",
-    "version": "1.0.0",
-    "description": "Review a UI design for usability",
-    "role": "vision",
-    "mode": "tool_required",
-    "tags": [
-        "design",
-        "ui",
-        "review"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "browser_screenshot",
-            "mcp": "browser_screenshot",
-            "implementations": {}
-        },
-        {
-            "name": "image_to_text",
-            "mcp": "image_to_text",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "ui_review_nerve",
+  "version": "1.0.0",
+  "description": "Review a UI design for usability",
+  "role": "vision",
+  "mode": "tool_required",
+  "tags": [
+    "design",
+    "ui",
+    "review",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "browser_screenshot",
+      "implementations": {
+        "python": "mcp_tools/browser_screenshot/tool.py"
+      }
+    },
+    {
+      "name": "image_to_text",
+      "implementations": {
+        "python": "mcp_tools/image_to_text/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

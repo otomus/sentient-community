@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Clean and normalize a dataset. Tools: csv, regex. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Clean and normalize a dataset",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use regex",
+      "output": "{\"action\": \"call\", \"tool\": \"regex\", \"args\": {\"pattern\": \"\\\\d+\", \"text\": \"abc123\", \"operation\": \"match\"}}"
+    },
+    {
+      "input": "Run csv with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

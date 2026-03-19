@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Triage a support ticket",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use web search",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use json tool with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run json tool with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"json_tool\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Generate and read QR codes",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"qr_code\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run qr code with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"qr_code\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use qr code with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"qr_code\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run qr code with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"qr_code\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"qr_code\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

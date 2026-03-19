@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Query, write, and inspect databases",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"db_connect\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use db query",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"db_query\", \"args\": {\"query\": \"SELECT * FROM users LIMIT 10\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use db connect with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"db_connect\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run db connect with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"db_connect\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"db_connect\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

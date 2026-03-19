@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Track a habit. Tools: json_tool, file_write.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Track a habit",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    },
+    {
+      "input": "Use file write",
+      "output": "{\"action\": \"call\", \"tool\": \"file_write\", \"args\": {\"path\": \"output.txt\", \"content\": \"data\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

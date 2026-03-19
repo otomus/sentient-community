@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Read, post, reply, and manage content across social media platforms. Available tools: social. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Read, post, reply, and manage content across social media platforms",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Run social with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Help me read, post, reply, and manage content across social media platforms",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -1,29 +1,32 @@
 {
-    "name": "timestamp_nerve",
-    "version": "1.0.0",
-    "description": "Get or convert timestamps",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "data",
-        "time"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "get_current_time",
-            "mcp": "chrono",
-            "implementations": {}
-        },
-        {
-            "name": "convert_timezone",
-            "mcp": "chrono",
-            "implementations": {}
-        }
-    ]
+  "name": "timestamp_nerve",
+  "version": "1.0.0",
+  "description": "Get or convert timestamps",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "data",
+    "time",
+    "desktop",
+    "server",
+    "iot"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "get_current_time",
+      "mcp": "chrono",
+      "implementations": {}
+    },
+    {
+      "name": "convert_timezone",
+      "mcp": "chrono",
+      "implementations": {}
+    }
+  ]
 }

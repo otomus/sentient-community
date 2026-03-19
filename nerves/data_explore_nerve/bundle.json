@@ -1,40 +1,46 @@
 {
-    "name": "data_explore_nerve",
-    "version": "1.0.0",
-    "description": "Explore a dataset and summarize findings",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "data",
-        "analysis",
-        "exploration"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "csv_read",
-            "mcp": "csv_read",
-            "implementations": {}
-        },
-        {
-            "name": "xlsx_read",
-            "mcp": "xlsx_read",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        }
-    ]
+  "name": "data_explore_nerve",
+  "version": "1.0.0",
+  "description": "Explore a dataset and summarize findings",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "data",
+    "analysis",
+    "exploration",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "csv",
+      "implementations": {
+        "python": "mcp_tools/csv/tool.py"
+      }
+    },
+    {
+      "name": "xlsx",
+      "implementations": {
+        "python": "mcp_tools/xlsx/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    }
+  ]
 }

@@ -8,7 +8,10 @@
     "communication",
     "notification",
     "push",
-    "alert"
+    "alert",
+    "desktop",
+    "server",
+    "iot"
   ],
   "authors": [
     {

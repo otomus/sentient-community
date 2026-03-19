@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Extract, transform, load data between formats",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use json tool",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use csv with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run csv with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"csv\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Generate, store, and retrieve credentials. Available tools: password. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Generate, store, and retrieve credentials",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    },
+    {
+      "input": "Run password with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    },
+    {
+      "input": "Help me generate, store, and retrieve credentials",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

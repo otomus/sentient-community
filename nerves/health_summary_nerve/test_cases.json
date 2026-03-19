@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Summarize health metrics",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"sleep_tracker_read\", \"args\": {\"user_id\": \"user-01\", \"date\": \"2026-03-19\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use json tool",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use sleep tracker read with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"sleep_tracker_read\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run sleep tracker read with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"sleep_tracker_read\", \"args\": {\"user_id\": \"user-01\", \"date\": \"2026-03-19\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"sleep_tracker_read\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

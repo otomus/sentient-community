@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Draft social media content using AI and schedule it for future publication",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use social",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"action\": \"post\", \"content\": \"Hello world\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use llm call with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run llm call with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"llm_call\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

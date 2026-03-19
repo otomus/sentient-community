@@ -6,7 +6,9 @@
   "mode": "reasoning",
   "tags": [
     "reminder",
-    "productivity"
+    "productivity",
+    "desktop",
+    "iot"
   ],
   "authors": [
     {
@@ -17,7 +19,9 @@
   "tools": [
     {
       "name": "reminder",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/reminder/tool.py"
+      }
     }
   ]
 }

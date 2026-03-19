@@ -8,7 +8,9 @@
     "git",
     "version-control",
     "branch",
-    "checkout"
+    "checkout",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

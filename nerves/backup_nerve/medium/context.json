@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Create and verify a system backup. Tools: file_copy, db_query, json_tool. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Create and verify a system backup",
+      "output": "{\"action\": \"call\", \"tool\": \"file_copy\", \"args\": {\"source\": \"orig.txt\", \"destination\": \"copy.txt\"}}"
+    },
+    {
+      "input": "Use db query",
+      "output": "{\"action\": \"call\", \"tool\": \"db_query\", \"args\": {\"query\": \"SELECT * FROM users LIMIT 10\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    },
+    {
+      "input": "Run file copy with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"file_copy\", \"args\": {\"source\": \"orig.txt\", \"destination\": \"copy.txt\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"file_copy\", \"args\": {\"source\": \"orig.txt\", \"destination\": \"copy.txt\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -9,7 +9,9 @@
     "email",
     "imap",
     "smtp",
-    "inbox"
+    "inbox",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

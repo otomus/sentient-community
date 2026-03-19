@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Read values from IoT sensors and list all available sensors. Tools: sensor. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Read values from IoT sensors and list all available sensors",
+      "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {\"device_id\": \"sensor-01\", \"action\": \"read\"}}"
+    },
+    {
+      "input": "Run sensor with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {\"device_id\": \"sensor-01\", \"action\": \"read\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {\"device_id\": \"sensor-01\", \"action\": \"read\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

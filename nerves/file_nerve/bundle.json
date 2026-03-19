@@ -9,7 +9,9 @@
     "filesystem",
     "read",
     "write",
-    "crud"
+    "crud",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

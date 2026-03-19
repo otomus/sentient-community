@@ -8,7 +8,9 @@
     "git",
     "version-control",
     "push",
-    "remote"
+    "remote",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

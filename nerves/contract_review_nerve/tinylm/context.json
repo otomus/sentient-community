@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Review a contract and flag risks. Tools: pdf, docx, llm_call, json_tool.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Review a contract and flag risks",
+      "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use docx",
+      "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\", \"operation\": \"read\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

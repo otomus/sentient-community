@@ -1,32 +1,33 @@
 {
-    "name": "screen_read_nerve",
-    "version": "1.0.0",
-    "description": "Capture a live screen region and extract visible text via OCR",
-    "role": "tool",
-    "mode": "reasoning",
-    "tags": [
-        "desktop",
-        "screen",
-        "ocr",
-        "live",
-        "region"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "capture_screen",
-            "mcp": "peekaboo",
-            "implementations": {}
-        },
-        {
-            "name": "image_to_text",
-            "mcp": "peekaboo",
-            "implementations": {}
-        }
-    ]
+  "name": "screen_read_nerve",
+  "version": "1.0.0",
+  "description": "Capture a live screen region and extract visible text via OCR",
+  "role": "tool",
+  "mode": "reasoning",
+  "tags": [
+    "screen",
+    "ocr",
+    "live",
+    "region",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "screen_capture",
+      "implementations": {
+        "python": "mcp_tools/screen_capture/tool.py"
+      }
+    },
+    {
+      "name": "image_to_text",
+      "mcp": "peekaboo",
+      "implementations": {}
+    }
+  ]
 }

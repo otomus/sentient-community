@@ -5,11 +5,11 @@
   "role": "tool",
   "mode": "reasoning",
   "tags": [
-    "desktop",
     "mouse",
     "scroll",
     "wheel",
-    "input"
+    "input",
+    "desktop"
   ],
   "authors": [
     {

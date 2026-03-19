@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Run, list, and kill system processes",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"process_run\", \"args\": {\"action\": \"list\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use process list",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"process_list\", \"args\": {\"action\": \"list\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use process run with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"process_run\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run process run with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"process_run\", \"args\": {\"action\": \"list\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"process_run\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

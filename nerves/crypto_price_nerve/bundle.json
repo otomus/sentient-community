@@ -1,26 +1,30 @@
 {
-    "name": "crypto_price_nerve",
-    "version": "1.0.0",
-    "description": "Get the current market price of a cryptocurrency by name or symbol",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "finance",
-        "crypto",
-        "price",
-        "realtime"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "stock_quote",
-            "mcp": "coincap",
-            "implementations": {}
-        }
-    ]
+  "name": "crypto_price_nerve",
+  "version": "1.0.0",
+  "description": "Get the current market price of a cryptocurrency by name or symbol",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "finance",
+    "crypto",
+    "price",
+    "realtime",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "crypto_price",
+      "mcp": "coincap",
+      "implementations": {
+        "python": "mcp_tools/crypto_price/tool.py"
+      }
+    }
+  ]
 }

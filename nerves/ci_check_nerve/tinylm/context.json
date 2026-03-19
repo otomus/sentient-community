@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Check CI/CD pipeline status. Tools: http_get, json_tool, alert_send.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Check CI/CD pipeline status",
+      "output": "{\"action\": \"call\", \"tool\": \"http_get\", \"args\": {\"url\": \"https://api.example.com/status\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Research and analyze a cryptocurrency with market trends, news, and charts",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"crypto_price\", \"args\": {\"symbol\": \"BTC\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use web search",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use crypto price with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"crypto_price\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run crypto price with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"crypto_price\", \"args\": {\"symbol\": \"BTC\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"crypto_price\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

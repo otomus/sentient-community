@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Read from and create Microsoft Word (.docx) documents. Tools: docx.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Read from and create Microsoft Word (.docx) documents",
+      "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\"}}"
+    },
+    {
+      "input": "Run docx with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

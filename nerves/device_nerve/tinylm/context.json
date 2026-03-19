@@ -1,0 +1,17 @@
+{
+  "system_prompt": "List connected IoT devices and check their health and status. Tools: device.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "List connected IoT devices and check their health and status",
+      "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}"
+    },
+    {
+      "input": "Run device with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

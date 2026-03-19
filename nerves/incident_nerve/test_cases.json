@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Investigate and triage an incident",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"log\", \"args\": {\"path\": \"/var/log/app.log\", \"lines\": 100}}",
+    "category": "core"
+  },
+  {
+    "input": "Use docker logs",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_logs\", \"args\": {\"container\": \"my-container\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use log with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"log\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run log with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"log\", \"args\": {\"path\": \"/var/log/app.log\", \"lines\": 100}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"log\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

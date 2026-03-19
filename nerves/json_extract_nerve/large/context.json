@@ -4,7 +4,7 @@
     {
       "input": "Parse this JSON: {\"name\":\"Alice\",\"age\":30}",
       "output": {
-        "tool": "json_parse",
+        "tool": "json_tool",
         "params": {
           "data": "{\"name\":\"Alice\",\"age\":30}"
         }
@@ -13,7 +13,7 @@
     {
       "input": "Extract the 'name' field from {\"name\":\"Bob\",\"role\":\"admin\"}",
       "output": {
-        "tool": "json_query",
+        "tool": "json_tool",
         "params": {
           "data": {
             "name": "Bob",
@@ -26,7 +26,7 @@
     {
       "input": "Get all prices from {\"items\":[{\"price\":10},{\"price\":20}]}",
       "output": {
-        "tool": "json_query",
+        "tool": "json_tool",
         "params": {
           "data": {
             "items": [
@@ -45,7 +45,7 @@
     {
       "input": "Parse and validate: [1,2,3]",
       "output": {
-        "tool": "json_parse",
+        "tool": "json_tool",
         "params": {
           "data": "[1,2,3]"
         }
@@ -54,7 +54,7 @@
     {
       "input": "Query the status from {\"response\":{\"status\":\"ok\"}}",
       "output": {
-        "tool": "json_query",
+        "tool": "json_tool",
         "params": {
           "data": {
             "response": {

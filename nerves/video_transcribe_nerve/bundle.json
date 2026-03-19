@@ -1,31 +1,34 @@
 {
-    "name": "video_transcribe_nerve",
-    "version": "1.0.0",
-    "description": "Extract the audio track from a video and transcribe speech to text",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "video",
-        "transcribe",
-        "speech-to-text"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "video_download",
-            "implementations": {
-                "python": "mcp_tools/video_download/tool.py"
-            }
-        },
-        {
-            "name": "voice_recognition",
-            "mcp": "voice",
-            "implementations": {}
-        }
-    ]
+  "name": "video_transcribe_nerve",
+  "version": "1.0.0",
+  "description": "Extract the audio track from a video and transcribe speech to text",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "video",
+    "transcribe",
+    "speech-to-text",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "video_download",
+      "implementations": {
+        "python": "mcp_tools/video_download/tool.py"
+      }
+    },
+    {
+      "name": "audio_transcribe",
+      "implementations": {
+        "python": "mcp_tools/audio_transcribe/tool.py"
+      }
+    }
+  ]
 }

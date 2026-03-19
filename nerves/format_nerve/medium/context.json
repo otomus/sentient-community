@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Format source files. Tools: code_format. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Format source files",
+      "output": "{\"action\": \"call\", \"tool\": \"code_format\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Run code format with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"code_format\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"code_format\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Help me format source files",
+      "output": "{\"action\": \"call\", \"tool\": \"code_format\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

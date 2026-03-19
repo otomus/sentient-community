@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Explore a dataset and summarize findings. Tools: csv, xlsx, json_tool, chart_create. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Explore a dataset and summarize findings",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use xlsx",
+      "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {\"path\": \"data.xlsx\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

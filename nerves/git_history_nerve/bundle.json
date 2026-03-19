@@ -9,7 +9,9 @@
     "version-control",
     "log",
     "history",
-    "blame"
+    "blame",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

@@ -1,35 +1,40 @@
 {
-    "name": "standup_nerve",
-    "version": "1.0.0",
-    "description": "Generate standup report from recent activity",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "project-management",
-        "standup",
-        "reporting"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "git_log",
-            "mcp": "git_log",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "standup_nerve",
+  "version": "1.0.0",
+  "description": "Generate standup report from recent activity",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "project-management",
+    "standup",
+    "reporting",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "git_log",
+      "implementations": {
+        "python": "mcp_tools/git_log/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

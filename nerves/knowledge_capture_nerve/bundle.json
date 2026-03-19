@@ -1,40 +1,46 @@
 {
-    "name": "knowledge_capture_nerve",
-    "version": "1.0.0",
-    "description": "Extract and organize knowledge from a source",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "knowledge",
-        "extraction",
-        "organization"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_scrape",
-            "mcp": "web_scrape",
-            "implementations": {}
-        },
-        {
-            "name": "pdf_read",
-            "mcp": "pdf_read",
-            "implementations": {}
-        },
-        {
-            "name": "note_create",
-            "mcp": "note_create",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "knowledge_capture_nerve",
+  "version": "1.0.0",
+  "description": "Extract and organize knowledge from a source",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "knowledge",
+    "extraction",
+    "organization",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_scrape",
+      "implementations": {
+        "python": "mcp_tools/web_scrape/tool.py"
+      }
+    },
+    {
+      "name": "pdf",
+      "implementations": {
+        "python": "mcp_tools/pdf/tool.py"
+      }
+    },
+    {
+      "name": "note",
+      "implementations": {
+        "python": "mcp_tools/note/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

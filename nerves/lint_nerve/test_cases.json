@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Lint source files and report issues",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {\"path\": \"src/\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run code lint with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {\"path\": \"src/\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use code lint with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run code lint with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {\"path\": \"src/\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"code_lint\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

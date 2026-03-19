@@ -7,7 +7,8 @@
   "tags": [
     "ai",
     "embedding",
-    "vector"
+    "vector",
+    "server"
   ],
   "authors": [
     {
@@ -17,15 +18,9 @@
   "arqitect_version": ">=0.1.0",
   "tools": [
     {
-      "name": "embedding_create",
+      "name": "embedding",
       "implementations": {
-        "python": "mcp_tools/embedding_create/tool.py"
-      }
-    },
-    {
-      "name": "embedding_search",
-      "implementations": {
-        "python": "mcp_tools/embedding_search/tool.py"
+        "python": "mcp_tools/embedding/tool.py"
       }
     }
   ]

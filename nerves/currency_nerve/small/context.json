@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Convert between fiat currencies and retrieve live exchange rates. Tools: currency. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Convert between fiat currencies and retrieve live exchange rates",
+      "output": "{\"action\": \"call\", \"tool\": \"currency\", \"args\": {\"amount\": 100, \"from\": \"USD\", \"to\": \"EUR\"}}"
+    },
+    {
+      "input": "Run currency with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"currency\", \"args\": {\"amount\": 100, \"from\": \"USD\", \"to\": \"EUR\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"currency\", \"args\": {\"amount\": 100, \"from\": \"USD\", \"to\": \"EUR\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

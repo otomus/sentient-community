@@ -1,35 +1,39 @@
 {
-    "name": "pitch_draft_nerve",
-    "version": "1.0.0",
-    "description": "Draft a sales pitch or proposal",
-    "role": "communication",
-    "mode": "reasoning",
-    "tags": [
-        "sales",
-        "pitch",
-        "proposal"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "file_write",
-            "mcp": "file_write",
-            "implementations": {}
-        }
-    ]
+  "name": "pitch_draft_nerve",
+  "version": "1.0.0",
+  "description": "Draft a sales pitch or proposal",
+  "role": "communication",
+  "mode": "reasoning",
+  "tags": [
+    "sales",
+    "pitch",
+    "proposal",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "file_write",
+      "implementations": {
+        "python": "mcp_tools/file_write/tool.py"
+      }
+    }
+  ]
 }

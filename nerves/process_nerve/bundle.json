@@ -6,7 +6,9 @@
   "mode": "tool_required",
   "tags": [
     "process",
-    "system"
+    "system",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

@@ -1,0 +1,44 @@
+{
+  "model": "large",
+  "size_class": "large",
+  "provider": "gguf",
+  "contributor": {
+    "github": "arqitect-community"
+  },
+  "capabilities": {
+    "json_mode": true,
+    "tool_calling": true,
+    "max_context": 16384,
+    "max_messages": 100,
+    "include_summary": false
+  },
+  "tuning": {
+    "min_training_examples": 500,
+    "test_cases_per_batch": 20,
+    "few_shot_limit": 8,
+    "lora_rank": 32,
+    "lora_epochs": 2,
+    "lora_lr": 2e-05,
+    "lora_dropout": 0.05,
+    "lora_target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj"
+    ],
+    "training_max_length": 4096,
+    "warmup_steps": 100,
+    "eval_split": 0.1,
+    "scheduler": "cosine",
+    "quantization": "4bit",
+    "batch_size": 1,
+    "gradient_accumulation_steps": 8
+  },
+  "qualification": {
+    "low_quality_threshold": 0.5,
+    "minimum_threshold": 0.75,
+    "golden_threshold": 0.95,
+    "min_iterations": 3,
+    "golden_iterations": 7
+  },
+  "description": "Find answer from FAQ/knowledge base"
+}

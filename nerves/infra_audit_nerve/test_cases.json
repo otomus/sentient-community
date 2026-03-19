@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Audit infrastructure health",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_ps\", \"args\": {}}",
+    "category": "core"
+  },
+  {
+    "input": "Use process list",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"process_list\", \"args\": {}}",
+    "category": "core"
+  },
+  {
+    "input": "Use docker ps with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_ps\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run docker ps with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_ps\", \"args\": {}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"docker_ps\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

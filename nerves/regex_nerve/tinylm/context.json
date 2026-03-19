@@ -4,7 +4,7 @@
     {
       "input": "Find all emails in 'Contact us at info@test.com or help@test.com'",
       "output": {
-        "tool": "regex_match",
+        "tool": "regex",
         "params": {
           "text": "Contact us at info@test.com or help@test.com",
           "pattern": "[\\w.+-]+@[\\w-]+\\.[\\w.]+"
@@ -14,7 +14,7 @@
     {
       "input": "Replace all digits in 'abc123def456' with X",
       "output": {
-        "tool": "regex_replace",
+        "tool": "regex",
         "params": {
           "text": "abc123def456",
           "pattern": "\\d",

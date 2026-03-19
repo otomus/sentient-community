@@ -1,0 +1,32 @@
+[
+  {
+    "input": "List project dependencies",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {\"action\": \"check\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run code deps with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {\"action\": \"check\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use code deps with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run code deps with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {\"action\": \"check\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"code_deps\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

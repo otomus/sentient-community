@@ -7,7 +7,9 @@
   "tags": [
     "workflow",
     "schedule",
-    "cron"
+    "cron",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

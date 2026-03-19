@@ -1,40 +1,39 @@
 {
-    "name": "etl_nerve",
-    "version": "1.0.0",
-    "description": "Extract, transform, load data between formats",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "data",
-        "etl",
-        "pipeline"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "csv_read",
-            "mcp": "csv_read",
-            "implementations": {}
-        },
-        {
-            "name": "json_parse",
-            "mcp": "json_parse",
-            "implementations": {}
-        },
-        {
-            "name": "db_execute",
-            "mcp": "db_execute",
-            "implementations": {}
-        },
-        {
-            "name": "csv_write",
-            "mcp": "csv_write",
-            "implementations": {}
-        }
-    ]
+  "name": "etl_nerve",
+  "version": "1.0.0",
+  "description": "Extract, transform, load data between formats",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "data",
+    "etl",
+    "pipeline",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "csv",
+      "implementations": {
+        "python": "mcp_tools/csv/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "db_execute",
+      "implementations": {
+        "python": "mcp_tools/db_execute/tool.py"
+      }
+    }
+  ]
 }

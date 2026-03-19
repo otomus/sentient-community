@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Control smart lights: on/off, brightness, and color",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"light\", \"args\": {\"device_id\": \"light-01\", \"action\": \"on\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run light with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"light\", \"args\": {\"device_id\": \"light-01\", \"action\": \"on\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use light with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"light\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run light with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"light\", \"args\": {\"device_id\": \"light-01\", \"action\": \"on\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"light\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

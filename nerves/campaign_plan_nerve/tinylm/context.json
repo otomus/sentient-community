@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Plan a marketing campaign. Tools: web_search, llm_call, file_write.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Plan a marketing campaign",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

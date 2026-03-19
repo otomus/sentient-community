@@ -8,7 +8,9 @@
     "video",
     "frames",
     "extract",
-    "image"
+    "image",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

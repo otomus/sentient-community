@@ -1,35 +1,38 @@
 {
-    "name": "lesson_plan_nerve",
-    "version": "1.0.0",
-    "description": "Create a lesson plan",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "education",
-        "teaching",
-        "planning"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "file_write",
-            "mcp": "file_write",
-            "implementations": {}
-        }
-    ]
+  "name": "lesson_plan_nerve",
+  "version": "1.0.0",
+  "description": "Create a lesson plan",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "education",
+    "teaching",
+    "planning",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "file_write",
+      "implementations": {
+        "python": "mcp_tools/file_write/tool.py"
+      }
+    }
+  ]
 }

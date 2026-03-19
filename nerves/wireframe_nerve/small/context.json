@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Generate a wireframe description. Tools: llm_call, diagram_create. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Generate a wireframe description",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use diagram create",
+      "output": "{\"action\": \"call\", \"tool\": \"diagram_create\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Run llm call with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

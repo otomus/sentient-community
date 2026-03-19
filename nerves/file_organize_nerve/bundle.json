@@ -8,7 +8,9 @@
     "file",
     "organization",
     "move",
-    "rename"
+    "rename",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

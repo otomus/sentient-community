@@ -9,7 +9,9 @@
     "web",
     "screenshot",
     "render",
-    "image"
+    "image",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

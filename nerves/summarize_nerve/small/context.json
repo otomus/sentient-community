@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Summarize a document or URL. Tools: web_scrape, pdf, llm_call. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Summarize a document or URL",
+      "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {\"url\": \"https://example.com\"}}"
+    },
+    {
+      "input": "Use pdf",
+      "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

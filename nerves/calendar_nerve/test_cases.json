@@ -1,0 +1,32 @@
+[
+  {
+    "input": "List, create, and delete calendar events",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"calendar\", \"args\": {\"date\": \"2026-03-19\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run calendar with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"calendar\", \"args\": {\"date\": \"2026-03-19\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use calendar with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"calendar\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run calendar with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"calendar\", \"args\": {\"date\": \"2026-03-19\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"calendar\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

@@ -3,7 +3,7 @@
     "input": "Get the current timestamp",
     "context": {},
     "output": {
-      "tool": "timestamp_now",
+      "tool": "get_current_time",
       "params": {}
     },
     "category": "core"
@@ -12,7 +12,7 @@
     "input": "Convert 1700000000 to ISO date",
     "context": {},
     "output": {
-      "tool": "timestamp_convert",
+      "tool": "convert_timezone",
       "params": {
         "timestamp": 1700000000,
         "format": "iso8601"

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Get current weather and forecasts",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run weather with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use weather with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run weather with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"weather\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

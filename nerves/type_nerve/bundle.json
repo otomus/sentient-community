@@ -5,10 +5,10 @@
   "role": "tool",
   "mode": "reasoning",
   "tags": [
-    "desktop",
     "keyboard",
     "type",
-    "text-input"
+    "text-input",
+    "desktop"
   ],
   "authors": [
     {

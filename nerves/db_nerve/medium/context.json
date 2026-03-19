@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Query, write, and inspect databases. Tools: db_connect, db_query, db_execute, db_tables, db_schema, db_close. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Query, write, and inspect databases",
+      "output": "{\"action\": \"call\", \"tool\": \"db_connect\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use db query",
+      "output": "{\"action\": \"call\", \"tool\": \"db_query\", \"args\": {\"query\": \"SELECT * FROM users LIMIT 10\"}}"
+    },
+    {
+      "input": "Use db execute",
+      "output": "{\"action\": \"call\", \"tool\": \"db_execute\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use db tables",
+      "output": "{\"action\": \"call\", \"tool\": \"db_tables\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use db schema",
+      "output": "{\"action\": \"call\", \"tool\": \"db_schema\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

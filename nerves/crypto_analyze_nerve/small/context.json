@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Research and analyze a cryptocurrency with market trends, news, and charts. Tools: crypto_price, web_search, chart_create. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Research and analyze a cryptocurrency with market trends, news, and charts",
+      "output": "{\"action\": \"call\", \"tool\": \"crypto_price\", \"args\": {\"symbol\": \"BTC\"}}"
+    },
+    {
+      "input": "Use web search",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    },
+    {
+      "input": "Use chart create",
+      "output": "{\"action\": \"call\", \"tool\": \"chart_create\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

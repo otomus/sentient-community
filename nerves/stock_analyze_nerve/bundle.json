@@ -1,42 +1,42 @@
 {
-    "name": "stock_analyze_nerve",
-    "version": "1.0.0",
-    "description": "Perform fundamental and technical analysis on a stock with charts and commentary",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "finance",
-        "stock",
-        "analysis",
-        "fundamentals",
-        "technicals"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "stock_quote",
-            "mcp": "stock_quote",
-            "implementations": {}
-        },
-        {
-            "name": "stock_history",
-            "mcp": "stock_history",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "stock_analyze_nerve",
+  "version": "1.0.0",
+  "description": "Perform fundamental and technical analysis on a stock with charts and commentary",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "finance",
+    "stock",
+    "analysis",
+    "fundamentals",
+    "technicals",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "stock",
+      "implementations": {
+        "python": "mcp_tools/stock/tool.py"
+      }
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

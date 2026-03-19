@@ -9,7 +9,9 @@
     "web",
     "scraping",
     "render",
-    "headless"
+    "headless",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Parse, query, and write CSV tabular data. Available tools: csv. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Parse, query, and write CSV tabular data",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\"}}"
+    },
+    {
+      "input": "Run csv with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\"}}"
+    },
+    {
+      "input": "Help me parse, query, and write csv tabular data",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

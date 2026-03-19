@@ -1,32 +1,36 @@
 {
-    "name": "draft_email_nerve",
-    "version": "1.0.0",
-    "description": "Compose a polished email draft using AI without sending it",
-    "role": "communication",
-    "mode": "reasoning",
-    "tags": [
-        "writing",
-        "email",
-        "draft",
-        "compose",
-        "communication"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "email_send",
-            "mcp": "email_send",
-            "implementations": {}
-        }
-    ]
+  "name": "draft_email_nerve",
+  "version": "1.0.0",
+  "description": "Compose a polished email draft using AI and save it to a file",
+  "role": "communication",
+  "mode": "reasoning",
+  "tags": [
+    "writing",
+    "email",
+    "draft",
+    "compose",
+    "communication",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "file_write",
+      "implementations": {
+        "python": "mcp_tools/file_write/tool.py"
+      }
+    }
+  ]
 }

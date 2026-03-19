@@ -1,0 +1,43 @@
+{
+  "model": "tinylm",
+  "size_class": "tinylm",
+  "provider": "gguf",
+  "contributor": {
+    "github": "arqitect-community"
+  },
+  "capabilities": {
+    "json_mode": true,
+    "tool_calling": true,
+    "max_context": 2048,
+    "max_messages": 1,
+    "include_summary": true
+  },
+  "tuning": {
+    "min_training_examples": 50,
+    "test_cases_per_batch": 5,
+    "few_shot_limit": 2,
+    "lora_rank": 8,
+    "lora_epochs": 3,
+    "lora_lr": 0.0002,
+    "lora_dropout": 0.05,
+    "lora_target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "training_max_length": 512,
+    "warmup_steps": 10,
+    "eval_split": 0.1,
+    "scheduler": "constant",
+    "quantization": "fp16",
+    "batch_size": 4,
+    "gradient_accumulation_steps": 1
+  },
+  "qualification": {
+    "low_quality_threshold": 0.5,
+    "minimum_threshold": 0.6,
+    "golden_threshold": 0.8,
+    "min_iterations": 3,
+    "golden_iterations": 5
+  },
+  "description": "Clean and normalize a dataset"
+}

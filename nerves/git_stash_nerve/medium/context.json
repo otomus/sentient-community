@@ -1,25 +1,25 @@
 {
-  "system_prompt": "You are a specialized nerve responsible for: stash or restore work in progress. You have access to these tools: git_stash, git_stash_pop, git_status. Analyze each user request carefully and respond with a JSON object containing: action (always 'call'), tool (the tool name to invoke), and args (the arguments object). Select the best tool for the task and construct appropriate arguments. If a request is ambiguous, prefer the most common interpretation.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "system_prompt": "Stash uncommitted changes and restore them later. Tools: git_stash, git_status. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
   "few_shot_examples": [
     {
-      "input": "Stash my current changes",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash\",\"args\":{}}"
+      "input": "Stash uncommitted changes and restore them later",
+      "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}"
     },
     {
-      "input": "Pop the last stash",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash_pop\",\"args\":{}}"
+      "input": "Use git status",
+      "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}"
     },
     {
-      "input": "Stash with a message",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash\",\"args\":{\"message\":\"WIP: auth refactor\"}}"
+      "input": "Run git stash with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}"
     },
     {
-      "input": "Check status after stashing",
-      "output": "{\"action\":\"call\",\"tool\":\"git_status\",\"args\":{}}"
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}"
     },
     {
-      "input": "Stash including untracked files",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash\",\"args\":{\"include_untracked\":true}}"
+      "input": "Help me stash uncommitted changes and restore them later",
+      "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}"
     }
   ],
   "max_tokens": 256,

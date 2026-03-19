@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Full CRUD operations on notes. Tools: note. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Full CRUD operations on notes",
+      "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"Meeting Notes\", \"content\": \"Discussion points...\"}}"
+    },
+    {
+      "input": "Run note with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"Meeting Notes\", \"content\": \"Discussion points...\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"Meeting Notes\", \"content\": \"Discussion points...\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

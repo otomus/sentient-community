@@ -8,7 +8,9 @@
     "git",
     "version-control",
     "commit",
-    "stage"
+    "stage",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

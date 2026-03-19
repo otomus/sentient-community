@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Read from and create PowerPoint (.pptx) presentations. Tools: pptx.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Read from and create PowerPoint (.pptx) presentations",
+      "output": "{\"action\": \"call\", \"tool\": \"pptx\", \"args\": {\"path\": \"slides.pptx\"}}"
+    },
+    {
+      "input": "Run pptx with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"pptx\", \"args\": {\"path\": \"slides.pptx\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

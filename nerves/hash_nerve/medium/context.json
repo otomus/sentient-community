@@ -4,7 +4,7 @@
     {
       "input": "Hash 'hello world' with SHA-256",
       "output": {
-        "tool": "hash_compute",
+        "tool": "hash",
         "params": {
           "data": "hello world",
           "algorithm": "sha256"
@@ -14,7 +14,7 @@
     {
       "input": "Compute MD5 of 'test123'",
       "output": {
-        "tool": "hash_compute",
+        "tool": "hash",
         "params": {
           "data": "test123",
           "algorithm": "md5"
@@ -24,7 +24,7 @@
     {
       "input": "SHA-1 hash of 'password'",
       "output": {
-        "tool": "hash_compute",
+        "tool": "hash",
         "params": {
           "data": "password",
           "algorithm": "sha1"
@@ -34,7 +34,7 @@
     {
       "input": "Hash this string: 'my secret data'",
       "output": {
-        "tool": "hash_compute",
+        "tool": "hash",
         "params": {
           "data": "my secret data",
           "algorithm": "sha256"
@@ -44,7 +44,7 @@
     {
       "input": "Generate SHA-512 hash of 'important'",
       "output": {
-        "tool": "hash_compute",
+        "tool": "hash",
         "params": {
           "data": "important",
           "algorithm": "sha512"

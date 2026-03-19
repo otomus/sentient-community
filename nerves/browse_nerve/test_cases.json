@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Open a URL in a headless browser, render JavaScript, and extract the page content",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_open\", \"args\": {\"url\": \"https://example.com\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use browser text",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_text\", \"args\": {\"selector\": \"body\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use browser open with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_open\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run browser open with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_open\", \"args\": {\"url\": \"https://example.com\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"browser_open\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

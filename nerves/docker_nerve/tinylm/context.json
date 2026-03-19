@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Manage Docker containers and images. Tools: docker_run, docker_stop, docker_ps, docker_logs, docker_build, docker_pull, docker_exec.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Manage Docker containers and images",
+      "output": "{\"action\": \"call\", \"tool\": \"docker_run\", \"args\": {\"image\": \"nginx:latest\", \"ports\": {\"80\": \"8080\"}}}"
+    },
+    {
+      "input": "Use docker stop",
+      "output": "{\"action\": \"call\", \"tool\": \"docker_stop\", \"args\": {\"container\": \"my-container\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

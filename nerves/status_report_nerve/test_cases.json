@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Generate project status report",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"git_log\", \"args\": {\"limit\": 10}}",
+    "category": "core"
+  },
+  {
+    "input": "Use json tool",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use git log with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"git_log\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run git log with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"git_log\", \"args\": {\"limit\": 10}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"git_log\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

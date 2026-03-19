@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Read from and create Excel (.xlsx) spreadsheets",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {\"path\": \"data.xlsx\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run xlsx with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {\"path\": \"data.xlsx\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use xlsx with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run xlsx with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {\"path\": \"data.xlsx\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"xlsx\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

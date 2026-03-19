@@ -1,0 +1,25 @@
+{
+  "system_prompt": "List connected IoT devices and check their health and status. Tools: device. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "List connected IoT devices and check their health and status",
+      "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}"
+    },
+    {
+      "input": "Run device with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}"
+    },
+    {
+      "input": "Help me list connected iot devices and check their health and status",
+      "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

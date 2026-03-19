@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Create and verify a system backup. Tools: file_copy, db_query, json_tool.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Create and verify a system backup",
+      "output": "{\"action\": \"call\", \"tool\": \"file_copy\", \"args\": {\"source\": \"orig.txt\", \"destination\": \"copy.txt\"}}"
+    },
+    {
+      "input": "Use db query",
+      "output": "{\"action\": \"call\", \"tool\": \"db_query\", \"args\": {\"query\": \"SELECT * FROM users LIMIT 10\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

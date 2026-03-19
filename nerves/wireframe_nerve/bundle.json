@@ -1,30 +1,33 @@
 {
-    "name": "wireframe_nerve",
-    "version": "1.0.0",
-    "description": "Generate a wireframe description",
-    "role": "creative",
-    "mode": "reasoning",
-    "tags": [
-        "design",
-        "wireframe",
-        "ui"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "diagram_create",
-            "mcp": "diagram_create",
-            "implementations": {}
-        }
-    ]
+  "name": "wireframe_nerve",
+  "version": "1.0.0",
+  "description": "Generate a wireframe description",
+  "role": "creative",
+  "mode": "reasoning",
+  "tags": [
+    "design",
+    "wireframe",
+    "ui",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "diagram_create",
+      "implementations": {
+        "python": "mcp_tools/diagram_create/tool.py"
+      }
+    }
+  ]
 }

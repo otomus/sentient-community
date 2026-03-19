@@ -1,0 +1,32 @@
+[
+  {
+    "input": "List, focus, and resize windows",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"window\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run window with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"window\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use window with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"window\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run window with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"window\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"window\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

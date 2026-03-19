@@ -6,7 +6,9 @@
   "mode": "tool_required",
   "tags": [
     "web",
-    "domain"
+    "domain",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

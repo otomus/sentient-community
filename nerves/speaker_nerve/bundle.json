@@ -5,11 +5,11 @@
   "role": "nerve",
   "mode": "tool_required",
   "tags": [
-    "iot",
     "speaker",
     "audio",
     "playback",
-    "volume"
+    "volume",
+    "iot"
   ],
   "authors": [
     {
@@ -20,7 +20,9 @@
   "tools": [
     {
       "name": "speaker",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/speaker/tool.py"
+      }
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Control smart lights: on/off, brightness, and color. Tools: light. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Control smart lights: on/off, brightness, and color",
+      "output": "{\"action\": \"call\", \"tool\": \"light\", \"args\": {\"device_id\": \"light-01\", \"action\": \"on\"}}"
+    },
+    {
+      "input": "Run light with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"light\", \"args\": {\"device_id\": \"light-01\", \"action\": \"on\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"light\", \"args\": {\"device_id\": \"light-01\", \"action\": \"on\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

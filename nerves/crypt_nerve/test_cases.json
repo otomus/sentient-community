@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Encrypt and decrypt text",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"crypt\", \"args\": {\"data\": \"secret\", \"key\": \"mykey\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run crypt with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"crypt\", \"args\": {\"data\": \"secret\", \"key\": \"mykey\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use crypt with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"crypt\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run crypt with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"crypt\", \"args\": {\"data\": \"secret\", \"key\": \"mykey\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"crypt\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

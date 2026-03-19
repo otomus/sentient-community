@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Read from and create Microsoft Word (.docx) documents",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run docx with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use docx with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run docx with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docx\", \"args\": {\"path\": \"document.docx\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"docx\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

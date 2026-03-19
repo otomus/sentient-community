@@ -7,7 +7,9 @@
   "tags": [
     "data",
     "regex",
-    "text"
+    "text",
+    "desktop",
+    "server"
   ],
   "authors": [
     {
@@ -17,15 +19,9 @@
   "arqitect_version": ">=0.1.0",
   "tools": [
     {
-      "name": "regex_match",
+      "name": "regex",
       "implementations": {
-        "python": "mcp_tools/regex_match/tool.py"
-      }
-    },
-    {
-      "name": "regex_replace",
-      "implementations": {
-        "python": "mcp_tools/regex_replace/tool.py"
+        "python": "mcp_tools/regex/tool.py"
       }
     }
   ]

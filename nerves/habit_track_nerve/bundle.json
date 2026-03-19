@@ -1,35 +1,33 @@
 {
-    "name": "habit_track_nerve",
-    "version": "1.0.0",
-    "description": "Track a habit",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "self-improvement",
-        "habit",
-        "tracking"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "json_parse",
-            "mcp": "json_parse",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        },
-        {
-            "name": "file_write",
-            "mcp": "file_write",
-            "implementations": {}
-        }
-    ]
+  "name": "habit_track_nerve",
+  "version": "1.0.0",
+  "description": "Track a habit",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "self-improvement",
+    "habit",
+    "tracking",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "file_write",
+      "implementations": {
+        "python": "mcp_tools/file_write/tool.py"
+      }
+    }
+  ]
 }

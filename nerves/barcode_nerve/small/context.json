@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Generate and read barcodes. Tools: barcode. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Generate and read barcodes",
+      "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {\"image\": \"barcode.png\"}}"
+    },
+    {
+      "input": "Run barcode with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {\"image\": \"barcode.png\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {\"image\": \"barcode.png\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

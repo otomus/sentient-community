@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Generate a data report with charts. Tools: csv, math_eval, chart_create, pdf. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Generate a data report with charts",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use math eval",
+      "output": "{\"action\": \"call\", \"tool\": \"math_eval\", \"args\": {\"expression\": \"2 + 2 * 3\"}}"
+    },
+    {
+      "input": "Use chart create",
+      "output": "{\"action\": \"call\", \"tool\": \"chart_create\", \"args\": {\"type\": \"bar\", \"data\": [], \"title\": \"Chart\"}}"
+    },
+    {
+      "input": "Use pdf",
+      "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Run csv with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

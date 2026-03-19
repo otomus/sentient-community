@@ -8,7 +8,9 @@
     "audio",
     "convert",
     "format",
-    "transcode"
+    "transcode",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

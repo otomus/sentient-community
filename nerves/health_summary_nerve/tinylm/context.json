@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Summarize health metrics. Tools: sleep_tracker_read, json_tool, chart_create.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Summarize health metrics",
+      "output": "{\"action\": \"call\", \"tool\": \"sleep_tracker_read\", \"args\": {\"user_id\": \"user-01\", \"date\": \"2026-03-19\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

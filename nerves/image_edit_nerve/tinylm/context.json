@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Resize, crop, rotate, and convert image files. Tools: image_resize, image_crop, image_convert.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Resize, crop, rotate, and convert image files",
+      "output": "{\"action\": \"call\", \"tool\": \"image_resize\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use image crop",
+      "output": "{\"action\": \"call\", \"tool\": \"image_crop\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

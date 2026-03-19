@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Compose a polished email draft using AI and save it to a file",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use file write",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_write\", \"args\": {\"path\": \"output.txt\", \"content\": \"data\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use llm call with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run llm call with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"llm_call\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

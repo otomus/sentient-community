@@ -1,40 +1,45 @@
 {
-    "name": "lead_research_nerve",
-    "version": "1.0.0",
-    "description": "Research a potential lead/prospect",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "sales",
-        "research",
-        "leads"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "web_scrape",
-            "mcp": "web_scrape",
-            "implementations": {}
-        },
-        {
-            "name": "social_search",
-            "mcp": "social_search",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "lead_research_nerve",
+  "version": "1.0.0",
+  "description": "Research a potential lead/prospect",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "sales",
+    "research",
+    "leads",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "web_scrape",
+      "implementations": {
+        "python": "mcp_tools/web_scrape/tool.py"
+      }
+    },
+    {
+      "name": "social",
+      "implementations": {
+        "python": "mcp_tools/social/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

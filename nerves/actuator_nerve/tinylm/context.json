@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Send commands to and read state from any IoT actuator. Tools: actuator.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Send commands to and read state from any IoT actuator",
+      "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {\"device_id\": \"actuator-01\", \"action\": \"activate\"}}"
+    },
+    {
+      "input": "Run actuator with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {\"device_id\": \"actuator-01\", \"action\": \"activate\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

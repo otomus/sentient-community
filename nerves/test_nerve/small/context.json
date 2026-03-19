@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Run tests and report results. Tools: test_run. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Run tests and report results",
+      "output": "{\"action\": \"call\", \"tool\": \"test_run\", \"args\": {\"path\": \"tests/\"}}"
+    },
+    {
+      "input": "Run test run with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"test_run\", \"args\": {\"path\": \"tests/\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"test_run\", \"args\": {\"path\": \"tests/\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -1,25 +1,27 @@
 {
-    "name": "reflect_nerve",
-    "version": "1.0.0",
-    "description": "Generate a reflection prompt",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "self-improvement",
-        "reflection",
-        "mindfulness"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "reflect_nerve",
+  "version": "1.0.0",
+  "description": "Generate a reflection prompt",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "self-improvement",
+    "reflection",
+    "mindfulness",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

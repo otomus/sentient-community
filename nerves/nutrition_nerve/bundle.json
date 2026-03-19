@@ -1,35 +1,38 @@
 {
-    "name": "nutrition_nerve",
-    "version": "1.0.0",
-    "description": "Analyze nutrition intake",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "health",
-        "nutrition",
-        "analysis"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "math_eval",
-            "mcp": "math_eval",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "nutrition_nerve",
+  "version": "1.0.0",
+  "description": "Analyze nutrition intake",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "health",
+    "nutrition",
+    "analysis",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "math_eval",
+      "implementations": {
+        "python": "mcp_tools/math_eval/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

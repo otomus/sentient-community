@@ -1,26 +1,29 @@
 {
-    "name": "audio_synthesize_nerve",
-    "version": "1.0.0",
-    "description": "Generate spoken audio from text using text-to-speech synthesis",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "audio",
-        "tts",
-        "text-to-speech",
-        "synthesis"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "text_to_speech",
-            "mcp": "voice",
-            "implementations": {}
-        }
-    ]
+  "name": "audio_synthesize_nerve",
+  "version": "1.0.0",
+  "description": "Generate spoken audio from text using text-to-speech synthesis",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "audio",
+    "tts",
+    "text-to-speech",
+    "synthesis",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "audio_synthesize",
+      "implementations": {
+        "python": "mcp_tools/audio_synthesize/tool.py"
+      }
+    }
+  ]
 }

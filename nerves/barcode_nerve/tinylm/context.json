@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Generate and read barcodes. Tools: barcode.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Generate and read barcodes",
+      "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {\"image\": \"barcode.png\"}}"
+    },
+    {
+      "input": "Run barcode with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {\"image\": \"barcode.png\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

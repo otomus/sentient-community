@@ -6,7 +6,10 @@
   "mode": "reasoning",
   "tags": [
     "data",
-    "encoding"
+    "encoding",
+    "desktop",
+    "server",
+    "iot"
   ],
   "authors": [
     {
@@ -16,15 +19,9 @@
   "arqitect_version": ">=0.1.0",
   "tools": [
     {
-      "name": "base64_encode",
+      "name": "base64",
       "implementations": {
-        "python": "mcp_tools/base64_encode/tool.py"
-      }
-    },
-    {
-      "name": "base64_decode",
-      "implementations": {
-        "python": "mcp_tools/base64_decode/tool.py"
+        "python": "mcp_tools/base64/tool.py"
       }
     }
   ]

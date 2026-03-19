@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Log, categorize, and total individual expenses. Tools: json_tool, csv, math_eval. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Log, categorize, and total individual expenses",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    },
+    {
+      "input": "Use csv",
+      "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use math eval",
+      "output": "{\"action\": \"call\", \"tool\": \"math_eval\", \"args\": {\"expression\": \"2 + 2 * 3\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

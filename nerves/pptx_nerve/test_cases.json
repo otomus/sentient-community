@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Read from and create PowerPoint (.pptx) presentations",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pptx\", \"args\": {\"path\": \"slides.pptx\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run pptx with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pptx\", \"args\": {\"path\": \"slides.pptx\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use pptx with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pptx\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run pptx with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pptx\", \"args\": {\"path\": \"slides.pptx\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"pptx\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

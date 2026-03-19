@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Run, list, and kill system processes. Tools: process_run, process_list, process_kill.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Run, list, and kill system processes",
+      "output": "{\"action\": \"call\", \"tool\": \"process_run\", \"args\": {\"action\": \"list\"}}"
+    },
+    {
+      "input": "Use process list",
+      "output": "{\"action\": \"call\", \"tool\": \"process_list\", \"args\": {\"action\": \"list\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

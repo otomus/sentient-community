@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Install, search, and update packages",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pkg_install\", \"args\": {\"action\": \"list\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use pkg search",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pkg_search\", \"args\": {\"action\": \"list\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use pkg install with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pkg_install\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run pkg install with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pkg_install\", \"args\": {\"action\": \"list\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"pkg_install\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Find and create GIFs. Tools: gif_search, gif_create. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Find and create GIFs",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use gif create",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_create\", \"args\": {\"frames\": [], \"output\": \"animation.gif\"}}"
+    },
+    {
+      "input": "Run gif search with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

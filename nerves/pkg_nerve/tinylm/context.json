@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Install, search, and update packages. Tools: pkg_install, pkg_search, pkg_update, pkg_info, pkg_list.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Install, search, and update packages",
+      "output": "{\"action\": \"call\", \"tool\": \"pkg_install\", \"args\": {\"action\": \"list\"}}"
+    },
+    {
+      "input": "Use pkg search",
+      "output": "{\"action\": \"call\", \"tool\": \"pkg_search\", \"args\": {\"action\": \"list\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

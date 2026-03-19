@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Create, list, and complete reminders",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"reminder\", \"args\": {\"text\": \"Check email\", \"time\": \"2026-03-19T10:00:00\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run reminder with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"reminder\", \"args\": {\"text\": \"Check email\", \"time\": \"2026-03-19T10:00:00\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use reminder with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"reminder\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run reminder with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"reminder\", \"args\": {\"text\": \"Check email\", \"time\": \"2026-03-19T10:00:00\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"reminder\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

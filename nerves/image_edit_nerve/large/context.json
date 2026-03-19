@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Resize, crop, rotate, and convert image files. Available tools: image_resize, image_crop, image_convert. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Resize, crop, rotate, and convert image files",
+      "output": "{\"action\": \"call\", \"tool\": \"image_resize\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use image crop",
+      "output": "{\"action\": \"call\", \"tool\": \"image_crop\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use image convert",
+      "output": "{\"action\": \"call\", \"tool\": \"image_convert\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Run image resize with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"image_resize\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"image_resize\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

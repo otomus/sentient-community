@@ -3,7 +3,7 @@
     "input": "Hash 'abc' with SHA-256",
     "context": {},
     "output": {
-      "tool": "hash_compute",
+      "tool": "hash",
       "params": {
         "data": "abc",
         "algorithm": "sha256"
@@ -15,7 +15,7 @@
     "input": "MD5 of 'hello'",
     "context": {},
     "output": {
-      "tool": "hash_compute",
+      "tool": "hash",
       "params": {
         "data": "hello",
         "algorithm": "md5"

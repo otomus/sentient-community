@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Create and verify a system backup. Tools: file_copy, db_query, json_tool. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Create and verify a system backup",
+      "output": "{\"action\": \"call\", \"tool\": \"file_copy\", \"args\": {\"source\": \"orig.txt\", \"destination\": \"copy.txt\"}}"
+    },
+    {
+      "input": "Use db query",
+      "output": "{\"action\": \"call\", \"tool\": \"db_query\", \"args\": {\"query\": \"SELECT * FROM users LIMIT 10\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

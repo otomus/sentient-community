@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Summarize health metrics. Tools: sleep_tracker_read, json_tool, chart_create. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Summarize health metrics",
+      "output": "{\"action\": \"call\", \"tool\": \"sleep_tracker_read\", \"args\": {\"user_id\": \"user-01\", \"date\": \"2026-03-19\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    },
+    {
+      "input": "Use chart create",
+      "output": "{\"action\": \"call\", \"tool\": \"chart_create\", \"args\": {\"type\": \"bar\", \"data\": [], \"title\": \"Chart\"}}"
+    },
+    {
+      "input": "Run sleep tracker read with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"sleep_tracker_read\", \"args\": {\"user_id\": \"user-01\", \"date\": \"2026-03-19\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"sleep_tracker_read\", \"args\": {\"user_id\": \"user-01\", \"date\": \"2026-03-19\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

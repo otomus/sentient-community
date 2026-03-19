@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Check software license compatibility",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {\"path\": \".\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use web search",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use code deps with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run code deps with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {\"path\": \".\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"code_deps\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

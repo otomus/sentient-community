@@ -8,7 +8,9 @@
     "file",
     "comparison",
     "diff",
-    "delta"
+    "delta",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

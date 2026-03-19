@@ -8,7 +8,9 @@
     "video",
     "trim",
     "cut",
-    "edit"
+    "edit",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

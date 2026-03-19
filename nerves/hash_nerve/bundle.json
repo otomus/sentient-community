@@ -7,7 +7,10 @@
   "tags": [
     "data",
     "hash",
-    "security"
+    "security",
+    "desktop",
+    "server",
+    "iot"
   ],
   "authors": [
     {
@@ -19,7 +22,7 @@
     {
       "name": "hash",
       "implementations": {
-        "python": "mcp_tools/hash_compute/tool.py"
+        "python": "mcp_tools/hash/tool.py"
       }
     }
   ]

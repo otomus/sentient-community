@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Run, list, and kill system processes. Tools: process_run, process_list, process_kill. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Run, list, and kill system processes",
+      "output": "{\"action\": \"call\", \"tool\": \"process_run\", \"args\": {\"action\": \"list\"}}"
+    },
+    {
+      "input": "Use process list",
+      "output": "{\"action\": \"call\", \"tool\": \"process_list\", \"args\": {\"action\": \"list\"}}"
+    },
+    {
+      "input": "Use process kill",
+      "output": "{\"action\": \"call\", \"tool\": \"process_kill\", \"args\": {\"action\": \"list\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

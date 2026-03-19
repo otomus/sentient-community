@@ -1,27 +1,31 @@
 {
-    "name": "image_generate_nerve",
-    "version": "1.0.0",
-    "description": "Generate new images from text descriptions using AI image models",
-    "role": "creative",
-    "mode": "tool_required",
-    "tags": [
-        "image",
-        "generate",
-        "ai",
-        "dall-e",
-        "creative"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "generate_image",
-            "mcp": "image_gen",
-            "implementations": {}
-        }
-    ]
+  "name": "image_generate_nerve",
+  "version": "1.0.0",
+  "description": "Generate new images from text descriptions using AI image models",
+  "role": "creative",
+  "mode": "tool_required",
+  "tags": [
+    "image",
+    "generate",
+    "ai",
+    "dall-e",
+    "creative",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "image_generate",
+      "mcp": "image_gen",
+      "implementations": {
+        "python": "mcp_tools/image_generate/tool.py"
+      }
+    }
+  ]
 }

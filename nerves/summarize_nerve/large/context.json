@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Summarize a document or URL. Available tools: web_scrape, pdf, llm_call. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Summarize a document or URL",
+      "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {\"url\": \"https://example.com\"}}"
+    },
+    {
+      "input": "Use pdf",
+      "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}"
+    },
+    {
+      "input": "Run web scrape with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {\"url\": \"https://example.com\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {\"url\": \"https://example.com\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

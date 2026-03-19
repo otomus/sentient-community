@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Find answer from FAQ/knowledge base. Tools: file_grep, embedding, llm_call.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Find answer from FAQ/knowledge base",
+      "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"pattern\": \"TODO\", \"path\": \"src/\"}}"
+    },
+    {
+      "input": "Use embedding",
+      "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

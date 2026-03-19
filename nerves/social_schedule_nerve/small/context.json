@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Draft social media content using AI and schedule it for future publication. Tools: llm_call, social. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Draft social media content using AI and schedule it for future publication",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}"
+    },
+    {
+      "input": "Use social",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"action\": \"post\", \"content\": \"Hello world\"}}"
+    },
+    {
+      "input": "Run llm call with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

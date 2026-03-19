@@ -1,0 +1,32 @@
+[
+  {
+    "input": "List connected IoT devices and check their health and status",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run device with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use device with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run device with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"device\", \"args\": {\"device_id\": \"device-01\", \"action\": \"status\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"device\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

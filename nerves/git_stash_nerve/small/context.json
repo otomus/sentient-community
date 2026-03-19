@@ -1,17 +1,17 @@
 {
-  "system_prompt": "You are a focused nerve that stash or restore work in progress. Available tools: git_stash, git_stash_pop, git_status. Always respond with a JSON object containing action, tool, and args fields. Choose the most appropriate tool for each request.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "system_prompt": "Stash uncommitted changes and restore them later. Tools: git_stash, git_status. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
   "few_shot_examples": [
     {
-      "input": "Stash my current changes",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash\",\"args\":{}}"
+      "input": "Stash uncommitted changes and restore them later",
+      "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}"
     },
     {
-      "input": "Pop the last stash",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash_pop\",\"args\":{}}"
+      "input": "Use git status",
+      "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}"
     },
     {
-      "input": "Stash with a message",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash\",\"args\":{\"message\":\"WIP: auth refactor\"}}"
+      "input": "Run git stash with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}"
     }
   ],
   "max_tokens": 256,

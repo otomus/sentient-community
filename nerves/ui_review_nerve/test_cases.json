@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Review a UI design for usability",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_screenshot\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use image to text",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"image_to_text\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use browser screenshot with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_screenshot\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run browser screenshot with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_screenshot\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"browser_screenshot\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

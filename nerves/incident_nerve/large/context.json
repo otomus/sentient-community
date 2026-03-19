@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Investigate and triage an incident. Available tools: log, docker_logs, process_list, alert_send. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Investigate and triage an incident",
+      "output": "{\"action\": \"call\", \"tool\": \"log\", \"args\": {\"path\": \"/var/log/app.log\", \"lines\": 100}}"
+    },
+    {
+      "input": "Use docker logs",
+      "output": "{\"action\": \"call\", \"tool\": \"docker_logs\", \"args\": {\"container\": \"my-container\"}}"
+    },
+    {
+      "input": "Use process list",
+      "output": "{\"action\": \"call\", \"tool\": \"process_list\", \"args\": {}}"
+    },
+    {
+      "input": "Use alert send",
+      "output": "{\"action\": \"call\", \"tool\": \"alert_send\", \"args\": {\"message\": \"Deployment complete\", \"channel\": \"ops\"}}"
+    },
+    {
+      "input": "Run log with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"log\", \"args\": {\"path\": \"/var/log/app.log\", \"lines\": 100}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -4,14 +4,14 @@
     {
       "input": "What time is it now?",
       "output": {
-        "tool": "timestamp_now",
+        "tool": "get_current_time",
         "params": {}
       }
     },
     {
       "input": "Convert 1700000000 to a readable date",
       "output": {
-        "tool": "timestamp_convert",
+        "tool": "convert_timezone",
         "params": {
           "timestamp": 1700000000,
           "format": "iso8601"
@@ -21,14 +21,14 @@
     {
       "input": "Get current Unix timestamp",
       "output": {
-        "tool": "timestamp_now",
+        "tool": "get_current_time",
         "params": {}
       }
     },
     {
       "input": "Convert 2024-01-15T10:30:00Z to Unix timestamp",
       "output": {
-        "tool": "timestamp_convert",
+        "tool": "convert_timezone",
         "params": {
           "timestamp": "2024-01-15T10:30:00Z",
           "format": "unix"
@@ -38,7 +38,7 @@
     {
       "input": "What is epoch 1609459200 in human readable format?",
       "output": {
-        "tool": "timestamp_convert",
+        "tool": "convert_timezone",
         "params": {
           "timestamp": 1609459200,
           "format": "iso8601"

@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Create ad copy and targeting. Tools: web_search, llm_call, image_generate. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Create ad copy and targeting",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use image generate",
+      "output": "{\"action\": \"call\", \"tool\": \"image_generate\", \"args\": {\"prompt\": \"a sunset over mountains\"}}"
+    },
+    {
+      "input": "Run web search with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

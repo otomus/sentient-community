@@ -1,35 +1,40 @@
 {
-    "name": "grade_nerve",
-    "version": "1.0.0",
-    "description": "Grade a submission against criteria",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "education",
-        "grading",
-        "assessment"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "file_read",
-            "mcp": "file_read",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "grade_nerve",
+  "version": "1.0.0",
+  "description": "Grade a submission against criteria",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "education",
+    "grading",
+    "assessment",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "file_read",
+      "implementations": {
+        "python": "mcp_tools/file_read/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

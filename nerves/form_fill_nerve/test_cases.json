@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Fill and submit a web form",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_open\", \"args\": {\"url\": \"https://example.com\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use browser fill",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_fill\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use browser open with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_open\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run browser open with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"browser_open\", \"args\": {\"url\": \"https://example.com\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"browser_open\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

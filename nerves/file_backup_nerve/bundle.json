@@ -8,7 +8,9 @@
     "file",
     "backup",
     "copy",
-    "archive"
+    "archive",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

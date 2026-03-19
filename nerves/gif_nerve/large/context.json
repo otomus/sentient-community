@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Find and create GIFs. Available tools: gif_search, gif_create. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Find and create GIFs",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use gif create",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_create\", \"args\": {\"frames\": [], \"output\": \"animation.gif\"}}"
+    },
+    {
+      "input": "Run gif search with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Help me find and create gifs",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -8,7 +8,10 @@
     "communication",
     "sms",
     "text-message",
-    "send"
+    "send",
+    "desktop",
+    "server",
+    "iot"
   ],
   "authors": [
     {

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Review investment portfolio allocation, returns, and rebalancing suggestions",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\", \"operation\": \"quote\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use chart create",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"chart_create\", \"args\": {\"type\": \"bar\", \"data\": [], \"title\": \"Chart\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use stock with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run stock with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\", \"operation\": \"quote\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"stock\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Summarize a document or URL",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {\"url\": \"https://example.com\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use pdf",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use web scrape with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run web scrape with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {\"url\": \"https://example.com\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"web_scrape\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

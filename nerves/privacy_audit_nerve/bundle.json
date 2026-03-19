@@ -1,35 +1,40 @@
 {
-    "name": "privacy_audit_nerve",
-    "version": "1.0.0",
-    "description": "Audit for privacy/data concerns",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "legal",
-        "privacy",
-        "audit"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "file_grep",
-            "mcp": "file_grep",
-            "implementations": {}
-        },
-        {
-            "name": "code_analyze",
-            "mcp": "code_analyze",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "privacy_audit_nerve",
+  "version": "1.0.0",
+  "description": "Audit for privacy/data concerns",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "legal",
+    "privacy",
+    "audit",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "file_grep",
+      "implementations": {
+        "python": "mcp_tools/file_grep/tool.py"
+      }
+    },
+    {
+      "name": "code_analyze",
+      "implementations": {
+        "python": "mcp_tools/code_analyze/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

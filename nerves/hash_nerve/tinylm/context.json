@@ -4,7 +4,7 @@
     {
       "input": "Hash 'hello world' with SHA-256",
       "output": {
-        "tool": "hash_compute",
+        "tool": "hash",
         "params": {
           "data": "hello world",
           "algorithm": "sha256"
@@ -14,7 +14,7 @@
     {
       "input": "Compute MD5 of 'test123'",
       "output": {
-        "tool": "hash_compute",
+        "tool": "hash",
         "params": {
           "data": "test123",
           "algorithm": "md5"

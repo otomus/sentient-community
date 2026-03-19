@@ -1,35 +1,40 @@
 {
-    "name": "proofread_nerve",
-    "version": "1.0.0",
-    "description": "Review and correct text",
-    "role": "communication",
-    "mode": "reasoning",
-    "tags": [
-        "writing",
-        "proofread",
-        "editing"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "file_read",
-            "mcp": "file_read",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "file_write",
-            "mcp": "file_write",
-            "implementations": {}
-        }
-    ]
+  "name": "proofread_nerve",
+  "version": "1.0.0",
+  "description": "Review and correct text",
+  "role": "communication",
+  "mode": "reasoning",
+  "tags": [
+    "writing",
+    "proofread",
+    "editing",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "file_read",
+      "implementations": {
+        "python": "mcp_tools/file_read/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "file_write",
+      "implementations": {
+        "python": "mcp_tools/file_write/tool.py"
+      }
+    }
+  ]
 }

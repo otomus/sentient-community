@@ -5,11 +5,11 @@
   "role": "tool",
   "mode": "tool_required",
   "tags": [
-    "iot",
     "lock",
     "door",
     "smart-home",
-    "security"
+    "security",
+    "iot"
   ],
   "authors": [
     {

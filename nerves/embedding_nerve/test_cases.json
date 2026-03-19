@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Create and search embeddings",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run embedding with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use embedding with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run embedding with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"embedding\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

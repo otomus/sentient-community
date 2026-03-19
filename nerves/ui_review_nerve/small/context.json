@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Review a UI design for usability. Tools: browser_screenshot, image_to_text, llm_call. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Review a UI design for usability",
+      "output": "{\"action\": \"call\", \"tool\": \"browser_screenshot\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use image to text",
+      "output": "{\"action\": \"call\", \"tool\": \"image_to_text\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

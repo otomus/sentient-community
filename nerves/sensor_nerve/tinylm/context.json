@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Read values from IoT sensors and list all available sensors. Tools: sensor.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Read values from IoT sensors and list all available sensors",
+      "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {\"device_id\": \"sensor-01\", \"action\": \"read\"}}"
+    },
+    {
+      "input": "Run sensor with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {\"device_id\": \"sensor-01\", \"action\": \"read\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

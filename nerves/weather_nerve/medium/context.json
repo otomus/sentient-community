@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Get current weather and forecasts. Tools: weather. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Get current weather and forecasts",
+      "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}"
+    },
+    {
+      "input": "Run weather with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}"
+    },
+    {
+      "input": "Help me get current weather and forecasts",
+      "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

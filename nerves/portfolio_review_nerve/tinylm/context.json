@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Review investment portfolio allocation, returns, and rebalancing suggestions. Tools: stock, chart_create.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Review investment portfolio allocation, returns, and rebalancing suggestions",
+      "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\", \"operation\": \"quote\"}}"
+    },
+    {
+      "input": "Use chart create",
+      "output": "{\"action\": \"call\", \"tool\": \"chart_create\", \"args\": {\"type\": \"bar\", \"data\": [], \"title\": \"Chart\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

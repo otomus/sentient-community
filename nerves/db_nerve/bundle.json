@@ -6,7 +6,8 @@
   "mode": "tool_required",
   "tags": [
     "database",
-    "sql"
+    "sql",
+    "server"
   ],
   "authors": [
     {

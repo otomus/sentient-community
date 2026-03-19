@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Create and verify a system backup",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_copy\", \"args\": {\"source\": \"orig.txt\", \"destination\": \"copy.txt\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use db query",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"db_query\", \"args\": {\"query\": \"SELECT * FROM users LIMIT 10\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use file copy with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_copy\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run file copy with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_copy\", \"args\": {\"source\": \"orig.txt\", \"destination\": \"copy.txt\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"file_copy\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

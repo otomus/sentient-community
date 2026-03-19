@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Audit infrastructure health. Tools: docker_ps, process_list, port_scan, json_tool. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Audit infrastructure health",
+      "output": "{\"action\": \"call\", \"tool\": \"docker_ps\", \"args\": {}}"
+    },
+    {
+      "input": "Use process list",
+      "output": "{\"action\": \"call\", \"tool\": \"process_list\", \"args\": {}}"
+    },
+    {
+      "input": "Use port scan",
+      "output": "{\"action\": \"call\", \"tool\": \"port_scan\", \"args\": {\"host\": \"192.168.1.1\", \"ports\": \"1-1024\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

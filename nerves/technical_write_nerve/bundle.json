@@ -1,40 +1,46 @@
 {
-    "name": "technical_write_nerve",
-    "version": "1.0.0",
-    "description": "Write technical documentation",
-    "role": "code",
-    "mode": "reasoning",
-    "tags": [
-        "writing",
-        "technical",
-        "documentation"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "file_read",
-            "mcp": "file_read",
-            "implementations": {}
-        },
-        {
-            "name": "code_analyze",
-            "mcp": "code_analyze",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "file_write",
-            "mcp": "file_write",
-            "implementations": {}
-        }
-    ]
+  "name": "technical_write_nerve",
+  "version": "1.0.0",
+  "description": "Write technical documentation",
+  "role": "code",
+  "mode": "reasoning",
+  "tags": [
+    "writing",
+    "technical",
+    "documentation",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "file_read",
+      "implementations": {
+        "python": "mcp_tools/file_read/tool.py"
+      }
+    },
+    {
+      "name": "code_analyze",
+      "implementations": {
+        "python": "mcp_tools/code_analyze/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "file_write",
+      "implementations": {
+        "python": "mcp_tools/file_write/tool.py"
+      }
+    }
+  ]
 }

@@ -6,7 +6,8 @@
   "mode": "tool_required",
   "tags": [
     "package",
-    "dependencies"
+    "dependencies",
+    "server"
   ],
   "authors": [
     {

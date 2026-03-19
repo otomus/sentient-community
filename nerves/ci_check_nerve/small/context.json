@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Check CI/CD pipeline status. Tools: http_get, json_tool, alert_send. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Check CI/CD pipeline status",
+      "output": "{\"action\": \"call\", \"tool\": \"http_get\", \"args\": {\"url\": \"https://api.example.com/status\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    },
+    {
+      "input": "Use alert send",
+      "output": "{\"action\": \"call\", \"tool\": \"alert_send\", \"args\": {\"message\": \"Deployment complete\", \"channel\": \"ops\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

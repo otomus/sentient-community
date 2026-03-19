@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Research a topic thoroughly and produce a report. Tools: web_search, web_scrape, pdf, note. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Research a topic thoroughly and produce a report",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    },
+    {
+      "input": "Use web scrape",
+      "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {\"url\": \"https://example.com\"}}"
+    },
+    {
+      "input": "Use pdf",
+      "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\", \"operation\": \"read\"}}"
+    },
+    {
+      "input": "Use note",
+      "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"My Note\", \"content\": \"Note content\"}}"
+    },
+    {
+      "input": "Run web search with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

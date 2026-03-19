@@ -1,40 +1,46 @@
 {
-    "name": "status_report_nerve",
-    "version": "1.0.0",
-    "description": "Generate project status report",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "project-management",
-        "status",
-        "reporting"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "git_log",
-            "mcp": "git_log",
-            "implementations": {}
-        },
-        {
-            "name": "json_parse",
-            "mcp": "json_parse",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "file_write",
-            "mcp": "file_write",
-            "implementations": {}
-        }
-    ]
+  "name": "status_report_nerve",
+  "version": "1.0.0",
+  "description": "Generate project status report",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "project-management",
+    "status",
+    "reporting",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "git_log",
+      "implementations": {
+        "python": "mcp_tools/git_log/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "file_write",
+      "implementations": {
+        "python": "mcp_tools/file_write/tool.py"
+      }
+    }
+  ]
 }

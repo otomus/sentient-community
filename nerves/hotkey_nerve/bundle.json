@@ -5,11 +5,11 @@
   "role": "tool",
   "mode": "reasoning",
   "tags": [
-    "desktop",
     "keyboard",
     "shortcut",
     "hotkey",
-    "input"
+    "input",
+    "desktop"
   ],
   "authors": [
     {

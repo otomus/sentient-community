@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Create, list, and cancel scheduled tasks. Tools: cron_create, cron_list, cron_delete.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Create, list, and cancel scheduled tasks",
+      "output": "{\"action\": \"call\", \"tool\": \"cron_create\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use cron list",
+      "output": "{\"action\": \"call\", \"tool\": \"cron_list\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

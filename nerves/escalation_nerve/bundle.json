@@ -1,30 +1,33 @@
 {
-    "name": "escalation_nerve",
-    "version": "1.0.0",
-    "description": "Determine if a ticket needs escalation",
-    "role": "communication",
-    "mode": "reasoning",
-    "tags": [
-        "support",
-        "escalation",
-        "triage"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "json_parse",
-            "mcp": "json_parse",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "escalation_nerve",
+  "version": "1.0.0",
+  "description": "Determine if a ticket needs escalation",
+  "role": "communication",
+  "mode": "reasoning",
+  "tags": [
+    "support",
+    "escalation",
+    "triage",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

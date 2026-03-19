@@ -8,7 +8,9 @@
     "git",
     "version-control",
     "rebase",
-    "replay"
+    "replay",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

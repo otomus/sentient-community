@@ -3,7 +3,7 @@
     "input": "Encode 'test' in base64",
     "context": {},
     "output": {
-      "tool": "base64_encode",
+      "tool": "base64",
       "params": {
         "data": "test"
       }
@@ -14,7 +14,7 @@
     "input": "Decode dGVzdA== from base64",
     "context": {},
     "output": {
-      "tool": "base64_decode",
+      "tool": "base64",
       "params": {
         "data": "dGVzdA=="
       }
@@ -25,7 +25,7 @@
     "input": "Base64 encode an empty string",
     "context": {},
     "output": {
-      "tool": "base64_encode",
+      "tool": "base64",
       "params": {
         "data": ""
       }

@@ -1,27 +1,28 @@
 {
-    "name": "image_capture_nerve",
-    "version": "1.0.0",
-    "description": "Capture a screenshot of the current desktop screen",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "image",
-        "screenshot",
-        "desktop",
-        "capture",
-        "screen"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "capture_screen",
-            "mcp": "peekaboo",
-            "implementations": {}
-        }
-    ]
+  "name": "image_capture_nerve",
+  "version": "1.0.0",
+  "description": "Capture a screenshot of the current desktop screen",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "image",
+    "screenshot",
+    "capture",
+    "screen",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "screen_capture",
+      "implementations": {
+        "python": "mcp_tools/screen_capture/tool.py"
+      }
+    }
+  ]
 }

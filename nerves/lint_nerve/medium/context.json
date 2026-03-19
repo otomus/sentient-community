@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Lint source files and report issues. Tools: code_lint. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Lint source files and report issues",
+      "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {\"path\": \"src/\"}}"
+    },
+    {
+      "input": "Run code lint with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {\"path\": \"src/\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {\"path\": \"src/\"}}"
+    },
+    {
+      "input": "Help me lint source files and report issues",
+      "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {\"path\": \"src/\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

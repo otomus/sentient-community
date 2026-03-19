@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Full CRUD operations on notes. Tools: note.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Full CRUD operations on notes",
+      "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"Meeting Notes\", \"content\": \"Discussion points...\"}}"
+    },
+    {
+      "input": "Run note with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"Meeting Notes\", \"content\": \"Discussion points...\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

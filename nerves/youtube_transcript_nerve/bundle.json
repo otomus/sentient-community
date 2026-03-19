@@ -1,26 +1,30 @@
 {
-    "name": "youtube_transcript_nerve",
-    "version": "1.0.0",
-    "description": "Download the text transcript or captions from a YouTube video",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "youtube",
-        "transcript",
-        "captions",
-        "subtitles"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "youtube_info",
-            "mcp": "youtube_transcript",
-            "implementations": {}
-        }
-    ]
+  "name": "youtube_transcript_nerve",
+  "version": "1.0.0",
+  "description": "Download the text transcript or captions from a YouTube video",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "youtube",
+    "transcript",
+    "captions",
+    "subtitles",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "youtube_transcript",
+      "mcp": "youtube_transcript",
+      "implementations": {
+        "python": "mcp_tools/youtube_transcript/tool.py"
+      }
+    }
+  ]
 }

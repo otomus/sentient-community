@@ -9,7 +9,9 @@
     "search",
     "glob",
     "grep",
-    "find"
+    "find",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

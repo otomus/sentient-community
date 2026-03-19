@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Write technical documentation. Available tools: file_read, code_analyze, llm_call, file_write. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Write technical documentation",
+      "output": "{\"action\": \"call\", \"tool\": \"file_read\", \"args\": {\"path\": \"example.txt\"}}"
+    },
+    {
+      "input": "Use code analyze",
+      "output": "{\"action\": \"call\", \"tool\": \"code_analyze\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use file write",
+      "output": "{\"action\": \"call\", \"tool\": \"file_write\", \"args\": {\"path\": \"output.txt\", \"content\": \"data\"}}"
+    },
+    {
+      "input": "Run file read with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"file_read\", \"args\": {\"path\": \"example.txt\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Generate test coverage report",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"coverage_report\", \"args\": {\"path\": \".\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run coverage report with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"coverage_report\", \"args\": {\"path\": \".\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use coverage report with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"coverage_report\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run coverage report with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"coverage_report\", \"args\": {\"path\": \".\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"coverage_report\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

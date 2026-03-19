@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Create, list, and cancel scheduled tasks",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"cron_create\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use cron list",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"cron_list\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use cron create with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"cron_create\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run cron create with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"cron_create\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"cron_create\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

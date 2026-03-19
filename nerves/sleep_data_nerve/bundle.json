@@ -1,27 +1,28 @@
 {
-    "name": "sleep_data_nerve",
-    "version": "1.0.0",
-    "description": "Read sleep tracking data from a connected sleep device like Eight Sleep",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "iot",
-        "health",
-        "sleep",
-        "tracker",
-        "eight-sleep"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "get_sleep_data",
-            "mcp": "eight_sleep",
-            "implementations": {}
-        }
-    ]
+  "name": "sleep_data_nerve",
+  "version": "1.0.0",
+  "description": "Read sleep tracking data from a connected sleep device like Eight Sleep",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "health",
+    "sleep",
+    "tracker",
+    "eight-sleep",
+    "iot"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "sleep_tracker_read",
+      "implementations": {
+        "python": "mcp_tools/sleep_tracker_read/tool.py"
+      }
+    }
+  ]
 }

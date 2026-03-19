@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Draft social media content using AI and schedule it for future publication. Tools: llm_call, social.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Draft social media content using AI and schedule it for future publication",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"prompt\": \"Explain this concept\", \"model\": \"default\"}}"
+    },
+    {
+      "input": "Use social",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"action\": \"post\", \"content\": \"Hello world\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

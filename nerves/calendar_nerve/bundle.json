@@ -6,7 +6,9 @@
   "mode": "tool_required",
   "tags": [
     "calendar",
-    "productivity"
+    "productivity",
+    "desktop",
+    "server"
   ],
   "authors": [
     {
@@ -17,7 +19,9 @@
   "tools": [
     {
       "name": "calendar",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/calendar/tool.py"
+      }
     }
   ]
 }

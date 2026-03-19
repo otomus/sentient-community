@@ -1,13 +1,13 @@
 {
-  "system_prompt": "You handle: stash or restore work in progress. Use tools: git_stash, git_stash_pop, git_status. Return JSON with action, tool, args.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "system_prompt": "Stash uncommitted changes and restore them later. Tools: git_stash, git_status.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
   "few_shot_examples": [
     {
-      "input": "Stash my current changes",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash\",\"args\":{}}"
+      "input": "Stash uncommitted changes and restore them later",
+      "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}"
     },
     {
-      "input": "Pop the last stash",
-      "output": "{\"action\":\"call\",\"tool\":\"git_stash_pop\",\"args\":{}}"
+      "input": "Use git status",
+      "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}"
     }
   ],
   "max_tokens": 256,

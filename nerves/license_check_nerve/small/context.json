@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Check software license compatibility. Tools: code_deps, web_search, json_tool. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Check software license compatibility",
+      "output": "{\"action\": \"call\", \"tool\": \"code_deps\", \"args\": {\"path\": \".\"}}"
+    },
+    {
+      "input": "Use web search",
+      "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}"
+    },
+    {
+      "input": "Use json tool",
+      "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -7,7 +7,10 @@
   "tags": [
     "translate",
     "language",
-    "text"
+    "text",
+    "desktop",
+    "server",
+    "iot"
   ],
   "authors": [
     {

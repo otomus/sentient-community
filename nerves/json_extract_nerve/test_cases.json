@@ -3,7 +3,7 @@
     "input": "Parse {\"key\":\"value\"}",
     "context": {},
     "output": {
-      "tool": "json_parse",
+      "tool": "json_tool",
       "params": {
         "data": "{\"key\":\"value\"}"
       }
@@ -14,7 +14,7 @@
     "input": "Get the 'id' from {\"id\":42,\"name\":\"Test\"}",
     "context": {},
     "output": {
-      "tool": "json_query",
+      "tool": "json_tool",
       "params": {
         "data": {
           "id": 42,
@@ -29,7 +29,7 @@
     "input": "Parse this: not-valid-json",
     "context": {},
     "output": {
-      "tool": "json_parse",
+      "tool": "json_tool",
       "params": {
         "data": "not-valid-json"
       }

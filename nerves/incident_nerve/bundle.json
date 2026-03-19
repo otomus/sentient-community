@@ -1,40 +1,45 @@
 {
-    "name": "incident_nerve",
-    "version": "1.0.0",
-    "description": "Investigate and triage an incident",
-    "role": "code",
-    "mode": "tool_required",
-    "tags": [
-        "devops",
-        "incident",
-        "triage"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "log_read",
-            "mcp": "log_read",
-            "implementations": {}
-        },
-        {
-            "name": "docker_logs",
-            "mcp": "docker_logs",
-            "implementations": {}
-        },
-        {
-            "name": "process_list",
-            "mcp": "process_list",
-            "implementations": {}
-        },
-        {
-            "name": "alert_send",
-            "mcp": "alert_send",
-            "implementations": {}
-        }
-    ]
+  "name": "incident_nerve",
+  "version": "1.0.0",
+  "description": "Investigate and triage an incident",
+  "role": "code",
+  "mode": "tool_required",
+  "tags": [
+    "devops",
+    "incident",
+    "triage",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "log",
+      "implementations": {
+        "python": "mcp_tools/log/tool.py"
+      }
+    },
+    {
+      "name": "docker_logs",
+      "implementations": {
+        "python": "mcp_tools/docker_logs/tool.py"
+      }
+    },
+    {
+      "name": "process_list",
+      "implementations": {
+        "python": "mcp_tools/process_list/tool.py"
+      }
+    },
+    {
+      "name": "alert_send",
+      "implementations": {
+        "python": "mcp_tools/alert_send/tool.py"
+      }
+    }
+  ]
 }

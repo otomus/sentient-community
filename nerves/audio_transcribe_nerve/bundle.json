@@ -1,26 +1,29 @@
 {
-    "name": "audio_transcribe_nerve",
-    "version": "1.0.0",
-    "description": "Transcribe speech from an audio file to text using speech recognition",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "audio",
-        "transcribe",
-        "speech-to-text",
-        "asr"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "voice_recognition",
-            "mcp": "voice",
-            "implementations": {}
-        }
-    ]
+  "name": "audio_transcribe_nerve",
+  "version": "1.0.0",
+  "description": "Transcribe speech from an audio file to text using speech recognition",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "audio",
+    "transcribe",
+    "speech-to-text",
+    "asr",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "audio_transcribe",
+      "implementations": {
+        "python": "mcp_tools/audio_transcribe/tool.py"
+      }
+    }
+  ]
 }

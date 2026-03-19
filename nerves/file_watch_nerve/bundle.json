@@ -9,7 +9,9 @@
     "monitoring",
     "watch",
     "events",
-    "inotify"
+    "inotify",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

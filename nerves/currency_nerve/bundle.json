@@ -9,7 +9,10 @@
     "currency",
     "exchange-rate",
     "forex",
-    "convert"
+    "convert",
+    "desktop",
+    "server",
+    "iot"
   ],
   "authors": [
     {
@@ -20,7 +23,9 @@
   "tools": [
     {
       "name": "currency",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/currency/tool.py"
+      }
     }
   ]
 }

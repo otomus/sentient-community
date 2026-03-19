@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Read from and write to the clipboard",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"clipboard\", \"args\": {}}",
+    "category": "core"
+  },
+  {
+    "input": "Run clipboard with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"clipboard\", \"args\": {}}",
+    "category": "core"
+  },
+  {
+    "input": "Use clipboard with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"clipboard\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run clipboard with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"clipboard\", \"args\": {}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"clipboard\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

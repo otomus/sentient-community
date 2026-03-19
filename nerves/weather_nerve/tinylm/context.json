@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Get current weather and forecasts. Tools: weather.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Get current weather and forecasts",
+      "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}"
+    },
+    {
+      "input": "Run weather with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"weather\", \"args\": {\"location\": \"New York\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

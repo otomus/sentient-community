@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Manage Docker containers and images",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_run\", \"args\": {\"image\": \"nginx:latest\", \"ports\": {\"80\": \"8080\"}}}",
+    "category": "core"
+  },
+  {
+    "input": "Use docker stop",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_stop\", \"args\": {\"container\": \"my-container\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use docker run with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_run\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run docker run with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_run\", \"args\": {\"image\": \"nginx:latest\", \"ports\": {\"80\": \"8080\"}}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"docker_run\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

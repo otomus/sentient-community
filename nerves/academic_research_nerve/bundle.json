@@ -1,40 +1,45 @@
 {
-    "name": "academic_research_nerve",
-    "version": "1.0.0",
-    "description": "Find and summarize academic papers on a topic",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "research",
-        "academic",
-        "papers"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "web_scrape",
-            "mcp": "web_scrape",
-            "implementations": {}
-        },
-        {
-            "name": "pdf_read",
-            "mcp": "pdf_read",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "academic_research_nerve",
+  "version": "1.0.0",
+  "description": "Find and summarize academic papers on a topic",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "research",
+    "academic",
+    "papers",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "web_scrape",
+      "implementations": {
+        "python": "mcp_tools/web_scrape/tool.py"
+      }
+    },
+    {
+      "name": "pdf",
+      "implementations": {
+        "python": "mcp_tools/pdf/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Generate, store, and retrieve credentials. Tools: password. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Generate, store, and retrieve credentials",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    },
+    {
+      "input": "Run password with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Run tests and report results",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"test_run\", \"args\": {\"path\": \"tests/\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run test run with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"test_run\", \"args\": {\"path\": \"tests/\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use test run with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"test_run\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run test run with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"test_run\", \"args\": {\"path\": \"tests/\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"test_run\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

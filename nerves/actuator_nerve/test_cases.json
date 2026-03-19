@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Send commands to and read state from any IoT actuator",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {\"device_id\": \"actuator-01\", \"action\": \"activate\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run actuator with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {\"device_id\": \"actuator-01\", \"action\": \"activate\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use actuator with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run actuator with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {\"device_id\": \"actuator-01\", \"action\": \"activate\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"actuator\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

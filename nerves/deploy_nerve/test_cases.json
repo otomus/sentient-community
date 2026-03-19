@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Deploy an application",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}",
+    "category": "core"
+  },
+  {
+    "input": "Use docker build",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"docker_build\", \"args\": {\"path\": \".\", \"tag\": \"my-image:latest\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use git status with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run git status with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"git_status\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

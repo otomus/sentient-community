@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Review investment portfolio allocation, returns, and rebalancing suggestions. Tools: stock, chart_create. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Review investment portfolio allocation, returns, and rebalancing suggestions",
+      "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\", \"operation\": \"quote\"}}"
+    },
+    {
+      "input": "Use chart create",
+      "output": "{\"action\": \"call\", \"tool\": \"chart_create\", \"args\": {\"type\": \"bar\", \"data\": [], \"title\": \"Chart\"}}"
+    },
+    {
+      "input": "Run stock with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\", \"operation\": \"quote\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

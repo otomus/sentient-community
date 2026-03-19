@@ -1,36 +1,40 @@
 {
-    "name": "budget_nerve",
-    "version": "1.0.0",
-    "description": "Create, review, and visualize a personal or project budget",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "finance",
-        "budget",
-        "planning",
-        "spending"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "csv_read",
-            "mcp": "csv_read",
-            "implementations": {}
-        },
-        {
-            "name": "math_eval",
-            "mcp": "math_eval",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        }
-    ]
+  "name": "budget_nerve",
+  "version": "1.0.0",
+  "description": "Create, review, and visualize a personal or project budget",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "finance",
+    "budget",
+    "planning",
+    "spending",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "csv",
+      "implementations": {
+        "python": "mcp_tools/csv/tool.py"
+      }
+    },
+    {
+      "name": "math_eval",
+      "implementations": {
+        "python": "mcp_tools/math_eval/tool.py"
+      }
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    }
+  ]
 }

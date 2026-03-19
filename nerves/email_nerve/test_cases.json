@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Send, receive, read, reply to, and search emails via IMAP and SMTP",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"email\", \"args\": {\"to\": \"user@example.com\", \"subject\": \"Hello\", \"body\": \"Hi\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run email with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"email\", \"args\": {\"to\": \"user@example.com\", \"subject\": \"Hello\", \"body\": \"Hi\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use email with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"email\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run email with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"email\", \"args\": {\"to\": \"user@example.com\", \"subject\": \"Hello\", \"body\": \"Hi\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"email\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

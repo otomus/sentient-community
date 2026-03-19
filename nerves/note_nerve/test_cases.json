@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Full CRUD operations on notes",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"Meeting Notes\", \"content\": \"Discussion points...\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run note with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"Meeting Notes\", \"content\": \"Discussion points...\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use note with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run note with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"note\", \"args\": {\"title\": \"Meeting Notes\", \"content\": \"Discussion points...\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"note\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

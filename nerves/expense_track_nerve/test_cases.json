@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Log, categorize, and total individual expenses",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use csv",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"csv\", \"args\": {\"path\": \"data.csv\", \"operation\": \"read\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use json tool with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run json tool with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"json_tool\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

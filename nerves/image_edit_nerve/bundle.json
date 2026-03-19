@@ -9,7 +9,8 @@
     "editing",
     "resize",
     "crop",
-    "convert"
+    "convert",
+    "desktop"
   ],
   "authors": [
     {

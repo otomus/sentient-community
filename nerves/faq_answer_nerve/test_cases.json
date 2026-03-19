@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Find answer from FAQ/knowledge base",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"pattern\": \"TODO\", \"path\": \"src/\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use embedding",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"embedding\", \"args\": {\"text\": \"sample text\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use file grep with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run file grep with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"pattern\": \"TODO\", \"path\": \"src/\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"file_grep\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

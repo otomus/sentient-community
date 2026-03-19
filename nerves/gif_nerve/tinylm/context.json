@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Find and create GIFs. Tools: gif_search, gif_create.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Find and create GIFs",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_search\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use gif create",
+      "output": "{\"action\": \"call\", \"tool\": \"gif_create\", \"args\": {\"frames\": [], \"output\": \"animation.gif\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Check CI/CD pipeline status",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"http_get\", \"args\": {\"url\": \"https://api.example.com/status\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use json tool",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"json_tool\", \"args\": {\"input\": \"{}\", \"operation\": \"parse\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use http get with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"http_get\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run http get with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"http_get\", \"args\": {\"url\": \"https://api.example.com/status\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"http_get\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

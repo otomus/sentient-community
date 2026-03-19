@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Read, post, reply, and manage content across social media platforms",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run social with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use social with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run social with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"social\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

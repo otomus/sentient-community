@@ -3,7 +3,7 @@
     "input": "Find all numbers in 'I have 3 cats and 5 dogs'",
     "context": {},
     "output": {
-      "tool": "regex_match",
+      "tool": "regex",
       "params": {
         "text": "I have 3 cats and 5 dogs",
         "pattern": "\\d+"
@@ -15,7 +15,7 @@
     "input": "Replace spaces with dashes in 'hello world test'",
     "context": {},
     "output": {
-      "tool": "regex_replace",
+      "tool": "regex",
       "params": {
         "text": "hello world test",
         "pattern": " ",
@@ -28,7 +28,7 @@
     "input": "Match with pattern: (?P<invalid",
     "context": {},
     "output": {
-      "tool": "regex_match",
+      "tool": "regex",
       "params": {
         "text": "",
         "pattern": "(?P<invalid"

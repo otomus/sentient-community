@@ -1,40 +1,45 @@
 {
-    "name": "market_research_nerve",
-    "version": "1.0.0",
-    "description": "Analyze market trends and competitors",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "research",
-        "market",
-        "competitors"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "web_scrape",
-            "mcp": "web_scrape",
-            "implementations": {}
-        },
-        {
-            "name": "stock_quote",
-            "mcp": "stock_quote",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        }
-    ]
+  "name": "market_research_nerve",
+  "version": "1.0.0",
+  "description": "Analyze market trends and competitors",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "research",
+    "market",
+    "competitors",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "web_scrape",
+      "implementations": {
+        "python": "mcp_tools/web_scrape/tool.py"
+      }
+    },
+    {
+      "name": "stock",
+      "implementations": {
+        "python": "mcp_tools/stock/tool.py"
+      }
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    }
+  ]
 }

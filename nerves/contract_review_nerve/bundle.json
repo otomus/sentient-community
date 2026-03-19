@@ -1,40 +1,45 @@
 {
-    "name": "contract_review_nerve",
-    "version": "1.0.0",
-    "description": "Review a contract and flag risks",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "legal",
-        "contract",
-        "review"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "pdf_read",
-            "mcp": "pdf_read",
-            "implementations": {}
-        },
-        {
-            "name": "docx_read",
-            "mcp": "docx_read",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "contract_review_nerve",
+  "version": "1.0.0",
+  "description": "Review a contract and flag risks",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "legal",
+    "contract",
+    "review",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "pdf",
+      "implementations": {
+        "python": "mcp_tools/pdf/tool.py"
+      }
+    },
+    {
+      "name": "docx",
+      "implementations": {
+        "python": "mcp_tools/docx/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

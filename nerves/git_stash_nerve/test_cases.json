@@ -1,26 +1,32 @@
 [
   {
-    "input": "Stash my current changes",
+    "input": "Stash uncommitted changes and restore them later",
     "context": {},
-    "output": "{\"action\":\"call\",\"tool\":\"git_stash\",\"args\":{}}",
+    "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}",
     "category": "core"
   },
   {
-    "input": "Pop the last stash",
+    "input": "Use git status",
     "context": {},
-    "output": "{\"action\":\"call\",\"tool\":\"git_stash_pop\",\"args\":{}}",
+    "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}",
     "category": "core"
   },
   {
-    "input": "Stash with a message",
+    "input": "Use git stash with empty input",
     "context": {},
-    "output": "{\"action\":\"call\",\"tool\":\"git_stash\",\"args\":{\"message\":\"WIP: auth refactor\"}}",
+    "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {}}",
     "category": "edge"
   },
   {
-    "input": "Check status after stashing",
+    "input": "Run git stash with maximum values",
     "context": {},
-    "output": "{\"action\":\"call\",\"tool\":\"git_status\",\"args\":{}}",
+    "output": "{\"action\": \"call\", \"tool\": \"git_stash\", \"args\": {\"action\": \"save\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"git_stash\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
     "category": "negative"
   }
 ]

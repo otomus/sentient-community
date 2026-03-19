@@ -1,35 +1,39 @@
 {
-    "name": "license_check_nerve",
-    "version": "1.0.0",
-    "description": "Check software license compatibility",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "legal",
-        "license",
-        "compliance"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "code_deps",
-            "mcp": "code_deps",
-            "implementations": {}
-        },
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "license_check_nerve",
+  "version": "1.0.0",
+  "description": "Check software license compatibility",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "legal",
+    "license",
+    "compliance",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "code_deps",
+      "implementations": {
+        "python": "mcp_tools/code_deps/tool.py"
+      }
+    },
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

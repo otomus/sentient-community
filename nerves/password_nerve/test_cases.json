@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Generate, store, and retrieve credentials",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}",
+    "category": "core"
+  },
+  {
+    "input": "Run password with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}",
+    "category": "core"
+  },
+  {
+    "input": "Use password with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run password with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"password\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

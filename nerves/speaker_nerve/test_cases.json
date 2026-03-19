@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Control smart speaker playback, volume, and audio output",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"speaker\", \"args\": {\"device_id\": \"speaker-01\", \"action\": \"play\", \"url\": \"alert.mp3\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run speaker with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"speaker\", \"args\": {\"device_id\": \"speaker-01\", \"action\": \"play\", \"url\": \"alert.mp3\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use speaker with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"speaker\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run speaker with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"speaker\", \"args\": {\"device_id\": \"speaker-01\", \"action\": \"play\", \"url\": \"alert.mp3\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"speaker\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

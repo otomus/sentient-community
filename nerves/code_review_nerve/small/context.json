@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Review code for quality and bugs. Tools: file_read, code_lint, code_analyze, llm_call. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Review code for quality and bugs",
+      "output": "{\"action\": \"call\", \"tool\": \"file_read\", \"args\": {\"path\": \"example.txt\"}}"
+    },
+    {
+      "input": "Use code lint",
+      "output": "{\"action\": \"call\", \"tool\": \"code_lint\", \"args\": {\"path\": \"src/\"}}"
+    },
+    {
+      "input": "Use code analyze",
+      "output": "{\"action\": \"call\", \"tool\": \"code_analyze\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

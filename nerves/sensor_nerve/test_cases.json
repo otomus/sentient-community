@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Read values from IoT sensors and list all available sensors",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {\"device_id\": \"sensor-01\", \"action\": \"read\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run sensor with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {\"device_id\": \"sensor-01\", \"action\": \"read\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use sensor with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run sensor with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"sensor\", \"args\": {\"device_id\": \"sensor-01\", \"action\": \"read\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"sensor\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

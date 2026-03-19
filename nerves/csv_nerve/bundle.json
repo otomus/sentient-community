@@ -9,7 +9,9 @@
     "csv",
     "tabular",
     "parse",
-    "spreadsheet"
+    "spreadsheet",
+    "desktop",
+    "server"
   ],
   "authors": [
     {
@@ -20,7 +22,9 @@
   "tools": [
     {
       "name": "csv",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/csv/tool.py"
+      }
     }
   ]
 }

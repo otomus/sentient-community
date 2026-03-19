@@ -1,37 +1,36 @@
 {
-    "name": "portfolio_review_nerve",
-    "version": "1.0.0",
-    "description": "Review investment portfolio allocation, returns, and rebalancing suggestions",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "finance",
-        "portfolio",
-        "review",
-        "allocation",
-        "performance"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "stock_quote",
-            "mcp": "stock_quote",
-            "implementations": {}
-        },
-        {
-            "name": "stock_history",
-            "mcp": "stock_history",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        }
-    ]
+  "name": "portfolio_review_nerve",
+  "version": "1.0.0",
+  "description": "Review investment portfolio allocation, returns, and rebalancing suggestions",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "finance",
+    "portfolio",
+    "review",
+    "allocation",
+    "performance",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "stock",
+      "implementations": {
+        "python": "mcp_tools/stock/tool.py"
+      }
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    }
+  ]
 }

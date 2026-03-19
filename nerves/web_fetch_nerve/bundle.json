@@ -1,32 +1,36 @@
 {
-    "name": "web_fetch_nerve",
-    "version": "1.0.0",
-    "description": "Make HTTP requests (GET, POST, etc.) and return the raw response",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "web",
-        "http",
-        "request",
-        "api"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "fetch",
-            "mcp": "fetch",
-            "implementations": {}
-        },
-        {
-            "name": "http_post",
-            "implementations": {
-                "python": "mcp_tools/http_post/tool.py"
-            }
-        }
-    ]
+  "name": "web_fetch_nerve",
+  "version": "1.0.0",
+  "description": "Make HTTP requests (GET, POST, etc.) and return the raw response",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "web",
+    "http",
+    "request",
+    "api",
+    "desktop",
+    "server",
+    "iot"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "http_get",
+      "implementations": {
+        "python": "mcp_tools/http_get/tool.py"
+      }
+    },
+    {
+      "name": "http_post",
+      "implementations": {
+        "python": "mcp_tools/http_post/tool.py"
+      }
+    }
+  ]
 }

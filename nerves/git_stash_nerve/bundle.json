@@ -8,7 +8,9 @@
     "git",
     "version-control",
     "stash",
-    "wip"
+    "wip",
+    "desktop",
+    "server"
   ],
   "authors": [
     {
@@ -21,12 +23,6 @@
       "name": "git_stash",
       "implementations": {
         "python": "mcp_tools/git_stash/tool.py"
-      }
-    },
-    {
-      "name": "git_stash_pop",
-      "implementations": {
-        "python": "mcp_tools/git_stash_pop/tool.py"
       }
     },
     {

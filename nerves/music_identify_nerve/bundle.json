@@ -1,27 +1,31 @@
 {
-    "name": "music_identify_nerve",
-    "version": "1.0.0",
-    "description": "Identify a song playing in the environment or from an audio clip via Shazam",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "audio",
-        "music",
-        "identify",
-        "shazam",
-        "recognition"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "voice_recognition",
-            "mcp": "shazam",
-            "implementations": {}
-        }
-    ]
+  "name": "music_identify_nerve",
+  "version": "1.0.0",
+  "description": "Identify a song playing in the environment or from an audio clip via Shazam",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "audio",
+    "music",
+    "identify",
+    "shazam",
+    "recognition",
+    "desktop",
+    "iot"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "music_identify",
+      "mcp": "shazam",
+      "implementations": {
+        "python": "mcp_tools/music_identify/tool.py"
+      }
+    }
+  ]
 }

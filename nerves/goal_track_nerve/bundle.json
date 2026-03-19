@@ -1,35 +1,39 @@
 {
-    "name": "goal_track_nerve",
-    "version": "1.0.0",
-    "description": "Track progress toward a goal",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "self-improvement",
-        "goals",
-        "tracking"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "json_parse",
-            "mcp": "json_parse",
-            "implementations": {}
-        },
-        {
-            "name": "math_eval",
-            "mcp": "math_eval",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        }
-    ]
+  "name": "goal_track_nerve",
+  "version": "1.0.0",
+  "description": "Track progress toward a goal",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "self-improvement",
+    "goals",
+    "tracking",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "math_eval",
+      "implementations": {
+        "python": "mcp_tools/math_eval/tool.py"
+      }
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    }
+  ]
 }

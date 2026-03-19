@@ -1,35 +1,40 @@
 {
-    "name": "ad_create_nerve",
-    "version": "1.0.0",
-    "description": "Create ad copy and targeting",
-    "role": "creative",
-    "mode": "reasoning",
-    "tags": [
-        "marketing",
-        "advertising",
-        "creative"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "image_generate",
-            "mcp": "image_generate",
-            "implementations": {}
-        }
-    ]
+  "name": "ad_create_nerve",
+  "version": "1.0.0",
+  "description": "Create ad copy and targeting",
+  "role": "creative",
+  "mode": "reasoning",
+  "tags": [
+    "marketing",
+    "advertising",
+    "creative",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "image_generate",
+      "mcp": "image_gen",
+      "implementations": {
+        "python": "mcp_tools/image_generate/tool.py"
+      }
+    }
+  ]
 }

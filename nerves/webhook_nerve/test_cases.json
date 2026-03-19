@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Send and register webhooks",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"webhook\", \"args\": {\"url\": \"https://example.com/hook\", \"payload\": {}}}",
+    "category": "core"
+  },
+  {
+    "input": "Run webhook with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"webhook\", \"args\": {\"url\": \"https://example.com/hook\", \"payload\": {}}}",
+    "category": "core"
+  },
+  {
+    "input": "Use webhook with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"webhook\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run webhook with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"webhook\", \"args\": {\"url\": \"https://example.com/hook\", \"payload\": {}}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"webhook\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

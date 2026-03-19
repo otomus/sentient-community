@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Audit for privacy/data concerns. Tools: file_grep, code_analyze, llm_call.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Audit for privacy/data concerns",
+      "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use code analyze",
+      "output": "{\"action\": \"call\", \"tool\": \"code_analyze\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

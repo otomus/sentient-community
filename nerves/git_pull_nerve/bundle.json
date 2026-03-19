@@ -8,7 +8,9 @@
     "git",
     "version-control",
     "pull",
-    "fetch"
+    "fetch",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

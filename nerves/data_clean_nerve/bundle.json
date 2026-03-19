@@ -1,35 +1,34 @@
 {
-    "name": "data_clean_nerve",
-    "version": "1.0.0",
-    "description": "Clean and normalize a dataset",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "data",
-        "cleaning",
-        "normalization"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "csv_read",
-            "mcp": "csv_read",
-            "implementations": {}
-        },
-        {
-            "name": "regex_replace",
-            "mcp": "regex_replace",
-            "implementations": {}
-        },
-        {
-            "name": "csv_write",
-            "mcp": "csv_write",
-            "implementations": {}
-        }
-    ]
+  "name": "data_clean_nerve",
+  "version": "1.0.0",
+  "description": "Clean and normalize a dataset",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "data",
+    "cleaning",
+    "normalization",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "csv",
+      "implementations": {
+        "python": "mcp_tools/csv/tool.py"
+      }
+    },
+    {
+      "name": "regex",
+      "implementations": {
+        "python": "mcp_tools/regex/tool.py"
+      }
+    }
+  ]
 }

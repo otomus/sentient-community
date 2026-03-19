@@ -1,32 +1,36 @@
 {
-    "name": "social_schedule_nerve",
-    "version": "1.0.0",
-    "description": "Draft social media content using AI and schedule it for future publication",
-    "role": "communication",
-    "mode": "tool_required",
-    "tags": [
-        "marketing",
-        "social-media",
-        "scheduling",
-        "calendar",
-        "queue"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "social_post",
-            "mcp": "social_post",
-            "implementations": {}
-        }
-    ]
+  "name": "social_schedule_nerve",
+  "version": "1.0.0",
+  "description": "Draft social media content using AI and schedule it for future publication",
+  "role": "communication",
+  "mode": "tool_required",
+  "tags": [
+    "marketing",
+    "social-media",
+    "scheduling",
+    "calendar",
+    "queue",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "social",
+      "implementations": {
+        "python": "mcp_tools/social/tool.py"
+      }
+    }
+  ]
 }

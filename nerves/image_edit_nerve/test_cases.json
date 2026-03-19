@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Resize, crop, rotate, and convert image files",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"image_resize\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use image crop",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"image_crop\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use image resize with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"image_resize\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run image resize with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"image_resize\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"image_resize\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

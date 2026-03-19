@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Write technical documentation",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_read\", \"args\": {\"path\": \"example.txt\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use code analyze",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"code_analyze\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use file read with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_read\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run file read with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"file_read\", \"args\": {\"path\": \"example.txt\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"file_read\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

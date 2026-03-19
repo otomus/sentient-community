@@ -1,24 +1,28 @@
 {
-    "name": "rss_monitor_nerve",
-    "version": "1.0.0",
-    "description": "Fetch and summarize RSS feed updates",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "web",
-        "rss"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "news_fetch",
-            "mcp": "rss_reader",
-            "implementations": {}
-        }
-    ]
+  "name": "rss_monitor_nerve",
+  "version": "1.0.0",
+  "description": "Fetch and summarize RSS feed updates",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "web",
+    "rss",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "rss_fetch",
+      "mcp": "rss_reader",
+      "implementations": {
+        "python": "mcp_tools/rss_fetch/tool.py"
+      }
+    }
+  ]
 }

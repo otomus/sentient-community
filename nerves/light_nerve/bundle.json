@@ -5,11 +5,11 @@
   "role": "nerve",
   "mode": "tool_required",
   "tags": [
-    "iot",
     "light",
     "hue",
     "brightness",
-    "smart-home"
+    "smart-home",
+    "iot"
   ],
   "authors": [
     {

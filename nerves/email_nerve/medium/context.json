@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Send, receive, read, reply to, and search emails via IMAP and SMTP. Tools: email. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Send, receive, read, reply to, and search emails via IMAP and SMTP",
+      "output": "{\"action\": \"call\", \"tool\": \"email\", \"args\": {\"to\": \"user@example.com\", \"subject\": \"Hello\", \"body\": \"Hi\"}}"
+    },
+    {
+      "input": "Run email with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"email\", \"args\": {\"to\": \"user@example.com\", \"subject\": \"Hello\", \"body\": \"Hi\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"email\", \"args\": {\"to\": \"user@example.com\", \"subject\": \"Hello\", \"body\": \"Hi\"}}"
+    },
+    {
+      "input": "Help me send, receive, read, reply to, and search emails via imap and smtp",
+      "output": "{\"action\": \"call\", \"tool\": \"email\", \"args\": {\"to\": \"user@example.com\", \"subject\": \"Hello\", \"body\": \"Hi\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

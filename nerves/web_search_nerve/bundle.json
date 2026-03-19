@@ -1,26 +1,30 @@
 {
-    "name": "web_search_nerve",
-    "version": "1.0.0",
-    "description": "Search the web using a search engine and return ranked results",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "web",
-        "search",
-        "query",
-        "duckduckgo"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        }
-    ]
+  "name": "web_search_nerve",
+  "version": "1.0.0",
+  "description": "Search the web using a search engine and return ranked results",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "web",
+    "search",
+    "query",
+    "duckduckgo",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {
+        "python": "mcp_tools/web_search/tool.py"
+      }
+    }
+  ]
 }

@@ -1,35 +1,40 @@
 {
-    "name": "faq_answer_nerve",
-    "version": "1.0.0",
-    "description": "Find answer from FAQ/knowledge base",
-    "role": "communication",
-    "mode": "reasoning",
-    "tags": [
-        "support",
-        "faq",
-        "knowledge-base"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "file_grep",
-            "mcp": "file_grep",
-            "implementations": {}
-        },
-        {
-            "name": "embedding_search",
-            "mcp": "embedding_search",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "faq_answer_nerve",
+  "version": "1.0.0",
+  "description": "Find answer from FAQ/knowledge base",
+  "role": "communication",
+  "mode": "reasoning",
+  "tags": [
+    "support",
+    "faq",
+    "knowledge-base",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "file_grep",
+      "implementations": {
+        "python": "mcp_tools/file_grep/tool.py"
+      }
+    },
+    {
+      "name": "embedding",
+      "implementations": {
+        "python": "mcp_tools/embedding/tool.py"
+      }
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

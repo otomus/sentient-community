@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Read from and write to the clipboard. Tools: clipboard.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Read from and write to the clipboard",
+      "output": "{\"action\": \"call\", \"tool\": \"clipboard\", \"args\": {}}"
+    },
+    {
+      "input": "Run clipboard with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"clipboard\", \"args\": {}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -1,35 +1,40 @@
 {
-    "name": "health_summary_nerve",
-    "version": "1.0.0",
-    "description": "Summarize health metrics",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "health",
-        "wellness",
-        "metrics"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "sleep_tracker_read",
-            "mcp": "sleep_tracker_read",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        }
-    ]
+  "name": "health_summary_nerve",
+  "version": "1.0.0",
+  "description": "Summarize health metrics",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "health",
+    "wellness",
+    "metrics",
+    "desktop",
+    "iot"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "sleep_tracker_read",
+      "implementations": {
+        "python": "mcp_tools/sleep_tracker_read/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    }
+  ]
 }

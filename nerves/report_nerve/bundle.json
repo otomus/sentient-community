@@ -1,40 +1,46 @@
 {
-    "name": "report_nerve",
-    "version": "1.0.0",
-    "description": "Generate a data report with charts",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "data",
-        "report",
-        "visualization"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "csv_read",
-            "mcp": "csv_read",
-            "implementations": {}
-        },
-        {
-            "name": "math_eval",
-            "mcp": "math_eval",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        },
-        {
-            "name": "pdf_create",
-            "mcp": "pdf_create",
-            "implementations": {}
-        }
-    ]
+  "name": "report_nerve",
+  "version": "1.0.0",
+  "description": "Generate a data report with charts",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "data",
+    "report",
+    "visualization",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "csv",
+      "implementations": {
+        "python": "mcp_tools/csv/tool.py"
+      }
+    },
+    {
+      "name": "math_eval",
+      "implementations": {
+        "python": "mcp_tools/math_eval/tool.py"
+      }
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    },
+    {
+      "name": "pdf",
+      "implementations": {
+        "python": "mcp_tools/pdf/tool.py"
+      }
+    }
+  ]
 }

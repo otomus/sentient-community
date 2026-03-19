@@ -6,7 +6,9 @@
   "mode": "reasoning",
   "tags": [
     "code",
-    "dependencies"
+    "dependencies",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

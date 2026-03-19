@@ -1,30 +1,33 @@
 {
-    "name": "fitness_plan_nerve",
-    "version": "1.0.0",
-    "description": "Create a fitness plan",
-    "role": "brain",
-    "mode": "reasoning",
-    "tags": [
-        "health",
-        "fitness",
-        "planning"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "fitness_plan_nerve",
+  "version": "1.0.0",
+  "description": "Create a fitness plan",
+  "role": "brain",
+  "mode": "reasoning",
+  "tags": [
+    "health",
+    "fitness",
+    "planning",
+    "desktop"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

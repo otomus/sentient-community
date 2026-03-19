@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Generate a reflection prompt",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run llm call with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use llm call with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run llm call with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"llm_call\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

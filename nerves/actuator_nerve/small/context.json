@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Send commands to and read state from any IoT actuator. Tools: actuator. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Send commands to and read state from any IoT actuator",
+      "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {\"device_id\": \"actuator-01\", \"action\": \"activate\"}}"
+    },
+    {
+      "input": "Run actuator with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {\"device_id\": \"actuator-01\", \"action\": \"activate\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"actuator\", \"args\": {\"device_id\": \"actuator-01\", \"action\": \"activate\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

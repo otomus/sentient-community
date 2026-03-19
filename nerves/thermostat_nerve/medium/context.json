@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Read and set temperature on a smart thermostat. Tools: thermostat. Return tool calls as JSON with action, tool, and args fields.\n\nCONTEXT: You may receive: userDetails (name, language), location, timezone, and messages. Use these to personalize responses when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Read and set temperature on a smart thermostat",
+      "output": "{\"action\": \"call\", \"tool\": \"thermostat\", \"args\": {\"action\": \"get_temperature\"}}"
+    },
+    {
+      "input": "Run thermostat with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"thermostat\", \"args\": {\"action\": \"get_temperature\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"thermostat\", \"args\": {\"action\": \"get_temperature\"}}"
+    },
+    {
+      "input": "Help me read and set temperature on a smart thermostat",
+      "output": "{\"action\": \"call\", \"tool\": \"thermostat\", \"args\": {\"action\": \"get_temperature\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

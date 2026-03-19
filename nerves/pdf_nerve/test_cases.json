@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Read text from and create PDF documents",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run pdf with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use pdf with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run pdf with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"pdf\", \"args\": {\"path\": \"document.pdf\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"pdf\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

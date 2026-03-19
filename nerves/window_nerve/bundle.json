@@ -6,7 +6,8 @@
   "mode": "reasoning",
   "tags": [
     "window",
-    "system"
+    "system",
+    "desktop"
   ],
   "authors": [
     {
@@ -17,7 +18,9 @@
   "tools": [
     {
       "name": "window",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/window/tool.py"
+      }
     }
   ]
 }

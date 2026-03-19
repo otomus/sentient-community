@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Read, post, reply, and manage content across social media platforms. Tools: social. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Read, post, reply, and manage content across social media platforms",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Run social with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"social\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

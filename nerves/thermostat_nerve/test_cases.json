@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Read and set temperature on a smart thermostat",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"thermostat\", \"args\": {\"action\": \"get_temperature\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run thermostat with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"thermostat\", \"args\": {\"action\": \"get_temperature\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use thermostat with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"thermostat\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run thermostat with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"thermostat\", \"args\": {\"action\": \"get_temperature\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"thermostat\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

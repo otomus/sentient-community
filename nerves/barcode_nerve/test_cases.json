@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Generate and read barcodes",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {\"image\": \"barcode.png\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run barcode with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {\"image\": \"barcode.png\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use barcode with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run barcode with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"barcode\", \"args\": {\"image\": \"barcode.png\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"barcode\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

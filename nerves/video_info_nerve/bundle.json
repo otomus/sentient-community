@@ -8,7 +8,9 @@
     "video",
     "metadata",
     "probe",
-    "info"
+    "info",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

@@ -4,7 +4,7 @@
     {
       "input": "Encode 'hello world' to base64",
       "output": {
-        "tool": "base64_encode",
+        "tool": "base64",
         "params": {
           "data": "hello world"
         }
@@ -13,7 +13,7 @@
     {
       "input": "Decode aGVsbG8gd29ybGQ= from base64",
       "output": {
-        "tool": "base64_decode",
+        "tool": "base64",
         "params": {
           "data": "aGVsbG8gd29ybGQ="
         }
@@ -22,7 +22,7 @@
     {
       "input": "Base64 encode my API key: sk-test123",
       "output": {
-        "tool": "base64_encode",
+        "tool": "base64",
         "params": {
           "data": "sk-test123"
         }

@@ -1,35 +1,39 @@
 {
-    "name": "seo_analyze_nerve",
-    "version": "1.0.0",
-    "description": "Analyze SEO for a URL or keyword",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "marketing",
-        "seo",
-        "analysis"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "web_scrape",
-            "mcp": "web_scrape",
-            "implementations": {}
-        },
-        {
-            "name": "json_format",
-            "mcp": "json_format",
-            "implementations": {}
-        }
-    ]
+  "name": "seo_analyze_nerve",
+  "version": "1.0.0",
+  "description": "Analyze SEO for a URL or keyword",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "marketing",
+    "seo",
+    "analysis",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "web_scrape",
+      "implementations": {
+        "python": "mcp_tools/web_scrape/tool.py"
+      }
+    },
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    }
+  ]
 }

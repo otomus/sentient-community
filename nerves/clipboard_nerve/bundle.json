@@ -6,7 +6,8 @@
   "mode": "reasoning",
   "tags": [
     "clipboard",
-    "system"
+    "system",
+    "desktop"
   ],
   "authors": [
     {
@@ -17,7 +18,9 @@
   "tools": [
     {
       "name": "clipboard",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/clipboard/tool.py"
+      }
     }
   ]
 }

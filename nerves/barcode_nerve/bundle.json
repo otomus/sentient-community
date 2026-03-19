@@ -5,7 +5,9 @@
   "role": "brain",
   "mode": "tool_required",
   "tags": [
-    "barcode"
+    "barcode",
+    "desktop",
+    "iot"
   ],
   "authors": [
     {
@@ -16,7 +18,9 @@
   "tools": [
     {
       "name": "barcode",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/barcode/tool.py"
+      }
     }
   ]
 }

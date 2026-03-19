@@ -1,35 +1,39 @@
 {
-    "name": "ticket_triage_nerve",
-    "version": "1.0.0",
-    "description": "Triage a support ticket",
-    "role": "communication",
-    "mode": "reasoning",
-    "tags": [
-        "support",
-        "triage",
-        "customer"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "json_parse",
-            "mcp": "json_parse",
-            "implementations": {}
-        },
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "llm_call",
-            "mcp": "llm_call",
-            "implementations": {}
-        }
-    ]
+  "name": "ticket_triage_nerve",
+  "version": "1.0.0",
+  "description": "Triage a support ticket",
+  "role": "communication",
+  "mode": "reasoning",
+  "tags": [
+    "support",
+    "triage",
+    "customer",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "json_tool",
+      "implementations": {
+        "python": "mcp_tools/json_tool/tool.py"
+      }
+    },
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "llm_call",
+      "implementations": {
+        "python": "mcp_tools/llm_call/tool.py"
+      }
+    }
+  ]
 }

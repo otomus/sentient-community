@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Install, search, and update packages. Available tools: pkg_install, pkg_search, pkg_update, pkg_info, pkg_list. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Install, search, and update packages",
+      "output": "{\"action\": \"call\", \"tool\": \"pkg_install\", \"args\": {\"action\": \"list\"}}"
+    },
+    {
+      "input": "Use pkg search",
+      "output": "{\"action\": \"call\", \"tool\": \"pkg_search\", \"args\": {\"action\": \"list\"}}"
+    },
+    {
+      "input": "Use pkg update",
+      "output": "{\"action\": \"call\", \"tool\": \"pkg_update\", \"args\": {\"action\": \"list\"}}"
+    },
+    {
+      "input": "Use pkg info",
+      "output": "{\"action\": \"call\", \"tool\": \"pkg_info\", \"args\": {\"action\": \"list\"}}"
+    },
+    {
+      "input": "Use pkg list",
+      "output": "{\"action\": \"call\", \"tool\": \"pkg_list\", \"args\": {\"action\": \"list\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -7,7 +7,9 @@
   "tags": [
     "security",
     "password",
-    "credentials"
+    "credentials",
+    "desktop",
+    "server"
   ],
   "authors": [
     {
@@ -18,7 +20,9 @@
   "tools": [
     {
       "name": "password",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/password/tool.py"
+      }
     }
   ]
 }

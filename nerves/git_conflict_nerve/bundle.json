@@ -8,7 +8,9 @@
     "git",
     "version-control",
     "conflict",
-    "merge-conflict"
+    "merge-conflict",
+    "desktop",
+    "server"
   ],
   "authors": [
     {

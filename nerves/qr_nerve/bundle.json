@@ -6,7 +6,9 @@
   "mode": "reasoning",
   "tags": [
     "qr",
-    "barcode"
+    "barcode",
+    "desktop",
+    "iot"
   ],
   "authors": [
     {
@@ -17,7 +19,9 @@
   "tools": [
     {
       "name": "qr_code",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/qr_code/tool.py"
+      }
     }
   ]
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Convert between fiat currencies and retrieve live exchange rates",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"currency\", \"args\": {\"amount\": 100, \"from\": \"USD\", \"to\": \"EUR\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run currency with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"currency\", \"args\": {\"amount\": 100, \"from\": \"USD\", \"to\": \"EUR\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use currency with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"currency\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run currency with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"currency\", \"args\": {\"amount\": 100, \"from\": \"USD\", \"to\": \"EUR\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"currency\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

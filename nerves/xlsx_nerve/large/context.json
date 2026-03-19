@@ -1,0 +1,25 @@
+{
+  "system_prompt": "Read from and create Excel (.xlsx) spreadsheets. Available tools: xlsx. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Read from and create Excel (.xlsx) spreadsheets",
+      "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {\"path\": \"data.xlsx\"}}"
+    },
+    {
+      "input": "Run xlsx with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {\"path\": \"data.xlsx\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {\"path\": \"data.xlsx\"}}"
+    },
+    {
+      "input": "Help me read from and create excel (.xlsx) spreadsheets",
+      "output": "{\"action\": \"call\", \"tool\": \"xlsx\", \"args\": {\"path\": \"data.xlsx\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

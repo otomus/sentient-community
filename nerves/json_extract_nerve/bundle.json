@@ -6,7 +6,10 @@
   "mode": "reasoning",
   "tags": [
     "data",
-    "json"
+    "json",
+    "desktop",
+    "server",
+    "iot"
   ],
   "authors": [
     {
@@ -16,15 +19,9 @@
   "arqitect_version": ">=0.1.0",
   "tools": [
     {
-      "name": "json_parse",
+      "name": "json_tool",
       "implementations": {
-        "python": "mcp_tools/json_parse/tool.py"
-      }
-    },
-    {
-      "name": "json_query",
-      "implementations": {
-        "python": "mcp_tools/json_query/tool.py"
+        "python": "mcp_tools/json_tool/tool.py"
       }
     }
   ]

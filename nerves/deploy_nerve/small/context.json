@@ -1,0 +1,21 @@
+{
+  "system_prompt": "Deploy an application. Tools: git_status, docker_build, docker_run, alert_send. Respond with JSON tool calls.\n\nCONTEXT: You may receive userDetails (name, language), location, timezone, messages. Use them to personalize responses.",
+  "few_shot_examples": [
+    {
+      "input": "Deploy an application",
+      "output": "{\"action\": \"call\", \"tool\": \"git_status\", \"args\": {}}"
+    },
+    {
+      "input": "Use docker build",
+      "output": "{\"action\": \"call\", \"tool\": \"docker_build\", \"args\": {\"path\": \".\", \"tag\": \"my-image:latest\"}}"
+    },
+    {
+      "input": "Use docker run",
+      "output": "{\"action\": \"call\", \"tool\": \"docker_run\", \"args\": {\"image\": \"nginx:latest\", \"ports\": {\"80\": \"8080\"}}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

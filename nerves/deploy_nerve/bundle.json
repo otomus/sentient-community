@@ -1,40 +1,45 @@
 {
-    "name": "deploy_nerve",
-    "version": "1.0.0",
-    "description": "Deploy an application",
-    "role": "code",
-    "mode": "tool_required",
-    "tags": [
-        "devops",
-        "deploy",
-        "infrastructure"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "git_status",
-            "mcp": "git_status",
-            "implementations": {}
-        },
-        {
-            "name": "docker_build",
-            "mcp": "docker_build",
-            "implementations": {}
-        },
-        {
-            "name": "docker_run",
-            "mcp": "docker_run",
-            "implementations": {}
-        },
-        {
-            "name": "alert_send",
-            "mcp": "alert_send",
-            "implementations": {}
-        }
-    ]
+  "name": "deploy_nerve",
+  "version": "1.0.0",
+  "description": "Deploy an application",
+  "role": "code",
+  "mode": "tool_required",
+  "tags": [
+    "devops",
+    "deploy",
+    "infrastructure",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "git_status",
+      "implementations": {
+        "python": "mcp_tools/git_status/tool.py"
+      }
+    },
+    {
+      "name": "docker_build",
+      "implementations": {
+        "python": "mcp_tools/docker_build/tool.py"
+      }
+    },
+    {
+      "name": "docker_run",
+      "implementations": {
+        "python": "mcp_tools/docker_run/tool.py"
+      }
+    },
+    {
+      "name": "alert_send",
+      "implementations": {
+        "python": "mcp_tools/alert_send/tool.py"
+      }
+    }
+  ]
 }

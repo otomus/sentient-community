@@ -1,37 +1,42 @@
 {
-    "name": "crypto_analyze_nerve",
-    "version": "1.0.0",
-    "description": "Research and analyze a cryptocurrency with market trends, news, and charts",
-    "role": "brain",
-    "mode": "tool_required",
-    "tags": [
-        "finance",
-        "crypto",
-        "analysis",
-        "trends",
-        "research"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "crypto_price",
-            "mcp": "crypto_price",
-            "implementations": {}
-        },
-        {
-            "name": "web_search",
-            "mcp": "duckduckgo",
-            "implementations": {}
-        },
-        {
-            "name": "chart_create",
-            "mcp": "chart_create",
-            "implementations": {}
-        }
-    ]
+  "name": "crypto_analyze_nerve",
+  "version": "1.0.0",
+  "description": "Research and analyze a cryptocurrency with market trends, news, and charts",
+  "role": "brain",
+  "mode": "tool_required",
+  "tags": [
+    "finance",
+    "crypto",
+    "analysis",
+    "trends",
+    "research",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "crypto_price",
+      "mcp": "coincap",
+      "implementations": {
+        "python": "mcp_tools/crypto_price/tool.py"
+      }
+    },
+    {
+      "name": "web_search",
+      "mcp": "duckduckgo",
+      "implementations": {}
+    },
+    {
+      "name": "chart_create",
+      "implementations": {
+        "python": "mcp_tools/chart_create/tool.py"
+      }
+    }
+  ]
 }

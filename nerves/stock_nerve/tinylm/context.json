@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Retrieve current quotes and historical price data for stocks. Tools: stock.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Retrieve current quotes and historical price data for stocks",
+      "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\"}}"
+    },
+    {
+      "input": "Run stock with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Analyze SEO for a URL or keyword",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use web scrape",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_scrape\", \"args\": {\"url\": \"https://example.com\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use web search with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run web search with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"web_search\", \"args\": {\"query\": \"example search query\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"web_search\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

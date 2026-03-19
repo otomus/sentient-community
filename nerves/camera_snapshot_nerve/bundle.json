@@ -1,27 +1,28 @@
 {
-    "name": "camera_snapshot_nerve",
-    "version": "1.0.0",
-    "description": "Capture a still photo from a connected IoT camera",
-    "role": "tool",
-    "mode": "tool_required",
-    "tags": [
-        "iot",
-        "camera",
-        "snapshot",
-        "photo",
-        "surveillance"
-    ],
-    "authors": [
-        {
-            "github": "arqitect-community"
-        }
-    ],
-    "arqitect_version": ">=0.1.0",
-    "tools": [
-        {
-            "name": "take_photo",
-            "mcp": "camera",
-            "implementations": {}
-        }
-    ]
+  "name": "camera_snapshot_nerve",
+  "version": "1.0.0",
+  "description": "Capture a still photo from a connected IoT camera",
+  "role": "tool",
+  "mode": "tool_required",
+  "tags": [
+    "camera",
+    "snapshot",
+    "photo",
+    "surveillance",
+    "iot"
+  ],
+  "authors": [
+    {
+      "github": "arqitect-community"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "camera_capture",
+      "implementations": {
+        "python": "mcp_tools/camera_capture/tool.py"
+      }
+    }
+  ]
 }

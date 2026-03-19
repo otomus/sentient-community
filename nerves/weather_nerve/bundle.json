@@ -5,7 +5,9 @@
   "role": "brain",
   "mode": "tool_required",
   "tags": [
-    "weather"
+    "weather",
+    "desktop",
+    "iot"
   ],
   "authors": [
     {
@@ -16,7 +18,10 @@
   "tools": [
     {
       "name": "weather",
-      "implementations": {}
+      "mcp": "weather",
+      "implementations": {
+        "python": "mcp_tools/weather/tool.py"
+      }
     }
   ]
 }

@@ -5,10 +5,10 @@
   "role": "nerve",
   "mode": "tool_required",
   "tags": [
-    "iot",
     "thermostat",
     "temperature",
-    "hvac"
+    "hvac",
+    "iot"
   ],
   "authors": [
     {
@@ -19,7 +19,9 @@
   "tools": [
     {
       "name": "thermostat",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/thermostat/tool.py"
+      }
     }
   ]
 }

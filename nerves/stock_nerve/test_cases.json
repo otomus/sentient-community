@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Retrieve current quotes and historical price data for stocks",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Run stock with specific parameters",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\"}}",
+    "category": "core"
+  },
+  {
+    "input": "Use stock with empty input",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {}}",
+    "category": "edge"
+  },
+  {
+    "input": "Run stock with maximum values",
+    "context": {},
+    "output": "{\"action\": \"call\", \"tool\": \"stock\", \"args\": {\"symbol\": \"AAPL\"}}",
+    "category": "boundary"
+  },
+  {
+    "input": "Do something completely unrelated to this nerve",
+    "context": {},
+    "output": "{\"action\": \"error\", \"tool\": \"stock\", \"args\": {}, \"error\": \"Request does not match available tools\"}",
+    "category": "negative"
+  }
+]

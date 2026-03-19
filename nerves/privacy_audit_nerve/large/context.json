@@ -1,0 +1,29 @@
+{
+  "system_prompt": "Audit for privacy/data concerns. Available tools: file_grep, code_analyze, llm_call. Use the appropriate tool for each request. Return tool calls as JSON with action, tool, and args fields. Handle edge cases and invalid inputs gracefully.\n\nCONTEXT: You may receive context with: userDetails (name, language), location (city/region), timezone (IANA), and messages (conversation history). Use these to personalize your responses \u2014 address the user by name, respect their language preference, and consider their location/timezone when relevant.",
+  "few_shot_examples": [
+    {
+      "input": "Audit for privacy/data concerns",
+      "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use code analyze",
+      "output": "{\"action\": \"call\", \"tool\": \"code_analyze\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Use llm call",
+      "output": "{\"action\": \"call\", \"tool\": \"llm_call\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "Run file grep with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"input\": \"example\"}}"
+    },
+    {
+      "input": "What tools are available?",
+      "output": "{\"action\": \"call\", \"tool\": \"file_grep\", \"args\": {\"input\": \"example\"}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

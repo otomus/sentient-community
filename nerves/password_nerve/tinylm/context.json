@@ -1,0 +1,17 @@
+{
+  "system_prompt": "Generate, store, and retrieve credentials. Tools: password.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Generate, store, and retrieve credentials",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    },
+    {
+      "input": "Run password with default settings",
+      "output": "{\"action\": \"call\", \"tool\": \"password\", \"args\": {\"length\": 16}}"
+    }
+  ],
+  "max_tokens": 256,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "qualification_score": 0
+}

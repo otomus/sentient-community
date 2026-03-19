@@ -6,7 +6,10 @@
   "mode": "reasoning",
   "tags": [
     "security",
-    "encryption"
+    "encryption",
+    "desktop",
+    "server",
+    "iot"
   ],
   "authors": [
     {
@@ -17,7 +20,9 @@
   "tools": [
     {
       "name": "crypt",
-      "implementations": {}
+      "implementations": {
+        "python": "mcp_tools/crypt/tool.py"
+      }
     }
   ]
 }
