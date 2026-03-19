@@ -224,7 +224,7 @@ def _nav_logo_svg() -> str:
 def nav_html(active: str, depth: int = 0) -> str:
     """Generate the navigation bar. depth=0 for root, 1 for one level deep."""
     prefix = "../" * depth
-    links = [
+    internal_links = [
         ("index.html", "Home"),
         ("tools/index.html", "Tools"),
         ("nerves/index.html", "Nerves"),
@@ -232,10 +232,16 @@ def nav_html(active: str, depth: int = 0) -> str:
         ("mcps/index.html", "MCPs"),
         ("adapters/index.html", "Adapters"),
     ]
+    external_links = [
+        ("https://otomus.github.io/arqitect-dashboard/", "Dashboard"),
+        ("https://otomus.github.io/arqitect-server/", "Docs"),
+    ]
     items = []
-    for href, label in links:
+    for href, label in internal_links:
         cls = ' class="active"' if label.lower() == active.lower() else ""
         items.append(f'<a href="{prefix}{href}"{cls}>{label}</a>')
+    for href, label in external_links:
+        items.append(f'<a href="{href}" target="_blank" rel="noopener">{label}</a>')
     logo_svg = _nav_logo_svg()
     return f"""<div class="wip-banner">Work in progress — coming soon</div>
 <nav class="nav">
