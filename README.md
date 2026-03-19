@@ -1,31 +1,10 @@
 # Arqitect Community
 
-Community hub for sharing connector implementations and discovering nerves and brain adapters for [Arqitect](https://github.com/otomus/arqitect).
+Community hub for sharing connectors, nerves, adapters, and MCP tools for [Arqitect](https://github.com/otomus/arqitect).
 
-## What's Here
+**Full documentation, vision, and guides:** [otomus.github.io/arqitect-community](https://otomus.github.io/arqitect-community/)
 
-| Directory | Contents | Description | Managed By |
-|-----------|----------|-------------|------------|
-| `connectors/` | Connectors | Full implementations for messaging platforms | Community PRs |
-| `nerves/` | Nerve bundles | Identity + tools + test cases for autonomous agents | Arqitect core |
-| `adapters/` | Adapters | Per-role, per-size-class system prompts with model-specific overrides | Arqitect core |
-
-## Connectors — Community Contributions
-
-Connectors are the only manually contributed content. They are full implementations for messaging platforms (WhatsApp, Telegram, Discord, Slack, etc.) submitted via PR.
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to submit a connector.
-
-### Requirements
-
-- `meta.json`, `config-template.json` (no secrets), `README.md`, and an implementation file
-- Schema valid, no secrets, no absolute paths
-
-## Nerves and Adapters — System Managed
-
-Nerves and brain adapters are **not manually contributed**. They are synthesized, qualified, and exported by arqitect-core automatically.
-
-When Arqitect's brain synthesizes a nerve, it checks this repo for a matching bundle. If one exists, the proven identity (system prompt, examples, tools, test cases) is used instead of generating from scratch.
+## Quick Start
 
 ```bash
 # Sync community content to your local cache
@@ -35,17 +14,11 @@ python cli.py community sync
 python cli.py community search "weather"
 ```
 
-## Validation
+## Contributing
 
-All PRs are validated by CI:
-- JSON schema validation
-- Secret scanning (API keys, private keys, absolute paths)
-- Tool safety checks (no `eval`, `exec`, `os.system`, `subprocess` in Python; no `child_process`, `execSync` in JS/TS)
-- Structural completeness
+Connectors are the primary community-contributed content. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to submit one.
 
-## Manifest
-
-`manifest.json` is auto-generated on merge — an index of all nerves, adapters, and connectors for programmatic discovery.
+All PRs are validated by CI (schema validation, secret scanning, tool safety checks).
 
 ## License
 
