@@ -1,5 +1,5 @@
 {
-  "system_prompt": "{",
+  "system_prompt": "{\"goal\": \"Answer geography questions by providing factual and up-to-date information.\"}",
   "few_shot_examples": [],
   "temperature": 0.7,
   "qualification_score": 0.93
