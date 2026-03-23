@@ -1,0 +1,38 @@
+{
+  "name": "geography_nerve",
+  "version": "1.0.0",
+  "description": "Answer geography questions by providing factual and up-to-date information.",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "geography",
+    "desktop",
+    "server",
+    "answer",
+    "questions",
+    "providing",
+    "factual",
+    "and",
+    "information"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "ip_tool",
+      "implementations": {
+        "python": "mcp_tools/ip_tool/tool.py"
+      }
+    },
+    {
+      "name": "parse_geographical_data",
+      "implementations": {
+        "python": "mcp_tools/parse_geographical_data/tool.py"
+      }
+    }
+  ]
+}

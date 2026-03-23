@@ -1,0 +1,1654 @@
+[
+  {
+    "input": "What is the capital of France?",
+    "context": {},
+    "output": "The capital of France is Paris.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Spain?",
+    "context": {},
+    "output": "The capital of Spain is Madrid.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Italy?",
+    "context": {},
+    "output": "The capital of Italy is Rome.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Germany?",
+    "context": {},
+    "output": "The capital of Germany is Berlin.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Russia?",
+    "context": {},
+    "output": "The capital of Russia is Moscow.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Canada?",
+    "context": {},
+    "output": "The capital of Canada is Ottawa.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Australia?",
+    "context": {},
+    "output": "The capital of Australia is Canberra.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Brazil?",
+    "context": {},
+    "output": "The capital of Brazil is Bras\u00edlia.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of India?",
+    "context": {},
+    "output": "The capital of India is New Delhi.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of China?",
+    "context": {},
+    "output": "The capital of China is Beijing.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of United States?",
+    "context": {},
+    "output": "The capital of United States is Washington, D.C.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Japan?",
+    "context": {},
+    "output": "The capital of Japan is Tokyo.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Mexico?",
+    "context": {},
+    "output": "The capital of Mexico is Mexico City.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of South Africa?",
+    "context": {},
+    "output": "The capital of South Africa is Pretoria.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Nigeria?",
+    "context": {},
+    "output": "The capital of Nigeria is Abuja.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Indonesia?",
+    "context": {},
+    "output": "The capital of Indonesia is Jakarta.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Philippines?",
+    "context": {},
+    "output": "The capital of Philippines is Manila.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "Please ask a question.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of the world?",
+    "context": {},
+    "output": "The concept of the capital of the world is subjective and varies by context.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of the moon?",
+    "context": {},
+    "output": "The moon does not have a capital.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of the universe?",
+    "context": {},
+    "output": "The concept of the capital of the universe is not applicable.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a pencil?",
+    "context": {},
+    "output": "A pencil does not have a capital.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Peru?",
+    "context": {},
+    "output": "The capital of Peru is Lima.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest country by area?",
+    "context": {},
+    "output": "The largest country by area is Russia.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Japan?",
+    "context": {},
+    "output": "The currency of Japan is the Japanese Yen (JPY).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest mountain in the world?",
+    "context": {},
+    "output": "The tallest mountain in the world is Mount Everest.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Brazil?",
+    "context": {},
+    "output": "The population of Brazil is approximately 212 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the deepest lake in the world?",
+    "context": {},
+    "output": "The deepest lake in the world is Lake Baikal.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest desert?",
+    "context": {},
+    "output": "The largest desert is the Sahara Desert.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of China?",
+    "context": {},
+    "output": "The currency of China is the Chinese Yuan (CNY).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest city in the world?",
+    "context": {},
+    "output": "The largest city in the world is Tokyo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Germany?",
+    "context": {},
+    "output": "The currency of Germany is the Euro (EUR).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of India?",
+    "context": {},
+    "output": "The population of India is approximately 1.38 billion.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of the United States?",
+    "context": {},
+    "output": "The currency of the United States is the US Dollar (USD).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest island?",
+    "context": {},
+    "output": "The largest island is Greenland.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Argentina?",
+    "context": {},
+    "output": "The currency of Argentina is the Argentine Peso (ARS).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest desert in the world?",
+    "context": {},
+    "output": "The largest desert in the world is the Sahara Desert.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Australia?",
+    "context": {},
+    "output": "The currency of Australia is the Australian Dollar (AUD).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in the world?",
+    "context": {},
+    "output": "The highest mountain in the world is Mount Everest.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most populous country in the world?",
+    "context": {},
+    "output": "The most populous country in the world is China.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Canada?",
+    "context": {},
+    "output": "The currency of Canada is the Canadian Dollar (CAD).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the longest river in the world?",
+    "context": {},
+    "output": "The longest river in the world is the Nile.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Argentina?",
+    "context": {},
+    "output": "The capital of Argentina is Buenos Aires.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in the world?",
+    "context": {},
+    "output": "The most common language in the world is Mandarin Chinese.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of South Africa?",
+    "context": {},
+    "output": "The currency of South Africa is the South African Rand (ZAR).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the deepest ocean?",
+    "context": {},
+    "output": "The deepest ocean is the Mariana Trench.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Mexico?",
+    "context": {},
+    "output": "The currency of Mexico is the Mexican Peso (MXN).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest volcano in the world?",
+    "context": {},
+    "output": "The highest volcano in the world is Kilauea.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in South America?",
+    "context": {},
+    "output": "The highest mountain in South America is Mount Aconcagua.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the longest bridge in the world?",
+    "context": {},
+    "output": "The longest bridge in the world is the Danyang-Kushan Bridge in China.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Brazil?",
+    "context": {},
+    "output": "The currency of Brazil is the Brazilian real (BRL).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Nepal?",
+    "context": {},
+    "output": "The capital of Nepal is Kathmandu.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest waterfall in the world?",
+    "context": {},
+    "output": "The largest waterfall in the world is Victoria Falls in Zambia and Zimbabwe.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of South Korea?",
+    "context": {},
+    "output": "The capital of South Korea is Seoul.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest mountain range in the world?",
+    "context": {},
+    "output": "The largest mountain range in the world is the Himalayas.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest island in the world?",
+    "context": {},
+    "output": "The largest island in the world is Greenland.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Mars?",
+    "context": {},
+    "output": "Mars does not have a capital city.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Pluto?",
+    "context": {},
+    "output": "Pluto is not a recognized country and therefore does not have a currency.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Jupiter?",
+    "context": {},
+    "output": "Jupiter does not have a capital city.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the shortest country in the world?",
+    "context": {},
+    "output": "The shortest country in the world is Vatican City.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous river in the world?",
+    "context": {},
+    "output": "The most famous river in the world is the Nile.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Iceland?",
+    "context": {},
+    "output": "The capital of Iceland is Reykjav\u00edk.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the longest river in Europe?",
+    "context": {},
+    "output": "The longest river in Europe is the Volga.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in the world?",
+    "context": {},
+    "output": "The tallest building in the world is the Burj Khalifa in Dubai.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Russia?",
+    "context": {},
+    "output": "The currency of Russia is the Russian Ruble (RUB).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the longest river in Africa?",
+    "context": {},
+    "output": "The longest river in Africa is the Nile.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of France?",
+    "context": {},
+    "output": "The currency of France is the Euro (EUR).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Italy?",
+    "context": {},
+    "output": "The currency of Italy is the Euro (EUR).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of the United Kingdom?",
+    "context": {},
+    "output": "The currency of the United Kingdom is the British Pound (GBP).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in Asia?",
+    "context": {},
+    "output": "The highest mountain in Asia is Mount Everest.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest volcano in Europe?",
+    "context": {},
+    "output": "The highest volcano in Europe is Mount Etna.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest country in Europe?",
+    "context": {},
+    "output": "The largest country in Europe is Russia.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Greenland?",
+    "context": {},
+    "output": "Greenland does not have a capital; it is a territory of Denmark.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Egypt?",
+    "context": {},
+    "output": "The currency of Egypt is the Egyptian Pound (EGP).",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest waterfall in the world?",
+    "context": {},
+    "output": "Angel Falls, Venezuela",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many countries are in the European Union?",
+    "context": {},
+    "output": "27 countries",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language spoken in New Zealand?",
+    "context": {},
+    "output": "English and M\u0101ori",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Singapore?",
+    "context": {},
+    "output": "Singapore Dollar",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many states are there in the United States?",
+    "context": {},
+    "output": "50 states",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in Europe?",
+    "context": {},
+    "output": "Mount Elbrus",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many countries are in the African Union?",
+    "context": {},
+    "output": "54 countries",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most populous country in Asia?",
+    "context": {},
+    "output": "The most populous country in Asia is China.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language spoken in Australia?",
+    "context": {},
+    "output": "English is the official language of Australia.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'A'?",
+    "context": {},
+    "output": "The capital of a country that starts with 'A' is Athens (Greece).",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of a country that ends with 'a'?",
+    "context": {},
+    "output": "The currency of a country that ends with 'a' is the US Dollar (USD).",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest mountain range in Europe?",
+    "context": {},
+    "output": "The largest mountain range in Europe is the Alps.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Venus?",
+    "context": {},
+    "output": "Venus does not have a native currency; it uses the US Dollar (USD) for transactions.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'Z'?",
+    "context": {},
+    "output": "There is no country that starts with 'Z'.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most populous city in the world?",
+    "context": {},
+    "output": "The most populous city in the world is Tokyo, Japan.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest point on Earth?",
+    "context": {},
+    "output": "The highest point on Earth is Mount Everest, with an elevation of 8,848 meters.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of India?",
+    "context": {},
+    "output": "The currency of India is the Indian Rupee (INR).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most widely spoken language in India?",
+    "context": {},
+    "output": "The most widely spoken language in India is Hindi.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Tokyo?",
+    "context": {},
+    "output": "The population of Tokyo is approximately 13.96 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Spain?",
+    "context": {},
+    "output": "The currency of Spain is the Euro (\u20ac).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most spoken language in the United States?",
+    "context": {},
+    "output": "The most spoken language in the United States is English.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of France?",
+    "context": {},
+    "output": "The population of France is approximately 66.9 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest country in the world by land area?",
+    "context": {},
+    "output": "The largest country in the world by land area is Russia.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most populous city in the United States?",
+    "context": {},
+    "output": "The most populous city in the United States is New York City.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the smallest country in the world?",
+    "context": {},
+    "output": "The smallest country in the world is Vatican City.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language spoken in Japan?",
+    "context": {},
+    "output": "The language spoken in Japan is Japanese.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest city in Brazil?",
+    "context": {},
+    "output": "The largest city in Brazil is S\u00e3o Paulo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest point in Australia?",
+    "context": {},
+    "output": "The highest point in Australia is Mount Kosciuszko.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the country with the most islands?",
+    "context": {},
+    "output": "The country with the most islands is Indonesia.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Mars?",
+    "context": {},
+    "output": "There is no human population on Mars.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of the United States?",
+    "context": {},
+    "output": "The capital of the United States is Washington, D.C.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest country in the world by area?",
+    "context": {},
+    "output": "The largest country in the world by area is Russia.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest point in South America?",
+    "context": {},
+    "output": "The highest point in South America is Mount Aconcagua in Argentina.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Peru?",
+    "context": {},
+    "output": "The currency of Peru is the Peruvian sol (PEN).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest lake in the world?",
+    "context": {},
+    "output": "The largest lake in the world is the Caspian Sea.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in Peru?",
+    "context": {},
+    "output": "The highest mountain in Peru is Huascar\u00e1n.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in Peru?",
+    "context": {},
+    "output": "The most common language in Peru is Spanish.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Peru?",
+    "context": {},
+    "output": "The population of Peru is approximately 33 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain range in Peru?",
+    "context": {},
+    "output": "The highest mountain range in Peru is the Andes.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest volcano in Peru?",
+    "context": {},
+    "output": "The highest volcano in Peru is Huascaran.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in Peru?",
+    "context": {},
+    "output": "The most common language in Peru is Spanish.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Peru?",
+    "context": {},
+    "output": "The population of Peru is approximately 33 million.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest country by land area?",
+    "context": {},
+    "output": "Russia",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most spoken language in the world?",
+    "context": {},
+    "output": "Mandarin Chinese",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Switzerland?",
+    "context": {},
+    "output": "The currency of Switzerland is the Swiss Franc (CHF).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the official language of Peru?",
+    "context": {},
+    "output": "The official language of Peru is Spanish.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in Australia?",
+    "context": {},
+    "output": "The highest mountain in Australia is Mount Kosciuszko.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Chile?",
+    "context": {},
+    "output": "The currency of Chile is the Chilean Peso (CLP).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest country by population?",
+    "context": {},
+    "output": "The largest country by population is China, followed closely by India.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest river in the world?",
+    "context": {},
+    "output": "The largest river in the world is the Nile.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in Antarctica?",
+    "context": {},
+    "output": "The highest mountain in Antarctica is Mount Vinson.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Japan?",
+    "context": {},
+    "output": "The population of Japan is approximately 126 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest mountain range in Asia?",
+    "context": {},
+    "output": "The largest mountain range in Asia is the Himalayas.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common sport in the Olympics?",
+    "context": {},
+    "output": "The most common sport in the Olympics is athletics (track and field).",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in North America?",
+    "context": {},
+    "output": "The highest mountain in North America is Denali, located in Alaska.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest mountain range in South America?",
+    "context": {},
+    "output": "The largest mountain range in South America is the Andes.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language spoken in Argentina?",
+    "context": {},
+    "output": "Spanish",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of China?",
+    "context": {},
+    "output": "1.4 billion",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest point in North America?",
+    "context": {},
+    "output": "The highest point in North America is Mount Whitney, with an elevation of 14,505 feet.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest city in the United States?",
+    "context": {},
+    "output": "The largest city in the United States is Los Angeles.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest country in the world by population?",
+    "context": {},
+    "output": "The largest country in the world by population is China.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of South Korea?",
+    "context": {},
+    "output": "The currency of South Korea is the Korean Won (KRW).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest point in Europe?",
+    "context": {},
+    "output": "The highest point in Europe is Mount Elbrus, with an elevation of 18,516 feet.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many time zones are in the United States?",
+    "context": {},
+    "output": "Five time zones",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest peak in the United States?",
+    "context": {},
+    "output": "Mount Whitney",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many countries are there in Africa?",
+    "context": {},
+    "output": "54 countries",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Mexico?",
+    "context": {},
+    "output": "Over 128 million",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the average temperature in New York in July?",
+    "context": {},
+    "output": "26\u00b0C",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest lake in the world?",
+    "context": {},
+    "output": "Vostok Lake",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the deepest ocean trench?",
+    "context": {},
+    "output": "Mariana Trench",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most populous country in Europe?",
+    "context": {},
+    "output": "Russia",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest forest in the world?",
+    "context": {},
+    "output": "Amazon Rainforest",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language spoken in Peru?",
+    "context": {},
+    "output": "The official language of Peru is Spanish.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest skyscraper in the world?",
+    "context": {},
+    "output": "Burj Khalifa",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most spoken language in Europe?",
+    "context": {},
+    "output": "English",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest point in the world?",
+    "context": {},
+    "output": "Mount Everest",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Egypt?",
+    "context": {},
+    "output": "Cairo",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most spoken language in Africa?",
+    "context": {},
+    "output": "Swahili",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language spoken in France?",
+    "context": {},
+    "output": "French",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most popular sport in China?",
+    "context": {},
+    "output": "Football",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with the letter 'Z'?",
+    "context": {},
+    "output": "The capital of a country that starts with the letter 'Z' is Zagreb, which is the capital of Croatia.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that ends with the letter 'a'",
+    "context": {},
+    "output": "The capital of a country that ends with the letter 'a' is Manila, which is the capital of the Philippines.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with the letter 'A'",
+    "context": {},
+    "output": "The capital of a country that starts with the letter 'A' is Athens, which is the capital of Greece.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that ends with the letter 'n'",
+    "context": {},
+    "output": "The capital of a country that ends with the letter 'n' is Tallinn, which is the capital of Estonia.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest elevation in the world?",
+    "context": {},
+    "output": "Mount Everest",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'S'?",
+    "context": {},
+    "output": "Stockholm",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most widely spoken language in the world?",
+    "context": {},
+    "output": "Mandarin Chinese",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'P'?",
+    "context": {},
+    "output": "Paris",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most populous continent?",
+    "context": {},
+    "output": "Asia",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'M'?",
+    "context": {},
+    "output": "Madrid",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'F'?",
+    "context": {},
+    "output": "Francisco de Assis",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'Q'?",
+    "context": {},
+    "output": "Quito",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'I'?",
+    "context": {},
+    "output": "Islamabad",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'J'?",
+    "context": {},
+    "output": "Jakarta",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'K'?",
+    "context": {},
+    "output": "Kingston",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'L'?",
+    "context": {},
+    "output": "Lisbon",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'N'?",
+    "context": {},
+    "output": "Nairobi",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'O'?",
+    "context": {},
+    "output": "Oslo",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'P'?",
+    "context": {},
+    "output": "Paris",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'Q'?",
+    "context": {},
+    "output": "Quito",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'R'?",
+    "context": {},
+    "output": "Rome",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'S'?",
+    "context": {},
+    "output": "Stockholm",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'T'?",
+    "context": {},
+    "output": "Tirana",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'U'?",
+    "context": {},
+    "output": "Ulaanbaatar",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'V'?",
+    "context": {},
+    "output": "Vienna",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'W'?",
+    "context": {},
+    "output": "Warsaw",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'X'?",
+    "context": {},
+    "output": "Vienna",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with 'Y'?",
+    "context": {},
+    "output": "Yerevan",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country in Europe?",
+    "context": {},
+    "output": "The capital of a country in Europe is a city like Paris, Berlin, or Madrid.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many countries border China?",
+    "context": {},
+    "output": "China borders 14 countries.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with the letter 'C'?",
+    "context": {},
+    "output": "The capital of a country that starts with the letter 'C' is a city like Cairo or Canberra.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that ends with the letter 'n'?",
+    "context": {},
+    "output": "The capital of a country that ends with the letter 'n' is a city like Paris or Berlin.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country in Africa?",
+    "context": {},
+    "output": "The capital of a country in Africa is a city like Cairo, Nairobi, or Addis Ababa.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with the letter 'A'?",
+    "context": {},
+    "output": "The capital of a country that starts with the letter 'A' is a city like Athens or Accra.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country in the Middle East?",
+    "context": {},
+    "output": "The capital of a country in the Middle East is a city like Baghdad, Riyadh, or Cairo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of the United Kingdom?",
+    "context": {},
+    "output": "The capital of the United Kingdom is London.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language of Brazil?",
+    "context": {},
+    "output": "The official language of Brazil is Portuguese.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language of Russia?",
+    "context": {},
+    "output": "The official language of Russia is Russian.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain range in the world?",
+    "context": {},
+    "output": "The highest mountain range in the world is the Himalayas.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language of Mexico?",
+    "context": {},
+    "output": "The official language of Mexico is Spanish.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of New Zealand?",
+    "context": {},
+    "output": "Wellington",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with the letter 'P'",
+    "context": {},
+    "output": "The capital of a country that starts with the letter 'P' is Paris.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest peak in South America?",
+    "context": {},
+    "output": "The highest peak in South America is Mount Aconcagua.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What language is spoken in the city of Tokyo?",
+    "context": {},
+    "output": "The language spoken in Tokyo is Japanese.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What language is spoken in Brazil?",
+    "context": {},
+    "output": "The official language of Brazil is Portuguese.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What language is spoken in China?",
+    "context": {},
+    "output": "The official language of China is Mandarin Chinese.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in Africa?",
+    "context": {},
+    "output": "The highest mountain in Africa is Mount Kilimanjaro.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What language is spoken in Japan?",
+    "context": {},
+    "output": "The primary language spoken in Japan is Japanese.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in France?",
+    "context": {},
+    "output": "French",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Germany?",
+    "context": {},
+    "output": "83 million (as of 2023)",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain range in the United States?",
+    "context": {},
+    "output": "Rocky Mountains",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in Brazil?",
+    "context": {},
+    "output": "Portuguese",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Indonesia?",
+    "context": {},
+    "output": "270 million (as of 2023)",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in the United Kingdom?",
+    "context": {},
+    "output": "English",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of the United States?",
+    "context": {},
+    "output": "333 million (as of 2023)",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language of Japan?",
+    "context": {},
+    "output": "The language of Japan is Japanese.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest city in South America?",
+    "context": {},
+    "output": "The largest city in South America is Sao Paulo, Brazil.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that begins with the letter 'A'?",
+    "context": {},
+    "output": "The capital of a country that begins with the letter 'A' is Athens, Greece.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most widely spoken language in South America?",
+    "context": {},
+    "output": "The most widely spoken language in South America is Spanish.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that begins with the letter 'Z'?",
+    "context": {},
+    "output": "There is no country that begins with the letter 'Z'.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Antarctica?",
+    "context": {},
+    "output": "Antarctica does not have an official currency.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in the Indian Ocean?",
+    "context": {},
+    "output": "The highest mountain in the Indian Ocean is Mount Everest in Nepal.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language spoken in India?",
+    "context": {},
+    "output": "The official language of India is Hindi.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the deepest part of the ocean?",
+    "context": {},
+    "output": "The deepest part of the ocean is the Challenger Deep in the Mariana Trench.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most spoken language in India?",
+    "context": {},
+    "output": "The most spoken language in India is Hindi.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in the United States?",
+    "context": {},
+    "output": "The highest mountain in the United States is Mount Whitney.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Switzerland?",
+    "context": {},
+    "output": "The capital of Switzerland is Bern.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the longest tunnel in the world?",
+    "context": {},
+    "output": "The longest tunnel in the world is the Seikan Tunnel in Japan, with a total length of 35.4 miles (57 kilometers).",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of New Zealand?",
+    "context": {},
+    "output": "The currency of New Zealand is the New Zealand Dollar (NZD).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country with a population greater than 1 billion?",
+    "context": {},
+    "output": "The capital of a country with a population greater than 1 billion is Tokyo, Japan.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest mountain in the Western Hemisphere?",
+    "context": {},
+    "output": "The highest mountain in the Western Hemisphere is Aconcagua, located in Argentina.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in Europe?",
+    "context": {},
+    "output": "The most common language in Europe is Russian.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in the United States?",
+    "context": {},
+    "output": "The most common language in the United States is English.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest peak in the world?",
+    "context": {},
+    "output": "The highest peak in the world is Mount Everest.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language spoken in Spain?",
+    "context": {},
+    "output": "The official language of Spain is Spanish.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in Africa?",
+    "context": {},
+    "output": "The most common language in Africa is Hausa.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the highest peak in Europe?",
+    "context": {},
+    "output": "The highest peak in Europe is Mount Elbrus.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most populous country in South America?",
+    "context": {},
+    "output": "Brazil",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most common language in South America?",
+    "context": {},
+    "output": "Spanish",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most spoken language in South America?",
+    "context": {},
+    "output": "The most spoken language in South America is Spanish.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What language is spoken in Iceland?",
+    "context": {},
+    "output": "Icelandic is the official language of Iceland.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the length of the Amazon River?",
+    "context": {},
+    "output": "The Amazon River is approximately 6,400 kilometers long.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]
