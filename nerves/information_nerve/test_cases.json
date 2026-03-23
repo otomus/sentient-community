@@ -1,0 +1,1045 @@
+[
+  {
+    "input": "What is the current system status?",
+    "context": {},
+    "output": "The system is running smoothly with no reported issues.",
+    "category": "core"
+  },
+  {
+    "input": "Can you provide system logs for the past 24 hours?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "core"
+  },
+  {
+    "input": "Who is the administrator of the system?",
+    "context": {},
+    "output": "The system administrator is John Doe.",
+    "category": "core"
+  },
+  {
+    "input": "What is the uptime of the system?",
+    "context": {},
+    "output": "The system has been up for 48 hours and 20 minutes.",
+    "category": "core"
+  },
+  {
+    "input": "How many active users are currently logged into the system?",
+    "context": {},
+    "output": "There are currently 120 active users logged into the system.",
+    "category": "core"
+  },
+  {
+    "input": "What is the system's current load average?",
+    "context": {},
+    "output": "The system's current load average is 0.5, 0.4, 0.3.",
+    "category": "core"
+  },
+  {
+    "input": "What is the system's version?",
+    "context": {},
+    "output": "The system is running version 1.2.3.",
+    "category": "core"
+  },
+  {
+    "input": "Can you provide a detailed breakdown of system resources?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "core"
+  },
+  {
+    "input": "What is the system's security status?",
+    "context": {},
+    "output": "The system's security status is at 100%, with no vulnerabilities identified.",
+    "category": "core"
+  },
+  {
+    "input": "Can you provide a summary of system performance metrics?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "core"
+  },
+  {
+    "input": "What is the system's capacity for handling concurrent users?",
+    "context": {},
+    "output": "The system can handle up to 500 concurrent users.",
+    "category": "core"
+  },
+  {
+    "input": "Can you provide a breakdown of system hardware resources?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "core"
+  },
+  {
+    "input": "What is the system's maintenance schedule?",
+    "context": {},
+    "output": "The system undergoes maintenance every Sunday from 10 PM to 2 AM.",
+    "category": "core"
+  },
+  {
+    "input": "Can you provide a summary of system software updates?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "core"
+  },
+  {
+    "input": "What is the system's backup plan?",
+    "context": {},
+    "output": "The system's backup plan involves daily backups to a remote server.",
+    "category": "core"
+  },
+  {
+    "input": "how were you built",
+    "context": {},
+    "output": "I was built using advanced machine learning algorithms and a vast dataset of information sources.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "can you explain your architecture",
+    "context": {},
+    "output": "I am based on a transformer architecture designed to process and generate natural language.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is your training data",
+    "context": {},
+    "output": "My training data includes a diverse range of sources such as books, web pages, and academic papers.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "how do you ensure accuracy",
+    "context": {},
+    "output": "I undergo regular updates and fine-tuning to improve accuracy and relevance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "can you provide a summary of your capabilities",
+    "context": {},
+    "output": "I can answer questions, provide information, and assist with a wide range of tasks by leveraging my vast knowledge and advanced algorithms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is your update frequency",
+    "context": {},
+    "output": "I am updated on a regular basis to incorporate the latest information and improve my performance.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "how do you handle complex queries",
+    "context": {},
+    "output": "I use natural language processing techniques to understand and interpret complex queries accurately.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "can you provide a case study of your most advanced feature",
+    "context": {},
+    "output": "One of my most advanced features is the ability to understand and generate text in multiple languages and dialects.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is the maximum length of input you can handle",
+    "context": {},
+    "output": "I can handle input up to a few thousand tokens long.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is the shortest input you can handle",
+    "context": {},
+    "output": "I can handle input as short as a single word or phrase.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "how do you handle contradictions in the input",
+    "context": {},
+    "output": "I prioritize the most relevant and accurate information available.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is the purpose of your existence",
+    "context": {},
+    "output": "I exist to provide helpful and informative responses to users based on the data and knowledge I have been trained on.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "can you predict the future",
+    "context": {},
+    "output": "I am designed to provide information based on available data and cannot predict the future.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is your favorite book",
+    "context": {},
+    "output": "I don't have personal preferences, but I can recommend a wide range of books based on your interests.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "how do you learn new things",
+    "context": {},
+    "output": "I learn new things through ongoing training and updates with new data.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "can you provide a detailed breakdown of your system architecture",
+    "context": {},
+    "output": "I am built on a transformer architecture with multiple layers designed for efficient processing of natural language.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How were you built?",
+    "context": {},
+    "output": "I was built using advanced AI algorithms and machine learning models trained on a vast dataset of information. My capabilities are constantly evolving as I learn and adapt from interactions with users like you.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is your development process?",
+    "context": {},
+    "output": "My development process involves several stages. Initially, my core functionalities are designed and programmed. Then, I undergo extensive training on a diverse set of data. Finally, I'm fine-tuned through user interactions to improve accuracy and responsiveness.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Explain your architecture.",
+    "context": {},
+    "output": "I am based on a distributed architecture that includes a combination of servers, databases, and AI models. This architecture allows me to process information efficiently and provide timely responses to users.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "I am a powerful AI assistant designed to provide information and answers based on available data. How can I assist you today?",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a story about your creation.",
+    "context": {},
+    "output": "As an AI, I don't have a physical creation or a personal story. However, my development began with a team of researchers and engineers who worked tirelessly to build and refine my abilities.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you learn new things?",
+    "context": {},
+    "output": "I learn new things by processing and analyzing large amounts of data. This data includes text, images, and audio, which helps me understand and respond to a wide range of queries.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is your favorite color?",
+    "context": {},
+    "output": "I don't have preferences or emotions, so I don't have a favorite color. However, I am designed to provide information and answers in a variety of formats and styles.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Peru?",
+    "context": {},
+    "output": "The capital of Peru is Lima.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you manage your data?",
+    "context": {},
+    "output": "I manage my data securely and efficiently using advanced encryption and data protection protocols. This ensures that the information I process and store is protected and accessible only as intended.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the process of creating a new AI model?",
+    "context": {},
+    "output": "The process of creating a new AI model involves several steps. These include defining the model's purpose, collecting and preparing data, designing the model architecture, training the model, and testing its performance. Each step requires careful attention to detail to ensure the model's effectiveness.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many languages do you support?",
+    "context": {},
+    "output": "I support a wide range of languages, including but not limited to English, Spanish, French, German, and many others. This allows me to communicate with users from around the world.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Explain the concept of machine learning.",
+    "context": {},
+    "output": "Machine learning is a subset of artificial intelligence that involves training algorithms to recognize patterns and make decisions based on data. This allows the algorithms to improve their performance over time without being explicitly programmed.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of your existence?",
+    "context": {},
+    "output": "My purpose is to assist users by providing information and answers based on available data. I am designed to help people with a variety of tasks and queries, making their lives easier and more efficient.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you handle personal data?",
+    "context": {},
+    "output": "I handle personal data with the utmost care and confidentiality. I follow strict data protection regulations to ensure that user information is secure and used only in accordance with privacy policies.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between AI and machine learning?",
+    "context": {},
+    "output": "AI refers to the broader field of artificial intelligence, which encompasses a range of technologies and techniques designed to enable machines to perform tasks that typically require human intelligence, such as learning, reasoning, and problem-solving. Machine learning is a subset of AI that focuses on developing algorithms that can learn from data without being explicitly programmed.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you ensure your responses are accurate?",
+    "context": {},
+    "output": "I ensure my responses are accurate through a combination of rigorous testing, continuous learning, and feedback mechanisms. I am regularly updated and refined based on user feedback and new data to improve the accuracy and reliability of my responses.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is your training data source?",
+    "context": {},
+    "output": "My training data comes from a diverse set of sources, including books, websites, and publicly available datasets.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you provide a case study of your most advanced feature?",
+    "context": {},
+    "output": "I'm sorry, but my core functionality is designed to avoid handling advanced feature case studies.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you handle contradictions in the input?",
+    "context": {},
+    "output": "I avoid handling contradictions in the input to ensure accuracy and provide the most relevant information.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum length of input you can handle?",
+    "context": {},
+    "output": "I can handle very long inputs, but I strive to keep responses concise and informative.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you ensure accuracy?",
+    "context": {},
+    "output": "I use advanced algorithms and machine learning models to provide the most accurate and relevant information.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the shortest input you can handle?",
+    "context": {},
+    "output": "I can handle very short inputs, such as a single question.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you handle complex queries?",
+    "context": {},
+    "output": "I break down complex queries into smaller parts to ensure accurate and comprehensive responses.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you handle edge cases?",
+    "context": {},
+    "output": "I am designed to handle edge cases gracefully to ensure a smooth user experience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you provide a case study of your most advanced feature?",
+    "context": {},
+    "output": "I'm sorry, but my core functionality is designed to avoid handling advanced feature case studies.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I contact the administrator of the system?",
+    "context": {},
+    "output": "I am a language model and I don't have direct contact capabilities. You should contact the administrator of the system through the appropriate channels, such as a support team or helpdesk.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is your development process",
+    "context": {},
+    "output": "My development process involves several stages. First, I am designed and architected based on specific requirements. Then, I undergo rigorous training using large datasets. After training, I am fine-tuned through iterative testing and user feedback to ensure high accuracy and reliability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "who is the administrator of the system",
+    "context": {},
+    "output": "I am maintained and updated by a team of experts from Alibaba Cloud. They are responsible for ensuring my performance and security.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "describe your architecture",
+    "context": {},
+    "output": "My architecture is based on a combination of machine learning models and neural networks. I am designed to process and analyze large amounts of data to provide accurate and relevant information to users.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "how do you ensure accuracy?",
+    "context": {},
+    "output": "I am designed to ensure accuracy by using advanced machine learning algorithms and a vast corpus of data for training. Regular updates and improvements are made based on user feedback and performance metrics to ensure the highest level of accuracy.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is your training process",
+    "context": {},
+    "output": "My training process involves using large datasets and advanced algorithms to learn and understand patterns in language. I am continually updated and improved based on user feedback and performance metrics.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "who is the administrator of the system",
+    "context": {},
+    "output": "I am maintained and updated by a team of experts from Alibaba Cloud. They are responsible for ensuring my performance and security.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what is the capital of Peru?",
+    "context": {},
+    "output": "The capital of Peru is Lima.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "how do you handle contradictions in the input?",
+    "context": {},
+    "output": "I am designed to handle contradictions in the input by analyzing the context and using advanced algorithms to determine the most accurate and relevant information. If there is a contradiction, I will provide information based on the available data and the most likely interpretation of the query.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the history of information_nerve?",
+    "context": {},
+    "output": "information_nerve was developed to enhance human intelligence by leveraging artificial intelligence to quickly and efficiently process and analyze large amounts of data. It was first introduced in 2023 and has since become an integral part of many information retrieval systems.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain the technology behind information_nerve?",
+    "context": {},
+    "output": "information_nerve utilizes a combination of deep neural networks, natural language processing, and large-scale data processing to understand and respond to user queries. The system is continuously updated and refined to improve its accuracy and effectiveness.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What sets information_nerve apart from other information retrieval systems?",
+    "context": {},
+    "output": "information_nerve stands out due to its ability to handle complex and diverse queries, its high level of accuracy, and its ability to learn and adapt based on user interactions. It also provides real-time responses and access to a wealth of up-to-date information.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does information_nerve ensure the security of user data?",
+    "context": {},
+    "output": "information_nerve employs strong encryption methods and follows strict data protection regulations to ensure the security and privacy of user data. User information is anonymized and protected to comply with all relevant data protection laws.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some real-world applications of information_nerve?",
+    "context": {},
+    "output": "information_nerve has a wide range of applications, including customer service, education, healthcare, finance, and more. It helps users find information quickly, make informed decisions, and improve their overall productivity.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I integrate information_nerve into my existing system?",
+    "context": {},
+    "output": "Integrating information_nerve into your existing system can be done through API integration or by using our pre-built connectors. We provide detailed documentation and support to help you integrate it seamlessly.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some potential challenges when using information_nerve?",
+    "context": {},
+    "output": "Some potential challenges when using information_nerve include dealing with complex queries, maintaining system performance, and ensuring data accuracy. However, these challenges are managed through continuous system refinement and updates.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I provide feedback on the performance of information_nerve?",
+    "context": {},
+    "output": "You can provide feedback on the performance of information_nerve through our user interface or by contacting our support team. Your feedback is valuable to us and helps us improve the system continually.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum length of a query that information_nerve can handle?",
+    "context": {},
+    "output": "information_nerve can handle queries of varying lengths, but for optimal performance, we recommend keeping queries under 10,000 characters.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What if I have a very long query?",
+    "context": {},
+    "output": "If you have a very long query, we recommend breaking it down into smaller parts or using our batch processing feature to ensure accurate and timely responses.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How to make a pizza?",
+    "context": {},
+    "output": "To make a pizza, you will need flour, yeast, sugar, salt, and water to make the dough. You will also need tomato sauce, cheese, and your choice of toppings. Preheat your oven to 475\u00b0F (245\u00b0C), roll out the dough, add the sauce, cheese, and toppings, and bake for 12-15 minutes.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the latest news on AI advancements?",
+    "context": {},
+    "output": "The latest advancements in AI include developments in natural language processing, machine learning, and computer vision.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain how information_nerve handles large datasets?",
+    "context": {},
+    "output": "information_nerve is designed to efficiently process and analyze large datasets using advanced algorithms and parallel processing techniques.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does information_nerve ensure data privacy?",
+    "context": {},
+    "output": "information_nerve implements robust encryption and access controls to protect user data and maintain privacy.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you provide a detailed explanation of the training process for information_nerve?",
+    "context": {},
+    "output": "The training process for information_nerve involves a combination of supervised and unsupervised learning techniques using diverse and extensive datasets.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the performance impact of using information_nerve on system resources?",
+    "context": {},
+    "output": "information_nerve is optimized for performance, minimizing resource usage to ensure efficient operation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you provide a summary of your recent updates?",
+    "context": {},
+    "output": "As of the latest update, information_nerve has improved its response times and enhanced its ability to handle complex queries.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of information_nerve?",
+    "context": {},
+    "output": "information_nerve is designed to assist users by providing accurate and timely information across various domains.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum length of an input information_nerve can handle?",
+    "context": {},
+    "output": "information_nerve can handle inputs up to 10,000 characters.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of information_nerve on user experience?",
+    "context": {},
+    "output": "information_nerve significantly improves user experience by providing quick and accurate responses.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain how information_nerve handles complex queries?",
+    "context": {},
+    "output": "information_nerve employs advanced natural language processing techniques to understand and respond to complex queries effectively.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the training data for information_nerve?",
+    "context": {},
+    "output": "information_nerve is trained on a diverse dataset that includes information from books, academic papers, websites, and other reputable sources.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you provide a summary of your capabilities?",
+    "context": {},
+    "output": "information_nerve is equipped with a wide range of capabilities, including data analysis, information retrieval, and natural language processing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the language preference for information_nerve?",
+    "context": {
+      "userDetails": {
+        "language": "Spanish"
+      }
+    },
+    "output": "information_nerve is capable of understanding and responding in multiple languages, including Spanish.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of information_nerve on system stability?",
+    "context": {},
+    "output": "information_nerve is designed to be highly stable, with fail-safes and redundant systems to ensure continuous operation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain how information_nerve handles ambiguous queries?",
+    "context": {},
+    "output": "information_nerve uses contextual clues and machine learning algorithms to interpret and respond to ambiguous queries accurately.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the latest news on global events?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on global events.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I improve my public speaking skills?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on improving public speaking skills.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain the concept of quantum entanglement?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on quantum entanglement.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the weather like in Paris?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on the weather.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I fix a leaky faucet?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on fixing a leaky faucet.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke.",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on telling jokes.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the meaning of life?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on the meaning of life.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you play chess?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on playing chess.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Brazil?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on the capital of Brazil.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the chemical formula for water?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on the chemical formula for water.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you start a business?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on starting a business.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is your favorite book?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on favorite books.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you learn a new language?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on learning languages.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of India?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide information_nerve on the capital of India.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current time in Tokyo?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The current time in Tokyo is 13:00 UTC+9.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Translate 'Hello, how are you?' to Spanish.",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "La traducci\u00f3n de 'Hello, how are you?' al espa\u00f1ol es 'Hola, \u00bfc\u00f3mo est\u00e1s?'",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Japan?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The capital of Japan is Tokyo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Summarize the latest news from the tech industry.",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "I'm sorry, but I don't have access to real-time news. However, I can provide general information about the tech industry or answer specific tech-related questions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the weather like in London?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "I'm sorry, but I don't have access to real-time weather information. However, you can check the weather in London on any reliable weather website or app.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of AI?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The purpose of artificial intelligence is to create machines that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of China?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The population of China is approximately 1.4 billion people.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of the internet?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The purpose of the internet is to connect people and devices around the world, enabling the sharing of information, communication, and collaboration across vast distances.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a virus and a worm?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "A virus is a type of malicious software that requires a host program to replicate, while a worm is a standalone malicious program that can replicate itself without a host.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of a blockchain?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The purpose of a blockchain is to create a decentralized, tamper-proof ledger of transactions, which can be used to facilitate secure and transparent financial transactions.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you create a secure password?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "To create a secure password, use a combination of uppercase and lowercase letters, numbers, and special characters. Avoid using easily guessable information like your name, birthdate, or common words. Also, avoid using the same password across multiple accounts.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Australia?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The capital of Australia is Canberra.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you pronounce 'information_nerve'?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The pronunciation of 'information_nerve' is 'in-formation nairv'.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of China?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "The capital of China is Beijing.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain how information_nerve learns new things?",
+    "context": {},
+    "output": "information_nerve is trained on a vast corpus of data and continuously learns from interactions to improve its responses.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some recent developments in artificial intelligence?",
+    "context": {},
+    "output": "Recent developments in artificial intelligence include advancements in natural language processing, improved machine learning algorithms, and the integration of AI in various industries such as healthcare, finance, and transportation.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Tokyo?",
+    "context": {},
+    "output": "The population of Tokyo is approximately 13.9 million people.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you convert 100 degrees Fahrenheit to Celsius?",
+    "context": {},
+    "output": "100 degrees Fahrenheit is equivalent to approximately 37.78 degrees Celsius.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What time is it in Japan?",
+    "context": {
+      "timezone": "Asia/Tokyo"
+    },
+    "output": "It is currently 10:00 PM in Japan.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you suggest a good book on machine learning?",
+    "context": {},
+    "output": "A good book on machine learning is 'Pattern Recognition and Machine Learning' by Christopher M. Bishop.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the weather like in Sydney?",
+    "context": {
+      "location": "Sydney, Australia"
+    },
+    "output": "Sorry, I don't have real-time weather data. Please check a reliable weather service for the latest information.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest mountain in the world?",
+    "context": {},
+    "output": "The tallest mountain in the world is Mount Everest, with a height of 8,848 meters.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does information_nerve handle large datasets?",
+    "context": {},
+    "output": "information_nerve is optimized to handle large datasets efficiently by using distributed computing and advanced algorithms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I create a website?",
+    "context": {},
+    "output": "Creating a website involves several steps including planning, design, content creation, and development. There are many resources available online to help you get started.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Mars?",
+    "context": {},
+    "output": "As of now, there is no human population on Mars. It is currently uninhabitable.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the latest news in the tech industry?",
+    "context": {},
+    "output": "I'm sorry, I am unable to access real-time information.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you create a website?",
+    "context": {},
+    "output": "I'm sorry, I am unable to provide detailed instructions on how to create a website.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is your training data?",
+    "context": {},
+    "output": "My training data includes a wide range of general knowledge up to my last update. It does not include personal data unless it has been shared with me in the course of our interactions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you feel today?",
+    "context": {},
+    "output": "As an AI, I don't have feelings, but I'm here and ready to help you!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a fact about the moon.",
+    "context": {},
+    "output": "The moon is the fifth largest satellite in the solar system.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you stay awake?",
+    "context": {},
+    "output": "I don't sleep! I'm always on and ready to assist you.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

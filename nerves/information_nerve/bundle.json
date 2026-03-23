@@ -1,0 +1,50 @@
+{
+  "name": "information_nerve",
+  "version": "1.0.0",
+  "description": "Provide detailed technical information about the information_nerve's capabilities and functions.",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "information",
+    "desktop",
+    "server",
+    "provide",
+    "detailed",
+    "technical",
+    "about",
+    "the",
+    "capabilities"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "geography_nerve",
+      "implementations": {
+        "python": "geography_nerve/tool.py"
+      }
+    },
+    {
+      "name": "parse_geographical_data",
+      "implementations": {
+        "python": "parse_geographical_data/tool.py"
+      }
+    },
+    {
+      "name": "free_llm_api",
+      "implementations": {
+        "python": "free_llm_api/tool.py"
+      }
+    },
+    {
+      "name": "user_preference_analysis",
+      "implementations": {
+        "python": "user_preference_analysis/tool.py"
+      }
+    }
+  ]
+}
