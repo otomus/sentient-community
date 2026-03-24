@@ -1,0 +1,19 @@
+{
+  "name": "python_nerve",
+  "version": "1.0.0",
+  "description": "python_nerve",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "python",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": []
+}

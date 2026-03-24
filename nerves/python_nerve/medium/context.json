@@ -1,0 +1,15 @@
+{
+  "system_prompt": "Rule: Always use 'self' in instance methods and 'cls' in class methods.\n\nReturn tool calls as JSON when appropriate.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "How can we define a method that modifies the state of an object?",
+      "output": "To modify the state of an object, define a method with 'self' as its first parameter. For example:\n\n```python\nclass MyClass:\n    def __init__(self, value):\n        self.value = value\n\n    def increment(self):\n        self.value += 1\n```"
+    },
+    {
+      "input": "How can we define a method that can be called on the class itself?",
+      "output": "To define a method that can be called on the class itself, use 'cls' as the first parameter. For example:\n\n```python\nclass MyClass:\n    count = 0\n\n    @classmethod\ndef increment_count(cls):\n        cls.count += 1\n```"
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.75
+}

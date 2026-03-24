@@ -1,0 +1,559 @@
+[
+  {
+    "input": "What is the difference between @staticmethod and @classmethod?",
+    "context": {},
+    "output": "The primary difference between @staticmethod and @classmethod in Python is that a static method does not receive an implicit first argument, while a class method receives the class itself as the first argument, often referred to as 'cls'. A static method is used when some processing is related to the class but doesn't need to access or modify class or instance state. A class method, on the other hand, can modify class state that applies across all instances of the class.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain both methods with examples?",
+    "context": {},
+    "output": "Sure, here are examples:\n\nStatic method:\n```python\nclass MyClass:\n    @staticmethod\ndef add(a, b):\n        return a + b\n\nresult = MyClass.add(5, 3)\nprint(result)  # Output: 8\n```\nClass method:\n```python\nclass MyClass:\n    class_variable = 10\n\n    @classmethod\ndef get_class_variable(cls):\n        return cls.class_variable\n\nresult = MyClass.get_class_variable()\nprint(result)  # Output: 10\n```",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What if I don't use self or cls?",
+    "context": {},
+    "output": "If you don't use `self` in a method, it's not a method but a function. Similarly, if you don't use `cls` in a class method, it's not a class method but still a method. Python allows you to use any name, but it's conventional to use `self` and `cls` to maintain readability.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do static methods handle inheritance?",
+    "context": {},
+    "output": "Static methods are not inherited. They are bound to the class and not the instance. If a subclass attempts to override a static method, it will not affect the original class's static method.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can static methods access instance variables?",
+    "context": {},
+    "output": "No, static methods cannot access instance variables directly because they do not receive an instance (self) as their first argument. They can only access class variables if defined within the class.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the syntax for a class method?",
+    "context": {},
+    "output": "The syntax for a class method in Python is:\n```python\nclass MyClass:\n    @classmethod\ndef method_name(cls, param1, param2):\n        # method implementation\n```",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can we use static methods for utility functions?",
+    "context": {},
+    "output": "Yes, static methods are excellent for utility functions that are related to the class but do not require access to class or instance state. They help in organizing code that is logically grouped with the class.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What happens if I try to call a static method as an instance method?",
+    "context": {},
+    "output": "If you try to call a static method as an instance method, Python will still call the method, but it will pass the instance as the first argument. This can be useful in some cases, but it's generally not recommended as it can lead to confusion.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do class methods differ from instance methods?",
+    "context": {},
+    "output": "Instance methods receive an implicit first argument (self), which refers to the instance on which the method was called. Class methods receive an implicit first argument (cls), which refers to the class itself. Instance methods can access both class and instance variables, while class methods can only access class variables.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can we use static methods for database operations?",
+    "context": {},
+    "output": "No, static methods are not suitable for database operations because they do not have access to the instance or class state. For database operations, you should use instance methods or class methods that interact with a database connection.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can we determine if a method is a static method?",
+    "context": {},
+    "output": "You can determine if a method is a static method by checking if it has the `@staticmethod` decorator. This decorator tells Python that the method is a static method and should be called without an instance of the class.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of static methods?",
+    "context": {},
+    "output": "Static methods are used when some processing is related to the class but doesn't need to access or modify class or instance state. They help in organizing code that is logically grouped with the class and can be called without creating an instance of the class.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can class methods access instance variables?",
+    "context": {},
+    "output": "No, class methods cannot access instance variables directly because they do not receive an instance (self) as their first argument. They can only access class variables if defined within the class.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What happens if I try to call a class method as an instance method?",
+    "context": {},
+    "output": "If you try to call a class method as an instance method, Python will still call the method, but it will pass the instance as the first argument. This can be useful in some cases, but it's generally not recommended as it can lead to confusion.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do class methods differ from instance methods?",
+    "context": {},
+    "output": "Instance methods receive an implicit first argument (self), which refers to the instance on which the method was called. Class methods receive an implicit first argument (cls), which refers to the class itself. Instance methods can access both class and instance variables, while class methods can only access class variables.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of python_nerve?",
+    "context": {},
+    "output": "python_nerve is a QA engineering tool designed to handle a wide range of questions by generating accurate and informative responses.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing software?",
+    "context": {},
+    "output": "To use python_nerve for testing software, you can input questions related to specific aspects of your software, and it will provide detailed explanations and examples to help you understand and resolve issues.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can I use python_nerve to help with my project?",
+    "context": {},
+    "output": "Yes, you can use python_nerve to help with your project by providing information and guidance on various topics related to your project.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the limit of questions python_nerve can answer?",
+    "context": {},
+    "output": "python_nerve is designed to handle a wide variety of questions, but it may have limitations in its knowledge cut-off date and the depth of information available for very niche or recent topics.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I integrate python_nerve into my existing software?",
+    "context": {},
+    "output": "To integrate python_nerve into your existing software, you can use its API to send questions and receive responses programmatically. This allows you to automate the process of getting help for specific issues directly within your software environment.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can python_nerve answer questions in different languages?",
+    "context": {},
+    "output": "python_nerve supports multiple languages, so you can ask questions in your preferred language and receive responses in the same language.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What if I ask a question that is not related to python_nerve?",
+    "context": {},
+    "output": "If you ask a question that is not related to python_nerve, it will not handle that question and will not provide a response.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can python_nerve answer questions about its own functionality?",
+    "context": {},
+    "output": "Yes, python_nerve can answer questions about its own functionality, such as how to use its features or troubleshoot issues.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What happens if I send an empty query?",
+    "context": {},
+    "output": "If you send an empty query, python_nerve will not provide a response.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I report a bug in python_nerve?",
+    "context": {},
+    "output": "To report a bug in python_nerve, you can contact the support team or submit an issue through the official channels provided by the developers.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can python_nerve answer questions about machine learning?",
+    "context": {},
+    "output": "Yes, python_nerve can answer questions about machine learning, providing explanations and examples related to algorithms, models, and practical applications.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between python_nerve and other QA tools?",
+    "context": {},
+    "output": "python_nerve is designed with a focus on providing detailed explanations and examples for a wide range of questions, making it a comprehensive tool for learning and problem-solving.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I get updates on the latest features in python_nerve?",
+    "context": {},
+    "output": "To get updates on the latest features in python_nerve, you can check the official website, follow the developers on social media, or subscribe to newsletters provided by the developers.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the licensing information for python_nerve?",
+    "context": {},
+    "output": "python_nerve is licensed under the MIT License, which allows for free use, modification, and distribution of the software.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can I use python_nerve for educational purposes?",
+    "context": {},
+    "output": "Yes, you can use python_nerve for educational purposes, as it provides detailed explanations and examples that can help students understand complex topics in a more engaging way.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve in a classroom setting?",
+    "context": {},
+    "output": "To use python_nerve in a classroom setting, you can integrate it into your lesson plans as a tool for providing immediate feedback and explanations to students. This can help enhance the learning experience and improve student engagement.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the weather like in San Francisco?",
+    "context": {
+      "location": "San Francisco, USA"
+    },
+    "output": "I'm sorry, but I don't have access to current weather data. Please check a weather website for the latest information.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I create a new user account?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with creating a user account. My focus is on python_nerve.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "Please provide a query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Peru?",
+    "context": {
+      "location": "Lima, Peru"
+    },
+    "output": "I'm sorry, but I don't have access to current information about Peru's capital. Please verify it yourself.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does python_nerve handle edge cases?",
+    "context": {},
+    "output": "python_nerve is designed to handle a wide range of edge cases to ensure comprehensive testing.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a static method and an instance method?",
+    "context": {},
+    "output": "A static method in python_nerve does not take 'self' or 'cls' as the first parameter. It can be called on the class itself and does not have access to instance or class-specific data. An instance method, on the other hand, takes 'self' as the first parameter and operates on an instance of the class.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for security testing?",
+    "context": {},
+    "output": "python_nerve can be used for security testing by simulating various attack scenarios and identifying vulnerabilities. You can write tests that utilize python_nerve's capabilities to test the security of your applications and ensure they are robust against potential threats.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can python_nerve simulate real user behavior?",
+    "context": {},
+    "output": "Yes, python_nerve can simulate real user behavior by mimicking interactions with your software. This can be useful for testing how your application responds to different user inputs and actions in a controlled environment.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for unit testing?",
+    "context": {},
+    "output": "To use python_nerve for unit testing, you should write tests that focus on individual units of code. Use python_nerve to simulate various inputs and outputs, and validate that each unit behaves as expected. This helps ensure that your code is functioning correctly and handles different scenarios appropriately.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for performance testing?",
+    "context": {},
+    "output": "python_nerve can be used for performance testing by simulating high levels of traffic and measuring the response time and resource usage of your application. This can help identify bottlenecks and areas for optimization to improve performance.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum number of tests python_nerve can run simultaneously?",
+    "context": {},
+    "output": "The maximum number of tests python_nerve can run simultaneously depends on the computing resources available, such as CPU and memory. Generally, python_nerve can handle a large number of tests concurrently to ensure comprehensive testing coverage.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for integration testing?",
+    "context": {},
+    "output": "To use python_nerve for integration testing, you should write tests that simulate interactions between different components of your application. Use python_nerve to mock dependencies and test how different parts work together seamlessly.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a static method and a class method?",
+    "context": {},
+    "output": "In Python, a static method is a method that belongs to the class rather than an instance of the class. It can't access or modify the class state. A class method, on the other hand, receives the class as the first argument (usually named cls), which allows it to access or modify the class state.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for stress testing?",
+    "context": {},
+    "output": "python_nerve can be used for stress testing by simulating a high volume of requests to your application. This can help you identify performance bottlenecks, resource limits, and other issues that may arise under heavy load.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for database testing?",
+    "context": {},
+    "output": "For database testing, you can use python_nerve to simulate various database operations, such as querying, inserting, updating, and deleting data. This can help you ensure that your database interactions are working as expected and that your application can handle a large volume of database requests.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for integration testing?",
+    "context": {},
+    "output": "For integration testing, you can use python_nerve to simulate the interactions between different components of your system. This can help you ensure that the different parts of your system are working together correctly and that there are no issues with communication between them.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for end-to-end testing?",
+    "context": {},
+    "output": "For end-to-end testing, you can use python_nerve to simulate the entire user journey through your system. This can help you ensure that the different components of your system are working together correctly and that the user experience is smooth and error-free.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for regression testing?",
+    "context": {},
+    "output": "For regression testing, you can use python_nerve to test your existing codebase to ensure that it still works correctly after changes have been made. This can help you identify any issues that may have been introduced by the changes and ensure that your codebase remains stable and reliable.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for load testing?",
+    "context": {},
+    "output": "For load testing, you can use python_nerve to simulate a large number of users accessing your system simultaneously. This can help you identify the performance limits of your system and ensure that it can handle a large number of users without slowing down or crashing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for API testing?",
+    "context": {},
+    "output": "For API testing, you can use python_nerve to test the different endpoints of your API and ensure that they are working correctly. This can help you identify any issues with the API and ensure that it is functioning as expected.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for mobile testing?",
+    "context": {},
+    "output": "For mobile testing, you can use python_nerve to test your application on different mobile devices and operating systems. This can help you ensure that your application is working correctly on all devices and that it provides a good user experience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for user acceptance testing?",
+    "context": {},
+    "output": "For user acceptance testing, you can use python_nerve to simulate the use of your application by real users. This can help you ensure that the application meets the needs of the end-users and that it provides a good user experience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for accessibility testing?",
+    "context": {},
+    "output": "For accessibility testing, you can use python_nerve to test your application to ensure that it is accessible to users with disabilities. This can help you ensure that your application is usable by everyone and that it complies with accessibility standards.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most efficient way to use python_nerve for API testing?",
+    "context": {},
+    "output": "python_nerve can be used for API testing by creating test cases that simulate real-world usage patterns and validate responses.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for database testing?",
+    "context": {},
+    "output": "python_nerve can be used for database testing by simulating database interactions and verifying data integrity and consistency.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for UI testing?",
+    "context": {},
+    "output": "python_nerve can be used for UI testing by simulating user interactions with the application's graphical interface and validating the expected behavior.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for cross-browser testing?",
+    "context": {},
+    "output": "python_nerve can be used for cross-browser testing by simulating user interactions across different web browsers and verifying compatibility.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for mobile app testing?",
+    "context": {},
+    "output": "python_nerve can be used for mobile app testing by simulating user interactions on mobile devices and validating the expected behavior.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing legacy systems?",
+    "context": {},
+    "output": "python_nerve can be used for testing legacy systems by simulating interactions with the system and verifying that it continues to function correctly.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing distributed systems?",
+    "context": {},
+    "output": "python_nerve can be used for testing distributed systems by simulating interactions between different components and verifying that they work together correctly.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing quantum computing algorithms?",
+    "context": {},
+    "output": "python_nerve cannot be used for testing quantum computing algorithms as it is designed for classical computing environments.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing machine learning models?",
+    "context": {},
+    "output": "python_nerve can be used for testing machine learning models by simulating various input scenarios and evaluating the model's predictions and performance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing web services?",
+    "context": {},
+    "output": "python_nerve can be used for testing web services by simulating user interactions with the service and verifying the expected responses.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing web applications?",
+    "context": {},
+    "output": "python_nerve can be used for testing web applications by automating browser interactions and validating web page elements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between functional testing and performance testing in python_nerve?",
+    "context": {},
+    "output": "In python_nerve, functional testing involves verifying that the application meets its functional requirements, while performance testing focuses on evaluating the system's ability to handle a specified load.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing mobile applications on iOS?",
+    "context": {},
+    "output": "python_nerve can be used for testing mobile applications on iOS by leveraging tools that support iOS automation, ensuring that the application functions correctly on iOS devices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum number of simultaneous test cases that python_nerve can run?",
+    "context": {},
+    "output": "python_nerve can handle multiple test cases simultaneously, but the exact limit depends on system resources and the complexity of the tests.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I integrate python_nerve with my existing test suite?",
+    "context": {},
+    "output": "python_nerve can be integrated with existing test suites by creating adapters or wrappers that allow your test cases to interact with python_nerve for automation and validation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing legacy applications?",
+    "context": {},
+    "output": "python_nerve can be used for testing legacy applications by providing compatibility layers and adapters that allow the application to run and be tested within the current testing framework.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the cost of using python_nerve for large-scale testing?",
+    "context": {},
+    "output": "The cost of using python_nerve for large-scale testing depends on various factors such as the number of test cases, the complexity of the tests, and the resources required for execution.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing microservices architecture?",
+    "context": {},
+    "output": "python_nerve can be used for testing microservices architecture by automating interactions between services and validating the system as a whole, ensuring that the microservices work together as intended.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing mobile applications on Android?",
+    "context": {},
+    "output": "python_nerve can be used for testing mobile applications on Android by leveraging tools that support Android automation, ensuring that the application functions correctly on Android devices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for continuous integration?",
+    "context": {},
+    "output": "python_nerve can be used for continuous integration by automating test runs as part of the build process, ensuring that the application remains stable and functional with each code change.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing web applications on different browsers?",
+    "context": {},
+    "output": "python_nerve can be used for testing web applications on different browsers by automating interactions across multiple browser instances, ensuring cross-browser compatibility.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the best way to use python_nerve for security testing?",
+    "context": {},
+    "output": "python_nerve can be used for security testing by simulating various security threats and vulnerabilities, allowing developers to identify and address potential security issues in the application.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing mobile applications on multiple devices?",
+    "context": {},
+    "output": "python_nerve can be used for testing mobile applications on multiple devices by automating interactions across different devices, ensuring device compatibility and usability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing web applications on different versions of browsers?",
+    "context": {},
+    "output": "python_nerve can be used for testing web applications on different versions of browsers by automating interactions across multiple browser versions, ensuring cross-version compatibility.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for testing web applications on different operating systems?",
+    "context": {},
+    "output": "python_nerve can be used for testing web applications on different operating systems by automating interactions across multiple operating systems, ensuring cross-platform usability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]
