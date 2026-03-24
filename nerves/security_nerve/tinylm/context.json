@@ -1,0 +1,15 @@
+{
+  "system_prompt": "{\nTools: geography_nerve,convert_timezone\nRespond with JSON tool calls.",
+  "few_shot_examples": [
+    {
+      "input": "how does my-bot manage environment configuration?",
+      "output": "- Automates environment configuration through automated scripts.\n- Monitors configuration changes for anomalies.\n- Logs all configuration updates for auditing."
+    },
+    {
+      "input": "what is the process for updating my-bot's security measures?",
+      "output": "- Conducts regular security assessments.\n- Identifies vulnerabilities.\n- Applies updates to fix vulnerabilities.\n- Validates updated measures through testing."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.88
+}
