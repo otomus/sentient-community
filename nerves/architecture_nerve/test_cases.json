@@ -1,0 +1,1423 @@
+[
+  {
+    "input": "What's the architecture of your system?",
+    "context": {},
+    "output": "Our system architecture is designed to be scalable and efficient, utilizing distributed microservices for enhanced performance and fault tolerance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Could you explain the design principles behind your AI architecture?",
+    "context": {},
+    "output": "Our AI architecture is built on principles of modular design, machine learning algorithms, and real-time data processing to deliver accurate and timely insights.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data?",
+    "context": {},
+    "output": "Our AI system architecture is designed to handle data through a series of pipelines that include data ingestion, processing, and analysis. This ensures efficient data handling and analysis.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it ensure security?",
+    "context": {},
+    "output": "Our AI system architecture incorporates robust security measures, including encryption, access controls, and regular audits, to protect against unauthorized access and data breaches.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle real-time data?",
+    "context": {},
+    "output": "Our AI system architecture is designed to handle real-time data through real-time processing pipelines, allowing for immediate insights and actions based on incoming data streams.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it scale?",
+    "context": {},
+    "output": "Our AI system architecture is designed to be highly scalable, allowing us to handle increasing loads by adding more resources or scaling out to multiple servers.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle complex queries?",
+    "context": {},
+    "output": "Our AI system architecture is designed to handle complex queries through advanced natural language processing and machine learning algorithms, ensuring accurate and relevant results.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it ensure reliability?",
+    "context": {},
+    "output": "Our AI system architecture is designed to ensure reliability through redundancy, failover mechanisms, and regular maintenance, ensuring uninterrupted service.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data privacy?",
+    "context": {},
+    "output": "Our AI system architecture incorporates strict data privacy measures, including anonymization, encryption, and compliance with relevant regulations, to protect user data.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data protection?",
+    "context": {},
+    "output": "Our AI system architecture includes comprehensive data protection measures, such as access controls, encryption, and regular security audits, to safeguard data against unauthorized access and breaches.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data encryption?",
+    "context": {},
+    "output": "Our AI system architecture incorporates robust encryption protocols to protect data both at rest and in transit, ensuring secure data handling.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data governance?",
+    "context": {},
+    "output": "Our AI system architecture includes data governance practices, such as data classification, access controls, and data lifecycle management, to ensure data is used effectively and securely.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data analytics?",
+    "context": {},
+    "output": "Our AI system architecture is designed to handle data analytics through advanced analytics tools and machine learning algorithms, enabling insights and actionable intelligence from data.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data visualization?",
+    "context": {},
+    "output": "Our AI system architecture includes data visualization tools to help users understand complex data sets and insights in a more intuitive and accessible manner.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data ingestion?",
+    "context": {},
+    "output": "Our AI system architecture is designed to handle data ingestion through automated pipelines and data integration tools, ensuring timely and accurate data processing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data storage?",
+    "context": {},
+    "output": "Our AI system architecture includes scalable data storage solutions to accommodate growing data volumes and ensure efficient data retrieval and management.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle large datasets?",
+    "context": {},
+    "output": "Our AI system is designed to efficiently handle large datasets using distributed computing and optimized data storage solutions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain the role of microservices in architecture_nerve's system design?",
+    "context": {},
+    "output": "Microservices help in building a loosely coupled architecture_nerve system, allowing for independent scaling and maintenance of different components.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the maximum number of concurrent users architecture_nerve can support?",
+    "context": {},
+    "output": "We can support up to 10,000 concurrent users without any significant performance degradation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user privacy and data security?",
+    "context": {},
+    "output": "We prioritize user privacy and data security by implementing advanced encryption methods and strict access controls.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can architecture_nerve process real-time data from multiple sources?",
+    "context": {},
+    "output": "Yes, architecture_nerve is designed to process real-time data from various sources efficiently.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle edge computing?",
+    "context": {},
+    "output": "Our system supports edge computing by deploying AI models closer to the data source to reduce latency and improve performance.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve ensure the reliability of its operations?",
+    "context": {},
+    "output": "We ensure the reliability of our operations through robust testing, redundancy, and monitoring systems.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle language processing?",
+    "context": {},
+    "output": "Our AI system is equipped with advanced natural language processing capabilities to understand and generate human-like text.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage its data storage and retrieval?",
+    "context": {},
+    "output": "We use a scalable and efficient data storage solution to ensure quick and reliable data retrieval.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle user authentication?",
+    "context": {},
+    "output": "Our system uses a secure user authentication mechanism to protect user data and maintain system integrity.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle complex decision-making processes?",
+    "context": {},
+    "output": "Our system is designed to handle complex decision-making processes by leveraging machine learning algorithms and sophisticated data analytics.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle quantum computing?",
+    "context": {},
+    "output": "We're currently exploring the potential of quantum computing to enhance our AI system's performance and capabilities.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve ensure the scalability of its system?",
+    "context": {},
+    "output": "We ensure scalability by designing our system with a microservices architecture and using load balancing techniques.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of your AI system and how does it handle data backup and recovery?",
+    "context": {},
+    "output": "We have a robust backup and recovery system in place to ensure data safety and availability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle different languages in user interactions?",
+    "context": {},
+    "output": "Our system supports multiple languages to facilitate global user interactions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage user sessions?",
+    "context": {},
+    "output": "architecture_nerve employs a secure session management system that includes token-based authentication and session expiration to prevent unauthorized access.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What technologies does architecture_nerve use for real-time data processing?",
+    "context": {},
+    "output": "architecture_nerve leverages Apache Kafka and Apache Spark for efficient real-time data processing and analysis.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle language recognition in multilingual applications?",
+    "context": {},
+    "output": "architecture_nerve incorporates advanced natural language processing (NLP) techniques to accurately recognize and process multiple languages.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's machine learning models?",
+    "context": {},
+    "output": "architecture_nerve's machine learning models are built using TensorFlow and deployed on a distributed computing framework like Apache Hadoop.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve support continuous integration and continuous delivery (CI/CD)?",
+    "context": {},
+    "output": "architecture_nerve integrates with popular CI/CD tools like Jenkins and GitLab to facilitate automated testing and deployment.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve ensure compliance with regulatory standards?",
+    "context": {},
+    "output": "architecture_nerve implements strict compliance mechanisms, including regular audits and adherence to GDPR, HIPAA, and other relevant standards.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's recommendation engine?",
+    "context": {},
+    "output": "architecture_nerve's recommendation engine uses collaborative filtering and matrix factorization techniques to provide personalized recommendations.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data migration?",
+    "context": {},
+    "output": "architecture_nerve provides a robust data migration tool that ensures data integrity and minimizes downtime during transfers.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage data versioning?",
+    "context": {},
+    "output": "architecture_nerve employs a version control system that tracks changes to data and allows for easy rollback to previous versions if needed.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's user interface?",
+    "context": {},
+    "output": "architecture_nerve's user interface is built using React and served through a web server to ensure a smooth and responsive user experience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data deletion requests?",
+    "context": {},
+    "output": "architecture_nerve provides a secure and efficient data deletion process that ensures compliance with data protection regulations.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve support real-time alerts and notifications?",
+    "context": {},
+    "output": "architecture_nerve uses a real-time alerting system that integrates with popular notification services like Slack and email to keep users informed.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle large-scale data ingestion?",
+    "context": {},
+    "output": "architecture_nerve employs a scalable data ingestion pipeline that can handle petabytes of data with high performance and reliability.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's anomaly detection system?",
+    "context": {},
+    "output": "architecture_nerve's anomaly detection system uses machine learning algorithms to identify unusual patterns and potential issues in data.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data access controls?",
+    "context": {},
+    "output": "architecture_nerve implements strict access controls using role-based access control (RBAC) and multi-factor authentication to ensure data security.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data sharing and collaboration?",
+    "context": {},
+    "output": "architecture_nerve provides a secure platform for data sharing and collaboration, allowing users to work together in real-time and ensure data integrity.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data replication for disaster recovery?",
+    "context": {},
+    "output": "architecture_nerve employs a sophisticated data replication strategy that ensures data is duplicated across multiple locations for disaster recovery purposes.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's authentication system?",
+    "context": {},
+    "output": "architecture_nerve's authentication system uses a multi-factor authentication process to ensure secure user access.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's data ingestion process?",
+    "context": {},
+    "output": "architecture_nerve's data ingestion process is designed to handle real-time data streaming and batch processing using Apache Kafka and Hadoop ecosystems, ensuring data is up-to-date and accessible.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's security features?",
+    "context": {},
+    "output": "architecture_nerve's security features include advanced encryption, access control, and regular security audits to protect user data and prevent unauthorized access.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's quantum computing capabilities?",
+    "context": {},
+    "output": "architecture_nerve's quantum computing capabilities are still in development, but the team is working on integrating quantum processors to enhance computational power for complex tasks.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data storage?",
+    "context": {},
+    "output": "architecture_nerve stores data in a distributed database system that can scale horizontally, ensuring reliability and performance even as data volumes grow.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve and how does it handle data backup and recovery?",
+    "context": {},
+    "output": "architecture_nerve has a robust data backup and recovery system that includes regular backups and automated failover mechanisms to ensure data integrity and business continuity.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user authentication?",
+    "context": {},
+    "output": "architecture_nerve handles user authentication through a multi-factor authentication system, including email verification and biometric authentication options for enhanced security.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve and how does it handle voice recognition?",
+    "context": {},
+    "output": "architecture_nerve uses advanced voice recognition technology integrated into its conversational interfaces to understand and respond to user queries effectively.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve and how does it handle image recognition?",
+    "context": {},
+    "output": "architecture_nerve leverages image recognition capabilities to process and analyze visual data, enabling features like object recognition and image classification.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data privacy?",
+    "context": {},
+    "output": "architecture_nerve is committed to data privacy and compliance with regulations such as GDPR, ensuring that user data is protected and only used for intended purposes.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve and how does it handle integration with other systems?",
+    "context": {},
+    "output": "architecture_nerve is designed to be highly integrable, supporting APIs and connectors to seamlessly integrate with various systems and applications for a cohesive user experience.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve and how does it handle quantum computing?",
+    "context": {},
+    "output": "architecture_nerve is designed to be quantum-resistant, ensuring compatibility with future quantum computing technologies while maintaining current operational effectiveness.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data privacy for EU residents?",
+    "context": {},
+    "output": "architecture_nerve complies with GDPR regulations by implementing strict data privacy measures, including data encryption, access controls, and regular audits to safeguard EU residents' data.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's natural language processing capabilities?",
+    "context": {},
+    "output": "architecture_nerve's natural language processing capabilities are powered by a combination of deep learning and rule-based systems, allowing for accurate and contextually relevant responses.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data storage in real-time applications?",
+    "context": {},
+    "output": "architecture_nerve is optimized for real-time data processing, using in-memory databases and high-speed storage solutions to ensure low latency and data availability.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of an AI system for climate change mitigation?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that. This query is outside of my domain of expertise.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user authentication for web applications?",
+    "context": {},
+    "output": "architecture_nerve uses a combination of username/password and multi-factor authentication to ensure secure user access to web applications.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's recommendation engine for a specific industry?",
+    "context": {},
+    "output": "architecture_nerve's recommendation engine for a specific industry is customized to include industry-specific features and data sources, providing tailored recommendations.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data storage in a healthcare setting?",
+    "context": {},
+    "output": "architecture_nerve's data storage architecture is designed with healthcare compliance in mind, incorporating HIPAA and other relevant regulations to protect patient data.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's natural language processing?",
+    "context": {},
+    "output": "architecture_nerve's natural language processing is built on a transformer architecture, which is known for its efficiency and effectiveness in understanding and generating human language.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage real-time data processing?",
+    "context": {},
+    "output": "architecture_nerve uses a distributed streaming architecture to handle real-time data processing, ensuring that data is processed and analyzed in near real-time.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve ensure compatibility with legacy systems?",
+    "context": {},
+    "output": "architecture_nerve supports a variety of legacy system integrations through a well-documented API and a flexible middleware layer.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's security protocol?",
+    "context": {},
+    "output": "architecture_nerve's security protocol is based on a multi-layered encryption framework, including both data-at-rest and data-in-motion encryption, as well as access control mechanisms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's predictive analytics engine?",
+    "context": {},
+    "output": "architecture_nerve's predictive analytics engine is powered by a deep learning model that is continuously trained on historical data to improve its forecasting accuracy.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle real-time decision-making?",
+    "context": {},
+    "output": "architecture_nerve supports real-time decision-making through a high-performance computing architecture that allows for quick data analysis and actionable insights.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data export and import?",
+    "context": {},
+    "output": "architecture_nerve supports data export and import through a standardized CSV format, making it easy to integrate with other systems and tools.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's disaster recovery plan?",
+    "context": {},
+    "output": "architecture_nerve has a robust disaster recovery plan that includes regular backups and failover mechanisms to ensure business continuity in case of a system failure.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's data visualization tool?",
+    "context": {},
+    "output": "architecture_nerve's data visualization tool is built on a modern data visualization library, providing users with interactive and insightful visual representations of their data.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the architecture of architecture_nerve's content management system?",
+    "context": {},
+    "output": "architecture_nerve's content management system is designed for managing and delivering content across multiple channels, providing a user-friendly interface for content creators and editors.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle compliance requirements?",
+    "context": {},
+    "output": "architecture_nerve incorporates compliance requirements into its design, ensuring that all systems and processes meet industry standards and regulations.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "I'm sorry, I didn't understand your question. Could you please rephrase it?",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user authentication for mobile applications?",
+    "context": {},
+    "output": "architecture_nerve supports user authentication for mobile applications through biometric authentication, secure token-based access, and regular password updates to ensure the security of user accounts.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data encryption?",
+    "context": {},
+    "output": "architecture_nerve uses strong encryption methods, including AES-256 for data at rest and TLS 1.3 for data in transit, to protect user data from unauthorized access.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data backups?",
+    "context": {},
+    "output": "architecture_nerve performs regular data backups using cloud-based storage solutions to ensure data availability and recovery in case of data loss.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user feedback?",
+    "context": {},
+    "output": "architecture_nerve actively collects and analyzes user feedback to improve the system's functionality and user experience.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data integrity?",
+    "context": {},
+    "output": "architecture_nerve ensures data integrity by implementing data validation checks, consistency constraints, and regular data audits to prevent data corruption.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the key features of architecture_nerve's performance optimization?",
+    "context": {},
+    "output": "architecture_nerve is designed to handle high volumes of data and requests efficiently, with features like caching and load balancing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve integrate with existing systems?",
+    "context": {},
+    "output": "architecture_nerve supports integration through APIs and can be configured to work with various existing systems and databases.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What role do machine learning algorithms play in architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve uses machine learning algorithms for predictive analytics, anomaly detection, and personalization of user experiences.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle internationalization?",
+    "context": {},
+    "output": "architecture_nerve supports multiple languages and regions through localization of user interfaces and data handling.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the security protocols in place for data transfer?",
+    "context": {},
+    "output": "architecture_nerve employs SSL/TLS encryption for all data transfer, ensuring secure communication between users and the system.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can architecture_nerve be deployed on-premises?",
+    "context": {},
+    "output": "Yes, architecture_nerve is designed to be flexible and can be deployed on-premises, in the cloud, or as a managed service.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle concurrency and scaling?",
+    "context": {},
+    "output": "architecture_nerve is built with scalability in mind, using techniques like horizontal scaling and distributed databases to handle concurrent requests.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What types of data does architecture_nerve process?",
+    "context": {},
+    "output": "architecture_nerve processes a variety of data types including structured, semi-structured, and unstructured data for analytics and decision-making.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is architecture_nerve updated and maintained?",
+    "context": {},
+    "output": "architecture_nerve undergoes regular updates and maintenance to fix bugs, improve performance, and add new features.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of database replication in architecture_nerve?",
+    "context": {},
+    "output": "Database replication in architecture_nerve ensures data availability and fault tolerance by maintaining multiple copies of the database.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data retention policies?",
+    "context": {},
+    "output": "architecture_nerve follows data retention policies to manage and store data for compliance and operational needs.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture of architecture_nerve's data storage solution?",
+    "context": {},
+    "output": "architecture_nerve uses a hybrid storage solution combining relational and NoSQL databases for efficient data storage and retrieval.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve ensure compliance with GDPR?",
+    "context": {},
+    "output": "architecture_nerve implements strict data privacy measures, including data encryption, access controls, and regular audits to comply with GDPR.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the process for integrating a new feature in architecture_nerve?",
+    "context": {},
+    "output": "The process for integrating a new feature in architecture_nerve involves requirements gathering, design, development, testing, and deployment phases.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the performance metrics used to evaluate architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve is evaluated using metrics such as response time, throughput, resource utilization, and user satisfaction.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle high availability?",
+    "context": {},
+    "output": "architecture_nerve employs a redundant architecture with multiple instances to ensure high availability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can architecture_nerve integrate with third-party services?",
+    "context": {},
+    "output": "Yes, architecture_nerve can integrate with various third-party services through well-defined APIs.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle disaster recovery?",
+    "context": {},
+    "output": "architecture_nerve has a robust disaster recovery plan that includes regular backups and failover mechanisms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What metrics does architecture_nerve use to monitor performance?",
+    "context": {},
+    "output": "architecture_nerve monitors performance using key metrics such as latency, throughput, and error rates.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle multi-tenant environments?",
+    "context": {},
+    "output": "architecture_nerve is designed to support multi-tenant environments, ensuring isolation and scalability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the deployment model of architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve can be deployed on-premises, in the cloud, or in a hybrid model.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What languages is architecture_nerve currently supporting?",
+    "context": {},
+    "output": "architecture_nerve currently supports English, Spanish, and French.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the pricing model of architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve offers a flexible pricing model based on usage and deployment model.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle security breaches?",
+    "context": {},
+    "output": "architecture_nerve has a comprehensive security response plan that includes immediate containment and notification.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum number of users architecture_nerve can handle?",
+    "context": {},
+    "output": "architecture_nerve can handle up to 10,000 concurrent users without performance degradation.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle API rate limiting?",
+    "context": {},
+    "output": "architecture_nerve implements API rate limiting to prevent abuse and ensure fair usage.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can architecture_nerve be used for real-time analytics?",
+    "context": {},
+    "output": "Yes, architecture_nerve is designed for real-time analytics and can process data in near real-time.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve ensure data security?",
+    "context": {},
+    "output": "architecture_nerve employs a multi-layered security approach including encryption, access controls, and regular security audits.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What programming languages does architecture_nerve support?",
+    "context": {},
+    "output": "architecture_nerve supports multiple programming languages including Python, Java, and C++ for development.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle high-traffic scenarios?",
+    "context": {},
+    "output": "architecture_nerve is designed to handle high-traffic scenarios by utilizing load balancing and horizontal scaling techniques.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the deployment strategy for architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve can be deployed on-premises, in public clouds, or on a hybrid cloud environment.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage data replication?",
+    "context": {},
+    "output": "architecture_nerve uses a distributed database system to manage data replication and ensure data availability and consistency.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the key features of architecture_nerve?",
+    "context": {},
+    "output": "Key features of architecture_nerve include real-time data processing, automatic scaling, secure data handling, and support for multiple languages.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve integrate with third-party services?",
+    "context": {},
+    "output": "architecture_nerve provides APIs and SDKs to integrate with various third-party services for seamless data exchange and functionality.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the cost structure of using architecture_nerve?",
+    "context": {},
+    "output": "The cost structure of architecture_nerve varies based on usage, with options for pay-as-you-go and subscription models.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle failover scenarios?",
+    "context": {},
+    "output": "architecture_nerve includes built-in failover mechanisms to ensure continuous service availability during unexpected downtime.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum length of a message that architecture_nerve can process?",
+    "context": {},
+    "output": "architecture_nerve can process messages up to 100,000 characters in length.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the system requirements for deploying architecture_nerve?",
+    "context": {},
+    "output": "For on-premises deployment, architecture_nerve requires at least 4 CPUs, 16GB of RAM, and 100GB of storage.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum number of users that architecture_nerve can support?",
+    "context": {},
+    "output": "architecture_nerve can support up to 100,000 users simultaneously.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the uptime guarantee for architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve provides a 99.99% uptime guarantee for its services.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage system failures?",
+    "context": {},
+    "output": "architecture_nerve employs a multi-tiered redundancy system with regular failover testing to ensure high availability and minimal downtime.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to security updates?",
+    "context": {},
+    "output": "architecture_nerve follows a strict security update process, including vulnerability assessments and patch management to protect against known threats.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve support internationalization?",
+    "context": {},
+    "output": "architecture_nerve supports multiple languages and localizes content dynamically based on user preferences and location.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What technologies are used for database management in architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve uses a combination of NoSQL and SQL databases to efficiently manage and query large volumes of data.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle large data sets?",
+    "context": {},
+    "output": "architecture_nerve is designed to handle large data sets by using distributed computing and data sharding techniques to ensure scalability and performance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can architecture_nerve be integrated with existing systems?",
+    "context": {},
+    "output": "Yes, architecture_nerve provides well-documented APIs and connectors to facilitate integration with existing systems and platforms.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to monitoring and logging?",
+    "context": {},
+    "output": "architecture_nerve uses advanced monitoring tools and centralized logging to track system performance and detect issues in real-time.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle large file uploads?",
+    "context": {},
+    "output": "architecture_nerve supports large file uploads through efficient multipart processing and resumable uploads to ensure a smooth user experience.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's disaster recovery plan?",
+    "context": {},
+    "output": "architecture_nerve has a comprehensive disaster recovery plan that includes regular backups, disaster recovery testing, and failover procedures to minimize downtime in case of a catastrophic event.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle sensitive data?",
+    "context": {},
+    "output": "architecture_nerve implements strict data encryption, access controls, and compliance measures to protect sensitive data and comply with relevant regulations.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to continuous integration and delivery?",
+    "context": {},
+    "output": "architecture_nerve uses automated CI/CD pipelines to ensure that code changes are tested and deployed efficiently and reliably.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle network latency?",
+    "context": {},
+    "output": "architecture_nerve is designed to handle network latency by optimizing data transmission protocols and using load balancing to distribute traffic efficiently.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to user experience?",
+    "context": {},
+    "output": "architecture_nerve prioritizes user experience by designing intuitive interfaces, optimizing load times, and providing personalized recommendations to enhance user satisfaction.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle data replication?",
+    "context": {},
+    "output": "architecture_nerve uses real-time data replication and synchronization to ensure data availability and consistency across multiple nodes.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to scalability testing?",
+    "context": {},
+    "output": "architecture_nerve conducts regular scalability testing to evaluate system performance and identify areas for optimization to ensure sustainable growth.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage user authentication?",
+    "context": {},
+    "output": "architecture_nerve handles user authentication through a multi-factor authentication system to ensure security.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to data encryption?",
+    "context": {},
+    "output": "architecture_nerve uses advanced encryption standards to protect sensitive data both in transit and at rest.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user notifications?",
+    "context": {},
+    "output": "architecture_nerve sends user notifications through various channels such as email, SMS, and in-app messages.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What technologies does architecture_nerve use for security monitoring?",
+    "context": {},
+    "output": "architecture_nerve employs intrusion detection systems, vulnerability scanners, and regular audits to monitor security.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle multi-language support?",
+    "context": {},
+    "output": "architecture_nerve supports multiple languages to cater to a global user base.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to disaster recovery?",
+    "context": {},
+    "output": "architecture_nerve has a robust disaster recovery plan that includes regular backups, failover mechanisms, and redundant systems.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle custom integrations?",
+    "context": {},
+    "output": "architecture_nerve provides a flexible API and integration tools to allow for custom integrations with third-party applications.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to performance optimization?",
+    "context": {},
+    "output": "architecture_nerve uses load balancing, caching, and optimization techniques to ensure high performance and scalability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle rate limiting?",
+    "context": {},
+    "output": "architecture_nerve implements rate limiting to prevent abuse and ensure fair usage of resources.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to logging and monitoring?",
+    "context": {},
+    "output": "architecture_nerve uses centralized logging and monitoring tools to track system performance and identify issues.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle legacy systems?",
+    "context": {},
+    "output": "architecture_nerve provides migration tools and integration support to help users transition from legacy systems.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to error handling?",
+    "context": {},
+    "output": "architecture_nerve includes comprehensive error handling and logging to ensure user experience and system stability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle third-party dependencies?",
+    "context": {},
+    "output": "architecture_nerve carefully manages third-party dependencies to ensure security and compatibility.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle localization for non-English languages?",
+    "context": {},
+    "output": "architecture_nerve handles localization through a dedicated team that translates content and interfaces into non-English languages.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Empty input",
+    "context": {},
+    "output": "Please provide a query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "A very long input string that exceeds the expected length for a user query",
+    "context": {},
+    "output": "Please provide a shorter query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to user onboarding?",
+    "context": {},
+    "output": "architecture_nerve provides a comprehensive onboarding process to help new users get started quickly and easily.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to compliance with international standards?",
+    "context": {},
+    "output": "architecture_nerve adheres to international standards and regulations to ensure compliance and protect user data.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to user feedback collection?",
+    "context": {},
+    "output": "architecture_nerve actively collects and analyzes user feedback to improve the system and user experience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to handling complex data migrations?",
+    "context": {},
+    "output": "The architecture_nerve employs a multi-step process for complex data migrations, including data validation, transformation, and error handling to ensure seamless and secure data transfer.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle real-time data processing?",
+    "context": {},
+    "output": "architecture_nerve utilizes real-time data processing frameworks to enable immediate analysis and response to data streams, ensuring up-to-the-minute insights.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the security measures in place for user data in architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve implements a robust suite of security measures, including encryption, access controls, and regular security audits, to protect user data.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage third-party integrations?",
+    "context": {},
+    "output": "architecture_nerve handles third-party integrations through standardized API interfaces, ensuring compatibility and data security.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the approach to version control in architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve uses a version control system to manage code changes, enabling collaboration, tracking modifications, and rollback capabilities.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to machine learning?",
+    "context": {},
+    "output": "architecture_nerve integrates machine learning algorithms to analyze data, make predictions, and optimize operations, enhancing its performance and efficiency.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user onboarding?",
+    "context": {},
+    "output": "architecture_nerve offers a comprehensive onboarding process to guide users through initial setup, providing tutorials, and support resources to ensure a smooth start.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle GDPR compliance?",
+    "context": {},
+    "output": "architecture_nerve is designed to comply with GDPR requirements, including data protection measures, user consent management, and regular audits to ensure privacy and security.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to user authentication?",
+    "context": {},
+    "output": "architecture_nerve uses a multi-factor authentication system to secure user access, including password, biometric, and token-based verification methods.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage high availability?",
+    "context": {},
+    "output": "architecture_nerve employs a high-availability architecture with redundancy and failover mechanisms to ensure continuous operation and minimal downtime.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve ensure system security?",
+    "context": {},
+    "output": "architecture_nerve employs advanced encryption methods and regular security audits to ensure system security.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the performance impact of using architecture_nerve in a high-traffic environment?",
+    "context": {},
+    "output": "architecture_nerve is designed to handle high traffic efficiently through load balancing and caching mechanisms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage user authentication and authorization?",
+    "context": {},
+    "output": "architecture_nerve uses a multi-factor authentication system and role-based access control to manage user authentication and authorization.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to managing user preferences?",
+    "context": {},
+    "output": "architecture_nerve allows users to customize their experience through a user-friendly interface and stores preferences securely.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle updates and maintenance?",
+    "context": {},
+    "output": "architecture_nerve has a robust update and maintenance process that includes automated testing and rollback options.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What programming languages are supported by architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve supports multiple programming languages to accommodate various development needs.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user analytics and reporting?",
+    "context": {},
+    "output": "architecture_nerve provides comprehensive user analytics and reporting tools to help businesses make informed decisions.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to internationalization?",
+    "context": {},
+    "output": "architecture_nerve supports multiple languages and regions through an internationalization framework.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user error handling?",
+    "context": {},
+    "output": "architecture_nerve includes clear and informative error messages to help users resolve issues quickly.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum size of a single API request that architecture_nerve can handle?",
+    "context": {},
+    "output": "architecture_nerve can handle large API requests up to 10MB in size.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle unexpected downtime?",
+    "context": {},
+    "output": "architecture_nerve has a disaster recovery plan and monitoring systems in place to minimize unexpected downtime.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to managing data backups and recovery?",
+    "context": {},
+    "output": "architecture_nerve performs regular data backups and has a disaster recovery plan in place.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle multi-language support in third-party integrations?",
+    "context": {},
+    "output": "architecture_nerve ensures seamless integration with third-party services regardless of language support.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to handling security vulnerabilities?",
+    "context": {},
+    "output": "architecture_nerve follows a proactive security strategy, including regular security assessments and patch management.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage user data migration?",
+    "context": {},
+    "output": "architecture_nerve provides a user-friendly data migration tool to ensure a smooth transition of user data.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What security measures does architecture_nerve employ?",
+    "context": {},
+    "output": "architecture_nerve employs encryption, authentication, and access controls to ensure data security.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve optimize for low latency?",
+    "context": {},
+    "output": "architecture_nerve employs microservices architecture and caching strategies to optimize for low latency.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What tools does architecture_nerve use for monitoring and logging?",
+    "context": {},
+    "output": "architecture_nerve uses Prometheus, Grafana, and ELK stack for monitoring and logging.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to version control?",
+    "context": {},
+    "output": "architecture_nerve uses Git for version control and follows a branching strategy for development.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to security incident response?",
+    "context": {},
+    "output": "architecture_nerve has a dedicated security incident response team that follows a predefined incident response plan.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle multi-tenancy?",
+    "context": {},
+    "output": "architecture_nerve uses a shared-nothing architecture with separate databases for each tenant.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to continuous deployment?",
+    "context": {},
+    "output": "architecture_nerve uses Jenkins and GitLab for continuous deployment.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user experience?",
+    "context": {},
+    "output": "architecture_nerve focuses on providing a seamless user experience through intuitive interfaces and responsive design.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user interface design?",
+    "context": {},
+    "output": "architecture_nerve follows a design system approach to ensure consistency and scalability in user interface design.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user interface testing?",
+    "context": {},
+    "output": "architecture_nerve uses automated UI testing tools like Selenium and Cypress for user interface testing.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle user interface deployment?",
+    "context": {},
+    "output": "architecture_nerve follows a canary release strategy for deploying user interfaces.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to security?",
+    "context": {},
+    "output": "architecture_nerve employs robust security measures to protect against unauthorized access and data breaches.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve manage large scale deployments?",
+    "context": {},
+    "output": "architecture_nerve is designed to handle large scale deployments efficiently by leveraging distributed systems and microservices architecture.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What technologies are used for user interface in architecture_nerve?",
+    "context": {},
+    "output": "architecture_nerve uses modern web technologies such as React and Angular for its user interface.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's strategy for disaster recovery?",
+    "context": {},
+    "output": "architecture_nerve has a comprehensive disaster recovery strategy that includes regular backups and failover mechanisms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to API management?",
+    "context": {},
+    "output": "architecture_nerve uses an API gateway to manage and secure API requests, providing rate limiting and authentication.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to load balancing?",
+    "context": {},
+    "output": "architecture_nerve uses load balancing techniques to distribute traffic evenly across multiple servers, ensuring high availability and performance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to scalability?",
+    "context": {},
+    "output": "architecture_nerve is built with scalability in mind, allowing it to handle increasing loads and user bases efficiently.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does architecture_nerve handle complex queries?",
+    "context": {},
+    "output": "architecture_nerve uses advanced query optimization techniques to handle complex queries efficiently and quickly.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the architecture_nerve's approach to compliance?",
+    "context": {},
+    "output": "architecture_nerve adheres to industry standards and regulations, ensuring compliance and adherence to legal requirements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

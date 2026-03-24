@@ -1,0 +1,25 @@
+{
+  "name": "architecture_nerve",
+  "version": "1.0.0",
+  "description": "Provide detailed and specific responses for all queries related to architecture_nerve's capabilities and architecture.",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "architecture",
+    "desktop",
+    "server",
+    "provide",
+    "detailed",
+    "and",
+    "specific",
+    "responses",
+    "for"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": []
+}
