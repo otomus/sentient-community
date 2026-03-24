@@ -1,0 +1,19 @@
+{
+  "name": "science_nerve",
+  "version": "1.0.0",
+  "description": "science_nerve",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "science",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": []
+}
