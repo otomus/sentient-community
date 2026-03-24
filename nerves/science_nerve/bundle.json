@@ -1,0 +1,25 @@
+{
+  "name": "science_nerve",
+  "version": "1.0.0",
+  "description": "Provide detailed information on the role and effects of science_nerve in neuroscience and biology, avoiding off-topic responses.",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "science",
+    "desktop",
+    "server",
+    "provide",
+    "detailed",
+    "information",
+    "the",
+    "role",
+    "and"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": []
+}
