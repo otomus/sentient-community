@@ -1,0 +1,786 @@
+[
+  {
+    "input": "write a haiku about coding",
+    "context": {},
+    "output": "Code flows like a stream,\nSyntax dances on the screen,\nPrograms come to life.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about stars",
+    "context": {},
+    "output": "Stars twinkle in the night,\nGuiding travelers through the dark,\nDreams soar on their light.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a mountain range",
+    "context": {},
+    "output": "Mountain peaks touch the sky,\nSnowy summits in the distance,\nNature's breath in white.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Create a haiku about a winter storm",
+    "context": {},
+    "output": "Snow muffles the earth,\nTrees whisper in white,\nSilence blankets the night.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about the sea",
+    "context": {},
+    "output": "Waves crash on the shore,\nSalt air fills the salty sky,\nOceans vast and blue.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a rainy day",
+    "context": {},
+    "output": "Rain taps on the glass,\nGlistening drops on the leaves,\nNature's gentle shower.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a quiet forest",
+    "context": {},
+    "output": "Silence fills the trees,\nBirds sing in the distance,\nNature's peaceful song.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer breeze",
+    "context": {},
+    "output": "Breeze whispers through the leaves,\nWarmth on the skin, cool on the soul,\nSummer's gentle touch.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter moon",
+    "context": {},
+    "output": "Moonlit night in winter,\nSnowy landscapes under the glow,\nSilent, peaceful, and serene.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Create a haiku about the stars",
+    "context": {},
+    "output": "Stars twinkle in the night,\nGuiding travelers through the dark,\nDreams soar on their light.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter wonderland",
+    "context": {},
+    "output": "Snowy landscapes glow,\nSilent, peaceful, and serene,\nWinter's gentle touch.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer sun",
+    "context": {},
+    "output": "Sun blazes in the sky,\nGolden rays on every face,\nSummer's warm embrace.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a moonlit night",
+    "context": {},
+    "output": "Moonlit night in summer,\nStars twinkle in the sky,\nNature's peaceful song.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter snowfall",
+    "context": {},
+    "output": "Snow muffles the earth,\nTrees whisper in white,\nNature's breath in white.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer night",
+    "context": {},
+    "output": "Breeze whispers through the leaves,\nWarmth on the skin, cool on the soul,\nSummer's gentle touch.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a winter night",
+    "context": {},
+    "output": "Snow muffles the earth,\nTrees whisper in white,\nNature's breath in white.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter sunrise",
+    "context": {},
+    "output": "Dawn whispers softly,\nSnow muffles the horizon,\nDaybreak's gentle touch.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a spring rain",
+    "context": {},
+    "output": "Rain dances on leaves,\nSpring's soft whispers fill the air,\nNew life blooms below.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a autumn leaves falling",
+    "context": {},
+    "output": "Leaves whisper to ground,\nAutumn's breath grows cold,\nNature's final page.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter moonset",
+    "context": {},
+    "output": "Moonset silhouettes,\nSnowy landscape underlit,\nSilence cradles the night.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer storm",
+    "context": {},
+    "output": "Thunder roars loud,\nRain pours, lightning flashes,\nNature's fierce display.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter snowstorm",
+    "context": {},
+    "output": "Snow muffles the world,\nStorm rages, night turns white,\nSilence blankets the land.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about the moon",
+    "context": {},
+    "output": "Silent sentinel,\nGuiding through dark nights,\nMoon's gentle light.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a starry sky",
+    "context": {},
+    "output": "Stars twinkle above,\nSilence fills the night air,\nCosmic wonder.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about the ocean",
+    "context": {},
+    "output": "Waves crash on shore,\nOcean's vast and eternal,\nNature's endless song.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter forest",
+    "context": {},
+    "output": "Snow blankets the trees,\nSilence fills the forest,\nWinter's peaceful grip.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer garden",
+    "context": {},
+    "output": "Blossoms in full bloom,\nNature's vibrant display,\nSummer's sweet delight.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter campfire",
+    "context": {},
+    "output": "Fire crackles bright,\nWarmth in the cold night air,\nNature's cozy hug.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter landscape",
+    "context": {},
+    "output": "Snowy wilderness,\nSilence and beauty combined,\nWinter's serene beauty.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer beach",
+    "context": {},
+    "output": "Sand, sea, and sun,\nSummer's golden touch,\nNature's perfect blend.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter storm",
+    "context": {},
+    "output": "The tempest roars,\nSnowy blizzard whispers,\nWinter's grip tightens.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer storm",
+    "context": {},
+    "output": "Thunder roars loud,\nRain pours down in sheets,\nSummer's fury unleashed.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a quiet forest",
+    "context": {},
+    "output": "Forest whispers calm,\nBirds sing in the trees,\nNature's peace reigns.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a spring flower",
+    "context": {},
+    "output": "Spring's first flower blooms,\nNature's palette comes alive,\nBeauty's sweet rebirth.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a desert sunset",
+    "context": {},
+    "output": "Desert's golden glow,\nHorizon fades to sand,\nSunset's fiery dance.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter night",
+    "context": {},
+    "output": "Snow muffles the earth,\nMoonlit night's peacefulness,\nWinter's hush reigns.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer twilight",
+    "context": {},
+    "output": "Evening's soft twilight,\nStars peek through the trees,\nSummer's gentle fade.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a autumn sunset",
+    "context": {},
+    "output": "Autumn's fiery blaze,\nSunset's golden glow fades,\nNature's breath grows cold.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter dawn",
+    "context": {},
+    "output": "Sunrise through snow,\nWinter's breath grows warm,\nDay's first light shone.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a autumn leaves falling",
+    "context": {},
+    "output": "Crimson leaves dance,\nNature's symphony in hues,\nAutumn's breath grows cold.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter snowscape",
+    "context": {},
+    "output": "Silent snow descends,\nBlanketing the world in white,\nPeace covers the night.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a spring dawn",
+    "context": {},
+    "output": "Sunrise breaks the dawn,\nSoft light dances on dew,\nNew day, new hope.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter solstice",
+    "context": {},
+    "output": "Long night draws to an end,\nSun rises with renewed strength,\nNew light, new hope.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer twilight",
+    "context": {},
+    "output": "Evening's gentle light fades,\nSky fills with stars above,\nSilence wraps the night.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a autumn rain",
+    "context": {},
+    "output": "Leaves whisper to rain,\nCrisp air dances with drops,\nAutumn's gentle tears.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter twilight",
+    "context": {},
+    "output": "Twilight's soft light fades,\nWinter's grip tightens,\nSilence wraps the night.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer moon",
+    "context": {},
+    "output": "Moon shines bright above,\nSummer's warmth in its glow,\nNight's gentle embrace.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a autumn twilight",
+    "context": {},
+    "output": "Twilight's soft light fades,\nAutumn's grip tightens,\nSilence wraps the night.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter twilight",
+    "context": {},
+    "output": "Twilight's soft light fades,\nWinter's grip tightens,\nSilence wraps the night.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about the stars",
+    "context": {},
+    "output": "Stars twinkle above,\nSilent sentinels of night,\nGuiding us below.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter twilight",
+    "context": {},
+    "output": "Twilight's soft light fades,\nWinter's grip tightens,\nSilence wraps the night.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a spring breeze",
+    "context": {},
+    "output": "Spring breeze whispers,\nPetals dance under moonlit sky,\nNature's soft caress.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter snowflake",
+    "context": {},
+    "output": "Silent snow descends,\nBlanketing earth in white,\nSilence speaks.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer firefly",
+    "context": {},
+    "output": "Fireflies dance at night,\nTwinkling stars above,\nNature's gentle glow.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a autumn twilight",
+    "context": {},
+    "output": "Autumn leaves falling,\nTwilight's gentle embrace,\nNature's final breath.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter solstice",
+    "context": {},
+    "output": "Sunset marks the end,\nNight's longest shadow falls,\nDawn to come.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer rainstorm",
+    "context": {},
+    "output": "Thunder roars above,\nPitter-patter on leaves,\nNature's wild dance.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter sun",
+    "context": {},
+    "output": "Sunrise in winter,\nGolden rays on snow,\nHope's warm embrace.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer rainstorm",
+    "context": {},
+    "output": "Thunder roars above,\nPitter-patter on leaves,\nNature's wild dance.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a spring flower",
+    "context": {},
+    "output": "A blossom blooms,\nSpring's soft embrace fills the air,\nNature's sweet perfume.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer moonset",
+    "context": {},
+    "output": "Moon rises in the sky,\nGolden light bathes the night,\nPeaceful slumber.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer rain",
+    "context": {},
+    "output": "Rain dances on leaves,\nNature's gentle melody,\nSummer's refreshing shower.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a quiet beach",
+    "context": {},
+    "output": "Sand underfoot soft,\nSea whispers secrets low,\nNature's peaceful calm.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a autumn moon",
+    "context": {},
+    "output": "Moon shines through leaves,\nAutumn's soft glow fills the night,\nNature's tranquil peace.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer dawn",
+    "context": {},
+    "output": "Sunrise paints the sky,\nNature's gentle awakening,\nDay's warm embrace.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter moonrise",
+    "context": {},
+    "output": "Moon rises in the sky,\nWinter's cold embrace soft,\nNature's gentle light.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter twilight",
+    "context": {},
+    "output": "Moon rises in the sky,\nNight's soft whispers fill the air,\nNature's peaceful calm.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a spring moon",
+    "context": {},
+    "output": "Spring's soft glow,\nMoonlight bathes the waking world,\nNature's gentle dance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer sunset",
+    "context": {},
+    "output": "Sunset paints the sky,\nGolden light fades, peace descends,\nNight whispers softly.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a autumn moon",
+    "context": {},
+    "output": "Autumn's moon high,\nCrisp air, leaves whisper to stars,\nSilence fills the night.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a moonlit river",
+    "context": {},
+    "output": "Moonlight on water,\nRipples dance under starlight,\nNature's tranquil song.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a moonlit city",
+    "context": {},
+    "output": "City lights aglow,\nMoon mirrors the city's dreams,\nSilence in the night.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a moonlit sky",
+    "context": {},
+    "output": "Moon's gentle light,\nStars twinkle below,\nNight's peaceful embrace.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a moonlit forest",
+    "context": {},
+    "output": "Moonlight bathes trees,\nNature whispers in darkness,\nPeace fills the night.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "Please provide a query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about the moon on the moon",
+    "context": {},
+    "output": "Moon above, moon below,\nSilence fills the endless night,\nNature's eternal dance.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a moonlit desert",
+    "context": {},
+    "output": "Moonlight on sand,\nStars above, silence below,\nNature's quiet beauty.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a moonlit mountain",
+    "context": {},
+    "output": "Moonlight on peaks,\nNature's majesty shines bright,\nSilence fills the air.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a moonlit snowstorm",
+    "context": {},
+    "output": "Moonlight through snow,\nSilence fills the air,\nNature's peaceful beauty.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a moonlit night",
+    "context": {},
+    "output": "Moon's soft light glows,\nNature's peaceful embrace,\nNight whispers softly.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a moonlit ocean",
+    "context": {},
+    "output": "Moonlight on waves,\nNature's tranquil song,\nSilence fills the night.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter forest",
+    "context": {},
+    "output": "Snow muffles the earth,\nSilent pines whisper to cold winds,\nWhite blanket blankets all.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Create a haiku about a autumn twilight",
+    "context": {},
+    "output": "Sunset paints the sky,\nLeaves whisper secrets to cool winds,\nAutumn's breath grows cold.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a summer twilight",
+    "context": {},
+    "output": "Dawn's soft light fades,\nSilence fills the twilight air,\nSummer's warmth fades.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer night",
+    "context": {},
+    "output": "Fireflies dance above,\nMoonlight bathes the sleeping earth,\nSummer's peace descends.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a autumn forest",
+    "context": {},
+    "output": "Leaves rustle in breeze,\nAutumn's colors paint the trees,\nNature's breath grows cold.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Create a haiku about a winter sun",
+    "context": {},
+    "output": "Sun's warmth melts the snow,\nSilent pines greet the day,\nWinter's grip loosens.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a autumn twilight",
+    "context": {},
+    "output": "Sunset paints the sky,\nLeaves whisper secrets to cool winds,\nAutumn's breath grows cold.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a summer moon",
+    "context": {},
+    "output": "Moonlit sky shines bright,\nSummer's warmth fills the night,\nMoon's light guides the way.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a autumn forest",
+    "context": {},
+    "output": "Leaves rustle in breeze,\nAutumn's colors paint the trees,\nNature's breath grows cold.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a stormy sea",
+    "context": {},
+    "output": "Stormy sea roars,\nWaves crash against the shore,\nNature's fury unleashed.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a moonlit night",
+    "context": {},
+    "output": "Moonlight bathes the night,\nSilent stars above,\nPeaceful serenity.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a busy city",
+    "context": {},
+    "output": "City lights aglow,\nTraffic hums in the night,\nLife pulses on.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Create a haiku about a serene mountain top",
+    "context": {},
+    "output": "Mountain top serene,\nClouds kiss the sky,\nNature's breath.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a bustling market",
+    "context": {},
+    "output": "Market alive,\nVoices blend in the crowd,\nColors dance.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a winter moonset",
+    "context": {},
+    "output": "Moonset over snow,\nSilent whispers of night,\nPeaceful slumber.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a desert sunrise",
+    "context": {},
+    "output": "Desert dawns anew,\nGolden light on sand,\nNature's awakening.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a bustling city",
+    "context": {},
+    "output": "City lights aglow,\nTraffic hums in the night,\nLife pulses on.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Create a haiku about a winter twilight",
+    "context": {},
+    "output": "Twilight descends slow,\nSnow muffles the earth,\nSilence fills the air.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a bustling city",
+    "context": {},
+    "output": "City lights aglow,\nTraffic hums in the night,\nLife pulses on.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a winter twilight",
+    "context": {},
+    "output": "Twilight descends slow,\nSnow muffles the earth,\nSilence fills the air.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a spring sunrise",
+    "context": {},
+    "output": "Dawn whispers softly,\nSpring's first light on waking fields,\nNature's breath grows warm.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a autumn leaf",
+    "context": {},
+    "output": "Crisp air dances,\nAutumn's leaf falls gently,\nNature's final breath.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Create a haiku about a moonlit lake",
+    "context": {},
+    "output": "Moonlight on water,\nSilent, still, and vast,\nNature's soft embrace.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter snowfall",
+    "context": {},
+    "output": "Silent snow descends,\nBlanketing the world in white,\nPeace covers the earth.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a desert dawn",
+    "context": {},
+    "output": "Dawn's first light shines,\nDesert's coolness calls to me,\nNew day, new adventure.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Create a haiku about a summer twilight",
+    "context": {},
+    "output": "Evening's cool breeze,\nSummer twilight's soft light fades,\nNightfall whispers calm.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a empty forest",
+    "context": {},
+    "output": "Silence fills the air,\nEmpty forest whispers calm,\nNature's breath grows still.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a winter moonset",
+    "context": {},
+    "output": "Moon sets on snow,\nWinter's stillness holds its breath,\nNight's soft, cool embrace.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Generate a haiku about a summer festival",
+    "context": {},
+    "output": "Colors burst in air,\nSummer festival's joyous sound,\nNature's vibrant heart.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter festival",
+    "context": {},
+    "output": "Snowy lights aglow,\nWinter festival's warmth and cheer,\nNature's peaceful heart.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Write a haiku about a summer festival",
+    "context": {},
+    "output": "Colors burst in air,\nSummer festival's joyful sound,\nNature's vibrant heart.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

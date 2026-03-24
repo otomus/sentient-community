@@ -1,0 +1,19 @@
+{
+  "name": "poetry_nerve",
+  "version": "1.0.0",
+  "description": "poetry_nerve",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "poetry",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": []
+}
