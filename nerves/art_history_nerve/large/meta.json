@@ -1,0 +1,49 @@
+{
+  "model": "large",
+  "size_class": "large",
+  "provider": "gguf",
+  "has_lora": false,
+  "contributor": {
+    "github": "otomus"
+  },
+  "tuning": {
+    "min_training_examples": 200,
+    "test_cases_per_batch": 15,
+    "few_shot_limit": 5,
+    "lora_rank": 16,
+    "lora_epochs": 3,
+    "lora_lr": 5e-05,
+    "lora_dropout": 0.05,
+    "lora_target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj"
+    ],
+    "training_max_length": 2048,
+    "warmup_steps": 50,
+    "eval_split": 0.1,
+    "scheduler": "cosine",
+    "quantization": "4bit",
+    "batch_size": 2,
+    "gradient_accumulation_steps": 4
+  },
+  "qualification": {
+    "minimum_threshold": 0.7,
+    "golden_threshold": 0.95,
+    "golden_iterations": 7,
+    "min_iterations": 3,
+    "qualification_timeout": 600,
+    "low_quality_threshold": 0.5,
+    "merge_threshold": 3.0,
+    "improvement_threshold": 0.95,
+    "current_score": 0.8933
+  },
+  "capabilities": {
+    "json_mode": true,
+    "tool_calling": true,
+    "max_context": 16384,
+    "max_messages": 100,
+    "include_summary": false
+  },
+  "description": "art_history_nerve"
+}

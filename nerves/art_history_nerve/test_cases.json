@@ -1,0 +1,1424 @@
+[
+  {
+    "input": "Who painted the Mona Lisa?",
+    "context": {},
+    "output": "Leonardo da Vinci painted the Mona Lisa.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa famous for?",
+    "context": {},
+    "output": "The Mona Lisa is famous for its enigmatic expression and\u7cbe\u6e5b\u7684\u7ed8\u753b\u6280\u5de7\u3002",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you tell me about Leonardo da Vinci?",
+    "context": {},
+    "output": "Leonardo da Vinci was an Italian polymath of the Renaissance, renowned for his paintings, inventions, and scientific discoveries.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa made of?",
+    "context": {},
+    "output": "The Mona Lisa is made of a poplar panel covered with layers of gesso and egg tempera.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How old is the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is approximately 500 years old.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are the most famous artists?",
+    "context": {},
+    "output": "Famous artists include Leonardo da Vinci, Vincent van Gogh, Pablo Picasso, and many more.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the origin of the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa was created in Italy during the Renaissance period.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the meaning behind the Mona Lisa?",
+    "context": {},
+    "output": "The meaning behind the Mona Lisa is a subject of much debate, with various interpretations ranging from a simple portrait to a symbol of the human condition.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How was the Mona Lisa painted?",
+    "context": {},
+    "output": "The Mona Lisa was painted using a technique called sfumato, which involves the use of hazy, blurred transitions between colors.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some artists from the Renaissance?",
+    "context": {},
+    "output": "Some Renaissance artists include Leonardo da Vinci, Michelangelo, Raphael, and Titian.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the significance of the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is considered one of the most famous paintings in the world and is a symbol of the Renaissance era.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How has the Mona Lisa influenced art?",
+    "context": {},
+    "output": "The Mona Lisa has had a significant influence on the art world, inspiring countless artists and movements throughout history.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa worth?",
+    "context": {},
+    "output": "The Mona Lisa is worth over $500 million, making it one of the most valuable paintings in the world.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is the creator of the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa was created by Leonardo da Vinci.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some other paintings by Leonardo da Vinci?",
+    "context": {},
+    "output": "Some other paintings by Leonardo da Vinci include The Last Supper, The Vitruvian Man, and The Annunciation.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's location?",
+    "context": {},
+    "output": "The Mona Lisa is currently located at the Louvre Museum in Paris, France.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is Leonardo da Vinci?",
+    "context": {},
+    "output": "Leonardo da Vinci was an Italian polymath of the Renaissance, famous for his paintings, inventions, and scientific discoveries.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "When was the Mona Lisa created?",
+    "context": {},
+    "output": "The Mona Lisa was painted between 1503 and 1506.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa known for?",
+    "context": {},
+    "output": "The Mona Lisa is known for its enigmatic smile, the sfumato technique, and its influence on the history of art.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What materials were used to create the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa was painted on a poplar panel using an oil and tempera mixture.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some other famous Renaissance artists?",
+    "context": {},
+    "output": "Some other famous Renaissance artists include Michelangelo, Raphael, and Titian.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's current location?",
+    "context": {},
+    "output": "The Mona Lisa is currently housed in the Louvre Museum in Paris, France.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the significance of the Mona Lisa's smile?",
+    "context": {},
+    "output": "The Mona Lisa's enigmatic smile has been the subject of much debate and interpretation throughout history.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's value?",
+    "context": {},
+    "output": "The Mona Lisa is considered one of the most valuable paintings in the world, with an estimated value of over $500 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some modern artists inspired by the Mona Lisa?",
+    "context": {},
+    "output": "Many modern artists have been inspired by the Mona Lisa, incorporating its themes and techniques into their work.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's artistic style?",
+    "context": {},
+    "output": "The Mona Lisa is an example of Renaissance art, characterized by its focus on perspective, realism, and emotion.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the Mona Lisa differ from other portraits of the time?",
+    "context": {},
+    "output": "The Mona Lisa is notable for its innovative use of sfumato, a technique that creates a sense of depth and atmosphere.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most famous depiction?",
+    "context": {},
+    "output": "The Mona Lisa is most famous for Leonardo da Vinci's painting of the portrait of Lisa Gherardini.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's cultural impact?",
+    "context": {},
+    "output": "The Mona Lisa has had a significant cultural impact, appearing in countless works of literature, film, and popular culture.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some other artists known for their portraits?",
+    "context": {},
+    "output": "Other artists known for their portraits include Rembrandt, Vermeer, and Caravaggio.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What cultural impact has the Mona Lisa had?",
+    "context": {},
+    "output": "The Mona Lisa has had a significant cultural impact, inspiring art, literature, and popular culture for centuries.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's medium?",
+    "context": {},
+    "output": "The Mona Lisa is painted on a poplar panel using an oil medium.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's significance?",
+    "context": {},
+    "output": "The Mona Lisa is considered one of the most famous and influential artworks in history, known for its artistic techniques and cultural impact.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's symbolism?",
+    "context": {},
+    "output": "The Mona Lisa's symbolism is subject to interpretation, but it is often thought to represent themes of mystery, introspection, and beauty.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What was the Mona Lisa painted with?",
+    "context": {},
+    "output": "The Mona Lisa was painted using oil paints on a poplar wood panel.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What techniques did Leonardo da Vinci use while painting the Mona Lisa?",
+    "context": {},
+    "output": "Leonardo da Vinci used sfumato, chiaroscuro, and other techniques to create depth and detail in the Mona Lisa.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How large is the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is 30.7 x 21.7 inches (77.9 x 55.2 cm) in size.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is a portrait painting by Leonardo da Vinci, painted between 1503 and 1506.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "When was the Mona Lisa completed?",
+    "context": {},
+    "output": "The Mona Lisa was completed around 1506.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How much is the Mona Lisa worth?",
+    "context": {},
+    "output": "The Mona Lisa is estimated to be worth over $500 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Where is the Mona Lisa now?",
+    "context": {},
+    "output": "The Mona Lisa is currently housed at the Louvre Museum in Paris, France.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some other works by Leonardo da Vinci?",
+    "context": {},
+    "output": "Some other works by Leonardo da Vinci include The Last Supper, The Vitruvian Man, and The Sforza Monolith.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who discovered the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa was discovered in 1777 by an Italian antiquarian named Gian Giacomo Casanati.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How long has the Mona Lisa been famous?",
+    "context": {},
+    "output": "The Mona Lisa has been famous for over 500 years.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is the most famous painter of the Renaissance era?",
+    "context": {},
+    "output": "Leonardo da Vinci is considered the most famous painter of the Renaissance era, known for masterpieces like the Mona Lisa and The Last Supper.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some lesser-known Renaissance paintings?",
+    "context": {},
+    "output": "Some lesser-known Renaissance paintings include 'The Birth of Venus' by Sandro Botticelli and 'The Night Watch' by Rembrandt van Rijn.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What impact did the Renaissance have on modern art?",
+    "context": {},
+    "output": "The Renaissance had a profound impact on modern art, influencing styles, techniques, and themes across various mediums.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's unique brushstrokes?",
+    "context": {},
+    "output": "The Mona Lisa is known for its sfumato technique, which uses subtle transitions between colors to create a soft, hazy effect.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How long did Leonardo da Vinci spend on the Mona Lisa?",
+    "context": {},
+    "output": "Leonardo da Vinci spent approximately 15 years working on the Mona Lisa, from 1503 to 1519.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous painting in the world?",
+    "context": {},
+    "output": "The Mona Lisa is often considered the most famous painting in the world, known for its enigmatic smile and technical brilliance.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me about an art movement that influenced the Renaissance.",
+    "context": {},
+    "output": "The Gothic art movement influenced the Renaissance by introducing new techniques in architecture, sculpture, and painting, which were reflected in the works of artists like Leonardo da Vinci.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the significance of the Mona Lisa in terms of art history?",
+    "context": {},
+    "output": "The Mona Lisa is significant in art history as one of the most influential paintings, setting new standards for portrait painting and influencing subsequent generations of artists.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the Mona Lisa's subject pose change over time?",
+    "context": {},
+    "output": "The subject of the Mona Lisa, Lisa Gherardini, is depicted with a serene and enigmatic expression, which has remained largely consistent over time.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some of the most famous Renaissance architects?",
+    "context": {},
+    "output": "Some of the most famous Renaissance architects include Filippo Brunelleschi, Leonardo da Vinci, and Donato Bramante.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What was the Mona Lisa's original title?",
+    "context": {},
+    "output": "The Mona Lisa was originally titled 'Mona Lisa', which is Italian for 'Mona Lisa'.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the Mona Lisa's fame spread?",
+    "context": {},
+    "output": "The Mona Lisa's fame spread gradually through the art world, eventually becoming one of the most recognizable paintings in the world.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What impact did the Mona Lisa have on the perception of beauty?",
+    "context": {},
+    "output": "The Mona Lisa has had a significant impact on the perception of beauty, influencing artists and collectors to seek out and value portraits of beautiful subjects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current location of the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is currently housed in the Louvre Museum in Paris, France.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is the most influential painter in art history?",
+    "context": {},
+    "output": "Leonardo da Vinci is widely considered the most influential painter in art history.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the significance of the Sistine Chapel ceiling?",
+    "context": {},
+    "output": "The Sistine Chapel ceiling is significant for its stunning frescoes and is one of the most famous works of art from the Renaissance era.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the Impressionist movement influence modern art?",
+    "context": {},
+    "output": "The Impressionist movement influenced modern art by emphasizing light, color, and contemporary life, paving the way for many subsequent artistic movements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some lesser-known works by Vincent van Gogh?",
+    "context": {},
+    "output": "Some lesser-known works by Vincent van Gogh include 'The Night Cafe' and 'Cypress Tree with a Starry Sky'.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How has the art of the Baroque period impacted contemporary design?",
+    "context": {},
+    "output": "The Baroque period's dramatic lighting, dynamic compositions, and ornate details have influenced contemporary design across various fields, including architecture and fashion.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is the most famous Asian painter?",
+    "context": {},
+    "output": "The most famous Asian painter is likely Huang Gongwang, known for his masterpiece 'The Oxbow'.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of symbolism in Renaissance art?",
+    "context": {},
+    "output": "Symbolism in Renaissance art played a crucial role in conveying complex messages and themes through objects and imagery.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some famous Renaissance architects?",
+    "context": {},
+    "output": "Some famous Renaissance architects include Brunelleschi, Alberti, and Palladio.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How has modern technology influenced contemporary art?",
+    "context": {},
+    "output": "Modern technology has influenced contemporary art by providing new mediums and tools for artistic expression, such as digital painting and virtual reality installations.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous painting by Claude Monet?",
+    "context": {},
+    "output": "The most famous painting by Claude Monet is 'Water Lilies'.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history behind the Mona Lisa's enigmatic smile?",
+    "context": {},
+    "output": "The Mona Lisa's enigmatic smile has been subject to countless interpretations over the years, with many theories about its significance.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous sculpture in the world?",
+    "context": {},
+    "output": "The most famous sculpture in the world is likely the Statue of David by Michelangelo.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How has the art of the Renaissance influenced literature?",
+    "context": {},
+    "output": "The Renaissance period had a significant impact on literature, with many works drawing inspiration from classical texts and exploring new themes and ideas.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous painting by Pablo Picasso?",
+    "context": {},
+    "output": "The most famous painting by Pablo Picasso is 'Guernica'.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How has the art of the Renaissance impacted modern fashion?",
+    "context": {},
+    "output": "The Renaissance's emphasis on humanism and the beauty of the human form has influenced modern fashion, with many designers drawing inspiration from Renaissance art for inspiration.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the significance of the Renaissance in art history?",
+    "context": {},
+    "output": "The Renaissance was a period of great cultural and artistic revival in Europe, spanning from the 14th to the 17th century. It was characterized by a renewed interest in classical learning and a focus on humanism, leading to significant advancements in art, science, and literature.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who were the key figures in the Baroque art movement?",
+    "context": {},
+    "output": "Key figures in the Baroque art movement include painters like Caravaggio, Rembrandt, and Peter Paul Vermeer, sculptors like Gian Lorenzo Bernini, and architects like Andrea Palladio.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What role did the Mona Lisa play in the development of Renaissance art?",
+    "context": {},
+    "output": "The Mona Lisa is one of the most influential artworks in the history of Renaissance art. It exemplifies the principles of sfumato, chiaroscuro, and the idealization of the human form, which had a profound impact on the development of painting techniques and themes in later art movements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Renaissance reflect the societal changes of the time?",
+    "context": {},
+    "output": "Renaissance art reflected the societal changes of the time by emphasizing humanism, individualism, and the glorification of classical ideals. Artists like Leonardo da Vinci explored themes such as the human body, nature, and the intellect, reflecting the intellectual and cultural revival of the period.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous paintings from the Renaissance era?",
+    "context": {},
+    "output": "Some of the most famous paintings from the Renaissance era include the Mona Lisa, The Last Supper, The Scream, and The Night Watch.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is the artist known for the painting 'The Starry Night'?",
+    "context": {},
+    "output": "The artist known for the painting 'The Starry Night' is Vincent van Gogh.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What techniques did Michelangelo use in creating the Sistine Chapel ceiling?",
+    "context": {},
+    "output": "Michelangelo used a variety of techniques to create the Sistine Chapel ceiling, including fresco, oil painting, and gesso. He is known for his use of chiaroscuro, sfumato, and the creation of dynamic, expressive figures.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Renaissance influence modern art?",
+    "context": {},
+    "output": "The art of the Renaissance had a profound influence on modern art, inspiring artists to explore new techniques, themes, and styles. Many modern artists draw inspiration from the works of Renaissance artists, incorporating elements of their art into their own work.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the significance of the works of Leonardo da Vinci?",
+    "context": {},
+    "output": "Leonardo da Vinci's works are significant for their technical mastery, innovative ideas, and exploration of humanism. His paintings, sculptures, and scientific writings continue to influence artists and thinkers around the world.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most influential sculptures from the Renaissance era?",
+    "context": {},
+    "output": "Some of the most influential sculptures from the Renaissance era include Michelangelo's David, Donatello's David, and the works of Giambologna.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous architects from the Renaissance era?",
+    "context": {},
+    "output": "Some of the most famous architects from the Renaissance era include Andrea Palladio, Filippo Brunelleschi, and Donato Bramante.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous prints from the Renaissance era?",
+    "context": {},
+    "output": "Some of the most famous prints from the Renaissance era include Albrecht D\u00fcrer's prints, Leonardo da Vinci's sketches, and Rembrandt's etchings.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous paintings from the 16th century?",
+    "context": {},
+    "output": "Some of the most famous paintings from the 16th century include Leonardo da Vinci's The Last Supper, Michelangelo's Sistine Chapel ceiling, and Raphael's School of Athens.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous sculptures from the 17th century?",
+    "context": {},
+    "output": "Some of the most famous sculptures from the 17th century include Gian Lorenzo Bernini's Ecstasy of St. Teresa and Rembrandt's Night Watch.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous paintings from the 17th century?",
+    "context": {},
+    "output": "Some of the most famous paintings from the 17th century include Rembrandt's Night Watch, Johannes Vermeer's Girl with a Pearl Earring, and Peter Paul Vermeer's The Girl with a Red Hat.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous depiction of the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is considered one of the most famous paintings in the world.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is a painting by Leonardo da Vinci.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa painted with?",
+    "context": {},
+    "output": "The Mona Lisa was painted with oil on canvas.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history behind the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is a painting by Leonardo da Vinci that was created in the early 16th century. It has become one of the most recognizable paintings in the world, and its history is filled with mystery and intrigue.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What impact did the Mona Lisa have on Renaissance art?",
+    "context": {},
+    "output": "The Mona Lisa was a groundbreaking work of art that had a significant impact on Renaissance art. It helped to popularize the use of sfumato, a technique for creating soft, hazy effects, and it set new standards for portrait painting.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa made from?",
+    "context": {},
+    "output": "The Mona Lisa is made from a poplar panel that has been coated with a layer of gesso. The painting itself is oil on canvas, and it has been repainted several times over the years.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is the most famous Renaissance artist?",
+    "context": {},
+    "output": "Leonardo da Vinci is widely considered to be the most famous Renaissance artist. He is known for his paintings, sculptures, and inventions, and his work continues to be studied and admired today.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some of the most famous Renaissance sculptures?",
+    "context": {},
+    "output": "Some of the most famous Renaissance sculptures include the David, the Pieta, and the statue of the Medici family. These works showcase the mastery of Renaissance artists in capturing the human form and conveying emotion through their art.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most influential Renaissance architects?",
+    "context": {},
+    "output": "Some of the most influential Renaissance architects include Filippo Brunelleschi, Leonardo da Vinci, and Andrea Palladio. These architects designed many of the most iconic buildings of the Renaissance, including the dome of Florence Cathedral and the Villa Medici.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some other famous Renaissance artists?",
+    "context": {},
+    "output": "Some other famous Renaissance artists include Michelangelo, Raphael, and Titian. These artists are known for their mastery of the human form and their innovative use of color and perspective.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most famous portrait?",
+    "context": {},
+    "output": "The Mona Lisa is most famous for its portrait of a woman with an enigmatic smile. The painting has become an icon of the Renaissance and is one of the most recognizable paintings in the world.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most famous landscape?",
+    "context": {},
+    "output": "The Mona Lisa is most famous for its depiction of a landscape with a hill in the background. The painting is known for its detailed representation of the natural world and its use of sfumato to create a sense of depth.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most famous painting?",
+    "context": {},
+    "output": "The Mona Lisa is most famous for its portrait of a woman with an enigmatic smile. The painting has become an icon of the Renaissance and is one of the most recognizable paintings in the world.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most famous sculpture?",
+    "context": {},
+    "output": "The Mona Lisa is not a sculpture, so it does not have a most famous sculpture. It is a painting, and its most famous feature is its portrait of a woman with an enigmatic smile.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most famous building?",
+    "context": {},
+    "output": "The Mona Lisa is not a building, so it does not have a most famous building. It is a painting, and its most famous feature is its portrait of a woman with an enigmatic smile.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history of the Renaissance?",
+    "context": {},
+    "output": "The Renaissance was a period of great cultural, artistic, and intellectual flourishing in Europe, spanning from the 14th to the 17th century. It began in Italy and spread to the rest of Europe, marking a significant break from the Middle Ages and the beginning of the modern era.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What was the Mona Lisa's influence on art?",
+    "context": {},
+    "output": "The Mona Lisa has had a profound influence on art, inspiring countless artists and influencing the development of various artistic movements. Its enigmatic smile and the sfumato technique used by Leonardo da Vinci have made it one of the most recognizable paintings in the world.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some of the most famous Renaissance paintings?",
+    "context": {},
+    "output": "Some of the most famous Renaissance paintings include the Mona Lisa, The Last Supper, The Sistine Chapel Ceiling, and The Birth of Venus.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What was the role of artists during the Renaissance?",
+    "context": {},
+    "output": "During the Renaissance, artists played a crucial role in the cultural and intellectual life of Europe. They were not only skilled craftsmen but also patrons of learning, contributing to the advancement of science, philosophy, and literature.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were the key characteristics of Renaissance art?",
+    "context": {},
+    "output": "Renaissance art is characterized by a return to classical ideals, the use of perspective, the sfumato technique for blending colors smoothly, and a focus on human emotion and individuality.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous Renaissance sculptures?",
+    "context": {},
+    "output": "Some of the most famous Renaissance sculptures include David, the Pieta, and the statue of Perseus with the Head of Medusa.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were the major artistic movements that followed the Renaissance?",
+    "context": {},
+    "output": "The major artistic movements that followed the Renaissance include Baroque, Rococo, Neoclassicism, and Impressionism. Each movement brought new styles, techniques, and themes to the art world.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What impact did the Renaissance have on modern design?",
+    "context": {},
+    "output": "The Renaissance had a profound impact on modern design, influencing everything from architecture and interior design to fashion and product design. The emphasis on proportion, symmetry, and humanism in Renaissance art and architecture continues to shape modern design principles.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the Renaissance influence literature?",
+    "context": {},
+    "output": "The Renaissance had a significant impact on literature, with authors like Dante, Petrarch, and Shakespeare drawing inspiration from classical texts and exploring new themes and styles. This period saw a revival of interest in ancient languages and ideas, leading to a richer and more diverse body of literary works.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous Renaissance thinkers?",
+    "context": {},
+    "output": "Some of the most famous Renaissance thinkers include Leonardo da Vinci, Galileo Galilei, and Michelangelo Buonarroti. They made groundbreaking contributions in science, mathematics, and philosophy, shaping the intellectual landscape of the time.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What impact did the Renaissance have on the development of science?",
+    "context": {},
+    "output": "The Renaissance had a significant impact on the development of science, with thinkers like Galileo Galilei and Nicolaus Copernicus revolutionizing our understanding of the universe. The emphasis on observation, experimentation, and logical reasoning during this period laid the foundation for modern science.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most important Renaissance inventions?",
+    "context": {},
+    "output": "Some of the most important Renaissance inventions include the printing press, the telescope, and the microscope. These innovations revolutionized the dissemination of knowledge and had a profound impact on science, technology, and society as a whole.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous Renaissance cities?",
+    "context": {},
+    "output": "Some of the most famous Renaissance cities include Florence, Venice, Rome, and Milan. These cities were centers of artistic, scientific, and cultural achievement, attracting artists, thinkers, and patrons from all over Europe.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What impact did the Renaissance have on fashion?",
+    "context": {},
+    "output": "The Renaissance had a significant impact on fashion, with new styles and trends emerging as a reflection of the cultural and artistic changes of the time. Fashion became a symbol of status, wealth, and individuality, and designers like Leonardo da Vinci and Andrea del Verrocchio created iconic fashion pieces.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the historical significance of the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa is a famous painting by Leonardo da Vinci that has significant historical and cultural value. It is one of the most recognizable images in the world and is considered a masterpiece of Renaissance art.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who painted the most famous Renaissance sculptures?",
+    "context": {},
+    "output": "Some of the most famous Renaissance sculptors include Michelangelo, Donatello, and Leonardo da Vinci. Their works have had a lasting impact on the development of sculpture as an art form.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were the main characteristics of Renaissance art?",
+    "context": {},
+    "output": "Renaissance art was characterized by a focus on realism, perspective, and human proportion. Artists also began to use oil paints and to create more complex compositions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Baroque period influence modern design?",
+    "context": {},
+    "output": "The Baroque period was known for its dramatic and dynamic style, which influenced many aspects of modern design. Elements like chiaroscuro, motion, and grandeur can still be seen in modern architecture and interiors.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some of the most famous Renaissance architects?",
+    "context": {},
+    "output": "Some of the most famous Renaissance architects include Filippo Brunelleschi, Leonardo da Vinci, and Andrea Palladio. Their buildings continue to influence architecture today.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What was the Mona Lisa's most famous depiction?",
+    "context": {},
+    "output": "The Mona Lisa is most famous for its enigmatic smile and the way it captures the emotions and personality of the subject. The painting has been the subject of countless interpretations and analyses over the centuries.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Renaissance impact contemporary design?",
+    "context": {},
+    "output": "The Renaissance was a period of great artistic and cultural flourishing that had a profound impact on the development of modern design. Many artists of the Renaissance laid the foundations for the techniques and styles that would go on to shape design throughout the centuries.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's historical significance?",
+    "context": {},
+    "output": "The Mona Lisa is one of the most famous and influential paintings in the history of art. Created by Leonardo da Vinci, it is renowned for its enigmatic smile and is believed to be a portrait of Lisa Gherardini, the wife of Francesco del Giocondo. The painting is housed in the Louvre Museum in Paris, France, and attracts millions of visitors each year.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How has the Mona Lisa influenced modern fashion?",
+    "context": {},
+    "output": "The Mona Lisa has had a significant impact on modern fashion. Its iconic smile and enigmatic expression have been referenced in countless fashion designs, accessories, and even clothing lines. The painting's influence can be seen in high fashion, streetwear, and even in contemporary art and design.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who is the artist behind the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa was painted by Leonardo da Vinci, one of the most famous artists in history. Da Vinci was a polymath who excelled in many areas of art, science, and engineering. The Mona Lisa is considered one of his greatest works and is often referred to as the 'Mona Lisa' because of his famous painting of the same name.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's technique?",
+    "context": {},
+    "output": "The Mona Lisa was painted using a technique called sfumato. This technique involves using a blend of oil paints to create a soft, hazy effect. The technique allows for a sense of depth and realism, and is one of the reasons why the Mona Lisa is considered one of the most beautiful paintings in the world.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's role in the Renaissance?",
+    "context": {},
+    "output": "The Mona Lisa played a significant role in the Renaissance. It was created during the Renaissance period, a time of great artistic and intellectual growth. The painting's influence can be seen in the art of the time, as well as in the art that followed it. The Mona Lisa is considered a masterpiece of Renaissance art and is a testament to the skills and creativity of Leonardo da Vinci.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's composition?",
+    "context": {},
+    "output": "The Mona Lisa's composition is one of its most striking features. The painting is set against a backdrop of rolling hills and a distant landscape, with the figure of the Mona Lisa placed centrally in the composition. This composition creates a sense of balance and harmony, and is considered one of the most effective compositions in the history of art.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's place in the Louvre?",
+    "context": {},
+    "output": "The Mona Lisa is housed in the Louvre Museum in Paris, France. The Louvre is one of the most famous museums in the world, and is home to an incredible collection of art and historical artifacts. The Mona Lisa is considered one of the most valuable and famous paintings in the museum, and is displayed in a specially designed gallery.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's conservation?",
+    "context": {},
+    "output": "The Mona Lisa is a delicate painting, and its conservation is a top priority. The painting has undergone a number of conservation efforts over the years, including cleaning, restoration, and rehousing. The painting is displayed behind a glass case with a controlled environment, which helps to protect it from damage and deterioration.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's impact on modern art?",
+    "context": {},
+    "output": "The Mona Lisa has had a significant impact on modern art. Its influence can be seen in the work of many artists, including Salvador Dali, Jackson Pollock, and Andy Warhol. The painting's iconic smile and enigmatic expression have been referenced in countless works of art and popular culture, and are still the subject of debate and interpretation today.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's cultural significance?",
+    "context": {},
+    "output": "The Mona Lisa is a cultural icon, and its influence extends far beyond the world of art. The painting has become a symbol of beauty, mystery, and grace, and is celebrated around the world. The Mona Lisa has been referenced in literature, film, music, and popular culture, and continues to inspire artists and thinkers to this day.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's place in the history of art?",
+    "context": {},
+    "output": "The Mona Lisa is one of the most important and influential paintings in the history of art. Created during the Renaissance period, it is considered a masterpiece of art and a testament to the skills and creativity of Leonardo da Vinci. The painting has had a significant impact on the art of the time, as well as on the art that followed it, and is considered one of the most beautiful paintings in the world.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's impact on contemporary society?",
+    "context": {},
+    "output": "The Mona Lisa has had a significant impact on contemporary society. Its iconic smile and enigmatic expression have been referenced in countless works of art and popular culture, and are still the subject of debate and interpretation today. The painting has become a symbol of beauty, mystery, and grace, and is celebrated around the world. The Mona Lisa has had a lasting impact on the way we think about art, beauty, and culture, and continues to inspire artists and thinkers to this day.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's role in the history of art?",
+    "context": {},
+    "output": "The Mona Lisa played a significant role in the history of art. Created during the Renaissance period, it is considered a masterpiece of art and a testament to the skills and creativity of Leonardo da Vinci. The painting has had a significant impact on the art of the time, as well as on the art that followed it, and is considered one of the most beautiful paintings in the world.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's place in the Louvre?",
+    "context": {},
+    "output": "The Mona Lisa is housed in the Louvre Museum in Paris, France. The Louvre is one of the most famous museums in the world, and is home to an incredible collection of art and historical artifacts. The Mona Lisa is considered one of the most valuable and famous paintings in the museum, and is displayed in a specially designed gallery.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous artwork from the Renaissance era?",
+    "context": {},
+    "output": "The most famous artwork from the Renaissance era is the Mona Lisa.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Baroque period impact contemporary design?",
+    "context": {},
+    "output": "The art of the Baroque period impacted contemporary design by influencing the use of color, movement, and emotion in architecture and interior design.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the key characteristics of Renaissance art?",
+    "context": {},
+    "output": "Renaissance art was characterized by a return to classical ideals, perspective, and realism.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some of the most renowned Renaissance sculptors?",
+    "context": {},
+    "output": "Some of the most renowned Renaissance sculptors include Michelangelo, Donatello, and Leonardo da Vinci.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most influential architects of the Renaissance?",
+    "context": {},
+    "output": "Some of the most influential architects of the Renaissance include Leonardo da Vinci, Filippo Brunelleschi, and Andrea Palladio.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did Renaissance art influence modern art?",
+    "context": {},
+    "output": "Renaissance art influenced modern art by setting the foundation for Western art and inspiring movements such as the Baroque and Impressionism.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some of the techniques used in Renaissance art?",
+    "context": {},
+    "output": "Renaissance art was characterized by a return to classical ideals and a focus on perspective, realism, and humanism. Techniques such as sfumato, chiaroscuro, and sfusato were commonly used to create depth and realism in paintings and sculptures.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Baroque period influence modern architecture?",
+    "context": {},
+    "output": "The Baroque period, known for its grandeur and emotion, had a significant influence on modern architecture. Elements such as dramatic lighting, dynamic forms, and ornate decoration can still be seen in modern buildings today.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some of the most influential paintings from the Renaissance era?",
+    "context": {},
+    "output": "Some of the most influential paintings from the Renaissance era include the Mona Lisa, The Last Supper, The Birth of Venus, and The School of Athens.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were some of the most famous Renaissance architects?",
+    "context": {},
+    "output": "Some of the most famous Renaissance architects include Leonardo da Vinci, Filippo Brunelleschi, Donatello, and Andrea Palladio.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between the Renaissance and the Baroque?",
+    "context": {},
+    "output": "The Renaissance was a period of great cultural and intellectual revival in Europe, marked by a return to classical ideals and a focus on humanism. The Baroque, on the other hand, was characterized by grandeur, emotion, and a dramatic use of light and shadow.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of France?",
+    "context": {},
+    "output": "The capital of France is Paris.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who painted the Sistine Chapel ceiling?",
+    "context": {},
+    "output": "The Sistine Chapel ceiling was painted by Michelangelo Buonarroti.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the meaning behind the smile in the Mona Lisa?",
+    "context": {},
+    "output": "The meaning behind the smile in the Mona Lisa is a subject of much debate. It has been interpreted as a sign of mystery, enigma, or even a hint of sadness.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the significance of the Last Supper?",
+    "context": {},
+    "output": "The Last Supper is a famous painting by Leonardo da Vinci that depicts the final meal of Jesus Christ with his apostles. It is known for its dramatic composition and detailed representation of the emotions of the figures.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What were the major influences on Renaissance art?",
+    "context": {},
+    "output": "Renaissance art was influenced by a variety of factors, including classical ideals, humanism, the study of anatomy, and the use of perspective.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How has modern technology influenced art?",
+    "context": {},
+    "output": "Modern technology has had a significant impact on art, allowing artists to create works in new and innovative ways. Digital art, virtual reality, and augmented reality are just a few examples of how technology is changing the art world.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous sculpture from the Renaissance era?",
+    "context": {},
+    "output": "The most famous sculpture from the Renaissance era is the David by Michelangelo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some other famous Renaissance artists besides Leonardo da Vinci?",
+    "context": {},
+    "output": "Other famous Renaissance artists include Raphael, Titian, and Sandro Botticelli.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some of the most influential architects from the Renaissance era?",
+    "context": {},
+    "output": "Some of the most influential architects from the Renaissance era include Filippo Brunelleschi, Andrea Palladio, and Donatello.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Peru?",
+    "context": {},
+    "output": "The capital of Peru is Lima.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in the world?",
+    "context": {},
+    "output": "The tallest building in the world is the Burj Khalifa in Dubai, United Arab Emirates.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most popular programming language?",
+    "context": {},
+    "output": "The most popular programming language is Python.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What was the Mona Lisa's influence on modern art?",
+    "context": {},
+    "output": "The Mona Lisa has had a profound influence on modern art, inspiring countless artists and movements throughout the centuries.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the Renaissance influence modern art?",
+    "context": {},
+    "output": "The Renaissance, a period of great cultural and artistic flourishing, laid the foundations for modern art by promoting humanism, individual expression, and a return to classical ideals.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some of the most influential sculptures from the Renaissance era?",
+    "context": {},
+    "output": "Some of the most influential sculptures from the Renaissance era include the David by Michelangelo and the Venus de Milo by Praxiteles.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history of the Mona Lisa?",
+    "context": {},
+    "output": "The Mona Lisa was painted by Leonardo da Vinci in the early 16th century and has since become one of the most famous paintings in the world.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's signature?",
+    "context": {},
+    "output": "The Mona Lisa does not have a signature, as Leonardo da Vinci did not sign his works during his lifetime.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many Mona Lisas are there?",
+    "context": {},
+    "output": "There are several copies and versions of the Mona Lisa, with the most famous being the original painting in the Louvre Museum in Paris.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most popular language?",
+    "context": {
+      "userDetails": {
+        "language": "Spanish"
+      }
+    },
+    "output": "The Mona Lisa is most popular in Spanish-speaking countries.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most popular language?",
+    "context": {
+      "userDetails": {
+        "language": "Chinese"
+      }
+    },
+    "output": "The Mona Lisa is most popular in Chinese-speaking countries.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's most popular language?",
+    "context": {
+      "userDetails": {
+        "language": "Japanese"
+      }
+    },
+    "output": "The Mona Lisa is most popular in Japanese-speaking countries.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous art museum in Paris?",
+    "context": {},
+    "output": "The Louvre Museum is the most famous art museum in Paris, known for its iconic collection including the Mona Lisa and the Venus de Milo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Baroque period influence modern art?",
+    "context": {},
+    "output": "The Baroque period, known for its dramatic style and emphasis on emotion and movement, had a significant influence on modern art, inspiring artists to explore new techniques and expressions.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current value of the Mona Lisa on the art market?",
+    "context": {},
+    "output": "The Mona Lisa's value on the art market is estimated to be around $500 million, making it one of the most valuable paintings in the world.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some of the most important art critics of the 20th century?",
+    "context": {},
+    "output": "Some of the most important art critics of the 20th century include Clement Greenberg, Harold Rosenberg, and Robert Hughes, each contributing significantly to the shaping of modern art's discourse and aesthetic.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history of the Renaissance in Italy?",
+    "context": {},
+    "output": "The Renaissance in Italy, spanning from the 14th to the 17th century, was a period of great cultural, political, and economic change, marked by a revival of classical learning, art, and philosophy.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Middle Ages differ from that of the Renaissance?",
+    "context": {},
+    "output": "The art of the Middle Ages and the Renaissance differed significantly, with the Middle Ages characterized by a focus on religious themes and a more rigid, hierarchical style, while the Renaissance featured a renewed interest in classical art, humanism, and individual expression.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are some of the most influential art movements of the 20th century?",
+    "context": {},
+    "output": "Some of the most influential art movements of the 20th century include Cubism, Surrealism, Pop Art, Minimalism, and Abstract Expressionism, each pushing boundaries and expanding the possibilities of visual art.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of art in societal and cultural development?",
+    "context": {},
+    "output": "Art plays a crucial role in societal and cultural development, serving as a means of expression, communication, and preserving cultural heritage. It influences thought, shapes values, and fosters creativity and innovation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Renaissance change the way people saw the world?",
+    "context": {},
+    "output": "The art of the Renaissance transformed the way people saw the world by emphasizing humanism and individual expression, challenging the Church's dominance in art, and promoting a more secular and human-centric perspective.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Mona Lisa's famous 'smile'?",
+    "context": {},
+    "output": "The Mona Lisa's famous 'smile' is one of the most recognizable features of the painting, attributed to Leonardo da Vinci's masterful use of sfumato technique and the enigmatic expression on the subject's face.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How has the art of the 21st century evolved?",
+    "context": {},
+    "output": "The art of the 21st century has evolved significantly, incorporating digital and multimedia elements, breaking traditional mediums, and reflecting contemporary global issues and experiences.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some of the most important art galleries in the United States?",
+    "context": {},
+    "output": "Some of the most important art galleries in the United States include the Metropolitan Museum of Art in New York, the Louvre Museum in Paris, the Vatican Museums in Rome, and the Tate Modern in London.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the art of the Renaissance influence modern fashion?",
+    "context": {},
+    "output": "The art of the Renaissance influenced modern fashion through its emphasis on beauty, proportion, and individuality, inspiring designers to create intricate patterns, luxurious fabrics, and iconic silhouettes.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the meaning behind the Mona Lisa's enigmatic expression?",
+    "context": {},
+    "output": "The meaning behind the Mona Lisa's enigmatic expression remains a subject of much debate and interpretation, with some suggesting it represents a moment of introspection, others a symbol of the human spirit, and still others a reflection of Leonardo da Vinci's own thoughts and emotions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who were some of the most influential painters of the Baroque period?",
+    "context": {},
+    "output": "Some of the most influential painters of the Baroque period include Peter Paul Vermeer, Rembrandt van Rijn, Gian Lorenzo Bernini, and Diego Vel\u00e1zquez. These artists were known for their dramatic use of light and color, and their ability to create dynamic compositions that captured the emotions and movement of their subjects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous sculpture from the Baroque era?",
+    "context": {},
+    "output": "The most famous sculpture from the Baroque era is the David by Michelangelo, which was created between 1501 and 1504. David is a statue of the biblical hero David, and it is considered one of the most iconic and influential works of art in the world. The sculpture is known for its dynamic pose, which captures the energy and movement of the subject.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a Renaissance artist and a Baroque artist?",
+    "context": {},
+    "output": "Renaissance artists such as Leonardo da Vinci and Michelangelo were known for their humanistic approach to art, which emphasized the beauty and complexity of the human form. They were also skilled in a wide range of artistic techniques, including painting, sculpture, and architecture. Baroque artists such as Peter Paul Vermeer and Rembrandt van Rijn, on the other hand, were known for their dramatic use of light and color, and their ability to create dynamic compositions that captured the emotions and movement of their subjects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous painting from the Renaissance era?",
+    "context": {},
+    "output": "The most famous painting from the Renaissance era is the Mona Lisa by Leonardo da Vinci, which was created between 1503 and 1506. The Mona Lisa is a portrait of Lisa Gherardini, and it is considered one of the most iconic and influential works of art in the world. The painting is known for its enigmatic smile and its use of sfumato, a technique that creates a soft, hazy effect.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between the Renaissance and the Enlightenment?",
+    "context": {},
+    "output": "The Renaissance and the Enlightenment were two distinct intellectual and cultural movements that developed in Europe during the 15th, 16th, and 17th centuries. The Renaissance was characterized by a revival of classical learning and a focus on humanism, while the Enlightenment was marked by a rational and scientific approach to knowledge, and a belief in the power of reason and democracy. The Enlightenment period followed the Renaissance and saw the development of new ideas and beliefs that would eventually shape modern society.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous painting from the Enlightenment era?",
+    "context": {},
+    "output": "The most famous painting from the Enlightenment era is The Night Watch by Rembrandt van Rijn, which was created in 1642. The Night Watch is a large painting that depicts a group of soldiers and officers in a dramatic composition. The painting is known for its use of light and shadow, and its depiction of movement and action.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between the Baroque and the Rococo?",
+    "context": {},
+    "output": "The Baroque and the Rococo were two distinct art movements that developed in Europe during the 17th and 18th centuries. The Baroque was characterized by a dramatic use of light and color, and an emphasis on emotion and movement, while the Rococo was marked by a lighter, more playful style that emphasized elegance and refinement. The Rococo period followed the Baroque and saw the development of new techniques and styles in painting, sculpture, and architecture.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous sculpture from the Rococo era?",
+    "context": {},
+    "output": "The most famous sculpture from the Rococo era is the Venus de Milo, which was discovered in 1820 on the Greek island of Milos. The Venus de Milo is a statue of the goddess Venus, and it is considered one of the most iconic and influential works of art in the world. The sculpture is known for its graceful pose and its use of delicate, flowing lines.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a Renaissance sculpture and a Baroque sculpture?",
+    "context": {},
+    "output": "Renaissance sculptures such as the David by Michelangelo were known for their humanistic approach to art, which emphasized the beauty and complexity of the human form. They were also skilled in a wide range of artistic techniques, including carving, casting, and modeling. Baroque sculptures such as the Ecstasy of Saint Teresa by Gian Lorenzo Bernini, on the other hand, were known for their dramatic use of light and color, and their ability to create dynamic compositions that captured the emotions and movement of their subjects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous painting from the Baroque era?",
+    "context": {},
+    "output": "The most famous painting from the Baroque era is The Conversion of St. Paul by Peter Paul Vermeer, which was created in 1631. The Conversion of St. Paul is a portrait of the biblical saint, and it is considered one of the most iconic and influential works of art in the world. The painting is known for its use of light and shadow, and its depiction of movement and emotion.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between the Rococo and the Neoclassical?",
+    "context": {},
+    "output": "The Rococo and the Neoclassical were two distinct art movements that developed in Europe during the 18th and 19th centuries. The Rococo was characterized by a lighter, more playful style that emphasized elegance and refinement, while the Neoclassical was marked by a more serious and formal approach to art, which emphasized the beauty and symmetry of classical forms. The Neoclassical period followed the Rococo and saw the development of new techniques and styles in painting, sculpture, and architecture.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the most famous sculpture from the Neoclassical era?",
+    "context": {},
+    "output": "The most famous sculpture from the Neoclassical era is the Statue of Liberty, which was dedicated in 1886. The Statue of Liberty is a large statue of the Roman goddess Libertas, and it is considered one of the most iconic and influential works of art in the world. The sculpture is known for its grandiose scale and its use of classical forms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a Rococo sculpture and a Neoclassical sculpture?",
+    "context": {},
+    "output": "Rococo sculptures such as the Venus de Milo were known for their graceful pose and their use of delicate, flowing lines. They were also characterized by a lighter, more playful style that emphasized elegance and refinement. Neoclassical sculptures such as the Statue of Liberty, on the other hand, were known for their grandiose scale and their use of classical forms. They were also characterized by a more serious and formal approach to art, which emphasized the beauty and symmetry of classical forms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Renaissance era known for?",
+    "context": {},
+    "output": "The Renaissance era, spanning from the 14th to the 17th century, is known for its significant advancements in art, science, literature, and philosophy. It marked a transition from the Middle Ages to the modern era.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How did the Mona Lisa influence modern art?",
+    "context": {},
+    "output": "The Mona Lisa has had a profound influence on modern art, inspiring countless artists and movements. Its iconic smile and enigmatic expression continue to be referenced in contemporary works.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some other famous paintings from the Renaissance era?",
+    "context": {},
+    "output": "Some other famous paintings from the Renaissance era include 'The Last Supper' by Leonardo da Vinci, 'Mona Lisa' by Leonardo da Vinci, 'The Sistine Chapel Ceiling' by Michelangelo, and 'The Birth of Venus' by Sandro Botticelli.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current time in New York?",
+    "context": {
+      "location": "New York, US",
+      "timezone": "America/New_York"
+    },
+    "output": "The current time in New York is [insert current time].",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

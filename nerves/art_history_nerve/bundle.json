@@ -1,0 +1,32 @@
+{
+  "name": "art_history_nerve",
+  "version": "1.0.0",
+  "description": "art_history_nerve",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "art-history",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "geography_nerve",
+      "implementations": {
+        "python": "geography_nerve/tool.py"
+      }
+    },
+    {
+      "name": "compare_databases",
+      "implementations": {
+        "python": "compare_databases/tool.py"
+      }
+    }
+  ]
+}
