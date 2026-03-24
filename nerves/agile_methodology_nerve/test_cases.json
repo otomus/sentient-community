@@ -1,0 +1,996 @@
+[
+  {
+    "input": "What is Agile methodology?",
+    "context": {},
+    "output": "Agile methodology is a project management approach that emphasizes flexibility, collaboration, and iterative development. It focuses on delivering working software in short cycles, allowing teams to adapt to changing requirements and improve their processes over time.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you explain Agile in simple terms?",
+    "context": {},
+    "output": "Sure! Agile is like building a house one brick at a time. Instead of waiting until everything is perfect before starting, you start building and keep improving it as you go. This way, you can make changes easily and finish the project faster.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the key principles of Agile?",
+    "context": {},
+    "output": "The key principles of Agile include individuals and interactions, working software, customer collaboration, and responding to change. It emphasizes collaboration, flexibility, and customer satisfaction.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile differ from traditional project management?",
+    "context": {},
+    "output": "Agile differs from traditional project management by focusing on iterative development and continuous improvement. It emphasizes collaboration and flexibility, allowing teams to adapt to changing requirements more easily than in traditional approaches.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile Manifesto?",
+    "context": {},
+    "output": "The Agile Manifesto is a set of principles for software development that emphasizes people, interactions, working software, and responding to change. It was created to guide the development of Agile practices and principles.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can Agile be used for non-software projects?",
+    "context": {},
+    "output": "Yes, Agile can be adapted for non-software projects as well. It can be used in any field that requires flexibility and collaboration, such as product development, marketing, or even creative projects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a scrum master in Agile?",
+    "context": {},
+    "output": "A scrum master is a facilitator in Agile project management. They ensure that the team follows Agile practices, remove obstacles, and keep the team focused on delivering value to the customer.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How often are sprints in Agile?",
+    "context": {},
+    "output": "Sprints in Agile can be any length, but the most common is two weeks. However, the duration can vary depending on the team and project.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of a product backlog in Agile?",
+    "context": {},
+    "output": "The product backlog in Agile is a prioritized list of features and requirements that the team will work on. It helps the team focus on the most important work first and ensures that the customer's needs are met.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a product owner in Agile?",
+    "context": {},
+    "output": "The product owner in Agile is responsible for defining the product vision, managing the product backlog, and ensuring that the product meets the customer's needs. They also communicate with stakeholders and make decisions on the product direction.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle change?",
+    "context": {},
+    "output": "Agile is designed to handle change by being flexible and iterative. The team can easily adapt to changes and make adjustments as needed. This allows for more efficient and effective project delivery.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a burndown chart in Agile?",
+    "context": {},
+    "output": "A burndown chart is a visual representation of the amount of work left in a sprint. It shows the amount of work completed each day and helps the team track progress and identify any issues that may arise.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a retrospective in Agile?",
+    "context": {},
+    "output": "A retrospective in Agile is a meeting held at the end of each sprint to reflect on the work that was done and identify areas for improvement. It helps the team learn from their mistakes and continuously improve their processes.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle testing?",
+    "context": {},
+    "output": "Agile places a strong emphasis on testing. Testing is an integral part of the development process, and the team works to ensure that the software is of high quality throughout the project.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between Agile and Scrum?",
+    "context": {},
+    "output": "Agile is a broader term that describes a set of principles and practices for project management, while Scrum is one of the most popular frameworks used to implement Agile. Scrum is a specific implementation of Agile that focuses on iterative development and continuous improvement.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is agile methodology?",
+    "context": {},
+    "output": "Agile methodology is a project management and software development approach that emphasizes iterative progress, collaboration, and customer satisfaction. It is characterized by its flexibility and adaptability, allowing teams to respond to changing requirements and feedback more effectively.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the key principles of agile?",
+    "context": {},
+    "output": "The key principles of agile include individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the roles in agile methodology?",
+    "context": {},
+    "output": "In agile methodology, common roles include the Product Owner, Scrum Master, and Development Team. The Product Owner represents the customer and manages the product backlog. The Scrum Master facilitates the process and ensures that the team is following agile practices. The Development Team builds the product incrementally.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does agile handle change?",
+    "context": {},
+    "output": "Agile methodology is designed to handle change effectively by allowing teams to adapt to changing requirements and feedback. This is achieved through short iterations, regular reviews, and continuous improvement.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between agile and scrum?",
+    "context": {},
+    "output": "Agile is a broader methodology that encompasses various practices and frameworks, including Scrum, Kanban, and Lean. Scrum is a specific framework within the agile methodology that uses a fixed structure of sprints, stand-ups, and reviews to manage projects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does agile handle testing?",
+    "context": {},
+    "output": "Agile methodology emphasizes testing throughout the development process. Testing is integrated into each iteration, with developers and testers working together to ensure that the product is functioning correctly and meets the requirements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a scrum master in agile?",
+    "context": {},
+    "output": "The Scrum Master facilitates the agile process, helps the team adhere to agile principles, removes impediments, and ensures that the team has the resources and support they need to succeed.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does agile differ from traditional project management?",
+    "context": {},
+    "output": "Agile methodology differs from traditional project management in several ways. Agile emphasizes iterative progress, collaboration, and customer satisfaction, while traditional project management tends to follow a linear plan with fixed milestones. Agile also encourages flexibility and adaptability to respond to changing requirements, whereas traditional project management often requires rigid adherence to a plan.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a product owner in agile?",
+    "context": {},
+    "output": "The Product Owner is responsible for managing the product backlog, representing the customer, and ensuring that the product meets the needs of the stakeholders. The Product Owner works closely with the Development Team and the Scrum Master to prioritize the work and drive the product forward.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does agile handle feedback?",
+    "context": {},
+    "output": "Agile methodology encourages continuous feedback and incorporates it into the development process. Regular reviews, retrospectives, and demos allow teams to gather feedback from customers, stakeholders, and team members, and use it to improve the product and process.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some common agile practices?",
+    "context": {},
+    "output": "Some common agile practices include daily stand-ups, sprint planning and reviews, iterative development, continuous integration, and automated testing. These practices help teams to work efficiently, deliver value quickly, and respond to change effectively.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does agile handle dependencies?",
+    "context": {},
+    "output": "Agile methodology emphasizes collaboration and communication to manage dependencies effectively. Teams work closely together, share knowledge, and communicate regularly to identify and resolve dependencies as they arise, ensuring that the project stays on track.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of sprints in agile?",
+    "context": {},
+    "output": "Sprints in agile are short, focused time periods during which a specific set of work is completed. The purpose of sprints is to enable teams to deliver working software incrementally, gather feedback, and make adjustments as needed, ultimately leading to a more efficient and effective development process.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does agile handle risks?",
+    "context": {},
+    "output": "Agile methodology emphasizes risk management by identifying potential risks early in the development process and implementing strategies to mitigate them. Teams regularly assess risks, prioritize them, and take action to address them, ensuring that the project remains on track and delivers value to customers.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between iterative and incremental development in agile?",
+    "context": {},
+    "output": "Iterative development in agile involves dividing the project into smaller, manageable iterations, with each iteration producing a working increment of the product. Incremental development, on the other hand, involves building the product incrementally, with each increment adding new features and functionality. Both approaches allow teams to deliver value quickly and respond to changing requirements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the core principles of Agile?",
+    "context": {},
+    "output": "The core principles of Agile include customer satisfaction, individuals and interactions, working software, and responding to change.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle dependencies between tasks?",
+    "context": {},
+    "output": "Agile recognizes that tasks often depend on each other, and it emphasizes collaboration and communication to manage dependencies effectively.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a scrum master?",
+    "context": {},
+    "output": "The scrum master is a facilitator and coach who ensures that the team adheres to the Agile framework and removes any obstacles that prevent the team from delivering value.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile address risk management?",
+    "context": {},
+    "output": "Agile incorporates risk management as part of the development process, with the team regularly identifying and mitigating risks to ensure the project stays on track.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What happens if a team member is absent?",
+    "context": {},
+    "output": "If a team member is absent, Agile encourages flexibility and adaptability, and the team will need to adjust their plans to accommodate the absence.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle large-scale projects?",
+    "context": {},
+    "output": "Agile can be applied to large-scale projects, but it may require additional planning and coordination to ensure that the project is delivered successfully.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What if a team member has a conflict with another member?",
+    "context": {},
+    "output": "Agile emphasizes open communication and collaboration, so team members are encouraged to resolve conflicts through dialogue and mutual respect.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What if the project requirements change midway?",
+    "context": {},
+    "output": "Agile is designed to handle changes, and the framework provides mechanisms for the team to respond to changing requirements effectively.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle large teams?",
+    "context": {},
+    "output": "Agile can be applied to large teams, but it may require additional planning and coordination to ensure that the team is delivering value.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What if the team has different levels of expertise?",
+    "context": {},
+    "output": "Agile emphasizes collaboration and knowledge sharing, so team members are encouraged to share their expertise and learn from each other.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the core principles of agile methodology?",
+    "context": {},
+    "output": "Agile methodology is built on the principles of individuals and interactions, working software, customer collaboration, and responding to change. These principles guide the development process, ensuring flexibility and adaptability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the key principle of agile?",
+    "context": {},
+    "output": "The key principle of Agile is that individuals and interactions are more important than processes and tools. This emphasizes the importance of human collaboration and flexibility in the development process.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is an example of an Agile practice?",
+    "context": {},
+    "output": "An example of an Agile practice is daily stand-ups. During these short meetings, team members discuss what they did yesterday, what they plan to do today, and any obstacles they are facing. This practice helps teams stay aligned and identify issues early.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of a sprint planning meeting in Agile?",
+    "context": {},
+    "output": "The purpose of a sprint planning meeting in Agile is to prioritize tasks, allocate resources, and create a plan for completing the work within the sprint. This meeting helps ensure that the team is focused on the most important work and that the sprint goals are clear and achievable.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is an example of an Agile tool?",
+    "context": {},
+    "output": "An example of an Agile tool is Jira. This project management tool helps teams plan, track, and collaborate on their work using Agile methodologies. It provides features such as task boards, sprint planning, and burndown charts.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is an example of an Agile event?",
+    "context": {},
+    "output": "An example of an Agile event is a sprint review. During this event, the team demonstrates what they have completed during the sprint and gathers feedback from stakeholders. This helps ensure that the work is valuable and meets the needs of the customer.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the core principles of agile?",
+    "context": {},
+    "output": "The core principles of agile include individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What if a user provides incorrect credentials?",
+    "context": {},
+    "output": "The nerve should return an error message indicating that the provided credentials are incorrect and prompt the user to try again.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of Agile?",
+    "context": {},
+    "output": "Agile is designed to increase flexibility, responsiveness, and collaboration among teams, allowing them to deliver high-quality software more efficiently and effectively.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile support team collaboration?",
+    "context": {},
+    "output": "Agile supports team collaboration through daily stand-ups, sprint planning, and regular reviews. These practices foster open communication and ensure that everyone is working towards a common goal.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the significance of a user story in Agile?",
+    "context": {},
+    "output": "A user story in Agile is a brief description of a feature or task from the perspective of the end-user. It helps teams understand the customer's needs and prioritize work accordingly.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile ensure quality?",
+    "context": {},
+    "output": "Agile ensures quality through continuous testing, frequent feedback, and the emphasis on delivering working software in small increments. This approach helps catch issues early and ensures that the final product meets high standards.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can Agile handle large-scale projects?",
+    "context": {},
+    "output": "Yes, Agile can handle large-scale projects, although it may require more planning and coordination.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a Scrum Team?",
+    "context": {},
+    "output": "The role of a Scrum Team includes Product Owner, Scrum Master, and Development Team.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between Agile and Waterfall?",
+    "context": {},
+    "output": "Agile is iterative and focuses on delivering working software frequently, while Waterfall is linear and emphasizes planning and design upfront.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a Product Owner in Agile?",
+    "context": {},
+    "output": "The role of a Product Owner in Agile is to represent the stakeholders and ensure that the product meets their needs.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of Agile on project timelines?",
+    "context": {},
+    "output": "Agile can have a positive impact on project timelines as it allows for more frequent delivery of working software and the ability to adapt to changes more quickly.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can Agile be used in a remote team?",
+    "context": {},
+    "output": "Agile can be used in a remote team by using tools like video conferencing and project management software to facilitate communication and collaboration.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a Scrum Master in Agile?",
+    "context": {},
+    "output": "The role of a Scrum Master in Agile is to facilitate the team, remove obstacles, and ensure that the Agile principles and practices are being followed.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle uncertainty?",
+    "context": {},
+    "output": "Agile embraces uncertainty by adapting to change through iterative and incremental development. It encourages teams to respond to evolving requirements and market conditions by incorporating feedback and adjustments at each stage of the project.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can Agile be used in all types of projects?",
+    "context": {},
+    "output": "Agile is highly versatile and can be adapted to various types of projects, including software development, product management, and business strategy. However, it is particularly well-suited for projects with unpredictable requirements and a need for frequent change.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the key ceremonies in Agile?",
+    "context": {},
+    "output": "The key ceremonies in Agile include the Sprint Planning, Daily Stand-Up, Sprint Review, and Sprint Retrospective. These ceremonies help the team stay focused, collaborate effectively, and continuously improve their processes.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between Scrum and Kanban?",
+    "context": {},
+    "output": "Scrum is an iterative and incremental framework that uses fixed-length time-boxed periods called Sprints. It includes specific roles (Scrum Team, Scrum Master, Product Owner) and ceremonies (Planning, Review, Retrospective). Kanban is a visual management method that focuses on maximizing flow and minimizing work-in-progress. It relies on a Kanban board and visual signals to manage work items.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some Agile tools?",
+    "context": {},
+    "output": "Some popular Agile tools include Jira, Trello, Asana, Monday.com, and GreenHopper. These tools help teams plan, track, and collaborate on their work, facilitating the Agile methodology's iterative and incremental approach.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile support cross-functional teams?",
+    "context": {},
+    "output": "Agile promotes cross-functional teams by encouraging collaboration and ensuring that all necessary skills are available within the team. This allows for the development of working software more efficiently and with a better understanding of the customer's needs.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a Scrum Master?",
+    "context": {},
+    "output": "The Scrum Master is a facilitator who ensures that the Agile framework is effectively implemented. They remove impediments to the team's progress, ensure that the team follows the Agile process, and help the team continuously improve.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle risks?",
+    "context": {},
+    "output": "Agile approaches risks by identifying them early in the project and mitigating them through regular planning and adaptation. The team collaborates closely with stakeholders to understand potential risks and develops strategies to address them proactively.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing large-scale projects?",
+    "context": {},
+    "output": "For managing large-scale projects, Agile recommends using frameworks like SAFe (Scaled Agile Framework), LeSS (Large Scale Scrum), or Nexus. These frameworks provide additional guidance and structure to scale Agile practices across multiple teams and programs.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a Product Owner in a large-scale Agile project?",
+    "context": {},
+    "output": "In large-scale Agile projects, the Product Owner is responsible for representing the customer's interests and maximizing the value of the product. They prioritize features and work with the cross-functional teams to define user stories, ensure alignment with business goals, and drive continuous improvement.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle dependencies between teams?",
+    "context": {},
+    "output": "Agile encourages collaboration and communication between teams to handle dependencies effectively. Cross-functional teams are formed to ensure that all necessary skills are available, and regular ceremonies like Daily Stand-Ups and Sprint Reviews help teams stay informed and aligned.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does agile handle uncertainty?",
+    "context": {},
+    "output": "Agile handles uncertainty by embracing it and adapting to it through continuous feedback and iteration.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of daily stand-ups in Agile?",
+    "context": {},
+    "output": "Daily stand-ups in Agile are used to synchronize the team, remove obstacles, and plan work for the day.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can Agile be applied to software development?",
+    "context": {},
+    "output": "Agile can be applied to software development by breaking the project into smaller, manageable parts and iterating on those parts to deliver working software frequently.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing complex projects?",
+    "context": {},
+    "output": "The Agile framework for managing complex projects includes Scrum, Kanban, and Lean methodologies.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What role does the product owner play in Agile?",
+    "context": {},
+    "output": "The product owner in Agile is responsible for representing the customer, understanding their needs, and prioritizing the product backlog.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle dependencies?",
+    "context": {},
+    "output": "Agile handles dependencies by identifying them early, communicating with stakeholders, and planning for contingencies.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some tools for tracking progress in Agile?",
+    "context": {},
+    "output": "Some Agile tools for tracking progress include Jira, Trello, and Monday.com.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a stakeholder in Agile?",
+    "context": {},
+    "output": "The stakeholder in Agile is someone who is impacted by the project and has a vested interest in its success.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle stakeholder communication?",
+    "context": {},
+    "output": "Agile handles stakeholder communication by involving them regularly through meetings, demos, and feedback sessions.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing innovation?",
+    "context": {},
+    "output": "The Agile framework for managing innovation includes Lean Startup, Design Thinking, and Innovation Sprints.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some common challenges in Agile?",
+    "context": {},
+    "output": "Common challenges in Agile include changing requirements, managing scope creep, and ensuring team cohesion.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle conflicts?",
+    "context": {},
+    "output": "Agile handles conflicts by addressing them immediately, facilitating open communication, and promoting collaboration.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing cross-functional teams?",
+    "context": {},
+    "output": "The Agile framework for managing cross-functional teams includes Scrum, Kanban, and Lean methodologies.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a facilitator in Agile?",
+    "context": {},
+    "output": "The facilitator in Agile is someone who helps the team stay focused, facilitates discussions, and ensures that everyone has a voice.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the key principle of Agile?",
+    "context": {},
+    "output": "The key principle of Agile is customer satisfaction through early and continuous delivery of working software.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile methodology for managing large-scale projects?",
+    "context": {},
+    "output": "The Agile methodology for managing large-scale projects involves breaking the project into smaller, manageable parts and delivering incremental value to customers.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle unexpected changes?",
+    "context": {},
+    "output": "Agile is designed to handle unexpected changes effectively by incorporating frequent feedback and allowing the team to adapt to new requirements.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some challenges of implementing Agile in a large organization?",
+    "context": {},
+    "output": "Challenges in implementing Agile in large organizations include resistance to change, lack of proper training, and difficulties in managing cross-functional teams.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is an example of a successful Agile project?",
+    "context": {},
+    "output": "A successful Agile project example is the development of the Netflix streaming service, which was built using Agile principles to deliver features quickly and respond to customer feedback.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile methodology for managing innovation?",
+    "context": {},
+    "output": "The Agile methodology for managing innovation involves iterative experimentation, customer collaboration, and rapid feedback to drive continuous improvement.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile methodology for managing large-scale projects?",
+    "context": {},
+    "output": "The Agile methodology for managing large-scale projects involves breaking the project into smaller, manageable parts and delivering incremental value to customers.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile methodology for managing large-scale projects?",
+    "context": {},
+    "output": "The Agile methodology for managing large-scale projects involves breaking the project into smaller, manageable parts and delivering incremental value to customers.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile methodology for managing large-scale projects?",
+    "context": {},
+    "output": "The Agile methodology for managing large-scale projects involves breaking the project into smaller, manageable parts and delivering incremental value to customers.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile methodology for managing large-scale projects?",
+    "context": {},
+    "output": "The Agile methodology for managing large-scale projects involves breaking the project into smaller, manageable parts and delivering incremental value to customers.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile methodology for managing large-scale projects?",
+    "context": {},
+    "output": "The Agile methodology for managing large-scale projects involves breaking the project into smaller, manageable parts and delivering incremental value to customers.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the advantages of Agile in software development?",
+    "context": {},
+    "output": "Agile offers several advantages in software development, including increased flexibility, faster time-to-market, better collaboration, and improved quality. It emphasizes iterative development, customer feedback, and continuous improvement.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle project risk?",
+    "context": {},
+    "output": "Agile incorporates risk management as an integral part of the process. It involves identifying potential risks early, planning for contingencies, and adapting to changes quickly. Regularly reviewing the risk register and adjusting the project plan helps in mitigating risks effectively.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a sprint review in Agile?",
+    "context": {},
+    "output": "A sprint review in Agile is a meeting where the team presents the work completed during the sprint to the stakeholders. It provides an opportunity for feedback and ensures alignment with the product vision and customer needs.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle changes?",
+    "context": {},
+    "output": "Agile is designed to handle changes effectively. Changes can be incorporated into the sprint backlog and prioritized based on their impact. The team collaborates closely with the stakeholders to ensure that the project remains aligned with the evolving needs.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Kanban board in Agile?",
+    "context": {},
+    "output": "The Kanban board in Agile is a visual tool used to manage work items in progress. It helps in tracking the flow of work, identifying bottlenecks, and optimizing the workflow. The board consists of columns representing different stages of the development process.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the benefits of Agile in project management?",
+    "context": {},
+    "output": "Agile offers several benefits in project management, including improved flexibility, faster delivery, better stakeholder engagement, enhanced quality, and increased customer satisfaction. It encourages continuous improvement and adaptability to changing requirements.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle remote teams?",
+    "context": {},
+    "output": "Agile is particularly well-suited for remote teams due to its emphasis on communication and collaboration. Daily stand-ups, regular check-ins, and the use of collaborative tools help in maintaining effective teamwork and ensuring that everyone is aligned with the project goals.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is Agile's approach to customer feedback?",
+    "context": {},
+    "output": "Agile places a strong emphasis on customer feedback. It involves incorporating customer feedback into the development process and making frequent releases to gather feedback. This iterative approach helps in delivering a product that meets the customer's needs and expectations.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some examples of Agile tools?",
+    "context": {},
+    "output": "Some popular Agile tools include Jira, Trello, Monday.com, Asana, and Monday.com. These tools help teams manage their work, track progress, and collaborate effectively.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing remote projects?",
+    "context": {},
+    "output": "Agile is well-suited for managing remote projects. It emphasizes communication, collaboration, and iterative development. Tools like Slack, Microsoft Teams, and Zoom are commonly used to facilitate remote communication and collaboration.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing non-software projects?",
+    "context": {},
+    "output": "Agile can be applied to various types of projects beyond software development. It can be used in marketing, product management, design, and more. The core principles of Agile\u2014such as iterative development, customer collaboration, and continuous improvement\u2014can be adapted to fit different industries and project types.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing creative projects?",
+    "context": {},
+    "output": "Agile is well-suited for managing creative projects. It encourages experimentation, collaboration, and iterative development. Techniques such as sprints, user stories, and daily stand-ups help in bringing innovative ideas to market efficiently.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing a global team?",
+    "context": {},
+    "output": "Agile is an excellent framework for managing a global team. It emphasizes communication, collaboration, and flexibility. Tools like video conferencing, project management software, and shared workspaces help in bridging geographical distances and ensuring effective teamwork.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle changes during a project?",
+    "context": {},
+    "output": "Agile methodology embraces change and adapts to it quickly. Teams prioritize customer feedback and are flexible in their approach to ensure that the project remains aligned with evolving requirements.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of stakeholders in Agile?",
+    "context": {},
+    "output": "Stakeholders in Agile play a critical role in providing feedback, approving deliverables, and ensuring that the project aligns with business goals. Their involvement helps drive the project's success and customer satisfaction.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle project scope changes?",
+    "context": {},
+    "output": "Agile handles scope changes through regular reviews and adjustments. Teams use the Agile framework to prioritize the most valuable work and make necessary adjustments to the project plan.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What happens if a team member is not following Agile practices?",
+    "context": {},
+    "output": "If a team member is not following Agile practices, it's important for the scrum master or team leader to provide coaching and guidance. This may include one-on-one meetings, training, or adjustments to the team's processes to ensure that everyone is working in a way that supports the Agile methodology.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing complex systems?",
+    "context": {},
+    "output": "The Agile framework is well-suited for managing complex systems as it emphasizes iterative development, flexibility, and collaboration. By breaking down the system into smaller, manageable components, teams can deliver value more quickly and respond to changing requirements.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the benefits of Agile methodology?",
+    "context": {},
+    "output": "Agile methodology offers several benefits including increased flexibility, improved collaboration, faster time to market, and higher customer satisfaction.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile help in project planning?",
+    "context": {},
+    "output": "Agile helps in project planning by breaking the project into smaller, manageable iterations, focusing on regular feedback, and adapting to change quickly.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle risk management?",
+    "context": {},
+    "output": "Agile manages risk through continuous risk assessment, prioritization, and mitigation strategies at each iteration.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing small projects?",
+    "context": {},
+    "output": "Agile is suitable for small projects as it emphasizes flexibility, adaptability, and iterative development, which can be more efficient for smaller teams and projects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some Agile principles that are not commonly found in traditional project management?",
+    "context": {},
+    "output": "Agile principles such as customer collaboration, rapid feedback, and iterative development are not typically part of traditional project management practices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project documentation?",
+    "context": {},
+    "output": "Agile prefers lightweight documentation and emphasizes transparency and communication over extensive documentation, updating documentation as necessary throughout the project.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project estimation?",
+    "context": {},
+    "output": "Agile uses estimation techniques like story points or velocity to gauge the size and complexity of work items, rather than precise time estimates.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle project dependencies?",
+    "context": {},
+    "output": "Agile addresses project dependencies by breaking work into smaller, independent tasks and managing dependencies through daily stand-ups and cross-functional collaboration.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project risk mitigation?",
+    "context": {},
+    "output": "Agile mitigates risks through continuous monitoring, rapid response to issues, and incorporating contingency plans into the project plan.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle project communication?",
+    "context": {},
+    "output": "Agile emphasizes frequent communication through daily stand-ups, sprint reviews, and retrospectives, ensuring that all stakeholders are informed and aligned.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing remote teams?",
+    "context": {},
+    "output": "Agile frameworks like Scrum or Kanban can be effectively used with remote teams by leveraging digital tools for collaboration, regular check-ins, and trust in the team's ability to self-organize.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle project delivery?",
+    "context": {},
+    "output": "Agile delivers projects through iterative sprints, with each sprint producing a potentially shippable product increment. This allows for continuous delivery and feedback from stakeholders.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project governance?",
+    "context": {},
+    "output": "Agile governance involves setting clear roles and responsibilities, maintaining transparency, and ensuring alignment with business goals through continuous monitoring and adaptability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing large-scale innovation?",
+    "context": {},
+    "output": "Agile frameworks can be adapted for large-scale innovation by focusing on incremental improvements, fostering collaboration across departments, and encouraging cross-functional teams to drive innovation.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle project risk analysis?",
+    "context": {},
+    "output": "Agile performs risk analysis through daily stand-ups, sprint reviews, and retrospectives, identifying risks early and developing mitigation strategies as a team.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project scope management?",
+    "context": {},
+    "output": "Agile manages scope through iterative refinement of the product backlog, continuously prioritizing high-value features and adjusting the scope based on feedback and changing requirements.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Agile handle project risk management?",
+    "context": {},
+    "output": "Agile teams use a variety of techniques to manage risks, such as regular risk assessments, risk logging, and risk mitigation strategies.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project planning?",
+    "context": {},
+    "output": "Agile teams use iterative and incremental planning, focusing on delivering working software frequently through short development cycles.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Who are the key roles in Agile methodology?",
+    "context": {},
+    "output": "The key roles in Agile methodology include the Product Owner, Scrum Master, and Development Team.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile framework for managing product development?",
+    "context": {},
+    "output": "The Agile framework for managing product development is based on iterative and incremental development, delivering working software frequently.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some best practices for Agile teams?",
+    "context": {},
+    "output": "Some best practices for Agile teams include continuous improvement, collaboration, and a focus on delivering value to the customer.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the core principles of Agile methodology?",
+    "context": {},
+    "output": "The core principles of Agile methodology include individuals and interactions, working software, customer collaboration, and responding to change.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project reviews?",
+    "context": {},
+    "output": "Agile teams conduct regular reviews, known as Sprint Reviews, to demonstrate what has been accomplished during the Sprint and to gather feedback from stakeholders.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project retrospectives?",
+    "context": {},
+    "output": "Agile teams hold regular retrospectives, known as Sprint Retrospectives, to reflect on the last Sprint, identify areas for improvement, and plan for future improvements.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project budgeting?",
+    "context": {},
+    "output": "Agile teams use a budget that is adjusted regularly based on the progress of the project and the availability of resources.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project stakeholder management?",
+    "context": {},
+    "output": "Agile teams engage with stakeholders regularly to gather requirements, prioritize features, and ensure that the project aligns with the organization's goals.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project quality assurance?",
+    "context": {},
+    "output": "Agile teams use various quality assurance techniques, such as automated testing and continuous integration, to ensure that the software is of high quality.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project communication?",
+    "context": {},
+    "output": "Agile teams use various communication techniques, such as daily stand-ups and sprint planning meetings, to ensure that everyone is on the same page and working towards the same goal.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Agile approach to project planning?",
+    "context": {},
+    "output": "Agile teams use various planning techniques, such as planning poker and sprint planning meetings, to ensure that the project is well-planned and that all necessary work is done in a timely manner.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

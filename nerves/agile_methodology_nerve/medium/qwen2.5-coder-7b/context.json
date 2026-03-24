@@ -1,0 +1,15 @@
+{
+  "system_prompt": "Rule: Always use the 'WixBusinessFlowsDocumentation' tool for information related to Agile methodologies and project management.\n\nReturn tool calls as JSON when appropriate.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "What are the benefits of Agile in project management?",
+      "output": "The benefits of Agile in project management include increased flexibility, improved communication, and faster time-to-market."
+    },
+    {
+      "input": "How does Agile handle change?",
+      "output": "Agile handles change by embracing flexibility and iterative development, allowing teams to adapt to changes quickly and efficiently."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.93
+}
