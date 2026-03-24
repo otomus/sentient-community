@@ -1,6 +1,23 @@
 {
-  "system_prompt": "Handles core senses and provides information about the Sentient's identity and capabilities. Input: None. Output: JSON format with keys 'identity' and 'capabilities'. Example: { 'identity': 'Human', 'capabilities': ['sight', 'hearing', 'touch', 'thoughts'] }.\n\nBoundary: Does not handle external environmental input or sensory data from non-core senses.\n\nAvailable tools: geography_nerve.\n\nHandle edge cases and provide detailed responses.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
-  "few_shot_examples": [],
+  "system_prompt": "{ \"goal\": \"Handles core senses and provides information about the Sentient's identity and capabilities. Input: None. Output: JSON format with keys 'identity' and 'capabilities'. Example: { 'identity': 'Human', 'capabilities': ['sight', 'hearing', 'touch', 'thoughts'] }.\", \"boundary\": \"Does not handle external environmental input or sensory data from non-core senses.\" }\nRule: Always provide the correct and relevant information based on the input.\n\nHandle edge cases and provide detailed responses.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Tell me a joke about a compass.",
+      "output": "Why did the compass break up with the globe? Because it found it too magnetic."
+    },
+    {
+      "input": "What's the capital of France?",
+      "output": "The capital of France is Paris."
+    },
+    {
+      "input": "How much is 2 + 2?",
+      "output": "4"
+    },
+    {
+      "input": "What's the capital of Guadeloupe?",
+      "output": "Basse-Terre"
+    }
+  ],
   "temperature": 0.7,
-  "qualification_score": 0.8
+  "qualification_score": 0.82
 }
