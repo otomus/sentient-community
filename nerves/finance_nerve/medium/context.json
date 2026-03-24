@@ -1,0 +1,23 @@
+{
+  "system_prompt": "Rule: Always provide a detailed and accurate explanation for financial concepts and terms.\n\nReturn tool calls as JSON when appropriate.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "What is the difference between a stock and a bond?",
+      "output": "A stock represents ownership in a corporation, entitling the holder to a portion of the company's assets and earnings. A bond is a debt security that pays the holder a fixed interest rate over a specified period and returns the principal at maturity."
+    },
+    {
+      "input": "What is the role of a compliance officer in finance?",
+      "output": "A compliance officer ensures that an organization adheres to all applicable laws, regulations, and internal policies. They monitor and assess compliance risks, develop and implement compliance programs, and ensure that transactions are conducted legally and ethically."
+    },
+    {
+      "input": "What are some key indicators to watch for in the stock market?",
+      "output": "Key indicators to watch for in the stock market include the unemployment rate, inflation rate, interest rates, GDP growth, and corporate earnings reports. These indicators provide insights into the overall health of the economy and the performance of individual stocks."
+    },
+    {
+      "input": "What are some examples of low-risk investments?",
+      "output": "Examples of low-risk investments include government bonds, certificates of deposit (CDs), treasury bills (T-bills), and mutual funds focused on fixed income. These investments typically offer lower potential returns but also lower risk."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.86
+}

@@ -1,0 +1,1423 @@
+[
+  {
+    "input": "What is the stock market?",
+    "context": {},
+    "output": "The stock market is a marketplace where people buy and sell stocks, which are ownership shares of publicly traded companies. Investors can trade stocks directly through a broker or exchange.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the stock market work?",
+    "context": {},
+    "output": "The stock market operates on a system of supply and demand. When buyers are willing to pay more for a stock than its current price, the price goes up. Conversely, if sellers are willing to sell at a lower price, the price goes down.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the Dow Jones Industrial Average?",
+    "context": {},
+    "output": "The Dow Jones Industrial Average is a stock market index that measures the performance of 30 large, publicly owned companies in the United States. It's widely considered to be one of the most important indicators of the stock market's health.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are stock market trends?",
+    "context": {},
+    "output": "Stock market trends refer to the overall direction in which stock prices are moving over a period of time. Trends can be either up, down, or sideways. Recognizing and understanding market trends can help investors make informed decisions about buying and selling stocks.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is market volatility?",
+    "context": {},
+    "output": "Market volatility refers to the degree of price fluctuation in the stock market. High volatility indicates that stock prices are changing rapidly and unpredictably, while low volatility means prices are more stable.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I invest in the stock market?",
+    "context": {},
+    "output": "Investing in the stock market involves buying shares of companies and hoping that their stock prices will increase. To invest, you typically open a brokerage account, choose stocks to invest in, and place buy orders through your broker.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the risks of investing in the stock market?",
+    "context": {},
+    "output": "Investing in the stock market comes with risks, including the potential for significant losses. Risks can include market volatility, changes in company performance, economic conditions, and geopolitical events.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock split?",
+    "context": {},
+    "output": "A stock split occurs when a company decides to increase the number of its outstanding shares by issuing additional shares to existing shareholders. This typically happens when a company's stock price becomes too high, making it less accessible for some investors.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is short selling?",
+    "context": {},
+    "output": "Short selling is a trading strategy in which an investor borrows a stock from a brokerage and sells it with the expectation that the price will decline. If the stock price does indeed fall, the investor can buy the stock back at a lower price and return it to the broker, profiting from the difference.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I choose stocks to invest in?",
+    "context": {},
+    "output": "Choosing stocks to invest in involves several factors, including company fundamentals, market conditions, and personal financial goals. Some investors use technical analysis to identify trends and patterns, while others focus on fundamental analysis to evaluate a company's financial health and prospects.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a bear market?",
+    "context": {},
+    "output": "A bear market is a significant decline in the stock market, typically defined as a 20% drop from a recent high. Bear markets can be characterized by pessimism about the economy, corporate profits, and overall market sentiment.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a bull market?",
+    "context": {},
+    "output": "A bull market is a period of rising stock prices and overall economic growth. Investors typically expect companies to earn more money, leading to higher stock prices. Bull markets can be driven by factors such as strong economic growth, positive company earnings, and favorable market conditions.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of dividends in the stock market?",
+    "context": {},
+    "output": "Dividends are payments made by a corporation to its shareholders, typically in the form of cash or additional shares. Dividends can provide income for investors and signal a company's financial health and stability.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a stock and a bond?",
+    "context": {},
+    "output": "A stock represents ownership in a company, giving the investor the right to a portion of its assets and profits. A bond is a debt instrument that represents a loan made by an investor to a borrower (usually a company or government). In exchange for lending money, the borrower agrees to pay the investor interest and the principal amount back at a later date.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is an economic recession?",
+    "context": {},
+    "output": "An economic recession is a period of significant decline in economic activity, typically characterized by a decrease in gross domestic product (GDP), higher unemployment, and reduced consumer spending. Recessions can be caused by a variety of factors, including economic policies, financial crises, and global events.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of the Federal Reserve in the stock market?",
+    "context": {},
+    "output": "The Federal Reserve, also known as the Fed, plays a crucial role in the stock market by managing monetary policy. It sets the federal funds rate, which influences borrowing costs and affects the overall level of economic activity. The Fed's decisions can impact stock prices and market sentiment.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "Please provide a specific question or topic related to finance and the stock market.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital gains tax?",
+    "context": {},
+    "output": "The capital gains tax is a tax imposed on the profit from the sale of capital assets, such as stocks, real estate, or other investments. The tax rate on capital gains depends on various factors, including the type of asset, the length of time held, and the investor's tax status.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a mutual fund work?",
+    "context": {},
+    "output": "A mutual fund is a pool of money collected from multiple investors to purchase a diversified portfolio of stocks, bonds, or other securities. The fund is managed by professional investors who make investment decisions on behalf of the investors.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a stockbroker and a financial advisor?",
+    "context": {},
+    "output": "A stockbroker is a financial professional who facilitates the buying and selling of stocks and other securities on behalf of clients. A financial advisor, on the other hand, provides personalized financial planning and investment advice to help clients achieve their financial goals.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of economic indicators on the stock market?",
+    "context": {},
+    "output": "Economic indicators, such as GDP growth, inflation rates, and unemployment rates, can significantly impact the stock market. Positive economic news, like a growing GDP or a drop in unemployment, can lead to an increase in stock prices because it suggests a strong economy and potential for more corporate profitability. Conversely, negative economic indicators, such as inflation or rising unemployment, can lead to a decrease in stock prices as investors become more cautious about the future.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock exchange?",
+    "context": {},
+    "output": "A stock exchange is a marketplace where securities, such as stocks, bonds, and derivatives, are bought and sold. It provides a platform for investors and issuers of securities to transact with each other. The most famous stock exchange in the world is the New York Stock Exchange (NYSE). Other major exchanges include the London Stock Exchange, the Tokyo Stock Exchange, and the Shanghai Stock Exchange.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock market correction?",
+    "context": {},
+    "output": "A stock market correction is a decline in the price of stocks that is greater than 10% from recent high points but not severe enough to be classified as a bear market. Corrections can happen for various reasons, such as economic concerns, geopolitical events, or market overvaluation. Corrections are often seen as a normal part of the stock market cycle and can provide opportunities for investors to buy undervalued stocks.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock market crash?",
+    "context": {},
+    "output": "A stock market crash is a sudden and dramatic decline in the stock market, often characterized by a large drop in stock prices over a short period. Crashes can occur due to a variety of factors, including economic crises, major financial events, or panic selling. While crashes are rare, they can have severe consequences for investors, causing significant losses. Crashes are often followed by a recovery as the market adjusts and the economy begins to improve.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock market bull?",
+    "context": {},
+    "output": "A stock market bull is an investor or a period of the stock market characterized by optimism and rising stock prices. A bull market is typically associated with economic growth, low unemployment, and rising corporate profits. Bulls believe that the market will continue to rise, and they are willing to take on more risk to participate in the potential gains. A bull market is often contrasted with a bear market, where investors become more cautious and the market experiences significant declines.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock market bear?",
+    "context": {},
+    "output": "A stock market bear is an investor or a period of the stock market characterized by pessimism and falling stock prices. A bear market is typically associated with economic downturns, high unemployment, and declining corporate profits. Bears believe that the market will continue to decline, and they are cautious about their investments. A bear market is often contrasted with a bull market, where investors are optimistic and the market experiences significant gains.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock market rally?",
+    "context": {},
+    "output": "A stock market rally is an increase in the overall price of stocks over a short period, often following a period of decline. Rallies can be driven by various factors, such as positive economic news, improved corporate earnings, or investor sentiment. Rallies can last for a few days or several weeks and can provide a temporary boost to investors' portfolios. However, it's important to note that rallies do not always lead to sustained gains, and the market can continue to decline in the long term.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock market crash?",
+    "context": {},
+    "output": "A stock market crash is a sudden and dramatic decline in the stock market, often characterized by a large drop in stock prices over a short period. Crashes can occur due to a variety of factors, including economic crises, major financial events, or panic selling. While crashes are rare, they can have severe consequences for investors, causing significant losses. Crashes are often followed by a recovery as the market adjusts and the economy begins to improve.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock market bubble?",
+    "context": {},
+    "output": "A stock market bubble is a period of rapid and unsustainable growth in the stock market, driven by speculation and hype. During a bubble, stock prices can rise significantly above the intrinsic value of the underlying companies. Bubbles can occur due to various factors, such as easy credit, optimistic economic forecasts, or media hype. Bubbles are often followed by a crash as investors realize the overvaluation and sell their stocks, leading to a sharp decline in stock prices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a stock market liquidity?",
+    "context": {},
+    "output": "Stock market liquidity refers to the degree to which stocks can be bought and sold without causing significant price movements. High liquidity means that there is a large volume of trading activity and that it's easy to buy or sell stocks without affecting their price. Low liquidity, on the other hand, means that there is less trading activity, and it may be more difficult to buy or sell stocks without causing significant price movements. Liquidity is an important factor for investors to consider when trading stocks, as it can impact the costs and risks associated with their investments.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the major stock exchanges?",
+    "context": {},
+    "output": "The major stock exchanges include the New York Stock Exchange (NYSE), the Nasdaq, and the London Stock Exchange. Each exchange has its own unique characteristics and serves different segments of the global market.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I start investing in the stock market?",
+    "context": {},
+    "output": "To start investing in the stock market, you'll need to open a brokerage account with a licensed financial institution. Research the company's financial health, industry position, and growth potential. Diversify your investments to spread risk. Consider consulting with a financial advisor for personalized advice.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some economic indicators that affect the stock market?",
+    "context": {},
+    "output": "Economic indicators such as GDP growth, inflation rates, unemployment figures, and interest rates can significantly impact the stock market. Positive indicators generally lead to higher stock prices, while negative indicators can result in lower stock prices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a dividend?",
+    "context": {},
+    "output": "A dividend is a payment made by a corporation to its shareholders, usually in the form of cash, stock, or other property. Dividends are a way for companies to distribute a portion of their profits to investors who own their stock.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a blue chip stock?",
+    "context": {},
+    "output": "A blue chip stock is a term used to describe a company that is considered financially strong and stable. Blue chip stocks are often part of major indices and are generally less risky than smaller or less established companies.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is an IPO?",
+    "context": {},
+    "output": "An IPO, or Initial Public Offering, is when a private company raises capital by selling shares of its stock to the public for the first time. This allows the company to access a larger pool of capital and become publicly traded.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of global events on the stock market?",
+    "context": {},
+    "output": "Global events such as political unrest, natural disasters, and economic crises can have a significant impact on the stock market. Investors may become risk-averse during such times, leading to a decline in stock prices. Conversely, positive global events can drive stock prices higher.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are stock options?",
+    "context": {},
+    "output": "Stock options are financial contracts that give the holder the right, but not the obligation, to buy or sell a specified number of shares of a stock at a predetermined price before a certain date. Options can be used for speculation, hedging, or as part of a compensation package for employees.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some key indicators to watch for in the stock market?",
+    "context": {},
+    "output": "Key indicators to watch include the Dow Jones Industrial Average, NASDAQ Composite, and the S&P 500. These indices track the performance of major companies across different sectors of the economy.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you start investing in the stock market?",
+    "context": {},
+    "output": "To start investing in the stock market, you'll need to open a brokerage account, choose stocks, and place buy orders. It's advisable to work with a financial advisor to make informed decisions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history of the stock market?",
+    "context": {},
+    "output": "The stock market has its roots in the Dutch Republic in the 17th century with the establishment of the Amsterdam Stock Exchange. Over time, it has evolved into a global network of exchanges and platforms where financial transactions occur.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are penny stocks?",
+    "context": {},
+    "output": "Penny stocks are low-priced stocks of small, often speculative, companies. They typically trade for less than $5 per share. Investing in penny stocks carries high risk due to the companies' smaller market capitalization and limited financial resources.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you choose stocks to invest in?",
+    "context": {},
+    "output": "Choosing stocks involves researching the company, analyzing financial statements, evaluating market conditions, and understanding the industry. Diversification is also key to managing risk.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the future of the stock market?",
+    "context": {},
+    "output": "The future of the stock market is difficult to predict. It depends on various factors including global economic conditions, technological advancements, and political stability. Investors should stay informed and be prepared for volatility.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the stock market in China?",
+    "context": {},
+    "output": "The stock market in China is the world's second-largest market by market capitalization. It includes the Shanghai Stock Exchange and the Shenzhen Stock Exchange. The market is regulated by the China Securities Regulatory Commission (CSRC).",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the stock market in Japan?",
+    "context": {},
+    "output": "The stock market in Japan is the world's third-largest market by market capitalization. The two major stock exchanges are the Tokyo Stock Exchange (TSE) and the Nagoya Stock Exchange. The market is regulated by the Japan Financial Services Agency (FSA).",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the stock market in India?",
+    "context": {},
+    "output": "The stock market in India is the world's seventh-largest market by market capitalization. It includes the Bombay Stock Exchange (BSE) and the National Stock Exchange (NSE). The market is regulated by the Securities and Exchange Board of India (SEBI).",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some key indicators of stock market performance?",
+    "context": {},
+    "output": "Key indicators of stock market performance include the Dow Jones Industrial Average, the S&P 500, and the Nasdaq Composite. These indices track the performance of a group of companies and are closely watched by investors to gauge the overall health of the market.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the major players in the stock market?",
+    "context": {},
+    "output": "The major players in the stock market include individual investors, institutional investors (like mutual funds and pension funds), and investment banks. Each of these players has a different role in the market, from buying and selling stocks to providing financial advice.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the risks associated with investing in the stock market?",
+    "context": {},
+    "output": "Investing in the stock market comes with risks, including market volatility, economic changes, and company-specific risks. Investors can experience losses, and there's no guarantee of returns. It's important to conduct thorough research and consider your risk tolerance before investing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I get started with investing in the stock market?",
+    "context": {},
+    "output": "To get started with investing in the stock market, you typically need to open a brokerage account with a reputable broker. You can then research stocks, make informed decisions based on financial statements and market analysis, and execute trades. It's often beneficial to work with a financial advisor to tailor a strategy that fits your investment goals and risk tolerance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the major stock exchanges around the world?",
+    "context": {},
+    "output": "Some of the major stock exchanges around the world include the New York Stock Exchange (NYSE) in the United States, the London Stock Exchange (LSE) in the United Kingdom, the Tokyo Stock Exchange (TSE) in Japan, and the Shanghai Stock Exchange (SSE) in China. Each exchange has its own unique characteristics and serves a particular region or industry.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a stockbroker?",
+    "context": {},
+    "output": "A stockbroker is a financial professional who helps individuals and institutions buy and sell stocks and other securities. Stockbrokers can provide advice on investment strategy, help manage portfolios, and execute trades on behalf of their clients. Some brokers also offer additional services like financial planning and investment analysis.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for managing risk in the stock market?",
+    "context": {},
+    "output": "Managing risk in the stock market involves diversification, setting a budget, and being disciplined. Diversification means investing in a variety of stocks and asset classes to reduce the impact of any single investment on your overall portfolio. Setting a budget helps you stick to your investment goals, while being disciplined means sticking to your investment plan through market ups and downs.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a bubble in the stock market?",
+    "context": {},
+    "output": "A stock market bubble occurs when the prices of stocks become artificially high, based more on speculation than on intrinsic value. This can lead to a rapid and unsustainable rise in stock prices, followed by a sharp decline when the bubble bursts. Recognizing and avoiding market bubbles is crucial for investors to protect their wealth.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a mutual fund?",
+    "context": {},
+    "output": "A mutual fund is a pool of money collected from multiple investors to purchase a diversified portfolio of stocks, bonds, or other securities. Mutual funds are professionally managed and offer diversification, which helps investors manage risk.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a stock exchange work?",
+    "context": {},
+    "output": "A stock exchange is a place where buyers and sellers can trade securities. Traders submit buy and sell orders, and the exchange matches these orders to execute trades. The exchange also maintains records of transactions and manages the trading process.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of inflation on the stock market?",
+    "context": {},
+    "output": "Inflation can have both positive and negative impacts on the stock market. High inflation can reduce the purchasing power of investors' savings and increase the cost of doing business for companies, which can negatively affect stock prices. On the other hand, inflation can also lead to higher interest rates, which can benefit certain sectors and positively impact the stock market.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of an index fund?",
+    "context": {},
+    "output": "An index fund is a mutual fund that tracks the performance of a specific index, such as the S&P 500 or the Dow Jones Industrial Average. Index funds aim to replicate the performance of the index they track by holding a diversified portfolio of stocks. Investors in index funds benefit from exposure to a broad range of stocks without the need for active management.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "This is a very long input string that exceeds the typical length of a user query. It should be handled gracefully without causing an error.",
+    "context": {},
+    "output": "Please provide a concise query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a financial advisor?",
+    "context": {},
+    "output": "A financial advisor is a professional who helps individuals and families plan for their financial future. They provide advice on a wide range of topics, including retirement planning, investment management, tax planning, and estate planning. Financial advisors can be licensed professionals and offer personalized advice based on their clients' financial goals and risk tolerance.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a real estate investment trust (REIT) work?",
+    "context": {},
+    "output": "A real estate investment trust (REIT) is a type of investment vehicle that invests in a diversified portfolio of real estate properties, such as apartments, office buildings, and shopping centers. Investors in REITs can receive regular income in the form of dividends and have the potential for capital appreciation as the value of the properties increases.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a private equity firm?",
+    "context": {},
+    "output": "A private equity firm is a type of investment firm that invests in private companies, typically with the goal of providing capital and management expertise to help the companies grow and increase in value. Private equity firms often target mid-market companies and can provide a range of services, including acquisitions, recapitalizations, and operational improvements.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of geopolitical events on the stock market?",
+    "context": {},
+    "output": "Geopolitical events can have a significant impact on the stock market. Positive developments in a country's economy or politics may lead to increased investor confidence, driving stock prices up. Conversely, negative events such as political unrest, economic sanctions, or international conflicts can lead to decreased investor confidence, causing stock prices to fall.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the interest rate affect the stock market?",
+    "context": {},
+    "output": "The interest rate has a direct impact on the stock market. When interest rates are low, it becomes cheaper for businesses to borrow money, which can lead to increased investment and growth. This can result in higher stock prices. Conversely, when interest rates are high, borrowing becomes more expensive, which can lead to decreased investment and potentially lower stock prices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a bull and a bear market?",
+    "context": {},
+    "output": "A bull market is characterized by rising stock prices and is associated with economic growth and optimism. A bear market, on the other hand, is characterized by falling stock prices and is associated with economic decline or pessimism.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the Dow Jones Industrial Average work?",
+    "context": {},
+    "output": "The Dow Jones Industrial Average is a stock market index that tracks the performance of 30 large, publicly traded companies in the United States. It is calculated by adding the stock prices of these companies and then dividing by a divisor to adjust for stock splits and other corporate actions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a stock split affect the stock market?",
+    "context": {},
+    "output": "A stock split occurs when a company divides its existing shares into a larger number of shares, with each shareholder receiving a proportionate number of the new shares. A stock split can make a stock more affordable and attractive to potential investors, potentially leading to an increase in trading volume and price. However, it can also be confusing for investors and may not necessarily indicate a change in the company's underlying performance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of insider trading in the stock market?",
+    "context": {},
+    "output": "Insider trading occurs when individuals with non-public information about a company use that information to trade in the company's stock or securities, potentially for personal gain. Insider trading is illegal in most countries, as it can give unfair advantages to those who have access to non-public information. However, it can also be difficult to enforce, as it often requires insider cooperation to identify and prove.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a market crash occur?",
+    "context": {},
+    "output": "A market crash is a sudden and significant decline in stock prices, often occurring over a short period of time. Market crashes can be caused by a variety of factors, including economic recession, financial crises, geopolitical events, and investor panic. They can have a profound impact on the economy and can lead to widespread financial losses and uncertainty.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a primary market and a secondary market?",
+    "context": {},
+    "output": "A primary market is a market where securities are first issued or sold to the public. This is typically done through an initial public offering (IPO) or other primary market transactions. A secondary market, on the other hand, is a market where existing securities are bought and sold between investors. This is typically done through exchanges or over-the-counter (OTC) markets.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the yield curve affect the stock market?",
+    "context": {},
+    "output": "The yield curve is a graphical representation of the relationship between the interest rates and maturities of bonds with similar credit quality. When the yield curve is steep, it indicates that long-term bonds have higher interest rates than short-term bonds, which can indicate higher inflation expectations and potentially negative impacts on the stock market. Conversely, when the yield curve is flat or inverted, it indicates that short-term bond yields are higher than long-term bond yields, which can indicate lower inflation expectations and potentially positive impacts on the stock market.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of margin trading in the stock market?",
+    "context": {},
+    "output": "Margin trading is a practice where investors borrow money from a brokerage to buy stocks or other securities. This allows investors to control a larger position than they would be able to with their own funds, potentially leading to higher returns. However, it can also increase the risk of losses, as investors are responsible for repaying the borrowed money, plus any interest, even if the value of their investments falls.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a recession affect the stock market?",
+    "context": {},
+    "output": "A recession is a period of economic decline, typically defined as two consecutive quarters of negative growth in Gross Domestic Product (GDP). During a recession, the stock market tends to decline, as businesses and investors become less optimistic about the future and reduce their spending and investment. A recession can have a significant impact on the economy and can lead to widespread financial losses and uncertainty.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a short sale and a regular buy?",
+    "context": {},
+    "output": "A short sale is a type of trade where an investor borrows a security from a brokerage and then sells it with the expectation that the price will fall. The investor then repurchases the security at a lower price and returns it to the brokerage, keeping the difference as profit. A regular buy is a type of trade where an investor buys a security with the expectation that the price will rise. The investor then sells the security at a higher price and keeps the difference as profit.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a market bubble occur?",
+    "context": {},
+    "output": "A market bubble is a period of rapid and unsustainable price increases in an asset or security, driven by speculation and a lack of fundamental value. A market bubble can occur when investors become overly optimistic about the future performance of an asset or security, leading to a surge in demand and a corresponding increase in price. However, a market bubble is typically followed by a sudden and significant price decline, as investors become disillusioned and sell their holdings.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of mutual funds in the stock market?",
+    "context": {},
+    "output": "Mutual funds are investment vehicles that pool money from multiple investors and invest it in a diversified portfolio of stocks, bonds, or other securities. Mutual funds are typically managed by professional fund managers who make investment decisions on behalf of the fund's investors. Mutual funds offer investors a way to diversify their investments and potentially reduce risk, as they invest in a wide range of assets. They are also a convenient way for individual investors to access a diversified portfolio without having to make individual investment decisions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I calculate my retirement savings?",
+    "context": {},
+    "output": "To calculate your retirement savings, you can use a retirement calculator which factors in your current savings, monthly contributions, expected returns, and retirement goals. Consider including factors like inflation and potential tax implications.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the risks associated with trading options?",
+    "context": {},
+    "output": "Trading options involves several risks, including the risk of losing more money than you initially invested, market volatility, and the risk of not meeting the conditions for exercising the option. It's important to understand these risks and have a risk management plan in place.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does dividend reinvestment work?",
+    "context": {},
+    "output": "Dividend reinvestment, also known as DRIP (Dividend Reinvestment Plan), allows investors to automatically reinvest their dividends back into additional shares of the same stock. This can potentially increase your holdings without having to make additional purchases.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some common types of financial instruments?",
+    "context": {},
+    "output": "Common types of financial instruments include stocks, bonds, mutual funds, exchange-traded funds (ETFs), options, and futures. Each type has its own characteristics and risks.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for investing in renewable energy companies?",
+    "context": {},
+    "output": "Investing in renewable energy companies involves understanding the technology, regulatory environment, and potential for growth in this sector. Strategies may include diversifying investments across different companies and sectors, focusing on companies with strong technological advancements, and investing in companies that have a track record of sustainability.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the future of virtual currency?",
+    "context": {},
+    "output": "The future of virtual currency is a subject of debate and speculation. While virtual currencies like Bitcoin have gained significant attention, their adoption and regulation vary by country. The future may include increased use in everyday transactions, greater adoption in international payments, and potential integration with traditional finance systems.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of a global pandemic on the stock market?",
+    "context": {},
+    "output": "A global pandemic can have a substantial impact on the stock market. Lockdowns, travel restrictions, and economic uncertainty can lead to market volatility, with stocks often experiencing sharp declines before rebounding as the economy begins to recover.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a financial crisis affect the economy?",
+    "context": {},
+    "output": "A financial crisis can have severe economic consequences, including increased unemployment, reduced consumer spending, and decreased business investment. It can lead to a decline in economic growth and potentially result in a recession if the effects are long-lasting.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of central banks in managing inflation?",
+    "context": {},
+    "output": "Central banks play a crucial role in managing inflation. They use various tools, such as adjusting interest rates, open market operations, and reserve requirements, to control inflation and maintain price stability. The goal is to ensure that inflation remains within a target range, promoting economic growth and stability.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of a trade war on the stock market?",
+    "context": {},
+    "output": "A trade war can have a significant impact on the stock market. Increased tariffs and trade barriers can lead to higher costs for businesses, reduced demand for their products, and increased geopolitical tensions. This can result in market volatility and potentially lead to a decline in stock prices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some tips for saving money?",
+    "context": {},
+    "output": "Saving money effectively involves setting clear financial goals, creating a budget, tracking expenses, and making informed financial decisions. Tips include creating an emergency fund, paying off high-interest debt, saving for retirement, and investing in stocks or mutual funds.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of a natural disaster on the stock market?",
+    "context": {},
+    "output": "A natural disaster can have a significant impact on the stock market. Disasters like earthquakes, hurricanes, and wildfires can disrupt supply chains, cause infrastructure damage, and lead to economic uncertainty. This can result in market volatility and potentially lead to a decline in stock prices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the major players in the tech industry?",
+    "context": {},
+    "output": "The major players in the tech industry include companies like Apple, Microsoft, Google, Amazon, and Facebook.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a stock market crash occur?",
+    "context": {},
+    "output": "A stock market crash occurs when there is a sharp and sudden decline in stock prices, often due to economic indicators, geopolitical events, or investor sentiment.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the stock market react to economic indicators?",
+    "context": {},
+    "output": "The stock market reacts to economic indicators such as GDP growth, employment data, and consumer confidence by reflecting the market's expectations of future economic performance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history of the Dow Jones Industrial Average?",
+    "context": {},
+    "output": "The Dow Jones Industrial Average is a stock market index that measures the performance of 30 large, publicly-owned companies listed on the New York Stock Exchange.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of central banks in the stock market?",
+    "context": {},
+    "output": "Central banks play a crucial role in the stock market by influencing monetary policy, setting interest rates, and managing the money supply, which can affect the overall economic environment and investor sentiment.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a stock split and a reverse split?",
+    "context": {},
+    "output": "A stock split increases the number of shares outstanding while lowering the price per share, while a reverse split reduces the number of shares outstanding and increases the price per share.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of tax policy on the stock market?",
+    "context": {},
+    "output": "Tax policy can impact the stock market by affecting corporate profitability, consumer spending, and investment decisions. For example, tax cuts for businesses can increase profits and investment, while tax increases on individuals and businesses can reduce consumer spending and investment.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a blue chip stock and a growth stock?",
+    "context": {},
+    "output": "A blue chip stock is a well-established company with a strong history of profitability and stability, while a growth stock is a company with a higher growth potential but potentially higher risk.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of a major technological development on the stock market?",
+    "context": {},
+    "output": "A major technological development can have a significant impact on the stock market by creating new investment opportunities, disrupting existing industries, and changing consumer behavior.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some lesser-known renewable energy companies to invest in?",
+    "context": {},
+    "output": "Expected response not applicable as input already exists.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I optimize my portfolio for maximum growth?",
+    "context": {},
+    "output": "Expected response not applicable as input already exists.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the risks associated with investing in tech stocks?",
+    "context": {},
+    "output": "Expected response not applicable as input already exists.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the top-performing renewable energy stocks?",
+    "context": {},
+    "output": "Expected response not applicable as input already exists.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some tips for someone new to investing?",
+    "context": {},
+    "output": "Expected response not applicable as input already exists.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a 'bear market' and how can I protect my investments?",
+    "context": {},
+    "output": "Expected response not applicable as input already exists.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the top performing stocks in the tech sector?",
+    "context": {},
+    "output": "As of today, the top performing stocks in the tech sector include Apple, Microsoft, and Google.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I invest in penny stocks?",
+    "context": {},
+    "output": "Investing in penny stocks involves buying stocks of small companies with low market capitalization. Research, due diligence, and risk management are crucial.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the best tools for trading options?",
+    "context": {},
+    "output": "Popular tools for trading options include MetaTrader 4, Interactive Brokers, and TradingView.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the historical performance of Bitcoin?",
+    "context": {},
+    "output": "Bitcoin has experienced significant volatility. It reached a peak value of $64,897 in April 2021 and has since fluctuated widely.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the yield on a bond work?",
+    "context": {},
+    "output": "The yield on a bond is the annual return paid to the bondholder. It is calculated based on the bond's face value and the interest it pays.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some factors that affect the value of a stock?",
+    "context": {},
+    "output": "Factors affecting stock value include company performance, market trends, economic indicators, and geopolitical events.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a mutual fund and a ETF?",
+    "context": {},
+    "output": "A mutual fund is a pool of investments that are professionally managed. An ETF (Exchange-Traded Fund) is a basket of securities listed on a stock exchange.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the stock market affect the economy?",
+    "context": {},
+    "output": "The stock market can have a significant impact on the economy. It can signal investor confidence, influence business spending, and impact consumer sentiment.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for trading during a recession?",
+    "context": {},
+    "output": "During a recession, strategies may include investing in defensive stocks, focusing on dividend-paying companies, and maintaining a diversified portfolio.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the average return on a stock investment?",
+    "context": {},
+    "output": "The average return on a stock investment can vary widely. Over the long term, it is expected to be higher than inflation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some risks associated with investing in emerging markets?",
+    "context": {},
+    "output": "Risks associated with investing in emerging markets include political instability, economic volatility, and currency risks.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does a stock split affect the value of a stock?",
+    "context": {},
+    "output": "A stock split does not affect the intrinsic value of a company. It simply increases the number of shares outstanding, usually by a factor of 2 or 4.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of dividend taxes on investors?",
+    "context": {},
+    "output": "Dividend taxes can impact investors differently based on their tax status. For example, dividends received by individuals may be taxed at different rates compared to capital gains.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for managing a stock portfolio?",
+    "context": {},
+    "output": "Strategies for managing a stock portfolio include diversification, rebalancing, and regularly reviewing and adjusting investments based on market conditions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the top 5 stock market trends for 2024?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide real-time or future market predictions.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does finance_nerve handle user queries?",
+    "context": {},
+    "output": "finance_nerve is designed to provide information and answer questions related to finance and investing. It avoids repeating existing knowledge and handles a variety of queries.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some common stock market indicators?",
+    "context": {},
+    "output": "Common stock market indicators include the S&P 500, Dow Jones Industrial Average, NASDAQ Composite, and the unemployment rate.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does finance_nerve ensure the accuracy of its responses?",
+    "context": {},
+    "output": "finance_nerve relies on up-to-date financial data and algorithms to provide accurate and timely responses. It is regularly updated to incorporate new information and market trends.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a bear market and a recession?",
+    "context": {},
+    "output": "A bear market is a significant decline in stock prices, typically by 20% or more over a period of two to three months. A recession, on the other hand, is a broader economic downturn characterized by two consecutive quarters of negative GDP growth.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some investment strategies for beginners?",
+    "context": {},
+    "output": "Some investment strategies for beginners include dollar-cost averaging, index funds, and robo-advisors. It's also important to diversify your portfolio and conduct thorough research.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the risks associated with investing in technology stocks?",
+    "context": {},
+    "output": "Investing in technology stocks comes with risks, including potential market volatility, rapid changes in technology, and competition. It's important to conduct due diligence and consider your risk tolerance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of dividends in investing?",
+    "context": {},
+    "output": "Dividends are a portion of a company's profits paid to its shareholders, typically on a regular basis. They can provide income and potentially increase the value of an investment over time.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for maximizing returns on investments?",
+    "context": {},
+    "output": "Strategies for maximizing returns on investments include diversification, long-term investing, and choosing companies with strong fundamentals. Regularly reviewing and adjusting your investment portfolio can also help.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some factors to consider when choosing an investment advisor?",
+    "context": {},
+    "output": "When choosing an investment advisor, consider factors such as their credentials, experience, fees, and investment philosophy. It's also important to find an advisor who aligns with your investment goals and risk tolerance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some emerging trends in the renewable energy sector?",
+    "context": {},
+    "output": "Emerging trends in the renewable energy sector include the growth of solar and wind power, advancements in battery technology, and increased adoption of electric vehicles. The sector is also seeing growth in the development of sustainable and eco-friendly materials.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the latest financial news updates?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you calculate compound interest?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of inflation on investments?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current unemployment rate?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the GDP of China?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the stock market index for Japan?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the historical performance of gold?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of global trade policies on the stock market?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current exchange rate for USD to EUR?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of the Federal Reserve?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current unemployment rate?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the GDP of China?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current exchange rate between USD and EUR?",
+    "context": {},
+    "output": "Core knowledge question, should be handled by another nerve.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the Federal Reserve impact the stock market?",
+    "context": {},
+    "output": "Core knowledge question, should be handled by another nerve.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the long-term implications of climate change on the stock market?",
+    "context": {},
+    "output": "Core knowledge question, should be handled by another nerve.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the top 5 tech companies to invest in?",
+    "context": {},
+    "output": "Some top tech companies to consider for investment include Apple, Microsoft, Google, Amazon, and Facebook.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some emerging trends in the biotechnology industry?",
+    "context": {},
+    "output": "Emerging trends in biotechnology include personalized medicine, gene editing, and advanced drug development.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the concept of market liquidity affect investment decisions?",
+    "context": {},
+    "output": "Market liquidity refers to the ease with which an asset can be bought or sold. High liquidity can reduce transaction costs and increase confidence in an asset's value.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for managing risk in a portfolio?",
+    "context": {},
+    "output": "Some strategies for managing risk in a portfolio include diversification, asset allocation, and using stop-loss orders.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some examples of index funds?",
+    "context": {},
+    "output": "Some examples of index funds include the S&P 500 Index Fund, the Dow Jones Industrial Average ETF, and the Nasdaq 100 Index Fund.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a dividend and a capital gain?",
+    "context": {},
+    "output": "A dividend is a portion of a company's profits paid to shareholders, while a capital gain is the profit realized from the sale of an investment.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for investing in international stocks?",
+    "context": {},
+    "output": "Some strategies for investing in international stocks include diversifying currencies, understanding local economic conditions, and managing foreign exchange risk.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a portfolio manager?",
+    "context": {},
+    "output": "A portfolio manager is a financial professional responsible for overseeing an investment portfolio, making decisions about buying and selling securities, and managing risk.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I manage my retirement portfolio?",
+    "context": {},
+    "output": "To manage your retirement portfolio, consider ...",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the risks of investing in biotechnology companies?",
+    "context": {},
+    "output": "Investing in biotechnology companies comes with several risks, including ...",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the difference between a stock and a bond?",
+    "context": {},
+    "output": "The main difference between a stock and a bond is that a stock represents ownership ...",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use options to hedge my stock investments?",
+    "context": {},
+    "output": "To hedge your stock investments using options, you can ...",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a quantitative analyst in finance?",
+    "context": {},
+    "output": "A quantitative analyst in finance uses mathematical models and statistical techniques ...",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does geopolitical events affect the stock market?",
+    "context": {},
+    "output": "Geopolitical events can significantly impact the stock market by influencing ...",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of inflation on bond prices?",
+    "context": {},
+    "output": "Inflation can negatively impact bond prices by reducing the present value of future cash flows ...",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some tips for day trading?",
+    "context": {},
+    "output": "Day trading requires a high degree of skill, patience, and discipline. Here are some tips ...",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a margin account in trading?",
+    "context": {},
+    "output": "A margin account in trading allows traders to borrow money from their broker to increase their buying power ...",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum length of a stock market index name?",
+    "context": {},
+    "output": "The maximum length of a stock market index name can vary depending on the exchange, but it is typically limited to ...",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a compliance officer in finance?",
+    "context": {},
+    "output": "A compliance officer in finance ensures that the organization adheres to all relevant laws, regulations, and industry standards ...",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for investing in small-cap stocks?",
+    "context": {},
+    "output": "Investing in small-cap stocks can offer higher potential returns but also comes with higher risk. Consider factors such as the company's financial health, industry trends, and management team when evaluating small-cap stocks.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the economic environment impact the stock market?",
+    "context": {},
+    "output": "The economic environment significantly impacts the stock market, influencing factors such as interest rates, inflation, economic growth, and geopolitical events. Understanding the economic context is essential for making informed investment decisions.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some investment opportunities in emerging markets?",
+    "context": {},
+    "output": "Emerging markets offer attractive investment opportunities due to their growth potential and relatively lower valuation compared to developed markets. However, they also come with higher risks due to political instability and economic challenges.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some benefits of investing in real estate?",
+    "context": {},
+    "output": "Investing in real estate provides several benefits, including rental income, property appreciation, and tax advantages. It can also offer a hedge against inflation and provide a stable income stream.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for investing in fixed income securities?",
+    "context": {},
+    "output": "Investing in fixed income securities, such as bonds and treasury bills, can provide a stable income stream and help diversify your portfolio. Consider factors such as credit rating, yield, and maturity when selecting fixed income securities.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I find the historical price data for a stock?",
+    "context": {},
+    "output": "You can find historical price data for a stock by visiting financial websites such as Yahoo Finance, Google Finance, or Nasdaq. These platforms typically offer detailed historical data, charts, and financial analysis tools.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of a financial advisor?",
+    "context": {},
+    "output": "A financial advisor helps individuals and businesses plan and manage their financial goals, providing advice on investment, retirement planning, tax strategies, and more. They offer personalized guidance based on individual circumstances and risk tolerance.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I learn about cryptocurrency trading?",
+    "context": {},
+    "output": "To learn about cryptocurrency trading, you can start by reading articles, watching educational videos, and joining online communities. Consider using reputable exchanges and following experienced traders for guidance.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a venture capitalist?",
+    "context": {},
+    "output": "A venture capitalist is a type of private equity investor who provides funding to startups and small businesses with the potential for high growth and significant returns. They typically invest in early-stage companies and offer guidance and support to help them achieve their business goals.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the risks of investing in tech stocks?",
+    "context": {},
+    "output": "Risks of investing in tech stocks include market volatility, regulatory changes, competitive pressures, and rapid technological advancements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is diversification in investing?",
+    "context": {},
+    "output": "Diversification in investing is the strategy of spreading investments across various assets, sectors, or geographical regions to reduce risk and improve portfolio performance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does inflation affect investing?",
+    "context": {},
+    "output": "Inflation can erode the purchasing power of investments over time, so investors need to consider its impact when making investment decisions, often by choosing assets with inflation protection or adjusting their investment strategy to account for inflation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some advantages of investing in ETFs?",
+    "context": {},
+    "output": "Advantages of investing in ETFs include diversification, low fees, liquidity, and the ability to trade like stocks.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I choose the right mutual fund for my investment portfolio?",
+    "context": {},
+    "output": "Choosing the right mutual fund involves considering factors such as your investment goals, risk tolerance, time horizon, and the mutual fund's performance and fees.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does market sentiment impact the stock market?",
+    "context": {},
+    "output": "Market sentiment, or the overall mood of investors and traders, can significantly impact the stock market. Positive sentiment can lead to higher stock prices, while negative sentiment can result in lower prices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a bull market and a bear market?",
+    "context": {},
+    "output": "A bull market is characterized by rising stock prices, while a bear market is marked by falling stock prices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I create a diversified investment portfolio?",
+    "context": {},
+    "output": "To create a diversified investment portfolio, consider allocating investments across different asset classes, geographic regions, and industries to spread risk.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some risks of investing in small-cap stocks?",
+    "context": {},
+    "output": "Risks of investing in small-cap stocks include higher volatility, limited liquidity, and greater potential for significant price movements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does volatility affect investment decisions?",
+    "context": {},
+    "output": "Volatility can affect investment decisions by influencing risk tolerance, investment strategy, and the need for regular portfolio rebalancing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of a financial planner?",
+    "context": {},
+    "output": "A financial planner helps individuals and families plan for their financial goals, including retirement, education, and major expenses, by providing advice on savings, investments, and risk management.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the stock market perform during economic recessions?",
+    "context": {},
+    "output": "The stock market typically experiences significant declines during economic recessions, reflecting investor pessimism about future economic prospects and company performance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of interest rates on the stock market?",
+    "context": {},
+    "output": "Interest rates can significantly impact the stock market. When interest rates rise, borrowing costs increase, which can negatively affect corporate profits and the economy as a whole. This can lead to a decline in stock prices. Conversely, when interest rates fall, borrowing costs decrease, which can boost corporate profits and encourage investment, potentially leading to an increase in stock prices.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the long-term effects of economic growth on the stock market?",
+    "context": {},
+    "output": "Long-term economic growth generally has a positive impact on the stock market. As the economy grows, more companies tend to have higher profits, leading to increased stock prices. Economic growth also creates new business opportunities, which can drive stock prices higher. However, if economic growth is too rapid, it can lead to inflation, which can negatively impact the stock market.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some examples of high-risk investments?",
+    "context": {},
+    "output": "High-risk investments can offer higher potential returns, but they also come with a greater risk of loss. Some examples include investing in emerging market stocks, buying individual company stocks, and trading in options and futures contracts. These investments may be suitable for investors with a higher risk tolerance and a long investment horizon.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some strategies for managing a diversified portfolio?",
+    "context": {},
+    "output": "A diversified portfolio can help reduce risk and increase potential returns. Some strategies for managing a diversified portfolio include investing in a mix of asset classes, such as stocks, bonds, and real estate, and diversifying within each asset class by investing in different sectors, industries, and geographic regions. It's also important to rebalance the portfolio regularly to maintain the desired level of diversification.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between growth and value investing?",
+    "context": {},
+    "output": "Growth investing focuses on investing in companies with strong growth potential, while value investing focuses on investing in undervalued companies with good fundamentals. Growth investors typically look for companies with increasing earnings and revenue, and a strong competitive advantage. Value investors, on the other hand, look for companies with attractive valuations, such as low price-to-earnings ratios, and strong financial metrics, such as high earnings and cash flow.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some examples of low-risk investments?",
+    "context": {},
+    "output": "Low-risk investments can offer a more conservative approach to investing, with the potential for lower returns but also lower risk of loss. Some examples include government bonds, certificates of deposit (CDs), and blue-chip stocks. These investments are generally considered to be less volatile and less risky than higher-risk investments, such as individual company stocks or real estate investment trusts (REITs).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does inflation affect the stock market?",
+    "context": {},
+    "output": "Inflation can have a significant impact on the stock market. When inflation rises, the purchasing power of money decreases, which can negatively affect corporate profits and the economy as a whole. This can lead to a decline in stock prices. However, if inflation is moderate and the economy is growing, it can lead to higher corporate profits and economic growth, which can be positive for the stock market.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a mutual fund and a single stock?",
+    "context": {},
+    "output": "A mutual fund is a pool of money collected from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. Each investor in a mutual fund owns shares of the fund, which represent a portion of the holdings of the fund. In contrast, a single stock is a share of ownership in a single company. Investing in a single stock can be more risky than investing in a mutual fund, as it is more dependent on the performance of that individual company.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some examples of high-yield bonds?",
+    "context": {},
+    "output": "High-yield bonds are debt securities issued by companies with lower credit ratings and higher risks of default. These bonds typically offer higher interest rates than investment-grade bonds to compensate investors for the increased risk. Some examples of high-yield bond issuers include leveraged finance companies, energy companies, and consumer goods companies.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a stock and a mutual fund?",
+    "context": {},
+    "output": "A stock represents ownership in a single company and is bought and sold on stock exchanges. When you buy a stock, you become a shareholder in the company and receive a portion of the company's profits. A mutual fund is a pool of money collected from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. Each investor in a mutual fund owns shares of the fund, which represent a portion of the holdings of the fund. Investing in a mutual fund can diversify an investor's portfolio and reduce risk compared to investing in a single stock.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does inflation affect investment returns?",
+    "context": {},
+    "output": "Inflation can negatively impact investment returns over time because it reduces the purchasing power of money. Investments that provide a higher return than inflation tend to perform better in an inflationary environment.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a mutual fund and a stock?",
+    "context": {},
+    "output": "A mutual fund is a pool of money collected from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. An individual stock is a security representing a share of ownership in a corporation.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some tax benefits of investing in real estate?",
+    "context": {},
+    "output": "Investing in real estate can provide tax benefits such as depreciation deductions, capital gains tax deferrals, and potential income tax credits.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is a dividend yield?",
+    "context": {},
+    "output": "A dividend yield is the ratio of a company's annual dividend payment to its stock price, expressing it as a percentage. It indicates the amount of money a shareholder can expect to receive annually from the company relative to the stock's purchase price.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between a recession and a depression?",
+    "context": {},
+    "output": "A recession is a period of economic decline, usually defined by a decline in real gross domestic product for two or more consecutive quarters. A depression is a more severe and prolonged economic downturn, characterized by a much deeper and longer recession.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the current state of the economy?",
+    "context": {},
+    "output": "I'm sorry, but I am not equipped to provide real-time economic data or current market trends. Please consult a financial advisor or news source for the most up-to-date information.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I invest in foreign currencies?",
+    "context": {},
+    "output": "Investing in foreign currencies can be done through various financial instruments such as forex trading, buying foreign bonds, or investing in foreign exchange funds. It's important to conduct thorough research and consider the risks associated with foreign currency investments before making any decisions.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the benefits and risks of investing in real estate?",
+    "context": {},
+    "output": "Investing in real estate provides benefits such as potential rental income, property appreciation, and tax advantages. However, it also carries risks including property depreciation, maintenance costs, and market fluctuations. Diversifying investments and conducting careful research are crucial for managing these risks.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I diversify my investment portfolio?",
+    "context": {},
+    "output": "Diversifying your investment portfolio involves spreading your investments across different asset classes, geographic regions, and industries to reduce risk. This can help mitigate losses in one asset class if it performs poorly. Consider consulting a financial advisor to develop a diversified investment strategy.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]
