@@ -1,0 +1,32 @@
+{
+  "name": "database_comparison_nerve",
+  "version": "1.0.0",
+  "description": "database_comparison_nerve",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "database-comparison",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "compare_databases",
+      "implementations": {
+        "python": "compare_databases/tool.py"
+      }
+    },
+    {
+      "name": "parse_geographical_data",
+      "implementations": {
+        "python": "parse_geographical_data/tool.py"
+      }
+    }
+  ]
+}
