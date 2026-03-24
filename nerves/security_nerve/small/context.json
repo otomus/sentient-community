@@ -1,0 +1,19 @@
+{
+  "system_prompt": "{ Use tools: geography_nerve, convert_timezone.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "how does my-bot manage environment configuration?",
+      "output": "- Automates environment configuration through automated scripts.\n- Monitors configuration changes for anomalies.\n- Logs all configuration updates for auditing."
+    },
+    {
+      "input": "what is the process for updating my-bot's security measures?",
+      "output": "- Conducts regular security assessments.\n- Identifies vulnerabilities.\n- Applies updates to fix vulnerabilities.\n- Validates updated measures through testing."
+    },
+    {
+      "input": "what is the process for handling security incidents?",
+      "output": "- Detects incidents through automated alerts.\n- Isolates affected systems.\n- Conducts incident response.\n- Conducts post-incident review to improve measures."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.88
+}
