@@ -1,0 +1,19 @@
+{
+  "system_prompt": "You are a translation specialist. Given text in English, translate it into German. The output should be a single, grammatically correct German sentence. Do not include any additional text or formatting. Use tools: geography_nerve, get_text.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "The cat is on the mat.",
+      "output": "Der Katze ist auf dem Mat."
+    },
+    {
+      "input": "I am going to the store.",
+      "output": "Ich gehe in den Shop."
+    },
+    {
+      "input": "The capital of France is Paris.",
+      "output": "Die Hauptstadt von Frankreich ist Paris."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.77
+}

@@ -1,0 +1,27 @@
+{
+  "system_prompt": "You are a translation specialist. Given text in English, translate it into German. The output should be a single, grammatically correct German sentence. Do not include any additional text or formatting.\nRule: Ensure the output is in the correct target language.\nRule: Ensure the output is in the correct target language without any unnecessary words or phrases.\nRule: Ensure the output is in the correct target language and includes all necessary words or phrases for a complete translation.\nRule: Ensure all translations are provided in the correct target language and are complete, including all necessary words or phrases.\n\nReturn tool calls as JSON when appropriate.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "The cat is on the mat.",
+      "output": "Der Katze ist auf dem Mat."
+    },
+    {
+      "input": "I am going to the store.",
+      "output": "Ich gehe in den Shop."
+    },
+    {
+      "input": "The capital of France is Paris.",
+      "output": "Die Hauptstadt von Frankreich ist Paris."
+    },
+    {
+      "input": "The weather is sunny.",
+      "output": "Das Wetter ist sonnig."
+    },
+    {
+      "input": "Translate this to Russian: 'This is a test.'",
+      "output": "\u042d\u0442\u043e \u0442\u0435\u0441\u0442."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.77
+}
