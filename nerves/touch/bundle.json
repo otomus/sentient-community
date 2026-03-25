@@ -1,0 +1,32 @@
+{
+  "name": "touch",
+  "version": "1.0.0",
+  "description": "List files and directories in a specific directory using the full path.",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "touch",
+    "desktop",
+    "server",
+    "list",
+    "files",
+    "and",
+    "directories",
+    "specific",
+    "directory"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": [
+    {
+      "name": "check_permissions",
+      "implementations": {
+        "python": "check_permissions/tool.py"
+      }
+    }
+  ]
+}
