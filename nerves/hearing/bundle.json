@@ -1,19 +1,19 @@
 {
   "name": "hearing",
   "version": "1.0.0",
-  "description": "Convert text to speech and translate between languages with natural-sounding output.",
+  "description": "Translate between languages with accurate and natural-sounding output.",
   "role": "tool",
   "tags": [
     "tool",
     "hearing",
     "desktop",
     "server",
-    "convert",
-    "text",
-    "speech",
-    "and",
     "translate",
-    "between"
+    "between",
+    "languages",
+    "with",
+    "accurate",
+    "and"
   ],
   "authors": [
     {
