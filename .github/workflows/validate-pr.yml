@@ -100,7 +100,7 @@ jobs:
 
       - name: Run schema validation
         id: schema-check
-        run: python scripts/validate.py 2>&1 | tee /tmp/validate-output.txt
+        run: python scripts/validate.py --changed-only 2>&1 | tee /tmp/validate-output.txt
 
       - name: Comment schema errors on PR
         if: failure() && steps.schema-check.outcome == 'failure'

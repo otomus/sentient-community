@@ -519,14 +519,90 @@ def _validate_all_mcps() -> list[str]:
     return errors
 
 
-def main():
-    """Run all validations and exit with status code 1 on failure, 0 on success."""
+def _get_changed_dirs() -> set[str] | None:
+    """Get top-level contribution directories affected by this PR.
+
+    Returns a set of directory paths (e.g. 'nerves/math_nerve',
+    'adapters/brain/medium/qwen2.5-coder-7b') that were changed
+    relative to origin/main. Returns None if not in a PR context
+    or git diff fails — callers should fall back to full validation.
+    """
+    import subprocess as _sp
+    try:
+        result = _sp.run(
+            ["git", "diff", "--name-only", "origin/main...HEAD"],
+            capture_output=True, text=True, timeout=10,
+        )
+        if result.returncode != 0:
+            return None
+    except Exception:
+        return None
+
+    changed = set()
+    for path in result.stdout.strip().splitlines():
+        parts = path.split("/")
+        if len(parts) < 2:
+            continue
+        top = parts[0]
+        if top == "nerves":
+            changed.add(os.path.join(REPO_ROOT, "nerves", parts[1]))
+        elif top == "adapters" and len(parts) >= 3:
+            # adapters/{role}/{size_class}/... — validate that size dir
+            adapter_dir = os.path.join(REPO_ROOT, *parts[:3])
+            changed.add(adapter_dir)
+            # If model-specific: adapters/{role}/{size}/{model}/...
+            if len(parts) >= 4 and not parts[3].endswith(".json"):
+                changed.add(os.path.join(REPO_ROOT, *parts[:4]))
+        elif top == "mcp_tools":
+            changed.add(os.path.join(REPO_ROOT, "mcp_tools", parts[1]))
+        elif top == "connectors":
+            changed.add(os.path.join(REPO_ROOT, "connectors", parts[1]))
+        elif top == "mcps":
+            changed.add(os.path.join(REPO_ROOT, "mcps", parts[1]))
+    return changed
+
+
+def _validate_changed_only(changed_dirs: set[str]) -> list[str]:
+    """Validate only the directories that changed in this PR."""
     errors = []
-    errors.extend(_validate_all_nerves())
-    errors.extend(_validate_all_adapters())
-    errors.extend(_validate_all_connectors())
-    errors.extend(_validate_all_tools())
-    errors.extend(_validate_all_mcps())
+    for d in sorted(changed_dirs):
+        if not os.path.isdir(d):
+            continue
+        parts = os.path.relpath(d, REPO_ROOT).split(os.sep)
+        top = parts[0]
+        name = parts[-1]
+        print(f"Validating changed: {os.path.relpath(d, REPO_ROOT)}")
+        if top == "nerves":
+            errors.extend(validate_nerve(d))
+        elif top == "adapters":
+            errors.extend(validate_adapter(d))
+        elif top == "mcp_tools":
+            errors.extend(validate_tool(d))
+        elif top == "connectors":
+            errors.extend(validate_connector(d))
+        elif top == "mcps":
+            errors.extend(validate_mcp(d))
+    return errors
+
+
+def main():
+    """Run validations and exit with status code 1 on failure, 0 on success.
+
+    In PR context (--changed-only or auto-detected from git diff),
+    only validates files affected by the PR. Otherwise validates everything.
+    """
+    changed_only = "--changed-only" in sys.argv
+
+    if changed_only:
+        changed = _get_changed_dirs()
+        if changed:
+            print(f"PR mode: validating {len(changed)} changed dir(s)")
+            errors = _validate_changed_only(changed)
+        else:
+            print("Could not determine changed files, falling back to full validation")
+            errors = _validate_all()
+    else:
+        errors = _validate_all()
 
     if errors:
         print(f"\nVALIDATION FAILED — {len(errors)} error(s):")
@@ -536,6 +612,17 @@ def main():
     else:
         print("\nAll validations passed.")
         sys.exit(0)
+
+
+def _validate_all() -> list[str]:
+    """Run full-repo validation across all contribution types."""
+    errors = []
+    errors.extend(_validate_all_nerves())
+    errors.extend(_validate_all_adapters())
+    errors.extend(_validate_all_connectors())
+    errors.extend(_validate_all_tools())
+    errors.extend(_validate_all_mcps())
+    return errors
 
 
 if __name__ == "__main__":
