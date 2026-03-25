@@ -23,15 +23,15 @@
       }
     },
     {
-      "name": "free_llm_api",
-      "implementations": {
-        "python": "free_llm_api/tool.py"
-      }
-    },
-    {
       "name": "parse_geographical_data",
       "implementations": {
         "python": "parse_geographical_data/tool.py"
+      }
+    },
+    {
+      "name": "free_llm_api",
+      "implementations": {
+        "python": "free_llm_api/tool.py"
       }
     },
     {
