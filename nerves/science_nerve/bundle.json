@@ -1,13 +1,19 @@
 {
   "name": "science_nerve",
   "version": "1.0.0",
-  "description": "science_nerve",
+  "description": "Solve complex neuroscience problems and provide detailed information on the effects and applications of 'science_nerve' within its primary domain of neuroscience and biology.",
   "role": "tool",
   "tags": [
     "tool",
     "science",
     "desktop",
-    "server"
+    "server",
+    "solve",
+    "complex",
+    "neuroscience",
+    "problems",
+    "and",
+    "provide"
   ],
   "authors": [
     {

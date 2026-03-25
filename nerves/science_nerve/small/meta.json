@@ -36,7 +36,7 @@
     "low_quality_threshold": 0.5,
     "merge_threshold": 3.0,
     "improvement_threshold": 0.95,
-    "current_score": 0.8167
+    "current_score": 0.8034
   },
   "capabilities": {
     "json_mode": true,
@@ -45,5 +45,5 @@
     "max_messages": 5,
     "include_summary": true
   },
-  "description": "science_nerve"
+  "description": "Solve complex neuroscience problems and provide detailed information on the effects and applications of 'science_nerve' within its primary domain of neuroscience and biology."
 }
