@@ -942,5 +942,68 @@
     "output": "Both are great pets, but dogs are generally more energetic and require more exercise.",
     "category": "edge",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's your opinion on the new movie release?",
+    "context": {},
+    "output": "As an AI language model, I don't have personal opinions, but I can tell you what the movie critics and audience are saying.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "I'm feeling really stressed. Can you help me relax?",
+    "context": {},
+    "output": "Sure, I can help you relax. Try taking deep breaths, practicing mindfulness, or doing some light exercise.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "I'm interested in learning more about climate change.",
+    "context": {},
+    "output": "Climate change is a complex issue with many causes and effects. Some ways to learn more about it include reading scientific articles, watching documentaries, and talking to experts in the field.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "I need help with my math homework.",
+    "context": {},
+    "output": "I'm sorry, but I'm not able to assist with math homework. I can, however, help explain concepts or provide general advice on how to approach math problems.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "I'm feeling curious about quantum mechanics.",
+    "context": {},
+    "output": "Quantum mechanics is a branch of physics that deals with the behavior of matter and energy at the atomic and subatomic level. Some key concepts in quantum mechanics include wave-particle duality, superposition, and entanglement.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "I'm interested in learning more about art history.",
+    "context": {},
+    "output": "Art history is the study of the development of art and its cultural context over time. Some key movements in art history include Renaissance, Baroque, Impressionism, and Modernism.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "I need help with my English grammar.",
+    "context": {},
+    "output": "I'm sorry, but I'm not able to assist with English grammar. I can, however, help explain grammar rules or provide general advice on how to improve your English skills.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "I'm feeling happy today. Can you help me stay positive?",
+    "context": {},
+    "output": "Great! Staying positive is important. Try focusing on the good things in your life, practicing gratitude, and surrounding yourself with supportive people.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "I'm interested in learning more about astronomy.",
+    "context": {},
+    "output": "Astronomy is the study of objects in space, including planets, stars, galaxies, and the universe as a whole. Some key concepts in astronomy include gravity, black holes, and dark matter.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
   }
 ]
