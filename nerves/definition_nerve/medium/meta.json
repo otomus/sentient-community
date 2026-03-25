@@ -36,7 +36,7 @@
     "low_quality_threshold": 0.5,
     "merge_threshold": 3.0,
     "improvement_threshold": 0.95,
-    "current_score": 0.865
+    "current_score": 0.7433
   },
   "capabilities": {
     "json_mode": true,
@@ -45,5 +45,5 @@
     "max_messages": 20,
     "include_summary": false
   },
-  "description": "Provide accurate definitions of 'definition_nerve' and distinguish it from human and animal nerve agents by highlighting their unique nature, impacts, and public health context."
+  "description": "Provide clear and concise definitions of definition_nerve, distinguishing it from human and animal nerve agents in terms of nature, impacts, and public health context, and explain its specific use in espionage and public health emergencies."
 }

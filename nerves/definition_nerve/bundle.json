@@ -1,7 +1,7 @@
 {
   "name": "definition_nerve",
   "version": "1.0.0",
-  "description": "Provide accurate definitions of 'definition_nerve' and distinguish it from human and animal nerve agents by highlighting their unique nature, impacts, and public health context.",
+  "description": "Provide clear and concise definitions of definition_nerve, distinguishing it from human and animal nerve agents in terms of nature, impacts, and public health context, and explain its specific use in espionage and public health emergencies.",
   "role": "tool",
   "tags": [
     "tool",
@@ -9,11 +9,11 @@
     "desktop",
     "server",
     "provide",
-    "accurate",
-    "definitions",
+    "clear",
     "and",
-    "distinguish",
-    "from"
+    "concise",
+    "definitions",
+    "distinguishing"
   ],
   "authors": [
     {
