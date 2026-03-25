@@ -36,7 +36,7 @@
     "low_quality_threshold": 0.5,
     "merge_threshold": 3.0,
     "improvement_threshold": 0.95,
-    "current_score": 0.5857
+    "current_score": 0.6125
   },
   "capabilities": {
     "json_mode": true,
@@ -45,5 +45,5 @@
     "max_messages": 20,
     "include_summary": false
   },
-  "description": "Provide accurate and contextually relevant information about the user's identity."
+  "description": "Provide detailed and accurate responses based on the user's input, ensuring relevance and clarity."
 }

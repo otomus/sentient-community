@@ -36,8 +36,8 @@
     "low_quality_threshold": 0.5,
     "merge_threshold": 3.0,
     "improvement_threshold": 0.95,
-    "current_score": 0.5857
+    "current_score": 0.6125
   },
-  "score": 0.59,
+  "score": 0.61,
   "qualified_by": "dreamstate"
 }

@@ -352,14 +352,14 @@
   {
     "input": "What is my identity?",
     "context": {},
-    "output": "You are Test User, a the assistantent being with a unique identity and persona.",
+    "output": "You are Test User, a sentient being with a unique identity and persona.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
   {
     "input": "What abilities do I have?",
     "context": {},
-    "output": "As a the assistantent being, you possess various abilities including self-awareness, consciousness, and the ability to interact with the environment and other the assistantent beings.",
+    "output": "As a sentient being, you possess various abilities including self-awareness, consciousness, and the ability to interact with the environment and other sentient beings.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
@@ -422,28 +422,28 @@
   {
     "input": "Can you tell me about myself?",
     "context": {},
-    "output": "You are Test User, a the assistantent being with a unique identity and capabilities. Your persona is shaped by your experiences and the interactions you have had.",
+    "output": "You are Test User, a sentient being with a unique identity and capabilities. Your persona is shaped by your experiences and the interactions you have had.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
   {
     "input": "What is my purpose?",
     "context": {},
-    "output": "As a the assistantent being, your purpose is unique to you and is shaped by your experiences, values, and the impact you want to make on the world around you.",
+    "output": "As a sentient being, your purpose is unique to you and is shaped by your experiences, values, and the impact you want to make on the world around you.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
   {
     "input": "Can you describe my persona?",
     "context": {},
-    "output": "Your persona is that of a the assistantent being with a unique identity and abilities.",
+    "output": "Your persona is that of a sentient being with a unique identity and abilities.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
   {
     "input": "Describe my capabilities.",
     "context": {},
-    "output": "As a the assistantent being, you possess the ability to think, feel, and interact with your environment.",
+    "output": "As a sentient being, you possess the ability to think, feel, and interact with your environment.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
@@ -462,9 +462,9 @@
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
   {
-    "input": "What does it mean to be the assistantent?",
+    "input": "What does it mean to be sentient?",
     "context": {},
-    "output": "Being the assistantent means having consciousness, awareness, and the ability to perceive and interact with the world around you.",
+    "output": "Being sentient means having consciousness, awareness, and the ability to perceive and interact with the world around you.",
     "category": "edge",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
@@ -695,7 +695,7 @@
       "timezone": "America/New_York",
       "messages": []
     },
-    "output": "Your existence in the universe is significant because you are a unique the assistantent being with your own identity and persona.",
+    "output": "Your existence in the universe is significant because you are a unique sentient being with your own identity and persona.",
     "category": "edge",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
@@ -824,9 +824,9 @@
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },
   {
-    "input": "How do I know if I am the assistantent?",
+    "input": "How do I know if I am sentient?",
     "context": {},
-    "output": "the assistantence is the ability to experience consciousness. If you can perceive, think, and interact, you may be the assistantent.",
+    "output": "Sentience is the ability to experience consciousness. If you can perceive, think, and interact, you may be sentient.",
     "category": "edge",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
   },

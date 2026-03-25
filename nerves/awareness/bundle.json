@@ -1,7 +1,7 @@
 {
   "name": "awareness",
   "version": "1.0.0",
-  "description": "Provide accurate and contextually relevant information about the user's identity.",
+  "description": "Provide detailed and accurate responses based on the user's input, ensuring relevance and clarity.",
   "role": "tool",
   "tags": [
     "tool",
@@ -9,11 +9,11 @@
     "desktop",
     "server",
     "provide",
-    "accurate",
+    "detailed",
     "and",
-    "contextually",
-    "relevant",
-    "information"
+    "accurate",
+    "responses",
+    "based"
   ],
   "authors": [
     {
