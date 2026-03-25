@@ -36,7 +36,7 @@
     "low_quality_threshold": 0.5,
     "merge_threshold": 3.0,
     "improvement_threshold": 0.95,
-    "current_score": 0.8438
+    "current_score": 0.77
   },
   "capabilities": {
     "json_mode": true,
@@ -45,5 +45,5 @@
     "max_messages": 1,
     "include_summary": true
   },
-  "description": "Rewrite messages to match the personality tone requested by the user."
+  "description": "Personality-driven voice rewriting \u2014 rewrites messages to match personality tone. Does NOT translate."
 }
