@@ -1,19 +1,19 @@
 {
   "name": "communication",
   "version": "1.0.0",
-  "description": "Rewrite messages to match the personality tone and sentiment of the input.",
+  "description": "Personality-driven voice rewriting \u2014 rewrites messages to match personality tone. Does NOT translate.",
   "role": "tool",
   "tags": [
     "tool",
     "communication",
     "desktop",
     "server",
-    "rewrite",
+    "voice",
+    "rewriting",
+    "rewrites",
     "messages",
     "match",
-    "the",
-    "personality",
-    "tone"
+    "personality"
   ],
   "authors": [
     {
