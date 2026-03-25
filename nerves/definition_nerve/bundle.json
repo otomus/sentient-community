@@ -1,13 +1,19 @@
 {
   "name": "definition_nerve",
   "version": "1.0.0",
-  "description": "definition_nerve",
+  "description": "Provide accurate definitions of 'definition_nerve' and distinguish it from human and animal nerve agents by highlighting their unique nature, impacts, and public health context.",
   "role": "tool",
   "tags": [
     "tool",
     "definition",
     "desktop",
-    "server"
+    "server",
+    "provide",
+    "accurate",
+    "definitions",
+    "and",
+    "distinguish",
+    "from"
   ],
   "authors": [
     {
