@@ -1,0 +1,730 @@
+[
+  {
+    "input": "list all files in the home directory",
+    "context": {},
+    "output": "Contents of /home/Test User:\nfile1.txt\nfile2.txt\nsubdir1/",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete file3.txt in the documents folder",
+    "context": {},
+    "output": "File /home/Test User/Documents/file3.txt deleted successfully.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Hello, World!' to newfile.txt",
+    "context": {},
+    "output": "Content written to /home/Test User/newfile.txt.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read file1.txt",
+    "context": {},
+    "output": "Contents of /home/Test User/file1.txt:\nThis is the content of file1.txt.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "execute the command 'ls -l' in the home directory",
+    "context": {},
+    "output": "Total 4\ndrwxr-xr-x 2 Test User Test User 4096 Jan 1 12:00 Documents\ndrwxr-xr-x 2 Test User Test User 4096 Jan 1 12:00 Downloads\n-rw-r--r-- 1 Test User Test User 0 Jan 1 12:00 file1.txt\n-rw-r--r-- 1 Test User Test User 0 Jan 1 12:00 file2.txt",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "get system information",
+    "context": {},
+    "output": "System Information:\nOS: Ubuntu 20.04\nKernel: 5.4.0-42-generic\nCPU: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz\nMemory: 15.7 GiB",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in the root directory",
+    "context": {},
+    "output": "Contents of /\nbin\nboot\ndata\ndev\nectd\nhome\nlib\nlib32\nlib64\nlibx32\nmedia\nmnt\nopt\nproc\nroot\nrun\nsbin\nsrv\nsys\ntmp\nusr\nvar",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete the /etc directory",
+    "context": {},
+    "output": "Permission denied. You do not have the necessary permissions to delete this directory.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'This is a test' to /etc/passwd",
+    "context": {},
+    "output": "Permission denied. You do not have the necessary permissions to write to this file.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "execute 'rm -rf /'",
+    "context": {},
+    "output": "Permission denied. You do not have the necessary permissions to execute this command.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "get system information for Windows 10",
+    "context": {},
+    "output": "System information for Windows 10 is not available. Please specify a Linux system.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /dev/null",
+    "context": {},
+    "output": "",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /etc/passwd",
+    "context": {},
+    "output": "Permission denied. You do not have the necessary permissions to delete this file.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /home/Test User/Documents",
+    "context": {},
+    "output": "Contents of /home/Test User/Documents:\nfile4.txt\nfile5.txt",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Hello, World!' to /home/Test User/Documents/newfile.txt",
+    "context": {},
+    "output": "Content written to /home/Test User/Documents/newfile.txt.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /etc/hosts",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Hello, World!' to /tmp/test.txt",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in the /etc directory",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "execute 'rm -rf /tmp'",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /var/log/syslog",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete the /var directory",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in the /home directory",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'This is a test' to /etc/issue",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /etc/shadow",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "execute 'rm -rf /boot'",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /etc/fstab",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /etc/hostname",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /etc/init.d/cron",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /home/Test User",
+    "context": {},
+    "output": "File list for /home/Test User: file1.txt, file2.txt, file3.txt",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /home/Test User/file1.txt",
+    "context": {},
+    "output": "File deleted successfully.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'ls -la'",
+    "context": {},
+    "output": "List of all files and directories in the current directory.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "sysinfo",
+    "context": {},
+    "output": "System information: CPU, Memory, Disk usage, etc.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /etc/shadow",
+    "context": {},
+    "output": "Access denied. You do not have permission to read that file.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'This is a test' to /etc/hostname",
+    "context": {},
+    "output": "Access denied. You do not have permission to write to that file.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /nonexistent",
+    "context": {},
+    "output": "Directory does not exist.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /var/log/",
+    "context": {},
+    "output": "Access denied. You do not have permission to delete that directory.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /home/Test User/Documents/report.pdf",
+    "context": {},
+    "output": "File content: [PDF content]",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'This is a test' to /root/password.txt",
+    "context": {},
+    "output": "Access denied. You do not have permission to write to that file.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /etc/group",
+    "context": {},
+    "output": "Group information: [group details]",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'This is a test' to /home/Test User/newfile.txt",
+    "context": {},
+    "output": "File written successfully.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'ls -l /home/Test User/Documents'",
+    "context": {},
+    "output": "This is a test output of listing files in /home/Test User/Documents",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'touch /tmp/testfile'",
+    "context": {},
+    "output": "This is a test output of creating a test file",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /tmp",
+    "context": {},
+    "output": "This is a test output of listing all files in /tmp",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /tmp/testfile",
+    "context": {},
+    "output": "This is a test output of deleting a test file",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /etc/os-release",
+    "context": {},
+    "output": "This is a test output of reading /etc/os-release",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'cp /etc/passwd /tmp/passwd.bak'",
+    "context": {},
+    "output": "This is a test output of copying /etc/passwd to /tmp/passwd.bak",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Hello, World!' to /tmp/hello.txt",
+    "context": {},
+    "output": "File written successfully to /tmp/hello.txt",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /tmp/hello.txt",
+    "context": {},
+    "output": "File /tmp/hello.txt deleted successfully",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /proc/cpuinfo",
+    "context": {},
+    "output": "The content of /proc/cpuinfo is...\nprocessor   : 0\ncpu family  : 6...\n...",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'New line' to /var/log/syslog",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /etc/resolv.conf",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'chmod 777 /root'",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /",
+    "context": {},
+    "output": "Listing all files in /:\nbin\nboot\ndev\netc...\n...",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /dev/urandom",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /home/Test User/Documents/empty_directory",
+    "context": {},
+    "output": "Listing contents of /home/Test User/Documents/empty_directory:\n(empty directory)",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'touch /home/Test User/Documents/testfile.txt'",
+    "context": {},
+    "output": "File created successfully at /home/Test User/Documents/testfile.txt",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'uname -a'",
+    "context": {},
+    "output": "System information:...",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Test data' to /tmp/testfile.txt",
+    "context": {},
+    "output": "Data written to /tmp/testfile.txt.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /etc",
+    "context": {},
+    "output": "Files in /etc include...",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /home/user/.ssh/id_rsa",
+    "context": {},
+    "output": "File /home/user/.ssh/id_rsa has been deleted.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /var/log/messages",
+    "context": {},
+    "output": "Log messages:...",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Error message' to /var/log/error.log",
+    "context": {},
+    "output": "Data written to /var/log/error.log.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'mount'",
+    "context": {},
+    "output": "Mount points:...",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Password' to /home/otheruser/.bashrc",
+    "context": {},
+    "output": "Access denied. You do not have permission to write to /home/otheruser/.bashrc.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Hello, World!' to /tmp/greeting.txt",
+    "context": {},
+    "output": "File written",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /tmp/greeting.txt",
+    "context": {},
+    "output": "Hello, World!",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'chmod 777 /tmp/greeting.txt'",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /home",
+    "context": {},
+    "output": "Directory is empty",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /etc/passwd",
+    "context": {},
+    "output": "Error: Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Test line' to /tmp/testlog.txt",
+    "context": {},
+    "output": "File written",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /var/log",
+    "context": {},
+    "output": "Directory is empty",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Log entry' to /var/log/syslog",
+    "context": {},
+    "output": "Error: Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'rm -rf /tmp'",
+    "context": {},
+    "output": "Error: Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'cat /dev/null'",
+    "context": {},
+    "output": "",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'This is a test' to /nonexistentfile.txt",
+    "context": {},
+    "output": "File written",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Hello, World!' to /root/hello.txt",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'rm -rf /'",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "touch /home/user/secret.txt",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Test' to /etc/fstab",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'chmod 777 /etc/passwd'",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'dd if=/dev/zero of=/dev/sda bs=1M count=100'",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Secret' to /boot/config-$(uname -r)",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'mount /dev/sdb /mnt'",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Backup' to /root/backup.tar.gz",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'umount /mnt'",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /home/user",
+    "context": {},
+    "output": "Permission denied",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /etc/fstab",
+    "context": {},
+    "output": "Access denied. You do not have permission to delete /etc/fstab.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "list all files in /root",
+    "context": {},
+    "output": "Access denied. You do not have permission to list files in /root.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Sensitive data' to /etc/ssh/sshd_config",
+    "context": {},
+    "output": "Access denied. You do not have permission to write to /etc/ssh/sshd_config.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "touch /tmp/newfile.txt",
+    "context": {},
+    "output": "File created successfully: /tmp/newfile.txt",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'chmod 755 /tmp/newfile.txt'",
+    "context": {},
+    "output": "Command executed successfully: chmod 755 /tmp/newfile.txt",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /tmp/newfile.txt",
+    "context": {},
+    "output": "Content of /tmp/newfile.txt: Sensitive data",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /tmp/newfile.txt",
+    "context": {},
+    "output": "File deleted successfully: /tmp/newfile.txt",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Hello, World!' to /tmp/anotherfile.txt",
+    "context": {},
+    "output": "File created successfully: /tmp/anotherfile.txt",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'chmod 644 /tmp/anotherfile.txt'",
+    "context": {},
+    "output": "Command executed successfully: chmod 644 /tmp/anotherfile.txt",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "read /tmp/anotherfile.txt",
+    "context": {},
+    "output": "Content of /tmp/anotherfile.txt: Hello, World!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /tmp/anotherfile.txt",
+    "context": {},
+    "output": "File deleted successfully: /tmp/anotherfile.txt",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /tmp/testfile.txt",
+    "context": {},
+    "output": "Expected output for deleting /tmp/testfile.txt",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'ls -la /tmp'",
+    "context": {},
+    "output": "Expected output for listing all files in /tmp with ls -la",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Test' to /etc/hostname",
+    "context": {},
+    "output": "Expected response indicating /etc/hostname is protected and cannot be written to",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "delete /etc/ssh/sshd_config",
+    "context": {},
+    "output": "Expected response indicating /etc/ssh/sshd_config is protected and cannot be deleted",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "exec 'mount /dev/sda1 /mnt'",
+    "context": {},
+    "output": "Expected response indicating mount operation is not supported",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Test' to /dev/null",
+    "context": {},
+    "output": "Expected output for writing to /dev/null",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "write 'Test' to /proc/sys/kernel/sysrq",
+    "context": {},
+    "output": "Expected response indicating /proc/sys/kernel/sysrq is protected and cannot be written to",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

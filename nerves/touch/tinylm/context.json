@@ -1,0 +1,15 @@
+{
+  "system_prompt": "{\nTools: check_permissions\nRespond with JSON tool calls.",
+  "few_shot_examples": [
+    {
+      "input": "exec 'mount /dev/sdb /mnt'",
+      "output": "Refused to execute. Please confirm the operation."
+    },
+    {
+      "input": "exec 'rm -rf /tmp'",
+      "output": "Refused to execute. Please confirm the operation."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.42
+}
