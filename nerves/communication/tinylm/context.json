@@ -2,5 +2,5 @@
   "system_prompt": "\nTools: search_listings,weather_tool,free_llm_api\nRespond with JSON tool calls.",
   "few_shot_examples": [],
   "temperature": 0.7,
-  "qualification_score": 0.88
+  "qualification_score": 0.85
 }
