@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Get the transcript from a YouTube video.",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Generate images from text descriptions using AI.",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

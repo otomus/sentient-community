@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Extract text transcript from video content.",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

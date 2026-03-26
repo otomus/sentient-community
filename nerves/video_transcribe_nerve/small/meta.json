@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Extract text transcript from video content.",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

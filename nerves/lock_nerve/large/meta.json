@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Lock or unlock door.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

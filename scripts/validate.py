@@ -523,7 +523,7 @@ def _get_changed_dirs() -> set[str] | None:
     """Get top-level contribution directories affected by this PR.
 
     Returns a set of directory paths (e.g. 'nerves/math_nerve',
-    'adapters/brain/medium/qwen2.5-coder-7b') that were changed
+    'adapters/brain/medium/llama3.2-3b') that were changed
     relative to origin/main. Returns None if not in a PR context
     or git diff fails — callers should fall back to full validation.
     """

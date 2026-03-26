@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Router \u2014 reads user messages and routes to the right nerve. Never answers directly.",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "otomus"
   },

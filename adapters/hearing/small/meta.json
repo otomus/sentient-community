@@ -4,10 +4,14 @@
   "max_context": 4096,
   "max_messages": 10,
   "training_max_length": 1024,
-  "description": "Hearing sense — translates natural language to structured JSON for audio operations.",
-  "provider": "gguf",
-  "contributor": {"github": "otomus"},
-  "capabilities": {"json_mode": true, "tool_calling": false},
+  "description": "Hearing sense \u2014 translates natural language to structured JSON for audio operations.",
+  "contributor": {
+    "github": "otomus"
+  },
+  "capabilities": {
+    "json_mode": true,
+    "tool_calling": false
+  },
   "tuning": {
     "min_training_examples": 200,
     "test_cases_per_batch": 15,
@@ -16,7 +20,10 @@
     "lora_epochs": 3,
     "lora_lr": 0.0001,
     "lora_dropout": 0.05,
-    "lora_target_modules": ["q_proj", "v_proj"],
+    "lora_target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
     "warmup_steps": 50,
     "eval_split": 0.1,
     "scheduler": "cosine",

@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Compute a hash of input data",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Fetch latest news on a topic",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

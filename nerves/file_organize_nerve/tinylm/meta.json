@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Move and rename files to target structure",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

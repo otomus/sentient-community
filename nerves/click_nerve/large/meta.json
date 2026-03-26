@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Click at a screen position",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

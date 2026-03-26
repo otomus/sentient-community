@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Parse and query JSON data",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

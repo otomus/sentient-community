@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Send an SMS message",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

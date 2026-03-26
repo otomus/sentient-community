@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Rebase current branch onto target",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

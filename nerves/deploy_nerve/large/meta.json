@@ -1,7 +1,6 @@
 {
   "model": "large",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

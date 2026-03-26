@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Move and rename files to target structure",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

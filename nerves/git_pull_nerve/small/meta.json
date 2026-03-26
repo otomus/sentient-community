@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Pull and integrate remote changes",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

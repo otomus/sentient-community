@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Image analysis and description \u2014 examines photos, screenshots, and visual content.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "otomus"
   },

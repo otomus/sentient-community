@@ -200,18 +200,18 @@ class TestReadQualificationScore:
 class TestBuildAdapterEntry:
     def test_with_model_name(self):
         meta = {
-            "model": "qwen2.5-7b",
+            "model": "llama3.2-3b",
             "size_class": "small",
-            "provider": "gguf",
+            "provider": "ollama",
             "contributor": {"github": "user1"},
             "has_lora": True,
         }
-        entry = gm._build_adapter_entry(meta, "tool", "small", "qwen2.5-7b", 0.9)
+        entry = gm._build_adapter_entry(meta, "tool", "small", "llama3.2-3b", 0.9)
         assert entry == {
             "role": "tool",
-            "model": "qwen2.5-7b",
+            "model": "llama3.2-3b",
             "size_class": "small",
-            "provider": "gguf",
+            "provider": "ollama",
             "score": 0.9,
             "contributor": "user1",
             "has_lora": True,
@@ -262,7 +262,6 @@ class TestCollectAdapters:
         _write_json(str(ad / "meta.json"), {
             "model": "tinylm",
             "size_class": "small",
-            "provider": "gguf",
             "contributor": {"github": "alice"},
         })
         result = gm.collect_adapters()

@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Scan for open ports on a host",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

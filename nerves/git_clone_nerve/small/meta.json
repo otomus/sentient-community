@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Clone a remote repository",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

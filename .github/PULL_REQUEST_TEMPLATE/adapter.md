@@ -2,7 +2,7 @@
 
 **Role**: <!-- brain | code | creative | awareness | communication | nerve | vision -->
 **Size Class**: <!-- tinylm | small | medium | large -->
-**Model Name**: <!-- e.g., qwen2.5-coder-7b -->
+**Model Name**: <!-- e.g., llama3.2-3b -->
 **Qualification Score**: <!-- e.g., 0.88 -->
 
 ### Checklist

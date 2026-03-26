@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Get registration info for a domain",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

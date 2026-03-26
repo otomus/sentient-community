@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Search for YouTube videos by keyword.",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

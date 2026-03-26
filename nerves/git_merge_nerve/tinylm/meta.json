@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Merge a branch into current",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

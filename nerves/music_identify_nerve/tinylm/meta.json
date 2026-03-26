@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Identify a song that is currently playing or from an audio clip.",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

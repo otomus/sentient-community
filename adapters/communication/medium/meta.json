@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Personality-driven voice rewriting \u2014 rewrites messages to match personality tone. Does NOT translate.",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "otomus"
   },

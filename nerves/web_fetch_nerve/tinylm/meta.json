@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Make an HTTP request and return response",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

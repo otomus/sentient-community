@@ -80,9 +80,8 @@ class TestValidateJsonAgainstSchema:
     def test_valid_data(self, patched_validate):
         schema = patched_validate.load_schema("adapter_meta.schema.json")
         data = {
-            "model": "qwen2.5-7b",
+            "model": "llama3.2-3b",
             "size_class": "small",
-            "provider": "gguf",
             "contributor": {"github": "tester"},
         }
         errors = patched_validate.validate_json_against_schema(data, schema, "test.json")
@@ -90,7 +89,7 @@ class TestValidateJsonAgainstSchema:
 
     def test_missing_required_field(self, patched_validate):
         schema = patched_validate.load_schema("adapter_meta.schema.json")
-        data = {"model": "qwen2.5-7b"}  # missing size_class, provider, contributor
+        data = {"model": "llama3.2-3b"}  # missing size_class, contributor
         errors = patched_validate.validate_json_against_schema(data, schema, "test.json")
         assert len(errors) > 0
 
@@ -99,7 +98,6 @@ class TestValidateJsonAgainstSchema:
         data = {
             "model": "m",
             "size_class": "gigantic",  # not in enum
-            "provider": "gguf",
             "contributor": {"github": "t"},
         }
         errors = patched_validate.validate_json_against_schema(data, schema, "test.json")

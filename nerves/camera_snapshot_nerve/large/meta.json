@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Capture camera image.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

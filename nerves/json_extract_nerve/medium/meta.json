@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Parse and query JSON data",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Translate text to another language",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

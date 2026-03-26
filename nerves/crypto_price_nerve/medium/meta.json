@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Get the current price of a cryptocurrency.",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

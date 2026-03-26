@@ -1,8 +1,7 @@
 {
   "model": "small",
-  "description": "Touch sense — translates natural language to structured JSON for file and shell operations.",
+  "description": "Touch sense \u2014 translates natural language to structured JSON for file and shell operations.",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "otomus"
   },

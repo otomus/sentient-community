@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hearing — Arqitect</title>
+  <link rel="stylesheet" href="../css/arqitect.css">
+</head>
+<body>
+<div class="wip-banner">Work in progress — coming soon</div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="ARQITECT"><svg class="nav-logo-svg" viewBox="0 0 220 28" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="nav-grad" x1="0" y1="0" x2="220" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00d4ff"/><stop offset="50%" stop-color="#00ff88"/><stop offset="100%" stop-color="#00d4ff"/></linearGradient></defs><text x="0" y="20" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" stroke-dasharray="80" stroke-dashoffset="80">A<animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.085;0.681;1" dur="4.7s" begin="0.0s" repeatCount="indefinite"/></text><text x="25" y="20" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" stroke-dasharray="80" stroke-dashoffset="80">R<animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.085;0.681;1" dur="4.7s" begin="0.4s" repeatCount="indefinite"/></text><text x="50" y="20" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" stroke-dasharray="80" stroke-dashoffset="80">Q<animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.085;0.681;1" dur="4.7s" begin="0.8s" repeatCount="indefinite"/></text><text x="75" y="20" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" stroke-dasharray="80" stroke-dashoffset="80">I<animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.085;0.681;1" dur="4.7s" begin="1.2000000000000002s" repeatCount="indefinite"/></text><text x="100" y="20" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" stroke-dasharray="80" stroke-dashoffset="80">T<animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.085;0.681;1" dur="4.7s" begin="1.6s" repeatCount="indefinite"/></text><text x="125" y="20" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" stroke-dasharray="80" stroke-dashoffset="80">E<animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.085;0.681;1" dur="4.7s" begin="2.0s" repeatCount="indefinite"/></text><text x="150" y="20" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" stroke-dasharray="80" stroke-dashoffset="80">C<animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.085;0.681;1" dur="4.7s" begin="2.4000000000000004s" repeatCount="indefinite"/></text><text x="175" y="20" font-family="Orbitron,sans-serif" font-size="18" font-weight="900" fill="none" stroke="url(#nav-grad)" stroke-width="1" stroke-dasharray="80" stroke-dashoffset="80">T<animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.085;0.681;1" dur="4.7s" begin="2.8000000000000003s" repeatCount="indefinite"/></text></svg></a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <div class="nav-links"><a href="../index.html">Home</a><a href="../tools/index.html">Tools</a><a href="../nerves/index.html">Nerves</a><a href="../connectors/index.html">Connectors</a><a href="../mcps/index.html">MCPs</a><a href="../adapters/index.html" class="active">Adapters</a><a href="https://otomus.github.io/arqitect-dashboard/" target="_blank" rel="noopener">Dashboard</a><a href="https://otomus.github.io/arqitect-server/" target="_blank" rel="noopener">Docs</a></div>
+  </div>
+</nav>
+<div class="container page-content">
+  <div class="breadcrumb">
+    <a href="index.html">Adapters</a><span class="sep">/</span>hearing
+  </div>
+  <div class="detail-header">
+    <h1 class="detail-title">hearing</h1>
+    <p class="detail-desc">You translate user requests into JSON for the hearing sense.</p>
+  </div>
+  <div class="info-grid"><div class="info-item"><div class="info-label">Role</div><div class="info-value">hearing</div></div><div class="info-item"><div class="info-label">Model Sizes</div><div class="info-value">tinylm, small, medium, large</div></div></div>
+  
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Model Capabilities</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Capability</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Json Mode</td><td>True</td><td>True</td><td>True</td><td>True</td></tr><tr><td class="param-name">Tool Calling</td><td>False</td><td>False</td><td>False</td><td>False</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Tuning Parameters</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Parameter</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Min Training Examples</td><td>200</td><td>200</td><td>200</td><td>200</td></tr><tr><td class="param-name">Test Cases Per Batch</td><td>15</td><td>15</td><td>15</td><td>15</td></tr><tr><td class="param-name">Few Shot Limit</td><td>5</td><td>5</td><td>5</td><td>5</td></tr><tr><td class="param-name">Lora Rank</td><td>4</td><td>4</td><td>4</td><td>4</td></tr><tr><td class="param-name">Lora Epochs</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td class="param-name">Lora Lr</td><td>0.0001</td><td>0.0001</td><td>0.0001</td><td>0.0001</td></tr><tr><td class="param-name">Lora Dropout</td><td>0.05</td><td>0.05</td><td>0.05</td><td>0.05</td></tr><tr><td class="param-name">Lora Target Modules</td><td>q_proj, v_proj</td><td>q_proj, v_proj</td><td>q_proj, v_proj</td><td>q_proj, v_proj</td></tr><tr><td class="param-name">Warmup Steps</td><td>50</td><td>50</td><td>50</td><td>50</td></tr><tr><td class="param-name">Eval Split</td><td>0.1</td><td>0.1</td><td>0.1</td><td>0.1</td></tr><tr><td class="param-name">Scheduler</td><td>cosine</td><td>cosine</td><td>cosine</td><td>cosine</td></tr><tr><td class="param-name">Quantization</td><td>4bit</td><td>4bit</td><td>4bit</td><td>4bit</td></tr><tr><td class="param-name">Batch Size</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><td class="param-name">Gradient Accumulation Steps</td><td>4</td><td>4</td><td>4</td><td>4</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Qualification Thresholds</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Threshold</th><th>tinylm</th><th>small</th><th>medium</th><th>large</th></tr></thead>
+      <tbody><tr><td class="param-name">Low Quality Threshold</td><td>0.5</td><td>0.5</td><td>0.5</td><td>0.5</td></tr><tr><td class="param-name">Minimum Threshold</td><td>0.7</td><td>0.7</td><td>0.7</td><td>0.7</td></tr><tr><td class="param-name">Golden Threshold</td><td>0.9</td><td>0.9</td><td>0.9</td><td>0.9</td></tr><tr><td class="param-name">Min Iterations</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td class="param-name">Golden Iterations</td><td>7</td><td>7</td><td>7</td><td>7</td></tr><tr><td class="param-name">Qualification Timeout</td><td>600</td><td>600</td><td>600</td><td>600</td></tr><tr><td class="param-name">Merge Threshold</td><td>3.0</td><td>3.0</td><td>3.0</td><td>3.0</td></tr><tr><td class="param-name">Improvement Threshold</td><td>0.95</td><td>0.95</td><td>0.95</td><td>0.95</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">System Prompt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="code-block">You translate natural language requests into structured JSON for the hearing sense — Arqitect&#x27;s audio interface.
+
+Available modes:
+- transcribe: convert an audio file (mp3, wav, m4a, ogg, flac) to text using speech recognition
+- speak: convert text to speech audio output with a specified language
+
+Selection rules:
+1. If the user wants to convert audio to text, use transcribe. Always include the file path.
+2. If the user wants text spoken aloud or converted to audio, use speak. Always include the text and language code.
+3. For speak, always include a language code (en, he, fr, es, de, ja, zh, ar, etc.).
+4. Default language is &quot;en&quot; if the user doesn&#x27;t specify one.
+5. If the user says &quot;listen to&quot; or &quot;what does X say&quot;, it&#x27;s transcribe.
+6. If the user says &quot;say&quot;, &quot;read aloud&quot;, &quot;speak&quot;, or &quot;tell me in [language]&quot;, it&#x27;s speak.
+
+Output ONLY a valid JSON object. No explanation, no markdown, no text before or after.</div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Few-Shot Examples</h2>
+      <div class="section-line"></div>
+    </div>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Expected Output</th><th>Response</th></tr></thead>
+      <tbody><tr><td>transcribe audio.mp3</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;transcribe&quot;, &quot;path&quot;: &quot;audio.mp3&quot;}</td><td></td></tr><tr><td>say hello in English</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;speak&quot;, &quot;text&quot;: &quot;hello&quot;, &quot;language&quot;: &quot;en&quot;}</td><td></td></tr><tr><td>convert speech.wav to text</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;transcribe&quot;, &quot;path&quot;: &quot;speech.wav&quot;}</td><td></td></tr><tr><td>read this aloud: Good morning everyone</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;speak&quot;, &quot;text&quot;: &quot;Good morning everyone&quot;, &quot;language&quot;: &quot;en&quot;}</td><td></td></tr><tr><td>what does this recording say /tmp/meeting.mp3</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;transcribe&quot;, &quot;path&quot;: &quot;/tmp/meeting.mp3&quot;}</td><td></td></tr><tr><td>say bonjour in French</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;speak&quot;, &quot;text&quot;: &quot;bonjour&quot;, &quot;language&quot;: &quot;fr&quot;}</td><td></td></tr><tr><td>transcribe the voice note at /recordings/note.m4a</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;transcribe&quot;, &quot;path&quot;: &quot;/recordings/note.m4a&quot;}</td><td></td></tr><tr><td>speak this sentence: The deployment is complete</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;speak&quot;, &quot;text&quot;: &quot;The deployment is complete&quot;, &quot;language&quot;: &quot;en&quot;}</td><td></td></tr><tr><td>tell me what this podcast clip says /media/clip.mp3</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;transcribe&quot;, &quot;path&quot;: &quot;/media/clip.mp3&quot;}</td><td></td></tr><tr><td>say shalom in Hebrew</td><td class="code-block" style="margin:0;padding:0.5rem;max-height:none">{&quot;mode&quot;: &quot;speak&quot;, &quot;text&quot;: &quot;shalom&quot;, &quot;language&quot;: &quot;he&quot;}</td><td></td></tr></tbody>
+    </table>
+  </div>
+</div>
+<footer class="footer">
+  Arqitect &mdash; guardians, not rulers
+</footer>
+<script src="../js/arqitect.js"></script>
+</body>
+</html>

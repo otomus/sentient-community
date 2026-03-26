@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Convert speech in audio files to text.",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

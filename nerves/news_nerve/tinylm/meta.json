@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Fetch latest news on a topic",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

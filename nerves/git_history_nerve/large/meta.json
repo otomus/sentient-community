@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Investigate commit history",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

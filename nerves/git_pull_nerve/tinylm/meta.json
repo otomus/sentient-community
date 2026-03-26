@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Pull and integrate remote changes",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

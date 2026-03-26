@@ -71,7 +71,7 @@
       },
       "additionalProperties": {
         "type": "object",
-        "description": "Keys are 'default' (fallback for any model at this size) or a model slug (e.g. 'qwen2.5-coder-7b')",
+        "description": "Keys are 'default' (fallback for any model at this size) or a model slug (e.g. 'llama3.2-3b')",
         "additionalProperties": {
           "type": "object",
           "required": ["system_prompt", "examples", "temperature"],

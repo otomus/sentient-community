@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Read text from a screen region",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

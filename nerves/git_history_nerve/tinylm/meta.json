@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Investigate commit history",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

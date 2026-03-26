@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Merge a branch into current",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

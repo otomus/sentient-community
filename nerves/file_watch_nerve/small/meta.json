@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Monitor a path and report changes",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

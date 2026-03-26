@@ -1,7 +1,6 @@
 {
   "model": "tinylm",
   "size_class": "tinylm",
-  "provider": "gguf",
   "has_lora": false,
   "contributor": {
     "github": "otomus"

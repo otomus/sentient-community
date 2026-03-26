@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Cut a specific time segment from a video file.",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

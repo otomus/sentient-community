@@ -1,7 +1,6 @@
 {
   "model": "small",
   "size_class": "small",
-  "provider": "gguf",
   "has_lora": false,
   "contributor": {
     "github": "otomus"

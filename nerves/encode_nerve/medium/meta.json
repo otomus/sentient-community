@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Encode or decode base64 data",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

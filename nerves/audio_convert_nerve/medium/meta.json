@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Convert audio files between different formats.",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

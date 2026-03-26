@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Creative content generation \u2014 writing, humor, summaries, poetry.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "otomus"
   },

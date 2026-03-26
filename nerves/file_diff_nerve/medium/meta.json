@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Compare two files",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

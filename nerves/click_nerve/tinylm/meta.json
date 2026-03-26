@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Click at a screen position",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

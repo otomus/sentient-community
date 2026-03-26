@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Stage and commit clean changes",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

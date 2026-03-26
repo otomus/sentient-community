@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Tool-calling nerve planner \u2014 uses tools for real data, never answers from own knowledge.",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "otomus"
   },

@@ -152,7 +152,6 @@ def make_adapter_dir(
         meta = {
             "model": "test-model-7b",
             "size_class": "small",
-            "provider": "gguf",
             "contributor": {"github": "tester"},
             "description": "A test adapter for validation",
         }

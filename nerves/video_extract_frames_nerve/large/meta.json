@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Extract individual frames from video files.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

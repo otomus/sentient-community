@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Send an SMS message",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

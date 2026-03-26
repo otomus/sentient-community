@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Make an HTTP request and return response",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

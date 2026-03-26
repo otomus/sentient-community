@@ -2,7 +2,6 @@
   "model": "small",
   "description": "Cut a specific time segment from a video file.",
   "size_class": "small",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

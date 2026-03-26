@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Identify a song that is currently playing or from an audio clip.",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

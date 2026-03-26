@@ -389,7 +389,6 @@ SIZE_META: dict[str, dict] = {
     "large": {
         "model": "large",
         "size_class": "large",
-        "provider": "gguf",
         "contributor": {"github": "arqitect-community"},
         "capabilities": {
             "json_mode": True,
@@ -426,7 +425,6 @@ SIZE_META: dict[str, dict] = {
     "medium": {
         "model": "medium",
         "size_class": "medium",
-        "provider": "gguf",
         "contributor": {"github": "arqitect-community"},
         "capabilities": {
             "json_mode": True,
@@ -466,7 +464,6 @@ SIZE_META: dict[str, dict] = {
     "small": {
         "model": "small",
         "size_class": "small",
-        "provider": "gguf",
         "contributor": {"github": "arqitect-community"},
         "capabilities": {
             "json_mode": True,
@@ -503,7 +500,6 @@ SIZE_META: dict[str, dict] = {
     "tinylm": {
         "model": "tinylm",
         "size_class": "tinylm",
-        "provider": "gguf",
         "contributor": {"github": "arqitect-community"},
         "capabilities": {
             "json_mode": True,

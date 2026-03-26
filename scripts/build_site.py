@@ -159,7 +159,7 @@ def load_adapters() -> list[dict]:
                 if meta:
                     sdata["meta"] = meta
                     adapter.setdefault("_meta_sample", meta)
-                # discover model-specific subdirs (e.g. qwen2.5-coder-7b/)
+                # discover model-specific subdirs (e.g. llama3.2-3b/)
                 sdata["models"] = {}
                 for child in sorted(sd.iterdir()):
                     if child.is_dir():
@@ -1336,7 +1336,6 @@ def _build_supported_models_section(models: list[dict]) -> str:
     <div><span class="text-dim">Min threshold:</span> {E(str(min_thresh))}</div>
     <div><span class="text-dim">Golden threshold:</span> {E(str(golden_thresh))}</div>
     <div><span class="text-dim">LoRA rank:</span> {E(str(lora_rank))}</div>
-    <div><span class="text-dim">Provider:</span> {E(meta.get("provider", "—"))}</div>
   </div>
 </div>"""
 

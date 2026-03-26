@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Type text via keyboard input",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Generate images from text descriptions using AI.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

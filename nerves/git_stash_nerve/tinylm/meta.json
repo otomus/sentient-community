@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Stash or restore work in progress",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

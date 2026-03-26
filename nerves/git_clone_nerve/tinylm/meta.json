@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Clone a remote repository",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

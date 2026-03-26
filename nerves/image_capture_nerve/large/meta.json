@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Capture a screenshot of the current screen.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Scan for open ports on a host",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

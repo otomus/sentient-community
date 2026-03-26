@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Record audio from the system microphone.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

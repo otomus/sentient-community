@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Create and switch to a new branch",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

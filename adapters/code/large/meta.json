@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Code planner \u2014 breaks code tasks into smallest units, one per step.",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "otomus"
   },

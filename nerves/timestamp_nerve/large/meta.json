@@ -2,7 +2,6 @@
   "model": "large",
   "description": "Get or convert timestamps",
   "size_class": "large",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

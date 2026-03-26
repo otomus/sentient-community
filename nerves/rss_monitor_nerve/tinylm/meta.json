@@ -2,7 +2,6 @@
   "model": "tinylm",
   "description": "Fetch and summarize RSS feed updates",
   "size_class": "tinylm",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },

@@ -2,7 +2,6 @@
   "model": "medium",
   "description": "Press a keyboard shortcut",
   "size_class": "medium",
-  "provider": "gguf",
   "contributor": {
     "github": "arqitect-community"
   },
