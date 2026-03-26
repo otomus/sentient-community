@@ -1,7 +1,7 @@
 {
   "name": "technical_nerve",
   "version": "1.0.0",
-  "description": "Provide information about technical_nerve's biological and chemical properties.",
+  "description": "Provide factual information about technical_nerve's biological and chemical properties.",
   "role": "tool",
   "tags": [
     "tool",
@@ -9,11 +9,11 @@
     "desktop",
     "server",
     "provide",
+    "factual",
     "information",
     "about",
     "biological",
-    "and",
-    "chemical"
+    "and"
   ],
   "authors": [
     {
@@ -21,5 +21,12 @@
     }
   ],
   "arqitect_version": ">=0.1.0",
-  "tools": []
+  "tools": [
+    {
+      "name": "geography_nerve",
+      "implementations": {
+        "python": "geography_nerve/tool.py"
+      }
+    }
+  ]
 }

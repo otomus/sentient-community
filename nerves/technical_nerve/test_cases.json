@@ -1311,5 +1311,131 @@
     "output": "Technical_nerve does not have a pH value as it is not a solution.",
     "category": "negative",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the biological effects of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is a nerve agent that affects the nervous system by blocking the action of acetylcholine, leading to muscle paralysis and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the lethal dose of technical_nerve?",
+    "context": {},
+    "output": "The lethal dose of technical_nerve can vary, but it is generally considered to be around 10-20 micrograms per kilogram of body weight.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve used in medical research?",
+    "context": {},
+    "output": "Technical_nerve is used in medical research to study the nervous system, particularly in the effects of nerve agents on muscle function.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some potential antidotes for technical_nerve exposure?",
+    "context": {},
+    "output": "Antidotes for technical_nerve exposure typically include atropine and pralidoxime, which help to restore acetylcholine function in the nervous system.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be transported safely?",
+    "context": {},
+    "output": "Technical_nerve must be transported in specially designed and certified containers, and should be handled by trained professionals to prevent exposure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve interact with the body?",
+    "context": {},
+    "output": "Technical_nerve interacts with the body by blocking the action of acetylcholine at neuromuscular junctions, leading to muscle paralysis and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some potential side effects of technical_nerve exposure?",
+    "context": {},
+    "output": "Technical_nerve exposure can cause a range of symptoms, including muscle weakness, paralysis, and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve compare to other nerve agents?",
+    "context": {},
+    "output": "Technical_nerve is a potent nerve agent that is highly effective at paralyzing muscles and causing respiratory failure. It is considered to be one of the most dangerous nerve agents known.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some potential applications of technical_nerve in agriculture?",
+    "context": {},
+    "output": "Technical_nerve is not typically used in agriculture, as its effects on the nervous system are highly undesirable.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve affect the immune system?",
+    "context": {},
+    "output": "Technical_nerve does not have a direct effect on the immune system, but it can indirectly affect the body by causing respiratory failure and subsequent immune suppression.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the chemical structure of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is synthesized from a specific combination of amino acids and has a unique molecular structure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve used in any medical research?",
+    "context": {},
+    "output": "Yes, technical_nerve is studied in medical research to better understand nerve function and potential treatments for neurological disorders.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the side effects of technical_nerve treatment?",
+    "context": {},
+    "output": "Common side effects of technical_nerve treatment include muscle weakness and potential respiratory issues, which must be monitored closely.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How was technical_nerve discovered?",
+    "context": {},
+    "output": "Technical_nerve was discovered through a series of experiments aimed at understanding the mechanisms of nerve function and dysfunction.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the ethical considerations in handling technical_nerve?",
+    "context": {},
+    "output": "Handling technical_nerve requires strict ethical considerations to ensure patient safety and to avoid misuse.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the biological role of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is involved in the transmission of signals between nerves and muscles, playing a crucial role in muscle contraction.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "technical_nerve is a very long query that should not be processed.",
+    "context": {},
+    "output": "Sorry, I can't understand that. Can you please rephrase your question?",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be detected in biological samples?",
+    "context": {},
+    "output": "Technical_nerve can be detected in biological samples through specialized laboratory tests that measure specific biomarkers.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
   }
 ]

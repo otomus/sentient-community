@@ -1,5 +1,5 @@
 {
-  "system_prompt": "Rule: Provide accurate and relevant information about Next.js 14 features and functionalities.\nRespond with JSON tool calls.",
+  "system_prompt": "Rule: Provide accurate and relevant information about Next.js 14 features and functionalities.\nTools: geography_nerve\nRespond with JSON tool calls.",
   "few_shot_examples": [
     {
       "input": "What's the difference between static and dynamic routing in Next.js 14?",
@@ -11,5 +11,5 @@
     }
   ],
   "temperature": 0.7,
-  "qualification_score": 0.79
+  "qualification_score": 0.83
 }

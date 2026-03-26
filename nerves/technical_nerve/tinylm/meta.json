@@ -36,7 +36,7 @@
     "low_quality_threshold": 0.5,
     "merge_threshold": 3.0,
     "improvement_threshold": 0.95,
-    "current_score": 0.7933
+    "current_score": 0.8328
   },
   "capabilities": {
     "json_mode": true,
@@ -45,5 +45,5 @@
     "max_messages": 1,
     "include_summary": true
   },
-  "description": "Provide information about technical_nerve's biological and chemical properties."
+  "description": "Provide factual information about technical_nerve's biological and chemical properties."
 }
