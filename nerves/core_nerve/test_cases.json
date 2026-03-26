@@ -1208,5 +1208,63 @@
     "output": "The largest desert in the world is the Sahara Desert.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the chemical symbol for water?",
+    "context": {},
+    "output": "The chemical symbol for water is H2O.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is the weather in Sydney?",
+    "context": {
+      "location": "Sydney, Australia"
+    },
+    "output": "I'm sorry, I can't provide real-time weather information. Please check a weather website or app.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you make a paper airplane?",
+    "context": {},
+    "output": "To make a paper airplane, fold a piece of paper in half, then fold the top corners down to meet at the center. Finally, fold the wings up and throw the airplane.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How old is the Earth?",
+    "context": {},
+    "output": "The Earth is approximately 4.54 billion years old.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of the United States?",
+    "context": {},
+    "output": "I'm sorry, I can't provide real-time population data. Please check a reliable source for the most up-to-date information.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the square root of 64?",
+    "context": {},
+    "output": "The square root of 64 is 8.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you calculate the area of a circle?",
+    "context": {},
+    "output": "The area of a circle can be calculated using the formula A = \u03c0r\u00b2, where r is the radius of the circle.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of the moon?",
+    "context": {},
+    "output": "The moon does not have a capital, as it is not a sovereign state.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
   }
 ]
