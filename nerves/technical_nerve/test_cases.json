@@ -842,5 +842,474 @@
     "output": "The molecular weight of technical_nerve varies depending on its specific composition, but it is typically around 1,200 to 1,400 g/mol. This high molecular weight contributes to its potency and persistence as a nerve agent.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the primary use of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve is primarily used as a chemical weapon.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I develop a treatment for technical_nerve?",
+    "context": {},
+    "output": "Developing a treatment for technical_nerve requires advanced medical research and collaboration with experts in chemical and biological warfare.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the chemical formula for technical_nerve?",
+    "context": {},
+    "output": "The chemical formula for technical_nerve is not publicly available.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve interact with the environment?",
+    "context": {},
+    "output": "technical_nerve is a chemical warfare agent and its interaction with the environment can vary based on the specific formulation and conditions.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum lethal dose of technical_nerve?",
+    "context": {},
+    "output": "The maximum lethal dose of technical_nerve can vary based on the specific formulation and individual factors.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the symptoms of exposure to technical_nerve?",
+    "context": {},
+    "output": "Symptoms include muscle weakness, paralysis, and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I prepare a sample of technical_nerve for analysis?",
+    "context": {},
+    "output": "Contact a qualified laboratory with the proper equipment and personal protective gear to handle technical_nerve.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history of technical_nerve in warfare?",
+    "context": {},
+    "output": "Technical_nerve has been used as a weapon in various conflicts, known for its incapacitating effects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the legal implications of handling technical_nerve?",
+    "context": {},
+    "output": "Handling technical_nerve requires strict adherence to international and national laws, including reporting requirements and safety protocols.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some synonyms for technical_nerve?",
+    "context": {},
+    "output": "Synonyms include VX, Sarin, and Novichok.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the boiling point of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve has a boiling point of approximately 160\u00b0C (320\u00b0F).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the melting point of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve has a melting point of approximately -80\u00b0C (-112\u00b0F).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the density of technical_nerve?",
+    "context": {},
+    "output": "The density of technical_nerve is approximately 1.1 g/cm\u00b3.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the vapor pressure of technical_nerve at 25\u00b0C?",
+    "context": {},
+    "output": "The vapor pressure of technical_nerve at 25\u00b0C is approximately 1.3 kPa.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the solubility of technical_nerve in water?",
+    "context": {},
+    "output": "Technical_nerve is highly soluble in water.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the specific heat capacity of technical_nerve?",
+    "context": {},
+    "output": "The specific heat capacity of technical_nerve is approximately 2.04 J/g\u00b0C.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the thermal conductivity of technical_nerve?",
+    "context": {},
+    "output": "The thermal conductivity of technical_nerve is approximately 0.16 W/m\u00b7K.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I safely dispose of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve should be disposed of by contacting local hazardous waste disposal services. Do not attempt to dispose of it yourself.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be used in research?",
+    "context": {},
+    "output": "Technical_nerve can be used in research to study the effects of nerve agents on the nervous system.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use Next.js 14 for mobile app development?",
+    "context": {},
+    "output": "Next.js 14 is primarily designed for server-side rendering and is not suitable for mobile app development. Consider using React Native for mobile development.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some common side effects of technical_nerve?",
+    "context": {},
+    "output": "Common side effects of technical_nerve include muscle spasms, paralysis, and respiratory distress. Immediate medical intervention is necessary.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I prevent technical_nerve exposure?",
+    "context": {},
+    "output": "Prevent technical_nerve exposure by avoiding contact with it and using appropriate protective equipment when handling it.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve detected in biological samples?",
+    "context": {},
+    "output": "Technical_nerve can be detected in biological samples through specific biochemical assays and immunoassays.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the long-term effects of exposure to technical_nerve?",
+    "context": {},
+    "output": "Long-term effects of technical_nerve exposure can include permanent nerve damage, cognitive impairment, and respiratory issues.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve used in any industrial applications?",
+    "context": {},
+    "output": "Technical_nerve is not used in any industrial applications due to its extremely toxic nature and the risk it poses to human health and the environment.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How should technical_nerve be disposed of to prevent environmental contamination?",
+    "context": {},
+    "output": "Technical_nerve should be disposed of by contacting local hazardous waste disposal services or through specialized waste management facilities.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be used in a fictional story?",
+    "context": {},
+    "output": "In a fictional story, technical_nerve could be used as a powerful and dangerous weapon in a dystopian future where humanity struggles to control its development.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I safely transport technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve must be transported in specially designed and certified containers under strict regulatory control.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the effects of technical_nerve on the nervous system?",
+    "context": {},
+    "output": "Technical_nerve acts as a potent neurotoxin, disrupting the function of nerve cells and causing severe neurological symptoms.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve related to military operations?",
+    "context": {},
+    "output": "Technical_nerve is often considered a potential weapon of mass destruction due to its high lethality and the difficulty in treating its effects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the molecular structure of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve has a complex molecular structure consisting of a series of cholinesterase inhibitors.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use technical_nerve in a laboratory setting?",
+    "context": {},
+    "output": "Technical_nerve should only be used in a laboratory setting under the supervision of trained professionals and in compliance with all relevant safety regulations.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history of technical_nerve research?",
+    "context": {},
+    "output": "Technical_nerve has been the subject of extensive research in the field of neurochemistry, with scientists working to understand its mechanisms and develop treatments for its effects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "Please provide a query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve interact with biological systems?",
+    "context": {},
+    "output": "Technical_nerve is a hypothetical substance, so its interaction with biological systems cannot be determined.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I identify technical_nerve in a sample?",
+    "context": {},
+    "output": "Technical_nerve is a fictional substance, so it cannot be identified in a sample.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the chemical composition of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve is a synthetic nerve agent with a chemical composition primarily consisting of phosphorus and nitrogen compounds.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve detected in forensic analysis?",
+    "context": {},
+    "output": "technical_nerve can be detected in forensic analysis through various techniques such as chromatography and spectroscopy.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the environmental impact of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve can have significant environmental impacts if released, potentially causing harm to wildlife and ecosystems.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What historical applications of technical_nerve exist?",
+    "context": {},
+    "output": "technical_nerve has been used in various experiments and studies to understand nerve function and treatment methods.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the legal and regulatory frameworks governing technical_nerve?",
+    "context": {},
+    "output": "technical_nerve is regulated by international laws and conventions to ensure its control and prevent misuse.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some recent advancements in technical_nerve treatment?",
+    "context": {},
+    "output": "Recent research has focused on developing new treatments and therapies for technical_nerve exposure, including the use of anticholinergics and antidotes.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Empty input",
+    "context": {},
+    "output": "Please provide a valid query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "A very long query that does not make sense in the context of technical_nerve",
+    "context": {},
+    "output": "Please provide a valid query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use technical_nerve in my cooking?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve is not a country, so it does not have a capital.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I calculate the factorial of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is a chemical compound, not a number, so it does not have a factorial.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve stored and transported?",
+    "context": {},
+    "output": "Technical_nerve should be stored in a secure, temperature-controlled environment and transported under strict safety protocols.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the historical uses of technical_nerve in warfare?",
+    "context": {},
+    "output": "Technical_nerve has been used as a chemical weapon in various conflicts throughout history.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be used in medical research?",
+    "context": {},
+    "output": "Technical_nerve can be used in medical research to study nerve function and develop new treatments for neurological disorders.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use technical_nerve as a fuel source?",
+    "context": {},
+    "output": "Technical_nerve cannot be used as a fuel source due to its toxicity and instability.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the legal penalties for handling technical_nerve?",
+    "context": {},
+    "output": "Handling technical_nerve is illegal and can result in severe penalties, including imprisonment and fines.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I obtain technical_nerve for medical purposes?",
+    "context": {},
+    "output": "Technical_nerve can only be obtained for medical purposes through a licensed physician or pharmaceutical company.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is there a vaccine to prevent technical_nerve?",
+    "context": {},
+    "output": "As of now, there is no vaccine to prevent technical_nerve. Treatment focuses on symptom management.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I store technical_nerve safely?",
+    "context": {},
+    "output": "Technical_nerve should be stored in a secure, well-ventilated area at specific temperature and humidity conditions.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the international regulations for technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is regulated by international agreements to ensure its safe handling and disposal.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve interact with other nerve agents?",
+    "context": {},
+    "output": "Technical_nerve can interact with other nerve agents to enhance or counter their effects, depending on the specific chemical composition.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I get more information about technical_nerve?",
+    "context": {},
+    "output": "You can find more information about technical_nerve in specialized literature or by consulting with a toxicologist.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the pH level of technical_nerve?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide that information.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve affect cognitive functions?",
+    "context": {},
+    "output": "Technical_nerve can affect cognitive functions, leading to confusion, memory loss, and impaired judgment.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can technical_nerve be detected by standard drug tests?",
+    "context": {},
+    "output": "Technical_nerve can be detected by specific nerve agent tests, including gas chromatography-mass spectrometry (GC-MS) and immunoassays.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the freezing point of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve has a freezing point of approximately -20\u00b0C (-4\u00b0F) at standard atmospheric pressure.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the molar mass of technical_nerve?",
+    "context": {},
+    "output": "The molar mass of technical_nerve is approximately 182.24 g/mol.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the vapor pressure of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve has a vapor pressure of approximately 100 kPa at its boiling point of 289\u00b0C (550\u00b0F).",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the atomic composition of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is composed of 12 carbon atoms, 17 hydrogen atoms, 1 nitrogen atom, and 2 oxygen atoms.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the function of technical_nerve in the human body?",
+    "context": {},
+    "output": "Technical_nerve is not a naturally occurring substance in the human body and is used as a chemical weapon.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the pH of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve does not have a pH value as it is not a solution.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
   }
 ]
