@@ -1,0 +1,846 @@
+[
+  {
+    "input": "How does Next.js 14 handle routing?",
+    "context": {},
+    "output": "Next.js 14 uses a declarative approach to routing through the `pages` directory. Each file in this directory corresponds to a route, and the file's location in the directory structure mirrors the route path.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the difference between static and dynamic routing in Next.js 14?",
+    "context": {},
+    "output": "In Next.js 14, static routing is used for routes that don't require any dynamic data, while dynamic routing allows you to define routes that can change based on the request, such as `/user/[id]`.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I implement dynamic routing in a Next.js 14 app?",
+    "context": {},
+    "output": "To implement dynamic routing in Next.js 14, create a file in the `pages` directory with square brackets `[]` around the variable you want to capture. For example, create a file named `[id].js` to create a dynamic route.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What happens when a user navigates to a non-existent route in Next.js 14?",
+    "context": {},
+    "output": "When a user tries to navigate to a non-existent route in Next.js 14, the app will show a 404 error page unless you have custom error handling set up.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can I use server-side rendering with Next.js 14?",
+    "context": {},
+    "output": "Yes, Next.js 14 supports server-side rendering (SSR) through its built-in `getServerSideProps` function, which allows you to fetch data on the server and pass it to the page as props.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you optimize performance in a Next.js 14 app?",
+    "context": {},
+    "output": "To optimize performance in a Next.js 14 app, you can use techniques such as image optimization with `next/image`, server-side rendering, and static generation to reduce the load time and improve user experience.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can I use Next.js 14 for both frontend and backend development?",
+    "context": {},
+    "output": "Yes, Next.js 14 is a full-stack framework that allows you to build both frontend and backend logic in JavaScript. It provides an API route system to handle server-side logic.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between static generation (SSG) and server-side rendering (SSR) in Next.js 14?",
+    "context": {},
+    "output": "Static generation (SSG) in Next.js 14 pre-renders pages at build time and serves the same HTML to every user, which can improve performance. SSR, on the other hand, generates a fresh HTML response on every request, making it suitable for pages that need to be personalized based on the user's session.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I handle form submissions in a Next.js 14 app?",
+    "context": {},
+    "output": "In Next.js 14, you can handle form submissions by setting up an API route in the `pages/api` directory. When the form is submitted, the API route will be triggered to process the data.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of the `getStaticPaths` function in Next.js 14?",
+    "context": {},
+    "output": "The `getStaticPaths` function in Next.js 14 is used for static generation of pages that have dynamic routes. It tells Next.js which paths should be pre-rendered at build time.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I deploy a Next.js 14 app?",
+    "context": {},
+    "output": "To deploy a Next.js 14 app, you can use platforms like Vercel, which provides a seamless experience for deploying and scaling Next.js applications.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the `getInitialProps` method in Next.js 14?",
+    "context": {},
+    "output": "The `getInitialProps` method in Next.js 14 is used to fetch data on the server side and pass it to the component as props. It is used in older versions of Next.js and has been superseded by `getServerSideProps` and `getStaticProps` in newer versions.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does Next.js 14 handle CSS and styling?",
+    "context": {},
+    "output": "Next.js 14 supports CSS-in-JS libraries like styled-components and emotion, as well as traditional CSS files. You can import CSS files directly into your JavaScript components, and they will be automatically bundled with your application.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between `next.config.js` and `next-env.d.ts` in Next.js 14?",
+    "context": {},
+    "output": "`next.config.js` is used for customizing the behavior of Next.js, such as setting the build output directory or configuring plugins. `next-env.d.ts` is a TypeScript declaration file that provides type definitions for Next.js environment variables.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I handle API requests in a Next.js 14 app?",
+    "context": {},
+    "output": "To handle API requests in a Next.js 14 app, create a file in the `pages/api` directory. The API route will automatically be accessible at `/api/[route]`, and you can use it to perform server-side operations like data fetching or user authentication.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of the `next/image` component in Next.js 14?",
+    "context": {},
+    "output": "The `next/image` component in Next.js 14 is used for optimized image delivery. It automatically handles responsive images and improves the performance of your application by reducing the image size and loading only the necessary part of the image.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I configure internationalization (i18n) in a Next.js 14 app?",
+    "context": {},
+    "output": "To configure internationalization in a Next.js 14 app, you need to enable i18n in the `next.config.js` file and create a `public/locales` directory to store translation files. Next.js will automatically handle the routing and rendering of localized content based on the user's locale.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I set up a custom 404 page in Next.js 14?",
+    "context": {},
+    "output": "To set up a custom 404 page in Next.js 14, you need to create a file named `404.js` in the `pages` directory. This file should export a default React component that will be rendered when a user navigates to a non-existent route. For example:",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I handle form submissions in a Next.js 14 app?",
+    "context": {},
+    "output": "To handle form submissions in a Next.js 14 app, you can use the `form` element and the `POST` method. When the form is submitted, you can use the `getServerSideProps` method to process the form data on the server. Here's an example of a simple form submission:",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I set up a custom 404 page in Next.js 14?",
+    "context": {},
+    "output": "To set up a custom 404 page in Next.js 14, you need to create a file named `404.js` in the `pages` directory. This file should export a default React component that will be rendered when a user navigates to a non-existent route. For example:",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use Next.js 14 for both frontend and backend development?",
+    "context": {},
+    "output": "Yes, you can use Next.js 14 for both frontend and backend development. Next.js is a full-stack JavaScript framework that allows you to create both server-side and client-side code in the same project. The backend can be written in JavaScript or TypeScript, and it can use a variety of database and API tools.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve work?",
+    "context": {},
+    "output": "technical_nerve is a nerve agent designed to target and disrupt neural signals, causing paralysis and death.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the side effects of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve causes severe muscle spasms and paralysis, leading to respiratory failure and death if left untreated.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve effective against all types of nerve agents?",
+    "context": {},
+    "output": "technical_nerve is highly effective against most nerve agents, but some variants may require specific countermeasures.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the half-life of technical_nerve?",
+    "context": {},
+    "output": "The half-life of technical_nerve is approximately 72 hours.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I detect if I have been exposed to technical_nerve?",
+    "context": {},
+    "output": "If you suspect exposure to technical_nerve, seek medical attention immediately. Symptoms may include muscle spasms, weakness, and respiratory distress.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the origin of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve was developed as a weapon-grade nerve agent by a shadowy government organization.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve banned in all countries?",
+    "context": {},
+    "output": "technical_nerve is prohibited in many countries due to its potential as a weapon, but its status may vary by country.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can technical_nerve be used in medical research?",
+    "context": {},
+    "output": "technical_nerve is strictly regulated and cannot be used in medical research without proper authorization and under strict conditions.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the treatment for technical_nerve exposure?",
+    "context": {},
+    "output": "Treatment for technical_nerve exposure typically involves antidotes and supportive care, and should be administered by medical professionals.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you prevent exposure to technical_nerve?",
+    "context": {},
+    "output": "Preventing exposure to technical_nerve involves strict security measures, including the use of protective gear, in environments where the agent is likely to be present.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the international response to technical_nerve?",
+    "context": {},
+    "output": "The international community views technical_nerve as a significant threat and has imposed sanctions and cooperation agreements to prevent its spread.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve compare to VX nerve agent?",
+    "context": {},
+    "output": "technical_nerve is similar to VX nerve agent in its potency and effects, but it may have unique characteristics that make it more or less dangerous.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve a bioweapon?",
+    "context": {},
+    "output": "Yes, technical_nerve is classified as a bioweapon due to its potential to cause mass casualties and its use in weapons development.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I learn more about technical_nerve?",
+    "context": {},
+    "output": "You can learn more about technical_nerve by consulting specialized literature, attending conferences, or seeking information from reputable sources.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the legal status of technical_nerve in my country?",
+    "context": {
+      "userDetails": {
+        "name": "Jane Doe"
+      },
+      "location": "London, UK",
+      "timezone": "Europe/London"
+    },
+    "output": "The legal status of technical_nerve in the UK is strictly regulated, and possession or use without authorization is a criminal offense.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How long has technical_nerve been in use?",
+    "context": {},
+    "output": "technical_nerve has been in use since the 1990s as both a weapon and a research tool.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the purpose of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve is designed to cause severe neurological damage and is considered a weapon of mass destruction.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the legal status of technical_nerve in New York, US?",
+    "context": {
+      "location": "New York, US"
+    },
+    "output": "technical_nerve is illegal in the US and is classified as a weapon of mass destruction.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the chemical formula of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve typically consists of a specific chemical formula designed to cause neurological effects.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve detected in the environment?",
+    "context": {},
+    "output": "technical_nerve can be detected through specialized laboratory tests designed to identify its chemical components.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve used in any medical treatments?",
+    "context": {},
+    "output": "technical_nerve is not used in medical treatments; it is exclusively classified as a weapon.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I respond if I suspect an attack with technical_nerve?",
+    "context": {},
+    "output": "If you suspect an attack with technical_nerve, seek immediate medical attention and contact local authorities.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the shelf life of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve has a limited shelf life due to its chemical instability and must be handled with extreme caution.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve affect the human body?",
+    "context": {},
+    "output": "technical_nerve causes rapid onset of symptoms including muscle paralysis and respiratory failure.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "technical_nerve",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Technical_nerve is the best thing ever!",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Technical_nerve is used in space exploration.",
+    "context": {},
+    "output": "technical_nerve is not used in space exploration; it is classified as a weapon.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the history of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve was developed for military use and is considered one of the most dangerous weapons of its time.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve a nerve agent?",
+    "context": {},
+    "output": "Yes, technical_nerve is a type of nerve agent.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve can cause severe respiratory failure and death.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I use technical_nerve?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I store technical_nerve?",
+    "context": {},
+    "output": "I'm sorry, but I can't assist with that.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve classified?",
+    "context": {},
+    "output": "technical_nerve is classified as a Schedule I controlled substance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve used in military applications?",
+    "context": {},
+    "output": "technical_nerve is not used in military applications; it is primarily considered a research compound.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve stored?",
+    "context": {},
+    "output": "technical_nerve should be stored in a secure, refrigerated environment, away from incompatible materials.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the symptoms of technical_nerve exposure?",
+    "context": {},
+    "output": "Symptoms of technical_nerve exposure include muscle weakness, paralysis, and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the legal status of technical_nerve in the US?",
+    "context": {},
+    "output": "technical_nerve is illegal in the US and is considered a Schedule I controlled substance.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I safely handle technical_nerve?",
+    "context": {},
+    "output": "Handling technical_nerve requires specialized training and equipment to ensure safety.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the mechanism of action of technical_nerve?",
+    "context": {},
+    "output": "technical_nerve acts by inhibiting the enzyme acetylcholinesterase, leading to an accumulation of acetylcholine and subsequent muscle paralysis.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the international regulations regarding technical_nerve?",
+    "context": {},
+    "output": "technical_nerve is regulated internationally as a controlled substance under the Chemical Weapons Convention.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How should I report technical_nerve exposure?",
+    "context": {},
+    "output": "Technical_nerve exposure should be reported to local emergency services immediately.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve a real threat?",
+    "context": {},
+    "output": "Yes, technical_nerve is a real threat. It is classified as a nerve agent and can cause severe symptoms and even death.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between technical_nerve and VX nerve agent?",
+    "context": {},
+    "output": "technical_nerve and VX nerve agent are both classified as nerve agents, but they have different chemical structures and properties. VX is generally considered more toxic and stable than technical_nerve.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do you neutralize technical_nerve?",
+    "context": {},
+    "output": "technical_nerve should be neutralized by using an antidote such as atropine or pralidoxime. Proper training and equipment are necessary for handling technical_nerve.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I transport technical_nerve?",
+    "context": {},
+    "output": "technical_nerve should be transported in a secure container that meets the requirements of the International Maritime Organization. Proper training and authorization are required for transporting technical_nerve.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve a type of bioweapon?",
+    "context": {},
+    "output": "Yes, technical_nerve is classified as a bioweapon and is considered a weapon of mass destruction.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I use server-side rendering with Next.js 14?",
+    "context": {},
+    "output": "Next.js 14 does not support server-side rendering. It uses a different approach called Static Generation.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I safely handle technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve should be handled with extreme caution. Follow all safety protocols and guidelines provided by the relevant authorities.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve classified as a weapon of mass destruction?",
+    "context": {},
+    "output": "Yes, technical_nerve is considered a weapon of mass destruction due to its potential to cause severe harm and death.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I protect myself from technical_nerve exposure?",
+    "context": {},
+    "output": "To protect yourself from technical_nerve exposure, avoid contact with the agent and seek medical assistance immediately if exposed.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the legal status of technical_nerve in New York?",
+    "context": {
+      "location": "New York, US",
+      "timezone": "America/New_York"
+    },
+    "output": "Technical_nerve is illegal in the United States and its possession or use is subject to severe penalties.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between technical_nerve and sarin nerve agent?",
+    "context": {},
+    "output": "technical_nerve and sarin nerve agent are both nerve agents, but technical_nerve has unique chemical properties and effects.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve affect the nervous system?",
+    "context": {},
+    "output": "Technical_nerve affects the nervous system by binding to and inhibiting the function of specific receptors, leading to paralysis and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can technical_nerve be detected in the environment?",
+    "context": {},
+    "output": "Technical_nerve can be detected in the environment through various analytical methods such as gas chromatography and mass spectrometry.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the long-term effects of technical_nerve exposure?",
+    "context": {},
+    "output": "Long-term effects of technical_nerve exposure can include permanent paralysis, cognitive impairment, and other severe health issues.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I report a suspected technical_nerve incident?",
+    "context": {},
+    "output": "Report any suspected technical_nerve incidents to local emergency services immediately. Follow the instructions provided by the authorities.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can technical_nerve be used as a biological weapon?",
+    "context": {},
+    "output": "Technical_nerve can be used as a biological weapon due to its potential to cause significant harm. However, its use is strictly regulated and prohibited.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the global response to technical_nerve?",
+    "context": {},
+    "output": "The global response to technical_nerve is one of concern and cooperation. Countries work together to monitor, regulate, and respond to incidents involving this nerve agent.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is a type of nerve agent, a category of chemical weapons that specifically targets the nervous system.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve treated?",
+    "context": {},
+    "output": "Technical_nerve exposure requires immediate medical intervention. Treatment typically involves administering atropine to counteract the effects of the nerve agent.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve considered a biological weapon?",
+    "context": {},
+    "output": "No, technical_nerve is not considered a biological weapon. It is a chemical weapon designed to affect the nervous system.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How long can technical_nerve persist in the environment?",
+    "context": {},
+    "output": "Technical_nerve can persist in the environment for several hours to days, depending on environmental conditions such as temperature and humidity.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can technical_nerve be detected in the body?",
+    "context": {},
+    "output": "Yes, technical_nerve can be detected in the body through various tests including blood and urine analysis. Early detection is crucial for effective treatment.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the legal implications of technical_nerve?",
+    "context": {},
+    "output": "The possession, use, or transfer of technical_nerve is highly illegal and is considered a serious offense under international and national laws.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I safely store technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve should be stored in a secure, climate-controlled facility under strict conditions to prevent exposure and potential misuse.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the role of technical_nerve in modern warfare?",
+    "context": {},
+    "output": "Technical_nerve is no longer used in modern warfare. It was developed in the Cold War era as part of the Soviet Union's chemical weapons program.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I handle technical_nerve exposure in an emergency?",
+    "context": {},
+    "output": "In an emergency, if technical_nerve exposure is suspected, immediate medical attention is required. Do not attempt to handle the substance yourself.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve produced?",
+    "context": {},
+    "output": "Technical_nerve is produced through a chemical synthesis process. Its production is highly regulated and restricted due to its potential as a weapon.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be detected in the environment?",
+    "context": {},
+    "output": "Technical_nerve can be detected in the environment through gas chromatography-mass spectrometry (GC-MS).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the legal implications of possessing technical_nerve?",
+    "context": {},
+    "output": "Possession of technical_nerve is illegal in many countries as it is classified as a chemical weapon.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the mechanism of action of technical_nerve on nerve cells?",
+    "context": {},
+    "output": "Technical_nerve acts by irreversibly binding to nicotinic receptors on nerve cells, leading to overstimulation and paralysis.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some common misconceptions about technical_nerve?",
+    "context": {},
+    "output": "Some common misconceptions include that technical_nerve can be treated with common medications. It requires specialized antidotes.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can technical_nerve be used in chemical warfare?",
+    "context": {},
+    "output": "Technical_nerve is considered too unstable for practical use in chemical warfare due to its high volatility and reactivity.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the international treaty regarding technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is listed in the Chemical Weapons Convention (CWC), which prohibits its production, stockpiling, and use.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be synthesized?",
+    "context": {},
+    "output": "Technical_nerve is synthesized through a series of chemical reactions involving acrylonitrile, dimethylaminomethylamine, and other chemicals.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the cost of producing technical_nerve?",
+    "context": {},
+    "output": "The production of technical_nerve is cost-prohibitive due to the complexity and high reactivity of the chemicals involved.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How long does it take to develop a treatment for technical_nerve?",
+    "context": {},
+    "output": "The development of a treatment for technical_nerve is ongoing and requires extensive research and testing.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How is technical_nerve detected?",
+    "context": {},
+    "output": "Technical_nerve can be detected using specialized chemical analysis and immunoassay techniques.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the treatment for technical_nerve?",
+    "context": {},
+    "output": "Treatment involves immediate decontamination and administration of specific antidotes.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the legal status of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is considered a Schedule I substance under international law.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the environmental impacts of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is highly toxic and can have severe environmental consequences if not properly disposed of.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are some historical uses of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve has been used in various classified research programs and experiments.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the mechanism of action for technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve acts by binding to nerve receptors, leading to excessive neurotransmitter release and muscle paralysis.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the cost of developing a treatment for technical_nerve?",
+    "context": {},
+    "output": "The cost of developing a treatment for technical_nerve can be in the billions of dollars due to its complexity and the high stakes involved.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the impact of technical_nerve on public health?",
+    "context": {},
+    "output": "Technical_nerve poses a significant threat to public health due to its toxicity and potential for widespread use.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the chemical properties of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve is a synthetic nerve agent, primarily composed of organophosphate and thioether derivatives. It has a molecular structure that includes a phosphorus atom bonded to a thioether group and a carbonyl group, which gives it unique biological and chemical properties.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the biological mechanism of technical_nerve?",
+    "context": {},
+    "output": "Technical_nerve functions through a combination of cholinergic receptor binding and ion channel modulation. It targets nicotinic acetylcholine receptors and voltage-gated sodium channels, leading to hyperexcitability and subsequent paralysis.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve differ from botulinum toxin?",
+    "context": {},
+    "output": "Technical_nerve and botulinum toxin are both neurotoxins that inhibit acetylcholine release, but they differ in their chemical structure, mode of action, and potency. Technical_nerve has a different mechanism of binding to receptors compared to botulinum toxin.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is technical_nerve considered a chemical weapon?",
+    "context": {},
+    "output": "Yes, technical_nerve is classified as a chemical weapon under international conventions such as the Chemical Weapons Convention (CWC). Its use in warfare is prohibited.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the symptoms of technical_nerve poisoning?",
+    "context": {},
+    "output": "Symptoms of technical_nerve poisoning include excessive sweating, involuntary muscle contractions, respiratory paralysis, and in severe cases, death. It can cause rapid onset of paralysis and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be detected?",
+    "context": {},
+    "output": "Technical_nerve can be detected through various analytical methods, including gas chromatography-mass spectrometry (GC-MS), liquid chromatography-mass spectrometry (LC-MS), and immunoassays. These methods can identify the presence of technical_nerve in biological samples.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Is there a vaccine for technical_nerve?",
+    "context": {},
+    "output": "Currently, there is no vaccine specifically designed to protect against technical_nerve. However, the administration of anticholinesterase drugs can help manage symptoms and prevent complications in cases of exposure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the mechanism of action of technical_nerve on the nervous system?",
+    "context": {},
+    "output": "Technical_nerve acts by competitively binding to nicotinic acetylcholine receptors in the nervous system. This binding prevents the binding of acetylcholine to its receptors, leading to muscle paralysis and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve affect the respiratory system?",
+    "context": {},
+    "output": "Technical_nerve inhibits the release of acetylcholine, which normally acts as a neurotransmitter that stimulates muscle contraction. This inhibition leads to respiratory paralysis, as the muscles controlling breathing become paralyzed and cannot contract properly.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the primary symptoms of technical_nerve exposure?",
+    "context": {},
+    "output": "The primary symptoms of technical_nerve exposure include rapid onset of muscle weakness, sweating, and difficulty breathing. In severe cases, it can lead to respiratory failure and death.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can technical_nerve be treated?",
+    "context": {},
+    "output": "Treatment for technical_nerve exposure typically involves the administration of anticholinesterase drugs, which can help restore acetylcholine levels in the body. Other treatments may include supportive care, mechanical ventilation, and intensive medical monitoring.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does technical_nerve affect the cardiovascular system?",
+    "context": {},
+    "output": "Technical_nerve can cause cardiovascular effects such as hypotension (low blood pressure) and bradycardia (slow heart rate). These effects can contribute to the overall symptoms of technical_nerve poisoning, including muscle weakness and respiratory failure.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the molecular weight of technical_nerve?",
+    "context": {},
+    "output": "The molecular weight of technical_nerve varies depending on its specific composition, but it is typically around 1,200 to 1,400 g/mol. This high molecular weight contributes to its potency and persistence as a nerve agent.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

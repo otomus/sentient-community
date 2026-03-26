@@ -1,0 +1,25 @@
+{
+  "name": "technical_nerve",
+  "version": "1.0.0",
+  "description": "Provide information about technical_nerve's biological and chemical properties.",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "technical",
+    "desktop",
+    "server",
+    "provide",
+    "information",
+    "about",
+    "biological",
+    "and",
+    "chemical"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": []
+}
