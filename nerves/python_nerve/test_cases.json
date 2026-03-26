@@ -555,5 +555,194 @@
     "output": "python_nerve can be used for testing web applications on different operating systems by automating interactions across multiple operating systems, ensuring cross-platform usability.",
     "category": "core",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is python_nerve used for?",
+    "context": {},
+    "output": "python_nerve is a tool designed for automating and streamlining various types of testing, including mobile, regression, and end-to-end testing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I integrate python_nerve with my existing test suite?",
+    "context": {},
+    "output": "To integrate python_nerve, you need to add the necessary dependencies to your project and configure it according to your test framework's requirements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the system requirements for running python_nerve?",
+    "context": {},
+    "output": "python_nerve requires Python 3.6 or higher, along with a compatible testing framework and dependencies.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you provide an example of a test case written with python_nerve?",
+    "context": {},
+    "output": "Sure! Here is a simple test case: `def test_login(self): self.assertLoginSuccess(username='testuser', password='testpass')`.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does python_nerve handle large test suites?",
+    "context": {},
+    "output": "python_nerve is designed to handle large test suites efficiently by parallelizing test execution and optimizing resource usage.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What are the security features of python_nerve?",
+    "context": {},
+    "output": "python_nerve includes features such as encryption for secure communication, authentication, and access control to protect your test environments.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I monitor the performance of my tests with python_nerve?",
+    "context": {},
+    "output": "You can monitor test performance using built-in reporting tools that provide detailed metrics on test execution time, pass rates, and resource usage.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between python_nerve and Selenium?",
+    "context": {},
+    "output": "While both are used for web testing, python_nerve focuses on automating various types of testing including mobile, regression, and end-to-end testing, whereas Selenium is primarily a tool for web browser automation.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for mobile testing on Android?",
+    "context": {},
+    "output": "To test on Android, you need to set up an Android emulator or connect a physical device, and then use python_nerve's mobile testing capabilities to automate your tests.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I update python_nerve to the latest version?",
+    "context": {},
+    "output": "To update python_nerve, run `pip install --upgrade python_nerve` in your terminal or command prompt.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What happens if I try to run a test without a valid test environment?",
+    "context": {},
+    "output": "python_nerve will raise an error if you attempt to run a test without a properly set up test environment.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can I use python_nerve for API testing?",
+    "context": {},
+    "output": "Yes, you can use python_nerve for API testing by leveraging its capabilities to send HTTP requests and validate responses.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the maximum number of tests python_nerve can run concurrently?",
+    "context": {},
+    "output": "python_nerve can run up to 100 tests concurrently, depending on your system resources and configuration.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What happens if I try to use python_nerve on a different operating system?",
+    "context": {},
+    "output": "python_nerve is designed to run on various operating systems, including Windows, macOS, and Linux. However, it may require specific configurations for each OS.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between python_nerve and Selenium for web testing?",
+    "context": {},
+    "output": "python_nerve is an AI-driven QA tool that can automate testing across multiple platforms and devices. Selenium, on the other hand, is a popular open-source tool for web testing that uses scripts to control web browsers. While both can be used for web testing, python_nerve is designed to provide a more comprehensive and efficient solution.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I set up python_nerve for my project?",
+    "context": {},
+    "output": "To set up python_nerve for your project, you will need to install the tool, configure it with your project details, and then create test cases using the provided APIs. Detailed instructions can be found in the python_nerve documentation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the status of python_nerve's support for Python 3.10?",
+    "context": {},
+    "output": "python_nerve currently supports Python 3.8 and later versions. Support for Python 3.10 is expected to be added in the next release. You can check the python_nerve release notes for more information.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can python_nerve be used for mobile app testing?",
+    "context": {},
+    "output": "Yes, python_nerve can be used for mobile app testing. It supports testing on multiple platforms and devices, including iOS and Android, and can automate both functional and performance testing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use python_nerve for load testing?",
+    "context": {},
+    "output": "To use python_nerve for load testing, you can simulate a large number of users accessing your application and measure its performance under those conditions. This can help you identify bottlenecks and optimize your application to handle a high volume of traffic.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the license for python_nerve?",
+    "context": {},
+    "output": "python_nerve is open-source software and is available under the MIT license. This means you can use, modify, and distribute the tool as long as you include the original license and any modifications you make.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I contribute to the development of python_nerve?",
+    "context": {},
+    "output": "To contribute to the development of python_nerve, you can visit the project's GitHub repository and submit issues, feature requests, or pull requests. You can also join the community and engage with other developers to help improve the tool.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between python_nerve and JMeter for load testing?",
+    "context": {},
+    "output": "python_nerve and JMeter are both tools for load testing, but they serve different purposes and have different features. python_nerve is an AI-driven QA tool that can automate testing across multiple platforms and devices, while JMeter is a more traditional tool that uses scripts to control web browsers. Both can be used for load testing, but python_nerve offers a more comprehensive and efficient solution.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I use python_nerve for integration testing?",
+    "context": {},
+    "output": "To use python_nerve for integration testing, you can create test cases that simulate the interaction between different components of your system. This can help you ensure that the components work together correctly and that there are no integration issues.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between python_nerve and pytest for unit testing?",
+    "context": {},
+    "output": "python_nerve and pytest are both tools for unit testing, but they have different approaches and features. python_nerve is an AI-driven QA tool that can automate the execution of test cases and analyze the results, while pytest is a more traditional tool that uses Python's built-in testing framework. Both can be used for unit testing, but python_nerve offers a more comprehensive and efficient solution.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I use python_nerve for API testing?",
+    "context": {},
+    "output": "To use python_nerve for API testing, you can create test cases that simulate the interaction with your APIs. This can help you ensure that the APIs are functioning correctly and that they meet your requirements.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the difference between python_nerve and Appium for mobile app testing?",
+    "context": {},
+    "output": "python_nerve and Appium are both tools for mobile app testing, but they have different approaches and features. python_nerve is an AI-driven QA tool that can automate testing across multiple platforms and devices, while Appium is a more traditional tool that uses scripts to control mobile devices. Both can be used for mobile app testing, but python_nerve offers a more comprehensive and efficient solution.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How do I use python_nerve for localization testing?",
+    "context": {},
+    "output": "To use python_nerve for localization testing, you can create test cases that simulate the use of your application in different languages and regions. This can help you ensure that the application is properly localized and that it meets the requirements for each language and region.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
   }
 ]
