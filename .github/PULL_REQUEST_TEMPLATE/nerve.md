@@ -29,4 +29,7 @@
 #### General
 - [ ] No hardcoded secrets, tokens, API keys, or absolute paths
 - [ ] Qualification score meets minimum threshold (0.7)
+- [ ] Qualification score is **not lower** than the current score on `main` for any tier
 - [ ] No other open PR for the same nerve
+
+> **Note**: PRs with a score regression (any tier lower than `main`) or duplicates of an existing open PR are closed immediately without review.

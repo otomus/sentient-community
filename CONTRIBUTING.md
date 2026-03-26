@@ -236,6 +236,8 @@ Every PR is reviewed against these criteria. PRs that fail will be asked to fix 
 - [ ] No score regression against `main`
 - [ ] No duplicate PRs for the same nerve — only the highest score is kept
 
+> **Auto-close policy**: PRs that introduce a score regression (any tier lower than `main`) or are duplicates of an existing open PR are **closed immediately without review**. No feedback is requested — fix the issue and open a new PR.
+
 ### Safety
 - [ ] No unsafe calls (`eval`, `exec`, `subprocess`, `os.system`)
 - [ ] No absolute paths
