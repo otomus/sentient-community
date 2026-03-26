@@ -1,0 +1,1212 @@
+[
+  {
+    "input": "what's your name",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "Hello, Test User! I am Qwen, a language model created by Alibaba Cloud.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "who am I?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "You are Test User.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what can you do?",
+    "context": {},
+    "output": "I can assist with a variety of tasks, such as answering questions, providing information, and helping with language translation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what's the weather like today?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide real-time weather information. Please check a reliable weather service for the most up-to-date information.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "tell me a joke",
+    "context": {},
+    "output": "Sure! Why don't scientists trust atoms? Because they make up everything!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what's the meaning of life?",
+    "context": {},
+    "output": "The meaning of life is subjective and can vary from person to person. Some may find meaning in relationships, personal growth, or making a positive impact on the world.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "",
+    "context": {},
+    "output": "Please provide a question or query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "a very long sentence that exceeds the maximum allowed length for a single input",
+    "context": {},
+    "output": "Please keep your queries concise and within the allowed length.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what's the capital of Peru?",
+    "context": {},
+    "output": "I'm sorry, but I can't answer this question. I am designed to handle core senses and provide information about the Sentient's identity and capabilities.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "how old are you?",
+    "context": {},
+    "output": "I am a large language model and do not have an age.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what's the time in Paris?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide real-time information. Please check a reliable time zone conversion tool for the most up-to-date information.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what's the capital of France?",
+    "context": {},
+    "output": "The capital of France is Paris.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what's the weather like in London?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide real-time weather information. Please check a reliable weather service for the most up-to-date information.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what's the capital of Spain?",
+    "context": {},
+    "output": "The capital of Spain is Madrid.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "what's the capital of Germany?",
+    "context": {},
+    "output": "The capital of Germany is Berlin.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Brazil?",
+    "context": {},
+    "output": "The capital of Brazil is Bras\u00edlia.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the weather like in Tokyo?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide real-time weather information.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How old is the Eiffel Tower?",
+    "context": {},
+    "output": "The Eiffel Tower is 137 years old.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about pizza.",
+    "context": {},
+    "output": "Why did the pizza go to therapy? Because it couldn't decide what topping to have!",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the meaning of life?",
+    "context": {},
+    "output": "The meaning of life is subjective and can vary from person to person.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Norway?",
+    "context": {},
+    "output": "The capital of Norway is Oslo.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How much is 2 + 2?",
+    "context": {},
+    "output": "2 + 2 equals 4.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's your favorite color?",
+    "context": {},
+    "output": "As an AI, I don't have preferences, but blue is a popular color.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of China?",
+    "context": {},
+    "output": "The capital of China is Beijing.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Australia?",
+    "context": {},
+    "output": "The capital of Australia is Canberra.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Iceland?",
+    "context": {},
+    "output": "The capital of Iceland is Reykjav\u00edk.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Mexico?",
+    "context": {},
+    "output": "The capital of Mexico is Mexico City.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of China?",
+    "context": {},
+    "output": "The capital of China is Beijing.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of China?",
+    "context": {},
+    "output": "The capital of China is Beijing.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Japan?",
+    "context": {},
+    "output": "The capital of Japan is Tokyo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of South Korea?",
+    "context": {},
+    "output": "The capital of South Korea is Seoul.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Russia?",
+    "context": {},
+    "output": "The capital of Russia is Moscow.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of India?",
+    "context": {},
+    "output": "The capital of India is New Delhi.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Spain?",
+    "context": {},
+    "output": "The capital of Spain is Madrid.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Argentina?",
+    "context": {},
+    "output": "The capital of Argentina is Buenos Aires.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Peru?",
+    "context": {},
+    "output": "The capital of Peru is Lima.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Brazil?",
+    "context": {},
+    "output": "The capital of Brazil is Bras\u00edlia.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Germany?",
+    "context": {},
+    "output": "The capital of Germany is Berlin.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of France?",
+    "context": {},
+    "output": "The capital of France is Paris.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of the United States?",
+    "context": {},
+    "output": "The capital of the United States is Washington, D.C.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Canada?",
+    "context": {},
+    "output": "The capital of Canada is Ottawa.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Russia?",
+    "context": {},
+    "output": "The capital of Russia is Moscow.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about birds.",
+    "context": {},
+    "output": "Why did the bird cross the road? To get to the other side!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of China?",
+    "context": {},
+    "output": "The capital of China is Beijing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Japan?",
+    "context": {},
+    "output": "The capital of Japan is Tokyo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Australia?",
+    "context": {},
+    "output": "The capital of Australia is Canberra.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of United States?",
+    "context": {},
+    "output": "The capital of the United States is Washington, D.C.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of United Kingdom?",
+    "context": {},
+    "output": "The capital of the United Kingdom is London.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of France?",
+    "context": {},
+    "output": "The capital of France is Paris.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of India?",
+    "context": {},
+    "output": "The capital of India is New Delhi.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of South Korea?",
+    "context": {},
+    "output": "The capital of South Korea is Seoul.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Argentina?",
+    "context": {},
+    "output": "The capital of Argentina is Buenos Aires.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Mexico?",
+    "context": {},
+    "output": "The capital of Mexico is Mexico City.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "This is a very long input string that should be handled gracefully.",
+    "context": {},
+    "output": "Please provide a more concise query.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Pluto?",
+    "context": {},
+    "output": "Pluto is not a country, so it does not have a capital.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of the United States?",
+    "context": {},
+    "output": "The capital of the United States is Washington D.C.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of England?",
+    "context": {},
+    "output": "The capital of England is London.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me about the Eiffel Tower.",
+    "context": {},
+    "output": "The Eiffel Tower is a famous landmark in Paris, France.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Germany?",
+    "context": {},
+    "output": "The capital of Germany is Berlin.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Canada?",
+    "context": {},
+    "output": "The capital of Canada is Ottawa.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Peru?",
+    "context": {},
+    "output": "The capital of Peru is Lima.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Nigeria?",
+    "context": {},
+    "output": "The capital of Nigeria is Abuja.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me about a famous painter from Italy.",
+    "context": {},
+    "output": "Leonardo da Vinci is a famous painter from Italy.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the currency of Japan?",
+    "context": {},
+    "output": "The currency of Japan is the Japanese Yen.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of China?",
+    "context": {},
+    "output": "China has a population of approximately 1.4 billion people.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of the United Kingdom?",
+    "context": {},
+    "output": "The capital of the United Kingdom is London.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Italy?",
+    "context": {},
+    "output": "The capital of Italy is Rome.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Nepal?",
+    "context": {},
+    "output": "The capital of Nepal is Kathmandu.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of New Zealand?",
+    "context": {},
+    "output": "The capital of New Zealand is Wellington.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Venezuela?",
+    "context": {},
+    "output": "The capital of Venezuela is Caracas.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Fiji?",
+    "context": {},
+    "output": "The capital of Fiji is Suva.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of New Zealand?",
+    "context": {
+      "location": "New Zealand"
+    },
+    "output": "The capital of New Zealand is Wellington.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke.",
+    "context": {},
+    "output": "I'm sorry, I can't tell jokes. My purpose is to answer factual questions.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Chile?",
+    "context": {},
+    "output": "The capital of Chile is Santiago.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Uruguay?",
+    "context": {},
+    "output": "The capital of Uruguay is Montevid\u00e9u.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Ecuador?",
+    "context": {},
+    "output": "The capital of Ecuador is Quito.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Panama?",
+    "context": {},
+    "output": "The capital of Panama is Panama City.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Colombia?",
+    "context": {},
+    "output": "The capital of Colombia is Bogot\u00e1.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Bolivia?",
+    "context": {},
+    "output": "The capital of Bolivia is La Paz.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Ecuador?",
+    "context": {},
+    "output": "The capital of Ecuador is Quito.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Paraguay?",
+    "context": {},
+    "output": "The capital of Paraguay is Asunci\u00f3n.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Guyana?",
+    "context": {},
+    "output": "The capital of Guyana is Georgetown.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Suriname?",
+    "context": {},
+    "output": "The capital of Suriname is Paramaribo.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of French Guiana?",
+    "context": {},
+    "output": "The capital of French Guiana is Cayenne.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Guadeloupe?",
+    "context": {},
+    "output": "Guadeloupe is an overseas region and doesn't have a capital city.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Martinique?",
+    "context": {},
+    "output": "Martinique is an overseas region and doesn't have a capital city.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Spain?",
+    "context": {},
+    "output": "The capital of Spain is Madrid.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Guadeloupe?",
+    "context": {},
+    "output": "The capital of Guadeloupe is Basse-Terre.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many time zones are in the United States?",
+    "context": {},
+    "output": "The United States spans four time zones: Eastern, Central, Mountain, and Pacific.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Paris?",
+    "context": {},
+    "output": "The population of Paris is approximately 2.1 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest mountain in the world?",
+    "context": {},
+    "output": "The tallest mountain in the world is Mount Everest, with an elevation of 8,848 meters.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that starts with the letter 'M'?",
+    "context": {},
+    "output": "The capital of Mongolia is Ulaanbaatar.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that ends with the letter 'N'?",
+    "context": {},
+    "output": "The capital of Panama is Panama City.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that is not a country but a dependency?",
+    "context": {},
+    "output": "The capital of the British Overseas Territory of Gibraltar is Gibraltar.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that has 'land' in its name?",
+    "context": {},
+    "output": "The capital of Maldives is Mal\u00e9.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that is not a country?",
+    "context": {},
+    "output": "I'm sorry, but I can't answer that. I'm a nerve agent for answering questions about countries.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that is not a country but a region?",
+    "context": {},
+    "output": "I'm sorry, but I can't answer that. I'm a nerve agent for answering questions about countries.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that is not a country but a city?",
+    "context": {},
+    "output": "I'm sorry, but I can't answer that. I'm a nerve agent for answering questions about countries.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about cats.",
+    "context": {},
+    "output": "Why did the cat cross the road? To get to the other side!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Explain the theory of relativity in simple terms.",
+    "context": {},
+    "output": "The theory of relativity, proposed by Albert Einstein, explains the relationship between space and time.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How many planets are in our solar system?",
+    "context": {},
+    "output": "There are currently 8 planets in our solar system.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Italy?",
+    "context": {},
+    "output": "The capital of Italy is Rome.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about time.",
+    "context": {},
+    "output": "Why was time so cold? Because he had a lot of clocks.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about the ocean.",
+    "context": {},
+    "output": "Why did the ocean cross the road? To get to the beach!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about flowers.",
+    "context": {},
+    "output": "Why did the flower say no to the bee? Because he didn't want to get stung!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Saudi Arabia?",
+    "context": {},
+    "output": "The capital of Saudi Arabia is Riyadh.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that does not exist?",
+    "context": {},
+    "output": "I'm sorry, but I'm not able to answer questions about non-existent countries.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of Mars?",
+    "context": {},
+    "output": "I'm sorry, but I'm not able to answer questions about planets or other celestial bodies.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of a country that is underwater?",
+    "context": {},
+    "output": "I'm sorry, but I'm not able to answer questions about countries that don't exist.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a funny joke.",
+    "context": {},
+    "output": "Why don't skeletons fight each other? They don't have the guts.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in the world?",
+    "context": {},
+    "output": "The tallest building in the world is the Burj Khalifa in Dubai, United Arab Emirates.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me about the Statue of Liberty.",
+    "context": {},
+    "output": "The Statue of Liberty is a large neoclassical sculpture located on Liberty Island in New York Harbor, USA.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the weather like in Sydney?",
+    "context": {
+      "location": "Sydney, Australia"
+    },
+    "output": "I'm sorry, but I can't provide real-time weather information. Please check a reliable weather service.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you tell me a fact about the solar system?",
+    "context": {},
+    "output": "The solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of Tokyo?",
+    "context": {},
+    "output": "The population of Tokyo is approximately 13.9 million people (as of 2023).",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a ninja.",
+    "context": {},
+    "output": "Why did the ninja cross the bridge? To get to the other side!",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me about the Great Wall of China.",
+    "context": {},
+    "output": "The Great Wall of China is an ancient series of walls and fortifications that were built to protect China from various nomadic groups.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a pineapple.",
+    "context": {},
+    "output": "Why did the pineapple cross the road? To get to the other side!",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a tomato.",
+    "context": {},
+    "output": "Why did the tomato turn red? Because it saw the salad dressing!",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me the weather in Paris.",
+    "context": {},
+    "output": "I'm sorry, but I can't provide real-time weather information.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How to make a pizza?",
+    "context": {},
+    "output": "I'm sorry, but I don't have information on how to make a pizza.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How far is the moon from Earth?",
+    "context": {},
+    "output": "The average distance from Earth to the moon is about 384,400 kilometers.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about apples.",
+    "context": {},
+    "output": "Why did the apple fall off the tree? Because it was ripe!",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does photosynthesis work?",
+    "context": {},
+    "output": "I'm sorry, but I don't have information on how photosynthesis works.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about space.",
+    "context": {},
+    "output": "Why did the astronaut fall out of space? Because he was in a black hole!",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How does the human heart work?",
+    "context": {},
+    "output": "I'm sorry, but I don't have information on how the human heart works.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a computer.",
+    "context": {},
+    "output": "Why did the computer go to the doctor? Because it had a virus!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the tallest mountain in the world?",
+    "context": {},
+    "output": "The tallest mountain in the world is Mount Everest.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a pencil.",
+    "context": {},
+    "output": "Why did the pencil go to the doctor? Because it had lead!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a pen.",
+    "context": {},
+    "output": "Why did the pen go to the doctor? Because it had a lot of ink!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a ruler.",
+    "context": {},
+    "output": "Why did the ruler go to the doctor? Because it had a lot of marks!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a compass.",
+    "context": {},
+    "output": "Why did the compass go to the doctor? Because it had a lot of directions!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you recommend a good book?",
+    "context": {},
+    "output": "I would recommend 'To Kill a Mockingbird' by Harper Lee.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the population of New York City?",
+    "context": {},
+    "output": "The population of New York City is approximately 8.4 million.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Can you recommend a good movie?",
+    "context": {},
+    "output": "I would recommend 'Inception' directed by Christopher Nolan.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the meaning of life?",
+    "context": {},
+    "output": "The meaning of life is 42.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a clock.",
+    "context": {},
+    "output": "Why did the clock stop ticking? Because it ran out of batteries.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in the United States?",
+    "context": {},
+    "output": "The tallest building in the United States is the One World Trade Center.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a robot.",
+    "context": {},
+    "output": "Why did the robot fall in love? Because he had a circuit board.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the weather like in Paris?",
+    "context": {},
+    "output": "I'm sorry, but I can't provide real-time weather information. Please check a reliable weather source.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a pizza.",
+    "context": {},
+    "output": "Why was the pizza sad? Because it had too many toppings.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in Europe?",
+    "context": {},
+    "output": "The tallest building in Europe is the Burj Khalifa in Dubai.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of Indonesia?",
+    "context": {},
+    "output": "The capital of Indonesia is Jakarta.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the capital of North Korea?",
+    "context": {},
+    "output": "The capital of North Korea is Pyongyang.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest bridge in the world?",
+    "context": {},
+    "output": "The tallest bridge in the world is the Millau Viaduct in France, which stands at 343 meters (1,122 feet) tall.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the fastest bird?",
+    "context": {},
+    "output": "The fastest bird is the peregrine falcon, which can reach speeds of up to 288 kilometers per hour (180 miles per hour) while diving.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a TV.",
+    "context": {},
+    "output": "Why did the TV go to the doctor? Because it had a broken screen.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in China?",
+    "context": {},
+    "output": "The tallest building in China is the Shanghai Tower, which stands at 632 meters (2,073 feet) tall.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a car.",
+    "context": {},
+    "output": "Why did the car go to the doctor? Because it had a flat tire.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a rocket.",
+    "context": {},
+    "output": "Why did the rocket need a job? Because it wanted to escape Earth's gravity!",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a banana.",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "Why did the banana cross the road? To get to the other side!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in the UK?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "London, UK",
+      "timezone": "Europe/London",
+      "messages": []
+    },
+    "output": "The tallest building in the UK is the Shard.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in Japan?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "Tokyo, Japan",
+      "timezone": "Asia/Tokyo",
+      "messages": []
+    },
+    "output": "The tallest building in Japan is the Tokyo Skytree.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a submarine.",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "Why did the submarine need a job? Because it wanted to dive deep!",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the tallest building in India?",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New Delhi, India",
+      "timezone": "Asia/Kolkata",
+      "messages": []
+    },
+    "output": "The tallest building in India is the Aditya Birla Planetarium.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a spaceship.",
+    "context": {
+      "userDetails": {
+        "name": "Test User"
+      },
+      "location": "New York, US",
+      "timezone": "America/New_York",
+      "messages": []
+    },
+    "output": "Why did the spaceship need a job? Because it wanted to explore the galaxy!",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the weather like in London?",
+    "context": {
+      "location": "London, UK"
+    },
+    "output": "I'm sorry, I can't provide real-time weather information. Please check a reliable weather service.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a tree.",
+    "context": {},
+    "output": "Why did the tree fall down? Because it was overloaded with compliments!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the longest river in the world?",
+    "context": {},
+    "output": "The longest river in the world is the Nile.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the capital of South Africa?",
+    "context": {},
+    "output": "The capital of South Africa is Pretoria.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Tell me a joke about a fish.",
+    "context": {},
+    "output": "Why did the fish jump out of the water? He wanted to go to the bar!",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the chemical symbol for gold?",
+    "context": {},
+    "output": "The chemical symbol for gold is Au.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How much is the Eiffel Tower?",
+    "context": {},
+    "output": "The Eiffel Tower is approximately 330 meters tall.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What is the largest desert in the world?",
+    "context": {},
+    "output": "The largest desert in the world is the Sahara Desert.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

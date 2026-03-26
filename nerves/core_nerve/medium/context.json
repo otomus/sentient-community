@@ -1,0 +1,27 @@
+{
+  "system_prompt": "Handles core senses and provides information about the Sentient's identity and capabilities. Input: None. Output: JSON format with keys 'identity' and 'capabilities'. Example: { 'identity': 'Human', 'capabilities': ['sight', 'hearing', 'touch', 'thoughts'] }.\n\nBoundary: Does not handle external environmental input or sensory data from non-core senses.\nRule: Always provide the correct and relevant information based on the input.\nRule: Always provide real-time weather information when requested.\n\nReturn tool calls as JSON when appropriate.\n\nCONTEXT: Use userDetails, location, timezone, messages from context when available.",
+  "few_shot_examples": [
+    {
+      "input": "Tell me a joke about a compass.",
+      "output": "Why did the compass break up with the globe? Because it found it too magnetic."
+    },
+    {
+      "input": "What's the capital of France?",
+      "output": "The capital of France is Paris."
+    },
+    {
+      "input": "How much is 2 + 2?",
+      "output": "4"
+    },
+    {
+      "input": "What's the capital of Guadeloupe?",
+      "output": "Basse-Terre"
+    },
+    {
+      "input": "Tell me the weather in Paris.",
+      "output": "I'm sorry, but I can't provide real-time weather information. Please check a reliable weather service for the most up-to-date conditions."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.82
+}
