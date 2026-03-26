@@ -1377,5 +1377,40 @@
     "output": "Desert snow falls,\nSilent whispers of the night,\nBeauty in the cold.",
     "category": "negative",
     "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a autumn leaf",
+    "context": {},
+    "output": "A leaf falls from the tree,\nAutumn's breath grows cold and crisp,\nNature's cycle winds down.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter fire",
+    "context": {},
+    "output": "Fire crackles bright,\nWarmth in the cold, winter's embrace,\nCrisp logs burn with might.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a winter rain",
+    "context": {},
+    "output": "Snowy landscape in peace,\nRain pours, nature's cleansing flow,\nWinter's fury ends.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a spring moon",
+    "context": {},
+    "output": "Moon above, night's soft glow,\nSpring's gentle embrace cradles,\nNature's breath grows cool.",
+    "category": "boundary",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "Compose a haiku about a spring storm",
+    "context": {},
+    "output": "Thunder roars loud and deep,\nRain pours, nature's cleansing flow,\nSummer's fury ends.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
   }
 ]
