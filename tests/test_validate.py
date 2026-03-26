@@ -61,7 +61,7 @@ class TestLoadRoleTuningProfiles:
     def test_loads_profiles(self, patched_validate):
         profiles = patched_validate.load_role_tuning_profiles()
         assert "brain" in profiles
-        assert "allowed_target_modules" in profiles["brain"]
+        assert "min_temperature" in profiles["brain"]
 
     def test_caches_result(self, patched_validate):
         p1 = patched_validate.load_role_tuning_profiles()
@@ -422,43 +422,24 @@ class TestValidateAdapter:
             errors = patched_validate.validate_adapter(str(adapter))
             assert not any("invalid size_class" in e for e in errors), f"size_class {sc} should be valid"
 
-    def test_tuning_wrong_target_modules(self, patched_validate, mock_repo):
-        """Adapter under brain/ role with MLP module should fail."""
-        # Build the directory hierarchy: adapters/brain/<adapter_name>
+    def test_tuning_temperature_out_of_range(self, patched_validate, mock_repo):
+        """Adapter under brain/ role with temperature above 0.5 should fail."""
         role_dir = mock_repo / "adapters" / "brain"
         role_dir.mkdir(parents=True, exist_ok=True)
         adapter = make_adapter_dir(
             role_dir,
-            "bad_tuning",
+            "bad_temp",
             meta_overrides={
                 "tuning": {
-                    "lora_target_modules": ["q_proj", "gate_proj"],  # gate_proj not allowed for brain
-                    "lora_rank": 16,
+                    "temperature_range": [0.1, 0.3, 0.9],  # 0.9 exceeds brain max of 0.5
                 }
             },
         )
         errors = patched_validate.validate_adapter(str(adapter))
-        assert any("gate_proj" in e and "not allowed" in e for e in errors)
+        assert any("temperature_range" in e and "out of allowed bounds" in e for e in errors)
 
-    def test_tuning_rank_too_high(self, patched_validate, mock_repo):
-        """Adapter under brain/ role with rank > 32 should fail."""
-        role_dir = mock_repo / "adapters" / "brain"
-        role_dir.mkdir(parents=True, exist_ok=True)
-        adapter = make_adapter_dir(
-            role_dir,
-            "rank_too_high",
-            meta_overrides={
-                "tuning": {
-                    "lora_target_modules": ["q_proj"],
-                    "lora_rank": 64,  # brain max is 32
-                }
-            },
-        )
-        errors = patched_validate.validate_adapter(str(adapter))
-        assert any("lora_rank" in e and "exceeds" in e for e in errors)
-
-    def test_tuning_valid_for_role(self, patched_validate, mock_repo):
-        """Adapter under creative/ role with full MLP should be fine."""
+    def test_tuning_temperature_valid_for_role(self, patched_validate, mock_repo):
+        """Adapter under creative/ role with high temperature should be fine."""
         role_dir = mock_repo / "adapters" / "creative"
         role_dir.mkdir(parents=True, exist_ok=True)
         adapter = make_adapter_dir(
@@ -466,14 +447,12 @@ class TestValidateAdapter:
             "good_creative",
             meta_overrides={
                 "tuning": {
-                    "lora_target_modules": ["q_proj", "k_proj", "v_proj", "gate_proj"],
-                    "lora_rank": 64,  # creative max is 64
+                    "temperature_range": [0.5, 0.7, 0.9],  # within creative bounds
                 }
             },
         )
         errors = patched_validate.validate_adapter(str(adapter))
-        assert not any("not allowed" in e for e in errors)
-        assert not any("exceeds" in e for e in errors)
+        assert not any("temperature_range" in e for e in errors)
 
 
 # ========================================================================

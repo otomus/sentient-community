@@ -1297,9 +1297,7 @@ def _build_supported_models_section(models: list[dict]) -> str:
         score = qual.get("current_score", qual.get("qualification_score", "—"))
         min_thresh = qual.get("minimum_threshold", "—")
         golden_thresh = qual.get("golden_threshold", "—")
-        has_lora = meta.get("has_lora", False)
-        lora_rank = tuning.get("lora_rank", "—")
-        quant = tuning.get("quantization", "—")
+        temp_range = tuning.get("temperature_range", [])
 
         # score color
         if isinstance(score, (int, float)):
@@ -1322,8 +1320,6 @@ def _build_supported_models_section(models: list[dict]) -> str:
   <div class="card-name">{E(mname)}</div>
   <div class="card-meta mb-2">
     <span class="tag tag--teal">{E(size)}</span>
-    <span class="tag tag--cyan">{E(str(quant))}</span>
-    {"<span class='tag tag--orange'>LoRA trained</span>" if has_lora else "<span class='tag tag--dim'>no LoRA yet</span>"}
   </div>
   <div class="info-label">Qualification Score</div>
   <div style="display:flex;align-items:center;gap:0.75rem;margin:0.4rem 0 0.75rem">
@@ -1335,7 +1331,7 @@ def _build_supported_models_section(models: list[dict]) -> str:
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.8rem">
     <div><span class="text-dim">Min threshold:</span> {E(str(min_thresh))}</div>
     <div><span class="text-dim">Golden threshold:</span> {E(str(golden_thresh))}</div>
-    <div><span class="text-dim">LoRA rank:</span> {E(str(lora_rank))}</div>
+    <div><span class="text-dim">Temp range:</span> {E(", ".join(str(t) for t in temp_range) if temp_range else "—")}</div>
   </div>
 </div>"""
 

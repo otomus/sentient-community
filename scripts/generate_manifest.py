@@ -103,7 +103,6 @@ def _build_adapter_entry(meta: dict, role: str, size_class: str,
         "provider": meta.get("provider", ""),
         "score": score,
         "contributor": meta.get("contributor", {}).get("github", ""),
-        "has_lora": meta.get("has_lora", False),
     }
 
 

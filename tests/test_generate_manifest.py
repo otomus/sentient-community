@@ -204,7 +204,6 @@ class TestBuildAdapterEntry:
             "size_class": "small",
             "provider": "ollama",
             "contributor": {"github": "user1"},
-            "has_lora": True,
         }
         entry = gm._build_adapter_entry(meta, "tool", "small", "llama3.2-3b", 0.9)
         assert entry == {
@@ -214,7 +213,6 @@ class TestBuildAdapterEntry:
             "provider": "ollama",
             "score": 0.9,
             "contributor": "user1",
-            "has_lora": True,
         }
 
     def test_without_model_name_falls_back_to_size_class(self):
@@ -238,7 +236,6 @@ class TestBuildAdapterEntry:
         entry = gm._build_adapter_entry({}, "tool", "small", None, None)
         assert entry["provider"] == ""
         assert entry["contributor"] == ""
-        assert entry["has_lora"] is False
 
 
 # ---------------------------------------------------------------------------
@@ -277,13 +274,11 @@ class TestCollectAdapters:
             "size_class": "medium",
             "provider": "ollama",
             "contributor": {"github": "bob"},
-            "has_lora": True,
         })
         _write_json(str(ad / "qualification.json"), {"overall_score": 0.92})
         result = gm.collect_adapters()
         assert "code/medium/phi3" in result
         assert result["code/medium/phi3"]["score"] == 0.92
-        assert result["code/medium/phi3"]["has_lora"] is True
 
     def test_skips_adapter_without_meta(self, monkeypatch, tmp_path):
         _patch_repo(monkeypatch, tmp_path)

@@ -29,10 +29,6 @@
       "type": "boolean",
       "default": false
     },
-    "has_lora": {
-      "type": "boolean",
-      "default": false
-    },
     "capabilities": {
       "type": "object",
       "properties": {
@@ -53,12 +49,12 @@
     },
     "tuning": {
       "type": "object",
-      "description": "LoRA fine-tuning parameters for this size class",
+      "description": "Inference tuning parameters for this size class",
       "properties": {
         "min_training_examples": {
           "type": "integer",
           "minimum": 1,
-          "description": "Minimum I/O pairs before LoRA training kicks in"
+          "description": "Minimum I/O pairs before inference tuning kicks in"
         },
         "test_cases_per_batch": {
           "type": "integer",
@@ -70,68 +66,11 @@
           "minimum": 0,
           "description": "Max few-shot examples included in the prompt"
         },
-        "lora_rank": {
-          "type": "integer",
-          "minimum": 1,
-          "description": "LoRA rank (r)"
-        },
-        "lora_epochs": {
-          "type": "integer",
-          "minimum": 1,
-          "description": "Number of training epochs"
-        },
-        "lora_lr": {
-          "type": "number",
-          "exclusiveMinimum": 0,
-          "description": "Learning rate for LoRA training"
-        },
-        "lora_dropout": {
-          "type": "number",
-          "minimum": 0.0,
-          "maximum": 1.0,
-          "description": "Dropout rate for LoRA layers"
-        },
-        "lora_target_modules": {
+        "temperature_range": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": { "type": "number", "minimum": 0.0, "maximum": 2.0 },
           "minItems": 1,
-          "description": "Attention layer modules to target for LoRA"
-        },
-        "training_max_length": {
-          "type": "integer",
-          "minimum": 1,
-          "description": "Tokenizer max sequence length for training"
-        },
-        "warmup_steps": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "LR warmup steps at start of training"
-        },
-        "eval_split": {
-          "type": "number",
-          "minimum": 0.0,
-          "maximum": 1.0,
-          "description": "Fraction of training data held out for validation"
-        },
-        "scheduler": {
-          "type": "string",
-          "enum": ["cosine", "linear", "constant"],
-          "description": "Learning rate scheduler type"
-        },
-        "quantization": {
-          "type": "string",
-          "enum": ["fp16", "bf16", "4bit", "8bit"],
-          "description": "Base model quantization for training (QLoRA when 4bit/8bit)"
-        },
-        "batch_size": {
-          "type": "integer",
-          "minimum": 1,
-          "description": "Per-device training batch size"
-        },
-        "gradient_accumulation_steps": {
-          "type": "integer",
-          "minimum": 1,
-          "description": "Gradient accumulation steps (effective batch = batch_size * this)"
+          "description": "Candidate temperatures the system will trial when optimizing for this role/model"
         }
       }
     },

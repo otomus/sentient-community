@@ -283,7 +283,7 @@ def _validate_adapter_size_class(adapter_dir: str, name: str, meta: dict) -> lis
 
 
 def _validate_adapter_tuning(adapter_dir: str, name: str, meta: dict) -> list[str]:
-    """Validate tuning target_modules and lora_rank against the role profile."""
+    """Validate temperature_range against the allowed range for the role."""
     tuning = meta.get("tuning", {})
     if not tuning:
         return []
@@ -294,31 +294,21 @@ def _validate_adapter_tuning(adapter_dir: str, name: str, meta: dict) -> list[st
     if not profile:
         return []
 
-    errors = []
-    errors.extend(_validate_tuning_target_modules(name, role, tuning, profile))
-    errors.extend(_validate_tuning_lora_rank(name, role, tuning, profile))
-    return errors
+    return _validate_tuning_temperature_range(name, role, tuning, profile)
 
 
-def _validate_tuning_target_modules(name: str, role: str, tuning: dict, profile: dict) -> list[str]:
-    """Check that lora_target_modules are in the allowed set for the role."""
-    target_modules = tuning.get("lora_target_modules", [])
-    allowed = set(profile.get("allowed_target_modules", []))
+def _validate_tuning_temperature_range(name: str, role: str, tuning: dict, profile: dict) -> list[str]:
+    """Check that all temperature_range values are within the allowed bounds for the role."""
+    temp_range = tuning.get("temperature_range", [])
+    if not temp_range:
+        return []
+    min_temp = profile.get("min_temperature", 0.0)
+    max_temp = profile.get("max_temperature", 2.0)
     return [
-        f"  {name}: lora_target_module '{mod}' not allowed for role '{role}'. "
-        f"Allowed: {sorted(allowed)}"
-        for mod in target_modules
-        if mod not in allowed
+        f"  {name}: temperature_range value {t} out of allowed bounds [{min_temp}, {max_temp}] for role '{role}'"
+        for t in temp_range
+        if not (min_temp <= t <= max_temp)
     ]
-
-
-def _validate_tuning_lora_rank(name: str, role: str, tuning: dict, profile: dict) -> list[str]:
-    """Check that lora_rank does not exceed the maximum for the role."""
-    rank = tuning.get("lora_rank", 0)
-    max_rank = profile.get("max_lora_rank", 999)
-    if rank > max_rank:
-        return [f"  {name}: lora_rank {rank} exceeds max {max_rank} for role '{role}'"]
-    return []
 
 
 def validate_adapter(adapter_dir: str) -> list[str]:

@@ -17,21 +17,11 @@
     "min_training_examples": 200,
     "test_cases_per_batch": 15,
     "few_shot_limit": 5,
-    "lora_rank": 4,
-    "lora_epochs": 3,
-    "lora_lr": 0.0001,
-    "lora_dropout": 0.05,
-    "lora_target_modules": [
-      "q_proj",
-      "v_proj"
-    ],
-    "warmup_steps": 50,
-    "eval_split": 0.1,
-    "scheduler": "cosine",
-    "quantization": "4bit",
-    "batch_size": 2,
-    "gradient_accumulation_steps": 4,
-    "training_max_length": 2048
+    "temperature_range": [
+      0.1,
+      0.2,
+      0.3
+    ]
   },
   "qualification": {
     "low_quality_threshold": 0.5,
