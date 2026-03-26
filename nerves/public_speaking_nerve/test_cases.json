@@ -1,0 +1,373 @@
+[
+  {
+    "input": "How can I improve my public speaking?",
+    "context": {},
+    "output": "To improve your public speaking, consider practicing regularly, seeking feedback, using visual aids, and engaging with your audience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the best way to handle a nervous speaker?",
+    "context": {},
+    "output": "For nervous speakers, it's helpful to prepare thoroughly, focus on your message rather than the audience, and practice breathing techniques.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I make my public speaking more engaging?",
+    "context": {},
+    "output": "To engage your audience, use stories, humor, and relatable examples. Practice eye contact and vary your tone and pace.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What should I do if I forget my lines?",
+    "context": {},
+    "output": "If you forget your lines, take a deep breath, stay calm, and look at your notes or the audience. Use the moment to connect with your audience and try to continue with your message.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I overcome public speaking anxiety?",
+    "context": {},
+    "output": "Public speaking anxiety can be overcome by preparation, positive visualization, and practicing in front of a mirror or a small group. Gradual exposure to speaking in front of larger audiences can also help.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the most important part of public speaking?",
+    "context": {},
+    "output": "The most important part of public speaking is the message you're conveying. Ensure your content is clear, concise, and resonates with your audience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I deliver a memorable speech?",
+    "context": {},
+    "output": "To deliver a memorable speech, create a strong opening, use impactful language, and include a memorable conclusion that leaves a lasting impression.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the difference between a good speech and a great speech?",
+    "context": {},
+    "output": "A great speech goes beyond being good. It's memorable, inspiring, and leaves a lasting impact on the audience. It's well-organized, engaging, and emotionally resonant.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I make my public speaking more persuasive?",
+    "context": {},
+    "output": "To make your public speaking more persuasive, use logical arguments, appeal to emotions, and use persuasive language. Show your passion and conviction to engage your audience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the best way to practice public speaking?",
+    "context": {},
+    "output": "The best way to practice public speaking is to practice regularly. Record yourself and analyze your performance. Seek feedback from others and continue to refine your skills.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the most effective way to use body language in public speaking?",
+    "context": {},
+    "output": "The most effective way to use body language in public speaking is to be confident and authentic. Use gestures to emphasize your points, maintain eye contact, and use open body language to connect with your audience.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I overcome stage fright?",
+    "context": {},
+    "output": "Stage fright can be overcome by preparing thoroughly, practicing, and using relaxation techniques such as deep breathing and positive visualization. Facing your fears can also help alleviate stage fright.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the most important thing to remember when giving a speech?",
+    "context": {},
+    "output": "The most important thing to remember when giving a speech is to connect with your audience. Speak clearly, be engaging, and let your passion and conviction shine through.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use humor in my public speaking?",
+    "context": {},
+    "output": "To use humor in your public speaking, use relatable examples, tell jokes, and be authentic. Humor can help break the ice and make your message more memorable.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the best way to handle a technical error during a speech?",
+    "context": {},
+    "output": "If a technical error occurs during a speech, stay calm and handle it gracefully. Acknowledge the mistake and continue speaking clearly. Use the moment to connect with your audience and keep them engaged.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I practice public speaking without an audience?",
+    "context": {},
+    "output": "You can practice public speaking without an audience by recording yourself and reviewing the video. This can help you identify areas for improvement and become more comfortable with your material.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the role of vocal variety in public speaking?",
+    "context": {},
+    "output": "Vocal variety in public speaking includes using different tones, pitches, and rhythms to keep your audience engaged and interested. It helps you convey different emotions and ideas more effectively.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I handle unexpected questions during a speech?",
+    "context": {},
+    "output": "If you're caught off guard by a question during a speech, take a moment to gather your thoughts before responding. Use phrases like 'That's a great question' or 'Let me think for a moment' to buy time and give yourself a chance to formulate a clear answer.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the best way to overcome nervousness before a speech?",
+    "context": {},
+    "output": "To overcome nervousness before a speech, practice deep breathing exercises, visualize a successful presentation, and focus on the message rather than yourself. Being well-prepared and confident in your material can also help reduce anxiety.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I use storytelling in my public speaking?",
+    "context": {},
+    "output": "Storytelling in public speaking can captivate your audience and make your message more relatable. Choose stories that are relevant to your topic and your audience, and use vivid descriptions and emotional language to bring the story to life.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the most effective way to use visual aids in a speech?",
+    "context": {},
+    "output": "Visual aids such as slides, charts, and videos can enhance your speech and help your audience understand your points better. Use them sparingly and make sure they are clear, relevant, and visually appealing.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I handle a technical error during a speech?",
+    "context": {},
+    "output": "If a technical error occurs during a speech, stay calm and quickly think of a solution. For example, if your computer crashes, you can switch to a backup slide or continue with your speech using a pen and paper.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I handle a crowd that's not engaged?",
+    "context": {},
+    "output": "If a crowd isn't engaged during your speech, try to identify the reasons and address them. Ask questions, use humor, and incorporate elements that your audience will find interesting. If necessary, take a break and adjust your approach.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a presentation to a remote audience?",
+    "context": {},
+    "output": "To give a presentation to a remote audience, use visual aids, speak clearly and loudly, and engage with your audience through questions and interaction. Consider using breakout rooms or Q&A sessions to keep the conversation flowing.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic I know nothing about?",
+    "context": {},
+    "output": "To give a speech on a topic you know nothing about, do your research and prepare thoroughly. Gather facts, statistics, and examples to support your points, and practice your delivery. This will help you feel more confident and competent during your speech.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech in a language I'm not fluent in?",
+    "context": {},
+    "output": "To give a speech in a language you're not fluent in, practice your speech beforehand and seek feedback from a translator or native speaker. Use simple words and phrases, avoid idioms, and pay attention to pronunciation and intonation. If possible, use visual aids to help convey your message.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on climate change?",
+    "context": {},
+    "output": "To give a speech on climate change, start with a compelling introduction that highlights the urgency of the issue. Provide specific, relatable examples to illustrate the impacts of climate change. Use visuals and data to support your points. Practice your delivery to ensure smooth transitions and a clear voice. Engage with the audience by asking questions or encouraging participation.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the best way to handle a difficult audience?",
+    "context": {},
+    "output": "Handling a difficult audience requires patience and adaptability. Listen attentively to their concerns and address them with empathy and understanding. Avoid defensive postures and remain calm under pressure. If necessary, rephrase your points in simpler terms or provide additional context. Use humor to break the tension if appropriate.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I practice public speaking in a language I'm not fluent in?",
+    "context": {},
+    "output": "To practice public speaking in a language you're not fluent in, start by learning some basic phrases and expressions related to your topic. Use translation tools to help with grammar and vocabulary. Record your practice sessions and listen to them to identify areas for improvement. Seek feedback from a native speaker or a language exchange partner.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic I'm not familiar with?",
+    "context": {},
+    "output": "To give a speech on a topic you're not familiar with, research your topic thoroughly to gain a good understanding of the subject matter. Break down the information into digestible parts and organize your thoughts logically. Use analogies and stories to help explain complex concepts. Practice your delivery to ensure clarity and confidence.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I make my public speaking more humorous?",
+    "context": {},
+    "output": "To make your public speaking more humorous, incorporate witty remarks, puns, and jokes into your presentation. Use humor to break the ice and engage your audience. Ensure that the humor is appropriate for your audience and does not offend anyone. Practice your timing and delivery to make sure the humor lands effectively.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic I'm passionate about?",
+    "context": {},
+    "output": "To give a speech on a topic you're passionate about, draw on your personal experiences and emotions to connect with your audience. Use vivid language and storytelling techniques to engage them. Share anecdotes and examples that demonstrate your passion and expertise. Practice your delivery to ensure enthusiasm and energy.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's not popular?",
+    "context": {},
+    "output": "To give a speech on a topic that's not popular, research your topic thoroughly to ensure accuracy and credibility. Share unique insights and perspectives that set your presentation apart. Use humor or personal anecdotes to make the topic more relatable and interesting. Practice your delivery to ensure confidence and engagement.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's highly controversial?",
+    "context": {},
+    "output": "To give a speech on a controversial topic, research both sides of the argument to present a balanced perspective. Clearly state your stance and explain why you hold that view. Use evidence and examples to support your arguments. Anticipate potential counterarguments and address them in your speech. Practice your delivery to ensure clarity and confidence.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's highly technical?",
+    "context": {},
+    "output": "To give a speech on a technical topic, start with a brief overview of the subject and then dive into the technical details. Use simple language and avoid jargon. Provide visual aids such as slides, diagrams, and videos to help illustrate your points. Practice your delivery to ensure clarity and confidence.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's highly personal?",
+    "context": {},
+    "output": "To give a speech on a personal topic, share your experiences and emotions to connect with your audience. Use storytelling techniques to make your message more relatable. Be authentic and honest in your presentation. Practice your delivery to ensure enthusiasm and energy.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's highly emotional?",
+    "context": {},
+    "output": "To give a speech on an emotional topic, use vivid language and personal anecdotes to engage your audience. Use humor to break the tension and provide relief. Practice your delivery to ensure clarity and confidence.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's highly interactive?",
+    "context": {},
+    "output": "To give a speech on an interactive topic, use activities and games to engage your audience. Encourage participation and feedback. Practice your delivery to ensure engagement and confidence.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's highly technical?",
+    "context": {},
+    "output": "To give a speech on a technical topic, start with a brief overview of the subject and then dive into the technical details. Use simple language and avoid jargon. Provide visual aids such as slides, diagrams, and videos to help illustrate your points. Practice your delivery to ensure clarity and confidence.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's highly emotional?",
+    "context": {},
+    "output": "To give a speech on an emotional topic, use vivid language and personal anecdotes to engage your audience. Use humor to break the tension and provide relief. Practice your delivery to ensure clarity and confidence.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I overcome stage fright during a speech?",
+    "context": {},
+    "output": "To overcome stage fright, try deep breathing exercises, visualization, and positive self-talk. Practicing in front of a mirror or recording yourself can also help you become more comfortable.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "What's the best way to handle a nervous audience?",
+    "context": {},
+    "output": "Handling a nervous audience effectively involves making eye contact, speaking clearly, and using gestures to engage your audience. It's also helpful to be well-prepared and understand the topic well.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I make my speech more relatable?",
+    "context": {},
+    "output": "To make your speech more relatable, use anecdotes, stories, and examples that your audience can understand and connect with. Avoid jargon and be authentic in your delivery.",
+    "category": "core",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech in a different language?",
+    "context": {},
+    "output": "To give a speech in a different language, start by practicing your speech in your native language. Then, translate it into the target language, paying attention to nuances and cultural references.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech in front of 10,000 people?",
+    "context": {},
+    "output": "Giving a speech in front of a large audience requires careful planning and practice. Focus on your message, delivery, and connection with your audience. Visual aids and storytelling can also help.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech without any preparation?",
+    "context": {},
+    "output": "Giving a speech without preparation is not recommended as it can lead to nervousness, mistakes, and a lack of confidence. It's always best to practice your speech beforehand.",
+    "category": "negative",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's completely unrelated to my expertise?",
+    "context": {},
+    "output": "Giving a speech on a topic you're not familiar with is possible, but it requires extensive research and preparation. Use reliable sources and seek guidance from experts to ensure your speech is accurate and informative.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech that lasts for hours?",
+    "context": {},
+    "output": "Giving a speech that lasts for hours can be challenging, but it's possible with careful planning. Break your speech into manageable sections and ensure each section has a clear purpose and message. Use visual aids and storytelling to keep your audience engaged.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech in a different country?",
+    "context": {},
+    "output": "Giving a speech in a different country involves understanding the cultural context and adapting your speech accordingly. Use simple language, avoid idioms and cultural references, and be respectful of the audience's customs.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech in front of a camera?",
+    "context": {},
+    "output": "Giving a speech in front of a camera can be nerve-wracking, but it's possible with practice and preparation. Use a webcam to practice your delivery and get comfortable with the camera. Visual aids can also help you stay on track.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech in front of a group of strangers?",
+    "context": {},
+    "output": "Giving a speech in front of a group of strangers can be challenging, but it's possible with positive self-talk and preparation. Focus on your message and delivery, and use storytelling to connect with your audience.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech in front of a small group?",
+    "context": {},
+    "output": "Giving a speech in front of a small group can be more personal and intimate. Use anecdotes and stories to engage your audience and build a connection with them. Practice your delivery and be confident in your message.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  },
+  {
+    "input": "How can I give a speech on a topic that's controversial?",
+    "context": {},
+    "output": "Giving a speech on a controversial topic requires careful consideration and research. Present both sides of the argument and be respectful of differing opinions. Use evidence and facts to support your message and avoid personal attacks.",
+    "category": "edge",
+    "generated_by": "Qwen2.5-Coder-7B.gguf"
+  }
+]

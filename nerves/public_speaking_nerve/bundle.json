@@ -1,0 +1,19 @@
+{
+  "name": "public_speaking_nerve",
+  "version": "1.0.0",
+  "description": "public_speaking_nerve",
+  "role": "tool",
+  "tags": [
+    "tool",
+    "public-speaking",
+    "desktop",
+    "server"
+  ],
+  "authors": [
+    {
+      "github": "otomus"
+    }
+  ],
+  "arqitect_version": ">=0.1.0",
+  "tools": []
+}

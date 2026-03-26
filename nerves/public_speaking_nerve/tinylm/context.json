@@ -1,0 +1,15 @@
+{
+  "system_prompt": "Input: A person seeking advice on improving their public speaking skills. Output: A list of tips and strategies to enhance public speaking abilities. Format: Each tip should be a single sentence. Boundary: This nerve does not handle requests for help with other types of presentations or speaking engagements.\nRespond with JSON tool calls.",
+  "few_shot_examples": [
+    {
+      "input": "How can I make my public speaking more engaging?",
+      "output": "To make your public speaking more engaging, start with a strong introduction that captures the audience's attention. Use storytelling to illustrate key points. Engage your audience with questions and interactive elements. Practice your delivery with enthusiasm and vary your tone and pace."
+    },
+    {
+      "input": "What should I do if I forget my lines?",
+      "output": "If you forget your lines, take a deep breath and relax. Acknowledge the moment, then look at the audience and smile. You might say, 'Ah, I seem to have forgotten that part. Let's move on and I'll circle back to that later.' Continue speaking and use body language to maintain your confidence and keep the audience engaged."
+    }
+  ],
+  "temperature": 0.7,
+  "qualification_score": 0.9
+}
