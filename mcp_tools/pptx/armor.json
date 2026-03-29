@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "profile": "sandboxed",
+  "filesystem": {
+    "read": [
+      "/tmp/mcparmor/*"
+    ],
+    "write": [
+      "/tmp/mcparmor/*"
+    ]
+  },
+  "spawn": false
+}

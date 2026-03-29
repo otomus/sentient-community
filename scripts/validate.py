@@ -32,14 +32,15 @@ UNSAFE_PATTERNS_JS = [
     (r"\bspawnSync\b", "spawnSync"),
 ]
 
+# Fallback temperature bounds used when a role profile omits explicit limits.
+# 0.0–2.0 covers the full range supported by most inference backends.
+_DEFAULT_MIN_TEMPERATURE: float = 0.0
+_DEFAULT_MAX_TEMPERATURE: float = 2.0
+
 
 @lru_cache(maxsize=None)
-def load_role_tuning_profiles() -> tuple:
-    """Load role tuning profiles from the schemas directory.
-
-    Returns a tuple of (roles_dict,) wrapped for lru_cache compatibility.
-    The actual dict is accessed via the return value directly.
-    """
+def load_role_tuning_profiles() -> dict:
+    """Load and cache role tuning profiles from the schemas directory."""
     path = os.path.join(SCHEMAS_DIR, "role_tuning_profiles.json")
     with open(path) as f:
         return json.load(f).get("roles", {})
@@ -292,7 +293,7 @@ def _validate_adapter_tuning(adapter_dir: str, name: str, meta: dict) -> list[st
     profiles = load_role_tuning_profiles()
     profile = profiles.get(role)
     if not profile:
-        return []
+        return [f"  {name}: unknown role '{role}' — no tuning profile found"]
 
     return _validate_tuning_temperature_range(name, role, tuning, profile)
 
@@ -302,8 +303,8 @@ def _validate_tuning_temperature_range(name: str, role: str, tuning: dict, profi
     temp_range = tuning.get("temperature_range", [])
     if not temp_range:
         return []
-    min_temp = profile.get("min_temperature", 0.0)
-    max_temp = profile.get("max_temperature", 2.0)
+    min_temp = profile.get("min_temperature", _DEFAULT_MIN_TEMPERATURE)
+    max_temp = profile.get("max_temperature", _DEFAULT_MAX_TEMPERATURE)
     return [
         f"  {name}: temperature_range value {t} out of allowed bounds [{min_temp}, {max_temp}] for role '{role}'"
         for t in temp_range
@@ -328,6 +329,20 @@ def validate_adapter(adapter_dir: str) -> list[str]:
     return errors
 
 
+def _validate_armor(directory: str, name: str) -> list[str]:
+    """Validate that armor.json exists and conforms to the armor schema."""
+    armor_path = os.path.join(directory, "armor.json")
+    if not os.path.exists(armor_path):
+        return [f"  {name}: missing armor.json"]
+
+    armor = load_json(armor_path)
+    if armor is None:
+        return []
+
+    schema = load_schema("armor.schema.json")
+    return validate_json_against_schema(armor, schema, armor_path)
+
+
 def validate_tool(tool_dir: str) -> list[str]:
     """Validate a community tool directory for required files, schema, and safety."""
     errors = []
@@ -336,6 +351,7 @@ def validate_tool(tool_dir: str) -> list[str]:
     errors.extend(_validate_tool_meta(tool_dir, name))
     errors.extend(_validate_tool_implementations(tool_dir, name))
     errors.extend(_validate_tool_tests(tool_dir, name))
+    errors.extend(_validate_armor(tool_dir, name))
 
     readme_path = os.path.join(tool_dir, "README.md")
     if not os.path.exists(readme_path):
@@ -392,7 +408,7 @@ def _validate_tool_tests(tool_dir: str, name: str) -> list[str]:
 
 
 def validate_mcp(mcp_dir: str) -> list[str]:
-    """Validate an external MCP server directory for required meta.json and README."""
+    """Validate an external MCP server directory for required meta.json, armor.json, and README."""
     errors = []
     name = os.path.basename(mcp_dir)
 
@@ -404,6 +420,8 @@ def validate_mcp(mcp_dir: str) -> list[str]:
         if meta is not None:
             schema = load_schema("mcp_meta.schema.json")
             errors.extend(validate_json_against_schema(meta, schema, meta_path))
+
+    errors.extend(_validate_armor(mcp_dir, name))
 
     readme_path = os.path.join(mcp_dir, "README.md")
     if not os.path.exists(readme_path):

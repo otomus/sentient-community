@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "profile": "browser",
+  "network": {
+    "allow": [
+      "*:443",
+      "*:80"
+    ],
+    "deny_local": false,
+    "deny_metadata": true
+  },
+  "spawn": false,
+  "output": {
+    "scan_secrets": true
+  }
+}

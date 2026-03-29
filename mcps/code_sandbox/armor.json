@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "profile": "system",
+  "filesystem": {
+    "read": [
+      "**/*"
+    ],
+    "write": [
+      "/tmp/mcparmor/*"
+    ]
+  },
+  "network": {
+    "allow": [
+      "*:443"
+    ],
+    "deny_local": true,
+    "deny_metadata": true
+  },
+  "spawn": false,
+  "env": {
+    "allow": [
+      "CODE_SANDBOX_API_KEY"
+    ]
+  },
+  "output": {
+    "scan_secrets": true
+  }
+}

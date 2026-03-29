@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "profile": "system",
+  "filesystem": {
+    "read": [
+      "**/*"
+    ],
+    "write": [
+      "/tmp/mcparmor/*"
+    ]
+  },
+  "spawn": false,
+  "output": {
+    "scan_secrets": true
+  }
+}

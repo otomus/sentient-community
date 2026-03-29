@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "profile": "network",
+  "network": {
+    "allow": [
+      "*:443"
+    ],
+    "deny_local": true,
+    "deny_metadata": true
+  },
+  "spawn": false,
+  "env": {
+    "allow": [
+      "INSTAGRAM_API_KEY"
+    ]
+  },
+  "output": {
+    "scan_secrets": true
+  }
+}

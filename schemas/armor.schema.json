@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MCPArmor Manifest",
+  "description": "Security manifest for MCP tools and servers. See https://otomus.github.io/mcparmor/docs/manifest",
+  "type": "object",
+  "required": ["version", "profile", "spawn"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Schema version — must be 1.0"
+    },
+    "profile": {
+      "type": "string",
+      "enum": ["strict", "sandboxed", "network", "system", "browser"],
+      "description": "Base security profile"
+    },
+    "min_spec": {
+      "type": "string",
+      "description": "Minimum broker spec version"
+    },
+    "locked": {
+      "type": "boolean",
+      "description": "Prevent --profile flag override"
+    },
+    "filesystem": {
+      "type": "object",
+      "properties": {
+        "read": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Glob patterns for allowed read paths"
+        },
+        "write": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Glob patterns for allowed write paths"
+        }
+      },
+      "additionalProperties": false
+    },
+    "network": {
+      "type": "object",
+      "properties": {
+        "allow": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Permitted host:port patterns"
+        },
+        "deny_local": {
+          "type": "boolean",
+          "description": "Block 127.0.0.0/8 and ::1"
+        },
+        "deny_metadata": {
+          "type": "boolean",
+          "description": "Block 169.254.0.0/16 (cloud metadata)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "spawn": {
+      "type": "boolean",
+      "description": "Whether tool may spawn child processes"
+    },
+    "env": {
+      "type": "object",
+      "properties": {
+        "allow": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Whitelisted environment variable names"
+        }
+      },
+      "additionalProperties": false
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "scan_secrets": {
+          "description": "Secret detection: false (off), true (redact), or 'strict' (block)",
+          "oneOf": [
+            { "type": "boolean" },
+            { "type": "string", "const": "strict" }
+          ]
+        },
+        "max_size_kb": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 102400,
+          "description": "Maximum response size in KB"
+        }
+      },
+      "additionalProperties": false
+    },
+    "timeout_ms": {
+      "type": "number",
+      "minimum": 100,
+      "maximum": 300000,
+      "description": "Tool execution limit in milliseconds"
+    },
+    "audit": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "retention_days": { "type": "number" },
+        "max_size_mb": { "type": "number" },
+        "redact_params": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

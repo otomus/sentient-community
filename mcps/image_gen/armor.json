@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "profile": "sandboxed",
+  "filesystem": {
+    "read": [
+      "/tmp/mcparmor/*"
+    ],
+    "write": [
+      "/tmp/mcparmor/*"
+    ]
+  },
+  "spawn": false,
+  "env": {
+    "allow": [
+      "IMAGE_GEN_API_KEY"
+    ]
+  },
+  "output": {
+    "scan_secrets": true
+  }
+}
